@@ -1,6 +1,6 @@
 baseURL: "https://hugo-profile.netlify.app"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Vikram M A A - Profile"
 theme: hugo-profile
 
 Paginate: 3
@@ -45,8 +45,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "Vikram M A A - profile"
+  description: Hi, I'm a digital marketing strategist with almost 5 years experience. 
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -95,9 +95,9 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Isabella."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
+    title: "Vikram M A A"
+    subtitle: "I am a digital marketing strategist"
+    content: "With almost 5 years of experience I've helped brands grow their digital presence organically and through paid ads."
     image: /images/hero.svg
     button:
       enable: true
