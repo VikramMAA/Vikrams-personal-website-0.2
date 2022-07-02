@@ -5,7 +5,7 @@ draft: false
 description: "My gallery :earth_asia:"
 layout: "gallery"
 images:
- - src: https://pixabay.com/images/id-3947911/
+ - src: https://drive.google.com/file/d/1uEqHlW-4VtmGMPeoGG2ei_8P7NuulSGE/view?usp=sharing
  - src: https://img.etimg.com/thumb/msid-68721417,width-650,imgsize-1016106,,resizemode-4,quality-100/nature1_gettyimages.jpg
  - src: https://thumbs.dreamstime.com/b/team-ants-council-collective-decision-work-17037482.jpg
  - src: https://thumbs.dreamstime.com/b/summer-day-smiling-women-relax-wearing-red-dress-fashion-standing-wooden-bridge-over-sea-blue-sky-background-summer-107411998.jpg
