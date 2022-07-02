@@ -98,7 +98,7 @@ params:
     title: "Vikram M A A"
     subtitle: "I am a digital marketing strategist"
     content: "With almost 5 years of experience I've helped brands grow their digital presence organically and through paid ads."
-    image: /images/"Vik pic.jpeg"
+    image: images/Vik pic.jpeg
     button:
       enable: true
       name: "Resume"
