@@ -134,15 +134,15 @@ params:
         - "Ad-campaigns"
 
   # projects
-  projects:
-    enable: true
-    items:
-      - title: Website for ImagineThis
-        content: A portfolio website for an event & marketing company that has organised some of the biggest food & music festivals in India.
-        image: /images/projects/Imaginethis-vikwebsite.png
-        featured:
-          name: Link to site
-          link: https://imaginethis.in
+  #projects:
+   # enable: true
+    #items:
+     # - title: Website for ImagineThis
+      #  content: A portfolio website for an event & marketing company that has organised some of the biggest food & music festivals in India.
+       # image: /images/projects/Imaginethis-vikwebsite.png
+        #featured:
+         # name: Link to site
+          #link: https://imaginethis.in
         # badges:
         #   - "Hugo"
         #   - "Bootstrap"
@@ -155,38 +155,37 @@ params:
       #    - icon: fab fa-twitter
        #     url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+#      - title: Niragh Foods
+ #       content: Social media strategy, design and execution along with SEO. A strategy that increased engagement by 1600% on facebook within a span of 90 days.
+  #      image: /images/projects/converter.jpg
+   #     featured:
+    #      name: Demo
+     #     link: https://django-converter.herokuapp.com
         # badges:
         #   - "Django"
         #   - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+ #       links:
+  #        - icon: fab fa-facebook
+   #         url: https://www.facebook.com/NiraghFoods
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+    #  - title: Hugo Profile V2
+     #  image: /images/projects/profile2.jpg
+      #  featured:
+       #   name: Demo V2
+        #  link: https://hugo-profile-2.netlify.app
         # badges:
         #   - "Hugo"
         #   - "Bootstrap"
         #   - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+   #     links:
+    #      - icon: fab fa-github
+     #       url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:
     enable: true
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    email: gurusabarisha@gmail.com
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you asap!
+    email: vikram_here@outlook.com
     btnName: Mail me
 
   footer:
