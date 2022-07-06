@@ -11,7 +11,7 @@ tags:
   - Instagram
   - Facebook
   - Linkedin
-image: /image/firstdayasfreelancerblog.png
+image: /images/firstdayasfreelancerblog.png
 description: "A brief insight to how my first day as a freelancer progressed."
 toc: 
 ---
