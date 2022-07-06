@@ -12,11 +12,10 @@ tags:
   - Facebook
   - Linkedin
 image: "/static/images/firstdayasfreelancerblog.png"
-description: ""
+description: "A brief insight to how my first day as a freelancer progressed."
 toc: 
 ---
 
-A brief insight to how my first day as a freelancer progressed.
 <!--more-->
 
 ## Paragraph
@@ -47,16 +46,3 @@ Thanks for reading :)
 [^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
 
 
-
-``` html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-```
