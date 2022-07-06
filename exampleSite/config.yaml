@@ -48,7 +48,7 @@ params:
   title: "Vikram M A A - profile"
   description: "Digital marketing strategist with almost 5 years experience." 
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "/favicon-16x16.png"
 
   theme:
     disableThemeToggle: false
