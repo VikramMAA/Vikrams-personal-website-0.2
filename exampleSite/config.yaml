@@ -110,7 +110,7 @@ params:
         - icon: fab fa-instagram
           url: https://example.com
       customIcons:
-        - icon: /icons8-linkedin-circled-50
+        - icon: /linkedin-white.png
           url: "https://example.com"
 
   # About
