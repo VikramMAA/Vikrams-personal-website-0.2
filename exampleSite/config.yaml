@@ -141,7 +141,7 @@ params:
         content: A portfolio website for an event & marketing company that has organised some of the biggest food & music festivals in India.
         image: /images/projects/Imaginethis-vikwebsite.png
         featured:
-          name: ImagineThis
+          name: Link to site
           link: https://imaginethis.in
         # badges:
         #   - "Hugo"
