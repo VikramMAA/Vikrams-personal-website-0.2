@@ -48,7 +48,7 @@ params:
   title: "Vikram M A A - profile"
   description: "Digital marketing strategist with almost 5 years experience." 
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/favicon-16x16.png"
+  favicon: "/android-chrome-512x512.png"
 
   theme:
     disableThemeToggle: false
@@ -97,17 +97,17 @@ params:
     intro: "Hi, my name is"
     title: "Vikram M A A"
     subtitle: "Digital Marketing Strategist"
-    content: "With almost 5 years of experience I've helped brands grow their digital presence organically and through paid ads."
+    content: "With almost 5 years of experience I've helped brands achieve sales through social platforms while also growing their digital presence organically and through paid ads."
     image: /images/Vikpic.jpeg
     button:
       enable: true
-      name: "Resume"
-      url: "#"
+      name: "Email me"
+      url: "mailto:vikram_here@outlook.com"
     socialLinks:
       fontAwesomeIcons:
-        - icon: fab fa-github
+        - icon: fab fa-facebook
           url: https://example.com
-        - icon: fab fa-twitter
+        - icon: fab fa-instagram
           url: https://example.com
       customIcons:
         - icon: /fav.png
