@@ -15,7 +15,7 @@ image: /image/firstdayasfreelancerblog.png
 description: "A brief insight to how my first day as a freelancer progressed."
 toc: 
 ---
-
+A brief insight to how my first day as a freelancer progressed.
 <!--more-->
 
 ## Paragraph
