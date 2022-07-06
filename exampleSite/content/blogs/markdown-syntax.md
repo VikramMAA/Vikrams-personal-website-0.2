@@ -11,7 +11,7 @@ tags:
   - Instagram
   - Facebook
   - Linkedin
-image: "/static/images/firstdayasfreelancerblog.png"
+image: img src="https://github.com/VikramMAA/Vikrams-personal-website-0.2/blob/ad2e63a461e1fb0afdc970f0d504bb7c0fafda42/exampleSite/static/images/firstdayasfreelancerblog.png"
 description: "A brief insight to how my first day as a freelancer progressed."
 toc: 
 ---
