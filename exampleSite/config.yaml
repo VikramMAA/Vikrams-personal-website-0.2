@@ -109,6 +109,8 @@ params:
           url: https://example.com
         - icon: fab fa-instagram
           url: https://example.com
+          - icon: fab fa-linkedin
+          url: https://example.com
       customIcons:
         - icon: /fav.png
           url: "https://example.com"
