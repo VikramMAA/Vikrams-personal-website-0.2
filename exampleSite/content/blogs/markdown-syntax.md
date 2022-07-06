@@ -1,37 +1,40 @@
 ---
-title: "Markdown Syntax"
-date: 2021-04-03T23:29:21+05:30
+title: "First Day As A Freelancer"
+date: 2022-01-02T00:00:00+05:30
 draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
-author: "Gurusabarish"
+author: "Vikram M A A"
 tags:
-  - Markdown syntax
-  - Sample
-  - example
-image: exampleSite/static/images/firstdayasfreelancerblog.png
+  - Freelancer
+  - Digital Marketing
+  - Social media
+  - Instagram
+  - Facebook
+  - Linkedin
+image: "/static/images/firstdayasfreelancerblog.png"
 description: ""
 toc: 
 ---
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+A brief insight to how my first day as a freelancer progressed.
 <!--more-->
 
 ## Paragraph
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+Ever since my college I’ve been in a job at Mapletree Farms. I’ve taken up multiple roles there. It had been a little over 4 years working there. I started off as a customer support executive then got involved in operations and then finally Marketing. This is where I got the time to learn from online sources about digital marketing. There were very few opportunities to learn from people around me. It wasn’t until the last four months that I actually got to learn something from people around me.
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+My last day at Mapletree was a mix of emotions. The weather was gloomy and did not help. Although my send off was a blast and unexpected. It felt great to be starting something that I’ve wanted to do for a long time now. I felt I finally had the knowledge to succeed in this venture that I was starting off.
+I was super excited about the first day. My energy levels were high and I was enjoying every moment of it for maybe an hour. This was when I realized I was lost and had no idea what to be doing. I called people randomly from their posts on facebook groups, I searched for my favorite pubs in bangalore and called them to see if they were interested in my offering. I was hesitant to call a lot of people because they were already doing a good job on social media and this was the area that I wanted to focus on. I never got any response from the calls. My messages to business on instagram went unanswered. Of all the calls I made I only got a response from one of the pubs near my house. The owner was clear that he was already someone doing his social media work but was open to talking. He didn’t respond after that though. 
 
+Once I was done with the calls and the disappointment I moved on to do other things like learning from online sources and googling how to get new clients. These did not seem to help.
+Being a marketing manager for Mapletree has taught me that a lot of cold calls go unanswered and the only way to keep doing it along with the other activities. My experience was the only thing that kept me going.
 
-## Blockquotes
+I spoke to my friends about this first day and they too assured me that it was just the first day and there is still a lot of time.
+I guess this is the part I mention that I’ve given myself till the end of March 2022 to work on this venture in my life and see if I can earn a decent income from this. If not, I will have to look for another job.
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+In the days to follow I had moments where I got huge boosts of motivation and confidence. I will tell you all about it in my next blog post.
 
-### Blockquote without attribution
-
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
+Thanks for reading :)
 
 
 ### Blockquote with attribution
@@ -43,24 +46,7 @@ The blockquote element represents content that is quoted from another source, op
 
 [^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
 
-## Tables
 
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
-
-   | Name  | Age |
-   | ----- | --- |
-   | Bob   | 27  |
-   | Alice | 23  |
-
-### Inline Markdown within tables
-
-| Inline&nbsp;&nbsp;&nbsp; | Markdown&nbsp;&nbsp;&nbsp; | In&nbsp;&nbsp;&nbsp;                | Table  |
-| ------------------------ | -------------------------- | ----------------------------------- | ------ |
-| *italics*                | **bold**                   | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code` |
-
-## Code Blocks
-
-### Code block with backticks
 
 ``` html
 <!DOCTYPE html>
@@ -74,72 +60,3 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 </body>
 </html>
 ```
-### Code block indented with four spaces
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Example HTML5 Document</title>
-    </head>
-    <body>
-      <p>Test</p>
-    </body>
-    </html>
-
-### Code block with Hugo's internal highlight shortcode
-{{< highlight html >}}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-{{< /highlight >}}
-
-## List Types
-
-### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-* List item
-* Another item
-* And another item
-
-### Nested list
-
-* Item
-  1. First Sub-item
-  2. Second Sub-item
-
-## Headings
-
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
-
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
