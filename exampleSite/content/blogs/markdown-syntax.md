@@ -8,7 +8,7 @@ tags:
   - Markdown syntax
   - Sample
   - example
-image: img src="https://i.ibb.co/WtMBXj0/celebration-3443777-1920.jpg"
+image: exampleSite/static/images/firstdayasfreelancerblog.png
 description: ""
 toc: 
 ---
