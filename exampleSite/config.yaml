@@ -109,10 +109,8 @@ params:
           url: https://example.com
         - icon: fab fa-instagram
           url: https://example.com
-          - icon: fab fa-linkedin
-          url: https://example.com
       customIcons:
-        - icon: /fav.png
+        - icon: /icons8-linkedin-circled-50
           url: "https://example.com"
 
   # About
@@ -121,7 +119,7 @@ params:
     title: "About Me"
     image: "/images/Vikpic.jpeg"
     content: |-
-      I am a digital marketing expert who specializes in growing your digital presence organically via social media and good SEO. I enable my clients to reach the perfect target audience to ensure the sale happens. Some of my clients are from the agriculture industry, events & marketing industry, education industry & the FMCG industry.
+      I am a digital marketing expert who specializes in enabling you to reach your potential customer via social media and good SEO. I enable my clients to reach the perfect target audience to ensure the sale happens. Some of my clients are from the agtech, events & marketing, education & the FMCG industry.
 
       I am currently working on a project that will be used to help people find the best way to get their digital marketing carrer started as an agency or freelancer.
     skills:
