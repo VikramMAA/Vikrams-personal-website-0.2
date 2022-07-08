@@ -1,6 +1,6 @@
 ---
 title: "Second Week As A Freelancer"
-date: 2022-01-014T00:00:00+05:30
+date: 2022-01-14
 draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Vikram M A A"
