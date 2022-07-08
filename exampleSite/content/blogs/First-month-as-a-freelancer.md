@@ -1,6 +1,6 @@
 ---
 title: "First Month As A Freelancer"
-date: 2022-02-014T00:00:00+05:30
+date: 2022-02-014
 draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Vikram M A A"
