@@ -106,12 +106,12 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-facebook
-          url: https://example.com
+          url: https://www.facebook.com/vikramhere.in
         - icon: fab fa-instagram
-          url: https://example.com
+          url: https://www.instagram.com/vikramhere.in/
       customIcons:
         - icon: /linkedin-white.png
-          url: "https://example.com"
+          url: "https://www.linkedin.com/in/vikram-m-a-a-044229150/"
 
   # About
   about:
@@ -191,8 +191,8 @@ params:
   footer:
     # recentPosts: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+     # github: https://github.com
+      linkedin: https://www.linkedin.com/in/vikram-m-a-a-044229150/
+     # twitter: https://twitter.com
+      instagram: https://www.instagram.com/vikramhere.in/
+      facebook: https://www.facebook.com/vikramhere.in
