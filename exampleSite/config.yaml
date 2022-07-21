@@ -5,7 +5,7 @@ theme: hugo-profile
 
 Paginate: 3
 disqusShortname: vikramhere.in
-googleAnalytics: G-M2FSBKKG03
+googleAnalyticsID: G-M2FSBKKG03
 
 markup:
   goldmark:
