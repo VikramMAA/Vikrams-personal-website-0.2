@@ -3,15 +3,9 @@ languageCode: "en-us"
 title: "Vikram M A A - Profile"
 theme: hugo-profile
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M2FSBKKG03"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M2FSBKKG03');
-</script>
+Paginate: 3
+disqusShortname: gurusabarish
+googleAnalytics: G-DWJJVE27WD
 
 markup:
   goldmark:
