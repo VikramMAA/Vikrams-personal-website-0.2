@@ -4,6 +4,16 @@
 <link rel="icon" href={{ .Site.Params.favicon | default "/fav.png" }} type="image/gif">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M2FSBKKG03"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M2FSBKKG03');
+</script>
+  
   {{ template "_internal/google_analytics.html" . }}
   {{ template "_internal/google_analytics_async.html" . }}
 </head>
