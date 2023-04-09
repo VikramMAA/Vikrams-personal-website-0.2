@@ -1,6 +1,6 @@
 ---
 title: "From Flab to Fab: How Freelancers Can Pump Up Their Productivity by Pumping Iron!"
-date: 2023-04-08
+date: 2023-04-09
 draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Vikram M A A"
