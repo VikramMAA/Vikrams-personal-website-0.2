@@ -18,10 +18,10 @@ image: /images/FFF.jpg
 description: "How Lifting Weights Can Turn You Into a Freelance Marketing Machine."
 toc: 
 ---
-How Lifting Weights Can Turn You Into a Freelance Marketing Machine
+
 <!--more-->
 
-## Paragraph
+
 
 As a freelancer/entrepreneur working in digital marketing, you're already a rock star in your own right. But what if you could take your skills to the next level by incorporating lifting weights into your routine? That's right, hitting the gym can make you a productivity powerhouse, and I've got the science to back it up. (Well, sort of.)
 
