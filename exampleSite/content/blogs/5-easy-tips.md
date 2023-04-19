@@ -1,6 +1,6 @@
 ---
 title: "Vikram's 5 Tips to Rule the Digital World Like a Boss!"
-date: 2023-04-019
+date: 2023-04-19
 draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Vikram M A A"
