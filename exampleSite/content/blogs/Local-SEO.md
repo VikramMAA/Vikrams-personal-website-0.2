@@ -17,10 +17,10 @@ tags:
  - Search engine rankings
 
 image: /images/Localseo.jpg
-description: "Are you tired of your business being overshadowed by the competition online? Do you want to bring the heat to your business's online presence? Look no further! Read about how local SEO can help."
+description: "Are you tired of your business being overshadowed by the competition online? Do you want to bring the heat to your business's online presence? Look no further! Read how local SEO can help."
 toc: 
 ---
-Are you tired of your business being overshadowed by the competition online? Do you want to bring the heat to your business's online presence? Look no further! Read about how local SEO can help.
+Are you tired of your business being overshadowed by the competition online? Do you want to bring the heat to your business's online presence? Look no further! Read how local SEO can help.
 <!--more-->
 
 
