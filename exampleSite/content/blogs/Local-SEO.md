@@ -5,16 +5,16 @@ draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Vikram M A A"
 tags:
-Local SEO
-Business Name, Address, and Phone Number (NAP)
-Location-specific keywords
-Relevant keywords
-Locally-focused content
-Unique stories
-Images and videos
-Backlinks
-Website authority
-Search engine rankings
+ - Local SEO
+ - Business Name, Address, and Phone Number (NAP)
+ - Location-specific keywords
+ - Relevant keywords
+ - Locally-focused content
+ - Unique stories
+ - Images and videos
+ - Backlinks
+ - Website authority
+ - Search engine rankings
 
 image: /images/Localseo.jpg
 description: "Are you tired of your business being overshadowed by the competition online? Do you want to bring the heat to your business's online presence? Look no further! Read about how local SEO can help."
