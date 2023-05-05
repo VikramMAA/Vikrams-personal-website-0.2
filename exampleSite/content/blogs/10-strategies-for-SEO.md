@@ -26,10 +26,10 @@ tags:
  - Best practices
  - Strategy implementation
 image: /images/10SEO.jpg
-description: "This blog post outlines ten proven strategies to boost your website's SEO. These 10 tips should help you answer the question "How to get organic trafiic to my website""
+description: "This blog post outlines ten proven strategies to boost your website's SEO. These 10 tips should help you answer the question. How to get organic trafiic to my website?"
 toc: 
 ---
-This blog post outlines ten proven strategies to boost your website's SEO. These 10 tips should help you answer the question "How to get organic trafiic to my website"
+This blog post outlines ten proven strategies to boost your website's SEO. These 10 tips should help you answer the question. How to get organic trafiic to my website?
 <!--more-->
 
 
