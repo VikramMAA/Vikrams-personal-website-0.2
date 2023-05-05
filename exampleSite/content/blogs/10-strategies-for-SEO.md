@@ -1,6 +1,6 @@
 ---
 title: "10 Proven Strategies to Boost Your Website's SEO!"
-date: 2023-01-05
+date: 2023-05-05
 draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Vikram M A A"
