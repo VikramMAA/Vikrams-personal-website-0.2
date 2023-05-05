@@ -5,24 +5,26 @@ draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Vikram M A A"
 tags:
-  - Online presence
-  - Personal brand
-  - Business growth
-  - Audience connection
-  - Brand values
-  - Unique selling proposition
-  - Website development
-  - User experience
-  - Mobile responsiveness
-  - Search engine optimization
-  - Content strategy
-  - Valuable content
-  - Blogging
-  - Social media marketing
-  - Audience engagement
-  - Brand promotion
-  - Data analysis
-  - Key performance indicators
+ - SEO
+ - Keyword research
+ - Title tags
+ - Meta descriptions
+ - Content creation
+ - Load speed
+ - Website structure
+ - Navigation
+ - Internal linking
+ - Backlinks
+ - Off-page SEO
+ - Social media
+ - Mobile optimization
+ - Google Analytics
+ - Google Search Console
+ - Organic traffic
+ - Online visibility
+ - Search engine ranking
+ - Best practices
+ - Strategy implementation
 image: /images/10SEO.jpg
 description: "This blog post outlines ten proven strategies to boost your website's SEO. These 10 tips should help you answer the question "How to get organic trafiic to my website""
 toc: 
