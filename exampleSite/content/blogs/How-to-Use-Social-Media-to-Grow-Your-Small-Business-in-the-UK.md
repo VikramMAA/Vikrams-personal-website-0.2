@@ -41,7 +41,6 @@ Want to grow your small business in the UK? Here's how to use social media to do
 
 
 
-How Small Businesses in the UK are Using Social Media to Grow Their Digital Presence and Improve Inbound Leads
 
 Social media is a powerful tool that can help small businesses in the UK grow their digital presence and improve inbound leads. By using social media effectively, businesses can connect with potential customers, build relationships, and drive traffic to their website.
 
