@@ -5,7 +5,7 @@ draft: false
 github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Vikram M A A"
 tags:
-  - Small business success
+ - Small business success
  - Brand image
  - Sell more
  - Online presence
