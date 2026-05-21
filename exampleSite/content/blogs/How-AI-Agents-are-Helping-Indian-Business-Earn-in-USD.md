@@ -14,7 +14,7 @@ tags:
  - Cross-border marketing automation
  - Lead conversion
  - B2B growth
-image: /images/ai-agents-lead-leak.jpg
+image: /images/Autonomous-AI-Agents.png
 description: "Are you losing high-intent international leads because your team is asleep? Discover how autonomous AI agents are fixing the cross-border funnel leak for businesses scaling across global timezones."
 toc: true
 ---
