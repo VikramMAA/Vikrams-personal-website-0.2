@@ -1,198 +1,1106 @@
-baseURL: "https://hugo-profile.netlify.app"
-languageCode: "en-us"
-title: "Vikram M A A - Profile"
-theme: hugo-profile
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikram M A A — Revenue Growth Strategist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-Paginate: 3
-disqusShortname: vikramhere
-googleAnalytics: "G-M2FSBKKG03"
+  :root {
+    --bg: #0a0a08;
+    --bg2: #111110;
+    --bg3: #1a1a18;
+    --text: #f0ede6;
+    --text-muted: #8a877e;
+    --text-dim: #4a4845;
+    --accent: #c8f060;
+    --accent2: #e8d5a0;
+    --border: rgba(240,237,230,0.08);
+    --border-hover: rgba(240,237,230,0.18);
+    --card-bg: #141412;
+  }
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
+  html { scroll-behavior: smooth; }
 
-Menus:
-  main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
-    
- #   - identifier: gallery
-  #    name: Gallery
-   #   title: Blog posts
-    #  url: /gallery
-     # weight: 2
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
 
-    #Dropdown menu
-    # - identifier: dropdown
-    #   title: Example dropdown menu
-    #   name: Dropdown
-    #   weight: 3
-    # - identifier: dropdown1
-    #   title: example dropdown 1
-    #   name: example 1
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 1
-    # - identifier: dropdown2
-    #   title: example dropdown 2
-    #   name: example 2
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 2
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 3rem;
+    backdrop-filter: blur(12px);
+    background: rgba(10,10,8,0.75);
+    border-bottom: 1px solid var(--border);
+  }
 
-params:
-  title: "Vikram M A A - profile"
-  description: "Digital marketing strategist with almost 5 years experience." 
-  # staticPath: ""  # The path to serve the static files from
-  favicon: "/android-chrome-512x512.png"
+  .nav-logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    color: var(--text);
+    text-decoration: none;
+  }
 
-  theme:
-    disableThemeToggle: false
-    # defaultTheme: "light" # dark
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+  }
 
-  # font:
-  #   fontSize: 1.5rem # default: 1rem
-  #   fontWeight: 500 # default: 400
-  #   lineHeight: 1 # default: 1.5
-  #   textAlign: right # default: left
+  .nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.875rem;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
 
-  # color preference
-  # color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
+  .nav-links a:hover { color: var(--text); }
 
-  #   darkmode:
-  #     textColor:
-  #     secondaryTextColor:
-  #     backgroundColor:
-  #     secondaryBackgroundColor:
-  #     primaryColor:
-  #     secondaryColor:
+  .nav-cta {
+    background: var(--accent) !important;
+    color: #0a0a08 !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 100px;
+    font-weight: 500 !important;
+    font-size: 0.8rem !important;
+    transition: opacity 0.2s !important;
+  }
 
-  # If you want to customize the menu, you can change it here
-  # navbar:
-  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+  .nav-cta:hover { opacity: 0.85 !important; }
 
-  #   menus:
-  #     disableAbout: true
-  #     disableExperience: true
-  #     disableEducation: true
-  #     disableProjects: true
-  #     disableAchievements: true
-  #     disableContact: true
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 7rem 3rem 4rem;
+    gap: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 
-  # Hero
-  hero:
-    enable: true
-    intro: "Hi, my name is"
-    title: "Vikram M A A"
-    subtitle: "Digital Marketing Strategist"
-    content: "With almost 5 years of experience I've helped brands achieve sales through social platforms while also growing their digital presence organically and through paid ads."
-    image: /images/Vikpic.jpeg
-    button:
-      enable: true
-      name: "Email me"
-      url: "mailto:vikram_here@outlook.com"
-    socialLinks:
-      fontAwesomeIcons:
-        - icon: fab fa-facebook
-          url: https://www.facebook.com/vikramhere.in
-        - icon: fab fa-instagram
-          url: https://www.instagram.com/vikramhere.in/
-      customIcons:
-        - icon: /linkedin-white.png
-          url: "https://www.linkedin.com/in/vikram-m-a-a-044229150/"
+  .hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
 
-  # About
-  about:
-    enable: true
-    title: "About Me"
-    image: "/images/Vikpic.jpeg"
-    content: |-
-      I am a digital marketing expert who specializes in enabling you to reach your potential customer via social media and good SEO. I enable my clients to reach the perfect target audience to ensure the sale happens. Some of my clients are from the agtech, events & marketing, education & the FMCG industry.
+  .hero-eyebrow-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 2s infinite;
+  }
 
-      I am currently working on a project that will be used to help people find the best way to get their digital marketing carrer started as an agency or freelancer.
-    skills:
-      enable: true
-      title: "Here are a few technologies I've been working with recently:"
-      items:
-        - "SEO"
-        - "Social Media Strategy"
-        - "Designing"
-        - "Web-development"
-        - "Making short movies/videos"
-        - "Ad-campaigns"
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
 
-  # projects
-  #projects:
-   # enable: true
-    #items:
-     # - title: Website for ImagineThis
-      #  content: A portfolio website for an event & marketing company that has organised some of the biggest food & music festivals in India.
-       # image: /images/projects/Imaginethis-vikwebsite.png
-        #featured:
-         # name: Link to site
-          #link: https://imaginethis.in
-        # badges:
-        #   - "Hugo"
-        #   - "Bootstrap"
-        #   - "Javascript"
-      #  links:
-        #  - icon: fa fa-envelope
-       #     url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-      #    - icon: fab fa-github
-      #      url: https://github.com/gurusabarish/hugo-profile
-      #    - icon: fab fa-twitter
-       #     url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+  .hero-eyebrow span {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
 
-#      - title: Niragh Foods
- #       content: Social media strategy, design and execution along with SEO. A strategy that increased engagement by 1600% on facebook within a span of 90 days.
-  #      image: /images/projects/converter.jpg
-   #     featured:
-    #      name: Demo
-     #     link: https://django-converter.herokuapp.com
-        # badges:
-        #   - "Django"
-        #   - "Bootstrap"
- #       links:
-  #        - icon: fab fa-facebook
-   #         url: https://www.facebook.com/NiraghFoods
+  .hero-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+  }
 
-    #  - title: Hugo Profile V2
-     #  image: /images/projects/profile2.jpg
-      #  featured:
-       #   name: Demo V2
-        #  link: https://hugo-profile-2.netlify.app
-        # badges:
-        #   - "Hugo"
-        #   - "Bootstrap"
-        #   - "Javascript"
-   #     links:
-    #      - icon: fab fa-github
-     #       url: https://github.com/gurusabarish/HugoProfileV2
+  .hero-title em {
+    font-style: normal;
+    color: var(--accent);
+  }
 
-  #Contact
-  contact:
-    enable: true
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you asap!
-    email: vikram_here@outlook.com
-    btnName: Mail me
+  .hero-sub {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    max-width: 480px;
+    margin-bottom: 2.5rem;
+  }
 
-  footer:
-    # recentPosts: false
-    socialNetworks:
-     # github: https://github.com
-      linkedin: https://www.linkedin.com/in/vikram-m-a-a-044229150/
-     # twitter: https://twitter.com
-      instagram: https://www.instagram.com/vikramhere.in/
-      facebook: https://www.facebook.com/vikramhere.in
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: #0a0a08;
+    padding: 0.85rem 1.75rem;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+
+  .btn-secondary {
+    border: 1px solid var(--border-hover);
+    color: var(--text);
+    padding: 0.85rem 1.75rem;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .btn-secondary:hover { border-color: var(--accent2); transform: translateY(-1px); }
+
+  /* HERO RIGHT — STATS CARD */
+  .hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .stat-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: border-color 0.2s;
+  }
+
+  .stat-card:hover { border-color: var(--border-hover); }
+
+  .stat-number {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  .stat-card.accent-card {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .stat-card.accent-card .stat-number { color: #0a0a08; }
+  .stat-card.accent-card .stat-label { color: rgba(10,10,8,0.6); }
+
+  .expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1.25rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    padding: 0.35rem 0.85rem;
+    border-radius: 100px;
+    border: 1px solid var(--border-hover);
+    color: var(--text-muted);
+    transition: all 0.2s;
+  }
+
+  .tag:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* DIVIDER LINE */
+  .section-divider {
+    width: 100%;
+    height: 1px;
+    background: var(--border);
+    margin: 0;
+  }
+
+  /* WHO IS THIS FOR */
+  .audience-section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+  }
+
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 3rem;
+  }
+
+  .audience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .audience-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: border-color 0.25s, transform 0.25s;
+    cursor: default;
+  }
+
+  .audience-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-3px);
+  }
+
+  .audience-icon {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+  }
+
+  .icon-green { background: rgba(200, 240, 96, 0.12); }
+  .icon-gold { background: rgba(232, 213, 160, 0.12); }
+  .icon-blue { background: rgba(100, 160, 240, 0.1); }
+
+  .audience-card h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+
+  .audience-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+
+  .audience-link {
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: gap 0.2s;
+  }
+
+  .audience-link:hover { gap: 0.7rem; }
+
+  /* RESULTS SECTION */
+  .results-section {
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .results-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+  }
+
+  .results-header {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+    margin-bottom: 3.5rem;
+  }
+
+  .results-header h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .results-header h2 em { font-style: normal; color: var(--accent); }
+
+  .results-header p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    padding-top: 0.4rem;
+  }
+
+  .results-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .metric-item {
+    background: var(--card-bg);
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .metric-value {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: var(--accent);
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .metric-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  /* EXPERIENCE TIMELINE */
+  .experience-section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+  }
+
+  .experience-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .exp-sidebar h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .exp-sidebar p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .industries-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .industries-list li {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    padding-left: 1rem;
+    position: relative;
+  }
+
+  .industries-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--text-dim);
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+  }
+
+  .timeline-item:last-child { border-bottom: none; }
+
+  .timeline-year {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    letter-spacing: 0.06em;
+    padding-top: 0.2rem;
+  }
+
+  .timeline-content h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .timeline-company {
+    font-size: 0.8rem;
+    color: var(--accent2);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+
+  .timeline-content p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .timeline-badge {
+    display: inline-block;
+    background: rgba(200, 240, 96, 0.12);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 100px;
+    margin-top: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+
+  /* SKILLS SECTION */
+  .skills-section {
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+  }
+
+  .skills-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .skills-inner h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+
+  .skills-inner > div:first-child p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .skill-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .skill-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .skill-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+  }
+
+  .skill-name { color: var(--text); }
+  .skill-pct { color: var(--text-dim); }
+
+  .skill-bar-bg {
+    height: 3px;
+    background: var(--border);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+
+  .skill-bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 100px;
+    transition: width 1s ease;
+  }
+
+  /* BLOG TEASER */
+  .blog-section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+  }
+
+  .blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2.5rem;
+  }
+
+  .blog-header h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
+  .blog-header a {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: color 0.2s;
+  }
+
+  .blog-header a:hover { color: var(--accent); }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .blog-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.75rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .blog-card:hover { border-color: var(--border-hover); transform: translateY(-2px); }
+
+  .blog-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent2);
+  }
+
+  .blog-card h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text);
+  }
+
+  .blog-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    flex: 1;
+  }
+
+  .blog-arrow {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s, gap 0.2s;
+  }
+
+  .blog-card:hover .blog-arrow { color: var(--accent); gap: 0.7rem; }
+
+  /* CONTACT */
+  .contact-section {
+    background: var(--accent);
+    color: #0a0a08;
+  }
+
+  .contact-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .contact-inner h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+
+  .contact-inner p {
+    font-size: 0.95rem;
+    color: rgba(10,10,8,0.65);
+    line-height: 1.7;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-link-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: rgba(10,10,8,0.08);
+    border-radius: 14px;
+    text-decoration: none;
+    color: #0a0a08;
+    transition: background 0.2s;
+  }
+
+  .contact-link-item:hover { background: rgba(10,10,8,0.14); }
+
+  .contact-link-icon {
+    font-size: 1.1rem;
+  }
+
+  .contact-link-label {
+    flex: 1;
+  }
+
+  .contact-link-label strong {
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .contact-link-label span {
+    font-size: 0.8rem;
+    color: rgba(10,10,8,0.55);
+  }
+
+  .contact-link-arrow {
+    font-size: 0.9rem;
+    color: rgba(10,10,8,0.4);
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .footer-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+
+  .footer-links a {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--text-muted); }
+
+  /* SCROLL ANIMATIONS */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .hero { grid-template-columns: 1fr; padding: 6rem 1.5rem 3rem; }
+    .hero-right { display: none; }
+    .audience-grid, .results-metrics, .blog-grid { grid-template-columns: 1fr; }
+    .results-metrics { border-radius: 16px; }
+    .results-header, .experience-grid, .skills-inner, .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .audience-section, .results-inner, .experience-section, .skills-inner, .blog-section, .contact-inner { padding: 3.5rem 1.5rem; }
+    footer { flex-direction: column; gap: 1rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">VIKRAM M.A.A</a>
+  <ul class="nav-links">
+    <li><a href="#results">Results</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#blog">Insights</a></li>
+    <li><a href="#contact" class="nav-cta">Work with me</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-dot"></div>
+      <span>Available for select engagements</span>
+    </div>
+    <h1 class="hero-title">
+      Marketing that<br>moves the <em>revenue</em><br>needle.
+    </h1>
+    <p class="hero-sub">
+      I'm Vikram — a Revenue Growth Strategist with almost 9 years helping B2B and service businesses turn their marketing into a predictable growth engine. Based in Bengaluru.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Let's talk →</a>
+      <a href="#results" class="btn-secondary">See results ↓</a>
+    </div>
+  </div>
+  <div class="hero-right reveal">
+    <div class="stat-grid">
+      <div class="stat-card accent-card">
+        <div class="stat-number">2.7×</div>
+        <div class="stat-label">Revenue increase delivered in 3 months</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">9yrs</div>
+        <div class="stat-label">Hands-on digital marketing experience</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">72%</div>
+        <div class="stat-label">Improvement in customer retention rate</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">40%+</div>
+        <div class="stat-label">MQL-to-SQL conversion uplift</div>
+      </div>
+    </div>
+    <div class="expertise-tags">
+      <span class="tag">Performance Marketing</span>
+      <span class="tag">Revenue Strategy</span>
+      <span class="tag">Lead Generation</span>
+      <span class="tag">HubSpot</span>
+      <span class="tag">Meta & Google Ads</span>
+      <span class="tag">SEO / SEM</span>
+      <span class="tag">Marketing Automation</span>
+      <span class="tag">GA4 & GTM</span>
+      <span class="tag">B2B Growth</span>
+      <span class="tag">Content Strategy</span>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- WHO IS THIS FOR -->
+<section class="audience-section">
+  <p class="section-label">Who I work with</p>
+  <div class="audience-grid">
+    <div class="audience-card reveal">
+      <div class="audience-icon icon-green">🏢</div>
+      <h3>Hiring full-time?</h3>
+      <p>I bring CMO-level strategic thinking with the hands-on execution of a performance marketer. If you need someone who can lead your marketing function and drive measurable pipeline growth, let's talk.</p>
+      <a href="mailto:vikram_here@outlook.com" class="audience-link">Request my résumé →</a>
+    </div>
+    <div class="audience-card reveal">
+      <div class="audience-icon icon-gold">⚡</div>
+      <h3>Need a consultant?</h3>
+      <p>From go-to-market strategy and campaign audits to lead generation systems and attribution modelling — I embed with your team and drive results without the overhead of a full-time hire.</p>
+      <a href="#contact" class="audience-link">Explore a project →</a>
+    </div>
+    <div class="audience-card reveal">
+      <div class="audience-icon icon-blue">📖</div>
+      <h3>Here to learn?</h3>
+      <p>I write about B2B marketing, lead gen, and digital strategy for founders and marketers. Practical, no-fluff frameworks from campaigns I've actually run.</p>
+      <a href="/blogs" class="audience-link">Browse the blog →</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- RESULTS -->
+<section class="results-section" id="results">
+  <div class="results-inner">
+    <div class="results-header reveal">
+      <h2>Results that<br>speak <em>for themselves.</em></h2>
+      <p>I don't just run campaigns — I build revenue systems. Every engagement is measured against one metric: did it move the business forward? Here's the proof of concept across industries and company stages.</p>
+    </div>
+    <div class="results-metrics reveal">
+      <div class="metric-item">
+        <span class="metric-value">3×</span>
+        <span class="metric-desc">Revenue growth at Kia Kaha MMA Academy in under 90 days</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">2.8×</span>
+        <span class="metric-desc">Marketing ROI improvement — Digital Impact Award winner</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">45%</span>
+        <span class="metric-desc">Campaign performance uplift via cross-functional alignment</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">35%</span>
+        <span class="metric-desc">Reduction in user acquisition costs through performance SEO</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience-section" id="experience">
+  <div class="experience-grid">
+    <div class="exp-sidebar reveal">
+      <h2>Almost a decade of building growth.</h2>
+      <p>From agriculture to SaaS, MMA to edtech — I've led marketing across radically different industries. That breadth is the edge.</p>
+      <p class="section-label" style="margin-bottom: 0.75rem; margin-top: 1.5rem;">Industries</p>
+      <ul class="industries-list">
+        <li>SaaS & Technology</li>
+        <li>EdTech</li>
+        <li>Health & Fitness</li>
+        <li>Agriculture & AgTech</li>
+        <li>Retail & FMCG</li>
+        <li>Events & Experiential</li>
+      </ul>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2024 – Present</div>
+        <div class="timeline-content">
+          <h3>Growth Strategist & Marketing Leader</h3>
+          <div class="timeline-company">ProductNOVA</div>
+          <p>Leading revenue strategy and go-to-market for a B2B growth consultancy. Built self-sustaining lead gen systems, developed ICP playbooks for SaaS, edtech, and climate tech verticals, and increased product revenue by 2.7× in 3 months.</p>
+          <span class="timeline-badge">2.7× Revenue Growth</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2024</div>
+        <div class="timeline-content">
+          <h3>Head of Marketing & Business Growth</h3>
+          <div class="timeline-company">Kia Kaha MMA Academy</div>
+          <p>Full P&L responsibility. Drove a 3× revenue increase in under 3 months via a full marketing overhaul — performance campaigns, SEO, content, and lifecycle automation achieving 72% retention improvement.</p>
+          <span class="timeline-badge">3× Revenue in 90 Days</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2022</div>
+        <div class="timeline-content">
+          <h3>BDM & Brand Strategist</h3>
+          <div class="timeline-company">Digital Refresh Networks</div>
+          <p>Strategic brand development and digital campaign management for enterprise retail clients. Maximised campaign ROI through creative-analytics collaboration and expanded market reach through strategic partnerships.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2017 – 2022</div>
+        <div class="timeline-content">
+          <h3>Head of Marketing & Compliance</h3>
+          <div class="timeline-company">Mapletree Farms Pvt Ltd</div>
+          <p>5-year tenure leading integrated offline and digital marketing in the agricultural sector. Built foundational marketing systems, drove consistent lead generation, and aligned compliance operations with marketing strategy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SKILLS -->
+<section class="skills-section" id="skills">
+  <div class="skills-inner">
+    <div class="reveal">
+      <p class="section-label">Core competencies</p>
+      <h2>Where I'm strongest</h2>
+      <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-top: 0.75rem;">
+        A rare combination of strategic and technical depth — I can set the vision and then go execute it myself.
+      </p>
+    </div>
+    <div class="skill-bars reveal">
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">Revenue & Growth Strategy</span><span class="skill-pct">95%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">Performance Marketing (Meta, Google)</span><span class="skill-pct">90%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">SEO / Content Strategy</span><span class="skill-pct">88%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">Marketing Automation (HubSpot)</span><span class="skill-pct">85%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">Analytics & Attribution (GA4, GTM)</span><span class="skill-pct">85%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">Team Leadership & Cross-Functional Alignment</span><span class="skill-pct">80%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog-section" id="blog">
+  <div class="blog-header reveal">
+    <h2>Latest Insights</h2>
+    <a href="/blogs">View all posts →</a>
+  </div>
+  <div class="blog-grid">
+    <a href="/blogs" class="blog-card reveal">
+      <span class="blog-tag">Lead Generation</span>
+      <h3>Why your fitness business isn't converting leads — and how to fix it</h3>
+      <p>A framework for turning your social presence into a predictable pipeline of paying clients.</p>
+      <span class="blog-arrow">Read more →</span>
+    </a>
+    <a href="/blogs" class="blog-card reveal">
+      <span class="blog-tag">B2B Strategy</span>
+      <h3>How I doubled MQL-to-SQL conversion rates without changing ad spend</h3>
+      <p>Process and messaging changes that move prospects faster through the funnel — no extra budget required.</p>
+      <span class="blog-arrow">Read more →</span>
+    </a>
+    <a href="/blogs" class="blog-card reveal">
+      <span class="blog-tag">Agency & Freelance</span>
+      <h3>Starting a digital marketing career: agency, freelance, or in-house?</h3>
+      <p>Nine years in, here's how I'd approach the decision again with everything I know now.</p>
+      <span class="blog-arrow">Read more →</span>
+    </a>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="reveal">
+      <h2>Let's build something that grows.</h2>
+      <p>Whether you're looking to hire, collaborate, or just pick my brain — my inbox is always open. I typically respond within 24 hours.</p>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:vikram_here@outlook.com" class="contact-link-item">
+        <span class="contact-link-icon">✉️</span>
+        <div class="contact-link-label">
+          <strong>Email me directly</strong>
+          <span>vikram_here@outlook.com</span>
+        </div>
+        <span class="contact-link-arrow">→</span>
+      </a>
+      <a href="https://www.linkedin.com/in/vikram-m-a-a-044229150/" target="_blank" class="contact-link-item">
+        <span class="contact-link-icon">💼</span>
+        <div class="contact-link-label">
+          <strong>Connect on LinkedIn</strong>
+          <span>View my full profile & recommendations</span>
+        </div>
+        <span class="contact-link-arrow">→</span>
+      </a>
+      <a href="https://www.instagram.com/vikramhere.in/" target="_blank" class="contact-link-item">
+        <span class="contact-link-icon">📸</span>
+        <div class="contact-link-label">
+          <strong>Follow on Instagram</strong>
+          <span>@vikramhere.in — marketing insights & behind the scenes</span>
+        </div>
+        <span class="contact-link-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-name">Vikram M A A — Bengaluru, India</span>
+  <ul class="footer-links">
+    <li><a href="https://www.linkedin.com/in/vikram-m-a-a-044229150/" target="_blank">LinkedIn</a></li>
+    <li><a href="https://www.instagram.com/vikramhere.in/" target="_blank">Instagram</a></li>
+    <li><a href="https://www.facebook.com/vikramhere.in" target="_blank">Facebook</a></li>
+    <li><a href="mailto:vikram_here@outlook.com">Email</a></li>
+  </ul>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
