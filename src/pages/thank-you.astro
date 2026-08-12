@@ -43,7 +43,12 @@ import { contact } from '../data/site';
     justify-content: center;
   }
 
-  .centered a {
+  /*
+    Scoped to the paragraph links on purpose. A bare `.centered a` also hits the
+    buttons in .btn-row, and painting a primary button's text --accent makes it
+    invisible against its --accent background.
+  */
+  .centered .lede a {
     color: var(--accent);
   }
 </style>
