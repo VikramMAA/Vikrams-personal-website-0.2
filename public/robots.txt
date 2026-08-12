@@ -51,4 +51,4 @@ Allow: /
 # Do not index the post-submission confirmation page.
 Disallow: /thank-you/
 
-Sitemap: https://vikramaa.com/sitemap-index.xml
+Sitemap: https://vikramhere.com/sitemap-index.xml

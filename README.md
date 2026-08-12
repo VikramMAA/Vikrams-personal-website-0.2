@@ -142,7 +142,7 @@ banner.
    | Variable | Required | What it is |
    | --- | --- | --- |
    | `RESEND_API_KEY` | Yes | The key from step 2 |
-   | `CONTACT_FROM_EMAIL` | Yes | Sender, on the verified domain — e.g. `Vikram M A A Website <website@vikramaa.com>` |
+   | `CONTACT_FROM_EMAIL` | Yes | Sender, on the verified domain — e.g. `Vikram M A A Website <website@vikramhere.com>` |
    | `CONTACT_TO_EMAIL` | No | Where enquiries land. Defaults to the address in the function |
 
    Redeploy after adding them; functions only pick up new variables on a fresh

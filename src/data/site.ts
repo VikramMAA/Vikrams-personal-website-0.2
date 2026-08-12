@@ -10,7 +10,7 @@
 
 export const site = {
   /** Must match `site` in astro.config.mjs. Used for canonicals + JSON-LD. */
-  url: 'https://vikramaa.com',
+  url: 'https://vikramhere.com',
   name: 'Vikram M A A',
   /** Shown in the browser tab after the page title. */
   brand: 'Vikram M A A',

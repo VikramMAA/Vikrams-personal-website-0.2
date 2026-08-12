@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 // IMPORTANT: change `site` to your real domain before going live.
 // Everything SEO-related (canonicals, sitemap, JSON-LD, OG tags) is derived from it.
 export default defineConfig({
-  site: 'https://vikramaa.com',
+  site: 'https://vikramhere.com',
   trailingSlash: 'always',
   integrations: [
     sitemap({

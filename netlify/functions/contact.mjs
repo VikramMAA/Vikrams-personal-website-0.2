@@ -12,7 +12,7 @@
  *
  *   RESEND_API_KEY      An API key from https://resend.com/api-keys
  *   CONTACT_FROM_EMAIL  Sender address on a domain verified in Resend,
- *                       e.g. "Vikram M A A <website@vikramaa.com>"
+ *                       e.g. "Vikram M A A <website@vikramhere.com>"
  *   CONTACT_TO_EMAIL    Where enquiries land. Defaults to the address below.
  */
 
