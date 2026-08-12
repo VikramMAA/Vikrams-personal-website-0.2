@@ -1,0 +1,34 @@
+{
+  "domain": "vikramhere.com",
+  "business_name": "Vikram M A A",
+  "business_model": "hybrid",
+  "description": "Solo freelance digital marketing consultant with 10 years experience. Sells consulting retainers and project work to businesses in Indian tier 1 cities, plus some overseas client work.",
+  "primary_market": "Bengaluru, Karnataka, India",
+  "secondary_markets": [
+    "Mumbai",
+    "Delhi NCR",
+    "Hyderabad",
+    "Chennai",
+    "Pune",
+    "Kolkata",
+    "Ahmedabad"
+  ],
+  "physical_address": false,
+  "service_area_business": true,
+  "services": [
+    "SEO",
+    "Performance Marketing",
+    "Social Media Marketing",
+    "Content Marketing",
+    "Lead Generation",
+    "Marketing and Sales Training"
+  ],
+  "competitors": [
+    "eeatminds.in",
+    "dileepkumardigital.com",
+    "mrkhan.digital",
+    "aravindsubramanian.com",
+    "digitalwithsbn.com"
+  ],
+  "notes": "One person. Cannot support a 400 page city matrix. Bengaluru is the only city where a map pack play is realistic. Other tier 1 cities are organic-only plays."
+}

@@ -1,0 +1,209 @@
+{
+  "digital marketing consultant bengaluru": {
+    "map_pack": true,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["listicle", "directory", "homepage", "service_page"],
+    "small_sites_rank": true,
+    "forums_rank": false,
+    "directories_dominate": false,
+    "all_big_brands": false,
+    "note": "SERP is individual freelancer homepages plus 'top 10 freelancer' listicles. Winnable for a personal brand site."
+  },
+  "freelance digital marketer": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["listicle", "directory", "homepage"],
+    "small_sites_rank": true,
+    "forums_rank": false,
+    "directories_dominate": true,
+    "all_big_brands": false
+  },
+  "digital marketing consultant cost india": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog", "listicle"],
+    "small_sites_rank": true,
+    "forums_rank": false,
+    "directories_dominate": false,
+    "all_big_brands": false,
+    "note": "Entirely agency blog posts hedging on numbers. A post that states real ranges wins the citation."
+  },
+  "how much does digital marketing cost in india": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog"],
+    "small_sites_rank": true,
+    "forums_rank": false,
+    "directories_dominate": false,
+    "all_big_brands": false
+  },
+  "google business profile optimisation": {
+    "map_pack": true,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog", "official_docs", "listicle"],
+    "small_sites_rank": true,
+    "forums_rank": false,
+    "directories_dominate": false,
+    "all_big_brands": true,
+    "note": "Google's own help doc and Shopify rank top. Beatable only on India-specific angles."
+  },
+  "how to rank on google maps india": {
+    "map_pack": true,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog", "listicle"],
+    "small_sites_rank": true,
+    "forums_rank": false,
+    "directories_dominate": false,
+    "all_big_brands": false
+  },
+  "ai search optimisation": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog", "listicle"],
+    "small_sites_rank": true,
+    "forums_rank": true,
+    "directories_dominate": false,
+    "all_big_brands": false,
+    "note": "Wide open. Almost all results are agency blogs published in 2026 with near-identical advice."
+  },
+  "how to rank in chatgpt": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog"],
+    "small_sites_rank": true,
+    "forums_rank": true,
+    "directories_dominate": false,
+    "all_big_brands": false
+  },
+  "d2c marketing india": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog", "listicle"],
+    "small_sites_rank": true,
+    "forums_rank": false,
+    "directories_dominate": false,
+    "all_big_brands": false,
+    "note": "Agency playbook posts. Real spend numbers and benchmarks are the differentiator."
+  },
+  "cac calculation": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog", "official_docs"],
+    "small_sites_rank": true,
+    "forums_rank": false,
+    "directories_dominate": false,
+    "all_big_brands": true
+  },
+  "b2b lead generation india": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["directory", "listicle", "blog"],
+    "small_sites_rank": false,
+    "forums_rank": false,
+    "directories_dominate": true,
+    "all_big_brands": true,
+    "note": "Semrush agency directory and 'top 10 agencies' pages own this. Skip the head term, go long tail."
+  },
+  "b2b lead generation strategies 2026": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog"],
+    "small_sites_rank": true,
+    "forums_rank": false,
+    "directories_dominate": false,
+    "all_big_brands": false
+  },
+  "how to choose a digital marketing agency": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog", "listicle"],
+    "small_sites_rank": true,
+    "forums_rank": true,
+    "directories_dominate": false,
+    "all_big_brands": false
+  },
+  "seo consultant bengaluru": {
+    "map_pack": true,
+    "ai_overview": false,
+    "paa": true,
+    "top_page_types": ["homepage", "service_page", "listicle"],
+    "small_sites_rank": true,
+    "forums_rank": false,
+    "directories_dominate": false,
+    "all_big_brands": false
+  },
+  "seo consultant mumbai": {
+    "map_pack": true,
+    "ai_overview": false,
+    "paa": true,
+    "top_page_types": ["service_page", "directory", "listicle"],
+    "small_sites_rank": false,
+    "forums_rank": false,
+    "directories_dominate": true,
+    "all_big_brands": false,
+    "note": "Out-of-city consultant with no local presence will not crack the map pack. Organic only."
+  },
+  "how long does seo take to show results": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog"],
+    "small_sites_rank": true,
+    "forums_rank": true,
+    "directories_dominate": false,
+    "all_big_brands": true
+  },
+  "cold email deliverability": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog", "product"],
+    "small_sites_rank": true,
+    "forums_rank": true,
+    "directories_dominate": false,
+    "all_big_brands": true
+  },
+  "whatsapp business api cost india": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog", "product", "official_docs"],
+    "small_sites_rank": true,
+    "forums_rank": false,
+    "directories_dominate": false,
+    "all_big_brands": true
+  },
+  "does google penalise ai content": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog", "official_docs", "forum"],
+    "small_sites_rank": true,
+    "forums_rank": true,
+    "directories_dominate": false,
+    "all_big_brands": true
+  },
+  "ai overviews traffic drop": {
+    "map_pack": false,
+    "ai_overview": true,
+    "paa": true,
+    "top_page_types": ["blog", "forum"],
+    "small_sites_rank": true,
+    "forums_rank": true,
+    "directories_dominate": false,
+    "all_big_brands": false
+  }
+}

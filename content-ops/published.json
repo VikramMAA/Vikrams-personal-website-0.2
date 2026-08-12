@@ -1,0 +1,17 @@
+{
+  "_comment": "Append one entry per published article. next_brief.py reads this to avoid repeats and to space out cities and topics, and the writer reads the last ten titles and opening patterns to avoid writing the same post twice.",
+  "posts": [
+    {
+      "brief_id": "b-001",
+      "slug": "google-business-profile-settings-bengaluru",
+      "title": "The Google Business Profile settings most Bengaluru businesses never touch",
+      "primary_keyword": "google business profile optimisation india",
+      "city": "Bengaluru",
+      "tags": ["Local SEO", "Google Business Profile", "Bengaluru"],
+      "slot": "morning",
+      "published_at": "2026-08-12",
+      "opening_pattern": "direct instruction to the reader — go open your profile right now",
+      "word_count": 1212
+    }
+  ]
+}

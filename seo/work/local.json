@@ -1,0 +1,565 @@
+{
+  "nap": {
+    "name": "Vikram M A A",
+    "address": "Service-area business \u2014 no public street address",
+    "city": "Bengaluru",
+    "region": "Karnataka",
+    "country": "India",
+    "phone": "+91 70199 90776"
+  },
+  "gbp": {
+    "status": "Set up as a service-area business, not a storefront",
+    "primary_category": "Marketing consultant",
+    "secondary_categories": [
+      "Internet marketing service",
+      "Marketing agency"
+    ],
+    "service_areas": [
+      "Bengaluru",
+      "Karnataka"
+    ],
+    "notes": "Proximity is the one local ranking factor that cannot be bought. Bengaluru is the only city where the map pack is realistically in play. Do not create GBP listings for cities without a real presence \u2014 it is a suspension risk and it is the single most common way local SEO for consultants gets torched."
+  },
+  "coverage_grid": [
+    {
+      "service": "digital marketing consultant",
+      "location": "Bengaluru",
+      "recommended": "dedicated_page",
+      "reason": "Home market. Real proximity signal, and there is genuinely city-specific work to point at."
+    },
+    {
+      "service": "seo consultant",
+      "location": "Bengaluru",
+      "recommended": "dedicated_page",
+      "reason": "Home market. Real proximity signal, and there is genuinely city-specific work to point at."
+    },
+    {
+      "service": "performance marketing consultant",
+      "location": "Bengaluru",
+      "recommended": "dedicated_page",
+      "reason": "Home market. Real proximity signal, and there is genuinely city-specific work to point at."
+    },
+    {
+      "service": "google ads expert",
+      "location": "Bengaluru",
+      "recommended": "dedicated_page",
+      "reason": "Home market. Real proximity signal, and there is genuinely city-specific work to point at."
+    },
+    {
+      "service": "meta ads expert",
+      "location": "Bengaluru",
+      "recommended": "dedicated_page",
+      "reason": "Home market. Real proximity signal, and there is genuinely city-specific work to point at."
+    },
+    {
+      "service": "social media marketing consultant",
+      "location": "Bengaluru",
+      "recommended": "dedicated_page",
+      "reason": "Home market. Real proximity signal, and there is genuinely city-specific work to point at."
+    },
+    {
+      "service": "content marketing consultant",
+      "location": "Bengaluru",
+      "recommended": "dedicated_page",
+      "reason": "Home market. Real proximity signal, and there is genuinely city-specific work to point at."
+    },
+    {
+      "service": "lead generation consultant",
+      "location": "Bengaluru",
+      "recommended": "dedicated_page",
+      "reason": "Home market. Real proximity signal, and there is genuinely city-specific work to point at."
+    },
+    {
+      "service": "local seo services",
+      "location": "Bengaluru",
+      "recommended": "dedicated_page",
+      "reason": "Home market. Real proximity signal, and there is genuinely city-specific work to point at."
+    },
+    {
+      "service": "digital marketing consultant",
+      "location": "Mumbai",
+      "recommended": "dedicated_page",
+      "reason": "One hub page per city. Organic only. No GBP listing without a real address there."
+    },
+    {
+      "service": "seo consultant",
+      "location": "Mumbai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "performance marketing consultant",
+      "location": "Mumbai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "google ads expert",
+      "location": "Mumbai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "meta ads expert",
+      "location": "Mumbai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "social media marketing consultant",
+      "location": "Mumbai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "content marketing consultant",
+      "location": "Mumbai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "lead generation consultant",
+      "location": "Mumbai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "local seo services",
+      "location": "Mumbai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "digital marketing consultant",
+      "location": "Delhi NCR",
+      "recommended": "dedicated_page",
+      "reason": "One hub page per city. Organic only. No GBP listing without a real address there."
+    },
+    {
+      "service": "seo consultant",
+      "location": "Delhi NCR",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "performance marketing consultant",
+      "location": "Delhi NCR",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "google ads expert",
+      "location": "Delhi NCR",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "meta ads expert",
+      "location": "Delhi NCR",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "social media marketing consultant",
+      "location": "Delhi NCR",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "content marketing consultant",
+      "location": "Delhi NCR",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "lead generation consultant",
+      "location": "Delhi NCR",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "local seo services",
+      "location": "Delhi NCR",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "digital marketing consultant",
+      "location": "Gurgaon",
+      "recommended": "dedicated_page",
+      "reason": "One hub page per city. Organic only. No GBP listing without a real address there."
+    },
+    {
+      "service": "seo consultant",
+      "location": "Gurgaon",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "performance marketing consultant",
+      "location": "Gurgaon",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "google ads expert",
+      "location": "Gurgaon",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "meta ads expert",
+      "location": "Gurgaon",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "social media marketing consultant",
+      "location": "Gurgaon",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "content marketing consultant",
+      "location": "Gurgaon",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "lead generation consultant",
+      "location": "Gurgaon",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "local seo services",
+      "location": "Gurgaon",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "digital marketing consultant",
+      "location": "Noida",
+      "recommended": "dedicated_page",
+      "reason": "One hub page per city. Organic only. No GBP listing without a real address there."
+    },
+    {
+      "service": "seo consultant",
+      "location": "Noida",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "performance marketing consultant",
+      "location": "Noida",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "google ads expert",
+      "location": "Noida",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "meta ads expert",
+      "location": "Noida",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "social media marketing consultant",
+      "location": "Noida",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "content marketing consultant",
+      "location": "Noida",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "lead generation consultant",
+      "location": "Noida",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "local seo services",
+      "location": "Noida",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "digital marketing consultant",
+      "location": "Hyderabad",
+      "recommended": "dedicated_page",
+      "reason": "One hub page per city. Organic only. No GBP listing without a real address there."
+    },
+    {
+      "service": "seo consultant",
+      "location": "Hyderabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "performance marketing consultant",
+      "location": "Hyderabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "google ads expert",
+      "location": "Hyderabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "meta ads expert",
+      "location": "Hyderabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "social media marketing consultant",
+      "location": "Hyderabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "content marketing consultant",
+      "location": "Hyderabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "lead generation consultant",
+      "location": "Hyderabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "local seo services",
+      "location": "Hyderabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "digital marketing consultant",
+      "location": "Chennai",
+      "recommended": "dedicated_page",
+      "reason": "One hub page per city. Organic only. No GBP listing without a real address there."
+    },
+    {
+      "service": "seo consultant",
+      "location": "Chennai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "performance marketing consultant",
+      "location": "Chennai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "google ads expert",
+      "location": "Chennai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "meta ads expert",
+      "location": "Chennai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "social media marketing consultant",
+      "location": "Chennai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "content marketing consultant",
+      "location": "Chennai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "lead generation consultant",
+      "location": "Chennai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "local seo services",
+      "location": "Chennai",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "digital marketing consultant",
+      "location": "Pune",
+      "recommended": "dedicated_page",
+      "reason": "One hub page per city. Organic only. No GBP listing without a real address there."
+    },
+    {
+      "service": "seo consultant",
+      "location": "Pune",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "performance marketing consultant",
+      "location": "Pune",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "google ads expert",
+      "location": "Pune",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "meta ads expert",
+      "location": "Pune",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "social media marketing consultant",
+      "location": "Pune",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "content marketing consultant",
+      "location": "Pune",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "lead generation consultant",
+      "location": "Pune",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "local seo services",
+      "location": "Pune",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "digital marketing consultant",
+      "location": "Kolkata",
+      "recommended": "dedicated_page",
+      "reason": "One hub page per city. Organic only. No GBP listing without a real address there."
+    },
+    {
+      "service": "seo consultant",
+      "location": "Kolkata",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "performance marketing consultant",
+      "location": "Kolkata",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "google ads expert",
+      "location": "Kolkata",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "meta ads expert",
+      "location": "Kolkata",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "social media marketing consultant",
+      "location": "Kolkata",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "content marketing consultant",
+      "location": "Kolkata",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "lead generation consultant",
+      "location": "Kolkata",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "local seo services",
+      "location": "Kolkata",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "digital marketing consultant",
+      "location": "Ahmedabad",
+      "recommended": "dedicated_page",
+      "reason": "One hub page per city. Organic only. No GBP listing without a real address there."
+    },
+    {
+      "service": "seo consultant",
+      "location": "Ahmedabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "performance marketing consultant",
+      "location": "Ahmedabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "google ads expert",
+      "location": "Ahmedabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "meta ads expert",
+      "location": "Ahmedabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "social media marketing consultant",
+      "location": "Ahmedabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "content marketing consultant",
+      "location": "Ahmedabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "lead generation consultant",
+      "location": "Ahmedabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    },
+    {
+      "service": "local seo services",
+      "location": "Ahmedabad",
+      "recommended": "mention_only",
+      "reason": "Doorway risk. Covered by the city hub page plus the national service page. Nothing city-specific to say about this service here."
+    }
+  ]
+}

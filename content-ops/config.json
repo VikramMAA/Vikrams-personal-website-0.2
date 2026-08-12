@@ -1,0 +1,18 @@
+{
+  "publish_branch": "master",
+  "content_dir": "src/content/blog",
+  "word_count": { "min": 900, "target": 1200, "max": 1400 },
+  "slots": {
+    "morning": {
+      "local_time": "08:00 IST",
+      "shape": "practical and tactical. Something the reader can act on before lunch."
+    },
+    "evening": {
+      "local_time": "19:00 IST",
+      "shape": "opinion, analysis or story. Something the reader argues with or forwards."
+    }
+  },
+  "refill_threshold": 10,
+  "author": "Vikram M A A",
+  "site": "https://vikramhere.com"
+}

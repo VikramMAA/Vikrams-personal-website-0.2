@@ -1,0 +1,11 @@
+Bengaluru|KA|Karnataka|Indiranagar,Koramangala,Whitefield,HSR Layout,Jayanagar,Hebbal,Electronic City|560001,560038,560066|primary
+Bangalore|KA|Karnataka|Indiranagar,Koramangala,Whitefield,HSR Layout|560001|primary
+Mumbai|MH|Maharashtra|Andheri,Bandra,Powai,Lower Parel,Thane|400001,400053|secondary
+Delhi|DL|Delhi|Connaught Place,Saket,Dwarka,Rohini|110001|secondary
+Gurgaon|HR|Haryana|Cyber City,Golf Course Road,Sohna Road|122001|secondary
+Noida|UP|Uttar Pradesh|Sector 62,Sector 18|201301|secondary
+Hyderabad|TS|Telangana|Gachibowli,Hitec City,Banjara Hills,Madhapur|500032|secondary
+Chennai|TN|Tamil Nadu|T Nagar,Adyar,OMR,Velachery|600001|secondary
+Pune|MH|Maharashtra|Kharadi,Baner,Hinjewadi,Koregaon Park|411001|secondary
+Kolkata|WB|West Bengal|Salt Lake,Park Street,New Town|700001|secondary
+Ahmedabad|GJ|Gujarat|Satellite,Prahlad Nagar,SG Highway|380015|secondary

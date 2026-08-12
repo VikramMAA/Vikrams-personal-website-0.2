@@ -1,0 +1,15 @@
+{
+  "data_sources": [
+    "Live SERP checks via web search on 20 head terms and cluster primaries (August 2026)",
+    "Competitor site structure — five Bengaluru solo-consultant sites ranking for the home-market terms",
+    "Site inventory read directly from the Astro repo",
+    "Category and pricing language pulled from ranking Indian agency pages"
+  ],
+  "confidence": "Medium-high on intent and winnability, which are SERP-backed. Low on volume, which is not measured at all.",
+  "limitations": [
+    "No Google Search Console access. Nothing here is ground truth about what the site already ranks for, and the quick-win band is therefore almost empty. Connect GSC and rescore — positions 8 to 25 are the fastest wins on any site and they are invisible right now.",
+    "No paid keyword tool. Demand tiers are inferred from phrasing and SERP shape, not from volume data. No volume number appears anywhere in this plan on purpose.",
+    "SERP checks ran from a US-located search index. Indian SERPs will differ, particularly on map pack composition and which local agencies rank. Treat city-level winnability as directional.",
+    "The 83 parked clusters are parked on a judgment call about what one consultant can credibly service, not on measured difficulty."
+  ]
+}

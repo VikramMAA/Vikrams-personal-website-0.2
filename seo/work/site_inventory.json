@@ -1,0 +1,170 @@
+[
+  {
+    "url": "/",
+    "title": "Digital Marketing Consultant",
+    "page_type": "homepage",
+    "apparent_topic": "Vikram M A A, digital marketing consultant, Bengaluru"
+  },
+  {
+    "url": "/services/seo/",
+    "title": "Seo",
+    "page_type": "service",
+    "apparent_topic": "seo"
+  },
+  {
+    "url": "/services/performance-marketing/",
+    "title": "Performance Marketing",
+    "page_type": "service",
+    "apparent_topic": "performance marketing"
+  },
+  {
+    "url": "/services/social-media-marketing/",
+    "title": "Social Media Marketing",
+    "page_type": "service",
+    "apparent_topic": "social media marketing"
+  },
+  {
+    "url": "/services/content-marketing/",
+    "title": "Content Marketing",
+    "page_type": "service",
+    "apparent_topic": "content marketing"
+  },
+  {
+    "url": "/services/lead-generation/",
+    "title": "Lead Generation",
+    "page_type": "service",
+    "apparent_topic": "lead generation"
+  },
+  {
+    "url": "/services/marketing-sales-training/",
+    "title": "Marketing Sales Training",
+    "page_type": "service",
+    "apparent_topic": "marketing sales training"
+  },
+  {
+    "url": "/services/",
+    "title": "Services",
+    "page_type": "category",
+    "apparent_topic": "service index"
+  },
+  {
+    "url": "/about/",
+    "title": "About",
+    "page_type": "about",
+    "apparent_topic": "bio, experience, entity facts"
+  },
+  {
+    "url": "/results/",
+    "title": "Results",
+    "page_type": "case_studies",
+    "apparent_topic": "case studies"
+  },
+  {
+    "url": "/contact/",
+    "title": "Contact",
+    "page_type": "contact",
+    "apparent_topic": "enquiry"
+  },
+  {
+    "url": "/blog/",
+    "title": "Blog",
+    "page_type": "blog_index",
+    "apparent_topic": "article index"
+  },
+  {
+    "url": "/blog/10-strategies-for-SEO/",
+    "title": "10 Proven Strategies to Boost Your Website's SEO!",
+    "page_type": "blog",
+    "apparent_topic": "10 strategies for SEO"
+  },
+  {
+    "url": "/blog/5-easy-tips/",
+    "title": "Vikram's 5 Tips to Rule the Digital World Like a Boss!",
+    "page_type": "blog",
+    "apparent_topic": "5 easy tips"
+  },
+  {
+    "url": "/blog/First-Day-As-A-Freelancer/",
+    "title": "First Day As A Freelancer",
+    "page_type": "blog",
+    "apparent_topic": "First Day As A Freelancer"
+  },
+  {
+    "url": "/blog/First-month-as-a-freelancer/",
+    "title": "First Month As A Freelancer",
+    "page_type": "blog",
+    "apparent_topic": "First month as a freelancer"
+  },
+  {
+    "url": "/blog/How-AI-Agents-are-Helping-Indian-Business-Earn-in-USD/",
+    "title": "How AI Agents are Helping Indian Business Earn in USD",
+    "page_type": "blog",
+    "apparent_topic": "How AI Agents are Helping Indian Business Earn in USD"
+  },
+  {
+    "url": "/blog/How-Coaches-in-the-UK-Can-Use-Social-Media-to-Find-Clients/",
+    "title": "How Coaches in the UK Can Use Social Media to Find Clients",
+    "page_type": "blog",
+    "apparent_topic": "How Coaches in the UK Can Use Social Media to Find Clients"
+  },
+  {
+    "url": "/blog/How-Exercise-Helps-Me-As-A-Freelancer/",
+    "title": "From Flab to Fab: How Freelancers Can Pump Up Their Productivity by Pumping Iron!",
+    "page_type": "blog",
+    "apparent_topic": "How Exercise Helps Me As A Freelancer"
+  },
+  {
+    "url": "/blog/How-to-Use-Social-Media-to-Grow-Your-Small-Business-in-the-UK/",
+    "title": "How to Use Social Media to Grow Your Small Business in the UK",
+    "page_type": "blog",
+    "apparent_topic": "How to Use Social Media to Grow Your Small Business in the UK"
+  },
+  {
+    "url": "/blog/Local-SEO/",
+    "title": "Local SEO: The Ultimate Recipe to Boost Your Business's Visibility!",
+    "page_type": "blog",
+    "apparent_topic": "Local SEO"
+  },
+  {
+    "url": "/blog/Second-month-as-a-freelancer/",
+    "title": "Second Month As A Freelancer",
+    "page_type": "blog",
+    "apparent_topic": "Second month as a freelancer"
+  },
+  {
+    "url": "/blog/SecondWeekAsAFreelancer/",
+    "title": "Second Week As A Freelancer",
+    "page_type": "blog",
+    "apparent_topic": "SecondWeekAsAFreelancer"
+  },
+  {
+    "url": "/blog/cold-email-deliverability-2026/",
+    "title": "Your Cold Emails Are Landing in Spam: The 80-Word AI Fix for Cross-Border Outbound",
+    "page_type": "blog",
+    "apparent_topic": "cold email deliverability 2026"
+  },
+  {
+    "url": "/blog/digital-transformation-uk/",
+    "title": "Deeper Digital Transformation: The Need for Businesses in the UK",
+    "page_type": "blog",
+    "apparent_topic": "digital transformation uk"
+  },
+  {
+    "url": "/blog/how-to-choose-a-digital-marketing-consultant/",
+    "title": "How to choose a digital marketing consultant (without getting sold to)",
+    "page_type": "blog",
+    "apparent_topic": "how to choose a digital marketing consultant"
+  },
+  {
+    "url": "/blog/seo-for-ai-search/",
+    "title": "SEO for AI search \u2014 how to get cited by ChatGPT, Perplexity and AI Overviews",
+    "page_type": "blog",
+    "apparent_topic": "seo for ai search"
+  },
+  {
+    "url": "/blog/small-business-USA/",
+    "title": "How Small Businesses in the USA Can Win Hearts (and Sales) with a Rockstar Brand Image!",
+    "page_type": "blog",
+    "apparent_topic": "small business USA"
+  }
+]
