@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { contact } from '../data/site';
+---
+
+<BaseLayout
+  title="Thank you — your brief has been sent"
+  description="Your message has been received. I reply to every enquiry within two working days."
+  noindex={true}
+>
+  <section class="section centered">
+    <div class="container container--narrow">
+      <p class="eyebrow">Received</p>
+      <h1>Got it — thank you.</h1>
+      <p class="lede">
+        Your brief has landed. I read every enquiry personally and reply within two
+        working days, including the ones I have to turn down.
+      </p>
+      <p class="lede">
+        If it is urgent, call or message me directly on
+        <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>.
+      </p>
+      <div class="btn-row">
+        <a href="/" class="btn btn--primary">Back to home</a>
+        <a href="/blog/" class="btn btn--ghost">Read something while you wait</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .centered {
+    text-align: center;
+    padding-block: clamp(4rem, 12vw, 8rem);
+  }
+
+  .centered .lede {
+    margin-inline: auto;
+    margin-top: 1.25rem;
+  }
+
+  .centered .btn-row {
+    justify-content: center;
+  }
+
+  .centered a {
+    color: var(--accent);
+  }
+</style>

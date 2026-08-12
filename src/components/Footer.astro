@@ -1,0 +1,163 @@
+---
+import { site, contact, services } from '../data/site';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-name">{site.name}</p>
+        <p class="footer-role">{site.jobTitle}</p>
+        <p class="footer-blurb">{site.tagline}</p>
+        <p class="footer-loc">{contact.city}, {contact.region} — working with clients worldwide.</p>
+      </div>
+
+      <nav aria-label="Services">
+        <h2 class="footer-heading">Services</h2>
+        <ul>
+          {
+            services.map((s) => (
+              <li>
+                <a href={`/services/${s.slug}/`}>{s.title}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <nav aria-label="Site">
+        <h2 class="footer-heading">Site</h2>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/results/">Results</a></li>
+          <li><a href="/blog/">Insights</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="footer-heading">Get in touch</h2>
+        <ul>
+          <li><a href={`mailto:${contact.email}`}>{contact.email}</a></li>
+          <li><a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a></li>
+          {
+            contact.socials
+              .filter((s) => !s.url.startsWith('mailto:'))
+              .map((s) => (
+                <li>
+                  <a href={s.url} rel="noopener">
+                    {s.name}
+                  </a>
+                </li>
+              ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {year} {site.name}. All rights reserved.</p>
+      <p>
+        <a href="/sitemap-index.xml">Sitemap</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--ink-900);
+    color: rgba(255, 255, 255, 0.7);
+    padding-block: clamp(3rem, 6vw, 4.5rem) 2rem;
+    font-size: 0.94rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr repeat(3, 1fr);
+    gap: clamp(1.75rem, 4vw, 3rem);
+  }
+
+  @media (max-width: 900px) {
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-brand {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .footer-name {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+  }
+
+  .footer-role {
+    color: var(--accent);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .footer-blurb {
+    max-width: 34ch;
+    margin-bottom: 0.85rem;
+  }
+
+  .footer-loc {
+    font-size: 0.86rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .footer-heading {
+    color: var(--white);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .site-footer ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .site-footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.15s ease;
+    overflow-wrap: anywhere;
+  }
+
+  .site-footer a:hover {
+    color: var(--white);
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.45);
+  }
+</style>

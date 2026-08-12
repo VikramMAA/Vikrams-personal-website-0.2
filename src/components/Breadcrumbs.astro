@@ -1,0 +1,69 @@
+---
+/**
+ * Visible breadcrumbs. The matching BreadcrumbList JSON-LD is emitted by the
+ * page via `breadcrumbSchema` in src/data/schema.ts — keep the two in sync.
+ */
+interface Props {
+  items: { label: string; href?: string }[];
+}
+
+const { items } = Astro.props;
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      {
+        items.map((item, i) => (
+          <li>
+            {item.href && i < items.length - 1 ? (
+              <a href={item.href}>{item.label}</a>
+            ) : (
+              <span aria-current="page">{item.label}</span>
+            )}
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</nav>
+
+<style>
+  .breadcrumbs {
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-alt);
+    font-size: 0.85rem;
+  }
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-block: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  li + li::before {
+    content: '/';
+    margin-right: 0.5rem;
+    color: var(--ink-400);
+  }
+
+  a {
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--accent);
+  }
+
+  span[aria-current='page'] {
+    color: var(--text);
+    font-weight: 500;
+  }
+</style>

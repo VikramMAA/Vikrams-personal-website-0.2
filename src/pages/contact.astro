@@ -1,0 +1,325 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { site, contact, services } from '../data/site';
+import { breadcrumbSchema } from '../data/schema';
+
+const title = `Contact ${site.name} — Book a Digital Marketing Consultation`;
+const description = `Get in touch with ${site.name}, digital marketing consultant in ${contact.city}. Send a brief through the form to book a consultation.`;
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Contact', href: '/contact/' },
+];
+
+const contactPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: title,
+  description,
+  url: `${site.url}/contact/`,
+  mainEntity: { '@id': `${site.url}/#person` },
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  schema={[breadcrumbSchema(crumbs), contactPageSchema]}
+>
+  <Breadcrumbs items={crumbs} />
+
+  <section class="section contact-hero">
+    <div class="container">
+      <div class="contact-grid">
+        {/* ------------------------------------------------------ Left rail */}
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h1>Let us find out what is actually broken.</h1>
+          <p class="lede">
+            Tell me what you are trying to fix. I will reply within two working days
+            with an honest read on whether I can help — and if I cannot, who might.
+          </p>
+
+          <div class="direct">
+            <h2 class="direct__title">Reach me directly</h2>
+            <ul>
+              <li>
+                <span class="direct__label">Email</span>
+                <a href={`mailto:${contact.email}`}>{contact.email}</a>
+              </li>
+              <li>
+                <span class="direct__label">Phone</span>
+                <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>
+              </li>
+              <li>
+                <span class="direct__label">WhatsApp</span>
+                <a
+                  href={`https://wa.me/${contact.whatsapp}`}
+                  rel="noopener"
+                >
+                  Message on WhatsApp
+                </a>
+              </li>
+              <li>
+                <span class="direct__label">Based in</span>
+                <span>{contact.city}, {contact.region}, {contact.country}</span>
+              </li>
+            </ul>
+          </div>
+
+          <p class="note">
+            Working with clients across India and internationally. Remote engagements
+            are standard; in-person available across Bengaluru and most of India.
+          </p>
+        </div>
+
+        {/* ----------------------------------------------------------- Form */}
+        <div class="form-panel">
+          <h2 class="form-panel__title">Send a brief</h2>
+
+          {/*
+            This uses Netlify Forms. It works automatically once deployed to
+            Netlify — submissions appear under Site settings > Forms.
+            The hidden `bot-field` is the spam honeypot.
+          */}
+          <form
+            name="consultation"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/thank-you/"
+          >
+            <input type="hidden" name="form-name" value="consultation" />
+            <p class="hidden-field">
+              <label>
+                Do not fill this out if you are human:
+                <input name="bot-field" tabindex="-1" autocomplete="off" />
+              </label>
+            </p>
+
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" required autocomplete="name" />
+            </div>
+
+            <div class="field">
+              <label for="email">Work email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="field">
+              <label for="company">Company <span class="opt">(optional)</span></label>
+              <input id="company" name="company" type="text" autocomplete="organization" />
+            </div>
+
+            <div class="field">
+              <label for="website">Website <span class="opt">(optional)</span></label>
+              <input
+                id="website"
+                name="website"
+                type="url"
+                placeholder="https://"
+                autocomplete="url"
+              />
+            </div>
+
+            <div class="field">
+              <label for="service">What do you need help with?</label>
+              <select id="service" name="service">
+                <option value="">Not sure yet — help me work it out</option>
+                {services.map((s) => <option value={s.title}>{s.title}</option>)}
+                <option value="Full marketing strategy">Full marketing strategy</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">What is not working right now?</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="A couple of sentences is plenty. What are you running, and what is it failing to produce?"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary form-submit">
+              Send brief
+            </button>
+
+            <p class="form-note">
+              No newsletter, no drip sequence. Your details are used only to reply.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact-hero {
+    padding-block: clamp(2.5rem, 6vw, 4.5rem);
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: start;
+  }
+
+  @media (max-width: 900px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .contact-hero h1 {
+    font-size: var(--step-3);
+    max-width: 16ch;
+    margin-bottom: 1.25rem;
+  }
+
+  .direct {
+    margin-top: clamp(2rem, 4vw, 3rem);
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .direct__title {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+  }
+
+  .direct ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .direct li {
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    gap: 1rem;
+    align-items: baseline;
+  }
+
+  @media (max-width: 420px) {
+    .direct li {
+      grid-template-columns: 1fr;
+      gap: 0.15rem;
+    }
+  }
+
+  .direct__label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  .direct a {
+    font-weight: 500;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .direct a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .note {
+    margin-top: 1.75rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    max-width: 44ch;
+  }
+
+  /* ----------------------------------------------------------------- Form */
+  .form-panel {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: clamp(1.5rem, 3.5vw, 2.5rem);
+  }
+
+  .form-panel__title {
+    font-size: var(--step-1);
+    margin-bottom: 1.5rem;
+  }
+
+  .hidden-field {
+    display: none;
+  }
+
+  .field {
+    margin-bottom: 1.15rem;
+  }
+
+  .field label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+
+  .opt {
+    font-weight: 400;
+    color: var(--text-muted);
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    font-family: inherit;
+    font-size: 0.97rem;
+    color: var(--text);
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .field textarea {
+    resize: vertical;
+    min-height: 7rem;
+  }
+
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  .form-submit {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .form-note {
+    margin-top: 1rem;
+    font-size: 0.83rem;
+    color: var(--text-muted);
+    text-align: center;
+  }
+</style>

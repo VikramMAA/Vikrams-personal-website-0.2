@@ -1,0 +1,149 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CTA from '../../components/CTA.astro';
+import { site, services } from '../../data/site';
+import { breadcrumbSchema } from '../../data/schema';
+
+const title = 'Digital Marketing Services — SEO, Ads, Social & Training';
+const description = `Consulting services from ${site.name}: SEO, Google and Meta ads, social media, content marketing, lead generation, and marketing and sales team training.`;
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Services', href: '/services/' },
+];
+
+const itemList = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Digital marketing consulting services',
+  itemListElement: services.map((s, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: s.title,
+    description: s.summary,
+    url: `${site.url}/services/${s.slug}/`,
+  })),
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  schema={[breadcrumbSchema(crumbs), itemList]}
+>
+  <Breadcrumbs items={crumbs} />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Services</p>
+        <h1>Digital marketing services</h1>
+        <p>
+          Six disciplines. Take one, or take the system. Every engagement starts with an
+          audit, because recommending spend before diagnosing the problem is how budgets
+          get wasted.
+        </p>
+      </div>
+
+      <div class="service-list">
+        {
+          services.map((service, i) => (
+            <article class="service-row">
+              <div class="service-row__index">
+                {String(i + 1).padStart(2, '0')}
+              </div>
+              <div class="service-row__body">
+                <h2>
+                  <a href={`/services/${service.slug}/`}>{service.title}</a>
+                </h2>
+                <p class="service-row__summary">{service.summary}</p>
+                <ul class="service-row__tags">
+                  {service.deliverables.slice(0, 4).map((d) => (
+                    <li>{d.split('—')[0].trim()}</li>
+                  ))}
+                </ul>
+                <a class="card__link" href={`/services/${service.slug}/`}>
+                  {service.title} in detail &rarr;
+                </a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CTA
+    heading="Not sure which one you need?"
+    body="That is what the audit is for. Send me the site and the accounts, and I will tell you where the problem actually is — which is often not where you think it is."
+  />
+</BaseLayout>
+
+<style>
+  .service-list {
+    display: grid;
+    gap: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .service-row {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: clamp(1rem, 3vw, 2.5rem);
+    padding-block: clamp(2rem, 4vw, 2.75rem);
+    border-bottom: 1px solid var(--border);
+  }
+
+  @media (max-width: 620px) {
+    .service-row {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+  }
+
+  .service-row__index {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    padding-top: 0.45rem;
+  }
+
+  .service-row h2 {
+    font-size: var(--step-2);
+    margin-bottom: 0.75rem;
+  }
+
+  .service-row h2 a {
+    text-decoration: none;
+  }
+
+  .service-row h2 a:hover {
+    color: var(--accent);
+  }
+
+  .service-row__summary {
+    color: var(--text-muted);
+    font-size: var(--step-0);
+    max-width: 62ch;
+  }
+
+  .service-row__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1.15rem;
+  }
+
+  .service-row__tags li {
+    font-size: 0.82rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+</style>

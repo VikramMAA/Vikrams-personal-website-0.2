@@ -1,0 +1,332 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CTA from '../components/CTA.astro';
+import { site, contact, services, industries } from '../data/site';
+import { breadcrumbSchema } from '../data/schema';
+
+const title = `About ${site.name} — Digital Marketing Consultant, ${contact.city}`;
+const description = `${site.name} is a digital marketing consultant in ${contact.city} with ${site.yearsExperience}+ years across SEO, paid media, social, content and team training.`;
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about/' },
+];
+
+/* TODO: replace these with your real career milestones and dates. */
+const timeline = [
+  {
+    period: 'Now',
+    title: 'Independent digital marketing consultant',
+    body: 'Working directly with founders and marketing leads on SEO, paid media, content and lead generation — plus training in-house teams to run the work themselves.',
+  },
+  {
+    period: 'Recent',
+    title: 'Lead generation and content strategy — Ayanam Aerospace',
+    body: 'Built the demand generation function for a drone manufacturer selling into a narrow, technical B2B audience.',
+  },
+  {
+    period: 'Recent',
+    title: 'Content marketing consultant — MUKA (Canada)',
+    body: 'Defined the brand storyline and content programme for an international art brand, working entirely remotely.',
+  },
+  {
+    period: 'Earlier',
+    title: 'Social media strategy — Mapletree',
+    body: 'Rebuilt organic social from the audit up, producing a sharp lift in reach, engagement and referral traffic within two months.',
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  schema={[breadcrumbSchema(crumbs)]}
+>
+  <Breadcrumbs items={crumbs} />
+
+  <section class="section about-hero">
+    <div class="container">
+      <p class="eyebrow">About</p>
+      <h1>I have done nearly every job in digital marketing.</h1>
+      <p class="lede">
+        That is not a boast — it is the reason I can tell you which channel is actually
+        your problem. {site.yearsExperience}+ years of running SEO, paid media, social,
+        content and lead generation means I have made most of the expensive mistakes
+        already, on someone else's budget.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="prose">
+          <h2>How I work</h2>
+          <p>
+            I operate as an embedded consultant rather than an agency. You get me — the
+            person who audits the account, writes the strategy and, where the engagement
+            calls for it, executes it. There is no account manager relaying your feedback
+            to someone junior.
+          </p>
+          <p>
+            Every engagement starts with a diagnosis. Before recommending a rupee of
+            spend, I look at the site, the analytics, the ad accounts, the content and
+            the handover between marketing and sales. In most companies the audit finds
+            enough waste to part-fund the work that follows.
+          </p>
+          <p>
+            I report against one number agreed up front — usually cost per qualified
+            lead, sometimes qualified organic traffic or pipeline generated. Reach and
+            impressions are diagnostic. They are not the goal, and I will not build a
+            report that pretends otherwise.
+          </p>
+
+          <h2>Where I have worked</h2>
+          <p>
+            National and international clients across several verticals — real estate,
+            drone manufacturing, art and design, technology and professional services.
+            I have consulted for a Canadian brand remotely and built lead generation for
+            a deep-tech manufacturer in India, which is roughly the range of the work.
+          </p>
+
+          <h2>Training teams, not just running campaigns</h2>
+          <p>
+            A significant part of my work is training in-house marketing and sales teams.
+            Agencies create dependency: the knowledge leaves when the contract ends.
+            Training does the opposite — the capability stays in the company. Sessions
+            run on your real accounts and your real pipeline, and both teams sit in the
+            same room until they agree on what a qualified lead looks like.
+          </p>
+          <p>
+            If you would rather build the capability than rent it,
+            <a href="/services/marketing-sales-training/">the training engagement</a> is
+            the place to start.
+          </p>
+
+          <h2>Based in {contact.city}, working anywhere</h2>
+          <p>
+            I am based in {contact.city}, {contact.region}. Most of the work happens in
+            your accounts, your analytics and your CRM, so remote engagements are normal
+            — I have run them across time zones without a problem. For training
+            workshops, in-person across India and remote elsewhere.
+          </p>
+        </div>
+
+        <aside class="about-side">
+          <div class="side-card">
+            <h2 class="side-card__title">At a glance</h2>
+            <dl>
+              <div>
+                <dt>Experience</dt>
+                <dd>{site.yearsExperience}+ years in digital marketing</dd>
+              </div>
+              <div>
+                <dt>Based in</dt>
+                <dd>{contact.city}, {contact.region}, {contact.country}</dd>
+              </div>
+              <div>
+                <dt>Works with</dt>
+                <dd>Founders, marketing leads and in-house teams</dd>
+              </div>
+              <div>
+                <dt>Engagement</dt>
+                <dd>Fixed-scope projects and monthly retainers</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="side-card">
+            <h2 class="side-card__title">Disciplines</h2>
+            <ul class="side-list">
+              {
+                services.map((s) => (
+                  <li>
+                    <a href={`/services/${s.slug}/`}>{s.title}</a>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+
+          <div class="side-card">
+            <h2 class="side-card__title">Industries</h2>
+            <p class="side-industries">{industries.join(' · ')}</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Track record</p>
+        <h2>Selected engagements</h2>
+      </div>
+      <ol class="timeline">
+        {
+          timeline.map((item) => (
+            <li>
+              <span class="timeline__period">{item.period}</span>
+              <h3>{item.title}</h3>
+              <p>{item.body}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <CTA
+    heading="Want to know if I can help?"
+    body="Describe the problem in a couple of sentences. If it is outside what I do well, I will say so and point you somewhere better."
+  />
+</BaseLayout>
+
+<style>
+  .about-hero {
+    padding-block: clamp(3rem, 7vw, 5rem) clamp(2rem, 4vw, 3rem);
+    background:
+      radial-gradient(
+        ellipse 60% 70% at 10% 0%,
+        var(--accent-soft) 0%,
+        transparent 60%
+      ),
+      var(--bg);
+  }
+
+  .about-hero h1 {
+    max-width: 18ch;
+    margin-bottom: 1.35rem;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
+  }
+
+  @media (max-width: 900px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .prose h2:first-child {
+    margin-top: 0;
+  }
+
+  .about-side {
+    display: grid;
+    gap: 1rem;
+    position: sticky;
+    top: 100px;
+  }
+
+  @media (max-width: 900px) {
+    .about-side {
+      position: static;
+    }
+  }
+
+  .side-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    background: var(--bg-alt);
+  }
+
+  .side-card__title {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 1.1rem;
+  }
+
+  .side-card dl {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .side-card dt {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .side-card dd {
+    margin: 0.15rem 0 0;
+    font-size: 0.95rem;
+  }
+
+  .side-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.55rem;
+  }
+
+  .side-list a {
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .side-list a:hover {
+    color: var(--accent);
+  }
+
+  .side-industries {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .timeline {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .timeline li {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    gap: clamp(1rem, 3vw, 2.5rem);
+    padding-block: 1.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  @media (max-width: 620px) {
+    .timeline li {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+  }
+
+  .timeline__period {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-weight: 700;
+    color: var(--accent);
+    padding-top: 0.35rem;
+  }
+
+  .timeline h3 {
+    margin-bottom: 0.4rem;
+  }
+
+  .timeline p {
+    color: var(--text-muted);
+    max-width: 68ch;
+  }
+</style>

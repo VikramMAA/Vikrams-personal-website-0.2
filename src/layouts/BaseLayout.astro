@@ -1,0 +1,206 @@
+---
+/**
+ * Every page renders through this layout. It owns:
+ *  - canonical URL, title, meta description
+ *  - Open Graph + Twitter cards
+ *  - the site-wide Person / ProfessionalService JSON-LD
+ *  - optional per-page JSON-LD passed in via `schema`
+ */
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { site, contact, services } from '../data/site';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Overrides the derived canonical. Rarely needed. */
+  canonical?: string;
+  /** Extra JSON-LD objects for this page (Service, FAQPage, Article, etc.). */
+  schema?: Record<string, unknown>[];
+  /** Set true on pages that should not be indexed. */
+  noindex?: boolean;
+  /** Relative path to an OG image in /public. */
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  schema = [],
+  noindex = false,
+  ogImage = '/og-default.png',
+} = Astro.props;
+
+const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).href;
+const ogImageURL = new URL(ogImage, Astro.site).href;
+/**
+ * Google truncates the SERP title around 60 characters. Only append the brand
+ * suffix when it still fits — a page whose own title is already descriptive is
+ * better off without " | Vikram M A A" getting cut off mid-word.
+ */
+const TITLE_LIMIT = 62;
+const withBrand = `${title} | ${site.brand}`;
+const fullTitle = title.includes(site.brand)
+  ? title
+  : withBrand.length <= TITLE_LIMIT
+    ? withBrand
+    : title;
+
+/**
+ * Site-wide identity graph. Kept in one @graph so the Person and the
+ * ProfessionalService reference each other cleanly.
+ */
+const identitySchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Person',
+      '@id': `${site.url}/#person`,
+      name: site.name,
+      jobTitle: site.jobTitle,
+      email: `mailto:${contact.email}`,
+      telephone: contact.phoneRaw,
+      url: site.url,
+      description: `${site.jobTitle} with ${site.yearsExperience}+ years of experience across SEO, performance marketing, social media, content marketing, lead generation and marketing team training.`,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: contact.city,
+        addressRegion: contact.region,
+        addressCountry: contact.countryCode,
+      },
+      knowsAbout: [
+        'Search Engine Optimization',
+        'Technical SEO',
+        'Performance Marketing',
+        'Google Ads',
+        'Meta Ads',
+        'Social Media Marketing',
+        'Content Marketing',
+        'Lead Generation',
+        'Marketing Analytics',
+        'Sales Enablement',
+        'Marketing Team Training',
+      ],
+      sameAs: contact.socials
+        .filter((s) => !s.url.startsWith('mailto:'))
+        .map((s) => s.url),
+    },
+    {
+      '@type': 'ProfessionalService',
+      '@id': `${site.url}/#business`,
+      name: `${site.name} — ${site.jobTitle}`,
+      description,
+      url: site.url,
+      email: `mailto:${contact.email}`,
+      telephone: contact.phoneRaw,
+      founder: { '@id': `${site.url}/#person` },
+      priceRange: '$$',
+      areaServed: [
+        { '@type': 'City', name: 'Bengaluru' },
+        { '@type': 'Country', name: 'India' },
+        { '@type': 'Place', name: 'Worldwide (remote)' },
+      ],
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: contact.city,
+        addressRegion: contact.region,
+        addressCountry: contact.countryCode,
+      },
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Digital marketing consulting services',
+        itemListElement: services.map((s) => ({
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: s.title,
+            description: s.summary,
+            url: `${site.url}/services/${s.slug}/`,
+          },
+        })),
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${site.url}/#website`,
+      url: site.url,
+      name: `${site.name} — ${site.jobTitle}`,
+      publisher: { '@id': `${site.url}/#person` },
+      inLanguage: 'en',
+    },
+  ],
+};
+
+const allSchema = [identitySchema, ...schema];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {
+      !noindex && (
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+      )
+    }
+
+    <meta name="author" content={site.name} />
+    <meta name="geo.region" content="IN-KA" />
+    <meta name="geo.placename" content={contact.city} />
+
+    {/* Open Graph */}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.brand} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:locale" content="en_IN" />
+
+    {/* Twitter */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
+
+    {/* Fonts — preconnect then load without blocking render */}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    {
+      allSchema.map((s) => (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(s)}
+        />
+      ))
+    }
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

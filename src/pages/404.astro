@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { services } from '../data/site';
+---
+
+<BaseLayout
+  title="Page not found"
+  description="That page does not exist. Here are the pages that do."
+  noindex={true}
+>
+  <section class="section centered">
+    <div class="container container--narrow">
+      <p class="eyebrow">404</p>
+      <h1>That page does not exist.</h1>
+      <p class="lede">
+        Either the link is wrong or the page has moved. Here is everything that is
+        actually here.
+      </p>
+
+      <ul class="link-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        {
+          services.map((s) => (
+            <li>
+              <a href={`/services/${s.slug}/`}>{s.title}</a>
+            </li>
+          ))
+        }
+        <li><a href="/results/">Results</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/blog/">Insights</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .centered {
+    text-align: center;
+    padding-block: clamp(3.5rem, 10vw, 7rem);
+  }
+
+  .centered .lede {
+    margin-inline: auto;
+    margin-top: 1.25rem;
+  }
+
+  .link-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .link-list a {
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+  }
+
+  .link-list a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+</style>

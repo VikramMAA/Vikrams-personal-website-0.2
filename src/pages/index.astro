@@ -1,0 +1,319 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FAQ from '../components/FAQ.astro';
+import CTA from '../components/CTA.astro';
+import {
+  site,
+  contact,
+  services,
+  stats,
+  caseStudies,
+  faqs,
+  process,
+  industries,
+} from '../data/site';
+import { faqSchema } from '../data/schema';
+
+const title = `Digital Marketing Consultant in Bengaluru — ${site.name}`;
+const description = `Digital marketing consultant in ${contact.city} with ${site.yearsExperience}+ years across SEO, Google and Meta ads, social, content and lead generation. Working worldwide.`;
+---
+
+<BaseLayout title={title} description={description} schema={[faqSchema(faqs)]}>
+  {/* ---------------------------------------------------------------- Hero */}
+  <section class="hero">
+    <div class="container hero__inner">
+      <p class="eyebrow">Independent consultant &middot; {contact.city}, India</p>
+      <h1>
+        Digital marketing that is accountable to <span class="hl">revenue</span>,
+        not vanity metrics.
+      </h1>
+      <p class="lede">
+        I am {site.name}, a digital marketing consultant with {site.yearsExperience}+ years
+        running SEO, paid media, social and content for companies across India, North
+        America and beyond. I work as an operator inside your business — not an agency
+        billing you for a dashboard.
+      </p>
+      <div class="btn-row">
+        <a href="/contact/" class="btn btn--primary">Book a consultation</a>
+        <a href="/results/" class="btn btn--ghost">See the results</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul class="stats" aria-label="Key figures">
+        {
+          stats.map((s) => (
+            <li>
+              <span class="stats__value">{s.value}</span>
+              <span class="stats__label">{s.label}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  {/* ------------------------------------------------------------ Problem */}
+  <section class="section" aria-labelledby="problem-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The usual situation</p>
+        <h2 id="problem-heading">
+          Marketing is running. Revenue is not moving.
+        </h2>
+        <p>
+          Almost every company I speak to is doing marketing. Posts go out, ads run,
+          somebody writes blogs. The problem is that nothing is connected — so nobody
+          can say which activity produced which rupee, and the budget gets defended
+          rather than directed.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card">
+          <h3>Traffic without conversion</h3>
+          <p>
+            The site gets visitors and nothing happens. Usually the traffic is the wrong
+            audience, or the page never asks for anything specific.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Ad spend without attribution</h3>
+          <p>
+            Money goes into Google and Meta every month. Nobody can trace a single closed
+            deal back to a campaign, so the budget is a matter of faith.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Leads sales will not call</h3>
+          <p>
+            Marketing reports lead volume, sales says the leads are junk, and both are
+            right — because no one agreed what qualified means.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- Services */}
+  <section class="section section--alt" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Services</p>
+        <h2 id="services-heading">What I can take off your plate</h2>
+        <p>
+          Six areas, run individually or as one system. Most engagements start with one
+          channel that needs fixing and expand once it works.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        {
+          services.map((service) => (
+            <a href={`/services/${service.slug}/`} class="card">
+              <h3>{service.title}</h3>
+              <p>{service.summary}</p>
+              <span class="card__link">Explore {service.title} &rarr;</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  {/* ------------------------------------------------------------ Process */}
+  <section class="section" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">How I work</p>
+        <h2 id="process-heading">Diagnose first. Spend second.</h2>
+        <p>
+          I will not recommend a channel before I have looked at what is already running.
+          The audit usually finds enough waste to part-fund the work that follows.
+        </p>
+      </div>
+
+      <ol class="process">
+        {
+          process.map((p) => (
+            <li>
+              <span class="process__step">{p.step}</span>
+              <h3>{p.title}</h3>
+              <p>{p.description}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  {/* ------------------------------------------------------------ Results */}
+  <section class="section section--alt" aria-labelledby="results-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Selected work</p>
+        <h2 id="results-heading">What the work has produced</h2>
+        <p>
+          Across real estate, deep-tech manufacturing and international consumer brands.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        {
+          caseStudies.map((cs) => (
+            <a href={`/results/#${cs.slug}`} class="card">
+              <p class="card__meta">
+                {cs.industry} &middot; {cs.location}
+              </p>
+              <h3>{cs.client}</h3>
+              <p>{cs.headline}</p>
+              <span class="card__link">Read the breakdown &rarr;</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  {/* --------------------------------------------------------- Industries */}
+  <section class="section" aria-labelledby="industries-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Industries</p>
+        <h2 id="industries-heading">Categories I have worked in</h2>
+        <p>
+          The method transfers across categories. What changes is the audience research
+          and how long the buying cycle runs.
+        </p>
+      </div>
+      <ul class="tag-list">
+        {industries.map((industry) => <li>{industry}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <FAQ items={faqs} />
+
+  <CTA />
+</BaseLayout>
+
+<style>
+  /* ------------------------------------------------------------------ Hero */
+  .hero {
+    padding-block: clamp(3.5rem, 9vw, 7rem) 0;
+    background:
+      radial-gradient(
+        ellipse 70% 60% at 15% 0%,
+        var(--accent-soft) 0%,
+        transparent 60%
+      ),
+      var(--bg);
+  }
+
+  .hero__inner {
+    max-width: 58rem;
+  }
+
+  .hero h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .hl {
+    color: var(--accent);
+  }
+
+  /* ----------------------------------------------------------------- Stats */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+    gap: clamp(1rem, 3vw, 2.5rem);
+    list-style: none;
+    padding: 0;
+    margin-top: clamp(3rem, 7vw, 5rem);
+    padding-top: clamp(2rem, 4vw, 2.75rem);
+    border-top: 1px solid var(--border);
+  }
+
+  .stats li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .stats__value {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: var(--ink-900);
+  }
+
+  .stats__label {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    max-width: 22ch;
+  }
+
+  /* --------------------------------------------------------------- Process */
+  .process {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    counter-reset: none;
+  }
+
+  .process li {
+    position: relative;
+    padding-top: 1.75rem;
+    border-top: 2px solid var(--ink-900);
+  }
+
+  .process__step {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+  }
+
+  .process h3 {
+    margin-bottom: 0.55rem;
+  }
+
+  .process p {
+    color: var(--text-muted);
+    font-size: 0.96rem;
+  }
+
+  /* ------------------------------------------------------------ Card meta */
+  .card__meta {
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+
+  /* ------------------------------------------------------------ Tag list */
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .tag-list li {
+    padding: 0.55rem 1.15rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    background: var(--white);
+  }
+</style>

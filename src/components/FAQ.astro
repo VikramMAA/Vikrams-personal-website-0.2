@@ -1,0 +1,114 @@
+---
+/**
+ * Renders an FAQ block. The markup is plain <details>/<summary> so the answers
+ * exist in the HTML source even when collapsed — which is what lets search
+ * engines and AI crawlers read them.
+ *
+ * Emit the matching FAQPage JSON-LD from the page that uses this, via the
+ * `faqSchema` helper in src/data/schema.ts.
+ */
+interface Props {
+  items: { q: string; a: string }[];
+  heading?: string;
+  intro?: string;
+}
+
+const { items, heading = 'Frequently asked questions', intro } = Astro.props;
+---
+
+<section class="section section--alt" aria-labelledby="faq-heading">
+  <div class="container container--narrow">
+    <div class="section-head">
+      <p class="eyebrow">FAQ</p>
+      <h2 id="faq-heading">{heading}</h2>
+      {intro && <p>{intro}</p>}
+    </div>
+
+    <div class="faq-list">
+      {
+        items.map((item) => (
+          <details class="faq-item">
+            <summary>
+              <span>{item.q}</span>
+              <svg
+                class="faq-icon"
+                viewBox="0 0 20 20"
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              >
+                <path d="M10 4v12M4 10h12" />
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p>{item.a}</p>
+            </div>
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-list {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .faq-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .faq-item[open] {
+    border-color: var(--ink-400);
+  }
+
+  summary {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.25rem;
+    padding: 1.15rem 1.4rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.03rem;
+    line-height: 1.45;
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary:hover {
+    color: var(--accent);
+  }
+
+  .faq-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 0.2rem;
+    color: var(--accent);
+    transition: transform 0.2s ease;
+  }
+
+  .faq-item[open] .faq-icon {
+    transform: rotate(45deg);
+  }
+
+  .faq-answer {
+    padding: 0 1.4rem 1.35rem;
+  }
+
+  .faq-answer p {
+    color: var(--text-muted);
+    max-width: 68ch;
+  }
+</style>
