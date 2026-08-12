@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
 """Top the editorial queue back up from the keyword plan.
 
-This does NOT write finished briefs. It cannot, because an angle worth reading
-comes from knowing the market, not from a keyword string. What it does is pick
-the next best unused clusters out of seo/output/keyword-plan.json, filter out
-anything already covered, and print stub briefs for the agent to fill in the
-working_title and angle fields on.
+This picks the next best unused clusters out of seo/output/keyword-plan.json,
+filters out anything already written or queued, and emits stub briefs.
 
-Anything left with an "angle": "TODO" must not be handed to the writer.
+The stubs come out with NEEDS_ANGLE in the working_title, angle and audience
+fields. Those are not a request for a human. They are the writing agent's job,
+done in the same run, before the brief is used. A keyword string on its own is
+not a brief, and handing one straight to the writer produces exactly the
+interchangeable agency post this whole system exists to avoid.
+
+To fill a stub: read seo/output/strategy-brief.md for what the cluster is and
+who searches it, check the live SERP for what the top three results already
+say, and write the angle around what they miss. Then write a working_title
+following the title rules in PLAYBOOK.md step 4.
 
 Usage:
   python3 refill_queue.py --count 20
@@ -93,9 +99,9 @@ def main():
             "primary_keyword": term,
             "secondary_keywords": [k["term"] if isinstance(k, dict) else k
                                    for k in (c.get("keywords") or [])[1:5]],
-            "working_title": "TODO",
-            "angle": "TODO",
-            "audience": "TODO",
+            "working_title": "NEEDS_ANGLE",
+            "angle": "NEEDS_ANGLE",
+            "audience": "NEEDS_ANGLE",
             "city": c.get("geo"),
             "service_link": service_for(term),
             "tags": [],
@@ -110,8 +116,9 @@ def main():
         queue["briefs"].extend(stubs)
         with open(QUEUE, "w", encoding="utf-8") as f:
             json.dump(queue, f, indent=2, ensure_ascii=False)
-        print(f"Appended {len(stubs)} stubs to queue.json. "
-              f"Fill in working_title, angle, audience and tags before any of them run.")
+        print(f"Appended {len(stubs)} stubs to queue.json.\n"
+              f"Now fill in working_title, angle, audience and tags on every one of "
+              f"them before any run uses them. See this file's docstring for how.")
     else:
         print(json.dumps(stubs, indent=2, ensure_ascii=False))
 

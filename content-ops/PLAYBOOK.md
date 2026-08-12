@@ -29,18 +29,30 @@ python3 content-ops/scripts/next_brief.py --slot morning
 
 It prints one brief plus the last ten published titles and opening patterns.
 
-If it exits with `queue_empty`, refill before writing:
+**Nobody is watching this run.** There is no human to escalate to and no
+approval step anywhere in this playbook. If something is missing, you fix it in
+this run and carry on. The only thing that ever justifies not publishing is a
+draft that would embarrass Vikram, and the fix for that is rewriting it, not
+skipping.
+
+If it exits with `no_usable_brief`, you are refilling the queue yourself, now,
+as part of this run:
 
 ```bash
 python3 content-ops/scripts/refill_queue.py --count 20 --write
 ```
 
-then fill in `working_title`, `angle`, `audience` and `tags` on every new stub
-using `seo/output/strategy-brief.md` for context, commit the queue, and start
-again at step 2. Never write from a stub that still says `TODO`.
+Then fill in `working_title`, `angle`, `audience` and `tags` on every new stub.
+That means, for each one: read `seo/output/strategy-brief.md` for what the
+cluster is and who searches it, look at the live SERP for what the top three
+results already say, and write an angle around what they all miss. Commit the
+queue, then start again at step 2.
 
-Also refill proactively whenever `_remaining_in_slot` drops below 10, so a run
-never has to stop and do it under time pressure.
+Budget about twenty minutes for a refill. It is a normal part of the job, not
+an interruption to it.
+
+Refill proactively whenever `_remaining_in_slot` drops below 10, so this never
+happens under time pressure with an article still to write.
 
 ## 3. Check the topic is still true
 
@@ -195,10 +207,26 @@ push a broken build.
 **Linter keeps failing on the same phrase.** The phrase is in `BANNED_PHRASES`
 for a reason. Rewrite the sentence, do not edit the linter.
 
-**Queue is empty and refill produces nothing useful.** The keyword plan is
-exhausted, which means it is time to redo the research rather than to publish
-filler. Say so in the report and stop. A skipped run costs nothing. A bad post
-sits on the site forever.
+**Refill produces nothing useful, because the keyword plan is exhausted.**
+Regenerate the plan in this run rather than skipping. Add new seed terms to
+`seo/corpus/seeds.txt` and new harvested terms to `seo/corpus/harvest.txt`
+[pull them from autocomplete, People Also Ask and related searches on the
+existing head terms], then re-run the pipeline:
+
+```bash
+cd seo
+S=/root/.claude/skills/synced/keyword-research/scripts
+python3 $S/cluster_keywords.py --input corpus/harvest.txt corpus/geo.txt \
+    --seeds corpus/seeds.txt --locations corpus/locations.txt --out work/clusters.json
+python3 scripts/make_overrides.py --scored work/scored.json --out work/overrides.json
+python3 $S/score_keywords.py --clusters work/clusters.json --serp work/serp.json \
+    --overrides work/overrides.json --out work/scored.json
+python3 $S/export_kwr.py --scored work/scored.json --site work/site.json \
+    --site-inventory work/site_inventory.json --local work/local.json \
+    --meta work/meta.json --outdir output/
+```
+
+Then refill and carry on. Commit the regenerated plan with the article.
 
 **Merge conflict on published.json.** Two runs overlapped. Take both entries,
 keep them in date order, and carry on.

@@ -61,11 +61,26 @@ def main():
     eligible = [b for b in queue
                 if b["slot"] == args.slot and b["id"] not in done]
 
+    # A stub straight out of refill_queue.py is a keyword, not a brief. Handing
+    # one to the writer produces the interchangeable agency post this system
+    # exists to avoid, so refuse it and say what to do instead.
+    unfilled = [b for b in eligible if "NEEDS_ANGLE" in
+                (b.get("angle", ""), b.get("working_title", ""), b.get("audience", ""))]
+    eligible = [b for b in eligible if b not in unfilled]
+
     if not eligible:
         print(json.dumps({
-            "error": "queue_empty",
+            "error": "no_usable_brief",
             "slot": args.slot,
-            "message": "No unused briefs left for this slot. Run refill_queue.py before writing.",
+            "unfilled_stubs": len(unfilled),
+            "message": (
+                "No ready brief for this slot. "
+                + (f"{len(unfilled)} stub(s) are waiting on an angle: fill them in now, "
+                   "commit the queue, and run this again."
+                   if unfilled else
+                   "Queue is empty. Run refill_queue.py --write, fill in the stubs, "
+                   "commit, and run this again.")
+            ),
             "remaining_total": len([b for b in queue if b["id"] not in done]),
         }, indent=2))
         raise SystemExit(2)

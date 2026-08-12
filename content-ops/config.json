@@ -1,5 +1,5 @@
 {
-  "publish_branch": "master",
+  "publish_branch": "main",
   "content_dir": "src/content/blog",
   "word_count": { "min": 900, "target": 1200, "max": 1400 },
   "slots": {
