@@ -5,6 +5,13 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# The previous Hugo site served posts at /blogs/<slug>/; this site uses /blog/.
+# Keep the old URLs alive so existing links and rankings carry over.
+[[redirects]]
+  from = "/blogs/*"
+  to = "/blog/:splat"
+  status = 301
+
 # Security + SEO headers. Netlify serves these on every response.
 [[headers]]
   for = "/*"

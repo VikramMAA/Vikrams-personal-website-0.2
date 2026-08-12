@@ -13,6 +13,10 @@ const blog = defineCollection({
     /** Set false to keep a post out of the index and the sitemap. */
     published: z.boolean().default(true),
     tags: z.array(z.string()).default([]),
+    /** Path to an image under `public/`, e.g. `/images/post.jpg`. */
+    heroImage: z.string().optional(),
+    /** Alt text for `heroImage`. Falls back to the post title. */
+    heroImageAlt: z.string().optional(),
   }),
 });
 
