@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTA from '../../components/CTA.astro';
+import ViewCount from '../../components/ViewCount.astro';
 import { site } from '../../data/site';
 import { articleSchema, breadcrumbSchema } from '../../data/schema';
 
@@ -55,7 +56,8 @@ const fmt = (d: Date) =>
               <span> &middot; Updated {fmt(post.data.updatedAt)}</span>
             )
           }
-          <span> &middot; {site.name}</span>
+          <span> &middot; {site.name}</span>{' '}
+          <ViewCount slug={post.id} record separator />
         </p>
         <h1>{post.data.title}</h1>
         <p class="lede">{post.data.description}</p>

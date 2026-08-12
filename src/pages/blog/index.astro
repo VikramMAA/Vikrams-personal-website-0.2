@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTA from '../../components/CTA.astro';
+import ViewCount from '../../components/ViewCount.astro';
 import { site } from '../../data/site';
 import { breadcrumbSchema } from '../../data/schema';
 
@@ -70,9 +71,12 @@ const fmt = (d: Date) =>
                     </a>
                   )}
                   <div class="card__body">
-                    <time datetime={post.data.publishedAt.toISOString()}>
-                      {fmt(post.data.publishedAt)}
-                    </time>
+                    <p class="card__meta">
+                      <time datetime={post.data.publishedAt.toISOString()}>
+                        {fmt(post.data.publishedAt)}
+                      </time>
+                      <ViewCount slug={post.id} separator />
+                    </p>
                     <h2>
                       <a href={`/blog/${post.id}/`}>{post.data.title}</a>
                     </h2>
@@ -155,11 +159,21 @@ const fmt = (d: Date) =>
     object-fit: cover;
   }
 
-  .post-list time {
+  /* Typography lives on the row so the view counter inherits it — scoped
+     styles cannot reach inside the ViewCount component. */
+  .card__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.15rem 0.4rem;
+    margin: 0;
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-weight: 600;
+  }
+
+  .post-list time {
     color: var(--accent);
   }
 

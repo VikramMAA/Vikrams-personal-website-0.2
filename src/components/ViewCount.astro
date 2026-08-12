@@ -1,0 +1,146 @@
+---
+/**
+ * "Views: 42" for a blog post, filled in from /api/views after the page loads.
+ *
+ * It renders hidden and only appears once a real number has arrived, so the
+ * page never flashes a placeholder zero and never shows a stale count if the
+ * function is unreachable. Without JavaScript it simply is not there.
+ *
+ * Pass `record` on the article page itself — that instance reports the view.
+ * The listing pages leave it off and only read.
+ */
+interface Props {
+  /** The post id, which is also the blob key. */
+  slug: string;
+  /** Count this page load as a view (article pages only). */
+  record?: boolean;
+  /** Render a leading "·" — it hides along with the rest if the fetch fails. */
+  separator?: boolean;
+}
+
+const { slug, record = false, separator = false } = Astro.props;
+---
+
+<span class="views" data-view-count={slug} data-record-view={record ? '' : undefined} hidden>
+  {separator && <span class="views__sep" aria-hidden="true">&middot;</span>}
+  <svg class="views__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+    <rect x="1" y="9.5" width="3.2" height="5.5" rx="1" />
+    <rect x="6.4" y="5.5" width="3.2" height="9.5" rx="1" />
+    <rect x="11.8" y="1" width="3.2" height="14" rx="1" />
+  </svg>
+  <span>Views: <span class="views__count"></span></span>
+</span>
+
+<style>
+  .views {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    color: var(--text-muted);
+  }
+
+  /* `hidden` has to beat the display above, or the element stays visible. */
+  .views[hidden] {
+    display: none;
+  }
+
+  .views__sep {
+    margin-right: 0.15em;
+  }
+
+  .views__icon {
+    width: 0.95em;
+    height: 0.95em;
+    fill: currentColor;
+    opacity: 0.75;
+    flex: none;
+  }
+</style>
+
+<script>
+  // One module for the whole page, however many counters are on it: the
+  // listing pages read every count in a single request rather than one
+  // request per card.
+  const ENDPOINT = '/api/views';
+
+  const nodes = Array.from(
+    document.querySelectorAll<HTMLElement>('[data-view-count]'),
+  );
+
+  /**
+   * True if this browser has already been counted for `slug` in this session,
+   * marking it as seen either way. Keeps a refresh or a back-navigation from
+   * inflating the number, while still counting the reader again tomorrow.
+   * Storage can be unavailable (private modes, blocked cookies) — count then.
+   */
+  const alreadyCounted = (slug: string) => {
+    try {
+      const key = `views:seen:${slug}`;
+      if (sessionStorage.getItem(key)) return true;
+      sessionStorage.setItem(key, '1');
+      return false;
+    } catch {
+      return false;
+    }
+  };
+
+  const show = (node: HTMLElement, value: unknown) => {
+    if (typeof value !== 'number' || !Number.isFinite(value)) return;
+    const target = node.querySelector('.views__count');
+    if (!target) return;
+    target.textContent = value.toLocaleString();
+    node.hidden = false;
+  };
+
+  const asJson = (response: Response) =>
+    response.ok ? response.json() : Promise.reject(new Error(String(response.status)));
+
+  if (nodes.length > 0) {
+    const toRead = new Set<string>();
+    let recorder: { node: HTMLElement; slug: string } | null = null;
+
+    for (const node of nodes) {
+      const slug = node.dataset.viewCount;
+      if (!slug) continue;
+
+      // Only the first `record` node reports, and only once per session —
+      // otherwise it falls back to reading the current number.
+      if (
+        node.dataset.recordView !== undefined &&
+        !recorder &&
+        !alreadyCounted(slug)
+      ) {
+        recorder = { node, slug };
+      } else {
+        toRead.add(slug);
+      }
+    }
+
+    if (recorder) {
+      const { node, slug } = recorder;
+      fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ slug }),
+      })
+        .then(asJson)
+        .then((data) => show(node, data?.views))
+        .catch(() => {
+          /* Counter is down — leave it hidden rather than guess a number. */
+        });
+    }
+
+    if (toRead.size > 0) {
+      const query = [...toRead].map(encodeURIComponent).join(',');
+      fetch(`${ENDPOINT}?slugs=${query}`)
+        .then(asJson)
+        .then((counts) => {
+          for (const node of nodes) {
+            const slug = node.dataset.viewCount;
+            if (slug && slug in counts) show(node, counts[slug]);
+          }
+        })
+        .catch(() => {});
+    }
+  }
+</script>

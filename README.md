@@ -166,6 +166,42 @@ npx netlify dev
 Copy `.env.example` to `.env` and fill it in first. Emails sent with a real key
 are real emails, so send them to yourself.
 
+### Article view counts
+
+Each post shows a "Views: N" counter — on the blog index next to the date, and
+in the byline on the article itself. It is a Netlify Function at `/api/views`
+([`netlify/functions/views.mjs`](netlify/functions/views.mjs)) storing one
+number per post slug in [Netlify Blobs](https://docs.netlify.com/blobs/overview/).
+
+**Nothing to set up.** No account, no API key, no environment variables —
+Netlify wires the Blobs credentials into the function at runtime. It starts
+counting from zero on the first deploy.
+
+How it behaves:
+
+- The index reads every count in **one** request; the article page reports its
+  own view and reads the new total back.
+- A view counts **once per browser session** per post, so refreshing or hitting
+  back does not inflate it (`sessionStorage`, not a cookie — nothing to consent
+  to).
+- The counting happens in JavaScript after the page loads, so crawlers and most
+  bots never trigger it. The numbers stay closer to real readers than a
+  server-side hit counter, but they are not analytics — GA4 is still the source
+  of truth.
+- If the function is unreachable, the counter **stays hidden** rather than
+  showing a wrong number. Same with JavaScript off.
+
+To reset or seed a count, use the Blobs UI under **Netlify → your site → Blobs →
+`views`**; the key is the post slug and the value is a plain integer.
+
+Two people loading the same post in the same instant can collapse into one
+count — the function reads then writes, with no atomic increment. At this site's
+traffic that is a rounding error, and the fix would be running a real database
+for a counter.
+
+`npx netlify dev` runs this locally too, against a local blob sandbox that is
+separate from production.
+
 ### Custom domain
 
 Netlify: **Domain management → Add a domain**. Point your registrar's nameservers
@@ -235,6 +271,7 @@ src/
     FAQ.astro          <details> accordion, answers stay in the DOM
     CTA.astro
     Breadcrumbs.astro
+    ViewCount.astro    "Views: N", filled in from /api/views after load
   pages/
     index.astro
     about.astro
