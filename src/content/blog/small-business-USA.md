@@ -1,5 +1,6 @@
 ---
 title: "How Small Businesses in the USA Can Win Hearts (and Sales) with a Rockstar Brand Image!"
+seoTitle: "Brand Image Tips for US Small Businesses"
 description: "Building a brand image that sells does not have to be daunting. Practical tips for small businesses in the USA to stand out online and win more customers."
 publishedAt: 2023-06-22
 published: true

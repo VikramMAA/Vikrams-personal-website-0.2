@@ -1,5 +1,6 @@
 ---
 title: "Deeper Digital Transformation: The Need for Businesses in the UK"
+seoTitle: "Digital Transformation for UK Businesses"
 description: "COVID-19 accelerated the digital transformation of business. Firms that have not yet embraced it will need to, in order to remain competitive."
 publishedAt: 2023-06-07
 published: true

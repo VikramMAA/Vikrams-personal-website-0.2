@@ -1,5 +1,6 @@
 ---
 title: "Local SEO: The Ultimate Recipe to Boost Your Business's Visibility!"
+seoTitle: "Local SEO: Boost Your Business Visibility"
 description: "Tired of your business being overshadowed by the competition online? Read how local SEO can bring the heat to your business's online presence."
 publishedAt: 2023-05-01
 published: true

@@ -1,5 +1,6 @@
 ---
 title: "From Flab to Fab: How Freelancers Can Pump Up Their Productivity by Pumping Iron!"
+seoTitle: "How Exercise Makes Freelancers Productive"
 description: "How Lifting Weights Can Turn You Into a Freelance Marketing Machine."
 publishedAt: 2023-04-09
 published: true

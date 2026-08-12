@@ -1,5 +1,6 @@
 ---
 title: "Your Cold Emails Are Landing in Spam: The 80-Word AI Fix for Cross-Border Outbound"
+seoTitle: "Cold Email Deliverability 2026: The 80-Word Fix"
 description: "Open rates hitting rock bottom? How smart founders are shifting from volume to AI-driven intent signals to book meetings with US and EU buyers."
 publishedAt: 2026-05-22
 published: true
