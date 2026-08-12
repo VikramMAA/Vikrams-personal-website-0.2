@@ -317,12 +317,14 @@ cache rules.
 
 ### The contact form
 
-Uses **Netlify Forms** — works the moment it's deployed, no backend needed.
-Submissions land under **Site configuration → Forms → consultation**.
+Posts to a **Netlify Function** at `/api/contact` which emails the brief through
+**Resend**. It will not send until you verify a domain in Resend and set
+`RESEND_API_KEY` and `CONTACT_FROM_EMAIL` in **Site configuration → Environment
+variables**, then redeploy. Full steps are in the README under
+*Deploying to Netlify → The contact form*.
 
-**Netlify does not email you by default.** Set up notifications there, or you'll
-never know a lead arrived. A honeypot field handles most spam; enable reCAPTCHA
-in form settings if spam gets through.
+A honeypot field handles most spam. If spam gets through, add Turnstile or
+reCAPTCHA and verify the token inside the function.
 
 ---
 

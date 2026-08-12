@@ -15,6 +15,9 @@ pnpm-debug.log*
 .env
 .env.production
 
+# netlify cli
+.netlify/
+
 # macOS / Windows
 .DS_Store
 Thumbs.db

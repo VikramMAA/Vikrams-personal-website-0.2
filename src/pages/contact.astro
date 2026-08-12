@@ -79,18 +79,19 @@ const contactPageSchema = {
           <h2 class="form-panel__title">Send a brief</h2>
 
           {/*
-            This uses Netlify Forms. It works automatically once deployed to
-            Netlify — submissions appear under Site settings > Forms.
-            The hidden `bot-field` is the spam honeypot.
+            Posts to the Netlify Function in `netlify/functions/contact.mjs`,
+            which emails the brief through Resend and then redirects — to
+            /thank-you/ on success, or back here with #form-error on failure.
+            No client-side JavaScript involved. The hidden `bot-field` is the
+            spam honeypot.
           */}
-          <form
-            name="consultation"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            action="/thank-you/"
-          >
-            <input type="hidden" name="form-name" value="consultation" />
+          <div class="form-error" id="form-error" role="alert">
+            <strong>That did not send.</strong> Something went wrong on my end.
+            Please try again, or email me directly at
+            <a href={`mailto:${contact.email}`}>{contact.email}</a>.
+          </div>
+
+          <form name="consultation" method="POST" action="/api/contact">
             <p class="hidden-field">
               <label>
                 Do not fill this out if you are human:
@@ -266,6 +267,29 @@ const contactPageSchema = {
 
   .hidden-field {
     display: none;
+  }
+
+  /*
+    Hidden until the form handler redirects to /contact/#form-error, at which
+    point :target matches. Pure CSS — keeps the page free of runtime JS.
+  */
+  .form-error {
+    display: none;
+    margin-bottom: 1.5rem;
+    padding: 0.9rem 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background: var(--accent-soft);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-sm);
+  }
+
+  .form-error:target {
+    display: block;
+  }
+
+  .form-error a {
+    overflow-wrap: anywhere;
   }
 
   .field {

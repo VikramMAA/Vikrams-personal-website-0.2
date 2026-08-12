@@ -118,15 +118,53 @@ Every push to `main` redeploys automatically.
 
 ### The contact form
 
-The form on `/contact/` uses **Netlify Forms** — it works as soon as the site is
-on Netlify, with no backend and no third-party service.
+The form on `/contact/` posts to a Netlify Function at `/api/contact`
+([`netlify/functions/contact.mjs`](netlify/functions/contact.mjs)), which emails
+the brief to you through [Resend](https://resend.com). No client-side JavaScript
+— the browser is redirected to `/thank-you/` on success, or back to
+`/contact/#form-error` on failure, where a CSS `:target` rule reveals an error
+banner.
 
-Submissions appear under **Site configuration → Forms → consultation**. Set up
-email notifications there so you actually hear about them; Netlify does not email
-you by default.
+**It will not send until you set three things up.**
 
-A honeypot field catches most spam. If you start getting through-spam, enable
-reCAPTCHA in the Netlify form settings.
+1. **Create a Resend account** and add your domain under
+   [Resend → Domains](https://resend.com/domains). Add the DNS records it gives
+   you (SPF, DKIM and the return-path record) at your registrar, then wait for
+   the domain to show as *Verified*. Sending from an unverified domain is
+   rejected.
+
+2. **Create an API key** at [Resend → API keys](https://resend.com/api-keys).
+   *Sending access* is enough — it does not need full access.
+
+3. **Add the environment variables** in Netlify under
+   **Site configuration → Environment variables**:
+
+   | Variable | Required | What it is |
+   | --- | --- | --- |
+   | `RESEND_API_KEY` | Yes | The key from step 2 |
+   | `CONTACT_FROM_EMAIL` | Yes | Sender, on the verified domain — e.g. `Vikram M A A Website <website@vikramaa.com>` |
+   | `CONTACT_TO_EMAIL` | No | Where enquiries land. Defaults to the address in the function |
+
+   Redeploy after adding them; functions only pick up new variables on a fresh
+   deploy. See [`.env.example`](.env.example) for the same list.
+
+The sender is never the visitor's address — that would fail SPF/DKIM and land in
+spam. Their address goes in `Reply-To` instead, so hitting reply in your inbox
+replies to them.
+
+A honeypot field (`bot-field`) silently discards bot submissions, and every field
+is length-capped. If spam still gets through, add Cloudflare Turnstile or
+reCAPTCHA and verify the token in the function before the send.
+
+**Testing locally** needs the Netlify CLI, because `astro dev` does not run
+functions:
+
+```bash
+npx netlify dev
+```
+
+Copy `.env.example` to `.env` and fill it in first. Emails sent with a real key
+are real emails, so send them to yourself.
 
 ### Custom domain
 

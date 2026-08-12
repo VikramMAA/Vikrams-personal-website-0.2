@@ -5,6 +5,12 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# The contact form handler. It mounts itself at /api/contact via the `config`
+# export inside the function, so there is no redirect rule to keep in sync.
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 # The previous Hugo site served posts at /blogs/<slug>/; this site uses /blog/.
 # Keep the old URLs alive so existing links and rankings carry over.
 [[redirects]]
