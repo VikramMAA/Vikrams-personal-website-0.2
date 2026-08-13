@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ProductNova — Full product build in 3–6 weeks</title>
@@ -107,7 +106,7 @@ h3{font-size:17px;letter-spacing:-.02em;font-weight:700}
 .muted{color:var(--ink-2)}
 .sm{font-size:13.5px}
 
-section{padding:44px 0;position:relative}
+section{padding:38px 0;position:relative}
 .rule{height:1px;background:linear-gradient(90deg,transparent,var(--line-2),transparent)}
 
 /* ---------- reveal ---------- */
@@ -135,7 +134,7 @@ section{padding:44px 0;position:relative}
 .stat .l{font-size:11.5px;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase;margin-top:4px;font-weight:600}
 
 /* ---------- cards ---------- */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
 .card{
   position:relative;border:1px solid var(--line);border-radius:var(--r);
   background:linear-gradient(180deg,var(--card-2),var(--card));
@@ -159,10 +158,62 @@ section{padding:44px 0;position:relative}
 .icn svg{width:21px;height:21px;stroke:var(--c1);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .card p{color:var(--ink-2);font-size:14.5px;margin-top:9px;line-height:1.62}
 
+/* ---------- AI agents callout ---------- */
+.agents{
+  position:relative;overflow:hidden;margin-top:14px;
+  border:1px solid var(--line-2);border-radius:18px;padding:20px 22px 18px;
+  background:linear-gradient(130deg,rgba(125,92,255,.14),rgba(46,230,255,.07) 58%,rgba(255,255,255,.02));
+}
+.agents::before{ /* neon edge */
+  content:"";position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--c1),var(--c2),transparent);opacity:.7
+}
+.agent-art{
+  position:absolute;right:-54px;top:-46px;width:340px;opacity:.7;pointer-events:none;
+  mask-image:radial-gradient(72% 72% at 58% 42%,#000 30%,transparent 80%);
+  -webkit-mask-image:radial-gradient(72% 72% at 58% 42%,#000 30%,transparent 80%);
+}
+.agent-art .ring{transform-origin:160px 150px;animation:spin 46s linear infinite}
+.agent-art .ring2{transform-origin:160px 150px;animation:spin 68s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.agent-art .ln{stroke:url(#agGrad);stroke-width:1.1;stroke-dasharray:3 7;animation:dash 3.4s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-20}}
+.agent-art .nd{fill:#080a12;stroke:url(#agGrad);stroke-width:1.4}
+.agent-art .pip{fill:var(--c1);animation:blip 2.8s var(--ease) infinite}
+.agent-art .pip:nth-of-type(2){animation-delay:.7s}
+.agent-art .pip:nth-of-type(3){animation-delay:1.4s}
+@keyframes blip{0%,100%{opacity:.25}50%{opacity:1}}
+
+.agent-head{position:relative;z-index:1;max-width:63%}
+.agent-head h3{font-size:20px;letter-spacing:-.032em;margin-top:2px;line-height:1.2}
+.agent-head p{color:var(--ink-2);font-size:14.5px;margin-top:10px;line-height:1.6}
+
+.ag-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
+.ag{
+  border:1px solid var(--line);border-radius:12px;padding:13px 13px 14px;
+  background:rgba(6,8,15,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  transition:transform .4s var(--ease),border-color .4s var(--ease),background .4s var(--ease);
+}
+.ag:hover{transform:translateY(-3px);border-color:rgba(46,230,255,.5);background:rgba(6,8,15,.75)}
+.ag-top{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.ag-top svg{width:17px;height:17px;flex:0 0 17px;stroke:var(--c1);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ag h4{font-size:13.5px;font-weight:700;letter-spacing:-.018em}
+.ag .live{width:6px;height:6px;border-radius:50%;background:var(--ok);margin-left:auto;flex:0 0 6px;
+  box-shadow:0 0 8px rgba(77,255,184,.9);animation:pulse 2.4s infinite}
+.ag p{font-size:12.6px;color:var(--ink-2);line-height:1.5}
+
+.loop{position:relative;z-index:1;display:flex;align-items:center;flex-wrap:wrap;gap:6px;
+  margin-top:14px;padding-top:13px;border-top:1px dashed var(--line-2)}
+.lp{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:650;white-space:nowrap;
+  border:1px solid var(--line-2);border-radius:100px;padding:6px 12px;background:rgba(255,255,255,.045)}
+.lp i{font-style:normal;font-size:10px;font-weight:800;color:var(--c1);letter-spacing:.04em}
+.loop .arw{width:13px;height:13px;flex:0 0 13px;stroke:var(--ink-3);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loop .note{font-size:12px;color:var(--ink-3);margin-left:2px}
+
 /* ---------- comparison infographic ---------- */
-.compare{border:1px solid var(--line);border-radius:var(--r);padding:24px;margin-top:26px;
+.compare{border:1px solid var(--line);border-radius:var(--r);padding:20px;margin-top:18px;
   background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.012))}
-.bar-row{margin-top:20px}
+.bar-row{margin-top:15px}
 .bar-row:first-of-type{margin-top:8px}
 .bar-head{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px;margin-bottom:9px}
 .bar-head b{font-weight:700;font-size:14.5px}
@@ -175,7 +226,7 @@ section{padding:44px 0;position:relative}
   border-top:1px dashed var(--line-2);padding-top:8px;letter-spacing:.05em}
 
 /* ---------- timeline ---------- */
-.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;position:relative}
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px;position:relative}
 .tl::before{content:"";position:absolute;top:15px;left:6%;right:6%;height:2px;
   background:linear-gradient(90deg,var(--c1),var(--c2),var(--c3));opacity:.35}
 .tl::after{content:"";position:absolute;top:14px;left:6%;width:0;height:4px;border-radius:4px;
@@ -192,7 +243,7 @@ section{padding:44px 0;position:relative}
 .step p{font-size:13.8px;color:var(--ink-2);line-height:1.58}
 
 /* ---------- deliverables ---------- */
-.deliv{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+.deliv{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
 .d{display:flex;gap:11px;align-items:flex-start;font-size:14px;color:var(--ink-2);
   border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--card);
   transition:background .35s var(--ease),border-color .35s var(--ease)}
@@ -212,7 +263,7 @@ section{padding:44px 0;position:relative}
 .tag{font-size:11px;color:var(--ink-3);border:1px solid var(--line);border-radius:6px;padding:3px 7px;letter-spacing:.02em}
 
 /* ---------- marquee ---------- */
-.mq{margin-top:24px;overflow:hidden;position:relative;max-width:100%;
+.mq{margin-top:18px;overflow:hidden;position:relative;max-width:100%;
   mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .mq-in{display:flex;gap:10px;width:max-content;animation:slide 34s linear infinite}
@@ -356,6 +407,9 @@ body.editing .form input,body.editing .form textarea{
   .caps{grid-template-columns:1fr}
   .tl{grid-template-columns:1fr 1fr;gap:26px}
   .tl::before,.tl::after{display:none}
+  .ag-grid{grid-template-columns:1fr 1fr}
+  .agent-head{max-width:70%}
+  .agent-art{width:280px;right:-60px;top:-56px;opacity:.5}
 }
 @media (max-width:640px){
   .wrap{padding:0 18px}
@@ -370,10 +424,17 @@ body.editing .form input,body.editing .form textarea{
   .cap{padding:16px;gap:13px}
   .tl{gap:20px}
   .grid{padding-top:28px}
+  .agents{padding:20px 18px 18px}
+  .ag-grid{grid-template-columns:1fr;gap:8px}
+  .agent-head{max-width:100%}
+  .agent-art{width:210px;right:-70px;top:-64px;opacity:.32}
+  .loop{gap:6px}
+  .loop .arw{display:none}
+  .lp{font-size:11.5px;padding:5px 10px}
 }
 </style>
 </head>
-<body>
+<body class="">
 
 <div class="bg" aria-hidden="true">
   <div class="orb a"></div><div class="orb b"></div><div class="orb c"></div>
@@ -386,10 +447,10 @@ body.editing .form input,body.editing .form textarea{
     <div class="logo">
       <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
         <defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32">
-          <stop offset="0" stop-color="#2ee6ff"/><stop offset="1" stop-color="#7d5cff"/>
+          <stop offset="0" stop-color="#2ee6ff"></stop><stop offset="1" stop-color="#7d5cff"></stop>
         </linearGradient></defs>
-        <rect x="1.2" y="1.2" width="29.6" height="29.6" rx="9" stroke="url(#lg)" stroke-width="1.6"/>
-        <path d="M10 22V10l12 12V10" stroke="url(#lg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="1.2" y="1.2" width="29.6" height="29.6" rx="9" stroke="url(#lg)" stroke-width="1.6"></rect>
+        <path d="M10 22V10l12 12V10" stroke="url(#lg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
       </svg>
       <span>Product<b>Nova</b></span>
     </div>
@@ -412,22 +473,19 @@ body.editing .form input,body.editing .form textarea{
       <span class="eyebrow"><span class="dot-live"></span> Bengaluru · 20+ products shipped since 2023</span>
       <h1>Your full product,<br>built in <span class="grad">3 to 6 weeks.</span></h1>
       <p class="lede">
-        Not a mockup, not a clickable demo. A real product your customers can sign into and pay for,
-        built end to end by the same team that has shipped 20+ AI-powered platforms across edtech,
-        healthcare, retail and agritech.
-      </p>
+        Not a mockup, not a clickable demo. A real product that your team can use or your customers pay for.</p>
 
       <div class="hero-badges">
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg> Fixed scope, fixed timeline</span>
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6.5v5c0 4.6 3.3 8.6 8 9.5 4.7-.9 8-4.9 8-9.5v-5L12 3Z"/></svg> Code stays in your repo</span>
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Weekly builds you can use</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"></path></svg> Flexible scope, flexible timeline</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6.5v5c0 4.6 3.3 8.6 8 9.5 4.7-.9 8-4.9 8-9.5v-5L12 3Z"></path></svg> Code stays in your repo</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg> Weekly builds you can test</span>
       </div>
 
       <div class="stats">
         <div class="stat"><div class="n">3–6</div><div class="l">Weeks to live</div></div>
         <div class="stat"><div class="n">20+</div><div class="l">Products shipped</div></div>
         <div class="stat"><div class="n">20 yrs</div><div class="l">Team experience</div></div>
-        <div class="stat"><div class="n">1 day</div><div class="l">To your quote</div></div>
+        <div class="stat"><div class="n">1 day</div><div class="l">To your quote*</div></div>
       </div>
     </div>
 
@@ -444,27 +502,131 @@ body.editing .form input,body.editing .form textarea{
 
       <div class="cards">
         <article class="card rv d1">
-          <div class="icn"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="8" r="2.4"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5M17 14c2.2.3 3.6 2 3.6 4"/></svg></div>
+          <div class="icn"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><circle cx="17" cy="8" r="2.4"></circle><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5M17 14c2.2.3 3.6 2 3.6 4"></path></svg></div>
           <h3>One squad, no handoffs</h3>
-          <p>The people who scope your product are the ones who design it and write the code. Nothing gets thrown over a wall, so nothing sits in a queue waiting for a status meeting.</p>
+          <p>The people who scope your product are the ones who design it and write the code. Nothing gets thrown over a wall, so nothing sits in a queue.</p>
         </article>
         <article class="card rv d2">
-          <div class="icn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><path d="M14 17.2h6.5M17.2 14v6.5"/></svg></div>
+          <div class="icn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="2"></rect><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"></rect><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"></rect><path d="M14 17.2h6.5M17.2 14v6.5"></path></svg></div>
           <h3>We don't rebuild solved problems</h3>
-          <p>Auth, billing, roles, notifications, infra, admin panels. We have all of it battle-tested and ready. The weeks go into the 30% that actually makes your product different.</p>
+          <p>Auth, billing, roles, notifications, infra, admin panels. We have all of it ready and tested. The weeks go into the 30% that makes your product different.</p>
         </article>
         <article class="card rv d3">
-          <div class="icn"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.2"/></svg></div>
+          <div class="icn"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"></path><circle cx="12" cy="12" r="3.2"></circle></svg></div>
           <h3>AI takes the grunt work</h3>
-          <p>Scaffolding, test coverage, data migrations, documentation. Our engineers review every line that ships, but they aren't the ones typing all of it. That's where the compression comes from.</p>
+          <p>Scaffolding, test coverage, migrations, documentation. Our engineers review every line that ships, but they aren't the ones typing all of it.</p>
         </article>
+      </div>
+
+      <!-- ---------- AI AGENTS ---------- -->
+      <div class="agents rv">
+        <!-- background agentic artwork, sits to the right of the copy -->
+        <div class="agent-art" aria-hidden="true">
+          <svg viewBox="0 0 320 300" fill="none">
+            <defs>
+              <linearGradient id="agGrad" x1="0" y1="0" x2="320" y2="300">
+                <stop offset="0" stop-color="#2ee6ff"/><stop offset="1" stop-color="#7d5cff"/>
+              </linearGradient>
+              <radialGradient id="agGlow">
+                <stop offset="0" stop-color="#2ee6ff" stop-opacity=".28"/>
+                <stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <circle cx="160" cy="150" r="118" stroke="url(#agGrad)" stroke-opacity=".2"/>
+            <circle class="ring"  cx="160" cy="150" r="92" stroke="url(#agGrad)" stroke-opacity=".38" stroke-dasharray="5 9"/>
+            <circle class="ring2" cx="160" cy="150" r="62" stroke="url(#agGrad)" stroke-opacity=".3"  stroke-dasharray="2 8"/>
+            <circle cx="160" cy="150" r="86" fill="url(#agGlow)"/>
+
+            <!-- links from the core out to each agent -->
+            <path class="ln" d="M160 150 66 92"/>
+            <path class="ln" d="M160 150 254 92"/>
+            <path class="ln" d="M160 150 66 208"/>
+            <path class="ln" d="M160 150 254 208"/>
+            <path class="ln" d="M160 150 160 44"/>
+            <path class="ln" d="M160 150 160 256"/>
+
+            <!-- agent nodes -->
+            <rect class="nd" x="52"  y="80"  width="28" height="24" rx="7"/>
+            <rect class="nd" x="240" y="80"  width="28" height="24" rx="7"/>
+            <rect class="nd" x="52"  y="196" width="28" height="24" rx="7"/>
+            <rect class="nd" x="240" y="196" width="28" height="24" rx="7"/>
+            <rect class="nd" x="146" y="32"  width="28" height="24" rx="7"/>
+            <rect class="nd" x="146" y="244" width="28" height="24" rx="7"/>
+            <circle class="pip" cx="66"  cy="92"  r="2.6"/>
+            <circle class="pip" cx="254" cy="208" r="2.6"/>
+            <circle class="pip" cx="160" cy="44"  r="2.6"/>
+
+            <!-- orchestrator core -->
+            <rect x="136" y="126" width="48" height="48" rx="14" fill="#080a12" stroke="url(#agGrad)" stroke-width="1.7"/>
+            <path d="M150 152h20M160 142v20" stroke="url(#agGrad)" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <div class="agent-head">
+          <span class="kicker">AI agents</span>
+          <h3>Agents that do the work, not chatbots that talk about it</h3>
+          <p>
+            That's how we build fast. This is what we're building most of the time now. An agent picks
+            up a job, works out the steps on its own, uses your actual systems and finishes it. Then it
+            reports back on what it did.
+          </p>
+        </div>
+
+        <div class="ag-grid">
+          <article class="ag">
+            <div class="ag-top">
+              <svg viewBox="0 0 24 24"><path d="M20 12a7.6 7.6 0 0 1-11.2 6.7L4 20.2l1.5-4.6A7.6 7.6 0 1 1 20 12Z"/><path d="M9 12h.01M12 12h.01M15 12h.01"/></svg>
+              <h4>Support agent</h4><span class="live"></span>
+            </div>
+            <p>Reads the ticket, checks the order in your system, issues the refund, replies. Escalates what it shouldn't touch.</p>
+          </article>
+
+          <article class="ag">
+            <div class="ag-top">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="3.2"/><path d="M12 1.8v2.4M12 19.8v2.4M1.8 12h2.4M19.8 12h2.4"/></svg>
+              <h4>Sales agent</h4><span class="live"></span>
+            </div>
+            <p>Qualifies every inbound lead, enriches it, books the meeting and writes the CRM note before your rep opens a laptop.</p>
+          </article>
+
+          <article class="ag">
+            <div class="ag-top">
+              <svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+              <h4>Ops agent</h4><span class="live"></span>
+            </div>
+            <p>Pulls numbers out of PDFs and email, reconciles them against your systems and flags whatever doesn't match.</p>
+          </article>
+
+          <article class="ag">
+            <div class="ag-top">
+              <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5V5.5Z"/><path d="M8 7.5h7M8 11h5"/></svg>
+              <h4>Knowledge agent</h4><span class="live"></span>
+            </div>
+            <p>Answers from your own documents with the source attached, so your team stops digging through Drive.</p>
+          </article>
+        </div>
+
+        <!-- how an agent actually runs -->
+        <div class="loop">
+          <span class="lp"><i>01</i> Trigger</span>
+          <svg class="arw" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+          <span class="lp"><i>02</i> Plans</span>
+          <svg class="arw" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+          <span class="lp"><i>03</i> Uses your tools</span>
+          <svg class="arw" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+          <span class="lp"><i>04</i> Acts</span>
+          <svg class="arw" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+          <span class="lp"><i>05</i> Checks itself</span>
+          <span class="note">and stops for a human wherever you tell it to.</span>
+        </div>
       </div>
 
       <!-- comparison infographic -->
       <div class="compare rv">
         <h3>Same product. Two calendars.</h3>
         <div class="bar-row">
-          <div class="bar-head"><b>Typical dev agency</b><span class="muted sm">20–24 weeks</span></div>
+          <div class="bar-head"><b>Traditional dev agency</b><span class="muted sm">20–24 weeks</span></div>
           <div class="track"><div class="fill slow" style="--w:100%"></div></div>
         </div>
         <div class="bar-row">
@@ -513,12 +675,12 @@ body.editing .form input,body.editing .form textarea{
       </div>
 
       <div class="deliv">
-        <div class="d rv d1"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg><span><b>Production codebase</b> in your GitHub, not ours</span></div>
-        <div class="d rv d1"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg><span><b>Figma files</b> and a design system you can extend</span></div>
-        <div class="d rv d2"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg><span><b>Cloud infrastructure</b> set up as code on your account</span></div>
-        <div class="d rv d2"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg><span><b>Admin dashboard</b> so your team runs it without us</span></div>
-        <div class="d rv d3"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg><span><b>API docs and runbooks</b> for whoever inherits it</span></div>
-        <div class="d rv d3"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg><span><b>30 days of support</b> after go-live, included</span></div>
+        <div class="d rv d1"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"></path></svg><span><b>Production codebase</b> in your GitHub, not ours</span></div>
+        <div class="d rv d1"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"></path></svg><span><b>Figma files</b> and a design system you can extend</span></div>
+        <div class="d rv d2"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"></path></svg><span><b>Cloud infrastructure</b> set up as code on your account</span></div>
+        <div class="d rv d2"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"></path></svg><span><b>Admin dashboard</b> so your team runs it without us</span></div>
+        <div class="d rv d3"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"></path></svg><span><b>API docs and runbooks</b> for whoever inherits it</span></div>
+        <div class="d rv d3"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"></path></svg><span><b>30 days of support</b> after go-live, included</span></div>
       </div>
     </section>
 
@@ -534,7 +696,7 @@ body.editing .form input,body.editing .form textarea{
 
       <div class="caps">
         <article class="cap rv d1">
-          <div class="icn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4M11 8v6M8 11h6"/></svg></div>
+          <div class="icn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 4 4M11 8v6M8 11h6"></path></svg></div>
           <div>
             <h3>Discovery &amp; product strategy</h3>
             <p>We figure out what to build before we build it. User interviews, competitor teardown, a ruthless v1 scope and a roadmap for what comes after.</p>
@@ -543,7 +705,7 @@ body.editing .form input,body.editing .form textarea{
         </article>
 
         <article class="cap rv d1">
-          <div class="icn"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2.5"/><path d="M3 9h18M8 22h8M12 18v4"/></svg></div>
+          <div class="icn"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2.5"></rect><path d="M3 9h18M8 22h8M12 18v4"></path></svg></div>
           <div>
             <h3>Product &amp; experience design</h3>
             <p>Interface design that a real user can get through without a tutorial. Prototypes first, design system second, so the build never stalls on a missing screen.</p>
@@ -552,38 +714,20 @@ body.editing .form input,body.editing .form textarea{
         </article>
 
         <article class="cap rv d2">
-          <div class="icn"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></div>
+          <div class="icn"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"></path></svg></div>
           <div>
-            <h3>Full-stack engineering</h3>
-            <p>Web apps, mobile apps, APIs, dashboards and the integrations that connect them to whatever you already run. Written to be handed over, not to lock you in.</p>
-            <div class="tags"><span class="tag">React / Next.js</span><span class="tag">Node · Python</span><span class="tag">iOS · Android</span></div>
+            <h3>Engineering &amp; AI</h3>
+            <p>Web apps, mobile apps, APIs, dashboards and the agents above, all in one codebase. Written to be handed over, not to lock you in.</p>
+            <div class="tags"><span class="tag">React / Next.js</span><span class="tag">Node · Python</span><span class="tag">iOS · Android</span><span class="tag">LLM · RAG · agents</span></div>
           </div>
         </article>
 
         <article class="cap rv d2">
-          <div class="icn"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="9.5" cy="10" r="1.2"/><circle cx="14.5" cy="10" r="1.2"/><path d="M9 15h6M12 1.5V4M20 12h2.5M1.5 12H4"/></svg></div>
+          <div class="icn"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"></ellipse><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"></path></svg></div>
           <div>
-            <h3>AI features &amp; automation</h3>
-            <p>Assistants, agents, document extraction, search over your own data, workflow automation. Built on your data with guardrails, not a chatbot bolted onto a sidebar.</p>
-            <div class="tags"><span class="tag">LLM apps</span><span class="tag">RAG</span><span class="tag">Agents</span><span class="tag">Evals</span></div>
-          </div>
-        </article>
-
-        <article class="cap rv d3">
-          <div class="icn"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
-          <div>
-            <h3>Cloud, data &amp; architecture</h3>
-            <p>Infrastructure that holds up when the traffic arrives. Set up as code on your own AWS, GCP or Azure account, with the data model designed for where you're going.</p>
-            <div class="tags"><span class="tag">AWS · GCP · Azure</span><span class="tag">CI/CD</span><span class="tag">Data pipelines</span></div>
-          </div>
-        </article>
-
-        <article class="cap rv d3">
-          <div class="icn"><svg viewBox="0 0 24 24"><path d="M12 3 4.5 6.2v5.3c0 4.6 3.2 8.6 7.5 9.5 4.3-.9 7.5-4.9 7.5-9.5V6.2L12 3Z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg></div>
-          <div>
-            <h3>QA, security &amp; launch</h3>
-            <p>Automated tests, load testing, security review and monitoring before anything goes live. Then 30 days on call while your first real users hit it.</p>
-            <div class="tags"><span class="tag">Test automation</span><span class="tag">Security review</span><span class="tag">Monitoring</span></div>
+            <h3>Platform, QA &amp; launch</h3>
+            <p>Infrastructure as code on your own AWS, GCP or Azure. Automated tests, load testing and a security review before anything goes live, then 30 days on call.</p>
+            <div class="tags"><span class="tag">AWS · GCP · Azure</span><span class="tag">CI/CD</span><span class="tag">Test automation</span><span class="tag">Monitoring</span></div>
           </div>
         </article>
       </div>
@@ -605,18 +749,18 @@ body.editing .form input,body.editing .form textarea{
       <div class="final rv">
         <h2>Still working out whether it's a 3-week or a 6-week build?</h2>
         <p class="lede" style="margin-top:14px">
-          That's the point of the call. Send us a couple of lines about what you're building and we'll
+          That's the point of the call. Send us a couple of lines about what your idea is and we'll
           come back within one working day with a scope, a timeline and a number. If we think you don't
           need us yet, we'll tell you that too.
         </p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;max-width:420px">
           <a class="btn" href="#lead-form" style="width:auto;padding-left:26px;padding-right:26px">
             Get my build plan
-            <svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"></path></svg>
           </a>
           <!-- SWAP: real WhatsApp number -->
           <a class="btn alt" href="https://wa.me/910000000000" target="_blank" rel="noopener" style="width:auto;padding-left:22px;padding-right:22px">
-            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"></path></svg>
             WhatsApp us
           </a>
         </div>
@@ -626,44 +770,44 @@ body.editing .form input,body.editing .form textarea{
 
   <!-- ============ RIGHT: STICKY LEAD FORM ============ -->
   <aside class="rail">
-    <form class="form" id="lead-form" novalidate>
+    <form class="form" id="lead-form" novalidate="">
       <div class="form-top">
         <h3>Get your build plan</h3>
-        <p>Scope, timeline and a fixed price — back to you in one working day.</p>
+        <p>Scope, timeline and a fixed price, back to you in one working day.*</p>
       </div>
 
       <div class="form-body">
         <div class="field">
           <label for="f-name">Your name</label>
-          <input id="f-name" name="name" type="text" placeholder="Vijay Nelson" autocomplete="name" required>
+          <input id="f-name" name="name" type="text" placeholder="John Doe" autocomplete="name" required="">
           <span class="err-msg">Please add your name</span>
         </div>
 
         <div class="field">
           <label for="f-email">Work email</label>
-          <input id="f-email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required>
+          <input id="f-email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required="">
           <span class="err-msg">That email doesn't look right</span>
         </div>
 
         <div class="field">
           <label for="f-phone">Phone / WhatsApp</label>
-          <input id="f-phone" name="phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel" required>
+          <input id="f-phone" name="phone" type="tel" placeholder="+91 90000 00000" autocomplete="tel" required="">
           <span class="err-msg">Please add a number we can reach you on</span>
         </div>
 
         <div class="field">
           <label for="f-idea">What are you building?</label>
-          <textarea id="f-idea" name="idea" placeholder="A booking app for clinics, an AI assistant for our sales team, a marketplace..." required></textarea>
+          <textarea id="f-idea" name="idea" placeholder="A booking app for clinics, an AI assistant for our sales team, a marketplace..." required=""></textarea>
           <span class="err-msg">Tell us a line or two about it</span>
         </div>
 
         <button class="btn" type="submit">
           Send it over
-          <svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"></path></svg>
         </button>
 
         <div class="form-foot">
-          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
           No spam, no sales sequence. One reply from a real person.
         </div>
       </div>
@@ -672,13 +816,13 @@ body.editing .form input,body.editing .form textarea{
       <div class="avail">
         <span class="dot-live"></span> Taking 2 new builds this month
         <a href="https://wa.me/910000000000" target="_blank" rel="noopener" class="wa">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"></path></svg>
           WhatsApp
         </a>
       </div>
 
       <div class="done">
-        <div class="ring"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></div>
+        <div class="ring"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"></path></svg></div>
         <h3>Got it.</h3>
         <p>We'll read it properly and come back within one working day with a scope and a timeline. If it's urgent, WhatsApp us and we'll pick it up today.</p>
       </div>
@@ -703,22 +847,22 @@ body.editing .form input,body.editing .form textarea{
 <div class="mobile-cta">
   <a class="btn" href="#lead-form">
     Get my build plan — 3 to 6 weeks
-    <svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"></path></svg>
   </a>
 </div>
 
 <!-- Text editor toolbar. Hidden on a live domain unless the URL ends with #edit. -->
-<div class="editbar" id="editbar" hidden>
+<div class="editbar" id="editbar" hidden="">
   <button type="button" class="eb-btn primary" id="ed-toggle">
-    <svg viewBox="0 0 24 24"><path d="M4 20h4L19 9a2.1 2.1 0 0 0-3-3L5 17v3Z"/><path d="M14.5 7.5 16.5 9.5"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M4 20h4L19 9a2.1 2.1 0 0 0-3-3L5 17v3Z"></path><path d="M14.5 7.5 16.5 9.5"></path></svg>
     <span id="ed-toggle-label">Edit text</span>
   </button>
   <button type="button" class="eb-btn eb-only" id="ed-reset">
-    <svg viewBox="0 0 24 24"><path d="M4 5v5h5"/><path d="M4.5 10a8 8 0 1 1 .9 6"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M4 5v5h5"></path><path d="M4.5 10a8 8 0 1 1 .9 6"></path></svg>
     Undo all
   </button>
   <button type="button" class="eb-btn" id="ed-save">
-    <svg viewBox="0 0 24 24"><path d="M12 4v11"/><path d="m7.5 10.5 4.5 4.5 4.5-4.5"/><path d="M5 19h14"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 4v11"></path><path d="m7.5 10.5 4.5 4.5 4.5-4.5"></path><path d="M5 19h14"></path></svg>
     Download HTML
   </button>
   <span class="eb-hint" id="ed-hint">Opened locally, so editing is available</span>
@@ -932,5 +1076,6 @@ body.editing .form input,body.editing .form textarea{
   });
 })();
 </script>
-</body>
-</html>
+
+
+</body></html>
