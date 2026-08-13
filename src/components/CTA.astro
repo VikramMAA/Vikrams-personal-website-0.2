@@ -8,7 +8,7 @@ interface Props {
 
 const {
   heading = 'Tell me what is not working.',
-  body = 'A short call, no pitch deck. Describe the problem — leads that do not convert, ad spend with no return, traffic that never arrived — and I will tell you honestly whether I am the right person to fix it.',
+  body = 'Thirty minutes, shared screens, no pitch deck. Describe the problem — leads that do not convert, ad spend with no return, traffic that never arrived — and I will find the three most expensive leaks while you watch, then tell you honestly whether I am the right person to fix them.',
 } = Astro.props;
 ---
 
@@ -18,7 +18,7 @@ const {
     <h2 id="cta-heading">{heading}</h2>
     <p class="lede">{body}</p>
     <div class="btn-row">
-      <a href="/contact/" class="btn btn--primary">Book a consultation</a>
+      <a href="/contact/" class="btn btn--primary">Book the free teardown</a>
       <a href={`mailto:${contact.email}`} class="btn btn--ghost">{contact.email}</a>
     </div>
   </div>

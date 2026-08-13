@@ -159,8 +159,9 @@ const related = services.filter((s) => s.slug !== service.slug).slice(0, 3);
   }
 
   .outcome-panel {
-    background: var(--ink-900);
-    color: rgba(255, 255, 255, 0.78);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
     border-radius: var(--radius);
     padding: clamp(1.6rem, 3vw, 2.25rem);
     position: sticky;
@@ -174,7 +175,7 @@ const related = services.filter((s) => s.slug !== service.slug).slice(0, 3);
   }
 
   .outcome-panel h3 {
-    color: var(--white);
+    color: var(--text);
     margin-bottom: 1.15rem;
   }
 

@@ -70,7 +70,8 @@ const year = new Date().getFullYear();
 <style>
   .site-footer {
     background: var(--ink-900);
-    color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
     padding-block: clamp(3rem, 6vw, 4.5rem) 2rem;
     font-size: 0.94rem;
   }
@@ -97,18 +98,19 @@ const year = new Date().getFullYear();
   }
 
   .footer-name {
-    color: var(--white);
+    color: var(--text);
     font-weight: 800;
     font-size: 1.15rem;
     letter-spacing: -0.02em;
   }
 
   .footer-role {
+    font-family: var(--font-mono);
     color: var(--accent);
-    font-size: 0.75rem;
+    font-size: 0.71rem;
     text-transform: uppercase;
-    letter-spacing: 0.11em;
-    font-weight: 600;
+    letter-spacing: 0.13em;
+    font-weight: 500;
     margin-bottom: 1rem;
   }
 
@@ -123,11 +125,12 @@ const year = new Date().getFullYear();
   }
 
   .footer-heading {
-    color: var(--white);
-    font-size: 0.78rem;
+    font-family: var(--font-mono);
+    color: var(--text);
+    font-size: 0.74rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 700;
+    letter-spacing: 0.12em;
+    font-weight: 500;
     margin-bottom: 1rem;
   }
 

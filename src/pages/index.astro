@@ -9,7 +9,11 @@ import {
   stats,
   caseStudies,
   faqs,
+  method,
   process,
+  offers,
+  engagement,
+  aiPractice,
   industries,
 } from '../data/site';
 import { faqSchema } from '../data/schema';
@@ -34,9 +38,16 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
         billing you for a dashboard.
       </p>
       <div class="btn-row">
-        <a href="/contact/" class="btn btn--primary">Book a consultation</a>
+        <a href="#offers" class="btn btn--primary">Book a free 30-minute teardown</a>
         <a href="/results/" class="btn btn--ghost">See the results</a>
       </div>
+
+      <p class="hero__capacity">
+        <span class="badge">
+          <span class="badge__dot"></span>
+          Taking on {engagement.activeSlots} clients at a time
+        </span>
+      </p>
     </div>
 
     <div class="container">
@@ -44,7 +55,7 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
         {
           stats.map((s) => (
             <li>
-              <span class="stats__value">{s.value}</span>
+              <span class="stats__value mono">{s.value}</span>
               <span class="stats__label">{s.label}</span>
             </li>
           ))
@@ -56,7 +67,7 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
   {/* ------------------------------------------------------------ Problem */}
   <section class="section" aria-labelledby="problem-heading">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head reveal">
         <p class="eyebrow">The usual situation</p>
         <h2 id="problem-heading">
           Marketing is running. Revenue is not moving.
@@ -70,21 +81,21 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
       </div>
 
       <div class="grid grid--3">
-        <div class="card">
+        <div class="card reveal" style="--reveal-delay: 0ms">
           <h3>Traffic without conversion</h3>
           <p>
             The site gets visitors and nothing happens. Usually the traffic is the wrong
             audience, or the page never asks for anything specific.
           </p>
         </div>
-        <div class="card">
+        <div class="card reveal" style="--reveal-delay: 80ms">
           <h3>Ad spend without attribution</h3>
           <p>
             Money goes into Google and Meta every month. Nobody can trace a single closed
             deal back to a campaign, so the budget is a matter of faith.
           </p>
         </div>
-        <div class="card">
+        <div class="card reveal" style="--reveal-delay: 160ms">
           <h3>Leads sales will not call</h3>
           <p>
             Marketing reports lead volume, sales says the leads are junk, and both are
@@ -95,22 +106,170 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
     </div>
   </section>
 
-  {/* ----------------------------------------------------------- Services */}
-  <section class="section section--alt" aria-labelledby="services-heading">
+  {/* ------------------------------------------------------- Method / flow */}
+  <section class="section section--alt" aria-labelledby="method-heading">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head reveal">
+        <p class="eyebrow">How I work</p>
+        <h2 id="method-heading">{method.name}</h2>
+        <p>{method.premise}</p>
+      </div>
+
+      {/*
+        The flow is built as a vertical rail rather than a horizontal SVG so it
+        reads identically at every width without ever scrolling sideways. The
+        animated pulse travels the spine; the gate physically interrupts it,
+        which is the whole argument the section is making.
+      */}
+      <div class="flow-wrap">
+        <span class="flow__signal" aria-hidden="true"></span>
+
+        <ol class="flow">
+        {
+          process.map((p, i) => (
+            <>
+              <li class="flow__node reveal" style={`--reveal-delay: ${i * 70}ms`}>
+                <span class="flow__marker mono">{p.step}</span>
+                <div class="flow__body">
+                  <h3>{p.title}</h3>
+                  <p class="flow__artefact mono">
+                    <span class="flow__artefact-key">You receive</span>
+                    {p.artefact}
+                  </p>
+                  <p class="flow__desc">{p.description}</p>
+                </div>
+              </li>
+
+              {i === 0 && (
+                <li class="flow__gate reveal" style="--reveal-delay: 60ms">
+                  <span class="flow__marker flow__marker--gate mono" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                      <rect x="4" y="10.5" width="16" height="10" rx="2" />
+                      <path d="M8 10.5V7a4 4 0 0 1 8 0v3.5" />
+                    </svg>
+                  </span>
+                  <div class="flow__body">
+                    <p class="flow__gate-label mono">{method.gate.label}</p>
+                    <p class="flow__gate-rule">{method.gate.rule}</p>
+                    <p class="flow__desc">{method.gate.reason}</p>
+                  </div>
+                </li>
+              )}
+            </>
+          ))
+        }
+
+        <li class="flow__loop reveal">
+          <span class="flow__marker flow__marker--loop mono" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 11a8 8 0 0 1 14-5l3 3" />
+              <path d="M20 4v5h-5" />
+              <path d="M21 13a8 8 0 0 1-14 5l-3-3" />
+              <path d="M4 20v-5h5" />
+            </svg>
+          </span>
+          <div class="flow__body">
+            <p class="flow__desc">
+              Phases 02 to 04 repeat every month against the same number. Phase 01 only
+              runs again when the business changes.
+            </p>
+          </div>
+        </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  {/* ------------------------------------------------------------- Offers */}
+  <section class="section" id="offers" aria-labelledby="offers-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Where to start</p>
+        <h2 id="offers-heading">Three ways in, at three levels of commitment.</h2>
+        <p>
+          You do not have to decide about a retainer to find out whether I am useful.
+          Start at the top of the list — it costs you half an hour.
+        </p>
+      </div>
+
+      <div class="offers">
+        {
+          offers.map((offer, i) => (
+            <article
+              class:list={['offer', 'reveal', offer.featured && 'offer--featured']}
+              style={`--reveal-delay: ${i * 80}ms`}
+            >
+              <div class="offer__head">
+                <span class="offer__rung mono">{offer.rung}</span>
+                {offer.featured && <span class="offer__flag mono">Start here</span>}
+              </div>
+
+              <h3>{offer.title}</h3>
+
+              <dl class="offer__meta mono">
+                <div>
+                  <dt>Time</dt>
+                  <dd>{offer.duration}</dd>
+                </div>
+                <div>
+                  <dt>Price</dt>
+                  <dd>{offer.price}</dd>
+                </div>
+              </dl>
+
+              <p class="offer__summary">{offer.summary}</p>
+
+              <ul class="checklist offer__list">
+                {offer.deliverables.map((d) => (
+                  <li>{d}</li>
+                ))}
+              </ul>
+
+              <a
+                href={offer.cta.href}
+                class:list={['btn', offer.featured ? 'btn--primary' : 'btn--ghost', 'offer__cta']}
+              >
+                {offer.cta.label}
+              </a>
+            </article>
+          ))
+        }
+      </div>
+
+      <p class="capacity-note reveal">{engagement.capacityNote}</p>
+    </div>
+  </section>
+
+  {/* --------------------------------------------------------- Commitment */}
+  <section class="section section--dark" aria-labelledby="commitment-heading">
+    <div class="container container--narrow commitment reveal">
+      <p class="eyebrow">The commitment</p>
+      <h2 id="commitment-heading">{engagement.commitment.title}</h2>
+      <p class="lede">{engagement.commitment.body}</p>
+      <p class="commitment__counter">{engagement.commitment.counterPromise}</p>
+    </div>
+  </section>
+
+  {/* ----------------------------------------------------------- Services */}
+  <section class="section" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-head reveal">
         <p class="eyebrow">Services</p>
         <h2 id="services-heading">What I can take off your plate</h2>
         <p>
-          Six areas, run individually or as one system. Most engagements start with one
-          channel that needs fixing and expand once it works.
+          Six areas, run individually or as one system. Which of them you actually need
+          is an output of phase 01 — not something to pick from a menu on day one.
         </p>
       </div>
 
       <div class="grid grid--3">
         {
-          services.map((service) => (
-            <a href={`/services/${service.slug}/`} class="card">
+          services.map((service, i) => (
+            <a
+              href={`/services/${service.slug}/`}
+              class="card reveal"
+              style={`--reveal-delay: ${(i % 3) * 80}ms`}
+            >
               <h3>{service.title}</h3>
               <p>{service.summary}</p>
               <span class="card__link">Explore {service.title} &rarr;</span>
@@ -121,36 +280,32 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
     </div>
   </section>
 
-  {/* ------------------------------------------------------------ Process */}
-  <section class="section" aria-labelledby="process-heading">
+  {/* ----------------------------------------------------------------- AI */}
+  <section class="section section--alt" aria-labelledby="ai-heading">
     <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">How I work</p>
-        <h2 id="process-heading">Diagnose first. Spend second.</h2>
-        <p>
-          I will not recommend a channel before I have looked at what is already running.
-          The audit usually finds enough waste to part-fund the work that follows.
-        </p>
+      <div class="section-head reveal">
+        <p class="eyebrow">AI, specifically</p>
+        <h2 id="ai-heading">{aiPractice.heading}</h2>
+        <p>{aiPractice.intro}</p>
       </div>
 
-      <ol class="process">
+      <div class="ai-grid">
         {
-          process.map((p) => (
-            <li>
-              <span class="process__step">{p.step}</span>
-              <h3>{p.title}</h3>
-              <p>{p.description}</p>
-            </li>
+          aiPractice.items.map((item, i) => (
+            <div class="card ai-card reveal" style={`--reveal-delay: ${(i % 2) * 80}ms`}>
+              <h3>{item.label}</h3>
+              <p>{item.body}</p>
+            </div>
           ))
         }
-      </ol>
+      </div>
     </div>
   </section>
 
   {/* ------------------------------------------------------------ Results */}
-  <section class="section section--alt" aria-labelledby="results-heading">
+  <section class="section" aria-labelledby="results-heading">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head reveal">
         <p class="eyebrow">Selected work</p>
         <h2 id="results-heading">What the work has produced</h2>
         <p>
@@ -160,9 +315,13 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
 
       <div class="grid grid--3">
         {
-          caseStudies.map((cs) => (
-            <a href={`/results/#${cs.slug}`} class="card">
-              <p class="card__meta">
+          caseStudies.map((cs, i) => (
+            <a
+              href={`/results/#${cs.slug}`}
+              class="card reveal"
+              style={`--reveal-delay: ${i * 80}ms`}
+            >
+              <p class="card__meta mono">
                 {cs.industry} &middot; {cs.location}
               </p>
               <h3>{cs.client}</h3>
@@ -178,7 +337,7 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
   {/* --------------------------------------------------------- Industries */}
   <section class="section" aria-labelledby="industries-heading">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head reveal">
         <p class="eyebrow">Industries</p>
         <h2 id="industries-heading">Categories I have worked in</h2>
         <p>
@@ -186,8 +345,8 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
           and how long the buying cycle runs.
         </p>
       </div>
-      <ul class="tag-list">
-        {industries.map((industry) => <li>{industry}</li>)}
+      <ul class="tag-list reveal">
+        {industries.map((industry) => <li class="mono">{industry}</li>)}
       </ul>
     </div>
   </section>
@@ -200,14 +359,43 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
 <style>
   /* ------------------------------------------------------------------ Hero */
   .hero {
+    position: relative;
     padding-block: clamp(3.5rem, 9vw, 7rem) 0;
+    overflow: hidden;
+  }
+
+  /*
+    Ambient gradient mesh. Two soft, oversized radials — one warm, one cool —
+    drifting slowly behind the hero. The restraint is the point: at this size
+    and opacity it reads as depth, not decoration.
+  */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: -30% -10% auto -10%;
+    height: 150%;
+    z-index: -1;
     background:
-      radial-gradient(
-        ellipse 70% 60% at 15% 0%,
-        var(--accent-soft) 0%,
-        transparent 60%
-      ),
-      var(--bg);
+      radial-gradient(ellipse 46% 44% at 18% 22%, rgba(255, 90, 31, 0.2) 0%, transparent 62%),
+      radial-gradient(ellipse 42% 40% at 78% 8%, rgba(124, 140, 255, 0.18) 0%, transparent 64%),
+      radial-gradient(ellipse 60% 50% at 50% 70%, rgba(124, 140, 255, 0.07) 0%, transparent 70%);
+    filter: blur(24px);
+    animation: drift 26s ease-in-out infinite alternate;
+  }
+
+  @keyframes drift {
+    from {
+      transform: translate3d(-2%, -1%, 0) scale(1);
+    }
+    to {
+      transform: translate3d(3%, 2%, 0) scale(1.09);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero::before {
+      animation: none;
+    }
   }
 
   .hero__inner {
@@ -220,6 +408,10 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
 
   .hl {
     color: var(--accent);
+  }
+
+  .hero__capacity {
+    margin-top: 1.75rem;
   }
 
   /* ----------------------------------------------------------------- Stats */
@@ -242,59 +434,325 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
 
   .stats__value {
     font-size: clamp(1.9rem, 4vw, 2.6rem);
-    font-weight: 800;
-    letter-spacing: -0.03em;
+    font-weight: 600;
+    letter-spacing: -0.04em;
     line-height: 1;
-    color: var(--ink-900);
+    color: var(--text);
   }
 
   .stats__label {
     font-size: 0.88rem;
     color: var(--text-muted);
     line-height: 1.4;
-    max-width: 22ch;
+    max-width: 24ch;
   }
 
-  /* --------------------------------------------------------------- Process */
-  .process {
+  /* ------------------------------------------------------------------ Flow */
+  .flow-wrap {
+    position: relative;
+  }
+
+  .flow {
+    position: relative;
     list-style: none;
     padding: 0;
+    margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
-    gap: clamp(1.5rem, 3vw, 2.5rem);
-    counter-reset: none;
+    gap: clamp(1.75rem, 3.5vw, 2.5rem);
   }
 
-  .process li {
+  /* The spine. */
+  .flow::before {
+    content: '';
+    position: absolute;
+    left: 21px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      var(--border-strong) 6%,
+      var(--border-strong) 94%,
+      transparent 100%
+    );
+  }
+
+  /* The travelling pulse. */
+  .flow__signal {
+    position: absolute;
+    left: 21px;
+    top: 0;
+    width: 2px;
+    height: 22%;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      var(--accent) 45%,
+      var(--accent-2) 70%,
+      transparent 100%
+    );
+    animation: pulse-down 7s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    will-change: transform;
+  }
+
+  @keyframes pulse-down {
+    0% {
+      transform: translateY(-30%);
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+    }
+    88% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(460%);
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .flow__signal {
+      display: none;
+    }
+  }
+
+  .flow__node,
+  .flow__gate,
+  .flow__loop {
     position: relative;
-    padding-top: 1.75rem;
-    border-top: 2px solid var(--ink-900);
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: clamp(1rem, 2.5vw, 1.75rem);
+    align-items: start;
   }
 
-  .process__step {
-    display: block;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
+  .flow__marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--surface-2);
+    border: 1px solid var(--border-strong);
     color: var(--accent);
-    margin-bottom: 0.6rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    flex-shrink: 0;
   }
 
-  .process h3 {
-    margin-bottom: 0.55rem;
+  .flow__marker svg {
+    width: 19px;
+    height: 19px;
   }
 
-  .process p {
+  .flow__marker--gate {
+    color: var(--accent-2);
+    border-color: rgba(124, 140, 255, 0.45);
+    background: var(--accent-2-soft);
+    box-shadow: 0 0 0 5px rgba(124, 140, 255, 0.07);
+  }
+
+  .flow__marker--loop {
+    color: var(--text-muted);
+  }
+
+  .flow__body {
+    padding-top: 0.35rem;
+    max-width: 62ch;
+  }
+
+  .flow__artefact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.55rem;
+    margin-top: 0.5rem;
+    font-size: 0.83rem;
+    color: var(--accent);
+  }
+
+  .flow__artefact-key {
+    color: var(--ink-400);
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    font-size: 0.7rem;
+  }
+
+  .flow__desc {
+    margin-top: 0.65rem;
     color: var(--text-muted);
     font-size: 0.96rem;
   }
 
+  /* The gate is a panel rather than a plain row — it interrupts the sequence
+     visually the same way it interrupts it contractually. */
+  .flow__gate .flow__body {
+    padding: clamp(1.1rem, 2.5vw, 1.5rem) clamp(1.1rem, 2.5vw, 1.6rem);
+    border: 1px solid rgba(124, 140, 255, 0.28);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(135deg, rgba(124, 140, 255, 0.09) 0%, transparent 55%),
+      var(--surface);
+  }
+
+  .flow__gate-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: var(--accent-2);
+    margin-bottom: 0.6rem;
+  }
+
+  .flow__gate-rule {
+    font-size: var(--step-1);
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
+
+  .flow__loop .flow__body {
+    padding-top: 0.75rem;
+  }
+
+  /* ---------------------------------------------------------------- Offers */
+  .offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+    gap: clamp(1rem, 2vw, 1.5rem);
+    align-items: stretch;
+  }
+
+  .offer {
+    display: flex;
+    flex-direction: column;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: clamp(1.4rem, 2.5vw, 2rem);
+  }
+
+  .offer--featured {
+    border-color: rgba(255, 90, 31, 0.42);
+    background:
+      linear-gradient(160deg, rgba(255, 90, 31, 0.08) 0%, transparent 48%),
+      var(--surface-2);
+    box-shadow: var(--glow-accent);
+  }
+
+  .offer__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .offer__rung {
+    font-size: 0.8rem;
+    color: var(--ink-400);
+    letter-spacing: 0.08em;
+  }
+
+  .offer__flag {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    padding: 0.28rem 0.7rem;
+    border: 1px solid rgba(255, 90, 31, 0.4);
+    border-radius: 999px;
+  }
+
+  /* Fixed two-column grid rather than flex-wrap: the price strings differ
+     enough in length that wrapping put Time and Price on different rows in
+     different cards, which threw the whole row out of alignment. */
+  .offer__meta {
+    display: grid;
+    grid-template-columns: minmax(5.5rem, auto) 1fr;
+    gap: 0.4rem 1.5rem;
+    margin: 1rem 0 1.15rem;
+    padding-block: 0.9rem;
+    border-block: 1px solid var(--border);
+    font-size: 0.82rem;
+  }
+
+  .offer__meta dt {
+    color: var(--ink-400);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.68rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .offer__meta dd {
+    margin: 0;
+    color: var(--text);
+  }
+
+  .offer__summary {
+    color: var(--text-muted);
+    font-size: 0.96rem;
+  }
+
+  .offer__list {
+    margin-top: 1.25rem;
+    margin-bottom: 1.75rem;
+    font-size: 0.92rem;
+    color: var(--text-muted);
+  }
+
+  /* margin-top:auto pins every CTA to the bottom, so the buttons line up across
+     cards of unequal height. */
+  .offer__cta {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  .capacity-note {
+    margin-top: clamp(1.5rem, 3vw, 2.25rem);
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    max-width: 62ch;
+  }
+
+  /* ------------------------------------------------------------ Commitment */
+  .commitment__counter {
+    margin-top: 1.35rem;
+    padding-top: 1.35rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    max-width: 60ch;
+  }
+
+  /* -------------------------------------------------------------- AI cards */
+  /* A real two-up. The shared .grid--2 uses auto-fit, which resolves to three
+     columns at container width and leaves the fourth card orphaned. */
+  .ai-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  @media (max-width: 760px) {
+    .ai-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ai-card h3 {
+    font-size: var(--step-1);
+  }
+
   /* ------------------------------------------------------------ Card meta */
   .card__meta {
-    font-size: 0.76rem;
+    font-size: 0.72rem;
     text-transform: uppercase;
-    letter-spacing: 0.09em;
-    font-weight: 600;
+    letter-spacing: 0.11em;
     color: var(--accent);
     margin-bottom: 0.5rem;
   }
@@ -309,11 +767,17 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
   }
 
   .tag-list li {
-    padding: 0.55rem 1.15rem;
+    padding: 0.5rem 1.1rem;
     border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.92rem;
-    font-weight: 500;
-    background: var(--white);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    background: var(--surface);
+    transition: border-color 0.18s ease, color 0.18s ease;
+  }
+
+  .tag-list li:hover {
+    border-color: var(--border-strong);
+    color: var(--text);
   }
 </style>

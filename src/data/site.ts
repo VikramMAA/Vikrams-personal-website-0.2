@@ -40,12 +40,21 @@ export const contact = {
   ],
 } as const;
 
-/** Shown as the credibility strip under the hero. TODO: confirm every number. */
+/**
+ * Credibility strip under the hero.
+ *
+ * Three specific numbers beat four vague ones — "2 continents" was filler and
+ * has been dropped. Every value here traces to a real engagement below.
+ *
+ * TODO (highest-value addition): add total ad spend under management, e.g.
+ * { value: '₹4.2 Cr', label: 'Ad spend managed and optimised' }. That is the
+ * single most persuasive number a performance consultant can show, and it is
+ * the one figure only you can supply. Add it and this becomes a four-up.
+ */
 export const stats = [
-  { value: '10+', label: 'Years in digital marketing' },
-  { value: '19%', label: 'Bounce rate on social-driven traffic' },
-  { value: '3X', label: 'Organic engagement growth in 2 months' },
-  { value: '2', label: 'Continents of client work' },
+  { value: '10+', label: 'Years running marketing for companies' },
+  { value: '3X', label: 'Organic engagement growth in 8 weeks — Mapletree' },
+  { value: '19%', label: 'Bounce rate on the social traffic I sent' },
 ] as const;
 
 export type Service = {
@@ -398,33 +407,192 @@ export const faqs = [
   },
 ];
 
+/**
+ * The named method.
+ *
+ * Every consultant lists "audit → strategy → execute → optimise". What makes a
+ * process ownable is (a) a name, (b) a named artefact the client physically
+ * receives at each step, and (c) a rule about the order. All three are below.
+ */
+export const method = {
+  name: 'The Leak-First Method',
+  /** The one-line argument for the sequence. */
+  premise:
+    'Find where the money is leaking before you spend more of it. Every phase produces a document you keep, and nothing gets built until the diagnosis is signed off.',
+  /**
+   * The rule that makes the sequence non-negotiable — and the reason you cannot
+   * simply buy phase three from somebody cheaper.
+   */
+  gate: {
+    label: 'The gate',
+    rule: 'No campaign gets built until the Leak Report is signed off.',
+    reason:
+      'Building landing pages and buying traffic before anyone has agreed what a qualified lead is, is how companies spend a year proving a channel "does not work". The diagnosis is not a formality before the real work — it is what makes the real work cost less.',
+  },
+} as const;
+
 /** The engagement process shown on the home page. */
 export const process = [
   {
     step: '01',
-    title: 'Audit',
+    phase: 'Diagnose',
+    title: 'Diagnose',
+    /** The named deliverable the client keeps. */
+    artefact: 'The Leak Report',
     description:
-      'I look at what is already running — site, analytics, ad accounts, content and the sales handover — and find where the money is leaking.',
+      'I go through the site, analytics, ad accounts, content and the sales handover, and find where the money is leaking — with a rupee value attached to each leak, ranked by what costs you most.',
   },
   {
     step: '02',
-    title: 'Strategy',
+    phase: 'Decide',
+    title: 'Decide',
+    artefact: 'The Revenue Map',
     description:
-      'A written plan: which channels, which audience, what gets published, what gets spent, and the number we are holding it to.',
+      'A written plan: which channels, which audience, what gets published, what gets spent — and the single number we are holding all of it to, agreed with your sales team before anything is built.',
   },
   {
     step: '03',
-    title: 'Execute',
+    phase: 'Build',
+    title: 'Build',
+    artefact: 'The Build Sheet',
     description:
-      'The work gets done — campaigns built, pages optimised, content shipped. Either by me, or by your team with me directing.',
+      'The work gets done — campaigns built, pages optimised, tracking wired, content shipped. Either by me, or by your team with me directing. You get a running log of what shipped and when.',
   },
   {
     step: '04',
-    title: 'Optimise',
+    phase: 'Compound',
+    title: 'Compound',
+    artefact: 'The Monthly Verdict',
     description:
-      'Monthly review against the target metric. What works gets more budget, what does not gets cut. No channel is protected by sunk cost.',
+      'A monthly review against the target metric. What works gets more budget, what does not gets cut. No channel is protected by sunk cost, including the ones I recommended.',
   },
 ];
+
+/**
+ * The offer ladder — three entry points at three levels of commitment, so the
+ * page is not a single "contact us" with an undefined outcome.
+ *
+ * TODO: confirm the pricing model on the audit rung before publishing. It is
+ * written as fixed-scope-and-quoted rather than naming a figure, which is
+ * accurate today; put a real number here the moment you are comfortable with
+ * one, because a named price converts better than "quoted per project".
+ */
+export type Offer = {
+  slug: string;
+  rung: string;
+  title: string;
+  duration: string;
+  price: string;
+  summary: string;
+  /** What physically lands in their inbox. */
+  deliverables: string[];
+  cta: { label: string; href: string };
+  featured?: boolean;
+};
+
+export const offers: Offer[] = [
+  {
+    slug: 'teardown',
+    rung: '01',
+    title: 'The Leak Teardown',
+    duration: '30 minutes',
+    price: 'Free',
+    summary:
+      'A live call where we share screens and open your actual accounts — GA4, Google Ads, Meta, and the CRM if you have one. I find the three most expensive leaks while you watch.',
+    deliverables: [
+      'The three most expensive leaks in your funnel, named on the call',
+      'A recording of the session, so you can send it to whoever was not there',
+      'A written fix list — including the fixes you can do yourself without me',
+      'A straight answer on whether you need me at all',
+    ],
+    cta: { label: 'Book the teardown', href: '/contact/' },
+    featured: true,
+  },
+  {
+    slug: 'leak-report',
+    rung: '02',
+    title: 'The Leak Report',
+    duration: '2 weeks',
+    price: 'Fixed scope, quoted up front',
+    summary:
+      'The full diagnosis. Everything the teardown surfaces in 30 minutes, done properly across every channel you run — with the numbers behind each finding and a prioritised roadmap.',
+    deliverables: [
+      'Technical, content and off-page SEO audit',
+      'Ad account audit — structure, tracking accuracy, wasted spend, attribution',
+      'Qualified-lead definition agreed between marketing and sales',
+      'A prioritised roadmap your in-house team can run without me',
+    ],
+    cta: { label: 'Scope a Leak Report', href: '/contact/' },
+  },
+  {
+    slug: 'operator',
+    rung: '03',
+    title: 'Operator engagement',
+    duration: 'Monthly',
+    price: 'Flat retainer — never a percentage of spend',
+    summary:
+      'I run the work as an operator inside your business. Phases 02 to 04 of the method, month after month, against the number we agreed in the Revenue Map.',
+    deliverables: [
+      'Execution across the channels the diagnosis says are worth it',
+      'Weekly optimisation against cost per qualified lead',
+      'The Monthly Verdict — what earns more budget, what gets cut',
+      'Your team trained alongside the work, so the capability stays in-house',
+    ],
+    cta: { label: 'Discuss an engagement', href: '/contact/' },
+  },
+];
+
+/**
+ * Capacity and the commitment. Both are honest constraints of a one-person
+ * practice rather than manufactured scarcity — keep them that way.
+ *
+ * TODO: update `activeSlots` whenever your real availability changes. A stale
+ * scarcity claim is worse than none at all.
+ */
+export const engagement = {
+  activeSlots: 3,
+  capacityNote:
+    'I run three engagements at a time. That is the actual constraint of one person doing the work rather than an account manager relaying it.',
+  commitment: {
+    title: 'What I will commit to',
+    body:
+      'If the teardown does not find waste worth more than what a Leak Report would cost you, I will say so on the call and we stop there. And on any engagement I run, we agree a cost per qualified lead with your sales team up front — then I report against it honestly, including the months it goes the wrong way.',
+    /** The deliberate non-promise. This is a differentiator, not a hedge. */
+    counterPromise:
+      'What I will not do is guarantee a lead count. Guaranteed volumes are met by lowering the qualification bar, and you would be paying me to make your sales team miserable.',
+  },
+} as const;
+
+/**
+ * How AI actually gets used in the practice.
+ *
+ * Every claim here is true of this site and this workflow — the article engine,
+ * the keyword pipeline and the schema markup all exist in this repository. Keep
+ * it that way; the section only works because it is verifiable.
+ */
+export const aiPractice = {
+  heading: 'The AI part, without the hand-waving',
+  intro:
+    'Most marketers now say they "use AI". Usually that means a chatbot writing captions. Here is what it actually means in my work — including on this website, which is the demo.',
+  items: [
+    {
+      label: 'Search is being answered, not just ranked',
+      body: 'ChatGPT, Perplexity and Google AI Overviews increasingly answer the question instead of sending a click. I structure sites so they are quotable by those systems — schema markup, direct answers to real questions, and content organised in topic clusters rather than one-off posts.',
+    },
+    {
+      label: 'A publishing engine that runs itself',
+      body: 'This site runs an automated research-and-publishing pipeline twice a day: keyword demand is pulled, briefs are generated against the gaps, drafts are written and reviewed, and the article ships with its schema already in place. I built it here first so I can install the same thing for clients.',
+    },
+    {
+      label: 'Keyword research as a pipeline, not a spreadsheet',
+      body: 'Search demand gets clustered into the pages that should exist, mapped by intent, and turned into a site architecture — automatically, and re-run as demand shifts. It is the difference between a keyword list and a plan.',
+    },
+    {
+      label: 'What I still do by hand',
+      body: 'Positioning, the qualified-lead definition, the call with your sales team, and every number I put in front of you. Automation is good at volume and terrible at judgement, and pretending otherwise is how you end up with a hundred articles nobody asked for.',
+    },
+  ],
+} as const;
 
 /** Industries worked in. Used for topical relevance and internal linking. */
 export const industries = [

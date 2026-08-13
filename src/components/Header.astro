@@ -41,7 +41,7 @@ const isActive = (href: string) =>
           ))
         }
         <li class="site-nav__cta">
-          <a href="/contact/" class="btn btn--primary">Book a consultation</a>
+          <a href="/contact/" class="btn btn--primary">Book a teardown</a>
         </li>
       </ul>
     </nav>
@@ -53,8 +53,8 @@ const isActive = (href: string) =>
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(255, 255, 255, 0.88);
-    backdrop-filter: blur(12px);
+    background: rgba(6, 8, 15, 0.72);
+    backdrop-filter: blur(14px) saturate(140%);
     border-bottom: 1px solid var(--border);
   }
 
@@ -81,11 +81,12 @@ const isActive = (href: string) =>
   }
 
   .brand__role {
-    font-size: 0.72rem;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
     text-transform: uppercase;
-    letter-spacing: 0.11em;
+    letter-spacing: 0.13em;
     color: var(--text-muted);
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .site-nav ul {
@@ -148,7 +149,7 @@ const isActive = (href: string) =>
     .nav-toggle__label span {
       display: block;
       height: 2px;
-      background: var(--ink-900);
+      background: var(--text);
       border-radius: 2px;
       transition: transform 0.2s ease, opacity 0.2s ease;
     }

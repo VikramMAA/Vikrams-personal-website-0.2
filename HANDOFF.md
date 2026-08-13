@@ -40,7 +40,7 @@ which are less patient than Googlebot about executing JavaScript.
 
 | Route | Purpose |
 | --- | --- |
-| `/` | Hero, credibility stats, problem framing, services, process, case studies, industries, FAQ, CTA |
+| `/` | Hero, credibility stats, problem framing, the Leak-First Method flow, offer ladder, commitment, services, AI practice, case studies, industries, FAQ, CTA |
 | `/services/` | Hub listing all six services |
 | `/services/seo/` | SEO |
 | `/services/performance-marketing/` | Google + Meta ads |
@@ -61,8 +61,28 @@ which are less patient than Googlebot about executing JavaScript.
 
 **Everything is driven from one file: `src/data/site.ts`.** Name, contact
 details, stats, all six services (copy, deliverables, outcomes, FAQs, SEO titles),
-case studies, home FAQ, process steps and industry tags. Edit there and the pages,
-navigation, footer, sitemap and structured data all update together.
+case studies, home FAQ, the method and its process steps, the offer ladder,
+the capacity/commitment block, the AI practice section and industry tags. Edit
+there and the pages, navigation, footer, sitemap and structured data all update
+together.
+
+The positioning layer is worth understanding before you edit it:
+
+- `method` — the name (*The Leak-First Method*), the one-line premise, and
+  `method.gate`, the rule that diagnosis must be signed off before anything is
+  built. The gate is the argument for the sequence; it is what stops the process
+  reading as the generic audit → strategy → execute → optimise every agency
+  lists.
+- `process` — the four phases. Each carries an `artefact`: the named document
+  the client physically receives at that step.
+- `offers` — three rungs at three levels of commitment, so the page is not one
+  undefined "contact us". The `featured` flag styles the recommended entry point.
+- `engagement` — how many clients you take at once, and what you will and will
+  not commit to. `counterPromise` is the deliberate refusal to guarantee lead
+  volume; it reads as a differentiator, so do not soften it into a hedge.
+- `aiPractice` — every claim there is true of this repository (the twice-daily
+  article engine, the keyword pipeline, the schema markup). It only works
+  because it is verifiable, so do not add a claim you cannot demonstrate.
 
 Adding a service = add one object to the `services` array. The page, nav entry,
 footer link, sitemap entry and `OfferCatalog` schema all appear automatically.
@@ -265,9 +285,12 @@ Search the codebase for `TODO` — every placeholder is marked. The important on
    Then update the `Sitemap:` line in `public/robots.txt` and every URL in
    `public/llms.txt`.
 
-2. **Confirm the four hero stats** in `src/data/site.ts`. Currently:
-   `10+ years`, `19% bounce rate`, `3X organic engagement in 2 months`,
-   `2 continents`. These came from the old portfolio PDF and are unverified.
+2. **Confirm the hero stats** in `src/data/site.ts`. Currently three:
+   `10+ years`, `3X organic engagement in 8 weeks`, `19% bounce rate`. These came
+   from the old portfolio PDF and are unverified. (`2 continents` was dropped —
+   it was filler, and three specific numbers read stronger than four vague ones.)
+   The highest-value addition is total ad spend under management; add it as a
+   fourth stat when you have the figure.
 
 3. **Confirm the case study numbers** on `/results/`. Same source, same caveat.
    The page already carries an honest "a note on the numbers" disclaimer, which
@@ -417,9 +440,42 @@ README.md              day-to-day editing guide
 
 ### Design tokens
 
-Defined at the top of `src/styles/global.css`. Accent colour is `#ff5a1f`
-(warm orange) against near-black `#0d1117`. Type is Inter, loaded from Google
-Fonts. Change `--accent` in one place to re-skin the whole site.
+Defined at the top of `src/styles/global.css`. The site runs a single committed
+dark theme — there is no light mode and no toggle.
+
+- **Ground** is `#06080f`, with content sitting on raised surfaces
+  (`--surface`, `--surface-2`, `--surface-3`) rather than inside outlined boxes.
+- **Two accents.** `--accent` `#ff5a1f` (warm orange) is the brand and carries
+  every link, button and CTA. `--accent-2` `#7c8cff` (cool indigo) is reserved
+  for data, diagram edges and state — the warm/cool tension is most of what
+  makes the page read as modern. Do not use `--accent-2` for ordinary links.
+- **Two faces.** Inter for everything readable; JetBrains Mono (`--font-mono`,
+  the `.mono` utility) for metadata — eyebrows, step numbers, stat values,
+  diagram labels. The mono face is what makes the site read as instrumented
+  rather than as a brochure.
+- **The `--ink-*` ramp kept its old names** so existing components did not need
+  rewriting; the values now point into a dark ramp. `--ink-900` is still the
+  extreme (the page ground), `--ink-050` still the lightest surface step.
+- **Grain.** `body::before` lays a 3.5%-opacity noise texture over the whole
+  page. It exists to stop the large hero gradients banding on 8-bit displays.
+
+Changing `--accent` in one place still re-skins the site.
+
+### Motion
+
+Three moving parts, all of which stop under `prefers-reduced-motion`:
+
+1. The hero gradient mesh drifts on a 26s loop (`.hero::before`).
+2. The method flow has a pulse travelling down its spine (`.flow__signal`).
+3. Sections fade and rise 12px on scroll via an IntersectionObserver in
+   `BaseLayout.astro`, which adds `.js-reveal` to `<html>` and `.is-visible` to
+   each `.reveal`.
+
+The reveal script hides nothing until it has confirmed it can run, so a failed
+script or a no-JS visitor sees every section at full opacity. It also
+force-reveals everything after 2.5s regardless of scroll position — a crawler
+that renders without scrolling must never be shown opacity-0 body copy on a site
+whose whole point is search visibility.
 
 ### One caveat on the local setup
 

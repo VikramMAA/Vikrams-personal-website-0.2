@@ -1,8 +1,8 @@
 # Vikram M A A — personal website
 
 Personal consulting site built to rank in search and get cited by AI assistants.
-Static HTML, no client-side framework, no runtime JavaScript beyond a CSS-only
-mobile menu.
+Static HTML, no client-side framework. The only runtime JavaScript is a scroll-
+reveal observer, the view counter, and a CSS-only mobile menu that needs none.
 
 **Stack:** [Astro](https://astro.build) 7 · plain CSS · deployed on Netlify.
 
@@ -40,11 +40,15 @@ structured data that Google and AI crawlers read. You rarely need to touch the
 | --- | --- |
 | Name, job title, years of experience, tagline | `site` object |
 | Email, phone, WhatsApp, city, social links | `contact` object |
-| The four numbers under the hero | `stats` array |
+| The numbers under the hero | `stats` array |
 | Services — copy, deliverables, FAQs, SEO titles | `services` array |
 | Case studies on `/results/` | `caseStudies` array |
 | Home page FAQ | `faqs` array |
-| The four process steps | `process` array |
+| The method name, premise and the gate rule | `method` object |
+| The four process steps and their named deliverables | `process` array |
+| The three offer rungs (teardown / report / retainer) | `offers` array |
+| Capacity note and what you commit to | `engagement` object |
+| The "AI, specifically" section | `aiPractice` object |
 | Industry tags | `industries` array |
 
 ### Adding a service
@@ -91,14 +95,22 @@ These are the things that must change. Search the repo for `TODO` to find the re
 
 2. **Confirm every number.** The stats under the hero and the figures in the case
    studies came from the old portfolio PDF. Verify them before they are public.
+   The `stats` array is deliberately three items — add ad spend under management
+   as a fourth once you have the figure, since it is the most persuasive number
+   a performance consultant can show.
 
-3. **Check the LinkedIn URL** in `contact.socials` — it is a guess.
+3. **Confirm the offer ladder.** `offers` prices the audit as "fixed scope,
+   quoted up front" and `engagement.activeSlots` claims three concurrent
+   engagements. Both are honest today; keep them accurate, because a stale
+   capacity claim is worse than none.
 
-4. **Confirm the case study clients are happy to be named** (Mapletree, Ayanam
+4. **Check the LinkedIn URL** in `contact.socials` — it is a guess.
+
+5. **Confirm the case study clients are happy to be named** (Mapletree, Ayanam
    Aerospace, MUKA), and add real quotes to the `quote` field where you have
    permission.
 
-5. **Review the years of experience** (currently 10) and the About page timeline,
+6. **Review the years of experience** (currently 10) and the About page timeline,
    which uses placeholder period labels rather than real dates.
 
 ---
