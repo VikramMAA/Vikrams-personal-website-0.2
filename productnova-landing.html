@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProductNova — Full product build in 3–6 weeks</title>
+<meta name="description" content="ProductNova builds complete, production-ready digital products in 3 to 6 weeks. Discovery, design, engineering and launch handled by one senior team.">
+<style>
+/* ============================================================
+   ProductNova — Google Ads landing page
+   Single file. No external assets, fonts or scripts.
+   SWAP POINTS are marked with  <!-- SWAP -->  in the HTML.
+   ============================================================ */
+
+:root{
+  --bg:#05060b;
+  --bg-2:#080a12;
+  --ink:#eaeefb;
+  --ink-2:#98a2bd;
+  --ink-3:#6b7593;
+  --line:rgba(255,255,255,.085);
+  --line-2:rgba(255,255,255,.16);
+  --card:rgba(255,255,255,.032);
+  --card-2:rgba(255,255,255,.055);
+  --c1:#2ee6ff;   /* cyan  */
+  --c2:#7d5cff;   /* violet */
+  --c3:#ff5ca8;   /* pink  */
+  --ok:#4dffb8;
+  --r:16px;
+  --shell:1240px;
+  --ease:cubic-bezier(.22,.68,.24,1);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Inter","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:16px;line-height:1.55;
+  letter-spacing:-.011em;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,textarea{font:inherit;color:inherit}
+
+/* ---------- animated backdrop ---------- */
+.bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.bg::after{ /* grid */
+  content:"";position:absolute;inset:-2px;
+  background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(120% 90% at 50% 0%,#000 0%,transparent 78%);
+  -webkit-mask-image:radial-gradient(120% 90% at 50% 0%,#000 0%,transparent 78%);
+}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5}
+.orb.a{width:720px;height:720px;top:-300px;left:-180px;background:radial-gradient(circle,#2ee6ff55,transparent 65%);animation:drift1 24s var(--ease) infinite alternate}
+.orb.b{width:640px;height:640px;top:-160px;right:-200px;background:radial-gradient(circle,#7d5cff5e,transparent 65%);animation:drift2 30s var(--ease) infinite alternate}
+.orb.c{width:820px;height:820px;top:52%;left:35%;background:radial-gradient(circle,#ff5ca833,transparent 66%);animation:drift1 34s var(--ease) infinite alternate-reverse}
+@keyframes drift1{to{transform:translate3d(140px,120px,0) scale(1.15)}}
+@keyframes drift2{to{transform:translate3d(-160px,90px,0) scale(1.1)}}
+.scan{position:absolute;inset:0;background:repeating-linear-gradient(180deg,rgba(255,255,255,.014) 0 2px,transparent 2px 4px);opacity:.5}
+
+/* ---------- shell ---------- */
+.wrap{position:relative;z-index:1;max-width:var(--shell);margin:0 auto;padding:0 26px}
+
+/* ---------- nav ---------- */
+header.nav{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  background:linear-gradient(180deg,rgba(5,6,11,.88),rgba(5,6,11,.42));
+  border-bottom:1px solid var(--line);
+}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;letter-spacing:-.03em}
+.logo .mark{width:26px;height:26px;flex:0 0 26px}
+.logo b{background:linear-gradient(92deg,#fff 20%,var(--c1));-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-right{display:flex;align-items:center;gap:18px;font-size:13.5px;color:var(--ink-2)}
+.nav-right .ph{display:flex;align-items:center;gap:7px;letter-spacing:.01em}
+.dot-live{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(77,255,184,.6);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(77,255,184,0)}100%{box-shadow:0 0 0 0 rgba(77,255,184,0)}}
+
+/* ---------- layout: content + sticky form ---------- */
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 396px;gap:56px;align-items:start;padding-top:42px}
+.rail{position:sticky;top:88px;min-width:0}
+.hero-col{min-width:0}
+
+/* ---------- type ---------- */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-2);border:1px solid var(--line-2);border-radius:100px;
+  padding:7px 14px;background:rgba(255,255,255,.03);
+}
+h1{
+  font-size:clamp(36px,4.6vw,57px);line-height:1.03;letter-spacing:-.042em;font-weight:800;
+  margin:18px 0 0;
+}
+h1 .grad{background:linear-gradient(96deg,var(--c1) 0%,#a99bff 48%,var(--c3) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(26px,3.1vw,38px);line-height:1.1;letter-spacing:-.035em;font-weight:800}
+h3{font-size:17px;letter-spacing:-.02em;font-weight:700}
+.lede{font-size:clamp(15.5px,1.4vw,17.5px);color:var(--ink-2);max-width:640px;margin-top:16px;line-height:1.6}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--c1);margin-bottom:14px;display:block}
+.muted{color:var(--ink-2)}
+.sm{font-size:13.5px}
+
+section{padding:44px 0;position:relative}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--line-2),transparent)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.07s}.rv.d2{transition-delay:.14s}.rv.d3{transition-delay:.21s}
+.rv.d4{transition-delay:.28s}.rv.d5{transition-delay:.35s}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.orb{animation:none}}
+
+/* ---------- hero bits ---------- */
+.hero-badges{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--ink-2);
+  border:1px solid var(--line);background:var(--card);border-radius:100px;padding:8px 14px;
+  transition:border-color .3s var(--ease),color .3s var(--ease),transform .3s var(--ease);
+}
+.chip:hover{border-color:var(--line-2);color:var(--ink);transform:translateY(-2px)}
+.chip svg{width:15px;height:15px;flex:0 0 15px;stroke:var(--c1)}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:32px;
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--line)}
+.stat{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.012));padding:18px 16px}
+.stat .n{font-size:27px;font-weight:800;letter-spacing:-.035em;
+  background:linear-gradient(180deg,#fff,#9fb0d8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .l{font-size:11.5px;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase;margin-top:4px;font-weight:600}
+
+/* ---------- cards ---------- */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.card{
+  position:relative;border:1px solid var(--line);border-radius:var(--r);
+  background:linear-gradient(180deg,var(--card-2),var(--card));
+  padding:22px 20px 24px;overflow:hidden;
+  transition:transform .45s var(--ease),border-color .45s var(--ease);
+}
+.card::before{ /* neon top edge on hover */
+  content:"";position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--c1),var(--c2),transparent);
+  opacity:0;transition:opacity .45s var(--ease);
+}
+.card::after{ /* glow */
+  content:"";position:absolute;inset:0;border-radius:var(--r);opacity:0;
+  background:radial-gradient(420px 180px at var(--mx,50%) 0%,rgba(46,230,255,.10),transparent 70%);
+  transition:opacity .45s var(--ease);pointer-events:none;
+}
+.card:hover{transform:translateY(-4px);border-color:var(--line-2)}
+.card:hover::before,.card:hover::after{opacity:1}
+.icn{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;margin-bottom:16px;
+  border:1px solid var(--line-2);background:linear-gradient(150deg,rgba(46,230,255,.16),rgba(125,92,255,.13))}
+.icn svg{width:21px;height:21px;stroke:var(--c1);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.card p{color:var(--ink-2);font-size:14.5px;margin-top:9px;line-height:1.62}
+
+/* ---------- comparison infographic ---------- */
+.compare{border:1px solid var(--line);border-radius:var(--r);padding:24px;margin-top:26px;
+  background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.012))}
+.bar-row{margin-top:20px}
+.bar-row:first-of-type{margin-top:8px}
+.bar-head{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px;margin-bottom:9px}
+.bar-head b{font-weight:700;font-size:14.5px}
+.track{height:15px;border-radius:100px;background:rgba(255,255,255,.055);overflow:hidden;position:relative}
+.fill{height:100%;width:0;border-radius:100px;transition:width 1.5s var(--ease) .15s}
+.in .fill{width:var(--w)}
+.fill.slow{background:repeating-linear-gradient(115deg,rgba(255,255,255,.16) 0 9px,rgba(255,255,255,.08) 9px 18px)}
+.fill.fast{background:linear-gradient(90deg,var(--c1),var(--c2));box-shadow:0 0 22px rgba(46,230,255,.45)}
+.axis{display:flex;justify-content:space-between;margin-top:12px;font-size:11px;color:var(--ink-3);
+  border-top:1px dashed var(--line-2);padding-top:8px;letter-spacing:.05em}
+
+/* ---------- timeline ---------- */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;position:relative}
+.tl::before{content:"";position:absolute;top:15px;left:6%;right:6%;height:2px;
+  background:linear-gradient(90deg,var(--c1),var(--c2),var(--c3));opacity:.35}
+.tl::after{content:"";position:absolute;top:14px;left:6%;width:0;height:4px;border-radius:4px;
+  background:linear-gradient(90deg,var(--c1),var(--c2));box-shadow:0 0 18px var(--c1);
+  transition:width 1.8s var(--ease) .2s}
+.tl.in::after{width:88%}
+.step{padding-top:0}
+.node{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;position:relative;z-index:2;
+  background:var(--bg-2);border:1.5px solid var(--line-2);font-size:12px;font-weight:800;color:var(--c1);
+  transition:border-color .4s var(--ease),box-shadow .4s var(--ease)}
+.step:hover .node{border-color:var(--c1);box-shadow:0 0 0 6px rgba(46,230,255,.09)}
+.step .wk{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin:16px 0 5px}
+.step h3{margin-bottom:7px}
+.step p{font-size:13.8px;color:var(--ink-2);line-height:1.58}
+
+/* ---------- deliverables ---------- */
+.deliv{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+.d{display:flex;gap:11px;align-items:flex-start;font-size:14px;color:var(--ink-2);
+  border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--card);
+  transition:background .35s var(--ease),border-color .35s var(--ease)}
+.d:hover{background:var(--card-2);border-color:var(--line-2)}
+.d svg{width:17px;height:17px;flex:0 0 17px;margin-top:1px;stroke:var(--ok);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.d b{color:var(--ink);font-weight:650}
+
+/* ---------- capabilities ---------- */
+.caps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}
+.cap{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--card);
+  display:flex;gap:15px;transition:transform .4s var(--ease),border-color .4s var(--ease),background .4s var(--ease)}
+.cap:hover{transform:translateY(-3px);border-color:var(--line-2);background:var(--card-2)}
+.cap .icn{margin-bottom:0;flex:0 0 42px}
+.cap h3{font-size:15.5px}
+.cap p{font-size:13.6px;color:var(--ink-2);margin-top:6px;line-height:1.55}
+.cap .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.tag{font-size:11px;color:var(--ink-3);border:1px solid var(--line);border-radius:6px;padding:3px 7px;letter-spacing:.02em}
+
+/* ---------- marquee ---------- */
+.mq{margin-top:24px;overflow:hidden;position:relative;max-width:100%;
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mq-in{display:flex;gap:10px;width:max-content;animation:slide 34s linear infinite}
+.mq:hover .mq-in{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+.mq .chip{font-size:12.5px;padding:7px 13px;white-space:nowrap}
+
+/* ---------- final CTA ---------- */
+.final{border:1px solid var(--line-2);border-radius:20px;padding:30px;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,rgba(46,230,255,.10),rgba(125,92,255,.10) 55%,rgba(255,92,168,.08))}
+.final::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(600px 200px at 15% 0%,rgba(255,255,255,.09),transparent 70%)}
+.final > *{position:relative;z-index:1}
+
+/* ---------- FORM ---------- */
+.form{
+  border:1px solid var(--line-2);border-radius:18px;overflow:hidden;
+  background:linear-gradient(180deg,rgba(16,19,32,.94),rgba(8,10,18,.94));
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  box-shadow:0 24px 70px -24px rgba(0,0,0,.9),0 0 0 1px rgba(46,230,255,.07) inset;
+}
+.form-top{padding:20px 22px 16px;border-bottom:1px solid var(--line);position:relative}
+.form-top::after{content:"";position:absolute;bottom:-1px;left:22px;width:56px;height:2px;
+  background:linear-gradient(90deg,var(--c1),var(--c2))}
+.form-top h3{font-size:19px;letter-spacing:-.03em}
+.form-top p{font-size:13px;color:var(--ink-2);margin-top:6px}
+.form-body{padding:18px 22px 22px;display:grid;gap:13px}
+label{display:block;font-size:11.5px;font-weight:650;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.field input,.field textarea{
+  width:100%;background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:10px;
+  padding:11px 13px;font-size:14.5px;outline:none;
+  transition:border-color .25s var(--ease),box-shadow .25s var(--ease),background .25s var(--ease);
+}
+.field textarea{resize:vertical;min-height:74px;line-height:1.5}
+.field input::placeholder,.field textarea::placeholder{color:#5b6480}
+.field input:focus,.field textarea:focus{
+  border-color:rgba(46,230,255,.55);background:rgba(255,255,255,.065);
+  box-shadow:0 0 0 3px rgba(46,230,255,.11)
+}
+.field.err input,.field.err textarea{border-color:rgba(255,92,168,.7)}
+.err-msg{display:none;font-size:11.5px;color:var(--c3);margin-top:5px}
+.field.err .err-msg{display:block}
+
+.btn{
+  position:relative;display:flex;align-items:center;justify-content:center;gap:9px;width:100%;
+  border:0;border-radius:11px;padding:14px 18px;cursor:pointer;
+  font-size:15px;font-weight:700;letter-spacing:-.01em;color:#04121a;
+  background:linear-gradient(96deg,var(--c1),#8ad9ff 45%,var(--c2));
+  background-size:180% 100%;
+  box-shadow:0 10px 34px -10px rgba(46,230,255,.6);
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),background-position .6s var(--ease);
+  overflow:hidden;
+}
+.btn:hover{transform:translateY(-2px);background-position:100% 0;box-shadow:0 16px 42px -10px rgba(125,92,255,.65)}
+.btn:active{transform:translateY(0)}
+.btn svg{width:17px;height:17px;stroke:#04121a;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line-2);box-shadow:none}
+.btn.alt:hover{background:rgba(255,255,255,.05);box-shadow:none}
+.btn.alt svg{stroke:var(--c1)}
+
+.form-foot{display:flex;align-items:center;gap:8px;font-size:11.5px;color:var(--ink-3);justify-content:center;margin-top:2px}
+.form-foot svg{width:13px;height:13px;stroke:var(--ok);fill:none;stroke-width:2}
+.orbar{display:flex;align-items:center;gap:10px;color:var(--ink-3);font-size:11.5px;margin:2px 0}
+.orbar::before,.orbar::after{content:"";flex:1;height:1px;background:var(--line)}
+
+.avail{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--ink-2);
+  padding:11px 22px;background:rgba(77,255,184,.05);border-top:1px solid var(--line)}
+.avail .wa{margin-left:auto;display:inline-flex;align-items:center;gap:6px;color:var(--c1);font-weight:650;
+  transition:opacity .25s var(--ease)}
+.avail .wa:hover{opacity:.75}
+.avail .wa svg{width:14px;height:14px;stroke:var(--c1)}
+
+/* success state */
+.done{display:none;padding:44px 26px;text-align:center}
+.form.sent .form-top,.form.sent .form-body,.form.sent .avail{display:none}
+.form.sent .done{display:block;animation:pop .55s var(--ease)}
+@keyframes pop{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.done .ring{width:62px;height:62px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;
+  border:1.5px solid rgba(77,255,184,.45);background:radial-gradient(circle,rgba(77,255,184,.16),transparent 70%)}
+.done .ring svg{width:28px;height:28px;stroke:var(--ok);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.done h3{font-size:21px;letter-spacing:-.03em}
+.done p{color:var(--ink-2);font-size:14px;margin-top:9px}
+
+/* ---------- mobile sticky CTA ---------- */
+.mobile-cta{
+  display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:11px 16px calc(11px + env(safe-area-inset-bottom));
+  background:linear-gradient(180deg,rgba(5,6,11,.72),rgba(5,6,11,.97));
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);
+}
+
+footer{border-top:1px solid var(--line);padding:30px 0 40px;font-size:12.5px;color:var(--ink-3)}
+.foot-in{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .grid{grid-template-columns:minmax(0,1fr);gap:34px;padding-top:36px}
+  /* JS relocates the form directly under the hero on this breakpoint */
+  .rail{position:static;order:2;max-width:560px;margin:30px 0 4px}
+  .hero-col{order:1}
+  .cards,.deliv{grid-template-columns:1fr 1fr}
+  .caps{grid-template-columns:1fr}
+  .tl{grid-template-columns:1fr 1fr;gap:26px}
+  .tl::before,.tl::after{display:none}
+}
+@media (max-width:640px){
+  .wrap{padding:0 18px}
+  section{padding:38px 0}
+  .stats{grid-template-columns:1fr 1fr}
+  .cards,.deliv,.tl{grid-template-columns:1fr}
+  .nav-right .ph span{display:none}
+  .mobile-cta{display:block}
+  body{padding-bottom:74px}
+  .final{padding:26px 20px}
+  .card{padding:18px 17px 20px}
+  .cap{padding:16px;gap:13px}
+  .tl{gap:20px}
+  .grid{padding-top:28px}
+}
+</style>
+</head>
+<body>
+
+<div class="bg" aria-hidden="true">
+  <div class="orb a"></div><div class="orb b"></div><div class="orb c"></div>
+  <div class="scan"></div>
+</div>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <div class="logo">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32">
+          <stop offset="0" stop-color="#2ee6ff"/><stop offset="1" stop-color="#7d5cff"/>
+        </linearGradient></defs>
+        <rect x="1.2" y="1.2" width="29.6" height="29.6" rx="9" stroke="url(#lg)" stroke-width="1.6"/>
+        <path d="M10 22V10l12 12V10" stroke="url(#lg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Product<b>Nova</b></span>
+    </div>
+    <div class="nav-right">
+      <!-- SWAP: real phone number -->
+      <a class="ph" href="tel:+910000000000"><span class="dot-live"></span><span>+91 00000 00000</span></a>
+      <a class="chip" href="#lead-form">Get a build plan</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+<div class="grid">
+
+  <!-- ============ LEFT: CONTENT ============ -->
+  <main class="hero-col">
+
+    <!-- ---------- HERO ---------- -->
+    <div class="rv in" id="hero">
+      <span class="eyebrow"><span class="dot-live"></span> Bengaluru · 20+ products shipped since 2023</span>
+      <h1>Your full product,<br>built in <span class="grad">3 to 6 weeks.</span></h1>
+      <p class="lede">
+        Not a mockup, not a clickable demo. A real product your customers can sign into and pay for,
+        built end to end by the same team that has shipped 20+ AI-powered platforms across edtech,
+        healthcare, retail and agritech.
+      </p>
+
+      <div class="hero-badges">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg> Fixed scope, fixed timeline</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6.5v5c0 4.6 3.3 8.6 8 9.5 4.7-.9 8-4.9 8-9.5v-5L12 3Z"/></svg> Code stays in your repo</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Weekly builds you can use</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><div class="n">3–6</div><div class="l">Weeks to live</div></div>
+        <div class="stat"><div class="n">20+</div><div class="l">Products shipped</div></div>
+        <div class="stat"><div class="n">20 yrs</div><div class="l">Team experience</div></div>
+        <div class="stat"><div class="n">1 day</div><div class="l">To your quote</div></div>
+      </div>
+    </div>
+
+    <!-- ---------- WHY FAST ---------- -->
+    <section>
+      <div class="rv">
+        <span class="kicker">Why weeks and not months</span>
+        <h2>Most of the delay isn't the building.</h2>
+        <p class="lede">
+          It's the waiting. Waiting on a design handoff, waiting on a sprint boundary, waiting on a
+          project manager to relay something between two teams. We took that out.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card rv d1">
+          <div class="icn"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="8" r="2.4"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5M17 14c2.2.3 3.6 2 3.6 4"/></svg></div>
+          <h3>One squad, no handoffs</h3>
+          <p>The people who scope your product are the ones who design it and write the code. Nothing gets thrown over a wall, so nothing sits in a queue waiting for a status meeting.</p>
+        </article>
+        <article class="card rv d2">
+          <div class="icn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><path d="M14 17.2h6.5M17.2 14v6.5"/></svg></div>
+          <h3>We don't rebuild solved problems</h3>
+          <p>Auth, billing, roles, notifications, infra, admin panels. We have all of it battle-tested and ready. The weeks go into the 30% that actually makes your product different.</p>
+        </article>
+        <article class="card rv d3">
+          <div class="icn"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.2"/></svg></div>
+          <h3>AI takes the grunt work</h3>
+          <p>Scaffolding, test coverage, data migrations, documentation. Our engineers review every line that ships, but they aren't the ones typing all of it. That's where the compression comes from.</p>
+        </article>
+      </div>
+
+      <!-- comparison infographic -->
+      <div class="compare rv">
+        <h3>Same product. Two calendars.</h3>
+        <div class="bar-row">
+          <div class="bar-head"><b>Typical dev agency</b><span class="muted sm">20–24 weeks</span></div>
+          <div class="track"><div class="fill slow" style="--w:100%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-head"><b style="color:var(--c1)">ProductNova</b><span class="muted sm">3–6 weeks</span></div>
+          <div class="track"><div class="fill fast" style="--w:25%"></div></div>
+        </div>
+        <div class="axis"><span>WEEK 0</span><span>WEEK 6</span><span>WEEK 12</span><span>WEEK 18</span><span>WEEK 24</span></div>
+      </div>
+    </section>
+
+    <div class="rule"></div>
+
+    <!-- ---------- TIMELINE ---------- -->
+    <section>
+      <div class="rv">
+        <span class="kicker">The sprint</span>
+        <h2>What the six weeks actually look like</h2>
+        <p class="lede">Every Friday you get a build on a live URL. There's no big reveal at the end, because you've been using it since week two.</p>
+      </div>
+
+      <div class="tl rv">
+        <div class="step">
+          <div class="node">01</div>
+          <div class="wk">Week 0–1</div>
+          <h3>Blueprint</h3>
+          <p>Two working sessions. We pin down the one job your product has to do, cut everything that isn't v1, and give you a scope and a fixed price to sign off on.</p>
+        </div>
+        <div class="step">
+          <div class="node">02</div>
+          <div class="wk">Week 1–2</div>
+          <h3>Design</h3>
+          <p>A clickable prototype of the real screens, not a moodboard. You click through it and tell us what's wrong before a line of production code exists.</p>
+        </div>
+        <div class="step">
+          <div class="node">03</div>
+          <div class="wk">Week 2–5</div>
+          <h3>Build</h3>
+          <p>Frontend, backend, database, integrations and any AI in the product. Deployed continuously, so you're testing real features while we're still writing them.</p>
+        </div>
+        <div class="step">
+          <div class="node">04</div>
+          <div class="wk">Week 5–6</div>
+          <h3>Launch</h3>
+          <p>Load tested, secured, monitored and live on your cloud account. You get the repo, the documentation and a walkthrough with whoever takes it forward.</p>
+        </div>
+      </div>
+
+      <div class="deliv">
+        <div class="d rv d1"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg><span><b>Production codebase</b> in your GitHub, not ours</span></div>
+        <div class="d rv d1"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg><span><b>Figma files</b> and a design system you can extend</span></div>
+        <div class="d rv d2"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg><span><b>Cloud infrastructure</b> set up as code on your account</span></div>
+        <div class="d rv d2"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg><span><b>Admin dashboard</b> so your team runs it without us</span></div>
+        <div class="d rv d3"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg><span><b>API docs and runbooks</b> for whoever inherits it</span></div>
+        <div class="d rv d3"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg><span><b>30 days of support</b> after go-live, included</span></div>
+      </div>
+    </section>
+
+    <div class="rule"></div>
+
+    <!-- ---------- CAPABILITIES (bottom) ---------- -->
+    <section>
+      <div class="rv">
+        <span class="kicker">Capabilities</span>
+        <h2>Everything a product needs, under one roof</h2>
+        <p class="lede">You won't be managing three vendors and hoping they talk to each other. Here's what sits inside the team.</p>
+      </div>
+
+      <div class="caps">
+        <article class="cap rv d1">
+          <div class="icn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4M11 8v6M8 11h6"/></svg></div>
+          <div>
+            <h3>Discovery &amp; product strategy</h3>
+            <p>We figure out what to build before we build it. User interviews, competitor teardown, a ruthless v1 scope and a roadmap for what comes after.</p>
+            <div class="tags"><span class="tag">User research</span><span class="tag">Scope &amp; pricing</span><span class="tag">Roadmap</span></div>
+          </div>
+        </article>
+
+        <article class="cap rv d1">
+          <div class="icn"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2.5"/><path d="M3 9h18M8 22h8M12 18v4"/></svg></div>
+          <div>
+            <h3>Product &amp; experience design</h3>
+            <p>Interface design that a real user can get through without a tutorial. Prototypes first, design system second, so the build never stalls on a missing screen.</p>
+            <div class="tags"><span class="tag">UX / UI</span><span class="tag">Prototyping</span><span class="tag">Design system</span></div>
+          </div>
+        </article>
+
+        <article class="cap rv d2">
+          <div class="icn"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></div>
+          <div>
+            <h3>Full-stack engineering</h3>
+            <p>Web apps, mobile apps, APIs, dashboards and the integrations that connect them to whatever you already run. Written to be handed over, not to lock you in.</p>
+            <div class="tags"><span class="tag">React / Next.js</span><span class="tag">Node · Python</span><span class="tag">iOS · Android</span></div>
+          </div>
+        </article>
+
+        <article class="cap rv d2">
+          <div class="icn"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="9.5" cy="10" r="1.2"/><circle cx="14.5" cy="10" r="1.2"/><path d="M9 15h6M12 1.5V4M20 12h2.5M1.5 12H4"/></svg></div>
+          <div>
+            <h3>AI features &amp; automation</h3>
+            <p>Assistants, agents, document extraction, search over your own data, workflow automation. Built on your data with guardrails, not a chatbot bolted onto a sidebar.</p>
+            <div class="tags"><span class="tag">LLM apps</span><span class="tag">RAG</span><span class="tag">Agents</span><span class="tag">Evals</span></div>
+          </div>
+        </article>
+
+        <article class="cap rv d3">
+          <div class="icn"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+          <div>
+            <h3>Cloud, data &amp; architecture</h3>
+            <p>Infrastructure that holds up when the traffic arrives. Set up as code on your own AWS, GCP or Azure account, with the data model designed for where you're going.</p>
+            <div class="tags"><span class="tag">AWS · GCP · Azure</span><span class="tag">CI/CD</span><span class="tag">Data pipelines</span></div>
+          </div>
+        </article>
+
+        <article class="cap rv d3">
+          <div class="icn"><svg viewBox="0 0 24 24"><path d="M12 3 4.5 6.2v5.3c0 4.6 3.2 8.6 7.5 9.5 4.3-.9 7.5-4.9 7.5-9.5V6.2L12 3Z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg></div>
+          <div>
+            <h3>QA, security &amp; launch</h3>
+            <p>Automated tests, load testing, security review and monitoring before anything goes live. Then 30 days on call while your first real users hit it.</p>
+            <div class="tags"><span class="tag">Test automation</span><span class="tag">Security review</span><span class="tag">Monitoring</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="mq rv" aria-label="Industries and technologies we work in">
+        <div class="mq-in">
+          <span class="chip">EdTech</span><span class="chip">Healthcare</span><span class="chip">Retail &amp; D2C</span>
+          <span class="chip">AgriTech</span><span class="chip">Fintech</span><span class="chip">B2B SaaS</span>
+          <span class="chip">Logistics</span><span class="chip">Marketplaces</span><span class="chip">Internal tools</span>
+          <span class="chip">EdTech</span><span class="chip">Healthcare</span><span class="chip">Retail &amp; D2C</span>
+          <span class="chip">AgriTech</span><span class="chip">Fintech</span><span class="chip">B2B SaaS</span>
+          <span class="chip">Logistics</span><span class="chip">Marketplaces</span><span class="chip">Internal tools</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- FINAL CTA ---------- -->
+    <section style="padding-top:12px">
+      <div class="final rv">
+        <h2>Still working out whether it's a 3-week or a 6-week build?</h2>
+        <p class="lede" style="margin-top:14px">
+          That's the point of the call. Send us a couple of lines about what you're building and we'll
+          come back within one working day with a scope, a timeline and a number. If we think you don't
+          need us yet, we'll tell you that too.
+        </p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;max-width:420px">
+          <a class="btn" href="#lead-form" style="width:auto;padding-left:26px;padding-right:26px">
+            Get my build plan
+            <svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+          <!-- SWAP: real WhatsApp number -->
+          <a class="btn alt" href="https://wa.me/910000000000" target="_blank" rel="noopener" style="width:auto;padding-left:22px;padding-right:22px">
+            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+            WhatsApp us
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RIGHT: STICKY LEAD FORM ============ -->
+  <aside class="rail">
+    <form class="form" id="lead-form" novalidate>
+      <div class="form-top">
+        <h3>Get your build plan</h3>
+        <p>Scope, timeline and a fixed price — back to you in one working day.</p>
+      </div>
+
+      <div class="form-body">
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" type="text" placeholder="Vijay Nelson" autocomplete="name" required>
+          <span class="err-msg">Please add your name</span>
+        </div>
+
+        <div class="field">
+          <label for="f-email">Work email</label>
+          <input id="f-email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required>
+          <span class="err-msg">That email doesn't look right</span>
+        </div>
+
+        <div class="field">
+          <label for="f-phone">Phone / WhatsApp</label>
+          <input id="f-phone" name="phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel" required>
+          <span class="err-msg">Please add a number we can reach you on</span>
+        </div>
+
+        <div class="field">
+          <label for="f-idea">What are you building?</label>
+          <textarea id="f-idea" name="idea" placeholder="A booking app for clinics, an AI assistant for our sales team, a marketplace..." required></textarea>
+          <span class="err-msg">Tell us a line or two about it</span>
+        </div>
+
+        <button class="btn" type="submit">
+          Send it over
+          <svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </button>
+
+        <div class="form-foot">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          No spam, no sales sequence. One reply from a real person.
+        </div>
+      </div>
+
+      <!-- SWAP: real WhatsApp number -->
+      <div class="avail">
+        <span class="dot-live"></span> Taking 2 new builds this month
+        <a href="https://wa.me/910000000000" target="_blank" rel="noopener" class="wa">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+
+      <div class="done">
+        <div class="ring"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></div>
+        <h3>Got it.</h3>
+        <p>We'll read it properly and come back within one working day with a scope and a timeline. If it's urgent, WhatsApp us and we'll pick it up today.</p>
+      </div>
+    </form>
+  </aside>
+
+</div>
+</div>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>© 2026 ProductNova · Bengaluru, India</div>
+    <!-- SWAP: real email, phone, policy links -->
+    <div style="display:flex;gap:18px;flex-wrap:wrap">
+      <a href="mailto:hello@productnova.in">hello@productnova.in</a>
+      <a href="tel:+910000000000">+91 00000 00000</a>
+      <a href="#">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a class="btn" href="#lead-form">
+    Get my build plan — 3 to 6 weeks
+    <svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+  </a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---- scroll reveal ---- */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+    });
+  },{threshold:.16, rootMargin:"0px 0px -6% 0px"});
+  document.querySelectorAll(".rv").forEach(function(el){ io.observe(el); });
+
+  /* ---- on small screens, lift the form up to sit right under the hero ---- */
+  var rail   = document.querySelector(".rail");
+  var grid   = document.querySelector(".grid");
+  var hero   = document.getElementById("hero");
+  var narrow = window.matchMedia("(max-width:1080px)");
+
+  function placeForm(){
+    if(narrow.matches){
+      if(rail.parentNode !== hero.parentNode) hero.after(rail);
+    } else if(rail.parentNode !== grid){
+      grid.appendChild(rail);
+    }
+  }
+  placeForm();
+  narrow.addEventListener ? narrow.addEventListener("change", placeForm)
+                          : narrow.addListener(placeForm);
+
+  /* ---- pointer-tracked card glow ---- */
+  document.querySelectorAll(".card,.cap").forEach(function(c){
+    c.addEventListener("pointermove", function(ev){
+      var r = c.getBoundingClientRect();
+      c.style.setProperty("--mx", ((ev.clientX - r.left) / r.width * 100) + "%");
+    });
+  });
+
+  /* ---- form: client-side only (mock, nothing is sent anywhere) ---- */
+  var form = document.getElementById("lead-form");
+  var EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+  function invalid(input){
+    var v = input.value.trim();
+    if(!v) return true;
+    if(input.type === "email") return !EMAIL.test(v);
+    if(input.type === "tel")   return v.replace(/\D/g,"").length < 8;
+    return false;
+  }
+
+  form.querySelectorAll("input,textarea").forEach(function(input){
+    input.addEventListener("input", function(){
+      if(!invalid(input)) input.closest(".field").classList.remove("err");
+    });
+  });
+
+  form.addEventListener("submit", function(ev){
+    ev.preventDefault();
+    var bad = null;
+    form.querySelectorAll("input,textarea").forEach(function(input){
+      var field = input.closest(".field");
+      if(invalid(input)){ field.classList.add("err"); bad = bad || input; }
+      else field.classList.remove("err");
+    });
+    if(bad){ bad.focus(); return; }
+
+    /* Mock-up: no backend wired. Hook a POST here when it goes live. */
+    form.classList.add("sent");
+    form.scrollIntoView({behavior:"smooth", block:"center"});
+  });
+})();
+</script>
+</body>
+</html>
