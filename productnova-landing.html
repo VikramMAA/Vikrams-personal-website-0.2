@@ -306,6 +306,46 @@ label{display:block;font-size:11.5px;font-weight:650;letter-spacing:.08em;text-t
 footer{border-top:1px solid var(--line);padding:30px 0 40px;font-size:12.5px;color:var(--ink-3)}
 .foot-in{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
 
+/* ---------- text editor toolbar ----------
+   Only appears when the file is opened locally (file://) or the URL ends
+   with #edit. On a live domain it stays hidden, so visitors never see it. */
+.editbar{
+  position:fixed;left:16px;bottom:16px;z-index:90;display:flex;align-items:center;gap:8px;
+  padding:8px;border-radius:14px;border:1px solid var(--line-2);
+  background:rgba(12,14,24,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  box-shadow:0 18px 50px -18px rgba(0,0,0,.95);
+}
+.editbar[hidden]{display:none}
+.eb-btn{
+  display:inline-flex;align-items:center;gap:7px;cursor:pointer;white-space:nowrap;
+  border:1px solid var(--line-2);background:rgba(255,255,255,.05);border-radius:9px;
+  padding:8px 13px;font-size:13px;font-weight:650;letter-spacing:-.01em;
+  transition:background .25s var(--ease),border-color .25s var(--ease),transform .2s var(--ease);
+}
+.eb-btn:hover{background:rgba(255,255,255,.1);border-color:var(--line-2);transform:translateY(-1px)}
+.eb-btn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.eb-btn.primary{background:linear-gradient(96deg,var(--c1),var(--c2));color:#04121a;border-color:transparent}
+.eb-btn.primary:hover{background:linear-gradient(96deg,var(--c1),var(--c2));filter:brightness(1.08)}
+.eb-hint{font-size:11.5px;color:var(--ink-3);padding-right:6px;max-width:190px;line-height:1.35}
+.eb-only{display:none}
+body.editing .eb-only{display:inline-flex}
+
+/* editable text affordances */
+body.editing .ed{
+  outline:1px dashed rgba(46,230,255,.32);outline-offset:2px;border-radius:3px;cursor:text;
+  transition:background .18s var(--ease),outline-color .18s var(--ease);
+}
+body.editing .ed:hover{outline-color:rgba(46,230,255,.75);background:rgba(46,230,255,.07)}
+body.editing .ed:focus{outline:1.5px solid var(--c1);background:rgba(46,230,255,.12)}
+body.editing a,body.editing button{cursor:text}
+body.editing .form input,body.editing .form textarea{
+  border-color:rgba(46,230,255,.32);border-style:dashed;color:var(--ink)
+}
+@media (max-width:640px){
+  .editbar{left:10px;right:10px;bottom:78px;flex-wrap:wrap;justify-content:center}
+  .eb-hint{display:none}
+}
+
 /* ---------- responsive ---------- */
 @media (max-width:1080px){
   .grid{grid-template-columns:minmax(0,1fr);gap:34px;padding-top:36px}
@@ -667,9 +707,28 @@ footer{border-top:1px solid var(--line);padding:30px 0 40px;font-size:12.5px;col
   </a>
 </div>
 
+<!-- Text editor toolbar. Hidden on a live domain unless the URL ends with #edit. -->
+<div class="editbar" id="editbar" hidden>
+  <button type="button" class="eb-btn primary" id="ed-toggle">
+    <svg viewBox="0 0 24 24"><path d="M4 20h4L19 9a2.1 2.1 0 0 0-3-3L5 17v3Z"/><path d="M14.5 7.5 16.5 9.5"/></svg>
+    <span id="ed-toggle-label">Edit text</span>
+  </button>
+  <button type="button" class="eb-btn eb-only" id="ed-reset">
+    <svg viewBox="0 0 24 24"><path d="M4 5v5h5"/><path d="M4.5 10a8 8 0 1 1 .9 6"/></svg>
+    Undo all
+  </button>
+  <button type="button" class="eb-btn" id="ed-save">
+    <svg viewBox="0 0 24 24"><path d="M12 4v11"/><path d="m7.5 10.5 4.5 4.5 4.5-4.5"/><path d="M5 19h14"/></svg>
+    Download HTML
+  </button>
+  <span class="eb-hint" id="ed-hint">Opened locally, so editing is available</span>
+</div>
+
 <script>
 (function(){
   "use strict";
+
+  var editing = false;   /* true while the page is in text-editing mode */
 
   /* ---- scroll reveal ---- */
   var io = new IntersectionObserver(function(entries){
@@ -724,6 +783,7 @@ footer{border-top:1px solid var(--line);padding:30px 0 40px;font-size:12.5px;col
 
   form.addEventListener("submit", function(ev){
     ev.preventDefault();
+    if(editing) return;               /* placeholders are being edited */
     var bad = null;
     form.querySelectorAll("input,textarea").forEach(function(input){
       var field = input.closest(".field");
@@ -735,6 +795,140 @@ footer{border-top:1px solid var(--line);padding:30px 0 40px;font-size:12.5px;col
     /* Mock-up: no backend wired. Hook a POST here when it goes live. */
     form.classList.add("sent");
     form.scrollIntoView({behavior:"smooth", block:"center"});
+  });
+
+  /* ==========================================================
+     TEXT EDITOR
+     Click any text on the page and type over it, then download
+     a copy of the file with your wording baked in.
+     Shows up only for a locally opened file or a #edit URL.
+     ========================================================== */
+  var bar = document.getElementById("editbar");
+  if(!(location.protocol === "file:" || location.hash === "#edit")){ bar.remove(); return; }
+  bar.hidden = false;
+
+  var toggleBtn = document.getElementById("ed-toggle");
+  var label     = document.getElementById("ed-toggle-label");
+  var hint      = document.getElementById("ed-hint");
+  var fields    = form.querySelectorAll("input, textarea");
+  var dirty     = false;
+
+  /* Wrap every visible run of text in an editable span, skipping SVG,
+     the toolbar and anything already wrapped. */
+  function wrapText(){
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(n){
+        if(!n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        var p = n.parentNode;
+        if(!p || p.nodeType !== 1) return NodeFilter.FILTER_REJECT;
+        if(/^(SCRIPT|STYLE|NOSCRIPT)$/.test(p.nodeName)) return NodeFilter.FILTER_REJECT;
+        if(p.closest("#editbar, svg")) return NodeFilter.FILTER_REJECT;
+        if(p.classList.contains("ed")) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var nodes = [], n;
+    while((n = walker.nextNode())) nodes.push(n);
+    nodes.forEach(function(t){
+      var s = document.createElement("span");
+      s.className = "ed";
+      s.contentEditable = "true";
+      s.setAttribute("data-orig", t.nodeValue);
+      s.textContent = t.nodeValue;
+      t.parentNode.replaceChild(s, t);
+    });
+  }
+
+  /* Collapse the spans back into plain text nodes. */
+  function unwrapText(root){
+    Array.prototype.forEach.call(root.querySelectorAll(".ed"), function(s){
+      s.parentNode.replaceChild(document.createTextNode(s.textContent), s);
+    });
+  }
+
+  /* Form placeholders can't be clicked, so swap them into the field
+     value while editing and push them back on the way out. */
+  function placeholdersEditable(on){
+    Array.prototype.forEach.call(fields, function(f){
+      if(on){
+        f.setAttribute("data-ph", f.placeholder);
+        f.value = f.placeholder;
+        f.placeholder = "";
+      } else {
+        f.placeholder = f.value.trim() || f.getAttribute("data-ph") || "";
+        f.value = "";
+        f.removeAttribute("data-ph");
+        f.closest(".field").classList.remove("err");
+      }
+    });
+  }
+
+  function setEditing(on){
+    editing = on;
+    document.body.classList.toggle("editing", on);
+    if(on){ wrapText(); } else { unwrapText(document.body); }
+    placeholdersEditable(on);
+    label.textContent = on ? "Done editing" : "Edit text";
+    hint.textContent  = on ? "Click any text or form field and type"
+                           : "Opened locally, so editing is available";
+  }
+
+  toggleBtn.addEventListener("click", function(){ setEditing(!editing); });
+
+  document.getElementById("ed-reset").addEventListener("click", function(){
+    if(!editing) return;
+    document.querySelectorAll(".ed").forEach(function(s){
+      s.textContent = s.getAttribute("data-orig");
+    });
+    Array.prototype.forEach.call(fields, function(f){
+      f.value = f.getAttribute("data-ph") || "";
+    });
+    dirty = false;
+  });
+
+  /* Links and buttons must not fire while you're clicking into their text. */
+  document.addEventListener("click", function(ev){
+    if(!editing || ev.target.closest("#editbar")) return;
+    if(ev.target.closest("a, button, label")) ev.preventDefault();
+  }, true);
+
+  document.addEventListener("input", function(ev){
+    if(editing && ev.target.closest(".ed, .form")) dirty = true;
+  });
+
+  /* Save a standalone copy with the current wording written in. */
+  document.getElementById("ed-save").addEventListener("click", function(){
+    if(editing) setEditing(false);
+
+    var clone = document.documentElement.cloneNode(true);
+    unwrapText(clone);                                   /* belt and braces */
+    clone.querySelectorAll(".rv").forEach(function(el){   /* replay the reveals */
+      el.classList.remove("in");
+      el.removeAttribute("style");
+    });
+    var h2 = clone.querySelector("#hero");                /* hero stays visible on load */
+    if(h2) h2.classList.add("in");
+    clone.querySelectorAll(".field").forEach(function(el){ el.classList.remove("err"); });
+    clone.querySelectorAll(".form input, .form textarea").forEach(function(f){
+      f.removeAttribute("value"); f.removeAttribute("data-ph");
+      if(f.tagName === "TEXTAREA") f.textContent = "";
+    });
+    var f2 = clone.querySelector(".form"); if(f2) f2.classList.remove("sent");
+    var b2 = clone.querySelector("#editbar"); if(b2) b2.setAttribute("hidden","");
+    clone.querySelector("body").classList.remove("editing");
+
+    var blob = new Blob(["<!DOCTYPE html>\n" + clone.outerHTML], {type:"text/html"});
+    var url  = URL.createObjectURL(blob);
+    var a    = document.createElement("a");
+    a.href = url; a.download = "productnova-landing.html";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 3000);
+    dirty = false;
+    hint.textContent = "Saved to your Downloads folder";
+  });
+
+  window.addEventListener("beforeunload", function(ev){
+    if(dirty){ ev.preventDefault(); ev.returnValue = ""; }
   });
 })();
 </script>
