@@ -35,3 +35,25 @@ To change the voice, edit `VOICE.md`. To ban another phrase, add it to
 
 `seo/` holds the keyword research this is built on. Start with
 `seo/output/strategy-brief.md`.
+
+## What actually runs this
+
+`.github/workflows/daily-article.yml`, on GitHub's scheduler. 02:32 UTC
+(08:02 IST) for the morning slot, 13:28 UTC (18:58 IST) for the evening one.
+
+It runs on GitHub rather than on Claude Routines because the repo is checked
+out by definition and `GITHUB_TOKEN` can push. The first attempt at this used
+Routines, which fired into sessions with no repository attached and produced
+nothing for five days without failing loudly.
+
+**Required once:** an `ANTHROPIC_API_KEY` repository secret. Settings →
+Secrets and variables → Actions → New repository secret. Without it every run
+fails at the Claude step.
+
+To test without waiting for the schedule: Actions tab → Daily article → Run
+workflow → pick a slot.
+
+Two GitHub behaviours worth knowing. Scheduled runs queue rather than fire
+exactly on time, so expect a few minutes of drift. And GitHub disables cron on
+repos with no activity for 60 days, which cannot happen here while the engine
+is committing twice a day.

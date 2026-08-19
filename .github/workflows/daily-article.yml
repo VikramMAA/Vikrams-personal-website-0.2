@@ -1,0 +1,116 @@
+name: Daily article
+
+# Publishes one article to the live site twice a day.
+#
+# This runs on GitHub's scheduler rather than on Claude Routines. The repo is
+# checked out by definition, GITHUB_TOKEN can push, and there is no session
+# infrastructure in between that can quietly fail to fire.
+#
+# GitHub's cron is UTC and it queues rather than guarantees: a run can be late
+# by several minutes under load, and GitHub skips schedules on repos with no
+# activity for 60 days. Both are fine here, since the engine itself commits
+# twice a day.
+#
+#   02:32 UTC = 08:02 IST  (morning slot)
+#   13:28 UTC = 18:58 IST  (evening slot)
+
+on:
+  schedule:
+    - cron: '32 2 * * *'
+    - cron: '28 13 * * *'
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: 'Which slot to write (manual runs only)'
+        required: true
+        default: morning
+        type: choice
+        options: [morning, evening]
+
+# Never let a slow morning run collide with the evening one.
+concurrency:
+  group: daily-article
+  cancel-in-progress: false
+
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out the live branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Work out which slot this run is
+        id: slot
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            SLOT="${{ inputs.slot }}"
+          elif [ "${{ github.event.schedule }}" = "32 2 * * *" ]; then
+            SLOT="morning"
+          else
+            SLOT="evening"
+          fi
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          echo "Writing the $SLOT article."
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Identify commits as the engine
+        run: |
+          git config user.name  "vikramhere-content-bot"
+          git config user.email "vikram.1996523@gmail.com"
+
+      - name: Write and publish the article
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: >-
+            --max-turns 60
+            --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(python3:*),Bash(npm:*),Bash(git:*),Bash(ls:*),Bash(cat:*),Bash(date:*)"
+          prompt: |
+            Write and publish the ${{ steps.slot.outputs.slot }} article for vikramhere.com.
+
+            Nobody is reviewing this. Whatever you commit goes live on the next
+            Netlify build, so it has to be right first time.
+
+            You are already on the `main` branch with the repo checked out and
+            dependencies installed. Follow `content-ops/PLAYBOOK.md` exactly,
+            start to finish, with slot `${{ steps.slot.outputs.slot }}`. Skip
+            the playbook's step 1, the checkout is done.
+
+            The short version:
+
+            1. `python3 content-ops/scripts/next_brief.py --slot ${{ steps.slot.outputs.slot }}`
+            2. Read `content-ops/VOICE.md` in full. It is the spec, not
+               background reading.
+            3. Search the web for the primary keyword plus 2026, both to check
+               nothing has changed and to find something specific worth saying.
+            4. Write 900 to 1400 words into `src/content/blog/<slug>.md`.
+            5. `python3 content-ops/scripts/lint_article.py src/content/blog/<slug>.md`
+               must exit 0.
+            6. `npm run build` must pass.
+            7. Append the entry to `content-ops/published.json`.
+            8. `git add`, `git commit`, and `git push origin main`.
+
+            There is no approval step and no human to escalate to. If
+            `next_brief.py` exits with `no_usable_brief`, refill the queue
+            yourself in this same run per playbook step 2, write the angles
+            properly, and carry on to publish. Never finish without either a
+            pushed commit or a clear statement of what stopped you.
+
+            The two rules that get skipped most: never use an em dash anywhere
+            in the article, and it must read like Vikram typing rather than
+            like an agency blog. The linter catches stock phrases. It cannot
+            catch boring, so read your own draft before committing and rewrite
+            the middle if it says nothing a reader could not have guessed.
