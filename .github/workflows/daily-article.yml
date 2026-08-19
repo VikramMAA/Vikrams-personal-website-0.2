@@ -38,6 +38,7 @@ jobs:
     timeout-minutes: 30
     permissions:
       contents: write
+      id-token: write
 
     steps:
       - name: Check out the live branch
@@ -74,7 +75,10 @@ jobs:
       - name: Write and publish the article
         uses: anthropics/claude-code-action@v1
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Authenticates against Vikram's Claude subscription, not the API.
+          # Generated with `claude setup-token` locally; valid 12 months.
+          # Usage counts against the plan, no separate API invoice.
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           claude_args: >-
             --max-turns 60
             --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(python3:*),Bash(npm:*),Bash(git:*),Bash(ls:*),Bash(cat:*),Bash(date:*)"

@@ -46,9 +46,16 @@ out by definition and `GITHUB_TOKEN` can push. The first attempt at this used
 Routines, which fired into sessions with no repository attached and produced
 nothing for five days without failing loudly.
 
-**Required once:** an `ANTHROPIC_API_KEY` repository secret. Settings →
-Secrets and variables → Actions → New repository secret. Without it every run
-fails at the Claude step.
+**Required once:** a `CLAUDE_CODE_OAUTH_TOKEN` repository secret. Generate it
+by running `claude setup-token` in a terminal where you are logged into Claude
+Code, then paste the value into Settings → Secrets and variables → Actions →
+New repository secret. Without it every run fails at the Claude step.
+
+That token authenticates against the Claude subscription rather than the API,
+so the runs draw on the existing plan instead of billing separately. It lasts
+12 months, so it needs regenerating once a year. Nothing warns you when it is
+close to expiring, so the symptom will be runs suddenly failing at the Claude
+step with an auth error.
 
 To test without waiting for the schedule: Actions tab → Daily article → Run
 workflow → pick a slot.
