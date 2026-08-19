@@ -101,7 +101,9 @@ jobs:
                must exit 0.
             6. `npm run build` must pass.
             7. Append the entry to `content-ops/published.json`.
-            8. `git add`, `git commit`, and `git push origin main`.
+            8. `git add`, `git commit`, then `git push origin HEAD:main`. Use that
+               exact refspec, it works whether or not the checkout left you on
+               a named branch.
 
             There is no approval step and no human to escalate to. If
             `next_brief.py` exits with `no_usable_brief`, refill the queue
