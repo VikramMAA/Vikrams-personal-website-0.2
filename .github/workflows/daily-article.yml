@@ -14,10 +14,22 @@ name: Daily article
 #   02:32 UTC = 08:02 IST  (morning slot)
 #   13:28 UTC = 18:58 IST  (evening slot)
 
+# DORMANT FALLBACK. The live schedule runs on Claude Routines, which bill
+# against the Claude subscription instead of the API. This workflow is kept
+# because it needs no session infrastructure and cannot fail silently, but it
+# needs a CLAUDE_CODE_OAUTH_TOKEN secret (from `claude setup-token`) to run at
+# all.
+#
+# The cron lines are commented out on purpose. Left enabled without the secret
+# they fail twice a day and email a red X; left enabled WITH the secret they
+# would publish a second article on top of the Routine's. Uncomment them only
+# if the Routines are turned off first.
+#
+#   schedule:
+#     - cron: '32 2 * * *'   # 08:02 IST, morning slot
+#     - cron: '28 13 * * *'  # 18:58 IST, evening slot
+
 on:
-  schedule:
-    - cron: '32 2 * * *'
-    - cron: '28 13 * * *'
   workflow_dispatch:
     inputs:
       slot:

@@ -38,29 +38,40 @@ To change the voice, edit `VOICE.md`. To ban another phrase, add it to
 
 ## What actually runs this
 
-`.github/workflows/daily-article.yml`, on GitHub's scheduler. 02:32 UTC
-(08:02 IST) for the morning slot, 13:28 UTC (18:58 IST) for the evening one.
+Two Claude Routines, firing into one long-lived session that has the repo
+checked out on `main`:
 
-It runs on GitHub rather than on Claude Routines because the repo is checked
-out by definition and `GITHUB_TOKEN` can push. The first attempt at this used
-Routines, which fired into sessions with no repository attached and produced
-nothing for five days without failing loudly.
+| Routine | Fires | Slot |
+| --- | --- | --- |
+| Morning article 08:02 IST | `32 2 * * *` UTC | practical, tactical |
+| Evening article 18:58 IST | `28 13 * * *` UTC | opinion, analysis, story |
 
-**Required once:** a `CLAUDE_CODE_OAUTH_TOKEN` repository secret. Generate it
-by running `claude setup-token` in a terminal where you are logged into Claude
-Code, then paste the value into Settings → Secrets and variables → Actions →
-New repository secret. Without it every run fails at the Claude step.
+Both run on the Claude subscription, so there is no API bill and no token to
+rotate. The session they fire into is titled "vikramhere.com article engine".
 
-That token authenticates against the Claude subscription rather than the API,
-so the runs draw on the existing plan instead of billing separately. It lasts
-12 months, so it needs regenerating once a year. Nothing warns you when it is
-close to expiring, so the symptom will be runs suddenly failing at the Claude
-step with an auth error.
+### Why it is built this way
 
-To test without waiting for the schedule: Actions tab → Daily article → Run
-workflow → pick a slot.
+The first attempt used Routines that spawned a fresh session per firing. That
+failed twice over and published nothing for five days. Worth knowing, because
+both traps are easy to fall back into:
 
-Two GitHub behaviours worth knowing. Scheduled runs queue rather than fire
-exactly on time, so expect a few minutes of drift. And GitHub disables cron on
-repos with no activity for 60 days, which cannot happen here while the engine
-is committing twice a day.
+1. **The cron was silently dropped.** The scheduling parameter is
+   `cron_expression`. Passing `cron` is accepted without an error and the
+   Routine simply never gets a fire time. A Routine with
+   `next_run_at: 0001-01-01T00:00:00Z` is not scheduled, whatever `enabled`
+   says. Check that field after creating one.
+2. **Fresh-session Routines get no repository.** There is no source parameter
+   on trigger creation, so the fired session woke up with no checkout, no
+   credentials and no way to get either. Binding to a persistent session that
+   was created *with* `source_url` is what fixes it.
+
+### Fallback
+
+`.github/workflows/daily-article.yml` does the same job on GitHub's scheduler.
+Its cron lines are commented out on purpose, so it currently only runs from
+Actions → Daily article → Run workflow.
+
+To switch to it: disable both Routines, add a `CLAUDE_CODE_OAUTH_TOKEN` secret
+(from `claude setup-token`, subscription-backed, 12 month life), then uncomment
+the two cron lines. Do not run both systems at once or you get two articles per
+slot.
