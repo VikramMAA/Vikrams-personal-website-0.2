@@ -60,10 +60,10 @@ export const stats = [
   { value: '2', label: 'Continents of work behind me' },
 ] as const;
 
-export type Topic = {
+export type ExpertiseArea = {
   slug: string;
   title: string;
-  /** Used in <title> and H1 on the topic page. Keyword-led on purpose. */
+  /** Used in <title> and H1 on the expertise page. Keyword-led on purpose. */
   seoTitle: string;
   metaDescription: string;
   /** One-sentence answer to "what is this page about" — AI crawlers quote this. */
@@ -74,8 +74,16 @@ export type Topic = {
   whatMatters: string[];
   /** How you know it is working. */
   signals: string[];
-  /** Lowercase terms used to pull matching blog posts onto the topic page. */
+  /** Three or four short labels for the cards on /expertise/. Keep them terse. */
+  tags: string[];
+  /** Lowercase terms used to pull matching blog posts onto the expertise page. */
   match: string[];
+  /**
+   * Lowercase terms that disqualify a post even when `match` hits. Used where a
+   * broader area would otherwise claim posts belonging to a narrower one — SEO
+   * swallowing the AI-search posts, for instance.
+   */
+  exclude?: string[];
   faqs: { q: string; a: string }[];
 };
 
@@ -83,7 +91,7 @@ export type Topic = {
  * The disciplines I have spent ten years in. These pages are notes on how I
  * think about each one — a point of view, not a menu.
  */
-export const topics: Topic[] = [
+export const expertise: ExpertiseArea[] = [
   {
     slug: 'seo',
     title: 'SEO',
@@ -106,9 +114,11 @@ export const topics: Topic[] = [
     signals: [
       'Organic traffic that converts, rather than sessions that bounce',
       'A site architecture that keeps compounding as pages get added',
-      'Visibility in AI search — ChatGPT, Perplexity, Google AI Overviews',
+      'Pages that hold rank as the SERP fills up with AI answers',
     ],
-    match: ['seo', 'search engine', 'ai search', 'chatgpt', 'google business profile', 'keyword', 'backlink'],
+    tags: ['Technical SEO', 'Keyword mapping', 'On-page', 'Off-page and links'],
+    match: ['seo', 'search engine', 'google business profile', 'keyword', 'backlink', 'local seo'],
+    exclude: ['ai search', 'chatgpt', 'aiseo', 'perplexity'],
     faqs: [
       {
         q: 'How long does SEO take to show results?',
@@ -120,7 +130,53 @@ export const topics: Topic[] = [
       },
       {
         q: 'Does SEO still matter now that people ask AI assistants?',
-        a: 'Yes, and the work overlaps more than people expect. Assistants pull from indexed pages, structured data and third-party citations, which is the same ground technical SEO, clear on-page answers and off-page credibility already cover. I have written about this in more detail on the blog.',
+        a: 'Yes, and the work overlaps more than people expect. Assistants pull from indexed pages, structured data and third-party citations, which is the same ground technical SEO already covers. The part that is genuinely different is covered separately in my AISEO notes.',
+      },
+    ],
+  },
+  {
+    slug: 'aiseo',
+    title: 'AISEO',
+    seoTitle: 'AISEO Notes — Getting Cited by ChatGPT and AI Search',
+    metaDescription:
+      'Notes on AISEO: how to get named by ChatGPT, Perplexity and Google AI Overviews, why it is not a separate workstream, and what actually gets you quoted.',
+    summary:
+      'AISEO is not a separate discipline from SEO. It is SEO done with more discipline about structure and more honesty about substance.',
+    pattern:
+      'Two failures, and they look nothing alike. The first is mechanical: the crawler that feeds the assistant is blocked, at robots.txt or silently at the CDN edge, so the site is not eligible to be cited at all. The second is substantive: the site is perfectly readable and the models still name somebody else, because nothing on it states a clear answer worth lifting. The first takes fifteen minutes to fix. The second is the real work.',
+    whatMatters: [
+      'Crawler access first — GPTBot, OAI-SearchBot, PerplexityBot and the rest, allowed in robots.txt and not blocked at the edge',
+      'Static, server-rendered HTML, because AI crawlers are far less patient than Googlebot about executing JavaScript',
+      'The answer stated plainly in the first 150 words of a page, in the shape an assistant can quote without editing',
+      'Structured data that matches the visible page, so the entity and its facts are unambiguous',
+      'FAQ answers present in the DOM even when visually collapsed, which rules out JavaScript-injected accordions',
+      'Third-party citations — assistants weigh what other sites say about you more heavily than what you say about yourself',
+      'An llms.txt stating who you are, what you do and which pages matter',
+      'Prompt testing as the measurement: ask the eight questions a buyer would ask and write down who gets named instead of you',
+    ],
+    signals: [
+      'Getting named in ChatGPT, Perplexity and Google AI Overviews for the questions your buyers actually ask',
+      'Referral traffic arriving from assistants, not just from search',
+      'Your own entity facts coming back correctly when a model is asked about you',
+    ],
+    tags: ['Crawler eligibility', 'Quotable answers', 'Structured data', 'Prompt testing'],
+    match: ['ai search', 'aiseo', 'chatgpt', 'perplexity', 'ai overview', 'gptbot'],
+    faqs: [
+      {
+        q: 'What is AISEO?',
+        a: 'AISEO is optimising a site to be found, read and cited by AI assistants — ChatGPT, Perplexity, Google AI Overviews, Claude — rather than only by traditional search engines. It is also called GEO, or generative engine optimisation. The practices overlap heavily with SEO; what changes is that being quoted matters more than being ranked.',
+      },
+      {
+        q: 'How do you get ChatGPT to mention your business?',
+        a: 'Start by confirming you are eligible: allow OAI-SearchBot and GPTBot in robots.txt, and check nothing is blocking them at your CDN edge. Then give the models something worth quoting — a page that states the answer plainly and early — and build third-party citations, because assistants weigh what other sites say about you more than what you say about yourself.',
+      },
+      {
+        q: 'Is AISEO a separate workstream from SEO?',
+        a: 'For most companies, no, and treating it as one wastes budget. The technical foundation, the clear on-page answers and the off-page credibility are the same work. Run it as SEO with the structure and substance tightened, and add prompt testing to how you measure it.',
+      },
+      {
+        q: 'How do you measure AISEO?',
+        a: 'Ranking positions do not apply, so measure by prompt. Write the questions a buyer would actually ask an assistant, run them, and record who gets named. Do it monthly. It is the most honest competitive research available right now, and it costs nothing but the time.',
       },
     ],
   },
@@ -148,6 +204,7 @@ export const topics: Topic[] = [
       'Budget concentrating on the segments and creatives that convert',
       'Reporting a sales team recognises, not a dashboard of impressions',
     ],
+    tags: ['Google Ads', 'Meta Ads', 'Conversion tracking', 'Creative testing'],
     match: ['google ads', 'ppc', 'performance marketing', 'paid', 'advertising'],
     faqs: [
       {
@@ -188,6 +245,7 @@ export const topics: Topic[] = [
       'Engagement from people who could plausibly buy',
       'A repeatable system a team can run without the person who designed it',
     ],
+    tags: ['Content mix', 'Platform strategy', 'Creative', 'Analytics'],
     match: ['social media', 'instagram', 'facebook', 'linkedin'],
     faqs: [
       {
@@ -228,6 +286,7 @@ export const topics: Topic[] = [
       'Consistent positioning across every channel and every salesperson',
       'Search and AI-assistant visibility for the questions buyers actually ask',
     ],
+    tags: ['Audience research', 'Brand storyline', 'Editorial planning', 'Distribution'],
     match: ['content', 'storytelling', 'blogging', 'brand'],
     faqs: [
       {
@@ -268,6 +327,7 @@ export const topics: Topic[] = [
       'Sales and marketing agreeing on what counts as qualified',
       'Acquisition cost falling as the nurture layer starts converting slow buyers',
     ],
+    tags: ['Offer design', 'Funnel build', 'Lead scoring', 'Nurture'],
     match: ['lead generation', 'lead conversion', 'cold email', 'funnel', 'ai lead'],
     faqs: [
       {
@@ -308,6 +368,7 @@ export const topics: Topic[] = [
       'Faster follow-up, which usually lifts conversion more than any new channel',
       'Capability that stays inside the company rather than leaving with a contract',
     ],
+    tags: ['Lead definition', 'Handover process', 'Shared reporting', 'Enablement'],
     match: ['agency', 'consulting', 'consultant', 'hiring', 'strategy', 'sales'],
     faqs: [
       {
@@ -339,12 +400,12 @@ export type CaseStudy = {
 export const caseStudies: CaseStudy[] = [
   {
     slug: 'mapletree',
-    client: 'Mapletree',
-    industry: 'Real estate',
+    client: 'Mapletree Farms',
+    industry: 'Organic farming and D2C produce',
     location: 'India',
     headline: 'Organic social strategy that tripled engagement in two months',
     challenge:
-      'Social channels were active but static — posting regularly with no measurable lift in reach, engagement or traffic to the website.',
+      'An organic farm selling fruit and vegetables direct to customers. The social channels were active but static — posting regularly with no measurable lift in reach, engagement or traffic to the website.',
     approach: [
       'Audited existing content and benchmarked against competitors in the category',
       'Rebuilt the content mix so each post had a defined job: reach, engagement or traffic',
@@ -413,7 +474,7 @@ export const faqs = [
   },
   {
     q: 'What is in the portfolio?',
-    a: 'Work from earlier in my career: organic social for a real estate brand, lead generation and content for a drone manufacturer, and content marketing for an art brand in Canada. Each entry describes the problem, what was done and what it produced.',
+    a: 'Work from earlier in my career: organic social for an organic produce brand, lead generation and content for a drone manufacturer, and content marketing for an art brand in Canada. Each entry describes the problem, what was done and what it produced.',
   },
   {
     q: 'How do you approach a marketing problem?',
@@ -455,7 +516,7 @@ export const approach = [
 
 /** Industries worked in. Used for topical relevance and internal linking. */
 export const industries = [
-  'Real estate',
+  'Agriculture and organic food',
   'Aerospace and drones',
   'Art and design',
   'SaaS and technology',

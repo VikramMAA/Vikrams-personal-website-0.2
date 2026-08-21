@@ -2,27 +2,27 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTA from '../../components/CTA.astro';
-import { site, topics } from '../../data/site';
+import { site, expertise } from '../../data/site';
 import { breadcrumbSchema } from '../../data/schema';
 
-const title = 'Topics — SEO, Ads, Social, Content & Lead Generation Notes';
+const title = 'My Expertise — SEO, AISEO, Ads, Social, Content & Leads';
 const description = `The disciplines ${site.name} writes about: SEO, performance marketing, social media, content marketing, lead generation, and marketing and sales alignment.`;
 
 const crumbs = [
   { label: 'Home', href: '/' },
-  { label: 'Topics', href: '/topics/' },
+  { label: 'My expertise', href: '/expertise/' },
 ];
 
 const itemList = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Digital marketing topics',
-  itemListElement: topics.map((t, i) => ({
+  name: 'Digital marketing expertise',
+  itemListElement: expertise.map((t, i) => ({
     '@type': 'ListItem',
     position: i + 1,
     name: t.title,
     description: t.summary,
-    url: `${site.url}/topics/${t.slug}/`,
+    url: `${site.url}/expertise/${t.slug}/`,
   })),
 };
 ---
@@ -37,34 +37,34 @@ const itemList = {
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">Topics</p>
+        <p class="eyebrow">My expertise</p>
         <h1>What I write about</h1>
         <p>
-          Six disciplines I have spent ten years inside. Each page is a set of notes:
+          Seven disciplines I have spent ten years inside. Each page is a set of notes:
           the pattern I keep running into, what actually moves the number, and how you
           know it is working. Opinions, not offers.
         </p>
       </div>
 
-      <div class="topic-list">
+      <div class="area-list">
         {
-          topics.map((topic, i) => (
-            <article class="topic-row">
-              <div class="topic-row__index">
+          expertise.map((area, i) => (
+            <article class="expertise-row">
+              <div class="expertise-row__index">
                 {String(i + 1).padStart(2, '0')}
               </div>
-              <div class="topic-row__body">
+              <div class="expertise-row__body">
                 <h2>
-                  <a href={`/topics/${topic.slug}/`}>{topic.title}</a>
+                  <a href={`/expertise/${area.slug}/`}>{area.title}</a>
                 </h2>
-                <p class="topic-row__summary">{topic.summary}</p>
-                <ul class="topic-row__tags">
-                  {topic.whatMatters.slice(0, 4).map((d) => (
-                    <li>{d.split('—')[0].trim()}</li>
+                <p class="expertise-row__summary">{area.summary}</p>
+                <ul class="expertise-row__tags">
+                  {area.tags.map((tag) => (
+                    <li>{tag}</li>
                   ))}
                 </ul>
-                <a class="card__link" href={`/topics/${topic.slug}/`}>
-                  Notes on {topic.title} &rarr;
+                <a class="card__link" href={`/expertise/${area.slug}/`}>
+                  Notes on {area.title} &rarr;
                 </a>
               </div>
             </article>
@@ -78,13 +78,13 @@ const itemList = {
 </BaseLayout>
 
 <style>
-  .topic-list {
+  .area-list {
     display: grid;
     gap: 0;
     border-top: 1px solid var(--border);
   }
 
-  .topic-row {
+  .expertise-row {
     display: grid;
     grid-template-columns: 4rem 1fr;
     gap: clamp(1rem, 3vw, 2.5rem);
@@ -93,13 +93,13 @@ const itemList = {
   }
 
   @media (max-width: 620px) {
-    .topic-row {
+    .expertise-row {
       grid-template-columns: 1fr;
       gap: 0.75rem;
     }
   }
 
-  .topic-row__index {
+  .expertise-row__index {
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -107,26 +107,26 @@ const itemList = {
     padding-top: 0.45rem;
   }
 
-  .topic-row h2 {
+  .expertise-row h2 {
     font-size: var(--step-2);
     margin-bottom: 0.75rem;
   }
 
-  .topic-row h2 a {
+  .expertise-row h2 a {
     text-decoration: none;
   }
 
-  .topic-row h2 a:hover {
+  .expertise-row h2 a:hover {
     color: var(--accent);
   }
 
-  .topic-row__summary {
+  .expertise-row__summary {
     color: var(--text-muted);
     font-size: var(--step-0);
     max-width: 62ch;
   }
 
-  .topic-row__tags {
+  .expertise-row__tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -135,7 +135,7 @@ const itemList = {
     margin-top: 1.15rem;
   }
 
-  .topic-row__tags li {
+  .expertise-row__tags li {
     font-size: 0.82rem;
     padding: 0.35rem 0.85rem;
     border-radius: 999px;

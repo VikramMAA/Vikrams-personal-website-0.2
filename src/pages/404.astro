@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { topics } from '../data/site';
+import { expertise } from '../data/site';
 ---
 
 <BaseLayout
@@ -20,11 +20,11 @@ import { topics } from '../data/site';
       <ul class="link-list">
         <li><a href="/">Home</a></li>
         <li><a href="/blog/">Blog</a></li>
-        <li><a href="/topics/">Topics</a></li>
+        <li><a href="/expertise/">My expertise</a></li>
         {
-          topics.map((t) => (
+          expertise.map((a) => (
             <li>
-              <a href={`/topics/${t.slug}/`}>{t.title}</a>
+              <a href={`/expertise/${a.slug}/`}>{a.title}</a>
             </li>
           ))
         }

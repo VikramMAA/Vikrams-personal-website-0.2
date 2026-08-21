@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CTA from '../components/CTA.astro';
-import { site, contact, topics, industries } from '../data/site';
+import { site, contact, expertise, industries } from '../data/site';
 import { breadcrumbSchema } from '../data/schema';
 
 const title = `About ${site.name} — Digital Marketing & GTM, ${contact.city}`;
@@ -31,7 +31,7 @@ const timeline = [
   },
   {
     period: 'Earlier',
-    title: 'Social media strategy — Mapletree',
+    title: 'Social media strategy — Mapletree Farms',
     body: 'Rebuilt organic social from the audit up, producing a sharp lift in reach, engagement and referral traffic within two months.',
   },
 ];
@@ -91,14 +91,15 @@ const timeline = [
             otherwise is just decoration.
           </p>
           <p>
-            The <a href="/topics/">topic pages</a> go further into each discipline: what
+            The <a href="/expertise/">expertise pages</a> go further into each discipline: what
             usually goes wrong, what actually moves it, and how you know it is working.
           </p>
 
           <h2>Where I have worked</h2>
           <p>
-            National and international, across several verticals — real estate, drone
-            manufacturing, art and design, technology and professional services. I have
+            National and international, across several verticals — organic farming and
+            D2C produce, drone manufacturing, art and design, technology and
+            professional services. I have
             worked with a Canadian brand remotely and built lead generation for a
             deep-tech manufacturer in India, which is roughly the range.
           </p>
@@ -109,7 +110,7 @@ const timeline = [
             to matter. It is the single most common structural problem I have run into,
             and the fix is usually one afternoon in a room with both teams and a
             whiteboard. I have written about it in the <a
-              href="/topics/marketing-sales-alignment/">alignment notes</a>.
+              href="/expertise/marketing-sales-alignment/">alignment notes</a>.
           </p>
 
           <h2>Based in {contact.city}</h2>
@@ -153,12 +154,12 @@ const timeline = [
           </div>
 
           <div class="side-card">
-            <h2 class="side-card__title">Topics</h2>
+            <h2 class="side-card__title">My expertise</h2>
             <ul class="side-list">
               {
-                topics.map((t) => (
+                expertise.map((a) => (
                   <li>
-                    <a href={`/topics/${t.slug}/`}>{t.title}</a>
+                    <a href={`/expertise/${a.slug}/`}>{a.title}</a>
                   </li>
                 ))
               }

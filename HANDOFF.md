@@ -4,7 +4,7 @@
 > repositioned from a consulting site into a **personal blog and portfolio**.
 > Vikram works full time under contract and is not available for outside work, so
 > every service offering, price, engagement model and sales CTA was removed.
-> `/services/` became `/topics/` (notes and opinions, not offers), `/results/`
+> `/services/` became `/expertise/` (notes and opinions, not offers), `/results/`
 > became `/portfolio/`, and the `ProfessionalService` and `OfferCatalog`
 > structured data was dropped. Both moves 301-redirect in `netlify.toml`.
 >
@@ -60,7 +60,7 @@ which are less patient than Googlebot about executing JavaScript.
 | `/services/content-marketing/` | Content strategy + production |
 | `/services/lead-generation/` | Pipeline build |
 | `/services/marketing-sales-training/` | Team training — the differentiator you called out |
-| `/results/` | Three case studies: Mapletree, Ayanam Aerospace, MUKA |
+| `/results/` | Three case studies: Mapletree Farms, Ayanam Aerospace, MUKA |
 | `/about/` | Background, method, industries, timeline |
 | `/blog/` | Insights index |
 
@@ -68,9 +68,9 @@ which are less patient than Googlebot about executing JavaScript.
 
 | Route | Purpose |
 | --- | --- |
-| `/` | Hero, stats, latest writing, problem framing, topics, approach, portfolio, industries, FAQ, chat invite |
-| `/topics/` | Hub listing all six topic notes |
-| `/topics/seo/` · `/topics/performance-marketing/` · `/topics/social-media-marketing/` · `/topics/content-marketing/` · `/topics/lead-generation/` · `/topics/marketing-sales-alignment/` | Notes on each discipline, with matching blog posts pulled in |
+| `/` | Hero, stats, latest writing, problem framing, expertise, approach, portfolio, industries, FAQ, chat invite |
+| `/expertise/` | Hub listing all seven areas of expertise |
+| `/expertise/seo/` · `/expertise/aiseo/` · `/expertise/performance-marketing/` · `/expertise/social-media-marketing/` · `/expertise/content-marketing/` · `/expertise/lead-generation/` · `/expertise/marketing-sales-alignment/` | Notes on each discipline, with matching blog posts pulled in |
 | `/portfolio/` | The same three projects, framed as past work |
 | `/blog/` | Blog index (was "Insights") |
 | `/contact/` | Email, LinkedIn and a message form |
@@ -90,11 +90,11 @@ navigation, footer, sitemap and structured data all update together.
 Adding a service = add one object to the `services` array. The page, nav entry,
 footer link, sitemap entry and `OfferCatalog` schema all appear automatically.
 
-**Since the repositioning**, `services` is `topics` (no deliverables, outcomes or
-pricing — instead `pattern`, `whatMatters`, `signals` and `match`), `process` is
-`approach`, and there is a `chatInvite` object holding the single "reach out by
-email or LinkedIn" wording used site-wide. Adding a topic works the same way,
-minus the `OfferCatalog`, which no longer exists.
+**Since the repositioning**, `services` is `expertise` (no deliverables, outcomes
+or pricing — instead `pattern`, `whatMatters`, `signals` and `match`), `process`
+is `approach`, and there is a `chatInvite` object holding the single "get in
+touch for a quick chat" wording used site-wide. Adding an area works the same
+way, minus the `OfferCatalog`, which no longer exists.
 
 ### SEO implementation
 
@@ -129,7 +129,7 @@ This is the part built specifically for the goal you named:
   you as a consultant.
 - **`public/robots.txt`** explicitly allows GPTBot, OAI-SearchBot, ChatGPT-User,
   ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, CCBot and others.
-- **Answers are front-loaded.** Topic summaries and FAQ answers state the
+- **Answers are front-loaded.** Expertise summaries and FAQ answers state the
   conclusion in the first sentence — the shape an assistant can lift and cite.
 - **Entity facts stated plainly** in copy and mirrored in structured data:
   name, role, years, city, what he writes about.
@@ -306,7 +306,7 @@ Search the codebase for `TODO` — every placeholder is marked. The important on
    The page already carries an honest "a note on the numbers" disclaimer, which
    is worth keeping.
 
-4. **Get client permission** to name Mapletree, Ayanam Aerospace and MUKA
+4. **Get client permission** to name Mapletree Farms, Ayanam Aerospace and MUKA
    publicly. Add real testimonials to the `quote` field on each case study once
    you have them — the field exists and renders, it's just empty.
 
@@ -373,7 +373,7 @@ reCAPTCHA and verify the token inside the function.
 2. [Bing Webmaster Tools](https://www.bing.com/webmasters) — add it. Bing's index
    also feeds ChatGPT search, so this matters more than it used to.
 3. [Rich Results Test](https://search.google.com/test/rich-results) — validate the
-   structured data on the home page and one topic page.
+   structured data on the home page and one expertise page.
 4. ~~**Google Business Profile**~~ — dropped with the repositioning. A Business
    Profile advertises a business that serves customers, which is the opposite of
    what this site now says. The `ProfessionalService` schema that would have
@@ -445,7 +445,7 @@ src/
     index.astro  about.astro  portfolio.astro  contact.astro
     thank-you.astro    noindex, excluded from sitemap
     404.astro
-    topics/index.astro  topics/[slug].astro
+    expertise/index.astro  expertise/[slug].astro
     blog/index.astro      blog/[...slug].astro
   content/blog/        Markdown posts
   content.config.ts    blog collection schema

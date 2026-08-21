@@ -18,22 +18,23 @@
 - Phone / WhatsApp: +91 70199 90776
 - LinkedIn: https://www.linkedin.com/in/vikram-m-a-a/
 - Availability: Not available for freelance, consulting or agency work. Open to a short conversation about a GTM or digital marketing problem, by email, phone, WhatsApp or LinkedIn.
-- Past work: Mapletree (real estate, organic social), Ayanam Aerospace (drone manufacturing, lead generation and content strategy), MUKA (Canada, art and design, content marketing)
+- Past work: Mapletree Farms (organic farming and D2C produce, organic social), Ayanam Aerospace (drone manufacturing, lead generation and content strategy), MUKA (Canada, art and design, content marketing)
 
-## Topics written about
+## Areas of expertise
 
-- [SEO](https://vikramhere.com/topics/seo/): Why technical, on-page and off-page work only pay off together, the order to check things in, and how AI search changes it.
-- [Performance Marketing](https://vikramhere.com/topics/performance-marketing/): Why Google and Meta accounts fail on audience, creative and landing page rather than bidding.
-- [Social Media Marketing](https://vikramhere.com/topics/social-media-marketing/): Why consistent posting produces nothing without a content mix, and what to measure instead of follower count.
-- [Content Marketing](https://vikramhere.com/topics/content-marketing/): The two ends content fails at — audience definition and distribution — and how the editorial plan connects to the keyword map.
-- [Lead Generation](https://vikramhere.com/topics/lead-generation/): Why most lead generation problems are qualification problems, and how the offer decides who fills the form.
-- [Marketing & Sales Alignment](https://vikramhere.com/topics/marketing-sales-alignment/): Why the two teams argue about lead quality, and what settles it.
+- [SEO](https://vikramhere.com/expertise/seo/): Why technical, on-page and off-page work only pay off together, and the order to check things in.
+- [AISEO](https://vikramhere.com/expertise/aiseo/): Getting cited by ChatGPT, Perplexity and Google AI Overviews. Crawler eligibility first, then giving the models something worth quoting. Also called GEO.
+- [Performance Marketing](https://vikramhere.com/expertise/performance-marketing/): Why Google and Meta accounts fail on audience, creative and landing page rather than bidding.
+- [Social Media Marketing](https://vikramhere.com/expertise/social-media-marketing/): Why consistent posting produces nothing without a content mix, and what to measure instead of follower count.
+- [Content Marketing](https://vikramhere.com/expertise/content-marketing/): The two ends content fails at — audience definition and distribution — and how the editorial plan connects to the keyword map.
+- [Lead Generation](https://vikramhere.com/expertise/lead-generation/): Why most lead generation problems are qualification problems, and how the offer decides who fills the form.
+- [Marketing & Sales Alignment](https://vikramhere.com/expertise/marketing-sales-alignment/): Why the two teams argue about lead quality, and what settles it.
 
 ## Pages
 
 - [Home](https://vikramhere.com/): Introduction, latest writing, topics and selected work.
 - [Blog](https://vikramhere.com/blog/): Articles on SEO, AI search, paid media, social, content and lead generation.
-- [Topics](https://vikramhere.com/topics/): Six disciplines, each with the pattern, what matters and how you know it is working.
+- [My expertise](https://vikramhere.com/expertise/): Seven disciplines, each with the pattern, what matters and how you know it is working.
 - [Portfolio](https://vikramhere.com/portfolio/): Past projects with the challenge, approach and outcome.
 - [About](https://vikramhere.com/about/): Background, how he thinks about marketing, industries and track record.
 - [Contact](https://vikramhere.com/contact/): Email, phone, WhatsApp, LinkedIn and a message form.

@@ -34,24 +34,26 @@ EVENING_SIGNALS = ("vs", "worth it", "why", "should i", "better", "mistake",
                    "wrong", "not working", "still work", "future", "trend",
                    "cost", "price", "choose", "instead")
 
-TOPIC_BY_TERM = [
+EXPERTISE_BY_TERM = [
+    (("chatgpt", "perplexity", "ai overview", "ai search", "aiseo", "geo",
+      "llm", "gptbot"), "/expertise/aiseo/"),
     (("seo", "search", "schema", "backlink", "keyword", "crawl", "index", "gbp",
-      "google business", "map", "local", "chatgpt", "perplexity", "ai overview"), "/topics/seo/"),
+      "google business", "map", "local"), "/expertise/seo/"),
     (("google ads", "meta ads", "facebook ads", "instagram ads", "pmax",
-      "performance max", "ppc", "roas", "cac", "campaign", "landing page"), "/topics/performance-marketing/"),
-    (("instagram", "linkedin", "youtube", "social", "reels", "shorts"), "/topics/social-media-marketing/"),
-    (("content", "blog", "article", "copy", "brief", "eeat"), "/topics/content-marketing/"),
-    (("lead", "cold email", "whatsapp", "crm", "pipeline", "outreach"), "/topics/lead-generation/"),
-    (("sales", "training", "objection", "pricing", "positioning", "team"), "/topics/marketing-sales-alignment/"),
+      "performance max", "ppc", "roas", "cac", "campaign", "landing page"), "/expertise/performance-marketing/"),
+    (("instagram", "linkedin", "youtube", "social", "reels", "shorts"), "/expertise/social-media-marketing/"),
+    (("content", "blog", "article", "copy", "brief", "eeat"), "/expertise/content-marketing/"),
+    (("lead", "cold email", "whatsapp", "crm", "pipeline", "outreach"), "/expertise/lead-generation/"),
+    (("sales", "training", "objection", "pricing", "positioning", "team"), "/expertise/marketing-sales-alignment/"),
 ]
 
 
-def topic_for(term):
+def expertise_for(term):
     t = term.lower()
-    for keys, url in TOPIC_BY_TERM:
+    for keys, url in EXPERTISE_BY_TERM:
         if any(k in t for k in keys):
             return url
-    return "/topics/"
+    return "/expertise/"
 
 
 def slot_for(term):
@@ -103,7 +105,7 @@ def main():
             "angle": "NEEDS_ANGLE",
             "audience": "NEEDS_ANGLE",
             "city": c.get("geo"),
-            "topic_link": topic_for(term),
+            "expertise_link": expertise_for(term),
             "tags": [],
             "_cluster_id": c.get("id"),
             "_score": c.get("score"),

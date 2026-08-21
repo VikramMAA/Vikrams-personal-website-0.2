@@ -97,4 +97,4 @@ Do them in order. Search terms, then location setting, then brand exclusions, th
 
 That's four checks, maybe forty minutes, and in most accounts I open it recovers somewhere between a fifth and a third of the spend without touching a single bid.
 
-If it's still not converting after all six are clean, then you have a genuine strategy problem, and my [notes on performance marketing](/topics/performance-marketing/) go into what I'd look at next. But check the settings first. It's nearly always the settings.
+If it's still not converting after all six are clean, then you have a genuine strategy problem, and my [notes on performance marketing](/expertise/performance-marketing/) go into what I'd look at next. But check the settings first. It's nearly always the settings.

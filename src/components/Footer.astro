@@ -1,5 +1,5 @@
 ---
-import { site, contact, topics } from '../data/site';
+import { site, contact, expertise } from '../data/site';
 
 const year = new Date().getFullYear();
 ---
@@ -14,13 +14,13 @@ const year = new Date().getFullYear();
         <p class="footer-loc">{contact.city}, {contact.region}, India.</p>
       </div>
 
-      <nav aria-label="Topics">
-        <h2 class="footer-heading">Topics</h2>
+      <nav aria-label="My expertise">
+        <h2 class="footer-heading">My expertise</h2>
         <ul>
           {
-            topics.map((t) => (
+            expertise.map((t) => (
               <li>
-                <a href={`/topics/${t.slug}/`}>{t.title}</a>
+                <a href={`/expertise/${t.slug}/`}>{t.title}</a>
               </li>
             ))
           }
@@ -32,7 +32,7 @@ const year = new Date().getFullYear();
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/blog/">Blog</a></li>
-          <li><a href="/topics/">Topics</a></li>
+          <li><a href="/expertise/">My expertise</a></li>
           <li><a href="/portfolio/">Portfolio</a></li>
           <li><a href="/about/">About</a></li>
           <li><a href="/contact/">Contact</a></li>

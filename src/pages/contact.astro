@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import { site, contact, topics } from '../data/site';
+import { site, contact, expertise } from '../data/site';
 import { breadcrumbSchema } from '../data/schema';
 
 const title = `Contact ${site.name} — Say Hello`;
@@ -81,8 +81,8 @@ const contactPageSchema = {
 
           <p class="note">
             If you would rather read than write, the <a href="/blog/">blog</a> and
-            the <a href="/topics/">topic notes</a> cover most of what I would say on a
-            call anyway.
+            the <a href="/expertise/">expertise notes</a> cover most of what I would say on
+            a call anyway.
           </p>
         </div>
 
@@ -150,7 +150,7 @@ const contactPageSchema = {
               <label for="topic">What is this about?</label>
               <select id="topic" name="topic">
                 <option value="">Just saying hello</option>
-                {topics.map((t) => <option value={t.title}>{t.title}</option>)}
+                {expertise.map((a) => <option value={a.title}>{a.title}</option>)}
                 <option value="Something I wrote">Something I wrote</option>
               </select>
             </div>

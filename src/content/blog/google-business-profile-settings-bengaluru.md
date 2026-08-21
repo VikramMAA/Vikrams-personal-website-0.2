@@ -89,6 +89,6 @@ Then set a reminder for the first of every month to add three photos and check t
 
 The businesses beating you in the map pack are usually not doing anything clever. They're just doing the boring parts, consistently, while everyone else waits for a clever trick that isn't coming.
 
-If your profile is in decent shape and you're still not showing up, the problem has moved to your website and your citations, and that's a bigger conversation. My [SEO notes](/topics/seo/) walk through the order I'd check things in. And if you'd like to know how your issue could be solved, [get in touch](/contact/) on email, WhatsApp, phone or LinkedIn. I'm not available for hire, but I'm always up for a quick chat about it.
+If your profile is in decent shape and you're still not showing up, the problem has moved to your website and your citations, and that's a bigger conversation. My [SEO notes](/expertise/seo/) walk through the order I'd check things in. And if you'd like to know how your issue could be solved, [get in touch](/contact/) on email, WhatsApp, phone or LinkedIn. I'm not available for hire, but I'm always up for a quick chat about it.
 
 Cheers!

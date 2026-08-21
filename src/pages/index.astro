@@ -6,7 +6,7 @@ import CTA from '../components/CTA.astro';
 import {
   site,
   contact,
-  topics,
+  expertise,
   stats,
   caseStudies,
   faqs,
@@ -139,12 +139,12 @@ const fmt = (d: Date) =>
     </div>
   </section>
 
-  {/* ------------------------------------------------------------- Topics */}
-  <section class="section" aria-labelledby="topics-heading">
+  {/* ---------------------------------------------------------- Expertise */}
+  <section class="section" aria-labelledby="expertise-heading">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">Topics</p>
-        <h2 id="topics-heading">What I write about</h2>
+        <p class="eyebrow">My expertise</p>
+        <h2 id="expertise-heading">What I write about</h2>
         <p>
           Six disciplines I have spent a decade inside. Each page collects the pattern I
           keep running into and what actually moves the number.
@@ -153,11 +153,11 @@ const fmt = (d: Date) =>
 
       <div class="grid grid--3">
         {
-          topics.map((topic) => (
-            <a href={`/topics/${topic.slug}/`} class="card">
-              <h3>{topic.title}</h3>
-              <p>{topic.summary}</p>
-              <span class="card__link">Notes on {topic.title} &rarr;</span>
+          expertise.map((area) => (
+            <a href={`/expertise/${area.slug}/`} class="card">
+              <h3>{area.title}</h3>
+              <p>{area.summary}</p>
+              <span class="card__link">Notes on {area.title} &rarr;</span>
             </a>
           ))
         }
@@ -198,7 +198,7 @@ const fmt = (d: Date) =>
         <p class="eyebrow">Portfolio</p>
         <h2 id="work-heading">Work I am proud of</h2>
         <p>
-          Across real estate, deep-tech manufacturing and an international consumer
+          Across organic produce, deep-tech manufacturing and an international art
           brand.
         </p>
       </div>

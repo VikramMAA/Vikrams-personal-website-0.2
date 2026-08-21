@@ -3,8 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTA from '../../components/CTA.astro';
-import { topics } from '../../data/site';
-import { breadcrumbSchema, faqSchema, topicPageSchema } from '../../data/schema';
+import { expertise } from '../../data/site';
+import { breadcrumbSchema, faqSchema, expertisePageSchema } from '../../data/schema';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -12,60 +12,61 @@ export async function getStaticPaths() {
     (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
   );
 
-  return topics.map((topic) => {
-    /* Surface posts that match this topic's keywords, so each page routes
+  return expertise.map((area) => {
+    /* Surface posts that match this area's keywords, so each page routes
        readers into the writing rather than into a sales funnel. */
     const related = posts
       .filter((post) => {
         const haystack = [post.data.title, ...post.data.tags]
           .join(' ')
           .toLowerCase();
-        return topic.match.some((term) => haystack.includes(term));
+        if (area.exclude?.some((term) => haystack.includes(term))) return false;
+        return area.match.some((term) => haystack.includes(term));
       })
       .slice(0, 3);
 
     return {
-      params: { slug: topic.slug },
-      props: { topic, related },
+      params: { slug: area.slug },
+      props: { area, related },
     };
   });
 }
 
-const { topic, related } = Astro.props;
+const { area, related } = Astro.props;
 
 const crumbs = [
   { label: 'Home', href: '/' },
-  { label: 'Topics', href: '/topics/' },
-  { label: topic.title, href: `/topics/${topic.slug}/` },
+  { label: 'My expertise', href: '/expertise/' },
+  { label: area.title, href: `/expertise/${area.slug}/` },
 ];
 
-const otherTopics = topics.filter((t) => t.slug !== topic.slug).slice(0, 3);
+const otherAreas = expertise.filter((a) => a.slug !== area.slug).slice(0, 3);
 
 const fmt = (d: Date) =>
   d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
 
 <BaseLayout
-  title={topic.seoTitle}
-  description={topic.metaDescription}
+  title={area.seoTitle}
+  description={area.metaDescription}
   schema={[
     breadcrumbSchema(crumbs),
-    topicPageSchema({
-      name: topic.title,
-      description: topic.summary,
-      slug: topic.slug,
+    expertisePageSchema({
+      name: area.title,
+      description: area.summary,
+      slug: area.slug,
     }),
-    faqSchema(topic.faqs),
+    faqSchema(area.faqs),
   ]}
 >
   <Breadcrumbs items={crumbs} />
 
   {/* ------------------------------------------------------------- Header */}
-  <section class="section topic-hero">
+  <section class="section area-hero">
     <div class="container">
-      <p class="eyebrow">Topic notes</p>
-      <h1>{topic.seoTitle.split('—')[0].trim()}</h1>
-      <p class="lede">{topic.summary}</p>
+      <p class="eyebrow">Expertise notes</p>
+      <h1>{area.seoTitle.split('—')[0].trim()}</h1>
+      <p class="lede">{area.summary}</p>
       <div class="btn-row">
         <a href="/blog/" class="btn btn--primary">Read the blog</a>
         <a href="/portfolio/" class="btn btn--ghost">See past work</a>
@@ -78,7 +79,7 @@ const fmt = (d: Date) =>
     <div class="container container--narrow">
       <p class="eyebrow">The pattern</p>
       <h2>What usually goes wrong here</h2>
-      <p class="pattern-body">{topic.pattern}</p>
+      <p class="pattern-body">{area.pattern}</p>
     </div>
   </section>
 
@@ -90,14 +91,14 @@ const fmt = (d: Date) =>
           <p class="eyebrow">What I look at</p>
           <h2>The things that actually move it</h2>
           <ul class="checklist">
-            {topic.whatMatters.map((item) => <li>{item}</li>)}
+            {area.whatMatters.map((item) => <li>{item}</li>)}
           </ul>
         </div>
 
         <aside class="signal-panel">
           <h3>How you know it is working</h3>
           <ul>
-            {topic.signals.map((item) => <li>{item}</li>)}
+            {area.signals.map((item) => <li>{item}</li>)}
           </ul>
         </aside>
       </div>
@@ -105,8 +106,8 @@ const fmt = (d: Date) =>
   </section>
 
   <FAQ
-    items={topic.faqs}
-    heading={`${topic.title} — questions I get asked`}
+    items={area.faqs}
+    heading={`${area.title} — questions I get asked`}
   />
 
   {/* ------------------------------------------------------ Related posts */}
@@ -137,7 +138,7 @@ const fmt = (d: Date) =>
     )
   }
 
-  {/* ----------------------------------------------------- Other topics */}
+  {/* ----------------------------------------------------- Other expertise */}
   <section class="section section--alt">
     <div class="container">
       <div class="section-head">
@@ -146,10 +147,10 @@ const fmt = (d: Date) =>
       </div>
       <div class="grid grid--3">
         {
-          otherTopics.map((t) => (
-            <a href={`/topics/${t.slug}/`} class="card">
-              <h3>{t.title}</h3>
-              <p>{t.summary}</p>
+          otherAreas.map((a) => (
+            <a href={`/expertise/${a.slug}/`} class="card">
+              <h3>{a.title}</h3>
+              <p>{a.summary}</p>
               <span class="card__link">Read the notes &rarr;</span>
             </a>
           ))
@@ -162,7 +163,7 @@ const fmt = (d: Date) =>
 </BaseLayout>
 
 <style>
-  .topic-hero {
+  .area-hero {
     padding-block: clamp(3rem, 7vw, 5rem) clamp(2.5rem, 5vw, 4rem);
     background:
       radial-gradient(
@@ -173,7 +174,7 @@ const fmt = (d: Date) =>
       var(--bg);
   }
 
-  .topic-hero h1 {
+  .area-hero h1 {
     max-width: 20ch;
     margin-bottom: 1.35rem;
   }

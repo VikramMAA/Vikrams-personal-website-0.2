@@ -37,7 +37,7 @@ export function breadcrumbSchema(items: { label: string; href: string }[]) {
   };
 }
 
-export function topicPageSchema(opts: {
+export function expertisePageSchema(opts: {
   name: string;
   description: string;
   slug: string;
@@ -47,8 +47,8 @@ export function topicPageSchema(opts: {
     '@type': 'Article',
     headline: `${opts.name} — notes from ${site.name}`,
     description: opts.description,
-    url: `${site.url}/topics/${opts.slug}/`,
-    mainEntityOfPage: `${site.url}/topics/${opts.slug}/`,
+    url: `${site.url}/expertise/${opts.slug}/`,
+    mainEntityOfPage: `${site.url}/expertise/${opts.slug}/`,
     about: opts.name,
     author: { '@id': `${site.url}/#person` },
     publisher: { '@id': `${site.url}/#person` },

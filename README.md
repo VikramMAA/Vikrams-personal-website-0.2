@@ -49,20 +49,20 @@ structured data that Google and AI crawlers read. You rarely need to touch the
 | Email, phone, WhatsApp, LinkedIn, city, social links | `contact` object |
 | The "reach out for a chat" wording used site-wide | `chatInvite` object |
 | The four numbers under the hero | `stats` array |
-| Topic notes — copy, checklists, FAQs, SEO titles | `topics` array |
+| Expertise notes — copy, checklists, FAQs, SEO titles | `expertise` array |
 | Portfolio entries on `/portfolio/` | `caseStudies` array |
 | Home page FAQ | `faqs` array |
 | The four steps in "how I think about it" | `approach` array |
 | Industry tags | `industries` array |
 
-### Adding a topic
+### Adding an area of expertise
 
-Add an object to the `topics` array. A page appears automatically at
-`/topics/your-slug/`, gets added to the footer and the sitemap, and pulls in
+Add an object to the `expertise` array. A page appears automatically at
+`/expertise/your-slug/`, gets added to the footer and the sitemap, and pulls in
 matching blog posts via its `match` keywords. Nothing else to wire up.
 
-Topic pages are notes and opinions, never offers. Keep `whatMatters` framed as
-"what I look at", not "what you get", and keep pricing and engagement language
+Expertise pages are notes and opinions, never offers. Keep `whatMatters` framed
+as "what I look at", not "what you get", and keep pricing and engagement language
 out of the FAQs.
 
 ### Adding a blog post
@@ -106,7 +106,7 @@ These are the things that must change. Search the repo for `TODO` to find the re
 
 3. **Check the LinkedIn URL** in `contact.socials` — it is a guess.
 
-4. **Confirm the case study clients are happy to be named** (Mapletree, Ayanam
+4. **Confirm the case study clients are happy to be named** (Mapletree Farms, Ayanam
    Aerospace, MUKA), and add real quotes to the `quote` field where you have
    permission.
 
@@ -235,7 +235,7 @@ the layouts.
   no `ProfessionalService` or `OfferCatalog` — nothing is on offer)
 
 **Per page type:**
-- Topic pages → `Article` + `FAQPage` + `BreadcrumbList`
+- Expertise pages → `Article` + `FAQPage` + `BreadcrumbList`
 - Blog posts → `BlogPosting` + `BreadcrumbList`
 - Contact → `ContactPage`
 - Home → `FAQPage`
@@ -256,7 +256,7 @@ Builders live in [`src/data/schema.ts`](src/data/schema.ts).
   ClaudeBot, PerplexityBot, Google-Extended and others. Remove any you do not
   want reading the site — but blocking them means no citations from that
   assistant.
-- **Answers are front-loaded.** Topic summaries and FAQ answers state the
+- **Answers are front-loaded.** Expertise summaries and FAQ answers state the
   conclusion in the first sentence, which is the shape an assistant can lift.
 
 ### After the first deploy
@@ -294,9 +294,9 @@ src/
     contact.astro
     thank-you.astro    noindex, excluded from sitemap
     404.astro
-    topics/
+    expertise/
       index.astro
-      [slug].astro     one page per entry in `topics`
+      [slug].astro     one page per entry in `expertise`
     blog/
       index.astro
       [...slug].astro
