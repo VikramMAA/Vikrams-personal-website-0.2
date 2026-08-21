@@ -83,10 +83,45 @@ anything.
 
 ---
 
-## Indian context, always
+## Local context, always. One market per post.
+
+Every brief carries a `market` field. It is either `US`, `India` or `Estonia`.
+Write the whole post for that one market and nothing else.
+
+Never blend them. A post that quotes rupees in one section and Thanksgiving
+retail in the next reads like it was assembled by a machine, because it was.
+If an example does not fit the market, find a different example rather than
+reaching for the one you know.
+
+The split exists because the audience is not where the writing has been. Most
+readers are in the US, the deepest well of first hand experience is India, and
+Estonia is a deliberate bet on a small, high value market rather than a
+reflection of current traffic.
+
+### United States
+
+The reader is a business owner or in-house marketer in a US metro.
+
+- Dollars, written plainly. `$4,000 a month`, `$25k`, `$1.2M`. Never `Rs`,
+  never lakh or crore, ever, in a US post.
+- Real places. Austin, Scottsdale, Denver, Charlotte, Tampa, Brooklyn, the
+  Bay Area, suburban Dallas, the Chicago North Shore. Metro plus suburb reads
+  more real than a state name.
+- Real platforms US buyers use. Google Business Profile, Yelp, Angi,
+  Thumbtack, Nextdoor, the BBB, Reddit, Stripe, HubSpot, Shopify, Klaviyo,
+  ServiceTitan and Jobber for the trades.
+- Real conditions. HIPAA if the client is a clinic, TCPA before anyone
+  suggests cold SMS, CCPA and the state privacy patchwork, Q4 retail
+  concentration, franchise and multi-location structures, the "book a call"
+  funnel, health insurance costs shaping small business hiring.
+- US English spelling. `optimization`, `analyze`, `organized`, `program`,
+  `catalog`. This is the one place the site is deliberately inconsistent,
+  and that is correct.
+
+### India
 
 The reader is a business owner or marketer in Bengaluru, Mumbai, Delhi NCR,
-Hyderabad, Chennai, Pune, Kolkata or Ahmedabad. Write like you know that market.
+Hyderabad, Chennai, Pune, Kolkata or Ahmedabad.
 
 - Rupees, written the Indian way. `Rs 40,000`, `Rs 2.5 lakh`, `Rs 1.2 crore`.
   Not `$500`, unless the post is specifically about earning in USD.
@@ -99,7 +134,46 @@ Hyderabad, Chennai, Pune, Kolkata or Ahmedabad. Write like you know that market.
   festive season demand around Diwali and Navratri, quick commerce eating D2C
   website traffic, agencies charging Rs 25,000 a month and delivering a report.
 - Indian English spelling. `optimisation`, `organised`, `analyse`, `programme`.
-  Keep it consistent with the rest of the site.
+
+### Estonia
+
+The reader is a founder or marketer at an Estonian company, reading in English.
+Written in English, never in Estonian.
+
+Remember the scale. Estonia has about 1.3 million people, so almost nothing
+here is a domestic volume play. Most of the companies worth writing for sell
+outward, into the Nordics, the rest of the EU, or the US. Write like the
+addressable market is export, because it is.
+
+- Euro. `EUR 4,000 a month` or `4,000 EUR`. Estonia has been on the euro since
+  2011, so never reach for kroon.
+- Real places, with the correct diacritics. Tallinn, Tartu, Pärnu, Narva.
+  Ülemiste City for the tech campus, Telliskivi and Kalamaja for the creative
+  and startup end, Kesklinn for the centre.
+- Real platforms Estonian buyers use. Bank links are the thing to understand:
+  people expect to log into Swedbank, SEB or LHV and pay directly rather than
+  type a card number. Montonio and Maksekeskus are the providers that offer
+  them, and Stripe on its own does not, which is a genuine conversion problem
+  for a shop that only took Stripe. Omniva, SmartPost and DPD parcel lockers
+  are the assumed delivery method, not an upsell.
+- Real conditions. 24% standard VAT since July 2025. Corporate tax is the
+  famous one: 0% on retained profits, 22% only when profit is distributed.
+  e-Residency, digital ID and e-signature mean paperwork expectations are
+  completely different from the US or India. And there is a real startup
+  bench here, Wise, Bolt and Pipedrive among them, which sets the tone for
+  how founders talk about growth.
+- British spelling. `optimisation`, `organised`, `analyse`. Estonian readers of
+  English business writing expect European English, not American.
+- Do not attempt Estonian phrases beyond place names. Getting one slightly
+  wrong is far worse than not reaching for it.
+
+### The rule underneath all three
+
+Do not fake local knowledge. Naming a neighbourhood you know nothing about is
+worse than writing "a clinic in a competitive suburb". Specificity earns trust
+only while it is accurate, and a reader in Kraków or Charlotte spots a wrong
+detail instantly. Where the real expertise is thin, be concrete about the
+mechanism instead of the postcode.
 
 ---
 

@@ -29,6 +29,19 @@ python3 content-ops/scripts/next_brief.py --slot morning
 
 It prints one brief plus the last ten published titles and opening patterns.
 
+**Check the `market` field before anything else.** It is `US`, `India` or
+`Estonia`, and the script picks it by rotating to whichever market is furthest
+behind its weight in `config.json`. That market decides the currency, the
+spelling, the cities, the platforms and the examples for the entire post. The
+per market rules are in `VOICE.md` and they are not interchangeable.
+
+Most readers are in the US. The queue used to be almost entirely Indian, which
+is exactly the mismatch the rotation exists to correct, so do not quietly write
+another Indian post because the examples come easier.
+
+`_remaining_by_market` in the output tells you how much runway each market has
+left. If one is heading towards zero, refill that market specifically.
+
 **Nobody is watching this run.** There is no human to escalate to and no
 approval step anywhere in this playbook. If something is missing, you fix it in
 this run and carry on. The only thing that ever justifies not publishing is a
@@ -109,7 +122,8 @@ Follow `VOICE.md`. The parts that get skipped most often, so check them:
 - No em dashes. Not one.
 - The actual answer inside the first 150 words.
 - Paragraph lengths vary. Some one line, some six.
-- Indian context, rupees, real localities, real platforms.
+- The brief's market, all the way through. Currency, spelling and examples all
+  match it, and none of them wander into another market halfway down.
 - Something concrete in the middle. A checklist, a script, a real number.
 - Do not reuse an opening pattern from the last ten posts. The script prints
   them for exactly this reason.
@@ -180,6 +194,7 @@ Append to `content-ops/published.json` in the same commit:
   "slug": "google-business-profile-settings-bengaluru",
   "title": "The Google Business Profile settings most Bengaluru businesses never touch",
   "primary_keyword": "google business profile optimisation india",
+  "market": "India",
   "city": "Bengaluru",
   "tags": ["Local SEO", "Google Business Profile", "Bengaluru"],
   "slot": "morning",
@@ -191,6 +206,10 @@ Append to `content-ops/published.json` in the same commit:
 
 `opening_pattern` matters more than it looks. It is the only thing stopping the
 fortieth post from opening exactly like the fourth.
+
+`market` is not optional either. The rotation in `next_brief.py` reads it back
+out of this file to work out who is owed the next post, so a missing one makes
+the next run think that market never ran.
 
 ## 10. Report
 

@@ -7,11 +7,16 @@
       "title": "The Google Business Profile settings most Bengaluru businesses never touch",
       "primary_keyword": "google business profile optimisation india",
       "city": "Bengaluru",
-      "tags": ["Local SEO", "Google Business Profile", "Bengaluru"],
+      "tags": [
+        "Local SEO",
+        "Google Business Profile",
+        "Bengaluru"
+      ],
       "slot": "morning",
       "published_at": "2026-08-12",
       "opening_pattern": "direct instruction to the reader — go open your profile right now",
-      "word_count": 1212
+      "word_count": 1212,
+      "market": "India"
     },
     {
       "brief_id": "b-003",
@@ -19,11 +24,16 @@
       "title": "How to get quoted by ChatGPT, starting with the robots.txt line you missed",
       "primary_keyword": "how to rank in chatgpt",
       "city": null,
-      "tags": ["AI Search", "SEO", "ChatGPT"],
+      "tags": [
+        "AI Search",
+        "SEO",
+        "ChatGPT"
+      ],
       "slot": "morning",
       "published_at": "2026-08-20",
       "opening_pattern": "statistic about India's weekly ChatGPT user base, then a blunt claim that the reader is missing from those answers",
-      "word_count": 1350
+      "word_count": 1350,
+      "market": "India"
     },
     {
       "brief_id": "b-002",
@@ -31,11 +41,16 @@
       "title": "Stop asking your agency why the numbers went up. Ask what they can't see",
       "primary_keyword": "digital marketing agency not delivering results",
       "city": null,
-      "tags": ["Agency", "Marketing Strategy", "India"],
+      "tags": [
+        "Agency",
+        "Marketing Strategy",
+        "India"
+      ],
       "slot": "evening",
       "published_at": "2026-08-20",
       "opening_pattern": "scene from a monthly review call, 41 slides and a question nobody could answer",
-      "word_count": 1226
+      "word_count": 1226,
+      "market": "India"
     },
     {
       "brief_id": "b-005",
@@ -43,11 +58,16 @@
       "title": "Your Google Ads aren't converting, and five of the six reasons are settings",
       "primary_keyword": "google ads not converting",
       "city": null,
-      "tags": ["Google Ads", "Performance Marketing", "PPC"],
+      "tags": [
+        "Google Ads",
+        "Performance Marketing",
+        "PPC"
+      ],
       "slot": "morning",
       "published_at": "2026-08-21",
       "opening_pattern": "flat opinion correcting the reader's diagnosis, the ads are fine and a setting is not",
-      "word_count": 1270
+      "word_count": 1270,
+      "market": "India"
     }
   ]
 }

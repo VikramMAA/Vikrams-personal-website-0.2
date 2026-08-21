@@ -63,6 +63,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--count", type=int, default=20)
     ap.add_argument("--slot", choices=["morning", "evening"])
+    ap.add_argument("--market", choices=["US", "India", "Estonia"], default="India",
+                    help="Market to tag these stubs with. Defaults to India because the "
+                         "keyword plan under seo/ was built for India. Refilling US or "
+                         "Estonia means researching those markets first, not relabelling "
+                         "Indian keywords.")
     ap.add_argument("--write", action="store_true",
                     help="Append the stubs to queue.json instead of printing them")
     args = ap.parse_args()
@@ -96,6 +101,7 @@ def main():
         stubs.append({
             "id": f"b-{next_n:03d}",
             "slot": slot,
+            "market": args.market,
             "primary_keyword": term,
             "secondary_keywords": [k["term"] if isinstance(k, dict) else k
                                    for k in (c.get("keywords") or [])[1:5]],
@@ -116,9 +122,11 @@ def main():
         queue["briefs"].extend(stubs)
         with open(QUEUE, "w", encoding="utf-8") as f:
             json.dump(queue, f, indent=2, ensure_ascii=False)
-        print(f"Appended {len(stubs)} stubs to queue.json.\n"
+        print(f"Appended {len(stubs)} stubs to queue.json, all tagged market={args.market}.\n"
               f"Now fill in working_title, angle, audience and tags on every one of "
-              f"them before any run uses them. See this file's docstring for how.")
+              f"them before any run uses them. See this file's docstring for how.\n"
+              f"Check the market is right on each one. A keyword harvested from the "
+              f"Indian plan does not become a US brief by having the label changed.")
     else:
         print(json.dumps(stubs, indent=2, ensure_ascii=False))
 

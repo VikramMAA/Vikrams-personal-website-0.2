@@ -12,6 +12,27 @@
       "shape": "opinion, analysis or story. Something the reader argues with or forwards."
     }
   },
+  "markets": {
+    "_comment": "One market per post. next_brief.py rotates by weight and will not run the same market three times in a row. Weights are relative, not percentages: US 3 / India 2 / Estonia 1 works out to roughly 50/33/17.",
+    "US": {
+      "weight": 3,
+      "english": "US",
+      "currency": "USD",
+      "why": "Largest share of readers by a distance, and the queue had nothing aimed at them."
+    },
+    "India": {
+      "weight": 2,
+      "english": "Indian",
+      "currency": "INR",
+      "why": "Home market and the deepest well of real first hand experience."
+    },
+    "Estonia": {
+      "weight": 1,
+      "english": "British",
+      "currency": "EUR",
+      "why": "Deliberate bet on a small high value export market, not a reflection of current traffic."
+    }
+  },
   "refill_threshold": 10,
   "author": "Vikram M A A",
   "site": "https://vikramhere.com"
