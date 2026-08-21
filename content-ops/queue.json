@@ -10,7 +10,7 @@
       "angle": "Walk through the specific fields that actually move map pack rank, in order. Categories, service list, description length, photo cadence, Q&A seeding, review velocity. Call out that proximity cannot be faked and that the fastest wins are the primary category and the service list, which almost nobody fills properly.",
       "audience": "SME and local business owners",
       "city": "Bengaluru",
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["Local SEO", "Google Business Profile", "Bengaluru"]
     },
     {
@@ -22,7 +22,7 @@
       "angle": "Opinion piece on the monthly report theatre. Impressions and reach are not results. Give the reader four questions to ask on the next call that an agency doing real work can answer in a sentence and an agency coasting cannot. Be direct about the Rs 25,000 a month retainer that buys a PDF.",
       "audience": "SME owners and in-house marketing managers",
       "city": null,
-      "service_link": "/services/",
+      "topic_link": "/topics/",
       "tags": ["Agency", "Marketing Strategy", "India"]
     },
     {
@@ -34,7 +34,7 @@
       "angle": "Practical checklist. Serve static HTML, front load the answer in the first sentence of every section, add FAQ and Organization schema, unblock GPTBot and PerplexityBot, get mentioned on Justdial and IndiaMART and in local press because models weight corroboration. Include the exact robots.txt lines.",
       "audience": "All",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["AI Search", "SEO", "ChatGPT"]
     },
     {
@@ -46,7 +46,7 @@
       "angle": "Every page ranking for this hedges. Do the opposite. Give real ranges by engagement type, explain what changes the number, and explain why the Rs 8,000 a month offer is arithmetic that cannot work once you count the hours. Frame it as the conversation he has on every discovery call.",
       "audience": "SME owners and startup founders",
       "city": null,
-      "service_link": "/contact/",
+      "topic_link": "/contact/",
       "tags": ["Pricing", "Consulting", "India"]
     },
     {
@@ -58,7 +58,7 @@
       "angle": "Tactical. Search terms report first, then Performance Max cannibalising brand, then conversion actions counting the wrong thing, then geo settings including presence-or-interest, then ad schedule, then the landing page asking for too much. Give the exact click path for each check.",
       "audience": "In-house marketing managers and SME owners",
       "city": null,
-      "service_link": "/services/performance-marketing/",
+      "topic_link": "/topics/performance-marketing/",
       "tags": ["Google Ads", "Performance Marketing", "PPC"]
     },
     {
@@ -70,7 +70,7 @@
       "angle": "Analysis. Explain why a site can hold position three and lose half its clicks, which query types got hit hardest [informational top of funnel], which barely moved [transactional and local], and what to do about it. Argue that the fix is publishing what an assistant needs to cite you, not writing more of the same.",
       "audience": "In-house marketing managers and B2B companies",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["AI Search", "SEO", "Analytics"]
     },
     {
@@ -82,7 +82,7 @@
       "angle": "Practical local SEO for healthcare. Category selection, doctor pages with real credentials, review requests that do not break Google's rules, Practo and Justdial consistency, appointment booking friction. Note the compliance line around health claims in India.",
       "audience": "SME and local business owners",
       "city": "Bengaluru",
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["Local SEO", "Healthcare", "Bengaluru"]
     },
     {
@@ -94,7 +94,7 @@
       "angle": "Analysis for D2C. CPMs up meaningfully since 2023, so the lever is not bidding, it is creative volume and retention. Argue for shipping many more creative concepts a month, for measuring blended CAC not platform ROAS, and for building a second acquisition channel before the first one prices you out.",
       "audience": "Startup and D2C founders",
       "city": null,
-      "service_link": "/services/performance-marketing/",
+      "topic_link": "/topics/performance-marketing/",
       "tags": ["Meta Ads", "D2C", "Performance Marketing"]
     },
     {
@@ -106,7 +106,7 @@
       "angle": "Step by step with only free tools. Search Console coverage report, a site: search, PageSpeed on mobile, a crawl of the top twenty pages, title and H1 check, internal link check. Tell them exactly what a bad result looks like at each step. Ends with the honest line about when to stop and get help.",
       "audience": "SME owners and in-house marketing managers",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["SEO", "Technical SEO", "Audit"]
     },
     {
@@ -118,7 +118,7 @@
       "angle": "Opinion backed by the follow up speed data. An hour one follow up converts far better than a day later, and most Indian B2B teams reply next morning. Cover the multi touch stack of email plus LinkedIn plus phone, and be blunt that Indian buyers want peer validation before a call.",
       "audience": "B2B and SaaS companies",
       "city": null,
-      "service_link": "/services/lead-generation/",
+      "topic_link": "/topics/lead-generation/",
       "tags": ["Lead Generation", "B2B", "LinkedIn"]
     },
     {
@@ -130,7 +130,7 @@
       "angle": "The questions, with the answer to listen for and the answer that should end the meeting. Include who actually does the work, what happens to the accounts if we part ways, and what would make you tell me not to hire you. Cover the freelancer versus agency call honestly, including when an agency genuinely is the right answer.",
       "audience": "SME owners and in-house marketing managers",
       "city": null,
-      "service_link": "/services/",
+      "topic_link": "/topics/",
       "tags": ["Agency", "Consulting", "Hiring"]
     },
     {
@@ -142,7 +142,7 @@
       "angle": "Contrarian but accurate. The policy is about helpfulness, not production method. Then the real problem: everyone prompts the same model with the same brief and publishes the same article, so nothing is differentiated and nothing gets cited. Argue that the moat is first hand experience and specific numbers.",
       "audience": "In-house marketing managers and content teams",
       "city": null,
-      "service_link": "/services/content-marketing/",
+      "topic_link": "/topics/content-marketing/",
       "tags": ["Content Marketing", "AI", "SEO"]
     },
     {
@@ -154,7 +154,7 @@
       "angle": "Practical. Business app versus API and when the jump is worth it, template message approval, opt in rules, what gets you reported and blocked, the broadcast list mistake, and connecting it to the website so the lead lands somewhere you can measure.",
       "audience": "SME and local business owners",
       "city": null,
-      "service_link": "/services/lead-generation/",
+      "topic_link": "/topics/lead-generation/",
       "tags": ["WhatsApp", "Lead Generation", "India"]
     },
     {
@@ -166,7 +166,7 @@
       "angle": "Deliberately against his own interest, which is why it earns trust. SEO is wrong when you need revenue in sixty days, when the category has almost no search demand, when the site cannot be changed, or when nobody can produce content. Then say when it is the highest return channel available.",
       "audience": "SME owners and startup founders",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["SEO", "Strategy", "Small Business"]
     },
     {
@@ -178,7 +178,7 @@
       "angle": "Practical. The searches that happen outside the aggregators, menu markup, photos that drive direction requests, Google posts for daily specials, review replies, and why owning direct orders matters when aggregator commissions eat the margin.",
       "audience": "SME and local business owners",
       "city": "Bengaluru",
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["Local SEO", "Restaurants", "Bengaluru"]
     },
     {
@@ -190,7 +190,7 @@
       "angle": "Analysis. Blinkit and Zepto changed where discovery happens for several categories. Cover which categories are exposed, what the own-website play still wins [margin, data, repeat], and how to run both without cannibalising yourself.",
       "audience": "Startup and D2C founders",
       "city": null,
-      "service_link": "/services/performance-marketing/",
+      "topic_link": "/topics/performance-marketing/",
       "tags": ["D2C", "Ecommerce", "Strategy"]
     },
     {
@@ -202,7 +202,7 @@
       "angle": "Technical and practical. Separate sending domain, SPF DKIM DMARC set correctly, warm up before volume, sending limits per inbox per day, and the copy patterns that trigger filters. Give the exact DNS records.",
       "audience": "B2B and SaaS companies",
       "city": null,
-      "service_link": "/services/lead-generation/",
+      "topic_link": "/topics/lead-generation/",
       "tags": ["Cold Email", "Deliverability", "B2B"]
     },
     {
@@ -214,7 +214,7 @@
       "angle": "Give a real allocation and defend it. Argue against spreading it thin across six channels, which is what most small businesses do. Show two different splits for two different businesses [a local service business and a B2B company] to make the point that the split follows the buying journey.",
       "audience": "SME owners",
       "city": null,
-      "service_link": "/services/",
+      "topic_link": "/topics/",
       "tags": ["Budget", "Strategy", "Small Business"]
     },
     {
@@ -226,7 +226,7 @@
       "angle": "Practical with real code blocks. LocalBusiness or ProfessionalService, Service, FAQPage, Person for the consultant. Explain that schema must match the visible copy or it does nothing, and show how to validate.",
       "audience": "In-house marketing managers and developers",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["Technical SEO", "Schema", "AI Search"]
     },
     {
@@ -238,7 +238,7 @@
       "angle": "Personal, story led. Draw on the freelancing journey posts already on the site. The clients that worked out, the ones that did not, and the pattern behind both. Land on what makes an engagement succeed, which is access and decision speed more than budget.",
       "audience": "SME owners and startup founders",
       "city": "Bengaluru",
-      "service_link": "/about/",
+      "topic_link": "/about/",
       "tags": ["Freelancing", "Bengaluru", "Consulting"]
     },
     {
@@ -250,7 +250,7 @@
       "angle": "Tactical. Brand traffic cannibalisation, how to exclude brand terms, asset group structure, why the black box needs feeding with good conversion data, and when a plain search campaign beats it outright.",
       "audience": "In-house marketing managers and D2C founders",
       "city": null,
-      "service_link": "/services/performance-marketing/",
+      "topic_link": "/topics/performance-marketing/",
       "tags": ["Google Ads", "Performance Max", "PPC"]
     },
     {
@@ -262,7 +262,7 @@
       "angle": "Opinion. The follower count that does not sell anything. Argue for fewer, better posts tied to a buying moment, and for treating saves and shares and DMs as the real signal. Include what a small local brand should actually post in a week.",
       "audience": "SME owners",
       "city": null,
-      "service_link": "/services/social-media-marketing/",
+      "topic_link": "/topics/social-media-marketing/",
       "tags": ["Instagram", "Social Media", "Strategy"]
     },
     {
@@ -274,7 +274,7 @@
       "angle": "Practical debugging. Conversion events firing on page load, duplicate tags, self referrals, missing UTMs on paid social, and the WhatsApp click that never gets counted. Tell them exactly what to click.",
       "audience": "In-house marketing managers",
       "city": null,
-      "service_link": "/services/",
+      "topic_link": "/topics/",
       "tags": ["Analytics", "GA4", "Tracking"]
     },
     {
@@ -286,7 +286,7 @@
       "angle": "City specific but honest about the remote angle. Mumbai's category competition is brutal, real estate and finance and hospitality especially. Cover what actually differentiates in a crowded local SERP. Do not pretend to have an Andheri office.",
       "audience": "SME owners and B2B companies",
       "city": "Mumbai",
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["SEO", "Mumbai", "Local SEO"]
     },
     {
@@ -298,7 +298,7 @@
       "angle": "Practical. Cut form fields, put the phone number and WhatsApp where a thumb reaches, match the ad promise in the H1, show proof above the fold, and load fast on a mid range Android on 4G. That last one matters more in India than anywhere.",
       "audience": "All",
       "city": null,
-      "service_link": "/services/performance-marketing/",
+      "topic_link": "/topics/performance-marketing/",
       "tags": ["CRO", "Landing Pages", "Conversion"]
     },
     {
@@ -310,7 +310,7 @@
       "angle": "Opinion for early founders. Most seed stage companies hire a generalist marketer before they know what works, and the marketer inherits an unsolved positioning problem. Argue for founder led distribution first, then a specialist for the one channel that proved out.",
       "audience": "Startup founders",
       "city": "Bengaluru",
-      "service_link": "/services/marketing-sales-training/",
+      "topic_link": "/topics/marketing-sales-alignment/",
       "tags": ["Startups", "Hiring", "Strategy"]
     },
     {
@@ -322,7 +322,7 @@
       "angle": "Practical. Trade association listings, supplier and partner pages, local press and trade publications, founder commentary on data journalists' requests, and genuinely useful tools or datasets. Be blunt about paid guest post networks and what happens when they get deindexed.",
       "audience": "In-house marketing managers",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["Link Building", "Digital PR", "SEO"]
     },
     {
@@ -334,7 +334,7 @@
       "angle": "Opinion. Cost per qualified lead, lead to customer rate, payback period, and share of revenue from each channel. Explain why reach and impressions and engagement rate survive in reports, which is that they are always going up.",
       "audience": "SME owners and in-house marketing managers",
       "city": null,
-      "service_link": "/services/",
+      "topic_link": "/topics/",
       "tags": ["Analytics", "Reporting", "Strategy"]
     },
     {
@@ -346,7 +346,7 @@
       "angle": "Practical. Portal dependence versus owning a locality page that ranks, project and micro market content, the review problem in real estate, and a lead follow up sequence for a market where speed decides everything.",
       "audience": "SME owners",
       "city": "Bengaluru",
-      "service_link": "/services/lead-generation/",
+      "topic_link": "/topics/lead-generation/",
       "tags": ["Real Estate", "Local SEO", "Lead Generation"]
     },
     {
@@ -358,7 +358,7 @@
       "angle": "Analysis, tied to the existing post on earning in USD. Search visibility in the buyer's country, proof that survives a trust check from eight thousand kilometres away, timezone coverage, and pricing in the buyer's currency. Reference IndiaMART's limits for real B2B export deals.",
       "audience": "B2B companies and exporters",
       "city": null,
-      "service_link": "/services/lead-generation/",
+      "topic_link": "/topics/lead-generation/",
       "tags": ["Export", "B2B", "International"]
     },
     {
@@ -370,7 +370,7 @@
       "angle": "Give the actual brief template. Primary query, the searcher's real question, what the top three results miss, the first hand angle only you have, the internal links, and the one number or example that must appear. Explain why briefs beat volume targets.",
       "audience": "In-house marketing managers",
       "city": null,
-      "service_link": "/services/content-marketing/",
+      "topic_link": "/topics/content-marketing/",
       "tags": ["Content Marketing", "Process", "SEO"]
     },
     {
@@ -382,7 +382,7 @@
       "angle": "Diagnostic and calm. Algorithm update, technical breakage, seasonality, or tracking failure. Give the exact way to tell them apart using Search Console date comparisons. Argue against panic rewriting, which is what most people do and it makes things worse.",
       "audience": "In-house marketing managers",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["SEO", "Recovery", "Analytics"]
     },
     {
@@ -394,7 +394,7 @@
       "angle": "Practical. Human led content outperforms company page content in India because of the trust factor. Cover the four post types that work, the comment strategy that beats posting more, and how to move a thread to a call without the pitch that kills it.",
       "audience": "B2B and SaaS companies",
       "city": null,
-      "service_link": "/services/social-media-marketing/",
+      "topic_link": "/topics/social-media-marketing/",
       "tags": ["LinkedIn", "B2B", "Social Media"]
     },
     {
@@ -403,10 +403,10 @@
       "primary_keyword": "sales training for founders",
       "secondary_keywords": ["how to sell without discounting", "objection handling script", "pricing your services as a consultant"],
       "working_title": "Discounting is not a sales strategy. It is a positioning problem wearing a disguise",
-      "angle": "Opinion drawing on the sales training service. Why the price objection is usually a value clarity problem, the four objections that actually mean no, and how to hold a price without being rigid. Include a real reframe script.",
+      "angle": "Opinion drawing on years of training sales teams. Why the price objection is usually a value clarity problem, the four objections that actually mean no, and how to hold a price without being rigid. Include a real reframe script.",
       "audience": "Startup founders and SME owners",
       "city": null,
-      "service_link": "/services/marketing-sales-training/",
+      "topic_link": "/topics/marketing-sales-alignment/",
       "tags": ["Sales", "Training", "Pricing"]
     },
     {
@@ -418,7 +418,7 @@
       "angle": "Practical and local. Course pages that match how parents search, results and testimonials handled credibly, locality pages, the review engine, and the enquiry follow up window during admission season.",
       "audience": "SME and local business owners",
       "city": null,
-      "service_link": "/services/lead-generation/",
+      "topic_link": "/topics/lead-generation/",
       "tags": ["Education", "Local SEO", "Lead Generation"]
     },
     {
@@ -430,7 +430,7 @@
       "angle": "Opinionated shortlist. What genuinely saves hours [drafting, reply triage, ad variants, reporting] versus what quietly makes the output worse [autopublished content, auto replies to reviews]. Tie back to the existing AI agents post.",
       "audience": "SME owners",
       "city": null,
-      "service_link": "/services/",
+      "topic_link": "/topics/",
       "tags": ["AI", "Automation", "Small Business"]
     },
     {
@@ -442,7 +442,7 @@
       "angle": "City specific. Gachibowli and Hitec City are full of B2B companies chasing generic head terms while the buying queries sit untouched. Show the difference with real query examples and explain the pipeline maths that follows.",
       "audience": "B2B and SaaS companies",
       "city": "Hyderabad",
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["SEO", "Hyderabad", "B2B"]
     },
     {
@@ -454,7 +454,7 @@
       "angle": "Cautionary and practical. Redirect mapping, keeping URLs, preserving content depth, staging site indexed by accident, and losing schema in the rebuild. Frame around a composite scenario without naming a client.",
       "audience": "In-house marketing managers",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["SEO", "Migration", "Technical SEO"]
     },
     {
@@ -466,7 +466,7 @@
       "angle": "Practical with example replies. The structure of a reply that reads well to the fifty people who see it later, when to take it offline, how to report a genuinely fake review and what actually gets removed, and why asking staff to post reviews is a suspension risk.",
       "audience": "SME and local business owners",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["Reviews", "Local SEO", "Reputation"]
     },
     {
@@ -478,7 +478,7 @@
       "angle": "City specific analysis. Gurgaon corporate buyers, Noida services and IT, Delhi trade and retail all search differently and convert differently. Argue against a single NCR campaign and show how to split it.",
       "audience": "B2B companies and SME owners",
       "city": "Delhi NCR",
-      "service_link": "/services/performance-marketing/",
+      "topic_link": "/topics/performance-marketing/",
       "tags": ["Delhi NCR", "Targeting", "Strategy"]
     },
     {
@@ -490,7 +490,7 @@
       "angle": "Practical walkthrough. Autocomplete, People Also Ask, related searches, Search Console query report, and competitor navigation as a demand signal. Include how to read intent off the results page rather than off the words.",
       "audience": "SME owners and in-house marketing managers",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["Keyword Research", "SEO", "Process"]
     },
     {
@@ -502,7 +502,7 @@
       "angle": "City and sector specific. Manufacturing and auto ancillary firms rely on relationships and IndiaMART while procurement teams search technical specifications. Show the query types and what a product or capability page needs to contain.",
       "audience": "B2B companies and manufacturers",
       "city": "Chennai",
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["Chennai", "Manufacturing", "B2B"]
     },
     {
@@ -514,7 +514,7 @@
       "angle": "Practical. Find orphan pages, link from the strongest pages to the ones that need help, use descriptive anchors, build hub and spoke clusters. Show how to find the opportunities with a crawl and a Search Console export.",
       "audience": "In-house marketing managers",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["SEO", "Internal Linking", "Technical SEO"]
     },
     {
@@ -526,7 +526,7 @@
       "angle": "Opinion with a fix. The definition gap is almost always the cause. Give a qualification definition both sides sign, the handoff SLA, and the feedback loop that closes it. Point at the reporting that makes the argument disappear.",
       "audience": "B2B companies and in-house marketing managers",
       "city": null,
-      "service_link": "/services/marketing-sales-training/",
+      "topic_link": "/topics/marketing-sales-alignment/",
       "tags": ["Sales", "Lead Generation", "Process"]
     },
     {
@@ -538,7 +538,7 @@
       "angle": "Practical. Test on a mid range Android on 4G, not on office wifi. The usual culprits in Indian builds, which are unoptimised hero images, five tracking scripts, sliders, and heavy fonts. Give the fixes in order of payoff.",
       "audience": "All",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["Performance", "Technical SEO", "Mobile"]
     },
     {
@@ -550,7 +550,7 @@
       "angle": "City specific opinion. Pune's mix of IT services, manufacturing and education needs different marketing from Mumbai's consumer heavy market, and the imported playbook fails. Say what to look for locally instead.",
       "audience": "SME owners and B2B companies",
       "city": "Pune",
-      "service_link": "/services/",
+      "topic_link": "/topics/",
       "tags": ["Pune", "Agency", "Strategy"]
     },
     {
@@ -562,7 +562,7 @@
       "angle": "Practical build. One campaign not six, exact and phrase match to start, a tight negative list from day one, conversion tracking before launch, call and WhatsApp tracking, and the weekly fifteen minute routine. Include the GST on ad spend note.",
       "audience": "SME owners",
       "city": null,
-      "service_link": "/services/performance-marketing/",
+      "topic_link": "/topics/performance-marketing/",
       "tags": ["Google Ads", "Small Business", "PPC"]
     },
     {
@@ -574,7 +574,7 @@
       "angle": "Argue for refresh over production. Find pages in positions eight to twenty five in Search Console, work out what the top three answer that you do not, update and republish. Explain why this beats two new posts a week for most sites.",
       "audience": "In-house marketing managers",
       "city": null,
-      "service_link": "/services/content-marketing/",
+      "topic_link": "/topics/content-marketing/",
       "tags": ["Content Marketing", "SEO", "Search Console"]
     },
     {
@@ -586,7 +586,7 @@
       "angle": "Practical hyperlocal. Radius reality for fitness, GBP with class timings and offers, locality landing pages, trial offer as the conversion event, WhatsApp for enquiries, and the January and post festive demand spikes.",
       "audience": "SME and local business owners",
       "city": "Bengaluru",
-      "service_link": "/services/lead-generation/",
+      "topic_link": "/topics/lead-generation/",
       "tags": ["Fitness", "Local SEO", "Lead Generation"]
     },
     {
@@ -598,7 +598,7 @@
       "angle": "Opinion on a real decision. The case for blocking, the cost of blocking, and who each side actually suits. Then the practical part, which is how to check what assistants currently say about your brand and how to change it.",
       "audience": "In-house marketing managers and B2B companies",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["AI Search", "SEO", "Strategy"]
     },
     {
@@ -610,7 +610,7 @@
       "angle": "Practical. Which Indian directories carry weight, why NAP consistency matters more than listing count, how to audit what is already out there under old addresses, and the paid upsell calls to ignore.",
       "audience": "SME and local business owners",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["Local SEO", "Citations", "India"]
     },
     {
@@ -622,7 +622,7 @@
       "angle": "City specific and respectful. Decades of relationship led trade, now a generation of buyers who search first. What the transition looks like, what to do first, and why the answer is not a rebrand.",
       "audience": "SME owners",
       "city": "Kolkata",
-      "service_link": "/services/",
+      "topic_link": "/topics/",
       "tags": ["Kolkata", "Ahmedabad", "Small Business"]
     },
     {
@@ -634,7 +634,7 @@
       "angle": "Practical. Calculators, benchmarks, templates, teardowns and audits work. Generic ebooks do not. Give five specific examples per business type and the follow up sequence that has to exist behind them.",
       "audience": "B2B and SaaS companies",
       "city": null,
-      "service_link": "/services/lead-generation/",
+      "topic_link": "/topics/lead-generation/",
       "tags": ["Lead Generation", "Content Marketing", "B2B"]
     },
     {
@@ -646,7 +646,7 @@
       "angle": "Analysis for fintech and healthcare. YMYL means Google holds the content to a higher evidence bar, and RBI and advertising rules hold you to a legal one. Show how to build authority signals inside those limits.",
       "audience": "B2B companies and startups",
       "city": null,
-      "service_link": "/services/content-marketing/",
+      "topic_link": "/topics/content-marketing/",
       "tags": ["Fintech", "Healthcare", "Compliance"]
     },
     {
@@ -658,7 +658,7 @@
       "angle": "Practical. Most Indian stores optimise product pages and leave category pages empty. Cover category copy, faceted navigation and index bloat, out of stock handling, product schema and reviews.",
       "audience": "D2C founders and ecommerce managers",
       "city": null,
-      "service_link": "/services/seo/",
+      "topic_link": "/topics/seo/",
       "tags": ["Ecommerce", "SEO", "D2C"]
     },
     {
@@ -670,7 +670,7 @@
       "angle": "Transparent and first person. Week by week. Audit, access, quick fixes, the plan, the first measurable change. Set expectations honestly including what will not have moved by day ninety. This is a sales page disguised as a useful article, and that is fine.",
       "audience": "SME owners and startup founders",
       "city": null,
-      "service_link": "/contact/",
+      "topic_link": "/contact/",
       "tags": ["Consulting", "Process", "Onboarding"]
     },
     {
@@ -682,7 +682,7 @@
       "angle": "Practical and slightly contrarian. Most small Indian businesses run sales out of personal WhatsApp and lose track. Cover the minimum viable system, when a real CRM earns its cost, and the follow up cadence that recovers dead leads.",
       "audience": "SME owners",
       "city": null,
-      "service_link": "/services/lead-generation/",
+      "topic_link": "/topics/lead-generation/",
       "tags": ["CRM", "Lead Generation", "WhatsApp"]
     },
     {
@@ -694,7 +694,7 @@
       "angle": "Opinion with an exercise. Everyone serving everyone competes on price. Walk through narrowing until it feels uncomfortable, with real before and after examples of a service business rewriting its homepage line.",
       "audience": "Startup founders and SME owners",
       "city": null,
-      "service_link": "/services/marketing-sales-training/",
+      "topic_link": "/topics/marketing-sales-alignment/",
       "tags": ["Positioning", "Strategy", "Branding"]
     },
     {
@@ -706,7 +706,7 @@
       "angle": "Practical. Which businesses should bother, the format that works for a service business, titles and descriptions that get found in search, and repurposing one shoot across Reels, Shorts and the site.",
       "audience": "SME owners and D2C founders",
       "city": null,
-      "service_link": "/services/social-media-marketing/",
+      "topic_link": "/topics/social-media-marketing/",
       "tags": ["YouTube", "Video", "Social Media"]
     },
     {
@@ -718,7 +718,7 @@
       "angle": "Personal, story led, ties back to the existing exercise and freelancer journey posts. Concrete detail about the routine, what happened when it slipped, and the direct line between it and the quality of the work. Human proof, no marketing lesson forced at the end.",
       "audience": "Founders and freelancers",
       "city": "Bengaluru",
-      "service_link": "/about/",
+      "topic_link": "/about/",
       "tags": ["Freelancer", "Routine", "Personal"]
     }
   ]

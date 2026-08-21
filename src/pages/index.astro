@@ -1,41 +1,47 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FAQ from '../components/FAQ.astro';
 import CTA from '../components/CTA.astro';
 import {
   site,
   contact,
-  services,
+  topics,
   stats,
   caseStudies,
   faqs,
-  process,
+  approach,
   industries,
 } from '../data/site';
 import { faqSchema } from '../data/schema';
 
-const title = `Digital Marketing Consultant in Bengaluru — ${site.name}`;
-const description = `Digital marketing consultant in ${contact.city} with ${site.yearsExperience}+ years across SEO, Google and Meta ads, social, content and lead generation. Working worldwide.`;
+const title = `${site.name} — Digital Marketing & GTM Blog and Portfolio`;
+const description = `Personal blog and portfolio of ${site.name}, a digital marketing and GTM specialist in ${contact.city} with ${site.yearsExperience}+ years across SEO, paid media, social, content and lead generation.`;
+
+const latestPosts = (await getCollection('blog', ({ data }) => data.published))
+  .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf())
+  .slice(0, 3);
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
 
 <BaseLayout title={title} description={description} schema={[faqSchema(faqs)]}>
   {/* ---------------------------------------------------------------- Hero */}
   <section class="hero">
     <div class="container hero__inner">
-      <p class="eyebrow">Independent consultant &middot; {contact.city}, India</p>
+      <p class="eyebrow">Personal blog &amp; portfolio &middot; {contact.city}, India</p>
       <h1>
-        Digital marketing that is accountable to <span class="hl">revenue</span>,
-        not vanity metrics.
+        Ten years of digital marketing, <span class="hl">written down</span>.
       </h1>
       <p class="lede">
-        I am {site.name}, a digital marketing consultant with {site.yearsExperience}+ years
-        running SEO, paid media, social and content for companies across India, North
-        America and beyond. I work as an operator inside your business — not an agency
-        billing you for a dashboard.
+        I am {site.name}. I have spent {site.yearsExperience}+ years running SEO, paid
+        media, social and content for companies across India and North America. This is
+        where I write about what worked, what did not, and the work I am proud of.
       </p>
       <div class="btn-row">
-        <a href="/contact/" class="btn btn--primary">Book a consultation</a>
-        <a href="/results/" class="btn btn--ghost">See the results</a>
+        <a href="/blog/" class="btn btn--primary">Read the blog</a>
+        <a href="/portfolio/" class="btn btn--ghost">See the work</a>
       </div>
     </div>
 
@@ -53,19 +59,57 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
     </div>
   </section>
 
+  {/* ------------------------------------------------------ Latest writing */}
+  {
+    latestPosts.length > 0 && (
+      <section class="section" aria-labelledby="latest-heading">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Latest writing</p>
+            <h2 id="latest-heading">Fresh off the keyboard</h2>
+            <p>
+              Notes for the person who has to justify the budget. No listicles, no
+              filler, mostly things I got wrong before I got them right.
+            </p>
+          </div>
+
+          <div class="grid grid--3">
+            {latestPosts.map((post) => (
+              <a href={`/blog/${post.id}/`} class="card">
+                <p class="card__meta">
+                  <time datetime={post.data.publishedAt.toISOString()}>
+                    {fmt(post.data.publishedAt)}
+                  </time>
+                </p>
+                <h3>{post.data.title}</h3>
+                <p>{post.data.description}</p>
+                <span class="card__link">Read it &rarr;</span>
+              </a>
+            ))}
+          </div>
+
+          <p class="more-link">
+            <a href="/blog/">Every post &rarr;</a>
+          </p>
+        </div>
+      </section>
+    )
+  }
+
   {/* ------------------------------------------------------------ Problem */}
-  <section class="section" aria-labelledby="problem-heading">
+  <section class="section section--alt" aria-labelledby="problem-heading">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">The usual situation</p>
+        <p class="eyebrow">What I keep seeing</p>
         <h2 id="problem-heading">
           Marketing is running. Revenue is not moving.
         </h2>
         <p>
-          Almost every company I speak to is doing marketing. Posts go out, ads run,
-          somebody writes blogs. The problem is that nothing is connected — so nobody
-          can say which activity produced which rupee, and the budget gets defended
-          rather than directed.
+          Almost every company I have worked in or alongside is doing marketing. Posts
+          go out, ads run, somebody writes blogs. The problem is that nothing is
+          connected, so nobody can say which activity produced which rupee, and the
+          budget gets defended rather than directed. Most of what I write here comes out
+          of that gap.
         </p>
       </div>
 
@@ -88,32 +132,32 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
           <h3>Leads sales will not call</h3>
           <p>
             Marketing reports lead volume, sales says the leads are junk, and both are
-            right — because no one agreed what qualified means.
+            right, because no one agreed what qualified means.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  {/* ----------------------------------------------------------- Services */}
-  <section class="section section--alt" aria-labelledby="services-heading">
+  {/* ------------------------------------------------------------- Topics */}
+  <section class="section" aria-labelledby="topics-heading">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">Services</p>
-        <h2 id="services-heading">What I can take off your plate</h2>
+        <p class="eyebrow">Topics</p>
+        <h2 id="topics-heading">What I write about</h2>
         <p>
-          Six areas, run individually or as one system. Most engagements start with one
-          channel that needs fixing and expand once it works.
+          Six disciplines I have spent a decade inside. Each page collects the pattern I
+          keep running into and what actually moves the number.
         </p>
       </div>
 
       <div class="grid grid--3">
         {
-          services.map((service) => (
-            <a href={`/services/${service.slug}/`} class="card">
-              <h3>{service.title}</h3>
-              <p>{service.summary}</p>
-              <span class="card__link">Explore {service.title} &rarr;</span>
+          topics.map((topic) => (
+            <a href={`/topics/${topic.slug}/`} class="card">
+              <h3>{topic.title}</h3>
+              <p>{topic.summary}</p>
+              <span class="card__link">Notes on {topic.title} &rarr;</span>
             </a>
           ))
         }
@@ -121,21 +165,21 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
     </div>
   </section>
 
-  {/* ------------------------------------------------------------ Process */}
-  <section class="section" aria-labelledby="process-heading">
+  {/* ----------------------------------------------------------- Approach */}
+  <section class="section section--alt" aria-labelledby="approach-heading">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">How I work</p>
-        <h2 id="process-heading">Diagnose first. Spend second.</h2>
+        <p class="eyebrow">How I think about it</p>
+        <h2 id="approach-heading">Diagnose first. Spend second.</h2>
         <p>
-          I will not recommend a channel before I have looked at what is already running.
-          The audit usually finds enough waste to part-fund the work that follows.
+          The habit that has served me best: never pick a channel before looking at what
+          is already running. The audit usually finds enough waste to fund the fix.
         </p>
       </div>
 
       <ol class="process">
         {
-          process.map((p) => (
+          approach.map((p) => (
             <li>
               <span class="process__step">{p.step}</span>
               <h3>{p.title}</h3>
@@ -147,21 +191,22 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
     </div>
   </section>
 
-  {/* ------------------------------------------------------------ Results */}
-  <section class="section section--alt" aria-labelledby="results-heading">
+  {/* ---------------------------------------------------------- Portfolio */}
+  <section class="section" aria-labelledby="work-heading">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">Selected work</p>
-        <h2 id="results-heading">What the work has produced</h2>
+        <p class="eyebrow">Portfolio</p>
+        <h2 id="work-heading">Work I am proud of</h2>
         <p>
-          Across real estate, deep-tech manufacturing and international consumer brands.
+          Across real estate, deep-tech manufacturing and an international consumer
+          brand.
         </p>
       </div>
 
       <div class="grid grid--3">
         {
           caseStudies.map((cs) => (
-            <a href={`/results/#${cs.slug}`} class="card">
+            <a href={`/portfolio/#${cs.slug}`} class="card">
               <p class="card__meta">
                 {cs.industry} &middot; {cs.location}
               </p>
@@ -176,7 +221,7 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
   </section>
 
   {/* --------------------------------------------------------- Industries */}
-  <section class="section" aria-labelledby="industries-heading">
+  <section class="section section--alt" aria-labelledby="industries-heading">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Industries</p>
@@ -192,7 +237,7 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
     </div>
   </section>
 
-  <FAQ items={faqs} />
+  <FAQ items={faqs} heading="Questions I get asked" />
 
   <CTA />
 </BaseLayout>
@@ -287,6 +332,17 @@ const description = `Digital marketing consultant in ${contact.city} with ${site
   .process p {
     color: var(--text-muted);
     font-size: 0.96rem;
+  }
+
+  /* ------------------------------------------------------------ More link */
+  .more-link {
+    margin-top: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 600;
+  }
+
+  .more-link a {
+    text-decoration: none;
+    color: var(--accent);
   }
 
   /* ------------------------------------------------------------ Card meta */

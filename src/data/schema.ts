@@ -3,8 +3,11 @@
  *
  * Keep these honest: only describe things that are actually on the page.
  * Structured data that does not match visible content is a manual-action risk.
+ *
+ * Note: there is deliberately no Service or Offer markup anywhere on this site.
+ * It is a personal blog and portfolio, and the structured data says so.
  */
-import { site, contact } from './site';
+import { site } from './site';
 
 export function faqSchema(items: { q: string; a: string }[]) {
   return {
@@ -34,29 +37,22 @@ export function breadcrumbSchema(items: { label: string; href: string }[]) {
   };
 }
 
-export function serviceSchema(opts: {
+export function topicPageSchema(opts: {
   name: string;
   description: string;
   slug: string;
 }) {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: opts.name,
+    '@type': 'Article',
+    headline: `${opts.name} — notes from ${site.name}`,
     description: opts.description,
-    url: `${site.url}/services/${opts.slug}/`,
-    serviceType: opts.name,
-    provider: { '@id': `${site.url}/#person` },
-    areaServed: [
-      { '@type': 'City', name: contact.city },
-      { '@type': 'Country', name: 'India' },
-      { '@type': 'Place', name: 'Worldwide (remote)' },
-    ],
-    availableChannel: {
-      '@type': 'ServiceChannel',
-      serviceUrl: `${site.url}/contact/`,
-      servicePhone: contact.phoneRaw,
-    },
+    url: `${site.url}/topics/${opts.slug}/`,
+    mainEntityOfPage: `${site.url}/topics/${opts.slug}/`,
+    about: opts.name,
+    author: { '@id': `${site.url}/#person` },
+    publisher: { '@id': `${site.url}/#person` },
+    inLanguage: 'en',
   };
 }
 

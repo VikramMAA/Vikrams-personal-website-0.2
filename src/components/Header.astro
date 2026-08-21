@@ -4,10 +4,10 @@ import { site } from '../data/site';
 const path = Astro.url.pathname;
 
 const links = [
-  { href: '/services/', label: 'Services' },
-  { href: '/results/', label: 'Results' },
+  { href: '/blog/', label: 'Blog' },
+  { href: '/topics/', label: 'Topics' },
+  { href: '/portfolio/', label: 'Portfolio' },
   { href: '/about/', label: 'About' },
-  { href: '/blog/', label: 'Insights' },
 ];
 
 const isActive = (href: string) =>
@@ -41,7 +41,7 @@ const isActive = (href: string) =>
           ))
         }
         <li class="site-nav__cta">
-          <a href="/contact/" class="btn btn--primary">Book a consultation</a>
+          <a href="/contact/" class="btn btn--primary">Say hello</a>
         </li>
       </ul>
     </nav>

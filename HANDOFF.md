@@ -1,5 +1,17 @@
 # Handoff — Vikram M A A personal website
 
+> **Superseded in part — read this first.** In August 2026 the site was
+> repositioned from a consulting site into a **personal blog and portfolio**.
+> Vikram works full time under contract and is not available for outside work, so
+> every service offering, price, engagement model and sales CTA was removed.
+> `/services/` became `/topics/` (notes and opinions, not offers), `/results/`
+> became `/portfolio/`, and the `ProfessionalService` and `OfferCatalog`
+> structured data was dropped. Both moves 301-redirect in `netlify.toml`.
+>
+> Sections below that describe services, engagements or the old routes are kept
+> as a record of the original build. **[`README.md`](README.md) is the current
+> reference.**
+
 **Session date:** 12 August 2026
 **Built by:** Claude Code (local session, Windows)
 **Continuing in:** Claude Code on the browser (claude.ai/code), working against GitHub
@@ -51,6 +63,17 @@ which are less patient than Googlebot about executing JavaScript.
 | `/results/` | Three case studies: Mapletree, Ayanam Aerospace, MUKA |
 | `/about/` | Background, method, industries, timeline |
 | `/blog/` | Insights index |
+
+**Since the repositioning**, that map reads:
+
+| Route | Purpose |
+| --- | --- |
+| `/` | Hero, stats, latest writing, problem framing, topics, approach, portfolio, industries, FAQ, chat invite |
+| `/topics/` | Hub listing all six topic notes |
+| `/topics/seo/` · `/topics/performance-marketing/` · `/topics/social-media-marketing/` · `/topics/content-marketing/` · `/topics/lead-generation/` · `/topics/marketing-sales-alignment/` | Notes on each discipline, with matching blog posts pulled in |
+| `/portfolio/` | The same three projects, framed as past work |
+| `/blog/` | Blog index (was "Insights") |
+| `/contact/` | Email, LinkedIn and a message form |
 | `/blog/seo-for-ai-search/` | Seed post on AISEO |
 | `/blog/how-to-choose-a-digital-marketing-consultant/` | Seed post targeting hiring-intent search |
 | `/contact/` | Netlify-backed enquiry form + direct contact |
@@ -67,6 +90,12 @@ navigation, footer, sitemap and structured data all update together.
 Adding a service = add one object to the `services` array. The page, nav entry,
 footer link, sitemap entry and `OfferCatalog` schema all appear automatically.
 
+**Since the repositioning**, `services` is `topics` (no deliverables, outcomes or
+pricing — instead `pattern`, `whatMatters`, `signals` and `match`), `process` is
+`approach`, and there is a `chatInvite` object holding the single "reach out by
+email or LinkedIn" wording used site-wide. Adding a topic works the same way,
+minus the `OfferCatalog`, which no longer exists.
+
 ### SEO implementation
 
 Structural rather than plugin-based:
@@ -78,9 +107,11 @@ Structural rather than plugin-based:
 - Canonical URL on every page.
 - Open Graph + Twitter cards, using a generated `/og-default.png` (1200×630).
 - `Person` + `ProfessionalService` + `WebSite` structured data in a single
-  `@graph` on every page, cross-referenced by `@id`.
+  `@graph` on every page, cross-referenced by `@id`. *(Now `Person` + `Blog` +
+  `WebSite`. `ProfessionalService`, `OfferCatalog` and `telephone` were removed
+  with the repositioning — a personal blog should not emit business markup.)*
 - Per page type: `Service`, `FAQPage`, `BreadcrumbList`, `BlogPosting`,
-  `ContactPage`, `ItemList`.
+  `ContactPage`, `ItemList`. *(`Service` is now `Article` on topic pages.)*
 - `sitemap-index.xml` generated at build, with noindex pages filtered out.
 - Semantic heading hierarchy — exactly one `<h1>` per page, verified.
 
@@ -93,13 +124,15 @@ This is the part built specifically for the goal you named:
   `<details>`/`<summary>`, so the answer text is in the HTML even when visually
   hidden. JavaScript-injected answers would be invisible to most AI crawlers.
 - **`public/llms.txt`** — a plain-text brief telling assistants who you are, what
-  you offer, your contact details, how engagements work, and which pages matter.
+  you write about, your contact details and which pages matter. It now states
+  plainly that you are not available for hire, so assistants stop recommending
+  you as a consultant.
 - **`public/robots.txt`** explicitly allows GPTBot, OAI-SearchBot, ChatGPT-User,
   ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, CCBot and others.
-- **Answers are front-loaded.** Service summaries and FAQ answers state the
+- **Answers are front-loaded.** Topic summaries and FAQ answers state the
   conclusion in the first sentence — the shape an assistant can lift and cite.
 - **Entity facts stated plainly** in copy and mirrored in structured data:
-  name, role, years, city, services, area served.
+  name, role, years, city, what he writes about.
 
 ### Verification actually performed
 
@@ -269,7 +302,7 @@ Search the codebase for `TODO` — every placeholder is marked. The important on
    `10+ years`, `19% bounce rate`, `3X organic engagement in 2 months`,
    `2 continents`. These came from the old portfolio PDF and are unverified.
 
-3. **Confirm the case study numbers** on `/results/`. Same source, same caveat.
+3. **Confirm the case study numbers** on `/portfolio/`. Same source, same caveat.
    The page already carries an honest "a note on the numbers" disclaimer, which
    is worth keeping.
 
@@ -293,8 +326,13 @@ Search the codebase for `TODO` — every placeholder is marked. The important on
 Per your instruction, your personal email is used everywhere:
 
 - Email: `vikram.1996523@gmail.com`
-- Phone / WhatsApp: `+91 70199 90776` (from the old portfolio — confirm it's current)
+- LinkedIn: `https://www.linkedin.com/in/vikram-m-a-a/`
 - Location: Bengaluru, Karnataka, India (street address deliberately omitted)
+
+Phone and WhatsApp (`+91 70199 90776`) were removed from the site with the
+repositioning, since the invitation everywhere is now email or LinkedIn. Re-add
+`phone`, `phoneRaw` and `whatsapp` to the `contact` object in `src/data/site.ts`
+if you want them back.
 
 ---
 
@@ -317,7 +355,7 @@ cache rules.
 
 ### The contact form
 
-Posts to a **Netlify Function** at `/api/contact` which emails the brief through
+Posts to a **Netlify Function** at `/api/contact` which emails the message through
 **Resend**. It will not send until you verify a domain in Resend and set
 `RESEND_API_KEY` and `CONTACT_FROM_EMAIL` in **Site configuration → Environment
 variables**, then redeploy. Full steps are in the README under
@@ -335,10 +373,11 @@ reCAPTCHA and verify the token inside the function.
 2. [Bing Webmaster Tools](https://www.bing.com/webmasters) — add it. Bing's index
    also feeds ChatGPT search, so this matters more than it used to.
 3. [Rich Results Test](https://search.google.com/test/rich-results) — validate the
-   structured data on the home page and one service page.
-4. **Google Business Profile** — create one for Bengaluru. It's the main lever for
-   "digital marketing consultant near me" type searches, and the site's
-   `ProfessionalService` schema is already set up to reinforce it.
+   structured data on the home page and one topic page.
+4. ~~**Google Business Profile**~~ — dropped with the repositioning. A Business
+   Profile advertises a business that serves customers, which is the opposite of
+   what this site now says. The `ProfessionalService` schema that would have
+   reinforced it is gone too.
 5. **Keep `llms.txt` current.** It's the file AI assistants read for a summary of
    who you are. Update it whenever `site.ts` changes materially.
 
@@ -348,16 +387,18 @@ reCAPTCHA and verify the token inside the function.
 
 Roughly in order of likely return:
 
-1. **Location landing pages** — `/digital-marketing-consultant-bengaluru/` and
-   similar. Local intent converts far better than generic terms, and the site
-   structure already supports adding them cleanly.
-2. **A real photo of you.** There is currently no portrait anywhere. For a
-   personal consulting brand that's a conversion problem, not a design one.
-3. **Testimonials.** The case studies have an empty `quote` field ready. Social
-   proof is the single biggest gap on the site right now.
-4. **A lead magnet** — the marketing audit checklist you'd use yourself, gated
-   behind an email. Feeds the lead-generation service story and proves capability.
-5. **More blog posts** targeting the questions buyers actually ask. The two seed
+1. ~~**Location landing pages**~~ — `/digital-marketing-consultant-bengaluru/`
+   and similar were the plan. They only make sense for someone taking work, so
+   they are off the table while the positioning holds.
+2. **A real photo of you.** There is currently no portrait anywhere. On a
+   personal blog that's the easiest credibility win left.
+3. **Testimonials.** The portfolio entries have an empty `quote` field ready. As
+   a record of past work rather than a sales pitch, a quote from someone you
+   worked with still carries.
+4. ~~**A lead magnet**~~ — a gated audit checklist was the plan. Gating anything
+   behind an email to generate leads is exactly what the repositioning removed.
+   Publishing the checklist openly as a blog post does the same job for a reader.
+5. **More blog posts** targeting the questions people actually ask. The seed
    posts show the intended shape: direct answers, front-loaded, no filler.
 6. **Analytics.** Nothing is installed. Consider Plausible or Fathom over GA4 —
    lighter, no cookie banner needed, and the site currently loads zero
@@ -401,10 +442,10 @@ src/
     CTA.astro
     Breadcrumbs.astro
   pages/
-    index.astro  about.astro  results.astro  contact.astro
+    index.astro  about.astro  portfolio.astro  contact.astro
     thank-you.astro    noindex, excluded from sitemap
     404.astro
-    services/index.astro  services/[slug].astro
+    topics/index.astro  topics/[slug].astro
     blog/index.astro      blog/[...slug].astro
   content/blog/        Markdown posts
   content.config.ts    blog collection schema

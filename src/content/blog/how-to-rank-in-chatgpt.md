@@ -115,4 +115,4 @@ Open robots.txt, confirm OAI-SearchBot is allowed, then open your CDN dashboard 
 
 Then run the eight questions and write down who the models name instead of you. Sit with that list. It's the most honest competitive research you'll do this year, and it costs nothing.
 
-If you'd rather someone else ran the audit, that's roughly half of what I do on an [SEO engagement](/services/seo/) now. [Tell me what you're selling](/contact/) and I'll tell you whether the models have heard of you.
+If you want the longer version of how I'd approach it, that's what my [SEO notes](/topics/seo/) are for. And if you'd like to talk through what you're selling and whether the models have heard of you, [email me or say hello on LinkedIn](/contact/). Happy to have a quick chat.

@@ -53,7 +53,7 @@ Second person. Talk to one business owner, not to an audience. "Your Google
 Business Profile" beats "businesses' Google Business Profiles".
 
 First person when there's something real to say. Vikram has ten years of this
-behind him and clients across two continents. Use it: "I've watched three
+behind him and has worked across two continents. Use it: "I've watched three
 clients do this", "the last audit I ran", "a founder in Koramangala asked me
 this last month". Never invent a specific client name or a specific result that
 did not happen. Generic first person is fine, fabricated case studies are not.
@@ -147,6 +147,14 @@ is not.
 Never promise a specific ranking, a specific timeline to page one, or a
 guaranteed lead number. Vikram's whole positioning is that the people promising
 that are lying.
+
+Never offer a service, and never write as if the reader could hire him. This is
+a personal blog and a portfolio. Vikram works full time under contract and takes
+no outside work, so no audit, package, retainer, price or "let's work together"
+belongs in a post. Writing about how he would approach a problem is fine and is
+the point of the site. Selling the solution is not. The only invitation allowed
+is a conversation: reach out by email or on LinkedIn for a quick chat about how
+your issue could be solved.
 
 Never invent statistics. If a number is used, it either comes from the source
 material given to the writer, from a named public source, or it is framed as a

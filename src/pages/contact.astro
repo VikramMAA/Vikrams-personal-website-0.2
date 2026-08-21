@@ -1,11 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import { site, contact, services } from '../data/site';
+import { site, contact, topics } from '../data/site';
 import { breadcrumbSchema } from '../data/schema';
 
-const title = `Contact ${site.name} — Book a Digital Marketing Consultation`;
-const description = `Get in touch with ${site.name}, digital marketing consultant in ${contact.city}. Send a brief through the form to book a consultation.`;
+const title = `Contact ${site.name} — Say Hello`;
+const description = `Get in touch with ${site.name} by email or LinkedIn. Not available for freelance work, but always happy to talk through a GTM or digital marketing problem.`;
 
 const crumbs = [
   { label: 'Home', href: '/' },
@@ -35,30 +35,30 @@ const contactPageSchema = {
         {/* ------------------------------------------------------ Left rail */}
         <div>
           <p class="eyebrow">Contact</p>
-          <h1>Let us find out what is actually broken.</h1>
+          <h1>Say hello.</h1>
           <p class="lede">
-            Tell me what you are trying to fix. I will reply within two working days
-            with an honest read on whether I can help — and if I cannot, who might.
+            A quick note before you write: I am working full time under contract, so I
+            am not taking on freelance or consulting work, and this site is not selling
+            anything.
+          </p>
+          <p class="lede">
+            That said, if you would like to know how your GTM or digital marketing issue
+            could be solved, reach out by email or on LinkedIn. We can have a quick chat
+            about how your issue might be resolved. I like these conversations and I
+            usually reply within two working days.
           </p>
 
           <div class="direct">
-            <h2 class="direct__title">Reach me directly</h2>
+            <h2 class="direct__title">Two ways to reach me</h2>
             <ul>
               <li>
                 <span class="direct__label">Email</span>
                 <a href={`mailto:${contact.email}`}>{contact.email}</a>
               </li>
               <li>
-                <span class="direct__label">Phone</span>
-                <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>
-              </li>
-              <li>
-                <span class="direct__label">WhatsApp</span>
-                <a
-                  href={`https://wa.me/${contact.whatsapp}`}
-                  rel="noopener"
-                >
-                  Message on WhatsApp
+                <span class="direct__label">LinkedIn</span>
+                <a href={contact.linkedin} rel="noopener">
+                  linkedin.com/in/vikram-m-a-a
                 </a>
               </li>
               <li>
@@ -69,29 +69,33 @@ const contactPageSchema = {
           </div>
 
           <p class="note">
-            Working with clients across India and internationally. Remote engagements
-            are standard; in-person available across Bengaluru and most of India.
+            If you would rather read than write, the <a href="/blog/">blog</a> and
+            the <a href="/topics/">topic notes</a> cover most of what I would say on a
+            call anyway.
           </p>
         </div>
 
         {/* ----------------------------------------------------------- Form */}
         <div class="form-panel">
-          <h2 class="form-panel__title">Send a brief</h2>
+          <h2 class="form-panel__title">Or use the form</h2>
+          <p class="form-intro">
+            It lands in the same inbox as the email address. Use whichever is easier.
+          </p>
 
           {/*
             Posts to the Netlify Function in `netlify/functions/contact.mjs`,
-            which emails the brief through Resend and then redirects — to
+            which emails the message through Resend and then redirects — to
             /thank-you/ on success, or back here with #form-error on failure.
             No client-side JavaScript involved. The hidden `bot-field` is the
             spam honeypot.
           */}
           <div class="form-error" id="form-error" role="alert">
             <strong>That did not send.</strong> Something went wrong on my end.
-            Please try again, or email me directly at
-            <a href={`mailto:${contact.email}`}>{contact.email}</a>.
+            Please try again, or email me directly at <a
+              href={`mailto:${contact.email}`}>{contact.email}</a>.
           </div>
 
-          <form name="consultation" method="POST" action="/api/contact">
+          <form name="hello" method="POST" action="/api/contact">
             <p class="hidden-field">
               <label>
                 Do not fill this out if you are human:
@@ -105,7 +109,7 @@ const contactPageSchema = {
             </div>
 
             <div class="field">
-              <label for="email">Work email</label>
+              <label for="email">Email</label>
               <input
                 id="email"
                 name="email"
@@ -132,16 +136,16 @@ const contactPageSchema = {
             </div>
 
             <div class="field">
-              <label for="service">What do you need help with?</label>
-              <select id="service" name="service">
-                <option value="">Not sure yet — help me work it out</option>
-                {services.map((s) => <option value={s.title}>{s.title}</option>)}
-                <option value="Full marketing strategy">Full marketing strategy</option>
+              <label for="topic">What is this about?</label>
+              <select id="topic" name="topic">
+                <option value="">Just saying hello</option>
+                {topics.map((t) => <option value={t.title}>{t.title}</option>)}
+                <option value="Something I wrote">Something I wrote</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="message">What is not working right now?</label>
+              <label for="message">What is on your mind?</label>
               <textarea
                 id="message"
                 name="message"
@@ -152,7 +156,7 @@ const contactPageSchema = {
             </div>
 
             <button type="submit" class="btn btn--primary form-submit">
-              Send brief
+              Send message
             </button>
 
             <p class="form-note">
@@ -187,6 +191,11 @@ const contactPageSchema = {
     font-size: var(--step-3);
     max-width: 16ch;
     margin-bottom: 1.25rem;
+  }
+
+  /* Two stacked ledes on this page — .lede carries no margin of its own. */
+  .contact-hero .lede + .lede {
+    margin-top: 1rem;
   }
 
   .direct {
@@ -249,7 +258,11 @@ const contactPageSchema = {
     margin-top: 1.75rem;
     font-size: 0.9rem;
     color: var(--text-muted);
-    max-width: 44ch;
+    max-width: 46ch;
+  }
+
+  .note a {
+    color: var(--accent);
   }
 
   /* ----------------------------------------------------------------- Form */
@@ -262,6 +275,12 @@ const contactPageSchema = {
 
   .form-panel__title {
     font-size: var(--step-1);
+    margin-bottom: 0.6rem;
+  }
+
+  .form-intro {
+    font-size: 0.92rem;
+    color: var(--text-muted);
     margin-bottom: 1.5rem;
   }
 

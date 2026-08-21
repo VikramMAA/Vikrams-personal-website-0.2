@@ -18,6 +18,25 @@
   to = "/blog/:splat"
   status = 301
 
+# The site used to have a /services/ section. It is now a personal blog and
+# portfolio, so those pages became topic notes under /topics/. Named services
+# map one-to-one; the training page folded into marketing-sales-alignment.
+[[redirects]]
+  from = "/services/marketing-sales-training/*"
+  to = "/topics/marketing-sales-alignment/"
+  status = 301
+
+[[redirects]]
+  from = "/services/*"
+  to = "/topics/:splat"
+  status = 301
+
+# /results/ was renamed to /portfolio/ in the same pass.
+[[redirects]]
+  from = "/results/*"
+  to = "/portfolio/"
+  status = 301
+
 # Security + SEO headers. Netlify serves these on every response.
 [[headers]]
   for = "/*"

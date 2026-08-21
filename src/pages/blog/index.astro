@@ -7,12 +7,12 @@ import ViewCount from '../../components/ViewCount.astro';
 import { site } from '../../data/site';
 import { breadcrumbSchema } from '../../data/schema';
 
-const title = 'Insights — Digital Marketing Notes That Are Not Filler';
+const title = 'Blog — Digital Marketing Notes That Are Not Filler';
 const description = `Practical writing on SEO, paid media, content and lead generation from ${site.name} — for founders and marketing leads who make the budget call.`;
 
 const crumbs = [
   { label: 'Home', href: '/' },
-  { label: 'Insights', href: '/blog/' },
+  { label: 'Blog', href: '/blog/' },
 ];
 
 const posts = (await getCollection('blog', ({ data }) => data.published)).sort(
@@ -32,11 +32,12 @@ const fmt = (d: Date) =>
 
   <section class="section blog-hero">
     <div class="container">
-      <p class="eyebrow">Insights</p>
+      <p class="eyebrow">Blog</p>
       <h1>Notes on marketing that has to pay for itself.</h1>
       <p class="lede">
         Written for the person who has to justify the budget. No listicles, no
-        "10 tips" — just the reasoning behind the decisions I make in client accounts.
+        "10 tips" — just the reasoning behind the decisions I have made in real
+        accounts, including the ones that went badly.
       </p>
     </div>
   </section>
@@ -46,9 +47,9 @@ const fmt = (d: Date) =>
       {
         posts.length === 0 ? (
           <p class="empty">
-            First articles are being written. In the meantime, the
-            <a href="/services/"> services pages</a> go into detail on how each channel
-            is run.
+            First articles are being written. In the meantime, the <a
+              href="/topics/">topic notes</a> go into detail on how I think about each
+            channel.
           </p>
         ) : (
           <ul class="post-list">

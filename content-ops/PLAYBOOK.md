@@ -115,9 +115,18 @@ Follow `VOICE.md`. The parts that get skipped most often, so check them:
   them for exactly this reason.
 
 Link to two or three existing pages on the site, naturally, in the prose. At
-least one should be the `service_link` from the brief. Check the link target
+least one should be the `topic_link` from the brief. Check the link target
 exists first, either in `src/pages/` or `src/content/blog/`. A broken internal
 link on a static site is a build-time nothing and a reader-facing embarrassment.
+
+**Never sell anything in the close.** This site is a personal blog and
+portfolio. Vikram works full time under contract and does not take outside work,
+so no post may offer a service, an audit, a retainer, a package or a price, and
+none may imply he is available for hire. If the post ends on a call to action,
+it is the same one the rest of the site uses: if you'd like to know how your GTM
+or digital marketing issue could be solved, reach out by email or on LinkedIn and
+we can have a quick chat about it. Link to `/contact/` for that, and to a
+`/topics/` page for the longer explanation.
 
 ## 6. Save it
 

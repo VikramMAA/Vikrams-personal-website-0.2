@@ -1,0 +1,260 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTA from '../../components/CTA.astro';
+import { topics } from '../../data/site';
+import { breadcrumbSchema, faqSchema, topicPageSchema } from '../../data/schema';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('blog', ({ data }) => data.published)).sort(
+    (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()
+  );
+
+  return topics.map((topic) => {
+    /* Surface posts that match this topic's keywords, so each page routes
+       readers into the writing rather than into a sales funnel. */
+    const related = posts
+      .filter((post) => {
+        const haystack = [post.data.title, ...post.data.tags]
+          .join(' ')
+          .toLowerCase();
+        return topic.match.some((term) => haystack.includes(term));
+      })
+      .slice(0, 3);
+
+    return {
+      params: { slug: topic.slug },
+      props: { topic, related },
+    };
+  });
+}
+
+const { topic, related } = Astro.props;
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Topics', href: '/topics/' },
+  { label: topic.title, href: `/topics/${topic.slug}/` },
+];
+
+const otherTopics = topics.filter((t) => t.slug !== topic.slug).slice(0, 3);
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<BaseLayout
+  title={topic.seoTitle}
+  description={topic.metaDescription}
+  schema={[
+    breadcrumbSchema(crumbs),
+    topicPageSchema({
+      name: topic.title,
+      description: topic.summary,
+      slug: topic.slug,
+    }),
+    faqSchema(topic.faqs),
+  ]}
+>
+  <Breadcrumbs items={crumbs} />
+
+  {/* ------------------------------------------------------------- Header */}
+  <section class="section topic-hero">
+    <div class="container">
+      <p class="eyebrow">Topic notes</p>
+      <h1>{topic.seoTitle.split('—')[0].trim()}</h1>
+      <p class="lede">{topic.summary}</p>
+      <div class="btn-row">
+        <a href="/blog/" class="btn btn--primary">Read the blog</a>
+        <a href="/portfolio/" class="btn btn--ghost">See past work</a>
+      </div>
+    </div>
+  </section>
+
+  {/* ------------------------------------------------------------ Pattern */}
+  <section class="section section--alt">
+    <div class="container container--narrow">
+      <p class="eyebrow">The pattern</p>
+      <h2>What usually goes wrong here</h2>
+      <p class="pattern-body">{topic.pattern}</p>
+    </div>
+  </section>
+
+  {/* ------------------------------------------- What matters + signals */}
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div>
+          <p class="eyebrow">What I look at</p>
+          <h2>The things that actually move it</h2>
+          <ul class="checklist">
+            {topic.whatMatters.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+
+        <aside class="signal-panel">
+          <h3>How you know it is working</h3>
+          <ul>
+            {topic.signals.map((item) => <li>{item}</li>)}
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <FAQ
+    items={topic.faqs}
+    heading={`${topic.title} — questions I get asked`}
+  />
+
+  {/* ------------------------------------------------------ Related posts */}
+  {
+    related.length > 0 && (
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">From the blog</p>
+            <h2>Writing on this</h2>
+          </div>
+          <div class="grid grid--3">
+            {related.map((post) => (
+              <a href={`/blog/${post.id}/`} class="card">
+                <p class="card__meta">
+                  <time datetime={post.data.publishedAt.toISOString()}>
+                    {fmt(post.data.publishedAt)}
+                  </time>
+                </p>
+                <h3>{post.data.title}</h3>
+                <p>{post.data.description}</p>
+                <span class="card__link">Read it &rarr;</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {/* ----------------------------------------------------- Other topics */}
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Related</p>
+        <h2>Other notes</h2>
+      </div>
+      <div class="grid grid--3">
+        {
+          otherTopics.map((t) => (
+            <a href={`/topics/${t.slug}/`} class="card">
+              <h3>{t.title}</h3>
+              <p>{t.summary}</p>
+              <span class="card__link">Read the notes &rarr;</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CTA />
+</BaseLayout>
+
+<style>
+  .topic-hero {
+    padding-block: clamp(3rem, 7vw, 5rem) clamp(2.5rem, 5vw, 4rem);
+    background:
+      radial-gradient(
+        ellipse 60% 70% at 85% 0%,
+        var(--accent-soft) 0%,
+        transparent 62%
+      ),
+      var(--bg);
+  }
+
+  .topic-hero h1 {
+    max-width: 20ch;
+    margin-bottom: 1.35rem;
+  }
+
+  .pattern-body {
+    font-size: var(--step-1);
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin-top: 1.1rem;
+    max-width: 64ch;
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: 1.55fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
+  }
+
+  @media (max-width: 880px) {
+    .split {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .split h2 {
+    font-size: var(--step-2);
+    margin-bottom: 1.75rem;
+  }
+
+  .signal-panel {
+    background: var(--ink-900);
+    color: rgba(255, 255, 255, 0.78);
+    border-radius: var(--radius);
+    padding: clamp(1.6rem, 3vw, 2.25rem);
+    position: sticky;
+    top: 100px;
+  }
+
+  @media (max-width: 880px) {
+    .signal-panel {
+      position: static;
+    }
+  }
+
+  .signal-panel h3 {
+    color: var(--white);
+    margin-bottom: 1.15rem;
+  }
+
+  .signal-panel ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .signal-panel li {
+    position: relative;
+    padding-left: 1.6rem;
+    font-size: 0.96rem;
+    line-height: 1.5;
+  }
+
+  .signal-panel li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .card__meta {
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+</style>

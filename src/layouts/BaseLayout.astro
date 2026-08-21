@@ -3,12 +3,15 @@
  * Every page renders through this layout. It owns:
  *  - canonical URL, title, meta description
  *  - Open Graph + Twitter cards
- *  - the site-wide Person / ProfessionalService JSON-LD
+ *  - the site-wide Person / Blog / WebSite JSON-LD
  *  - optional per-page JSON-LD passed in via `schema`
+ *
+ * There is deliberately no ProfessionalService or OfferCatalog markup here.
+ * This is a personal blog and portfolio, not a business offering services.
  */
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { site, contact, services } from '../data/site';
+import { site, contact } from '../data/site';
 import '../styles/global.css';
 
 interface Props {
@@ -49,8 +52,8 @@ const fullTitle = title.includes(site.brand)
     : title;
 
 /**
- * Site-wide identity graph. Kept in one @graph so the Person and the
- * ProfessionalService reference each other cleanly.
+ * Site-wide identity graph. A Person who writes a Blog — nothing more. The
+ * Person and the Blog reference each other inside one @graph.
  */
 const identitySchema = {
   '@context': 'https://schema.org',
@@ -61,9 +64,8 @@ const identitySchema = {
       name: site.name,
       jobTitle: site.jobTitle,
       email: `mailto:${contact.email}`,
-      telephone: contact.phoneRaw,
       url: site.url,
-      description: `${site.jobTitle} with ${site.yearsExperience}+ years of experience across SEO, performance marketing, social media, content marketing, lead generation and marketing team training.`,
+      description: `Digital marketing and go-to-market specialist with ${site.yearsExperience}+ years of experience across SEO, performance marketing, social media, content marketing and lead generation. Writes about all of it here.`,
       address: {
         '@type': 'PostalAddress',
         addressLocality: contact.city,
@@ -79,54 +81,30 @@ const identitySchema = {
         'Social Media Marketing',
         'Content Marketing',
         'Lead Generation',
+        'Go-To-Market Strategy',
         'Marketing Analytics',
-        'Sales Enablement',
-        'Marketing Team Training',
       ],
       sameAs: contact.socials
         .filter((s) => !s.url.startsWith('mailto:'))
         .map((s) => s.url),
     },
     {
-      '@type': 'ProfessionalService',
-      '@id': `${site.url}/#business`,
-      name: `${site.name} — ${site.jobTitle}`,
-      description,
-      url: site.url,
-      email: `mailto:${contact.email}`,
-      telephone: contact.phoneRaw,
-      founder: { '@id': `${site.url}/#person` },
-      priceRange: '$$',
-      areaServed: [
-        { '@type': 'City', name: 'Bengaluru' },
-        { '@type': 'Country', name: 'India' },
-        { '@type': 'Place', name: 'Worldwide (remote)' },
-      ],
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: contact.city,
-        addressRegion: contact.region,
-        addressCountry: contact.countryCode,
-      },
-      hasOfferCatalog: {
-        '@type': 'OfferCatalog',
-        name: 'Digital marketing consulting services',
-        itemListElement: services.map((s) => ({
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: s.title,
-            description: s.summary,
-            url: `${site.url}/services/${s.slug}/`,
-          },
-        })),
-      },
+      '@type': 'Blog',
+      '@id': `${site.url}/#blog`,
+      url: `${site.url}/blog/`,
+      name: `${site.name} — notes on digital marketing and GTM`,
+      description:
+        'Writing on SEO, paid media, organic social, content, lead generation and AI search.',
+      author: { '@id': `${site.url}/#person` },
+      publisher: { '@id': `${site.url}/#person` },
+      inLanguage: 'en',
     },
     {
       '@type': 'WebSite',
       '@id': `${site.url}/#website`,
       url: site.url,
       name: `${site.name} — ${site.jobTitle}`,
+      description: site.tagline,
       publisher: { '@id': `${site.url}/#person` },
       inLanguage: 'en',
     },

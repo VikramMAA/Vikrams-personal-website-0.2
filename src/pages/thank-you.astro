@@ -4,8 +4,8 @@ import { contact } from '../data/site';
 ---
 
 <BaseLayout
-  title="Thank you — your brief has been sent"
-  description="Your message has been received. I reply to every enquiry within two working days."
+  title="Thank you — your message has been sent"
+  description="Your message has been received. I read everything and usually reply within two working days."
   noindex={true}
 >
   <section class="section centered">
@@ -13,16 +13,16 @@ import { contact } from '../data/site';
       <p class="eyebrow">Received</p>
       <h1>Got it — thank you.</h1>
       <p class="lede">
-        Your brief has landed. I read every enquiry personally and reply within two
-        working days, including the ones I have to turn down.
+        Your message has landed. I read everything personally and usually reply within
+        two working days.
       </p>
       <p class="lede">
-        If it is urgent, call or message me directly on
-        <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>.
+        If it is easier to carry on there, you can also find me on <a
+          href={contact.linkedin} rel="noopener">LinkedIn</a>.
       </p>
       <div class="btn-row">
-        <a href="/" class="btn btn--primary">Back to home</a>
-        <a href="/blog/" class="btn btn--ghost">Read something while you wait</a>
+        <a href="/blog/" class="btn btn--primary">Read something while you wait</a>
+        <a href="/" class="btn btn--ghost">Back to home</a>
       </div>
     </div>
   </section>

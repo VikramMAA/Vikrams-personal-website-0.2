@@ -5,12 +5,12 @@ import CTA from '../components/CTA.astro';
 import { site, caseStudies } from '../data/site';
 import { breadcrumbSchema } from '../data/schema';
 
-const title = 'Results & Case Studies — Digital Marketing Consulting';
-const description = `Case studies from ${site.name}: organic social growth for Mapletree, lead generation for Ayanam Aerospace, and content marketing for MUKA in Canada.`;
+const title = 'Portfolio — Digital Marketing Work & Case Studies';
+const description = `Selected work by ${site.name}: organic social growth for Mapletree, lead generation for Ayanam Aerospace, and content marketing for MUKA in Canada.`;
 
 const crumbs = [
   { label: 'Home', href: '/' },
-  { label: 'Results', href: '/results/' },
+  { label: 'Portfolio', href: '/portfolio/' },
 ];
 ---
 
@@ -21,14 +21,15 @@ const crumbs = [
 >
   <Breadcrumbs items={crumbs} />
 
-  <section class="section results-hero">
+  <section class="section portfolio-hero">
     <div class="container">
-      <p class="eyebrow">Results</p>
+      <p class="eyebrow">Portfolio</p>
       <h1>The work, and what it produced.</h1>
       <p class="lede">
-        Three engagements across real estate, deep-tech manufacturing and an
-        international consumer brand. Different categories, same method: audit, define
-        the audience, build the system, then optimise against one number.
+        Three projects from earlier in my career, across real estate, deep-tech
+        manufacturing and an international consumer brand. Different categories, same
+        method: audit, define the audience, build the system, then measure against one
+        number.
       </p>
     </div>
   </section>
@@ -92,25 +93,22 @@ const crumbs = [
       <div class="disclosure">
         <h2>A note on the numbers</h2>
         <p>
-          Percentages on a marketing site are easy to inflate, so here is the honest
-          framing: the figures above are the outcomes reported during those engagements,
-          in the categories and time windows described. Marketing results depend on the
-          product, the market and the sales team as much as the campaign. I will happily
-          walk through the underlying analytics on a call rather than ask you to take a
-          screenshot on faith.
+          Percentages on a personal site are easy to inflate, so here is the honest
+          framing: the figures above are the outcomes reported during those projects, in
+          the categories and time windows described. Marketing results depend on the
+          product, the market and the sales team as much as the campaign, and I was one
+          input among several. Where a number is vague here, it is because the source was
+          vague, not because the rounding flattered me.
         </p>
       </div>
     </div>
   </section>
 
-  <CTA
-    heading="Want results like these, honestly assessed?"
-    body="Send me your site and your current numbers. I will tell you what I think is achievable and what is not — before you commit to anything."
-  />
+  <CTA />
 </BaseLayout>
 
 <style>
-  .results-hero {
+  .portfolio-hero {
     padding-block: clamp(3rem, 7vw, 5rem) clamp(2rem, 4vw, 3rem);
     background:
       radial-gradient(
@@ -121,7 +119,7 @@ const crumbs = [
       var(--bg);
   }
 
-  .results-hero h1 {
+  .portfolio-hero h1 {
     max-width: 16ch;
     margin-bottom: 1.35rem;
   }

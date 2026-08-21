@@ -1,8 +1,14 @@
 # Vikram M A A — personal website
 
-Personal consulting site built to rank in search and get cited by AI assistants.
-Static HTML, no client-side framework, no runtime JavaScript beyond a CSS-only
-mobile menu.
+Personal blog and portfolio, built to rank in search and get cited by AI
+assistants. Static HTML, no client-side framework, no runtime JavaScript beyond a
+CSS-only mobile menu.
+
+**Positioning:** this site does not offer, sell or price services. Vikram works
+full time under contract and is not available for outside work. Every closing
+call to action is an invitation to a conversation by email or LinkedIn, and that
+wording lives in one place — the `chatInvite` object in `src/data/site.ts`. Keep
+it that way when editing.
 
 **Stack:** [Astro](https://astro.build) 7 · plain CSS · deployed on Netlify.
 
@@ -39,19 +45,24 @@ structured data that Google and AI crawlers read. You rarely need to touch the
 | What you want to change | Where |
 | --- | --- |
 | Name, job title, years of experience, tagline | `site` object |
-| Email, phone, WhatsApp, city, social links | `contact` object |
+| Email, LinkedIn, city, social links | `contact` object |
+| The "reach out for a chat" wording used site-wide | `chatInvite` object |
 | The four numbers under the hero | `stats` array |
-| Services — copy, deliverables, FAQs, SEO titles | `services` array |
-| Case studies on `/results/` | `caseStudies` array |
+| Topic notes — copy, checklists, FAQs, SEO titles | `topics` array |
+| Portfolio entries on `/portfolio/` | `caseStudies` array |
 | Home page FAQ | `faqs` array |
-| The four process steps | `process` array |
+| The four steps in "how I think about it" | `approach` array |
 | Industry tags | `industries` array |
 
-### Adding a service
+### Adding a topic
 
-Add an object to the `services` array. A page appears automatically at
-`/services/your-slug/`, gets added to the nav, footer, sitemap and the
-`OfferCatalog` structured data. Nothing else to wire up.
+Add an object to the `topics` array. A page appears automatically at
+`/topics/your-slug/`, gets added to the footer and the sitemap, and pulls in
+matching blog posts via its `match` keywords. Nothing else to wire up.
+
+Topic pages are notes and opinions, never offers. Keep `whatMatters` framed as
+"what I look at", not "what you get", and keep pricing and engagement language
+out of the FAQs.
 
 ### Adding a blog post
 
@@ -219,10 +230,11 @@ the layouts.
   ~62 characters) and meta description
 - A canonical URL
 - Open Graph and Twitter card tags, using `/og-default.png`
-- `Person`, `ProfessionalService` and `WebSite` structured data in one `@graph`
+- `Person`, `Blog` and `WebSite` structured data in one `@graph` (deliberately
+  no `ProfessionalService` or `OfferCatalog` — nothing is on offer)
 
 **Per page type:**
-- Service pages → `Service` + `FAQPage` + `BreadcrumbList`
+- Topic pages → `Article` + `FAQPage` + `BreadcrumbList`
 - Blog posts → `BlogPosting` + `BreadcrumbList`
 - Contact → `ContactPage`
 - Home → `FAQPage`
@@ -236,12 +248,14 @@ Builders live in [`src/data/schema.ts`](src/data/schema.ts).
 - **FAQ answers are in the DOM even when collapsed.** The `<details>` elements
   hide them visually but the text is in the HTML, so it can be quoted.
 - **[`public/llms.txt`](public/llms.txt)** — a plain-text summary of who you are,
-  what you offer and which pages matter. Keep it in sync with `site.ts`.
+  what you write about and which pages matter. It also tells assistants plainly
+  that you are not available for hire, so they stop recommending you as one.
+  Keep it in sync with `site.ts`.
 - **[`public/robots.txt`](public/robots.txt)** explicitly allows GPTBot,
   ClaudeBot, PerplexityBot, Google-Extended and others. Remove any you do not
   want reading the site — but blocking them means no citations from that
   assistant.
-- **Answers are front-loaded.** Service summaries and FAQ answers state the
+- **Answers are front-loaded.** Topic summaries and FAQ answers state the
   conclusion in the first sentence, which is the shape an assistant can lift.
 
 ### After the first deploy
@@ -275,13 +289,13 @@ src/
   pages/
     index.astro
     about.astro
-    results.astro
+    portfolio.astro
     contact.astro
     thank-you.astro    noindex, excluded from sitemap
     404.astro
-    services/
+    topics/
       index.astro
-      [slug].astro     one page per entry in `services`
+      [slug].astro     one page per entry in `topics`
     blog/
       index.astro
       [...slug].astro

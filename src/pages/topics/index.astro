@@ -2,27 +2,27 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTA from '../../components/CTA.astro';
-import { site, services } from '../../data/site';
+import { site, topics } from '../../data/site';
 import { breadcrumbSchema } from '../../data/schema';
 
-const title = 'Digital Marketing Services — SEO, Ads, Social & Training';
-const description = `Consulting services from ${site.name}: SEO, Google and Meta ads, social media, content marketing, lead generation, and marketing and sales team training.`;
+const title = 'Topics — SEO, Ads, Social, Content & Lead Generation Notes';
+const description = `The disciplines ${site.name} writes about: SEO, performance marketing, social media, content marketing, lead generation, and marketing and sales alignment.`;
 
 const crumbs = [
   { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services/' },
+  { label: 'Topics', href: '/topics/' },
 ];
 
 const itemList = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Digital marketing consulting services',
-  itemListElement: services.map((s, i) => ({
+  name: 'Digital marketing topics',
+  itemListElement: topics.map((t, i) => ({
     '@type': 'ListItem',
     position: i + 1,
-    name: s.title,
-    description: s.summary,
-    url: `${site.url}/services/${s.slug}/`,
+    name: t.title,
+    description: t.summary,
+    url: `${site.url}/topics/${t.slug}/`,
   })),
 };
 ---
@@ -37,34 +37,34 @@ const itemList = {
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">Services</p>
-        <h1>Digital marketing services</h1>
+        <p class="eyebrow">Topics</p>
+        <h1>What I write about</h1>
         <p>
-          Six disciplines. Take one, or take the system. Every engagement starts with an
-          audit, because recommending spend before diagnosing the problem is how budgets
-          get wasted.
+          Six disciplines I have spent ten years inside. Each page is a set of notes:
+          the pattern I keep running into, what actually moves the number, and how you
+          know it is working. Opinions, not offers.
         </p>
       </div>
 
-      <div class="service-list">
+      <div class="topic-list">
         {
-          services.map((service, i) => (
-            <article class="service-row">
-              <div class="service-row__index">
+          topics.map((topic, i) => (
+            <article class="topic-row">
+              <div class="topic-row__index">
                 {String(i + 1).padStart(2, '0')}
               </div>
-              <div class="service-row__body">
+              <div class="topic-row__body">
                 <h2>
-                  <a href={`/services/${service.slug}/`}>{service.title}</a>
+                  <a href={`/topics/${topic.slug}/`}>{topic.title}</a>
                 </h2>
-                <p class="service-row__summary">{service.summary}</p>
-                <ul class="service-row__tags">
-                  {service.deliverables.slice(0, 4).map((d) => (
+                <p class="topic-row__summary">{topic.summary}</p>
+                <ul class="topic-row__tags">
+                  {topic.whatMatters.slice(0, 4).map((d) => (
                     <li>{d.split('—')[0].trim()}</li>
                   ))}
                 </ul>
-                <a class="card__link" href={`/services/${service.slug}/`}>
-                  {service.title} in detail &rarr;
+                <a class="card__link" href={`/topics/${topic.slug}/`}>
+                  Notes on {topic.title} &rarr;
                 </a>
               </div>
             </article>
@@ -74,20 +74,17 @@ const itemList = {
     </div>
   </section>
 
-  <CTA
-    heading="Not sure which one you need?"
-    body="That is what the audit is for. Send me the site and the accounts, and I will tell you where the problem actually is — which is often not where you think it is."
-  />
+  <CTA />
 </BaseLayout>
 
 <style>
-  .service-list {
+  .topic-list {
     display: grid;
     gap: 0;
     border-top: 1px solid var(--border);
   }
 
-  .service-row {
+  .topic-row {
     display: grid;
     grid-template-columns: 4rem 1fr;
     gap: clamp(1rem, 3vw, 2.5rem);
@@ -96,13 +93,13 @@ const itemList = {
   }
 
   @media (max-width: 620px) {
-    .service-row {
+    .topic-row {
       grid-template-columns: 1fr;
       gap: 0.75rem;
     }
   }
 
-  .service-row__index {
+  .topic-row__index {
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -110,26 +107,26 @@ const itemList = {
     padding-top: 0.45rem;
   }
 
-  .service-row h2 {
+  .topic-row h2 {
     font-size: var(--step-2);
     margin-bottom: 0.75rem;
   }
 
-  .service-row h2 a {
+  .topic-row h2 a {
     text-decoration: none;
   }
 
-  .service-row h2 a:hover {
+  .topic-row h2 a:hover {
     color: var(--accent);
   }
 
-  .service-row__summary {
+  .topic-row__summary {
     color: var(--text-muted);
     font-size: var(--step-0);
     max-width: 62ch;
   }
 
-  .service-row__tags {
+  .topic-row__tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -138,7 +135,7 @@ const itemList = {
     margin-top: 1.15rem;
   }
 
-  .service-row__tags li {
+  .topic-row__tags li {
     font-size: 0.82rem;
     padding: 0.35rem 0.85rem;
     border-radius: 999px;

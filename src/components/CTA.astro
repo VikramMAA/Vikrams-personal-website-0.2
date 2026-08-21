@@ -1,25 +1,29 @@
 ---
-import { contact } from '../data/site';
+/**
+ * The site-wide closing block. This is NOT a sales CTA — it is an open invitation
+ * to a conversation. The default copy lives in `chatInvite` in src/data/site.ts
+ * so the wording stays identical on every page that uses it.
+ */
+import { contact, chatInvite } from '../data/site';
 
 interface Props {
   heading?: string;
   body?: string;
 }
 
-const {
-  heading = 'Tell me what is not working.',
-  body = 'A short call, no pitch deck. Describe the problem — leads that do not convert, ad spend with no return, traffic that never arrived — and I will tell you honestly whether I am the right person to fix it.',
-} = Astro.props;
+const { heading = chatInvite.heading, body = chatInvite.body } = Astro.props;
 ---
 
 <section class="section section--dark cta" aria-labelledby="cta-heading">
   <div class="container container--narrow cta__inner">
-    <p class="eyebrow">Next step</p>
+    <p class="eyebrow">Say hello</p>
     <h2 id="cta-heading">{heading}</h2>
     <p class="lede">{body}</p>
     <div class="btn-row">
-      <a href="/contact/" class="btn btn--primary">Book a consultation</a>
-      <a href={`mailto:${contact.email}`} class="btn btn--ghost">{contact.email}</a>
+      <a href={`mailto:${contact.email}`} class="btn btn--primary">Email me</a>
+      <a href={contact.linkedin} class="btn btn--ghost" rel="noopener">
+        Connect on LinkedIn
+      </a>
     </div>
   </div>
 </section>

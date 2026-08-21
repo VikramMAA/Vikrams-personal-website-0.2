@@ -1,5 +1,5 @@
 ---
-import { site, contact, services } from '../data/site';
+import { site, contact, topics } from '../data/site';
 
 const year = new Date().getFullYear();
 ---
@@ -11,16 +11,16 @@ const year = new Date().getFullYear();
         <p class="footer-name">{site.name}</p>
         <p class="footer-role">{site.jobTitle}</p>
         <p class="footer-blurb">{site.tagline}</p>
-        <p class="footer-loc">{contact.city}, {contact.region} — working with clients worldwide.</p>
+        <p class="footer-loc">{contact.city}, {contact.region}, India.</p>
       </div>
 
-      <nav aria-label="Services">
-        <h2 class="footer-heading">Services</h2>
+      <nav aria-label="Topics">
+        <h2 class="footer-heading">Topics</h2>
         <ul>
           {
-            services.map((s) => (
+            topics.map((t) => (
               <li>
-                <a href={`/services/${s.slug}/`}>{s.title}</a>
+                <a href={`/topics/${t.slug}/`}>{t.title}</a>
               </li>
             ))
           }
@@ -31,18 +31,18 @@ const year = new Date().getFullYear();
         <h2 class="footer-heading">Site</h2>
         <ul>
           <li><a href="/">Home</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/topics/">Topics</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
           <li><a href="/about/">About</a></li>
-          <li><a href="/results/">Results</a></li>
-          <li><a href="/blog/">Insights</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
       </nav>
 
       <div>
-        <h2 class="footer-heading">Get in touch</h2>
+        <h2 class="footer-heading">Say hello</h2>
         <ul>
           <li><a href={`mailto:${contact.email}`}>{contact.email}</a></li>
-          <li><a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a></li>
           {
             contact.socials
               .filter((s) => !s.url.startsWith('mailto:'))
@@ -55,6 +55,10 @@ const year = new Date().getFullYear();
               ))
           }
         </ul>
+        <p class="footer-note">
+          Not available for freelance or consulting work. Always happy to talk
+          through a GTM or marketing problem.
+        </p>
       </div>
     </div>
 
@@ -120,6 +124,14 @@ const year = new Date().getFullYear();
   .footer-loc {
     font-size: 0.86rem;
     color: rgba(255, 255, 255, 0.5);
+  }
+
+  .footer-note {
+    margin-top: 1rem;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.45);
+    max-width: 30ch;
   }
 
   .footer-heading {

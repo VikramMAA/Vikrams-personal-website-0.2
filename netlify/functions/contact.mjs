@@ -1,5 +1,5 @@
 /**
- * Contact form handler — sends the enquiry as an email through Resend.
+ * Contact form handler — sends the message as an email through Resend.
  *
  * This is a Netlify Function (v2), mounted at /api/contact by the `config`
  * export at the bottom. The form on /contact/ posts to it directly, so the
@@ -20,13 +20,13 @@ import { Resend } from 'resend';
 
 const DEFAULT_TO = 'vikram.1996523@gmail.com';
 
-/** Longest we accept per field. Anything past this is spam, not a brief. */
+/** Longest we accept per field. Anything past this is spam, not a message. */
 const LIMITS = {
   name: 120,
   email: 200,
   company: 160,
   website: 300,
-  service: 120,
+  topic: 120,
   message: 5000,
 };
 
@@ -72,7 +72,7 @@ export default async (request) => {
     email: clean(form.get('email'), LIMITS.email),
     company: clean(form.get('company'), LIMITS.company),
     website: clean(form.get('website'), LIMITS.website),
-    service: clean(form.get('service'), LIMITS.service),
+    topic: clean(form.get('topic'), LIMITS.topic),
     message: clean(form.get('message'), LIMITS.message),
   };
 
@@ -96,7 +96,7 @@ export default async (request) => {
     ['Email', fields.email],
     ['Company', fields.company || '—'],
     ['Website', fields.website || '—'],
-    ['Service', fields.service || 'Not sure yet'],
+    ['Topic', fields.topic || 'Just saying hello'],
   ];
 
   const text = [
@@ -108,7 +108,7 @@ export default async (request) => {
 
   const html = `
     <div style="font-family:system-ui,-apple-system,Segoe UI,sans-serif;font-size:15px;line-height:1.6;color:#0d1117">
-      <h2 style="margin:0 0 16px;font-size:18px">New enquiry from the website</h2>
+      <h2 style="margin:0 0 16px;font-size:18px">New message from the website</h2>
       <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin-bottom:20px">
         ${rows
           .map(
@@ -133,7 +133,7 @@ export default async (request) => {
       to: [to],
       // Hitting reply in the inbox replies to the person who filled the form.
       replyTo: fields.email,
-      subject: `New enquiry — ${fields.name}${fields.company ? ` (${fields.company})` : ''}`,
+      subject: `New message — ${fields.name}${fields.company ? ` (${fields.company})` : ''}`,
       text,
       html,
     });

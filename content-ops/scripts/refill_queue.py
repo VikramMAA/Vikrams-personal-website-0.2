@@ -34,24 +34,24 @@ EVENING_SIGNALS = ("vs", "worth it", "why", "should i", "better", "mistake",
                    "wrong", "not working", "still work", "future", "trend",
                    "cost", "price", "choose", "instead")
 
-SERVICE_BY_TOPIC = [
+TOPIC_BY_TERM = [
     (("seo", "search", "schema", "backlink", "keyword", "crawl", "index", "gbp",
-      "google business", "map", "local", "chatgpt", "perplexity", "ai overview"), "/services/seo/"),
+      "google business", "map", "local", "chatgpt", "perplexity", "ai overview"), "/topics/seo/"),
     (("google ads", "meta ads", "facebook ads", "instagram ads", "pmax",
-      "performance max", "ppc", "roas", "cac", "campaign", "landing page"), "/services/performance-marketing/"),
-    (("instagram", "linkedin", "youtube", "social", "reels", "shorts"), "/services/social-media-marketing/"),
-    (("content", "blog", "article", "copy", "brief", "eeat"), "/services/content-marketing/"),
-    (("lead", "cold email", "whatsapp", "crm", "pipeline", "outreach"), "/services/lead-generation/"),
-    (("sales", "training", "objection", "pricing", "positioning", "team"), "/services/marketing-sales-training/"),
+      "performance max", "ppc", "roas", "cac", "campaign", "landing page"), "/topics/performance-marketing/"),
+    (("instagram", "linkedin", "youtube", "social", "reels", "shorts"), "/topics/social-media-marketing/"),
+    (("content", "blog", "article", "copy", "brief", "eeat"), "/topics/content-marketing/"),
+    (("lead", "cold email", "whatsapp", "crm", "pipeline", "outreach"), "/topics/lead-generation/"),
+    (("sales", "training", "objection", "pricing", "positioning", "team"), "/topics/marketing-sales-alignment/"),
 ]
 
 
-def service_for(term):
+def topic_for(term):
     t = term.lower()
-    for keys, url in SERVICE_BY_TOPIC:
+    for keys, url in TOPIC_BY_TERM:
         if any(k in t for k in keys):
             return url
-    return "/services/"
+    return "/topics/"
 
 
 def slot_for(term):
@@ -103,7 +103,7 @@ def main():
             "angle": "NEEDS_ANGLE",
             "audience": "NEEDS_ANGLE",
             "city": c.get("geo"),
-            "service_link": service_for(term),
+            "topic_link": topic_for(term),
             "tags": [],
             "_cluster_id": c.get("id"),
             "_score": c.get("score"),

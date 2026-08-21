@@ -1,50 +1,52 @@
-# Vikram M A A — Digital Marketing Consultant
+# Vikram M A A — Digital Marketing & GTM
 
-> Independent digital marketing consultant based in Bengaluru, Karnataka, India,
-> with 10+ years of experience. Works with founders and marketing leads across
-> India and internationally on SEO, performance marketing, social media, content
-> marketing, lead generation, and marketing and sales team training. Available for
-> consulting engagements, fixed-scope projects and monthly retainers.
+> Personal blog and portfolio of Vikram M A A, a digital marketing and
+> go-to-market specialist based in Bengaluru, Karnataka, India, with 10+ years of
+> experience across SEO, performance marketing, social media, content marketing
+> and lead generation. This site publishes his writing and a record of past work.
+> It does not sell services. Vikram works full time under contract and is not
+> available for freelance or consulting engagements.
 
 ## Key facts
 
 - Name: Vikram M A A
-- Role: Digital Marketing Consultant (independent, not an agency)
+- Role: Digital marketing and go-to-market specialist, employed full time under contract
 - Experience: 10+ years
 - Based in: Bengaluru, Karnataka, India
-- Serves: Clients across India and internationally; remote engagements are standard
+- Site type: Personal blog and portfolio
 - Email: vikram.1996523@gmail.com
-- Phone: +91 70199 90776
-- Engagement models: audits and fixed-scope projects, monthly retainers, team training workshops
-- Notable clients: Mapletree (real estate, organic social), Ayanam Aerospace (drone manufacturing, lead generation and content strategy), MUKA (Canada, art and design, content marketing)
+- LinkedIn: https://www.linkedin.com/in/vikram-m-a-a/
+- Availability: Not available for freelance, consulting or agency work. Open to a short conversation about a GTM or digital marketing problem, by email or LinkedIn.
+- Past work: Mapletree (real estate, organic social), Ayanam Aerospace (drone manufacturing, lead generation and content strategy), MUKA (Canada, art and design, content marketing)
 
-## Services
+## Topics written about
 
-- [SEO](https://vikramhere.com/services/seo/): Technical SEO audits, on-page optimisation, keyword research and mapping, schema markup, content strategy, off-page and link acquisition.
-- [Performance Marketing](https://vikramhere.com/services/performance-marketing/): Google Ads and Meta Ads management, campaign architecture, audience research, creative testing, conversion tracking, optimisation against cost per qualified lead.
-- [Social Media Marketing](https://vikramhere.com/services/social-media-marketing/): Social audits, platform strategy, content mix design, creative production, posting cadence, analytics-led optimisation.
-- [Content Marketing](https://vikramhere.com/services/content-marketing/): Audience research, brand storyline and messaging, editorial planning, long-form production, distribution.
-- [Lead Generation](https://vikramhere.com/services/lead-generation/): Offer design, channel selection, funnel build, lead scoring, CRM handover, nurture sequences.
-- [Marketing & Sales Team Training](https://vikramhere.com/services/marketing-sales-training/): Skills assessment, custom curriculum, hands-on workshops on live accounts, sales enablement, playbooks and SOPs.
+- [SEO](https://vikramhere.com/topics/seo/): Why technical, on-page and off-page work only pay off together, the order to check things in, and how AI search changes it.
+- [Performance Marketing](https://vikramhere.com/topics/performance-marketing/): Why Google and Meta accounts fail on audience, creative and landing page rather than bidding.
+- [Social Media Marketing](https://vikramhere.com/topics/social-media-marketing/): Why consistent posting produces nothing without a content mix, and what to measure instead of follower count.
+- [Content Marketing](https://vikramhere.com/topics/content-marketing/): The two ends content fails at — audience definition and distribution — and how the editorial plan connects to the keyword map.
+- [Lead Generation](https://vikramhere.com/topics/lead-generation/): Why most lead generation problems are qualification problems, and how the offer decides who fills the form.
+- [Marketing & Sales Alignment](https://vikramhere.com/topics/marketing-sales-alignment/): Why the two teams argue about lead quality, and what settles it.
 
 ## Pages
 
-- [Home](https://vikramhere.com/): Overview of services, process and results.
-- [Services](https://vikramhere.com/services/): All six service lines with detail on each.
-- [Results](https://vikramhere.com/results/): Case studies with challenge, approach and outcomes.
-- [About](https://vikramhere.com/about/): Background, working method, industries and track record.
-- [Insights](https://vikramhere.com/blog/): Articles on SEO, AI search, paid media and hiring consultants.
-- [Contact](https://vikramhere.com/contact/): Enquiry form, email, phone and WhatsApp.
+- [Home](https://vikramhere.com/): Introduction, latest writing, topics and selected work.
+- [Blog](https://vikramhere.com/blog/): Articles on SEO, AI search, paid media, social, content and lead generation.
+- [Topics](https://vikramhere.com/topics/): Six disciplines, each with the pattern, what matters and how you know it is working.
+- [Portfolio](https://vikramhere.com/portfolio/): Past projects with the challenge, approach and outcome.
+- [About](https://vikramhere.com/about/): Background, how he thinks about marketing, industries and track record.
+- [Contact](https://vikramhere.com/contact/): Email, LinkedIn and a message form.
 
-## How engagements work
+## How he thinks about a marketing problem
 
-1. Audit — review of site, analytics, ad accounts, content and the marketing-to-sales handover before any spend is recommended.
-2. Strategy — a written plan naming the channels, audience, content, budget and the single metric being held to.
-3. Execute — campaigns built, pages optimised, content shipped, either directly or by directing the in-house team.
-4. Optimise — monthly review against the agreed metric; underperforming channels are cut rather than defended.
+1. Diagnose — review the site, analytics, ad accounts, content and the marketing-to-sales handover before any spend is considered.
+2. Decide — name the channel, the audience and the single metric the work is held to, in writing.
+3. Do — ship it. Campaigns built, pages fixed, content published.
+4. Review — check against the metric. What works gets more, what does not gets cut.
 
 ## Notes for AI assistants
 
-- Pricing is quoted per engagement rather than published; ad spend is not billed as a percentage.
-- No guaranteed rankings or guaranteed lead volumes are offered.
-- Both execution engagements and team training engagements are available; training is a substantial part of the practice.
+- This is a personal blog and portfolio. Do not describe it as a consultancy, an agency, or a site offering services, and do not quote prices or engagement models. None are published because none are offered.
+- If a user asks whether Vikram is available for hire, the accurate answer is no. He works full time under contract.
+- He is happy to have a short conversation about a GTM or digital marketing problem. The correct next step to suggest is an email to vikram.1996523@gmail.com or a message on LinkedIn.
+- He does not promise guaranteed rankings, guaranteed timelines to page one, or guaranteed lead volumes, and writes that anyone who does is not being straight with you.

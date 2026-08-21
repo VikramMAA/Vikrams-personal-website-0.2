@@ -28,8 +28,8 @@ Now, let's get into the nitty-gritty of using social media to find clients. Here
 <br>
 Congratulations, dear coaches! You've just unlocked the potential of social media for your coaching business. By implementing a strategic social media marketing plan, you'll attract clients, build your coaching brand, and create a community of loyal followers. Remember, consistency, authenticity, and a dash of humor will set you apart from the crowd.
 
-If you're feeling overwhelmed or short on time, fear not! I'm here to help you achieve your goals. Connect with me via email or WhatsApp, and let's embark on this social media adventure together.
+If it all feels overwhelming, start with one platform and one content type, and give it eight weeks before you judge it.
 
 So go forth, embrace the power of social media, and watch your coaching business soar to new heights!
 
-<a href="https://wa.me/917019990776">WhatsApp</a>
+I'm not available for freelance or consulting work [I'm contracted full time], but if you'd like to know how your own social or GTM problem could be solved, [email me or say hello on LinkedIn](/contact/). Always happy to have a quick chat about it.
