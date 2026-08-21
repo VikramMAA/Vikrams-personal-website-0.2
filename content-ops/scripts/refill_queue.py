@@ -26,7 +26,14 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 QUEUE = os.path.join(HERE, "..", "queue.json")
 PUBLISHED = os.path.join(HERE, "..", "published.json")
-PLAN = os.path.join(HERE, "..", "..", "seo", "output", "keyword-plan.json")
+# One plan per market. India is the original research under seo/output; the US
+# and Estonia plans were built separately because their demand, competition and
+# winnable terms have nothing to do with the Indian corpus.
+PLANS = {
+    "India": os.path.join(HERE, "..", "..", "seo", "output", "keyword-plan.json"),
+    "US": os.path.join(HERE, "..", "..", "seo", "us", "keyword-plan.json"),
+    "Estonia": os.path.join(HERE, "..", "..", "seo", "estonia", "keyword-plan.json"),
+}
 
 # Evening slots take the pieces with a point of view in them. Morning slots take
 # the ones someone can act on before lunch.
@@ -64,15 +71,14 @@ def main():
     ap.add_argument("--count", type=int, default=20)
     ap.add_argument("--slot", choices=["morning", "evening"])
     ap.add_argument("--market", choices=["US", "India", "Estonia"], default="India",
-                    help="Market to tag these stubs with. Defaults to India because the "
-                         "keyword plan under seo/ was built for India. Refilling US or "
-                         "Estonia means researching those markets first, not relabelling "
-                         "Indian keywords.")
+                    help="Which market to refill. Each market reads its own keyword plan, "
+                         "so stubs come from that market's real research rather than from "
+                         "relabelled Indian keywords.")
     ap.add_argument("--write", action="store_true",
                     help="Append the stubs to queue.json instead of printing them")
     args = ap.parse_args()
 
-    with open(PLAN, encoding="utf-8") as f:
+    with open(PLANS[args.market], encoding="utf-8") as f:
         plan = json.load(f)
     with open(QUEUE, encoding="utf-8") as f:
         queue = json.load(f)
@@ -105,15 +111,20 @@ def main():
             "primary_keyword": term,
             "secondary_keywords": [k["term"] if isinstance(k, dict) else k
                                    for k in (c.get("keywords") or [])[1:5]],
-            "working_title": "NEEDS_ANGLE",
+            # The geo plans ship a researched title and the local detail that makes
+            # a county post specific rather than a template with the name swapped.
+            # Carry both through so whoever fills the angle has real material.
+            "working_title": c.get("suggested_title") or "NEEDS_ANGLE",
             "angle": "NEEDS_ANGLE",
             "audience": "NEEDS_ANGLE",
-            "city": c.get("geo"),
-            "service_link": service_for(term),
+            "city": c.get("county") or c.get("geo"),
+            "service_link": c.get("service_link") or service_for(term),
             "tags": [],
             "_cluster_id": c.get("id"),
             "_score": c.get("score"),
             "_band": c.get("band"),
+            "_county": c.get("county"),
+            "_local_specifics": c.get("local_specifics"),
         })
         if len(stubs) >= args.count:
             break
