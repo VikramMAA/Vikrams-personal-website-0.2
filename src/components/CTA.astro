@@ -21,10 +21,16 @@ const { heading = chatInvite.heading, body = chatInvite.body } = Astro.props;
     <p class="lede">{body}</p>
     <div class="btn-row">
       <a href={`mailto:${contact.email}`} class="btn btn--primary">Email me</a>
+      <a href={`https://wa.me/${contact.whatsapp}`} class="btn btn--ghost" rel="noopener">
+        WhatsApp
+      </a>
       <a href={contact.linkedin} class="btn btn--ghost" rel="noopener">
-        Connect on LinkedIn
+        LinkedIn
       </a>
     </div>
+    <p class="cta__phone">
+      Or call <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>.
+    </p>
   </div>
 </section>
 
@@ -40,5 +46,16 @@ const { heading = chatInvite.heading, body = chatInvite.body } = Astro.props;
 
   .cta .btn-row {
     justify-content: center;
+  }
+
+  .cta__phone {
+    margin-top: 1.25rem;
+    font-size: 0.92rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .cta__phone a {
+    color: var(--white);
+    white-space: nowrap;
   }
 </style>

@@ -43,17 +43,28 @@ const contactPageSchema = {
           </p>
           <p class="lede">
             That said, if you would like to know how your GTM or digital marketing issue
-            could be solved, reach out by email or on LinkedIn. We can have a quick chat
-            about how your issue might be resolved. I like these conversations and I
-            usually reply within two working days.
+            could be solved, reach out. Email, LinkedIn, WhatsApp or a call, whichever
+            is easiest, and we can have a quick chat about how your issue might be
+            resolved. I like these conversations and I usually reply within two working
+            days.
           </p>
 
           <div class="direct">
-            <h2 class="direct__title">Two ways to reach me</h2>
+            <h2 class="direct__title">Ways to reach me</h2>
             <ul>
               <li>
                 <span class="direct__label">Email</span>
                 <a href={`mailto:${contact.email}`}>{contact.email}</a>
+              </li>
+              <li>
+                <span class="direct__label">Phone</span>
+                <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>
+              </li>
+              <li>
+                <span class="direct__label">WhatsApp</span>
+                <a href={`https://wa.me/${contact.whatsapp}`} rel="noopener">
+                  Message on WhatsApp
+                </a>
               </li>
               <li>
                 <span class="direct__label">LinkedIn</span>

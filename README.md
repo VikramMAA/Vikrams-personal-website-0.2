@@ -8,7 +8,8 @@ CSS-only mobile menu.
 full time under contract and is not available for outside work. Every closing
 call to action is an invitation to a conversation by email or LinkedIn, and that
 wording lives in one place — the `chatInvite` object in `src/data/site.ts`. Keep
-it that way when editing.
+it that way when editing. Email, phone, WhatsApp and LinkedIn are all offered as
+ways to start that conversation.
 
 **Stack:** [Astro](https://astro.build) 7 · plain CSS · deployed on Netlify.
 
@@ -45,7 +46,7 @@ structured data that Google and AI crawlers read. You rarely need to touch the
 | What you want to change | Where |
 | --- | --- |
 | Name, job title, years of experience, tagline | `site` object |
-| Email, LinkedIn, city, social links | `contact` object |
+| Email, phone, WhatsApp, LinkedIn, city, social links | `contact` object |
 | The "reach out for a chat" wording used site-wide | `chatInvite` object |
 | The four numbers under the hero | `stats` array |
 | Topic notes — copy, checklists, FAQs, SEO titles | `topics` array |

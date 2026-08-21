@@ -17,8 +17,9 @@ import { contact } from '../data/site';
         two working days.
       </p>
       <p class="lede">
-        If it is easier to carry on there, you can also find me on <a
-          href={contact.linkedin} rel="noopener">LinkedIn</a>.
+        If it is quicker to talk, call or WhatsApp me on <a
+          href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>. You can also find me
+        on <a href={contact.linkedin} rel="noopener">LinkedIn</a>.
       </p>
       <div class="btn-row">
         <a href="/blog/" class="btn btn--primary">Read something while you wait</a>

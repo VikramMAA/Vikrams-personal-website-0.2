@@ -32,4 +32,4 @@ If it all feels overwhelming, start with one platform and one content type, and 
 
 So go forth, embrace the power of social media, and watch your coaching business soar to new heights!
 
-I'm not available for freelance or consulting work [I'm contracted full time], but if you'd like to know how your own social or GTM problem could be solved, [email me or say hello on LinkedIn](/contact/). Always happy to have a quick chat about it.
+I'm not available for freelance or consulting work [I'm contracted full time], but if you'd like to know how your own social or GTM problem could be solved, [get in touch](/contact/) by email, WhatsApp, phone or LinkedIn. Always happy to have a quick chat about it.

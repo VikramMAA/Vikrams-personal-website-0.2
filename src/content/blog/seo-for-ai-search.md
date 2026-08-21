@@ -67,4 +67,4 @@ The practical upshot for most companies is that AISEO is not a separate workstre
 
 ---
 
-*Want to know how you'd get visible in both traditional and AI search? Read my [SEO notes](/topics/seo/), or [reach out by email or LinkedIn](/contact/) and we can have a quick chat about it.*
+*Want to know how you'd get visible in both traditional and AI search? Read my [SEO notes](/topics/seo/), or [reach out](/contact/) on email, WhatsApp, phone or LinkedIn and we can have a quick chat about it.*

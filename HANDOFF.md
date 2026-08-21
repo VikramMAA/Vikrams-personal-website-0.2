@@ -326,13 +326,13 @@ Search the codebase for `TODO` — every placeholder is marked. The important on
 Per your instruction, your personal email is used everywhere:
 
 - Email: `vikram.1996523@gmail.com`
+- Phone / WhatsApp: `+91 70199 90776`
 - LinkedIn: `https://www.linkedin.com/in/vikram-m-a-a/`
 - Location: Bengaluru, Karnataka, India (street address deliberately omitted)
 
-Phone and WhatsApp (`+91 70199 90776`) were removed from the site with the
-repositioning, since the invitation everywhere is now email or LinkedIn. Re-add
-`phone`, `phoneRaw` and `whatsapp` to the `contact` object in `src/data/site.ts`
-if you want them back.
+All four are offered site-wide as ways to start a conversation. What changed with
+the repositioning is what the conversation is for: a quick chat about a problem,
+not a sales call.
 
 ---
 

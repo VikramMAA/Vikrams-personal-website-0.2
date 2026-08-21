@@ -124,9 +124,9 @@ portfolio. Vikram works full time under contract and does not take outside work,
 so no post may offer a service, an audit, a retainer, a package or a price, and
 none may imply he is available for hire. If the post ends on a call to action,
 it is the same one the rest of the site uses: if you'd like to know how your GTM
-or digital marketing issue could be solved, reach out by email or on LinkedIn and
-we can have a quick chat about it. Link to `/contact/` for that, and to a
-`/topics/` page for the longer explanation.
+or digital marketing issue could be solved, get in touch by email, WhatsApp,
+phone or LinkedIn and we can have a quick chat about it. Link to `/contact/` for
+that, and to a `/topics/` page for the longer explanation.
 
 ## 6. Save it
 

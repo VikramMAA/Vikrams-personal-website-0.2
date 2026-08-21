@@ -43,6 +43,10 @@ const year = new Date().getFullYear();
         <h2 class="footer-heading">Say hello</h2>
         <ul>
           <li><a href={`mailto:${contact.email}`}>{contact.email}</a></li>
+          <li><a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a></li>
+          <li>
+            <a href={`https://wa.me/${contact.whatsapp}`} rel="noopener">WhatsApp</a>
+          </li>
           {
             contact.socials
               .filter((s) => !s.url.startsWith('mailto:'))

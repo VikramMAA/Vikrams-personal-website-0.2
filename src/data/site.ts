@@ -7,8 +7,8 @@
  *
  * POSITIONING NOTE: this is a personal blog and portfolio. Nothing here offers,
  * sells or prices a service. Vikram is employed under contract and is not taking
- * outside work. The invitation everywhere on the site is a conversation by email
- * or LinkedIn, never an engagement.
+ * outside work. The invitation everywhere on the site is a conversation — email,
+ * LinkedIn, WhatsApp or a call — never an engagement.
  */
 
 export const site = {
@@ -27,6 +27,10 @@ export const site = {
 export const contact = {
   email: 'vikram.1996523@gmail.com',
   linkedin: 'https://www.linkedin.com/in/vikram-m-a-a/',
+  phone: '+91 70199 90776',
+  /** E.164 format — used for tel: and WhatsApp links. */
+  phoneRaw: '+917019990776',
+  whatsapp: '917019990776',
   city: 'Bengaluru',
   region: 'Karnataka',
   country: 'India',
@@ -45,7 +49,7 @@ export const contact = {
  */
 export const chatInvite = {
   heading: 'Stuck on a GTM or marketing problem?',
-  body: `This site is a blog and a portfolio, not a shop. I am working full time under contract and I am not taking on outside work. That said, if you would like to know how your GTM or digital marketing issue could be solved, feel free to reach out by email or on LinkedIn. Happy to have a quick chat and think it through with you.`,
+  body: `This site is a blog and a portfolio, not a shop. I am working full time under contract and I am not taking on outside work. That said, if you would like to know how your GTM or digital marketing issue could be solved, feel free to reach out — email, LinkedIn, WhatsApp or a call, whichever is easiest. Happy to have a quick chat and think it through with you.`,
 } as const;
 
 /** Shown as the credibility strip under the hero. */
@@ -401,7 +405,7 @@ export const faqs = [
   },
   {
     q: 'Are you available for freelance or consulting work?',
-    a: 'No. I work full time under contract and I am not taking on outside work, so nothing on this site is an offer of services. If you would like to know how your GTM or digital marketing issue could be solved, reach out by email or on LinkedIn and we can have a quick chat about it.',
+    a: 'No. I work full time under contract and I am not taking on outside work, so nothing on this site is an offer of services. If you would like to know how your GTM or digital marketing issue could be solved, reach out by email, LinkedIn, WhatsApp or a call, and we can have a quick chat about it.',
   },
   {
     q: 'What do you write about here?',
