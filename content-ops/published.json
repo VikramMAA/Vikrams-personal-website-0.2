@@ -102,6 +102,23 @@
       "opening_pattern": "opens at the end of the relationship rather than the start, with the tenure numbers",
       "word_count": 1310,
       "market": "US"
+    },
+    {
+      "brief_id": "b-079",
+      "slug": "estonian-startup-marketing",
+      "title": "Estonia builds the better product and keeps losing to the better distributed one",
+      "primary_keyword": "estonian startup marketing",
+      "city": null,
+      "tags": [
+        "Startups",
+        "Estonia",
+        "Marketing Strategy"
+      ],
+      "slot": "evening",
+      "published_at": "2026-08-22",
+      "opening_pattern": "concession opening, genuine praise for the engineering culture before the turn",
+      "word_count": 1198,
+      "market": "Estonia"
     }
   ]
 }
