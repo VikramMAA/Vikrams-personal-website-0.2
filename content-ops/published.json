@@ -85,6 +85,23 @@
       "opening_pattern": "observation of the SERP itself, the same article found nine times over",
       "word_count": 1189,
       "market": "US"
+    },
+    {
+      "brief_id": "b-011",
+      "slug": "how-to-choose-a-digital-marketing-agency",
+      "title": "How to choose a digital marketing agency by planning for the day it ends",
+      "primary_keyword": "how to choose a digital marketing agency",
+      "city": null,
+      "tags": [
+        "Agency",
+        "Consulting",
+        "Hiring"
+      ],
+      "slot": "morning",
+      "published_at": "2026-08-22",
+      "opening_pattern": "opens at the end of the relationship rather than the start, with the tenure numbers",
+      "word_count": 1310,
+      "market": "US"
     }
   ]
 }
