@@ -119,6 +119,23 @@
       "opening_pattern": "concession opening, genuine praise for the engineering culture before the turn",
       "word_count": 1198,
       "market": "Estonia"
+    },
+    {
+      "brief_id": "b-009",
+      "slug": "how-to-do-an-seo-audit-yourself",
+      "title": "Run your own SEO audit in two hours before you pay four figures for one",
+      "primary_keyword": "how to do an seo audit yourself",
+      "city": null,
+      "tags": [
+        "SEO",
+        "Technical SEO",
+        "Audit"
+      ],
+      "slot": "morning",
+      "published_at": "2026-08-23",
+      "opening_pattern": "what a paid audit actually contains, a crawler export with a logo on the cover",
+      "word_count": 1234,
+      "market": "US"
     }
   ]
 }
