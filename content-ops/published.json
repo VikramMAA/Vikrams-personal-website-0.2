@@ -136,6 +136,23 @@
       "opening_pattern": "what a paid audit actually contains, a crawler export with a logo on the cover",
       "word_count": 1234,
       "market": "US"
+    },
+    {
+      "brief_id": "b-028",
+      "slug": "vanity-metrics-vs-revenue-metrics",
+      "title": "Impressions only ever go up. That's exactly why they're still in your report",
+      "primary_keyword": "vanity metrics vs revenue metrics",
+      "city": null,
+      "tags": [
+        "Analytics",
+        "Reporting",
+        "Strategy"
+      ],
+      "slot": "evening",
+      "published_at": "2026-08-23",
+      "opening_pattern": "leads with the structural property that unites vanity metrics, they only move one direction",
+      "word_count": 1109,
+      "market": "US"
     }
   ]
 }
