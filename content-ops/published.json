@@ -187,6 +187,23 @@
       "opening_pattern": "two honest quotes for the same brief ten times apart, and what actually differs",
       "word_count": 1253,
       "market": "India"
+    },
+    {
+      "brief_id": "b-017",
+      "slug": "cold-email-deliverability-setup",
+      "title": "Cold email deliverability is a DNS problem before it's a copywriting problem",
+      "primary_keyword": "cold email deliverability",
+      "city": null,
+      "tags": [
+        "Cold Email",
+        "Deliverability",
+        "B2B"
+      ],
+      "slot": "morning",
+      "published_at": "2026-08-25",
+      "opening_pattern": "the timeline of a domain burning out, week one to week five",
+      "word_count": 1168,
+      "market": "US"
     }
   ]
 }
