@@ -238,6 +238,23 @@
       "opening_pattern": "the same enquiry sent two ways, and the gap between the reply times",
       "word_count": 1207,
       "market": "India"
+    },
+    {
+      "brief_id": "b-097",
+      "slug": "is-google-ads-worth-it-estonia",
+      "title": "Is Google Ads worth it in a market as small as Estonia?",
+      "primary_keyword": "is google ads worth it in a small market",
+      "city": null,
+      "tags": [
+        "Google Ads",
+        "Estonia",
+        "Strategy"
+      ],
+      "slot": "evening",
+      "published_at": "2026-08-26",
+      "opening_pattern": "answers the title question in the first line, then justifies it",
+      "word_count": 1108,
+      "market": "Estonia"
     }
   ]
 }
