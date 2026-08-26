@@ -2,6 +2,292 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
+      "id": "b-085",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "best digital marketing agencies 2026",
+      "secondary_keywords": [
+        "top digital marketing agencies",
+        "digital marketing agency vs consultant",
+        "how to choose a marketing agency"
+      ],
+      "working_title": "10 best digital marketing agencies in 2026, and when a consultant is the better call",
+      "angle": "High intent comparison piece. State the ranking basis openly: these are the firms that consistently appear on SME shortlists, described by what each is genuinely strong at, not by a scoring system nobody ran. Never disparage a named firm. The argument goes on the pricing model instead: percentage of ad spend pays the agency more when you spend more, regardless of whether the spend produced leads, punishes efficiency because a better result on a smaller budget cuts their fee, and removes any incentive to flag wasted or fraudulent placements because they are paid on volume. Be fair: many good agencies moved to flat retainers precisely to kill this conflict, and say so. Then say plainly when an agency IS right: several channels at once, coverage, production volume, procurement that will not onboard an individual. No pitch.",
+      "audience": "SME owners choosing between an agency and an independent",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Agency",
+        "Hiring",
+        "Comparison"
+      ],
+      "_search_shaped": true
+    },
+    {
+      "id": "b-086",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "how much does a digital marketing agency cost",
+      "secondary_keywords": [
+        "marketing agency pricing",
+        "monthly retainer cost",
+        "marketing budget small business"
+      ],
+      "working_title": "How much does a digital marketing agency cost?",
+      "angle": "Answer the number in the first 100 words, then explain what moves it. Retainer tiers, project pricing, percentage of ad spend and why that model is the one to negotiate away from. What a given budget genuinely buys in hours and seniority.",
+      "audience": "SME owners and in-house marketing managers",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Pricing",
+        "Agency",
+        "Budgeting"
+      ],
+      "_search_shaped": true
+    },
+    {
+      "id": "b-087",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "how to get more customers online",
+      "secondary_keywords": [
+        "how to get more leads",
+        "how to promote my business online",
+        "cheapest way to get customers"
+      ],
+      "working_title": "How do I get more customers online without spending more on ads?",
+      "angle": "The free and owned channels first, in the order of payback. Google Business Profile, review velocity, the pages you already have that rank on page two, email to the list you already own. Argue that most businesses buy traffic before fixing conversion, which is why the ads look expensive.",
+      "audience": "Small business owners",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Lead Generation",
+        "Local SEO",
+        "Conversion"
+      ],
+      "_search_shaped": true
+    },
+    {
+      "id": "b-088",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "is google ads worth it for small business",
+      "secondary_keywords": [
+        "google ads roi",
+        "should i use google ads",
+        "google ads vs seo"
+      ],
+      "working_title": "Is Google Ads worth it for a small business?",
+      "angle": "Honest answer with the conditions attached. Worth it when the search intent already exists and the margin covers the click. Not worth it below the conversion volume smart bidding needs to learn. Give the arithmetic that decides it rather than an opinion.",
+      "audience": "SME owners considering paid search",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Google Ads",
+        "PPC",
+        "Budgeting"
+      ],
+      "_search_shaped": true
+    },
+    {
+      "id": "b-089",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "should i hire a marketing agency or a freelancer",
+      "secondary_keywords": [
+        "freelancer vs agency marketing",
+        "in house vs agency",
+        "marketing consultant vs agency"
+      ],
+      "working_title": "Should I hire a marketing agency, a freelancer, or someone in house?",
+      "angle": "Decision piece structured around the real variables: number of channels, need for coverage, production volume, procurement constraints and bus factor. Be genuinely fair to each option including the cases where an agency wins outright. Bias disclosure where relevant.",
+      "audience": "Founders and marketing managers making a first hire",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Hiring",
+        "Agency",
+        "Strategy"
+      ],
+      "_search_shaped": true
+    },
+    {
+      "id": "b-090",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "how do i get more google reviews",
+      "secondary_keywords": [
+        "how to ask for reviews",
+        "google review link",
+        "responding to bad reviews"
+      ],
+      "working_title": "How do I get more Google reviews for my business?",
+      "angle": "The compliant mechanics. The direct review link, when to ask, who to ask, and the FTC rule that made review gating and incentivised positive reviews a real liability. How to answer a one star review so it wins the next customer.",
+      "audience": "Local business owners",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Reviews",
+        "Local SEO",
+        "Compliance"
+      ],
+      "_search_shaped": true
+    },
+    {
+      "id": "b-091",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "how much should a small business spend on digital marketing",
+      "secondary_keywords": [
+        "marketing budget for small business india",
+        "digital marketing budget percentage",
+        "how much to spend on ads"
+      ],
+      "working_title": "How much should a small business spend on digital marketing in India?",
+      "angle": "Give the number ranges up front in rupees, then the method: work backwards from lifetime value and close rate to an allowable cost per lead, not forwards from a percentage of revenue. Cover the minimum viable budget below which paid search cannot gather enough conversions to work at all.",
+      "audience": "SME owners and founders",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Budgeting",
+        "Pricing",
+        "India"
+      ],
+      "_search_shaped": true
+    },
+    {
+      "id": "b-092",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "how to sell online in india",
+      "secondary_keywords": [
+        "own website vs marketplace",
+        "how to start selling online",
+        "amazon flipkart vs own store"
+      ],
+      "working_title": "How do I start selling online in India?",
+      "angle": "Practical sequencing. Marketplace versus own store and the honest tradeoff on margin and customer data, UPI and COD expectations, Shiprocket and logistics, GST registration thresholds, and the WhatsApp layer that actually closes the sale. Answer the marketplace question directly rather than hedging.",
+      "audience": "First time online sellers and small D2C brands",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Ecommerce",
+        "India",
+        "Getting Started"
+      ],
+      "_search_shaped": true
+    },
+    {
+      "id": "b-093",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "is seo worth it for small business",
+      "secondary_keywords": [
+        "seo vs google ads",
+        "how long does seo take",
+        "is seo dead"
+      ],
+      "working_title": "Is SEO worth it for a small business in 2026?",
+      "angle": "Argue both sides properly. Worth it for local intent and for queries with commercial follow through. Much weaker than it was for informational content, because AI answers now absorb those clicks. The honest framing is that SEO became narrower and more valuable per page rather than dying.",
+      "audience": "SME owners deciding where to put budget",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "SEO",
+        "Strategy",
+        "India"
+      ],
+      "_search_shaped": true
+    },
+    {
+      "id": "b-094",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "do i need a website if i have instagram",
+      "secondary_keywords": [
+        "website vs social media business",
+        "is a website necessary",
+        "instagram shop vs website"
+      ],
+      "working_title": "Do I need a website if my business is already on Instagram?",
+      "angle": "Opinion with a real answer. What you lose renting your storefront: no search visibility, no ownership of the audience, no way to be cited by AI assistants, algorithm risk. Be fair about the cases where Instagram alone genuinely is enough for a while.",
+      "audience": "Small businesses and creators selling on social",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Strategy",
+        "Social Media",
+        "India"
+      ],
+      "_search_shaped": true
+    },
+    {
+      "id": "b-095",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "google ads vs facebook ads which is better",
+      "secondary_keywords": [
+        "meta ads vs google ads",
+        "which ad platform is better",
+        "where should i advertise"
+      ],
+      "working_title": "Google Ads or Meta Ads, which is better for my business?",
+      "angle": "The distinction that settles it: Google captures demand that already exists, Meta creates demand that does not. Which means the right answer depends entirely on whether people are already searching for what you sell. Give the test, plus rupee cost per click ranges for both in India.",
+      "audience": "SME owners and in-house marketers",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Google Ads",
+        "Meta Ads",
+        "India"
+      ],
+      "_search_shaped": true
+    },
+    {
+      "id": "b-096",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "how to sell to nordic customers from estonia",
+      "secondary_keywords": [
+        "selling to finland from estonia",
+        "nordic market entry",
+        "b2b sales nordics"
+      ],
+      "working_title": "How do Estonian companies sell into Finland and Sweden?",
+      "angle": "Practical market entry. Nordic buying is consensus driven and allergic to pressure, so urgency sequences backfire. Cover LinkedIn as the primary channel, localising proof rather than copy, pricing presentation in euro versus krona, and the longer cycle to plan for.",
+      "audience": "Estonian B2B founders and sales leads",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "B2B",
+        "Estonia",
+        "Market Entry"
+      ],
+      "_search_shaped": true
+    },
+    {
+      "id": "b-097",
+      "slot": "evening",
+      "market": "Estonia",
+      "primary_keyword": "is google ads worth it in a small market",
+      "secondary_keywords": [
+        "google ads low search volume",
+        "advertising in estonia",
+        "smart bidding not enough data"
+      ],
+      "working_title": "Is Google Ads worth running in a market as small as Estonia?",
+      "angle": "Argue that the honest answer for many Estonian companies is no, not domestically, because smart bidding starves below a conversion threshold a 1.3 million person market rarely supplies. The version that works is EU or Nordic wide with language targeting. Give the volume threshold to check before committing.",
+      "audience": "Estonian marketers running paid acquisition",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Google Ads",
+        "Estonia",
+        "Strategy"
+      ],
+      "_search_shaped": true
+    },
+    {
       "id": "b-001",
       "slot": "morning",
       "primary_keyword": "google business profile optimisation india",

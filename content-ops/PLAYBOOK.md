@@ -106,33 +106,88 @@ year are seeing...".
 
 ## 4. Write the title
 
-The title carries most of the click. Rules:
+**Write the title as the thing somebody types into a search box.**
 
-- 8 to 14 words. Long enough to say something specific, short enough to read
-  in one go.
-- Contains the primary keyword or a close natural variant, but never at the
-  cost of sounding like a keyword.
-- Says something. A claim, a number, a tension, a mistake being made. Not a
-  category label.
-- Never starts with "The Ultimate Guide to", "Everything You Need to Know",
-  "A Complete Guide to", "Top 10", "How to X: A Guide", or "X 101".
-- No colons splitting a label from a subtitle. That is the format every agency
-  blog uses.
+This changed in August 2026 and it reverses the old advice on this page. The
+clever, opinionated headline reads well to another marketer and is invisible to
+the business owner who is searching "how do I use whatsapp for marketing" at
+eleven at night. We are optimising for the second person now.
+
+Rules:
+
+- **Lead with the query.** The first few words should be the phrase people type.
+  Question form is good and often best: "How do I...", "How much does...",
+  "What is the best way to...", "Do I need...".
+- 6 to 14 words. A search-shaped title is usually shorter than a clever one.
+- The primary keyword goes in near-verbatim, not as a "close natural variant".
+  If the keyword is awkward English, use the natural phrasing a person would
+  actually type rather than the keyword tool's version.
+- Plain beats clever. If you have to choose between sounding smart and matching
+  the search, match the search.
+- Still banned: "The Ultimate Guide to", "Everything You Need to Know",
+  "A Complete Guide to", "X 101". Those are filler and say nothing.
+- Numbered and comparison titles are now allowed and wanted. "10 best X",
+  "X vs Y", "Is X worth it" are all real search shapes.
+- Colons are fine now when they separate the query from the promise.
 
 Good, for the shape of it:
 
-> Your agency sends a lovely report every month. Here is how to tell if it means anything
-> Six places your Google Ads budget leaks, and the report that shows you each one
-> Blocking AI crawlers feels principled. It also makes you invisible
+> How do I use WhatsApp for marketing in India?
+> How much should a small business spend on digital marketing?
+> 10 best digital marketing agencies in 2026, and when to hire a consultant instead
+> Is SEO worth it for a small business?
+> How do I get more customers online without paying for ads?
 
-Bad:
+Bad, and these are all titles this site published before the change:
 
-> Google Ads Optimization: A Complete Guide for Indian Businesses
-> The Ultimate Guide to Local SEO in 2026
-> 10 Tips to Improve Your Website Traffic
+> Impressions only ever go up. That's exactly why they're still in your report
+> Most traffic drops are not algorithm updates. Rewriting in week one makes it worse
+> Estonia builds the better product and keeps losing to the better distributed one
 
-The `working_title` in the brief is a starting point. Sharpen it. If the
-research in step 3 turned up something better, use that instead.
+Those are decent writing and nobody searches for any of them.
+
+The opinion does not go in the title any more. It goes in the first paragraph,
+where it still does its job, and the title's job is to get the person there.
+
+The `working_title` in the brief is a starting point. Sharpen it towards the
+search phrase. If the research in step 3 turned up the way people actually
+phrase it, use that instead.
+
+### Comparison and "best of" posts
+
+These are wanted now. "10 best digital marketing agencies", "Shopify vs
+WooCommerce", "is Practo worth it". They are high intent, they are what buyers
+search at the moment they are deciding, and this site has nothing in that shape.
+
+Four rules, and they are not negotiable because this format is where blogs
+usually start lying.
+
+**Say what the ranking is based on, in the post.** A list with no stated
+criteria is a fabrication with numbers on it. If the basis is "these are the
+firms that show up most in Indian SME shortlists", say that. Never imply you
+tested or audited companies you have not.
+
+**Never rubbish a named company.** This is already in VOICE.md and it matters
+most here. Describe named firms factually and fairly, including what they are
+genuinely good at. Criticise the *model*, the *pricing structure*, the
+*practice*. Never the named business.
+
+**The critique goes on the structure, and it has to be true.** The percentage
+of ad spend argument is the strongest one available and it is well documented:
+an agency paid a percentage of your media budget earns more when you spend more,
+regardless of whether the spend produced anything. It punishes efficiency,
+because getting the same result on a smaller budget cuts their fee. It also
+removes any incentive to flag wasted placements or fraudulent traffic, since
+they are paid on volume. Be fair while making it: plenty of good agencies moved
+to flat retainers precisely to remove this conflict, and saying so makes the
+argument stronger rather than weaker.
+
+**Do not turn it into a pitch.** The no-selling rule in step 5 applies here with
+extra force. A post that lists ten agencies and then suggests hiring a
+consultant is an advert unless it is honest about when an agency is the right
+answer. It often is: multiple channels at once, coverage so a holiday does not
+stop the work, production volume, procurement that will not onboard an
+individual. Say that plainly, in the post.
 
 Set `seoTitle` separately when the catchy title does not lead with the keyword.
 `seoTitle` is what shows in the tab and the SERP, so it should be keyword led
