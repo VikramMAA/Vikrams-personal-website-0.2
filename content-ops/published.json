@@ -255,6 +255,23 @@
       "opening_pattern": "answers the title question in the first line, then justifies it",
       "word_count": 1108,
       "market": "Estonia"
+    },
+    {
+      "brief_id": "b-086",
+      "slug": "how-much-does-a-digital-marketing-agency-cost",
+      "title": "How much does a digital marketing agency cost?",
+      "primary_keyword": "how much does a digital marketing agency cost",
+      "city": null,
+      "tags": [
+        "Pricing",
+        "Agency",
+        "Budgeting"
+      ],
+      "slot": "morning",
+      "published_at": "2026-08-27",
+      "opening_pattern": "the price range as the bare first line, before any framing",
+      "word_count": 1057,
+      "market": "US"
     }
   ]
 }
