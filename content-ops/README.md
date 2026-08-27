@@ -13,6 +13,7 @@ publish one article to vikramhere.com.
 | `scripts/next_brief.py` | Picks the brief for this run. Handles slot matching, de-dupe, city and tag spacing. |
 | `scripts/lint_article.py` | Blocks em dashes, stock AI phrases and uniform paragraph rhythm. Exit 1 means do not publish. |
 | `scripts/refill_queue.py` | Tops the queue up from `seo/output/keyword-plan.json` when it runs low. |
+| `linkedin-log.json` | What went out on LinkedIn and in what shape. Keeps the posts from all opening the same way. |
 
 ## Run it by hand
 
@@ -22,6 +23,20 @@ python3 content-ops/scripts/next_brief.py --slot morning
 python3 content-ops/scripts/lint_article.py src/content/blog/<slug>.md
 npm run build
 ```
+
+## Posting it to LinkedIn
+
+Publishing does not touch LinkedIn. That part is manual and stays manual, because
+the feed is read at work and every post gets a human look first.
+
+Ask for a snippet in a session with this repo checked out and the
+`linkedin-snippet` skill picks up the latest article, drafts three posts in
+different shapes, checks them and prints them in the chat ready to copy. Its one
+hard rule is that nothing may read as availability for work.
+
+Skill lives in `.claude/skills/linkedin-snippet/`. The career-safety and voice
+checks are enforced by `scripts/lint_snippet.py` in there, which reads its banned
+phrase list straight out of `scripts/lint_article.py` so the two stay in sync.
 
 ## Change what gets written
 

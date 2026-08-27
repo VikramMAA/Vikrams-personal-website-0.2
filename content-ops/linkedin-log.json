@@ -1,0 +1,4 @@
+{
+  "_comment": "One entry per LinkedIn post that actually went out. The linkedin-snippet skill reads this to avoid opening three posts in a row the same way, and appends to it once you say which variant you posted.",
+  "posts": []
+}
