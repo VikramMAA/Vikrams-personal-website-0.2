@@ -272,6 +272,23 @@
       "opening_pattern": "the price range as the bare first line, before any framing",
       "word_count": 1057,
       "market": "US"
+    },
+    {
+      "brief_id": "b-038",
+      "slug": "website-redesign-seo-checklist",
+      "title": "How do I redesign my website without losing my Google traffic?",
+      "primary_keyword": "website redesign seo checklist",
+      "city": null,
+      "tags": [
+        "SEO",
+        "Migration",
+        "Technical SEO"
+      ],
+      "slot": "evening",
+      "published_at": "2026-08-27",
+      "opening_pattern": "the project is misfiled as design when it is actually a migration",
+      "word_count": 1086,
+      "market": "US"
     }
   ]
 }
