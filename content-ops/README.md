@@ -29,14 +29,20 @@ npm run build
 Publishing does not touch LinkedIn. That part is manual and stays manual, because
 the feed is read at work and every post gets a human look first.
 
-Ask for a snippet in a session with this repo checked out and the
-`linkedin-snippet` skill picks up the latest article, drafts three posts in
-different shapes, checks them and prints them in the chat ready to copy. Its one
-hard rule is that nothing may read as availability for work.
+A third Routine, **LinkedIn snippet 09:30 IST**, fires daily between the two
+publishing runs. It takes the last two published articles [yesterday evening's
+and this morning's], picks the stronger, drafts three posts in different shapes,
+checks them, prints them in the chat, rebuilds the Copy Desk editing page and
+sends a push notification. It never posts anything. Its one hard rule is that
+nothing may read as availability for work.
+
+You can also just ask for a snippet in any session with this repo checked out.
 
 Skill lives in `.claude/skills/linkedin-snippet/`. The career-safety and voice
 checks are enforced by `scripts/lint_snippet.py` in there, which reads its banned
 phrase list straight out of `scripts/lint_article.py` so the two stay in sync.
+`scripts/seed_desk.py` builds the Copy Desk page from `assets/copy-desk.html`,
+which carries the same rules again in JavaScript so they run as Vikram types.
 
 ## Change what gets written
 

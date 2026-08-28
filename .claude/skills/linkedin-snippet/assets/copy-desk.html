@@ -1,0 +1,686 @@
+<title>LinkedIn Copy Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+:root{
+  --ground:#E9EAE4;
+  --sheet:#FBFBF8;
+  --raise:#F2F3EE;
+  --ink:#1A1F26;
+  --ink-soft:#5D6670;
+  --ink-faint:#8C939B;
+  --rule:#D3D5CD;
+  --rule-hard:#B9BCB2;
+  --green:#1F5F4E;
+  --green-wash:rgba(31,95,78,.10);
+  --red:#A4232C;
+  --red-wash:rgba(164,35,44,.13);
+  --ochre:#8A6210;
+  --ochre-wash:rgba(138,98,16,.13);
+  --hook:rgba(31,95,78,.13);
+  --shadow:0 1px 2px rgba(26,31,38,.06),0 8px 24px -12px rgba(26,31,38,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#14171A;
+    --sheet:#1B1F23;
+    --raise:#22272C;
+    --ink:#E7E8E2;
+    --ink-soft:#99A1A8;
+    --ink-faint:#727A81;
+    --rule:#2D3339;
+    --rule-hard:#3D454C;
+    --green:#5FB99A;
+    --green-wash:rgba(95,185,154,.14);
+    --red:#EC7E86;
+    --red-wash:rgba(236,126,134,.16);
+    --ochre:#D3A452;
+    --ochre-wash:rgba(211,164,82,.16);
+    --hook:rgba(95,185,154,.15);
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#14171A;
+  --sheet:#1B1F23;
+  --raise:#22272C;
+  --ink:#E7E8E2;
+  --ink-soft:#99A1A8;
+  --ink-faint:#727A81;
+  --rule:#2D3339;
+  --rule-hard:#3D454C;
+  --green:#5FB99A;
+  --green-wash:rgba(95,185,154,.14);
+  --red:#EC7E86;
+  --red-wash:rgba(236,126,134,.16);
+  --ochre:#D3A452;
+  --ochre-wash:rgba(211,164,82,.16);
+  --hook:rgba(95,185,154,.15);
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:15px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.label{
+  font-size:10.5px;
+  font-weight:600;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px 72px}
+
+/* masthead */
+.masthead{
+  display:flex;flex-wrap:wrap;gap:16px;align-items:baseline;justify-content:space-between;
+  padding:26px 0 18px;border-bottom:2px solid var(--ink);margin-bottom:2px;
+}
+.mark{display:flex;align-items:baseline;gap:12px}
+.mark h1{
+  margin:0;font-size:26px;font-weight:700;letter-spacing:-.025em;line-height:1;
+}
+.mark .pencil{
+  width:10px;height:10px;border-radius:50%;background:var(--red);
+  align-self:center;flex:none;
+}
+.source{
+  font-size:12.5px;color:var(--ink-soft);text-align:right;max-width:44ch;
+}
+.source a{color:var(--green);text-decoration:none;border-bottom:1px solid var(--green-wash)}
+.source a:hover{border-bottom-color:currentColor}
+.hairline{height:1px;background:var(--ink);opacity:.35;margin-bottom:26px}
+
+/* layout */
+.desk{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:34px;align-items:start}
+@media (max-width:980px){.desk{grid-template-columns:1fr;gap:28px}}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--rule-hard);margin-bottom:0}
+.tab{
+  appearance:none;background:none;border:0;border-bottom:2px solid transparent;
+  margin-bottom:-1px;padding:9px 14px 8px;cursor:pointer;
+  font-family:inherit;font-size:12.5px;font-weight:500;color:var(--ink-soft);
+  display:flex;align-items:center;gap:7px;
+}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink);font-weight:600}
+.tab .num{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-faint)}
+.tab[aria-selected="true"] .num{color:var(--green)}
+.tab .dot{width:6px;height:6px;border-radius:50%;background:var(--red);flex:none;visibility:hidden}
+.tab[data-blocked="1"] .dot{visibility:visible}
+.tab:focus-visible{outline:2px solid var(--green);outline-offset:-2px}
+
+/* sheet */
+.sheet{
+  position:relative;background:var(--sheet);border:1px solid var(--rule);border-top:0;
+  box-shadow:var(--shadow);
+}
+.sheet-inner{position:relative}
+.mirror,#editor{
+  font-family:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;
+  font-size:13.5px;line-height:1.72;letter-spacing:0;
+  padding:22px 24px;margin:0;border:0;
+  white-space:pre-wrap;overflow-wrap:break-word;word-break:break-word;
+  tab-size:2;
+}
+.mirror{
+  position:absolute;inset:0;pointer-events:none;color:transparent;
+  overflow:hidden;
+}
+#editor{
+  position:relative;display:block;width:100%;min-height:340px;
+  background:transparent;color:var(--ink);resize:none;overflow:hidden;
+  caret-color:var(--red);
+}
+#editor:focus{outline:0}
+.sheet:focus-within{border-color:var(--rule-hard)}
+.mirror .hook{background:var(--hook);border-radius:2px}
+.mirror .cut{
+  border-right:2px solid var(--red);
+  position:relative;
+}
+.mirror .bad{
+  background:var(--red-wash);
+  box-shadow:inset 0 -2px 0 var(--red);
+  border-radius:2px;
+}
+.mirror .soft{box-shadow:inset 0 -2px 0 var(--ochre)}
+
+/* meter */
+.gauge{border-top:1px solid var(--rule);padding:12px 24px 14px;display:flex;flex-direction:column;gap:9px}
+.bar{position:relative;height:5px;background:var(--raise);border-radius:99px;overflow:hidden}
+.bar .zone{position:absolute;top:0;bottom:0;background:var(--green-wash)}
+.bar .fill{position:absolute;top:0;bottom:0;left:0;background:var(--ink-soft);border-radius:99px;transition:width .12s linear,background .2s}
+.bar .fill.good{background:var(--green)}
+.bar .fill.over{background:var(--red)}
+.readout{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline}
+.stat{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.stat b{color:var(--ink);font-weight:500}
+.stat.flag b{color:var(--ochre)}
+.stat.stop b{color:var(--red)}
+.spacer{flex:1}
+
+/* actions */
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;align-items:center}
+.btn{
+  appearance:none;font-family:inherit;font-size:12.5px;font-weight:500;
+  padding:8px 15px;border-radius:2px;cursor:pointer;
+  border:1px solid var(--rule-hard);background:var(--sheet);color:var(--ink);
+}
+.btn:hover{border-color:var(--ink-soft)}
+.btn:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.btn.primary{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.btn.primary:hover{opacity:.87}
+.btn.quiet{border-color:transparent;color:var(--ink-soft);padding-left:6px;padding-right:6px}
+.btn.quiet:hover{color:var(--ink);border-color:transparent;text-decoration:underline}
+.saved{font-size:11.5px;color:var(--ink-faint);font-family:"IBM Plex Mono",monospace}
+
+/* inspector */
+.panel{margin-bottom:30px}
+.panel-head{display:flex;align-items:center;gap:10px;margin-bottom:11px}
+.panel-head .label{white-space:nowrap}
+.panel-head .rule{flex:1;height:1px;background:var(--rule)}
+.count-pill{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;
+  padding:1px 7px;border-radius:99px;background:var(--raise);color:var(--ink-soft);
+}
+.count-pill.stop{background:var(--red-wash);color:var(--red)}
+.count-pill.flag{background:var(--ochre-wash);color:var(--ochre)}
+.count-pill.ok{background:var(--green-wash);color:var(--green)}
+
+/* preview */
+.card{background:var(--sheet);border:1px solid var(--rule);border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
+.card-top{display:flex;gap:10px;padding:14px 16px 10px;align-items:center}
+.avatar{
+  width:42px;height:42px;border-radius:50%;flex:none;
+  background:var(--green);color:var(--sheet);
+  display:grid;place-items:center;font-weight:600;font-size:16px;letter-spacing:-.02em;
+}
+.who{min-width:0}
+.who .n{font-weight:600;font-size:13.5px;line-height:1.25}
+.who .h{font-size:11.5px;color:var(--ink-faint);line-height:1.35;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.who .t{font-size:11.5px;color:var(--ink-faint)}
+.card-body{
+  padding:0 16px 14px;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:14px;line-height:1.5;white-space:pre-wrap;overflow-wrap:break-word;
+}
+.card-body .tag{color:#0a66c2;font-weight:500}
+:root[data-theme="dark"] .card-body .tag,
+:root:not([data-theme="light"]) .card-body .tag{color:#7cb9f0}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .card-body .tag{color:#0a66c2}}
+.seemore{
+  color:var(--ink-faint);cursor:pointer;background:none;border:0;padding:0;
+  font:inherit;
+}
+.seemore:hover{color:var(--ink-soft);text-decoration:underline}
+.card-foot{
+  border-top:1px solid var(--rule);padding:8px 16px;display:flex;gap:22px;
+  font-size:11.5px;color:var(--ink-faint);
+}
+.empty{padding:26px 16px;color:var(--ink-faint);font-size:13px}
+
+/* marks */
+.marks{display:flex;flex-direction:column;gap:0}
+.mark-row{
+  display:grid;grid-template-columns:auto 1fr;gap:11px;
+  padding:10px 0;border-bottom:1px solid var(--rule);align-items:start;
+}
+.mark-row:last-child{border-bottom:0}
+.chip{
+  font-family:"IBM Plex Mono",monospace;font-size:9.5px;font-weight:500;
+  letter-spacing:.08em;text-transform:uppercase;
+  padding:3px 6px;border-radius:2px;white-space:nowrap;margin-top:1px;
+}
+.chip.stop{background:var(--red);color:var(--sheet)}
+.chip.flag{background:var(--ochre-wash);color:var(--ochre);box-shadow:inset 0 0 0 1px currentColor}
+.mark-txt{font-size:13px;line-height:1.45}
+.mark-txt code{
+  font-family:"IBM Plex Mono",monospace;font-size:12px;
+  background:var(--red-wash);color:var(--red);padding:1px 4px;border-radius:2px;
+}
+.mark-txt .why{display:block;color:var(--ink-soft);font-size:12px;margin-top:2px}
+.allclear{
+  display:flex;gap:10px;align-items:center;padding:14px 16px;
+  background:var(--green-wash);border-left:2px solid var(--green);
+  font-size:13px;color:var(--ink);
+}
+.allclear b{color:var(--green);font-weight:600}
+
+.note{
+  margin-top:26px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:12px;line-height:1.6;color:var(--ink-faint);
+}
+.note b{color:var(--ink-soft);font-weight:600}
+.note kbd{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;
+  border:1px solid var(--rule-hard);border-bottom-width:2px;border-radius:3px;
+  padding:0 4px;color:var(--ink-soft);
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="mark">
+      <span class="pencil" aria-hidden="true"></span>
+      <h1>Copy Desk</h1>
+      <span class="label" style="margin-left:2px">LinkedIn · clearance &amp; compose</span>
+    </div>
+    <p class="source">
+      Seeded from <a href="__ARTICLE_URL__" target="_blank" rel="noopener">__ARTICLE_TITLE__</a><br>
+      __ARTICLE_META__ · edits save in this browser as you type.
+    </p>
+  </header>
+  <div class="hairline"></div>
+
+  <div class="desk">
+    <section aria-label="Editor">
+      <div class="tabs" role="tablist" id="tabs"></div>
+      <div class="sheet">
+        <div class="sheet-inner">
+          <div class="mirror" id="mirror" aria-hidden="true"></div>
+          <textarea id="editor" spellcheck="true" aria-label="Post text"></textarea>
+        </div>
+        <div class="gauge">
+          <div class="bar" id="bar"><span class="zone" id="zone"></span><span class="fill" id="fill"></span></div>
+          <div class="readout">
+            <span class="stat" id="s-chars"></span>
+            <span class="stat" id="s-hook"></span>
+            <span class="stat" id="s-tags"></span>
+            <span class="stat" id="s-emoji"></span>
+            <span class="spacer"></span>
+            <span class="stat" id="s-limit"></span>
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn primary" id="copy">Copy post</button>
+        <button class="btn" id="clear">Clear</button>
+        <button class="btn quiet" id="restore">Restore seeded draft</button>
+        <span class="spacer"></span>
+        <span class="saved" id="saved"></span>
+      </div>
+      <p class="note">
+        <b>The green band</b> is everything above LinkedIn's <em>see more</em> fold, roughly the first 200 characters. The red rule is where it cuts.
+        <b>Red underline</b> is blocking, <b>amber</b> is worth a second look.
+        <kbd>⌘</kbd><kbd>↵</kbd> copies.
+      </p>
+    </section>
+
+    <aside aria-label="Preview and marks">
+      <div class="panel">
+        <div class="panel-head"><span class="label">As it lands in the feed</span><span class="rule"></span></div>
+        <article class="card">
+          <div class="card-top">
+            <div class="avatar" aria-hidden="true">V</div>
+            <div class="who">
+              <div class="n">Vikram M A A</div>
+              <div class="h">Digital marketing · Bengaluru</div>
+              <div class="t">1h · 🌐</div>
+            </div>
+          </div>
+          <div class="card-body" id="preview"></div>
+          <div class="card-foot"><span>Like</span><span>Comment</span><span>Repost</span><span>Send</span></div>
+        </article>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <span class="label">Marks</span>
+          <span class="rule"></span>
+          <span class="count-pill" id="mark-count">—</span>
+        </div>
+        <div class="marks" id="marks"></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script>
+"use strict";
+
+const SEED_ID = "__SEED_ID__";
+const STORE = "copydesk:" + SEED_ID;
+
+const SEED = __SEED__;
+
+/* ---- rules, ported from scripts/lint_snippet.py ---- */
+
+const SEE_MORE = 200;
+const SWEET = [900, 1600];
+const LIMIT = { post: 3000, comment: 1250 };
+
+const AVAILABILITY = [
+  [/\bopen to work\b/g, "availability signal"],
+  [/\bopen for work\b/g, "availability signal"],
+  [/\bavailable for (hire|work|projects|freelance|consulting)\b/g, "availability signal"],
+  [/\b(currently|actively) (looking|exploring|seeking|open)\b/g, "job-seeking signal"],
+  [/\bnew opportunities\b/g, "job-seeking signal"],
+  [/\b(taking on|onboarding|accepting) (new )?(clients|projects|work)\b/g, "touting for work"],
+  [/\b(dm|pm) me\b/g, "lead capture"],
+  [/\bmy (dms|inbox) (are|is) open\b/g, "lead capture"],
+  [/\b(drop|send) me a (dm|message|line)\b/g, "lead capture"],
+  [/\bbook a (call|slot|demo|consult)/g, "lead capture"],
+  [/\blet's (connect|chat|talk|work together|jump on a call)\b/g, "lead capture"],
+  [/\bget in touch\b/g, "lead capture"],
+  [/\breach out\b/g, "lead capture"],
+  [/\bhappy to help\b/g, "soft pitch"],
+  [/\bi can help you\b/g, "soft pitch"],
+  [/\bi help (small |b2b |busy |ambitious )?(businesses|founders|brands|companies|teams|clients)\b/g, "bio-style pitch"],
+  [/\bwork with me\b/g, "soft pitch"],
+  [/\bhire (me|a consultant)\b/g, "touting for work"],
+  [/\bmy (clients|consultancy|consulting practice|agency|services|packages)\b/g, "implies outside work"],
+  [/\bfree (audit|consult|consultation|strategy call|teardown)\b/g, "offer of services"],
+  [/\bfor hire\b/g, "availability signal"]
+];
+
+const BAD_TAGS = ["opentowork","openforwork","hireme","availableforwork","forhire",
+  "jobsearch","freelancer","freelance","consultantforhire","letsconnect","dmforenquiries","dmme"];
+
+const TELLS = ["here's the thing:","let that sink in","read that again","i'll wait",
+  "unpopular opinion:","hot take:","the result?","agree?","thoughts?","am i wrong?",
+  "who else","comment yes","repost if","save this post","follow me for","link below"];
+
+const BANNED = ["in today's digital age","ever-evolving","ever evolving","delve into","delving",
+  "navigate the complexities","unlock the power","game changer","game-changer","robust solution",
+  "seamless experience","it's important to note","moreover,","furthermore,","in conclusion",
+  "at the end of the day","tapestry","testament to","elevate your brand","supercharge",
+  "harness the power","when it comes to","look no further","buckle up","let's dive in","dive deep",
+  "that being said","rest assured","a myriad of","plethora","cutting edge","cutting-edge",
+  "state of the art","state-of-the-art","holistic approach","synergy","paradigm shift",
+  "in the world of"];
+
+const CONSTRUCTIONS = [
+  [/\bit's not just [^.!?]{1,60}[,.] it's\b/g, "the “it's not just X, it's Y” construction"],
+  [/\bthis is ?n['o]?t about [^.!?]{1,60}\. it's about\b/g, "the “this isn't about X. It's about Y” construction"],
+  [/\bleverage\s+(your|our|the|their|its)\b/g, "“leverage” used as a verb"]
+];
+
+const EMOJI_RE = /\p{Extended_Pictographic}/gu;
+
+function norm(s){ return s.replace(/[‘’]/g, "'").replace(/[“”]/g, '"').toLowerCase(); }
+
+function lint(raw, kind){
+  const text = raw.trim();
+  const low = norm(raw);
+  const stop = [], flag = [], ranges = [];
+  const push = (list, msg, why, sev) => list.push({ msg, why, sev });
+
+  const scan = (re, handle) => {
+    re.lastIndex = 0;
+    let m;
+    while ((m = re.exec(low)) !== null){
+      if (m[0].length === 0){ re.lastIndex++; continue; }
+      handle(m);
+    }
+  };
+
+  // blocking: dashes
+  let d;
+  const dashRe = /[—–]/g;
+  while ((d = dashRe.exec(raw)) !== null) ranges.push([d.index, d.index + 1, "bad"]);
+  if (/[—–]/.test(raw))
+    push(stop, "Em or en dash", "Use a comma, a full stop, or brackets.", "stop");
+
+  // blocking: availability
+  AVAILABILITY.forEach(([re, label]) => scan(re, m => {
+    ranges.push([m.index, m.index + m[0].length, "bad"]);
+    push(stop, `“${raw.slice(m.index, m.index + m[0].length)}”`, label + ". This feed is read at work. Cut it.", "stop");
+  }));
+
+  // blocking: hashtags that signal job hunting
+  scan(/#(\w+)/g, m => {
+    if (BAD_TAGS.includes(m[1].toLowerCase())){
+      ranges.push([m.index, m.index + m[0].length, "bad"]);
+      push(stop, raw.slice(m.index, m.index + m[0].length), "Signals job hunting. Swap for a topical tag.", "stop");
+    }
+  });
+
+  // blocking: banned phrases and LinkedIn tells
+  const phraseHit = (list, why) => list.forEach(p => {
+    let i = low.indexOf(p);
+    while (i !== -1){
+      ranges.push([i, i + p.length, "bad"]);
+      push(stop, `“${raw.slice(i, i + p.length)}”`, why, "stop");
+      i = low.indexOf(p, i + p.length);
+    }
+  });
+  phraseHit(BANNED, "On the banned list in VOICE.md.");
+  phraseHit(TELLS, "A LinkedIn tell. Readers discount the whole post.");
+
+  CONSTRUCTIONS.forEach(([re, why]) => scan(re, m => {
+    ranges.push([m.index, m.index + m[0].length, "bad"]);
+    push(stop, `“${raw.slice(m.index, m.index + m[0].length).slice(0,52)}…”`, why, "stop");
+  }));
+
+  // counts
+  const chars = text.length;
+  const cap = LIMIT[kind];
+  if (chars > cap) push(stop, `${chars.toLocaleString()} characters`, `Over the ${cap.toLocaleString()} limit for a ${kind === "comment" ? "comment" : "post"}.`, "stop");
+
+  const tags = (raw.match(/#\w+/g) || []);
+  const emoji = (raw.match(EMOJI_RE) || []);
+  const firstPara = text.split(/\n\s*\n/)[0] || "";
+
+  // warnings
+  if (kind === "post"){
+    if (firstPara.length > SEE_MORE)
+      push(flag, `Hook runs ${firstPara.length} characters`, `The feed cuts near ${SEE_MORE}. Break the paragraph so the hook finishes above the fold.`, "flag");
+    if (firstPara.endsWith("?") && firstPara.length < 120)
+      push(flag, "Opens on a question", "Opening with the answer holds better. The question belongs at the end.", "flag");
+    if (chars && chars < SWEET[0])
+      push(flag, `${chars} characters`, `Under ${SWEET[0]}. Reads thin for a text post.`, "flag");
+    else if (chars > SWEET[1] && chars <= cap)
+      push(flag, `${chars.toLocaleString()} characters`, `Over ${SWEET[1].toLocaleString()}. Trim before it becomes a wall.`, "flag");
+    if (chars && (tags.length < 3 || tags.length > 5))
+      push(flag, `${tags.length} hashtag${tags.length === 1 ? "" : "s"}`, "Three to five, at the end.", "flag");
+    if (chars && !text.slice(-400).includes("?"))
+      push(flag, "No question near the close", "Comments need something specific to answer.", "flag");
+
+    const paras = text.split(/\n\s*\n/).map(p => p.trim()).filter(p => p && !p.startsWith("#"));
+    if (paras.length >= 5){
+      const singles = paras.filter(p => p.split(/\s+/).length <= 14).length;
+      if (singles / paras.length > 0.85)
+        push(flag, "Every line is one short beat", "That is broetry. Let two or three paragraphs run longer.", "flag");
+    }
+  }
+  if (emoji.length > 2)
+    push(flag, `${emoji.length} emoji`, "Two is the ceiling. Zero is usually right.", "flag");
+
+  return { stop, flag, ranges, chars, tags: tags.length, emoji: emoji.length, hook: firstPara.length, cap };
+}
+
+/* ---- state ---- */
+
+let drafts, active = 0;
+try {
+  const saved = JSON.parse(localStorage.getItem(STORE) || "null");
+  drafts = Array.isArray(saved) && saved.length === SEED.length ? saved : SEED.map(d => d.text);
+} catch (e) { drafts = SEED.map(d => d.text); }
+
+const $ = id => document.getElementById(id);
+const editor = $("editor"), mirror = $("mirror"), preview = $("preview");
+const esc = s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+
+/* ---- render ---- */
+
+function paintMirror(raw, res, kind){
+  const n = raw.length;
+  const flags = new Uint8Array(n);
+  if (kind === "post") for (let i = 0; i < Math.min(SEE_MORE, n); i++) flags[i] |= 1;
+  res.ranges.forEach(([a, b]) => { for (let i = a; i < Math.min(b, n); i++) flags[i] |= 2; });
+
+  // The fold sits between characters, so it becomes a boundary the run loop
+  // cannot cross. The character before it carries the rule.
+  const fold = (kind === "post" && n > SEE_MORE) ? SEE_MORE : -1;
+
+  let html = "", i = 0;
+  while (i < n){
+    const f = flags[i];
+    let j = i + 1;
+    while (j < n && flags[j] === f && j !== fold) j++;
+    const cls = [f & 1 ? "hook" : "", f & 2 ? "bad" : "", j === fold ? "cut" : ""]
+      .filter(Boolean).join(" ");
+    const chunk = esc(raw.slice(i, j));
+    html += cls ? `<span class="${cls}">${chunk}</span>` : chunk;
+    i = j;
+  }
+  mirror.innerHTML = html + "\n";
+}
+
+function paintPreview(raw, kind){
+  const text = raw.trim();
+  if (!text){ preview.innerHTML = '<p class="empty">Nothing to preview yet.</p>'; return; }
+  const tagged = s => esc(s).replace(/#(\w+)/g, '<span class="tag">#$1</span>')
+                            .replace(/(https?:\/\/[^\s]+)/g, '<span class="tag">$1</span>');
+  if (kind === "comment" || text.length <= SEE_MORE || preview.dataset.open === "1"){
+    preview.innerHTML = tagged(text);
+    if (kind !== "comment" && text.length > SEE_MORE && preview.dataset.open === "1"){
+      const b = document.createElement("button");
+      b.className = "seemore"; b.textContent = "  see less";
+      b.onclick = () => { preview.dataset.open = "0"; render(); };
+      preview.appendChild(b);
+    }
+    return;
+  }
+  let cut = text.lastIndexOf(" ", SEE_MORE);
+  if (cut < SEE_MORE - 40) cut = SEE_MORE;
+  preview.innerHTML = tagged(text.slice(0, cut)) + "…";
+  const b = document.createElement("button");
+  b.className = "seemore"; b.textContent = "see more";
+  b.onclick = () => { preview.dataset.open = "1"; render(); };
+  preview.appendChild(b);
+}
+
+function paintMarks(res){
+  const all = res.stop.concat(res.flag);
+  const box = $("marks"), pill = $("mark-count");
+  if (!all.length){
+    pill.textContent = "clean";
+    pill.className = "count-pill ok";
+    box.innerHTML = '<div class="allclear"><b>Clear.</b><span>Nothing blocking, nothing to second-guess.</span></div>';
+    return;
+  }
+  pill.textContent = res.stop.length ? `${res.stop.length} blocking` : `${res.flag.length} to check`;
+  pill.className = "count-pill " + (res.stop.length ? "stop" : "flag");
+  box.innerHTML = all.map(m => `
+    <div class="mark-row">
+      <span class="chip ${m.sev}">${m.sev === "stop" ? "cut" : "check"}</span>
+      <span class="mark-txt">${esc(m.msg)}<span class="why">${esc(m.why)}</span></span>
+    </div>`).join("");
+}
+
+function paintGauge(res, kind){
+  const { chars, cap } = res;
+  const pct = Math.min(100, (chars / cap) * 100);
+  const fill = $("fill"), zone = $("zone");
+  fill.style.width = pct + "%";
+  fill.className = "fill" + (chars > cap ? " over" : (kind === "post" && chars >= SWEET[0] && chars <= SWEET[1] ? " good" : ""));
+  if (kind === "post"){
+    zone.style.display = "block";
+    zone.style.left = (SWEET[0] / cap * 100) + "%";
+    zone.style.width = ((SWEET[1] - SWEET[0]) / cap * 100) + "%";
+  } else zone.style.display = "none";
+
+  const set = (id, label, val, state) => {
+    const el = $(id);
+    el.innerHTML = `${label} <b>${val}</b>`;
+    el.className = "stat" + (state ? " " + state : "");
+  };
+  set("s-chars", "chars", chars.toLocaleString(),
+      chars > cap ? "stop" : (kind === "post" && chars && (chars < SWEET[0] || chars > SWEET[1]) ? "flag" : ""));
+  if (kind === "post"){
+    $("s-hook").style.display = "";
+    $("s-tags").style.display = "";
+    set("s-hook", "hook", res.hook, res.hook > SEE_MORE ? "flag" : "");
+    set("s-tags", "tags", res.tags, chars && (res.tags < 3 || res.tags > 5) ? "flag" : "");
+  } else {
+    $("s-hook").style.display = "none";
+    $("s-tags").style.display = "none";
+  }
+  set("s-emoji", "emoji", res.emoji, res.emoji > 2 ? "flag" : "");
+  set("s-limit", "limit", cap.toLocaleString(), "");
+}
+
+function grow(){ editor.style.height = "auto"; editor.style.height = editor.scrollHeight + "px"; }
+
+function render(){
+  const kind = SEED[active].kind;
+  const raw = drafts[active];
+  const res = lint(raw, kind);
+  paintMirror(raw, res, kind);
+  paintPreview(raw, kind);
+  paintMarks(res);
+  paintGauge(res, kind);
+  grow();
+  document.querySelectorAll(".tab").forEach((t, i) => {
+    if (i === active) t.dataset.blocked = res.stop.length ? "1" : "0";
+  });
+}
+
+function buildTabs(){
+  $("tabs").innerHTML = SEED.map((d, i) => `
+    <button class="tab" role="tab" data-i="${i}" aria-selected="${i === active}">
+      <span class="num">${i + 1}</span>${esc(d.name)}<span class="dot"></span>
+    </button>`).join("");
+  document.querySelectorAll(".tab").forEach(t => {
+    t.onclick = () => {
+      active = +t.dataset.i;
+      preview.dataset.open = "0";
+      document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
+      editor.value = drafts[active];
+      render();
+      editor.focus();
+    };
+  });
+  // pre-mark tabs that already carry blocking issues
+  SEED.forEach((d, i) => {
+    const r = lint(drafts[i], d.kind);
+    document.querySelectorAll(".tab")[i].dataset.blocked = r.stop.length ? "1" : "0";
+  });
+}
+
+let saveTimer;
+function touched(){
+  drafts[active] = editor.value;
+  render();
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(() => {
+    try { localStorage.setItem(STORE, JSON.stringify(drafts)); } catch (e) {}
+    const s = $("saved");
+    s.textContent = "saved " + new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  }, 400);
+}
+
+editor.addEventListener("input", touched);
+editor.addEventListener("keydown", e => {
+  if ((e.metaKey || e.ctrlKey) && e.key === "Enter"){ e.preventDefault(); $("copy").click(); }
+});
+
+$("copy").onclick = async () => {
+  const btn = $("copy"), text = drafts[active];
+  try { await navigator.clipboard.writeText(text); }
+  catch (e) { editor.select(); document.execCommand("copy"); }
+  btn.textContent = "Copied";
+  setTimeout(() => { btn.textContent = "Copy post"; }, 1400);
+};
+$("clear").onclick = () => { editor.value = ""; touched(); editor.focus(); };
+$("restore").onclick = () => { editor.value = SEED[active].text; touched(); editor.focus(); };
+
+buildTabs();
+editor.value = drafts[active];
+preview.dataset.open = "0";
+render();
+window.addEventListener("resize", grow);
+</script>

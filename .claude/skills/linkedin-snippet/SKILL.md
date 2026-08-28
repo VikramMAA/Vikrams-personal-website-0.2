@@ -38,24 +38,40 @@ unless it is already in the published article.
 
 ## 1. Pick the article
 
-If the user named one, use it. Otherwise:
+If the user named one, use it. Otherwise take the two most recent entries in
+`content-ops/published.json`:
 
 ```bash
-python3 -c "import json;p=json.load(open('content-ops/published.json'))['posts'];[print(x['published_at'],x['market'],x['slot'],x['slug'],'|',x['title']) for x in p[-6:]]"
+git fetch origin main
+git show origin/main:content-ops/published.json | python3 -c "import json,sys;[print(x['published_at'],x['market'],x['slot'],x['slug'],'|',x['title']) for x in json.load(sys.stdin)['posts'][-4:]]"
 ```
 
-Articles live in `src/content/blog/<slug>.md` and go live at
-`https://vikramhere.com/blog/<slug>/`. Read the whole article, not the
-frontmatter. The post is built out of the strongest thing inside it.
+On the daily run those two are yesterday evening's article and this morning's,
+because the site publishes at 08:00 and 19:00 IST and this runs between them.
+That pairing means nothing gets skipped: every article is in scope for exactly
+one run.
+
+Read the article from `origin/main` rather than the working tree, which may be on
+another branch:
+
+```bash
+git show origin/main:src/content/blog/<slug>.md
+```
+
+Read the whole thing, not the frontmatter. The post is built out of the strongest
+thing inside it. Articles go live at `https://vikramhere.com/blog/<slug>/`.
 
 **One LinkedIn post a day, maximum.** The site publishes twice, the feed does not
-want twice. Take the stronger of the two and say so, and note the other one as
-tomorrow's if it stands up on its own.
+want twice. Take the stronger of the two, say which one you passed over and why,
+and note it as tomorrow's if it stands up on its own.
 
 **Not every article earns a post.** If it has no number, no mechanism and no
 claim anybody could disagree with, say that plainly and offer the one angle that
 could work rather than manufacturing three variants of nothing. A run of flat
 posts costs more reach than a skipped day.
+
+**If nothing new has published since the last run**, say so and stop. Do not
+re-draft an article that already got its turn.
 
 ## 2. Find the load-bearing thing
 
@@ -188,7 +204,34 @@ Every post goes in its own fenced block so the line breaks survive the copy. The
 character count and hook position go under each one, because both are decisions the
 user may want to overrule.
 
-## 8. Log it when the user says which one went out
+## 8. Rebuild the Copy Desk
+
+The drafts are read in the chat but edited on the Copy Desk, a published page
+that carries this skill's lint rules in the browser and marks the see-more fold
+while Vikram types. Rebuild it every run so the tabs hold today's drafts:
+
+```bash
+python3 .claude/skills/linkedin-snippet/scripts/seed_desk.py \
+    --slug <slug> --title "<article title>" --date <YYYY-MM-DD> --market <market> \
+    --draft "<archetype>:post:<draft1>" \
+    --draft "<archetype>:post:<draft2>" \
+    --draft "<archetype>:post:<draft3>" \
+    --draft "First comment:comment:<comment>" \
+    --out <scratchpad>/copy-desk.html
+```
+
+Then publish it to the existing artifact rather than making a new one, so the
+bookmark keeps working. Read it first, because publishing to an artifact this
+conversation has not read is refused:
+
+- URL: `https://claude.ai/code/artifact/f635f391-3546-423c-b074-3569a2448544`
+- `action: "read"` with that url, then publish the seeded file with the same
+  `url`, a `label` naming the day, and no `favicon`.
+
+The page keeps edits in the viewer's browser keyed by article and date, so a new
+seed starts clean without destroying whatever was typed against yesterday's.
+
+## 9. Log it when the user says which one went out
 
 Only after they tell you. Append to `content-ops/linkedin-log.json`:
 
@@ -197,3 +240,17 @@ Only after they tell you. Append to `content-ops/linkedin-log.json`:
 ```
 
 That file is the only thing stopping the fortieth post from opening like the fourth.
+
+## The daily run
+
+A Routine fires this once a day at 09:30 IST, after the morning article lands.
+The run is: pick from the last two published, draft, lint, print in the chat,
+rebuild the desk, then send one short push notification so it is not missed.
+
+Nobody is reviewing the run. If the article is thin, say so rather than shipping
+three weak variants. If the queue of good angles in an article runs out, one
+strong variant beats three padded ones, and saying "this one only supports a
+single angle" is a real answer.
+
+The one thing never to do unattended is post anything. This skill drafts. Vikram
+posts.
