@@ -11,6 +11,7 @@ Exit 1 means rewrite. Warnings are worth reading but are a judgement call.
 
 Usage:
   python3 lint_snippet.py draft.txt [draft2.txt ...]
+  python3 lint_snippet.py --kind comment first-comment.txt
   cat draft.txt | python3 lint_snippet.py -
 """
 import argparse
@@ -22,7 +23,7 @@ import sys
 # LinkedIn's hard cap, and where the feed cuts to "see more" on mobile. The
 # truncation point moves around, so treat 200 as the last safe character rather
 # than an exact boundary.
-HARD_LIMIT = 3000
+LIMITS = {"post": 3000, "comment": 1250}
 SEE_MORE = 200
 SWEET_SPOT = (900, 1600)
 
@@ -113,7 +114,7 @@ def site_banned_phrases():
     return FALLBACK_BANNED, None
 
 
-def check(text, name, banned):
+def check(text, name, banned, kind="post"):
     errors, warnings, notes = [], [], []
     lower = text.lower()
     stripped = text.strip()
@@ -133,8 +134,9 @@ def check(text, name, banned):
         if tag.lower() in BANNED_HASHTAGS:
             errors.append(f"#{tag} signals job hunting. Replace with a topical tag.")
 
-    if chars > HARD_LIMIT:
-        errors.append(f"{chars} characters, over LinkedIn's {HARD_LIMIT} limit.")
+    cap = LIMITS[kind]
+    if chars > cap:
+        errors.append(f"{chars} characters, over LinkedIn's {cap} limit for a {kind}.")
 
     for phrase in banned:
         if phrase in lower:
@@ -151,34 +153,41 @@ def check(text, name, banned):
     if re.search(r"\bleverage\s+(your|our|the|their|its)\b", lower):
         errors.append('"leverage" used as a verb')
 
-    # The hook. Everything past the truncation point is invisible until someone
-    # taps, so the first paragraph has to stand alone.
+    # The hook, the length band, the hashtags and the closing question are all
+    # about surviving the feed. A first comment does none of that work, so those
+    # checks would only ever cry wolf on one.
     first_para = stripped.split("\n\n")[0].strip()
-    if len(first_para) > SEE_MORE:
-        warnings.append(
-            f"first paragraph is {len(first_para)} chars, past the ~{SEE_MORE} char "
-            f"cut. Split it so the hook completes before 'see more'."
-        )
-    if first_para.endswith("?") and len(first_para) < 120:
-        warnings.append(
-            "opens on a question. Opening with the answer usually holds better, "
-            "the question belongs at the end."
-        )
 
-    if chars < SWEET_SPOT[0]:
-        warnings.append(f"{chars} characters, under {SWEET_SPOT[0]}. Reads thin for a text post.")
-    elif chars > SWEET_SPOT[1]:
-        warnings.append(f"{chars} characters, over {SWEET_SPOT[1]}. Trim before it becomes a wall.")
+    if kind == "post":
+        # Everything past the truncation point is invisible until someone taps,
+        # so the first paragraph has to stand alone.
+        if len(first_para) > SEE_MORE:
+            warnings.append(
+                f"first paragraph is {len(first_para)} chars, past the ~{SEE_MORE} char "
+                f"cut. Split it so the hook completes before 'see more'."
+            )
+        if first_para.endswith("?") and len(first_para) < 120:
+            warnings.append(
+                "opens on a question. Opening with the answer usually holds better, "
+                "the question belongs at the end."
+            )
 
-    if not 3 <= len(tags) <= 5:
-        warnings.append(f"{len(tags)} hashtags. Three to five, at the end.")
+        if chars < SWEET_SPOT[0]:
+            warnings.append(f"{chars} characters, under {SWEET_SPOT[0]}. Reads thin for a text post.")
+        elif chars > SWEET_SPOT[1]:
+            warnings.append(f"{chars} characters, over {SWEET_SPOT[1]}. Trim before it becomes a wall.")
+
+        if not 3 <= len(tags) <= 5:
+            warnings.append(f"{len(tags)} hashtags. Three to five, at the end.")
+
+        if "?" not in stripped[-400:]:
+            warnings.append("no question in the closing stretch. Comments need something to answer.")
+    elif tags:
+        warnings.append(f"{len(tags)} hashtags in a comment. They belong in the post.")
 
     emoji = EMOJI.findall(text)
     if len(emoji) > 2:
         warnings.append(f"{len(emoji)} emoji. Two is the ceiling, zero is usually right.")
-
-    if "?" not in stripped[-400:]:
-        warnings.append("no question in the closing stretch. Comments need something to answer.")
 
     paras = [p.strip() for p in stripped.split("\n\n") if p.strip() and not p.strip().startswith("#")]
     if len(paras) >= 5:
@@ -189,13 +198,17 @@ def check(text, name, banned):
                 "or three of them run longer."
             )
 
-    notes.append(f"{chars} chars · hook {len(first_para)} chars · {len(tags)} hashtags · {len(emoji)} emoji")
+    notes.append(f"{kind} · {chars} chars · hook {len(first_para)} chars · "
+                 f"{len(tags)} hashtags · {len(emoji)} emoji")
     return errors, warnings, notes
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("paths", nargs="+", help="draft file(s), or - for stdin")
+    ap.add_argument("--kind", choices=sorted(LIMITS), default="post",
+                    help="post (default) or comment. A first comment skips the "
+                         "hook, length, hashtag and closing-question checks.")
     args = ap.parse_args()
 
     banned, source = site_banned_phrases()
@@ -206,7 +219,7 @@ def main():
     for path in args.paths:
         text = sys.stdin.read() if path == "-" else open(path, encoding="utf-8").read()
         label = "stdin" if path == "-" else os.path.basename(path)
-        errors, warnings, notes = check(text, label, banned)
+        errors, warnings, notes = check(text, label, banned, args.kind)
 
         print(f"--- {label}")
         for n in notes:
