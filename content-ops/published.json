@@ -323,6 +323,23 @@
       "opening_pattern": "explains how these listicles are actually assembled before giving one",
       "word_count": 1106,
       "market": "US"
+    },
+    {
+      "brief_id": "b-087",
+      "slug": "how-to-get-more-customers-online",
+      "title": "How do I get more customers online without spending more on ads?",
+      "primary_keyword": "how to get more customers online",
+      "city": null,
+      "tags": [
+        "Lead Generation",
+        "Local SEO",
+        "Conversion"
+      ],
+      "slot": "morning",
+      "published_at": "2026-08-29",
+      "opening_pattern": "reframes the question from more traffic to more of the traffic already arriving",
+      "word_count": 1106,
+      "market": "US"
     }
   ]
 }
