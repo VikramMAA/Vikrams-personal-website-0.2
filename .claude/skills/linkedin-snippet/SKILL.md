@@ -62,8 +62,15 @@ Read the whole thing, not the frontmatter. The post is built out of the stronges
 thing inside it. Articles go live at `https://vikramhere.com/blog/<slug>/`.
 
 **One LinkedIn post a day, maximum.** The site publishes twice, the feed does not
-want twice. Take the stronger of the two, say which one you passed over and why,
-and note it as tomorrow's if it stands up on its own.
+want twice. Take the stronger of the two, say which one you passed over and why.
+
+**Watch the slot bias when you pick.** The evening article is always the older of
+the pair, so "take the stronger" quietly favours the morning one, and an evening
+article that loses is gone: tomorrow it is not in scope any more. Two of the
+first three evening articles were lost that way. So check which slot the last
+post came from in `content-ops/linkedin-log.json`, and when the two are close,
+take the one whose slot lost last time. Only override that when one is clearly
+the better post, not when it is merely fresher.
 
 **Not every article earns a post.** If it has no number, no mechanism and no
 claim anybody could disagree with, say that plainly and offer the one angle that
