@@ -340,6 +340,23 @@
       "opening_pattern": "reframes the question from more traffic to more of the traffic already arriving",
       "word_count": 1106,
       "market": "US"
+    },
+    {
+      "brief_id": "b-093",
+      "slug": "is-seo-worth-it-for-small-business",
+      "title": "Is SEO worth it for a small business in 2026?",
+      "primary_keyword": "is seo worth it for small business",
+      "city": null,
+      "tags": [
+        "SEO",
+        "Strategy",
+        "India"
+      ],
+      "slot": "evening",
+      "published_at": "2026-08-29",
+      "opening_pattern": "splits the question into two that have opposite answers",
+      "word_count": 1125,
+      "market": "India"
     }
   ]
 }
