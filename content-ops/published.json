@@ -357,6 +357,23 @@
       "opening_pattern": "splits the question into two that have opposite answers",
       "word_count": 1125,
       "market": "India"
+    },
+    {
+      "brief_id": "b-096",
+      "slug": "how-to-sell-to-nordic-customers-from-estonia",
+      "title": "How do Estonian companies sell into Finland and Sweden?",
+      "primary_keyword": "how to sell to nordic customers from estonia",
+      "city": null,
+      "tags": [
+        "B2B",
+        "Estonia",
+        "Market Entry"
+      ],
+      "slot": "morning",
+      "published_at": "2026-08-30",
+      "opening_pattern": "the tactic that reads as competence at home and as pressure there",
+      "word_count": 1196,
+      "market": "Estonia"
     }
   ]
 }
