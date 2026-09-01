@@ -442,6 +442,23 @@
       "opening_pattern": "corrects the core misconception about what schema does before any code",
       "word_count": 1015,
       "market": "US"
+    },
+    {
+      "brief_id": "b-034",
+      "slug": "how-to-handle-price-objections-without-discounting",
+      "title": "How do I handle price objections without discounting?",
+      "primary_keyword": "sales training for founders",
+      "city": null,
+      "tags": [
+        "Sales",
+        "Training",
+        "Pricing"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-01",
+      "opening_pattern": "what the discount teaches the buyer, stated as an irreversible cost",
+      "word_count": 1184,
+      "market": "US"
     }
   ]
 }
