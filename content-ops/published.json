@@ -425,6 +425,23 @@
       "opening_pattern": "stress test, what would remain if the account vanished tonight",
       "word_count": 1085,
       "market": "India"
+    },
+    {
+      "brief_id": "b-019",
+      "slug": "schema-markup-for-local-business",
+      "title": "What schema markup does a local business actually need?",
+      "primary_keyword": "schema markup for local business",
+      "city": null,
+      "tags": [
+        "Technical SEO",
+        "Schema",
+        "AI Search"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-01",
+      "opening_pattern": "corrects the core misconception about what schema does before any code",
+      "word_count": 1015,
+      "market": "US"
     }
   ]
 }
