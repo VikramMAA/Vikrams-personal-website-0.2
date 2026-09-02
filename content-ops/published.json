@@ -459,6 +459,23 @@
       "opening_pattern": "what the discount teaches the buyer, stated as an irreversible cost",
       "word_count": 1184,
       "market": "US"
+    },
+    {
+      "brief_id": "b-095",
+      "slug": "google-ads-vs-meta-ads",
+      "title": "Google Ads vs Meta Ads: which is better for my business?",
+      "primary_keyword": "google ads vs facebook ads which is better",
+      "city": null,
+      "tags": [
+        "Google Ads",
+        "Meta Ads",
+        "India"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-02",
+      "opening_pattern": "asks one question about the reader's own product, since the product not the platforms decides it",
+      "word_count": 1194,
+      "market": "India"
     }
   ]
 }
