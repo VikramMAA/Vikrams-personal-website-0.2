@@ -64,13 +64,23 @@ thing inside it. Articles go live at `https://vikramhere.com/blog/<slug>/`.
 **One LinkedIn post a day, maximum.** The site publishes twice, the feed does not
 want twice. Take the stronger of the two, say which one you passed over and why.
 
-**Watch the slot bias when you pick.** The evening article is always the older of
-the pair, so "take the stronger" quietly favours the morning one, and an evening
-article that loses is gone: tomorrow it is not in scope any more. Two of the
-first three evening articles were lost that way. So check which slot the last
-post came from in `content-ops/linkedin-log.json`, and when the two are close,
-take the one whose slot lost last time. Only override that when one is clearly
-the better post, not when it is merely fresher.
+**Expect the evening article to win most days, and do not correct for it.**
+`config.json` defines the evening slot as opinion, analysis or story, something
+the reader argues with or forwards. That is a description of a good LinkedIn
+post. The morning slot is practical and tactical, which makes a better page to
+rank and a duller thing to share. So the slot bias in the picking is not a fault
+to be balanced out, it is the source material telling you something true.
+
+An earlier version of this file tried to even the slots up on a tiebreak. That
+was wrong and it is worth saying why: the first five runs picked evening four
+times, and on review each of those was genuinely the stronger post rather than
+the fresher one. Balancing would have cost real reach to fix a problem that was
+not there.
+
+The morning article wins when it carries something urgent or genuinely unknown,
+which happens often enough to keep reading both properly. The FTC review-gating
+rule beat an excellent evening piece on exactly that basis. Freshness on its own
+is never the reason.
 
 **Not every article earns a post.** If it has no number, no mechanism and no
 claim anybody could disagree with, say that plainly and offer the one angle that
