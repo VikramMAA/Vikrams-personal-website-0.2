@@ -258,6 +258,18 @@ Builders live in [`src/data/schema.ts`](src/data/schema.ts).
   assistant.
 - **Answers are front-loaded.** Expertise summaries and FAQ answers state the
   conclusion in the first sentence, which is the shape an assistant can lift.
+- **IndexNow pings on every production deploy.**
+  [`scripts/indexnow.mjs`](scripts/indexnow.mjs) runs as an npm `postbuild` hook
+  and POSTs every sitemap URL to `api.indexnow.org`, which fans out to Bing,
+  Yandex, Seznam and Naver. That gets a new article into the Bing index in
+  minutes instead of weeks, and ChatGPT's search retrieval reads that index.
+  Ownership is proved by the hex-named `.txt` file in `public/` — the script
+  finds it automatically, so rotating the key means swapping that one file.
+  Google does not participate in IndexNow; it still discovers pages by crawling.
+
+  The ping only fires when `CONTEXT=production`, so deploy previews and local
+  builds skip it. Set `INDEXNOW_FORCE=1` to run it by hand. It can never fail a
+  deploy — errors are logged and swallowed.
 
 ### After the first deploy
 
