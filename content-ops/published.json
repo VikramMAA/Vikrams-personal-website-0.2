@@ -476,6 +476,23 @@
       "opening_pattern": "asks one question about the reader's own product, since the product not the platforms decides it",
       "word_count": 1194,
       "market": "India"
+    },
+    {
+      "brief_id": "b-080",
+      "slug": "estonia-corporate-tax-marketing-budget",
+      "title": "Does Estonia's 0% corporate tax change how I should budget marketing?",
+      "primary_keyword": "estonia corporate tax marketing budget",
+      "city": null,
+      "tags": [
+        "Estonia",
+        "Marketing Strategy",
+        "Finance"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-02",
+      "opening_pattern": "starts from the tax rise that was legislated then cancelled, and asks where the money budgeted for it went",
+      "word_count": 1269,
+      "market": "Estonia"
     }
   ]
 }
