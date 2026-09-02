@@ -65,3 +65,11 @@
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"
     Cache-Control = "public, max-age=3600"
+
+# IndexNow verification key. Bing checks for this file at the site root and
+# requires it served as plain text, so pin the type rather than relying on the
+# default for .txt.
+[[headers]]
+  for = "/e58f7130a5c44681a4c97c7b4cb87986.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
