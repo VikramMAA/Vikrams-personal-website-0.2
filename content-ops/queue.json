@@ -1104,27 +1104,6 @@
       "market": "US"
     },
     {
-      "id": "b-044",
-      "slot": "evening",
-      "primary_keyword": "marketing and sales alignment",
-      "secondary_keywords": [
-        "why leads are not converting to sales",
-        "lead qualification framework",
-        "sales pipeline stages"
-      ],
-      "working_title": "Marketing says the leads are fine. Sales says they are rubbish. Both are right",
-      "angle": "Opinion with a fix. The definition gap is almost always the cause. Give a qualification definition both sides sign, the handoff SLA, and the feedback loop that closes it. Point at the reporting that makes the argument disappear.",
-      "audience": "B2B companies and in-house marketing managers",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "Sales",
-        "Lead Generation",
-        "Process"
-      ],
-      "market": "US"
-    },
-    {
       "id": "b-045",
       "slot": "morning",
       "primary_keyword": "page speed optimisation for indian websites",

@@ -544,6 +544,23 @@
       "opening_pattern": "gives the floor below which the spend is wasted before giving any target range",
       "word_count": 1234,
       "market": "India"
+    },
+    {
+      "brief_id": "b-044",
+      "slug": "why-leads-are-not-converting",
+      "title": "Why aren't my leads converting into sales?",
+      "primary_keyword": "marketing and sales alignment",
+      "city": null,
+      "tags": [
+        "Sales",
+        "Lead Generation",
+        "Process"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-04",
+      "opening_pattern": "sends the reader to read the last fifty rejected leads, then argues the dispute was engineered by the comp plan",
+      "word_count": 1258,
+      "market": "US"
     }
   ]
 }
