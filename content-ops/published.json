@@ -527,6 +527,23 @@
       "opening_pattern": "skips month one where all three look identical and goes to the month each arrangement predictably breaks",
       "word_count": 1291,
       "market": "US"
+    },
+    {
+      "brief_id": "b-091",
+      "slug": "digital-marketing-budget-small-business-india",
+      "title": "How much should a small business spend on digital marketing in India?",
+      "primary_keyword": "how much should a small business spend on digital marketing",
+      "city": null,
+      "tags": [
+        "Budgeting",
+        "Pricing",
+        "India"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-04",
+      "opening_pattern": "gives the floor below which the spend is wasted before giving any target range",
+      "word_count": 1234,
+      "market": "India"
     }
   ]
 }
