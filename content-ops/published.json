@@ -510,6 +510,23 @@
       "opening_pattern": "quotes the three line brief most teams actually send, then points at what is already wrong in it",
       "word_count": 1162,
       "market": "US"
+    },
+    {
+      "brief_id": "b-089",
+      "slug": "agency-vs-freelancer-vs-in-house",
+      "title": "Should I hire a marketing agency, a freelancer, or someone in house?",
+      "primary_keyword": "should i hire a marketing agency or a freelancer",
+      "city": null,
+      "tags": [
+        "Hiring",
+        "Agency",
+        "Strategy"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-03",
+      "opening_pattern": "skips month one where all three look identical and goes to the month each arrangement predictably breaks",
+      "word_count": 1291,
+      "market": "US"
     }
   ]
 }

@@ -90,28 +90,6 @@
       "_search_shaped": true
     },
     {
-      "id": "b-089",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "should i hire a marketing agency or a freelancer",
-      "secondary_keywords": [
-        "freelancer vs agency marketing",
-        "in house vs agency",
-        "marketing consultant vs agency"
-      ],
-      "working_title": "Should I hire a marketing agency, a freelancer, or someone in house?",
-      "angle": "Decision piece structured around the real variables: number of channels, need for coverage, production volume, procurement constraints and bus factor. Be genuinely fair to each option including the cases where an agency wins outright. Bias disclosure where relevant.",
-      "audience": "Founders and marketing managers making a first hire",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Hiring",
-        "Agency",
-        "Strategy"
-      ],
-      "_search_shaped": true
-    },
-    {
       "id": "b-090",
       "slot": "morning",
       "market": "US",
