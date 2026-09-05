@@ -578,6 +578,23 @@
       "opening_pattern": "opens the channel report that did not exist a year ago and reads the budget split straight off it",
       "word_count": 1216,
       "market": "US"
+    },
+    {
+      "brief_id": "b-006",
+      "slug": "ai-overviews-traffic-drop",
+      "title": "Why is my traffic down when my rankings haven't changed?",
+      "primary_keyword": "ai overviews traffic drop",
+      "city": null,
+      "tags": [
+        "AI Search",
+        "SEO",
+        "Analytics"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-05",
+      "opening_pattern": "starts from the meeting where the true explanation for the drop sounds exactly like an excuse",
+      "word_count": 1165,
+      "market": "India"
     }
   ]
 }
