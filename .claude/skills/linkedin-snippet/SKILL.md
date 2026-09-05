@@ -125,6 +125,16 @@ Naming the reader's exact situation gets replies: "If you're on percentage of ad
 spend, what did they say when you asked for a flat fee instead?" Cheap to answer,
 specific, and slightly loaded.
 
+**Check what day it is before you tell him to post.** The feed is a working-hours
+place. Tuesday to Thursday mornings are the window everyone competes for because
+they are the window that works, Monday and Friday are softer, and a Saturday or
+Sunday post reaches a fraction of the same audience.
+
+The run fires every day, so say so when the draft lands on a weekend: the drafting
+was still worth doing, and the recommendation is to hold it for Monday or Tuesday
+rather than spend a good post on a quiet day. Two strong posts on the right days
+beat five posted whenever they happened to be written.
+
 **Answer every comment in the first hour.** Reach follows replies more reliably
 than anything in the copy. Give the user two or three reply openers so this is
 easy rather than a chore.
