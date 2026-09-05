@@ -49,7 +49,7 @@ Two fixes, and they're separate things that people mix up.
 
 Brand exclusions live in the campaign's brand settings, and Google made these self-serve at the end of 2024 rather than something you had to ask a rep for. Switch your own brand off in PMax and watch what happens to the numbers over a fortnight.
 
-Account-level negative keyword lists are the other lever, and they matter because PMax does not accept campaign-level negative keyword lists through the normal interface. Account level is the reliable way to block a query across everything, PMax included.
+Negative keywords are the other lever. Account-level lists block a query across everything, PMax included, and are still the cleanest way to kill a term account wide. Updated for 2026: Performance Max now takes negative keywords at the campaign level too, including campaign-level lists shared across campaigns, so you no longer have to go account wide to exclude one term from one campaign.
 
 If your conversions drop sharply after excluding brand, that is not a disaster. That is you finding out what you were actually buying.
 

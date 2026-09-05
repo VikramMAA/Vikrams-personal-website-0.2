@@ -561,6 +561,23 @@
       "opening_pattern": "sends the reader to read the last fifty rejected leads, then argues the dispute was engineered by the comp plan",
       "word_count": 1258,
       "market": "US"
+    },
+    {
+      "brief_id": "b-021",
+      "slug": "performance-max-explained",
+      "title": "What is Performance Max actually doing with my budget?",
+      "primary_keyword": "performance max campaigns explained",
+      "city": null,
+      "tags": [
+        "Google Ads",
+        "Performance Max",
+        "PPC"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-05",
+      "opening_pattern": "opens the channel report that did not exist a year ago and reads the budget split straight off it",
+      "word_count": 1216,
+      "market": "US"
     }
   ]
 }
