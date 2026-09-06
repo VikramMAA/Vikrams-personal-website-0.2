@@ -612,6 +612,23 @@
       "opening_pattern": "describes the payment flow the local buyer expects, then what a card only checkout puts in front of them instead",
       "word_count": 1190,
       "market": "Estonia"
+    },
+    {
+      "brief_id": "b-056",
+      "slug": "first-90-days-with-a-marketing-consultant",
+      "title": "What should I expect in the first 90 days with a marketing consultant?",
+      "primary_keyword": "what to expect in the first 90 days with a marketing consultant",
+      "city": null,
+      "tags": [
+        "Consulting",
+        "Process",
+        "Onboarding"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-06",
+      "opening_pattern": "opens on the red flag that reads as competence, a finished plan arriving in week one",
+      "word_count": 1303,
+      "market": "US"
     }
   ]
 }
