@@ -247,6 +247,11 @@ python3 .claude/skills/linkedin-snippet/scripts/seed_desk.py \
     --out <scratchpad>/copy-desk.html
 ```
 
+**Carry anything still held as an extra tab.** A weekend or a passed-over post
+that has not gone out yet should be a `HELD · <subject>` draft alongside today's,
+because reseeding otherwise drops it off the page and the queue only exists in
+chat scrollback. The desk is the queue, not just today's three.
+
 Then publish it to the existing artifact rather than making a new one, so the
 bookmark keeps working. Read it first, because publishing to an artifact this
 conversation has not read is refused:
