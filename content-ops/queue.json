@@ -1650,27 +1650,6 @@
       ]
     },
     {
-      "id": "b-073",
-      "slot": "morning",
-      "market": "Estonia",
-      "primary_keyword": "estonian e-commerce payment methods",
-      "secondary_keywords": [
-        "bank link payment estonia",
-        "montonio vs stripe",
-        "estonian checkout conversion"
-      ],
-      "working_title": "If your checkout only takes cards, Estonian buyers are abandoning it",
-      "angle": "Practical and very local. Estonians expect to pay by bank link through Swedbank, SEB or LHV rather than typing a card number, and Stripe alone does not offer them. Cover Montonio and Maksekeskus as the providers that do, adding Omniva, SmartPost and DPD locker selection at checkout because locker delivery is assumed rather than offered, and the order of operations for fixing an existing shop. Give the checkout audit as a short list.",
-      "audience": "Estonian ecommerce founders and shop managers",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Ecommerce",
-        "Conversion",
-        "Estonia"
-      ]
-    },
-    {
       "id": "b-074",
       "slot": "morning",
       "market": "Estonia",

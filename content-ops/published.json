@@ -595,6 +595,23 @@
       "opening_pattern": "starts from the meeting where the true explanation for the drop sounds exactly like an excuse",
       "word_count": 1165,
       "market": "India"
+    },
+    {
+      "brief_id": "b-073",
+      "slug": "estonian-ecommerce-payment-methods",
+      "title": "What payment methods do Estonian shoppers actually use?",
+      "primary_keyword": "estonian e-commerce payment methods",
+      "city": null,
+      "tags": [
+        "Ecommerce",
+        "Conversion",
+        "Estonia"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-06",
+      "opening_pattern": "describes the payment flow the local buyer expects, then what a card only checkout puts in front of them instead",
+      "word_count": 1190,
+      "market": "Estonia"
     }
   ]
 }
