@@ -629,6 +629,23 @@
       "opening_pattern": "opens on the red flag that reads as competence, a finished plan arriving in week one",
       "word_count": 1303,
       "market": "US"
+    },
+    {
+      "brief_id": "b-039",
+      "slug": "how-to-respond-to-negative-google-reviews",
+      "title": "How do I respond to a negative Google review?",
+      "primary_keyword": "how to respond to negative google reviews",
+      "city": null,
+      "tags": [
+        "Reviews",
+        "Local SEO",
+        "Reputation"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-07",
+      "opening_pattern": "puts two replies to the same one star review side by side and asks which business the reader would call",
+      "word_count": 1299,
+      "market": "US"
     }
   ]
 }
