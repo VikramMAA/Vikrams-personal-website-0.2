@@ -663,6 +663,23 @@
       "opening_pattern": "reframes CPM as a market price the reader does not set, so the usual levers aim at the wrong variable",
       "word_count": 1359,
       "market": "India"
+    },
+    {
+      "brief_id": "b-043",
+      "slug": "internal-linking-strategy",
+      "title": "How do I build an internal linking strategy?",
+      "primary_keyword": "internal linking strategy",
+      "city": null,
+      "tags": [
+        "SEO",
+        "Internal Linking",
+        "Technical SEO"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-08",
+      "opening_pattern": "asks which page collects the most internal links, since the honest answer exposes the misallocation",
+      "word_count": 1301,
+      "market": "US"
     }
   ]
 }
