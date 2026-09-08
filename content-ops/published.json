@@ -680,6 +680,23 @@
       "opening_pattern": "asks which page collects the most internal links, since the honest answer exposes the misallocation",
       "word_count": 1301,
       "market": "US"
+    },
+    {
+      "brief_id": "b-067",
+      "slug": "are-angi-leads-worth-it",
+      "title": "Are Angi leads worth it for a home services business?",
+      "primary_keyword": "are angi leads worth it",
+      "city": null,
+      "tags": [
+        "Lead Generation",
+        "Home Services",
+        "Strategy"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-08",
+      "opening_pattern": "a scene with a timestamp, the request landing on several phones at once, so what was bought was an entry not a customer",
+      "word_count": 1308,
+      "market": "US"
     }
   ]
 }
