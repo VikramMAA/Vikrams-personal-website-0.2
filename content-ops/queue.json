@@ -1650,27 +1650,6 @@
       ]
     },
     {
-      "id": "b-081",
-      "slot": "evening",
-      "market": "Estonia",
-      "primary_keyword": "selling saas to us customers from europe",
-      "secondary_keywords": [
-        "european saas us market entry",
-        "pricing in dollars from europe",
-        "timezone support us customers"
-      ],
-      "working_title": "American buyers will not wait until Tallinn wakes up",
-      "angle": "Opinion on US market entry. The gap is rarely product and almost always operational: support hours that miss the US afternoon, pricing in euro when buyers budget in dollars, and case studies from companies the buyer has never heard of. Argue for solving the boring things first, and be honest that a US entity and a US phone number still change conversion in a way founders find annoying.",
-      "audience": "Estonian SaaS founders targeting the US",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "SaaS",
-        "Estonia",
-        "Market Entry"
-      ]
-    },
-    {
       "id": "b-082",
       "slot": "evening",
       "market": "Estonia",
