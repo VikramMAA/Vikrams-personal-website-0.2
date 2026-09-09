@@ -697,6 +697,23 @@
       "opening_pattern": "a scene with a timestamp, the request landing on several phones at once, so what was bought was an entry not a customer",
       "word_count": 1308,
       "market": "US"
+    },
+    {
+      "brief_id": "b-015",
+      "slug": "local-seo-for-restaurants-india",
+      "title": "How do I get my restaurant found on Google, not just Zomato?",
+      "primary_keyword": "local seo for restaurants india",
+      "city": "Bengaluru",
+      "tags": [
+        "Local SEO",
+        "Restaurants",
+        "Bengaluru"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-09",
+      "opening_pattern": "lists the searches the aggregator apps never see, where the demand already sits commission free",
+      "word_count": 1301,
+      "market": "India"
     }
   ]
 }
