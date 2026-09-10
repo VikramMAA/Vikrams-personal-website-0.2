@@ -114,7 +114,17 @@ def main():
                 and c.get("primary_keyword", "").lower() not in used]
     clusters.sort(key=lambda c: -c.get("score", c.get("priority", 0)))
 
-    next_n = len(queue["briefs"])
+    # Number from the highest id ever issued, not the queue length. Briefs leave
+    # the queue when they are published, so counting the queue reissues ids that
+    # published posts already own, and next_brief.py selects by id.
+    def _n(bid):
+        try:
+            return int(str(bid).rsplit("-", 1)[-1])
+        except ValueError:
+            return 0
+    next_n = max([_n(b.get("id")) for b in queue["briefs"]]
+                 + [_n(p.get("brief_id")) for p in published["posts"]]
+                 + [0])
     stubs = []
     for c in clusters:
         term = c["primary_keyword"]

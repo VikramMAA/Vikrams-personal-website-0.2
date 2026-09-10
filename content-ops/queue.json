@@ -2,373 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-085",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "best digital marketing agencies 2026",
-      "secondary_keywords": [
-        "top digital marketing agencies",
-        "digital marketing agency vs consultant",
-        "how to choose a marketing agency"
-      ],
-      "working_title": "10 best digital marketing agencies in 2026, and when a consultant is the better call",
-      "angle": "High intent comparison piece. State the ranking basis openly: these are the firms that consistently appear on SME shortlists, described by what each is genuinely strong at, not by a scoring system nobody ran. Never disparage a named firm. The argument goes on the pricing model instead: percentage of ad spend pays the agency more when you spend more, regardless of whether the spend produced leads, punishes efficiency because a better result on a smaller budget cuts their fee, and removes any incentive to flag wasted or fraudulent placements because they are paid on volume. Be fair: many good agencies moved to flat retainers precisely to kill this conflict, and say so. Then say plainly when an agency IS right: several channels at once, coverage, production volume, procurement that will not onboard an individual. No pitch.",
-      "audience": "SME owners choosing between an agency and an independent",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Agency",
-        "Hiring",
-        "Comparison"
-      ],
-      "_search_shaped": true
-    },
-    {
-      "id": "b-086",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "how much does a digital marketing agency cost",
-      "secondary_keywords": [
-        "marketing agency pricing",
-        "monthly retainer cost",
-        "marketing budget small business"
-      ],
-      "working_title": "How much does a digital marketing agency cost?",
-      "angle": "Answer the number in the first 100 words, then explain what moves it. Retainer tiers, project pricing, percentage of ad spend and why that model is the one to negotiate away from. What a given budget genuinely buys in hours and seniority.",
-      "audience": "SME owners and in-house marketing managers",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Pricing",
-        "Agency",
-        "Budgeting"
-      ],
-      "_search_shaped": true
-    },
-    {
-      "id": "b-087",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "how to get more customers online",
-      "secondary_keywords": [
-        "how to get more leads",
-        "how to promote my business online",
-        "cheapest way to get customers"
-      ],
-      "working_title": "How do I get more customers online without spending more on ads?",
-      "angle": "The free and owned channels first, in the order of payback. Google Business Profile, review velocity, the pages you already have that rank on page two, email to the list you already own. Argue that most businesses buy traffic before fixing conversion, which is why the ads look expensive.",
-      "audience": "Small business owners",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Lead Generation",
-        "Local SEO",
-        "Conversion"
-      ],
-      "_search_shaped": true
-    },
-    {
-      "id": "b-088",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "is google ads worth it for small business",
-      "secondary_keywords": [
-        "google ads roi",
-        "should i use google ads",
-        "google ads vs seo"
-      ],
-      "working_title": "Is Google Ads worth it for a small business?",
-      "angle": "Honest answer with the conditions attached. Worth it when the search intent already exists and the margin covers the click. Not worth it below the conversion volume smart bidding needs to learn. Give the arithmetic that decides it rather than an opinion.",
-      "audience": "SME owners considering paid search",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Google Ads",
-        "PPC",
-        "Budgeting"
-      ],
-      "_search_shaped": true
-    },
-    {
-      "id": "b-090",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "how do i get more google reviews",
-      "secondary_keywords": [
-        "how to ask for reviews",
-        "google review link",
-        "responding to bad reviews"
-      ],
-      "working_title": "How do I get more Google reviews for my business?",
-      "angle": "The compliant mechanics. The direct review link, when to ask, who to ask, and the FTC rule that made review gating and incentivised positive reviews a real liability. How to answer a one star review so it wins the next customer.",
-      "audience": "Local business owners",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Reviews",
-        "Local SEO",
-        "Compliance"
-      ],
-      "_search_shaped": true
-    },
-    {
-      "id": "b-092",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "how to sell online in india",
-      "secondary_keywords": [
-        "own website vs marketplace",
-        "how to start selling online",
-        "amazon flipkart vs own store"
-      ],
-      "working_title": "How do I start selling online in India?",
-      "angle": "Practical sequencing. Marketplace versus own store and the honest tradeoff on margin and customer data, UPI and COD expectations, Shiprocket and logistics, GST registration thresholds, and the WhatsApp layer that actually closes the sale. Answer the marketplace question directly rather than hedging.",
-      "audience": "First time online sellers and small D2C brands",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Ecommerce",
-        "India",
-        "Getting Started"
-      ],
-      "_search_shaped": true
-    },
-    {
-      "id": "b-093",
-      "slot": "evening",
-      "market": "India",
-      "primary_keyword": "is seo worth it for small business",
-      "secondary_keywords": [
-        "seo vs google ads",
-        "how long does seo take",
-        "is seo dead"
-      ],
-      "working_title": "Is SEO worth it for a small business in 2026?",
-      "angle": "Argue both sides properly. Worth it for local intent and for queries with commercial follow through. Much weaker than it was for informational content, because AI answers now absorb those clicks. The honest framing is that SEO became narrower and more valuable per page rather than dying.",
-      "audience": "SME owners deciding where to put budget",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "SEO",
-        "Strategy",
-        "India"
-      ],
-      "_search_shaped": true
-    },
-    {
-      "id": "b-094",
-      "slot": "evening",
-      "market": "India",
-      "primary_keyword": "do i need a website if i have instagram",
-      "secondary_keywords": [
-        "website vs social media business",
-        "is a website necessary",
-        "instagram shop vs website"
-      ],
-      "working_title": "Do I need a website if my business is already on Instagram?",
-      "angle": "Opinion with a real answer. What you lose renting your storefront: no search visibility, no ownership of the audience, no way to be cited by AI assistants, algorithm risk. Be fair about the cases where Instagram alone genuinely is enough for a while.",
-      "audience": "Small businesses and creators selling on social",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Strategy",
-        "Social Media",
-        "India"
-      ],
-      "_search_shaped": true
-    },
-    {
-      "id": "b-096",
-      "slot": "morning",
-      "market": "Estonia",
-      "primary_keyword": "how to sell to nordic customers from estonia",
-      "secondary_keywords": [
-        "selling to finland from estonia",
-        "nordic market entry",
-        "b2b sales nordics"
-      ],
-      "working_title": "How do Estonian companies sell into Finland and Sweden?",
-      "angle": "Practical market entry. Nordic buying is consensus driven and allergic to pressure, so urgency sequences backfire. Cover LinkedIn as the primary channel, localising proof rather than copy, pricing presentation in euro versus krona, and the longer cycle to plan for.",
-      "audience": "Estonian B2B founders and sales leads",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "B2B",
-        "Estonia",
-        "Market Entry"
-      ],
-      "_search_shaped": true
-    },
-    {
-      "id": "b-097",
-      "slot": "evening",
-      "market": "Estonia",
-      "primary_keyword": "is google ads worth it in a small market",
-      "secondary_keywords": [
-        "google ads low search volume",
-        "advertising in estonia",
-        "smart bidding not enough data"
-      ],
-      "working_title": "Is Google Ads worth running in a market as small as Estonia?",
-      "angle": "Argue that the honest answer for many Estonian companies is no, not domestically, because smart bidding starves below a conversion threshold a 1.3 million person market rarely supplies. The version that works is EU or Nordic wide with language targeting. Give the volume threshold to check before committing.",
-      "audience": "Estonian marketers running paid acquisition",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Google Ads",
-        "Estonia",
-        "Strategy"
-      ],
-      "_search_shaped": true
-    },
-    {
-      "id": "b-001",
-      "slot": "morning",
-      "primary_keyword": "google business profile optimisation india",
-      "secondary_keywords": [
-        "how to rank on google maps india",
-        "gmb ranking tips india",
-        "google business profile categories"
-      ],
-      "working_title": "The Google Business Profile settings most Bengaluru businesses never touch",
-      "angle": "Walk through the specific fields that actually move map pack rank, in order. Categories, service list, description length, photo cadence, Q&A seeding, review velocity. Call out that proximity cannot be faked and that the fastest wins are the primary category and the service list, which almost nobody fills properly.",
-      "audience": "SME and local business owners",
-      "city": "Bengaluru",
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Local SEO",
-        "Google Business Profile",
-        "Bengaluru"
-      ],
-      "market": "India"
-    },
-    {
-      "id": "b-002",
-      "slot": "evening",
-      "primary_keyword": "digital marketing agency not delivering results",
-      "secondary_keywords": [
-        "how to fire a digital marketing agency",
-        "red flags digital marketing agency",
-        "digital marketing agency contract india"
-      ],
-      "working_title": "Your agency sends a lovely report every month. Here is how to tell if it means anything",
-      "angle": "Opinion piece on the monthly report theatre. Impressions and reach are not results. Give the reader four questions to ask on the next call that an agency doing real work can answer in a sentence and an agency coasting cannot. Be direct about the Rs 25,000 a month retainer that buys a PDF.",
-      "audience": "SME owners and in-house marketing managers",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Agency",
-        "Marketing Strategy",
-        "India"
-      ],
-      "market": "India"
-    },
-    {
-      "id": "b-003",
-      "slot": "morning",
-      "primary_keyword": "how to rank in chatgpt",
-      "secondary_keywords": [
-        "how to get cited by perplexity",
-        "ai search optimisation",
-        "generative engine optimisation"
-      ],
-      "working_title": "How to get your business quoted by ChatGPT instead of your competitor",
-      "angle": "Practical checklist. Serve static HTML, front load the answer in the first sentence of every section, add FAQ and Organization schema, unblock GPTBot and PerplexityBot, get mentioned on Justdial and IndiaMART and in local press because models weight corroboration. Include the exact robots.txt lines.",
-      "audience": "All",
-      "city": null,
-      "expertise_link": "/expertise/aiseo/",
-      "tags": [
-        "AI Search",
-        "SEO",
-        "ChatGPT"
-      ],
-      "market": "India"
-    },
-    {
-      "id": "b-004",
-      "slot": "evening",
-      "primary_keyword": "digital marketing consultant cost india",
-      "secondary_keywords": [
-        "digital marketing consultant charges in india",
-        "how much does digital marketing cost in india",
-        "digital marketing retainer pricing india"
-      ],
-      "working_title": "What digital marketing actually costs in India, with the numbers nobody puts in writing",
-      "angle": "Every page ranking for this hedges. Do the opposite. Give real ranges by engagement type, explain what changes the number, and explain why the Rs 8,000 a month offer is arithmetic that cannot work once you count the hours. Frame it as the conversation he has on every discovery call.",
-      "audience": "SME owners and startup founders",
-      "city": null,
-      "expertise_link": "/contact/",
-      "tags": [
-        "Pricing",
-        "Consulting",
-        "India"
-      ],
-      "market": "India"
-    },
-    {
-      "id": "b-005",
-      "slot": "morning",
-      "primary_keyword": "google ads not converting",
-      "secondary_keywords": [
-        "why are my google ads not working",
-        "google ads audit checklist",
-        "negative keywords list"
-      ],
-      "working_title": "Six places your Google Ads budget leaks, and the report that shows you each one",
-      "angle": "Tactical. Search terms report first, then Performance Max cannibalising brand, then conversion actions counting the wrong thing, then geo settings including presence-or-interest, then ad schedule, then the landing page asking for too much. Give the exact click path for each check.",
-      "audience": "In-house marketing managers and SME owners",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Google Ads",
-        "Performance Marketing",
-        "PPC"
-      ],
-      "market": "India"
-    },
-    {
-      "id": "b-007",
-      "slot": "morning",
-      "primary_keyword": "local seo for clinics india",
-      "secondary_keywords": [
-        "local seo for dentists india",
-        "how to get more google reviews",
-        "practo vs google business profile"
-      ],
-      "working_title": "How a clinic in Indiranagar gets found before the one two streets away",
-      "angle": "Practical local SEO for healthcare. Category selection, doctor pages with real credentials, review requests that do not break Google's rules, Practo and Justdial consistency, appointment booking friction. Note the compliance line around health claims in India.",
-      "audience": "SME and local business owners",
-      "city": "Bengaluru",
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Local SEO",
-        "Healthcare",
-        "Bengaluru"
-      ],
-      "market": "India"
-    },
-    {
-      "id": "b-009",
-      "slot": "morning",
-      "primary_keyword": "how to do an seo audit yourself",
-      "secondary_keywords": [
-        "technical seo audit checklist",
-        "seo audit tools free",
-        "google search console for beginners"
-      ],
-      "working_title": "A two hour SEO audit you can run yourself before you pay anyone",
-      "angle": "Step by step with only free tools. Search Console coverage report, a site: search, PageSpeed on mobile, a crawl of the top twenty pages, title and H1 check, internal link check. Tell them exactly what a bad result looks like at each step. Ends with the honest line about when to stop and get help.",
-      "audience": "SME owners and in-house marketing managers",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "SEO",
-        "Technical SEO",
-        "Audit"
-      ],
-      "market": "US"
-    },
-    {
       "id": "b-010",
       "slot": "evening",
       "primary_keyword": "b2b lead generation strategies 2026",
@@ -386,69 +19,6 @@
         "Lead Generation",
         "B2B",
         "LinkedIn"
-      ],
-      "market": "India"
-    },
-    {
-      "id": "b-011",
-      "slot": "morning",
-      "primary_keyword": "how to choose a digital marketing agency",
-      "secondary_keywords": [
-        "questions to ask a digital marketing agency",
-        "digital marketing agency vs freelancer",
-        "should i hire a freelancer or an agency"
-      ],
-      "working_title": "Eleven questions that separate a real marketing partner from a good salesperson",
-      "angle": "The questions, with the answer to listen for and the answer that should end the meeting. Include who actually does the work, what happens to the accounts if we part ways, and what would make you tell me not to hire you. Cover the freelancer versus agency call honestly, including when an agency genuinely is the right answer.",
-      "audience": "SME owners and in-house marketing managers",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Agency",
-        "Consulting",
-        "Hiring"
-      ],
-      "market": "US"
-    },
-    {
-      "id": "b-012",
-      "slot": "evening",
-      "primary_keyword": "does google penalise ai content",
-      "secondary_keywords": [
-        "ai generated content google penalty",
-        "how to make ai content sound human",
-        "eeat explained"
-      ],
-      "working_title": "Google does not hate AI content. It hates what most people do with it",
-      "angle": "Contrarian but accurate. The policy is about helpfulness, not production method. Then the real problem: everyone prompts the same model with the same brief and publishes the same article, so nothing is differentiated and nothing gets cited. Argue that the moat is first hand experience and specific numbers.",
-      "audience": "In-house marketing managers and content teams",
-      "city": null,
-      "expertise_link": "/expertise/content-marketing/",
-      "tags": [
-        "Content Marketing",
-        "AI",
-        "SEO"
-      ],
-      "market": "US"
-    },
-    {
-      "id": "b-013",
-      "slot": "morning",
-      "primary_keyword": "whatsapp marketing india",
-      "secondary_keywords": [
-        "whatsapp business api cost india",
-        "whatsapp marketing rules india",
-        "whatsapp broadcast vs status"
-      ],
-      "working_title": "WhatsApp is where your leads actually reply. Set it up properly",
-      "angle": "Practical. Business app versus API and when the jump is worth it, template message approval, opt in rules, what gets you reported and blocked, the broadcast list mistake, and connecting it to the website so the lead lands somewhere you can measure.",
-      "audience": "SME and local business owners",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "WhatsApp",
-        "Lead Generation",
-        "India"
       ],
       "market": "India"
     },
@@ -495,27 +65,6 @@
       "market": "India"
     },
     {
-      "id": "b-017",
-      "slot": "morning",
-      "primary_keyword": "cold email deliverability",
-      "secondary_keywords": [
-        "spf dkim dmarc setup",
-        "gmail spam folder fix",
-        "email warm up tools"
-      ],
-      "working_title": "Your cold emails are landing in spam. Fix these five things first",
-      "angle": "Technical and practical. Separate sending domain, SPF DKIM DMARC set correctly, warm up before volume, sending limits per inbox per day, and the copy patterns that trigger filters. Give the exact DNS records.",
-      "audience": "B2B and SaaS companies",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Cold Email",
-        "Deliverability",
-        "B2B"
-      ],
-      "market": "US"
-    },
-    {
       "id": "b-018",
       "slot": "evening",
       "primary_keyword": "marketing budget for small business india",
@@ -535,27 +84,6 @@
         "Small Business"
       ],
       "market": "India"
-    },
-    {
-      "id": "b-019",
-      "slot": "morning",
-      "primary_keyword": "schema markup for local business",
-      "secondary_keywords": [
-        "faq schema how to add",
-        "structured data for service business",
-        "organization schema"
-      ],
-      "working_title": "The structured data that makes Google and ChatGPT understand what you sell",
-      "angle": "Practical with real code blocks. LocalBusiness or ProfessionalService, Service, FAQPage, Person for the consultant. Explain that schema must match the visible copy or it does nothing, and show how to validate.",
-      "audience": "In-house marketing managers and developers",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Technical SEO",
-        "Schema",
-        "AI Search"
-      ],
-      "market": "US"
     },
     {
       "id": "b-020",
@@ -705,27 +233,6 @@
       "market": "India"
     },
     {
-      "id": "b-028",
-      "slot": "evening",
-      "primary_keyword": "vanity metrics vs revenue metrics",
-      "secondary_keywords": [
-        "what marketing metrics actually matter",
-        "marketing dashboard for small business",
-        "how to report on marketing"
-      ],
-      "working_title": "Four numbers that tell you if marketing is working. The rest is decoration",
-      "angle": "Opinion. Cost per qualified lead, lead to customer rate, payback period, and share of revenue from each channel. Explain why reach and impressions and engagement rate survive in reports, which is that they are always going up.",
-      "audience": "SME owners and in-house marketing managers",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Analytics",
-        "Reporting",
-        "Strategy"
-      ],
-      "market": "US"
-    },
-    {
       "id": "b-029",
       "slot": "morning",
       "primary_keyword": "local seo for real estate agents india",
@@ -768,27 +275,6 @@
       "market": "India"
     },
     {
-      "id": "b-032",
-      "slot": "evening",
-      "primary_keyword": "google algorithm update recovery",
-      "secondary_keywords": [
-        "helpful content update recovery",
-        "traffic dropped after redesign",
-        "manual action penalty fix"
-      ],
-      "working_title": "Traffic fell off a cliff. Work out which of the four causes it was before you touch anything",
-      "angle": "Diagnostic and calm. Algorithm update, technical breakage, seasonality, or tracking failure. Give the exact way to tell them apart using Search Console date comparisons. Argue against panic rewriting, which is what most people do and it makes things worse.",
-      "audience": "In-house marketing managers",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "SEO",
-        "Recovery",
-        "Analytics"
-      ],
-      "market": "US"
-    },
-    {
       "id": "b-033",
       "slot": "morning",
       "primary_keyword": "linkedin content strategy b2b india",
@@ -808,27 +294,6 @@
         "Social Media"
       ],
       "market": "India"
-    },
-    {
-      "id": "b-034",
-      "slot": "evening",
-      "primary_keyword": "sales training for founders",
-      "secondary_keywords": [
-        "how to sell without discounting",
-        "objection handling script",
-        "pricing your services as a consultant"
-      ],
-      "working_title": "Discounting is not a sales strategy. It is a positioning problem wearing a disguise",
-      "angle": "Opinion drawing on the sales training service. Why the price objection is usually a value clarity problem, the four objections that actually mean no, and how to hold a price without being rigid. Include a real reframe script.",
-      "audience": "Startup founders and SME owners",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "Sales",
-        "Training",
-        "Pricing"
-      ],
-      "market": "US"
     },
     {
       "id": "b-035",
@@ -892,27 +357,6 @@
         "B2B"
       ],
       "market": "India"
-    },
-    {
-      "id": "b-038",
-      "slot": "evening",
-      "primary_keyword": "website redesign seo checklist",
-      "secondary_keywords": [
-        "migrating website without losing traffic",
-        "site migration checklist",
-        "traffic dropped after redesign"
-      ],
-      "working_title": "The redesign that cost a company half its traffic, and the checklist that would have saved it",
-      "angle": "Cautionary and practical. Redirect mapping, keeping URLs, preserving content depth, staging site indexed by accident, and losing schema in the rebuild. Frame around a composite scenario without naming a client.",
-      "audience": "In-house marketing managers",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "SEO",
-        "Migration",
-        "Technical SEO"
-      ],
-      "market": "US"
     },
     {
       "id": "b-040",
@@ -1608,27 +1052,6 @@
       ]
     },
     {
-      "id": "b-079",
-      "slot": "evening",
-      "market": "Estonia",
-      "primary_keyword": "estonian startup marketing",
-      "secondary_keywords": [
-        "product led growth estonia",
-        "distribution vs product",
-        "startup go to market estonia"
-      ],
-      "working_title": "Estonia builds excellent products and keeps losing to worse ones with better distribution",
-      "angle": "Opinion. The engineering culture here is genuinely strong, which creates a blind spot: teams believe a better product wins on merit and treat marketing as something to do after the build. Argue that distribution is the product decision most teams defer until it is expensive. Use the fact that the famous exits all invested in go to market early. Avoid naming any company as a failure, criticise the pattern instead.",
-      "audience": "Estonian startup founders",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Startups",
-        "Estonia",
-        "Marketing Strategy"
-      ]
-    },
-    {
       "id": "b-082",
       "slot": "evening",
       "market": "Estonia",
@@ -1690,6 +1113,258 @@
         "Estonia",
         "Marketing Strategy"
       ]
+    },
+    {
+      "id": "b-098",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "shopify seo checklist",
+      "secondary_keywords": [
+        "shopify seo settings",
+        "ecommerce product page seo",
+        "shopify collection pages"
+      ],
+      "working_title": "What actually needs fixing in Shopify SEO",
+      "angle": "Practical, Shopify specific. The platform's own constraints are the story: duplicate product URLs under /collections/, thin collection pages, the theme's default title templates, and faceted navigation generating crawl waste. Argue that product and collection pages are the money pages and most stores put all their effort into the blog instead. Give the settings path for each fix and say plainly which of the popular SEO apps solve a real problem and which sell a report.",
+      "audience": "Shopify store owners and ecommerce managers",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Ecommerce",
+        "SEO",
+        "Shopify"
+      ]
+    },
+    {
+      "id": "b-099",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "ga4 attribution problems",
+      "secondary_keywords": [
+        "ga4 vs google ads conversions",
+        "why do my numbers not match",
+        "data driven attribution"
+      ],
+      "working_title": "Why GA4 and Google Ads report different numbers",
+      "angle": "Practical reconciliation. Explain the four real causes: different attribution models, different conversion windows, modelled and consent gap conversions, and session versus event based counting. Then the rule that matters, which is that you pick one source per decision rather than trying to make them agree. Give the three reports to compare and the decision each one is allowed to drive. Be clear that a permanent gap is normal and only a widening gap is a signal.",
+      "audience": "In-house marketing managers",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Analytics",
+        "GA4",
+        "Measurement"
+      ]
+    },
+    {
+      "id": "b-100",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "klaviyo email flows that make money",
+      "secondary_keywords": [
+        "ecommerce email automation",
+        "abandoned cart flow",
+        "welcome series email"
+      ],
+      "working_title": "The four email flows that produce most flow revenue",
+      "angle": "Practical and specific. Welcome, browse abandonment, checkout abandonment and post purchase carry nearly all automated revenue for most stores. For each: what the emails should say, the timing, and the single metric that tells you it is working. Then the deliverability floor underneath all of it, since a beautifully built flow landing in the promotions tab earns nothing. Tie back to the domain authentication work in the cold email posts rather than repeating it.",
+      "audience": "Ecommerce and D2C marketers",
+      "city": null,
+      "expertise_link": "/expertise/content-marketing/",
+      "tags": [
+        "Email Marketing",
+        "Ecommerce",
+        "Automation"
+      ]
+    },
+    {
+      "id": "b-101",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "home services marketing",
+      "secondary_keywords": [
+        "how to get more customers home services",
+        "contractor marketing plan",
+        "hvac plumbing marketing"
+      ],
+      "working_title": "The order to build marketing for a trade business",
+      "angle": "A sequencing post that ties the existing home services pieces together rather than repeating them. The order: answer the phone, Google Business Profile and reviews, Local Services Ads, then Search, then marketplaces only as a bridge. Argue that speed to lead is the through line and the only thing that makes any of the paid channels work. Link out to the LSA, Angi and review posts for the detail and keep this one about the decision sequence.",
+      "audience": "Home service and trade business owners",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Home Services",
+        "Lead Generation",
+        "Local SEO"
+      ]
+    },
+    {
+      "id": "b-102",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "dental practice marketing",
+      "secondary_keywords": [
+        "how to get more dental patients",
+        "dental seo",
+        "new patient acquisition dentist"
+      ],
+      "working_title": "What actually brings new patients into a dental practice",
+      "angle": "US dental specifics. The insurance versus fee for service split changes the whole approach, because one competes on being in network and the other on being worth paying for. Cover the value of a new patient over the first year and what that permits you to spend, the high value procedures worth targeting separately, and the HIPAA constraints on retargeting and on replying to reviews, which catch practices out. Not legal or medical advice, tell them to check with their own counsel.",
+      "audience": "Dental practice owners and office managers",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Healthcare",
+        "Local SEO",
+        "Lead Generation"
+      ]
+    },
+    {
+      "id": "b-103",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "law firm marketing",
+      "secondary_keywords": [
+        "law firm seo",
+        "attorney ppc cost",
+        "legal intake conversion"
+      ],
+      "working_title": "Why law firm marketing fails at intake rather than at the ad",
+      "angle": "Practical, and the argument is that lead volume is almost never the constraint. Legal is among the most expensive categories in paid search, commonly quoted near ten dollars a click and well over a hundred a lead, so a firm that loses half its enquiries to slow intake is wasting the most expensive traffic on the internet. Cover state bar advertising rules as a real constraint on claims and testimonials, then the intake fixes. Not legal advice, check the rules in your own state.",
+      "audience": "Law firm partners and marketing managers",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Legal",
+        "PPC",
+        "Lead Generation"
+      ]
+    },
+    {
+      "id": "b-104",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "marketing agency red flags",
+      "secondary_keywords": [
+        "how to fire a marketing agency",
+        "agency not delivering results",
+        "agency contract terms"
+      ],
+      "working_title": "The agency warning signs that look like professionalism",
+      "angle": "Opinion, and deliberately narrower than the existing agency posts so it does not repeat them. Focus only on the signals visible before you sign and inside the first sixty days, specifically the ones that read as competence: the polished plan produced before any access to your data, the report that only ever contains good news, the account opened in the agency's own name, and the proposal that answers a question you did not ask. Criticise practices and structures, never a named firm.",
+      "audience": "Founders and marketing managers",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Agency",
+        "Hiring",
+        "Strategy"
+      ]
+    },
+    {
+      "id": "b-105",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "hubspot vs salesforce for small business",
+      "secondary_keywords": [
+        "crm for small business",
+        "hubspot vs salesforce pricing",
+        "which crm should i use"
+      ],
+      "working_title": "Which CRM should a small business actually choose",
+      "angle": "Comparison, and be scrupulously fair to both since the playbook forbids rubbishing named companies. State the ranking basis in the post. The real argument is that the feature comparison is the wrong axis: most small companies buy a system nobody in the building can administer, and the deciding question is who maintains it on a Tuesday afternoon. Cover what each is genuinely strong at, the cost that arrives later rather than at signature, and when the honest answer is a spreadsheet for another year.",
+      "audience": "Founders and operations leads",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "CRM",
+        "Sales",
+        "Tools"
+      ]
+    },
+    {
+      "id": "b-106",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "b2b saas demand generation",
+      "secondary_keywords": [
+        "pipeline sourced vs influenced",
+        "demand gen vs lead gen",
+        "buying group marketing"
+      ],
+      "working_title": "Most demand generation is demand capture with a new name",
+      "angle": "Analysis with a clear position. Genuine demand creation makes somebody want a category they were not shopping for. Nearly everything sold as demand generation is capture: bidding on existing intent and taking credit for it. Argue that the distinction decides your whole measurement approach, because capture is attributable and creation is not, and teams keep killing creation work for failing an attribution test it was never going to pass. Use the buying group and pipeline sourced shift as the evidence.",
+      "audience": "B2B SaaS marketing leads",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "B2B",
+        "Demand Generation",
+        "SaaS"
+      ]
+    },
+    {
+      "id": "b-107",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "remote marketing consultant vs local agency los angeles",
+      "secondary_keywords": [
+        "hiring a remote marketing consultant",
+        "local agency vs freelancer los angeles"
+      ],
+      "working_title": "Does a Los Angeles business need a Los Angeles agency?",
+      "angle": "Opinion, built entirely on what makes LA different. The metro sprawls across 88 separate cities, so being physically nearby tells you nothing about knowing your customers, and proximity is close to a worthless signal here. The two things a genuinely local partner does provide are Spanish language creative that is written rather than translated, and knowing which of those 88 cities your buyers actually live in, which is a radius targeting skill. Everything else travels fine over a video call.",
+      "audience": "Los Angeles County business owners",
+      "city": "Los Angeles County",
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Hiring",
+        "Agency",
+        "Los Angeles"
+      ],
+      "_local_specifics": "Entertainment and DTC ecommerce dominate. Enormous Spanish speaking market, so English-only campaigns leave money on the table. The metro sprawls across 88 cities, which makes proximity a weak signal and radius targeting a real skill."
+    },
+    {
+      "id": "b-108",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "remote marketing consultant vs local agency manhattan",
+      "secondary_keywords": [
+        "hiring a remote marketing consultant",
+        "local agency vs freelancer new york"
+      ],
+      "working_title": "In Manhattan the question is not local or remote, it is agency at all",
+      "angle": "Opinion specific to New York County, where roughly 130,000 people work in marketing and advertising and most serious buyers already have in-house teams. So the real decision is not which agency but whether you need one rather than one more senior hire, and Manhattan salary levels change that arithmetic in a way they do not elsewhere. Argue that the genuine opening for outside help here is filling a named specialist gap rather than full service, and that local price anchoring is the highest in the country.",
+      "audience": "New York County marketing leads",
+      "city": "New York County",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Hiring",
+        "Agency",
+        "New York"
+      ],
+      "_local_specifics": "Roughly 130,000 marketing and advertising employees, the largest concentration in the country. Most serious buyers have in-house teams, so the opening is specialist gap-filling, not full service. Price anchoring is the highest in the US."
+    },
+    {
+      "id": "b-109",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "remote marketing consultant vs local agency san jose",
+      "secondary_keywords": [
+        "hiring a remote marketing consultant",
+        "local agency vs freelancer san jose"
+      ],
+      "working_title": "Hiring marketing help when your buyers will audit the method",
+      "angle": "Opinion for Santa Clara County, where product led growth is the default assumption and a lot of companies are structurally sceptical of agencies for reasons that are partly earned. Argue that the winnable outside work here is measurement, technical SEO and attribution rather than campaign execution, and that anybody selling into this county has to survive a technical buyer reading their methodology rather than their case studies. Location is irrelevant. Withstanding scrutiny is not.",
+      "audience": "Santa Clara County founders and marketing leads",
+      "city": "Santa Clara County",
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Hiring",
+        "Agency",
+        "Bay Area"
+      ],
+      "_local_specifics": "Product-led growth is the default assumption and many companies are structurally sceptical of agencies. The winnable work is measurement, technical SEO and attribution rather than campaign execution."
     }
   ]
 }
