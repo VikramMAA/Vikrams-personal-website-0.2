@@ -800,27 +800,6 @@
       ]
     },
     {
-      "id": "b-068",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "ai sdr tools",
-      "secondary_keywords": [
-        "ai outbound email",
-        "is cold email dead",
-        "ai personalisation outbound"
-      ],
-      "working_title": "Everyone bought an AI SDR and the inbox got worse for all of us",
-      "angle": "Opinion piece on outbound saturation. AI made it trivial to send personalised looking email at volume, which destroyed the signal that personalisation used to carry, and reply rates fell for everyone including the people who were doing it properly. Argue the winners now go the other way: fewer, genuinely researched, harder to fake touches. Rubbish the practice and not the vendors. End on what actually still gets replies.",
-      "audience": "B2B founders and sales leaders",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Outbound",
-        "AI",
-        "B2B"
-      ]
-    },
-    {
       "id": "b-069",
       "slot": "evening",
       "market": "US",

@@ -782,6 +782,23 @@
       "opening_pattern": "tells the reader to stop and send themselves a real lead from mobile data, then explains why both conditions of the test matter",
       "word_count": 1265,
       "market": "India"
+    },
+    {
+      "brief_id": "b-068",
+      "slug": "ai-sdr-tools",
+      "title": "Do AI SDR tools actually work?",
+      "primary_keyword": "ai sdr tools",
+      "city": null,
+      "tags": [
+        "Outbound",
+        "AI",
+        "B2B"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-11",
+      "opening_pattern": "explains personalisation as a costly signal, so the cost going to zero is what emptied it of meaning",
+      "word_count": 1271,
+      "market": "US"
     }
   ]
 }
