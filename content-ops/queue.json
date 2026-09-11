@@ -128,27 +128,6 @@
       "market": "India"
     },
     {
-      "id": "b-023",
-      "slot": "morning",
-      "primary_keyword": "ga4 conversions not tracking",
-      "secondary_keywords": [
-        "ga4 setup for small business",
-        "google tag manager setup",
-        "utm parameters best practice"
-      ],
-      "working_title": "Your analytics is lying to you. Here is how to check in twenty minutes",
-      "angle": "Practical debugging. Conversion events firing on page load, duplicate tags, self referrals, missing UTMs on paid social, and the WhatsApp click that never gets counted. Tell them exactly what to click.",
-      "audience": "In-house marketing managers",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Analytics",
-        "GA4",
-        "Tracking"
-      ],
-      "market": "India"
-    },
-    {
       "id": "b-024",
       "slot": "evening",
       "primary_keyword": "seo consultant mumbai",
