@@ -869,6 +869,24 @@
       "word_count": 1277,
       "market": "US",
       "_note": "brief b-069's own angle was already covered by how-to-get-more-google-reviews, so this answers the competitor question instead"
+    },
+    {
+      "brief_id": "b-066",
+      "slug": "google-ads-minimum-budget",
+      "title": "How much should I spend on Google Ads to make it work?",
+      "primary_keyword": "google ads minimum budget",
+      "city": null,
+      "tags": [
+        "Google Ads",
+        "Budgeting",
+        "Performance Marketing"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-14",
+      "opening_pattern": "states the two budgets that produce identical outcomes, one of which the reader is paying for",
+      "word_count": 1278,
+      "market": "US",
+      "_note": "brief b-066 asked for the backwards LTV calculation, which is the published India budget post and the US max affordable click post; written as the floor calculation instead, and framed as the pair to the ceiling"
     }
   ]
 }

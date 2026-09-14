@@ -737,27 +737,6 @@
       ]
     },
     {
-      "id": "b-066",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "how much should i spend on google ads",
-      "secondary_keywords": [
-        "google ads budget small business",
-        "cost per lead by industry",
-        "google ads minimum budget"
-      ],
-      "working_title": "Work out your Google Ads budget from your close rate, not from what you can spare",
-      "angle": "Practical arithmetic. Start from lifetime value and close rate, work backwards to an allowable cost per lead, then to a daily budget that can actually gather enough conversions for smart bidding to learn. Explain the learning threshold problem, why a budget too small to produce conversions weekly is money set on fire, and the honest answer that some markets are too expensive to enter at the budget available. Include the full calculation in dollars.",
-      "audience": "SMB owners and in-house marketers",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Google Ads",
-        "Budgeting",
-        "Performance Marketing"
-      ]
-    },
-    {
       "id": "b-070",
       "slot": "evening",
       "market": "US",
