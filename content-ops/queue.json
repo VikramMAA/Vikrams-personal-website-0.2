@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-010",
-      "slot": "evening",
-      "primary_keyword": "b2b lead generation strategies 2026",
-      "secondary_keywords": [
-        "linkedin outreach that does not feel spammy",
-        "cold email vs linkedin outreach",
-        "lead follow up speed"
-      ],
-      "working_title": "Why your B2B leads go cold in the first hour, and what the good teams do differently",
-      "angle": "Opinion backed by the follow up speed data. An hour one follow up converts far better than a day later, and most Indian B2B teams reply next morning. Cover the multi touch stack of email plus LinkedIn plus phone, and be blunt that Indian buyers want peer validation before a call.",
-      "audience": "B2B and SaaS companies",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Lead Generation",
-        "B2B",
-        "LinkedIn"
-      ],
-      "market": "India"
-    },
-    {
       "id": "b-016",
       "slot": "evening",
       "primary_keyword": "d2c marketing india",
@@ -296,48 +275,6 @@
       "market": "India"
     },
     {
-      "id": "b-037",
-      "slot": "morning",
-      "primary_keyword": "digital marketing consultant hyderabad",
-      "secondary_keywords": [
-        "seo consultant hyderabad",
-        "digital marketing hitec city",
-        "marketing for saas hyderabad"
-      ],
-      "working_title": "Hyderabad's SaaS and services companies are competing for the wrong searches",
-      "angle": "City specific. Gachibowli and Hitec City are full of B2B companies chasing generic head terms while the buying queries sit untouched. Show the difference with real query examples and explain the pipeline maths that follows.",
-      "audience": "B2B and SaaS companies",
-      "city": "Hyderabad",
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "SEO",
-        "Hyderabad",
-        "B2B"
-      ],
-      "market": "India"
-    },
-    {
-      "id": "b-040",
-      "slot": "evening",
-      "primary_keyword": "digital marketing consultant delhi",
-      "secondary_keywords": [
-        "seo consultant delhi ncr",
-        "digital marketing consultant gurgaon",
-        "digital marketing consultant noida"
-      ],
-      "working_title": "Delhi NCR is three markets pretending to be one, and your targeting knows it",
-      "angle": "City specific analysis. Gurgaon corporate buyers, Noida services and IT, Delhi trade and retail all search differently and convert differently. Argue against a single NCR campaign and show how to split it.",
-      "audience": "B2B companies and SME owners",
-      "city": "Delhi NCR",
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Delhi NCR",
-        "Targeting",
-        "Strategy"
-      ],
-      "market": "India"
-    },
-    {
       "id": "b-041",
       "slot": "morning",
       "primary_keyword": "keyword research for indian businesses",
@@ -355,27 +292,6 @@
         "Keyword Research",
         "SEO",
         "Process"
-      ],
-      "market": "India"
-    },
-    {
-      "id": "b-042",
-      "slot": "evening",
-      "primary_keyword": "digital marketing consultant chennai",
-      "secondary_keywords": [
-        "seo consultant chennai",
-        "digital marketing omr chennai",
-        "manufacturing marketing india"
-      ],
-      "working_title": "Chennai's manufacturers are invisible online, and their buyers are searching anyway",
-      "angle": "City and sector specific. Manufacturing and auto ancillary firms rely on relationships and IndiaMART while procurement teams search technical specifications. Show the query types and what a product or capability page needs to contain.",
-      "audience": "B2B companies and manufacturers",
-      "city": "Chennai",
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Chennai",
-        "Manufacturing",
-        "B2B"
       ],
       "market": "India"
     },
@@ -401,27 +317,6 @@
       "market": "India"
     },
     {
-      "id": "b-046",
-      "slot": "evening",
-      "primary_keyword": "digital marketing consultant pune",
-      "secondary_keywords": [
-        "seo consultant pune",
-        "digital marketing kharadi",
-        "startup marketing pune"
-      ],
-      "working_title": "Pune companies keep hiring agencies from Mumbai. It rarely goes well",
-      "angle": "City specific opinion. Pune's mix of IT services, manufacturing and education needs different marketing from Mumbai's consumer heavy market, and the imported playbook fails. Say what to look for locally instead.",
-      "audience": "SME owners and B2B companies",
-      "city": "Pune",
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Pune",
-        "Agency",
-        "Strategy"
-      ],
-      "market": "India"
-    },
-    {
       "id": "b-047",
       "slot": "morning",
       "primary_keyword": "google ads for small business india",
@@ -440,7 +335,8 @@
         "Small Business",
         "PPC"
       ],
-      "market": "India"
+      "market": "India",
+      "_overlap_warning": "close to published is-google-ads-worth-it-for-small-business, which is US market. An India version is viable only if it leads on rupee CPCs and Indian categories and does not restate google-ads-vs-meta-ads or digital-marketing-budget-small-business-india."
     },
     {
       "id": "b-049",
@@ -502,27 +398,6 @@
         "Local SEO",
         "Citations",
         "India"
-      ],
-      "market": "India"
-    },
-    {
-      "id": "b-052",
-      "slot": "evening",
-      "primary_keyword": "digital marketing consultant kolkata",
-      "secondary_keywords": [
-        "digital marketing consultant ahmedabad",
-        "seo for traders india",
-        "marketing for family business india"
-      ],
-      "working_title": "Family businesses in Kolkata and Ahmedabad are sitting on demand they never see",
-      "angle": "City specific and respectful. Decades of relationship led trade, now a generation of buyers who search first. What the transition looks like, what to do first, and why the answer is not a rebrand.",
-      "audience": "SME owners",
-      "city": "Kolkata",
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Kolkata",
-        "Ahmedabad",
-        "Small Business"
       ],
       "market": "India"
     },
@@ -818,27 +693,6 @@
         "International SEO",
         "Estonia",
         "SEO"
-      ]
-    },
-    {
-      "id": "b-076",
-      "slot": "morning",
-      "market": "Estonia",
-      "primary_keyword": "google ads small market estonia",
-      "secondary_keywords": [
-        "google ads low search volume",
-        "advertising in a small country",
-        "eu wide google ads campaign"
-      ],
-      "working_title": "There is not enough search volume in Estonia to run the campaign you planned",
-      "angle": "Practical. Smart bidding needs a conversion volume that a 1.3 million person market often cannot supply, so campaigns sit in learning forever. Cover consolidating campaigns rather than splitting them, running EU wide or Nordic wide with language targeting instead of country by country, using broader match with tight negatives because exact match starves, and when to accept manual bidding. Give the volume threshold to check before choosing a bid strategy.",
-      "audience": "Estonian marketers running paid acquisition",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Google Ads",
-        "Estonia",
-        "Performance Marketing"
       ]
     },
     {
@@ -1197,6 +1051,146 @@
         "Bay Area"
       ],
       "_local_specifics": "Product-led growth is the default assumption and many companies are structurally sceptical of agencies. The winnable work is measurement, technical SEO and attribution rather than campaign execution."
+    }
+  ],
+  "retired": [
+    {
+      "id": "b-037",
+      "slot": "morning",
+      "primary_keyword": "digital marketing consultant hyderabad",
+      "secondary_keywords": [
+        "seo consultant hyderabad",
+        "digital marketing hitec city",
+        "marketing for saas hyderabad"
+      ],
+      "working_title": "Hyderabad's SaaS and services companies are competing for the wrong searches",
+      "angle": "City specific. Gachibowli and Hitec City are full of B2B companies chasing generic head terms while the buying queries sit untouched. Show the difference with real query examples and explain the pipeline maths that follows.",
+      "audience": "B2B and SaaS companies",
+      "city": "Hyderabad",
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "SEO",
+        "Hyderabad",
+        "B2B"
+      ],
+      "market": "India",
+      "_retired_reason": "one of five 'digital marketing consultant <city>' variants; templated series against published digital-marketing-consultant-cost-india",
+      "_retired_on": "2026-09-14"
+    },
+    {
+      "id": "b-040",
+      "slot": "evening",
+      "primary_keyword": "digital marketing consultant delhi",
+      "secondary_keywords": [
+        "seo consultant delhi ncr",
+        "digital marketing consultant gurgaon",
+        "digital marketing consultant noida"
+      ],
+      "working_title": "Delhi NCR is three markets pretending to be one, and your targeting knows it",
+      "angle": "City specific analysis. Gurgaon corporate buyers, Noida services and IT, Delhi trade and retail all search differently and convert differently. Argue against a single NCR campaign and show how to split it.",
+      "audience": "B2B companies and SME owners",
+      "city": "Delhi NCR",
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Delhi NCR",
+        "Targeting",
+        "Strategy"
+      ],
+      "market": "India",
+      "_retired_reason": "one of five 'digital marketing consultant <city>' variants; templated series against published digital-marketing-consultant-cost-india",
+      "_retired_on": "2026-09-14"
+    },
+    {
+      "id": "b-042",
+      "slot": "evening",
+      "primary_keyword": "digital marketing consultant chennai",
+      "secondary_keywords": [
+        "seo consultant chennai",
+        "digital marketing omr chennai",
+        "manufacturing marketing india"
+      ],
+      "working_title": "Chennai's manufacturers are invisible online, and their buyers are searching anyway",
+      "angle": "City and sector specific. Manufacturing and auto ancillary firms rely on relationships and IndiaMART while procurement teams search technical specifications. Show the query types and what a product or capability page needs to contain.",
+      "audience": "B2B companies and manufacturers",
+      "city": "Chennai",
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Chennai",
+        "Manufacturing",
+        "B2B"
+      ],
+      "market": "India",
+      "_retired_reason": "one of five 'digital marketing consultant <city>' variants; templated series against published digital-marketing-consultant-cost-india",
+      "_retired_on": "2026-09-14"
+    },
+    {
+      "id": "b-046",
+      "slot": "evening",
+      "primary_keyword": "digital marketing consultant pune",
+      "secondary_keywords": [
+        "seo consultant pune",
+        "digital marketing kharadi",
+        "startup marketing pune"
+      ],
+      "working_title": "Pune companies keep hiring agencies from Mumbai. It rarely goes well",
+      "angle": "City specific opinion. Pune's mix of IT services, manufacturing and education needs different marketing from Mumbai's consumer heavy market, and the imported playbook fails. Say what to look for locally instead.",
+      "audience": "SME owners and B2B companies",
+      "city": "Pune",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Pune",
+        "Agency",
+        "Strategy"
+      ],
+      "market": "India",
+      "_retired_reason": "one of five 'digital marketing consultant <city>' variants; templated series against published digital-marketing-consultant-cost-india",
+      "_retired_on": "2026-09-14"
+    },
+    {
+      "id": "b-052",
+      "slot": "evening",
+      "primary_keyword": "digital marketing consultant kolkata",
+      "secondary_keywords": [
+        "digital marketing consultant ahmedabad",
+        "seo for traders india",
+        "marketing for family business india"
+      ],
+      "working_title": "Family businesses in Kolkata and Ahmedabad are sitting on demand they never see",
+      "angle": "City specific and respectful. Decades of relationship led trade, now a generation of buyers who search first. What the transition looks like, what to do first, and why the answer is not a rebrand.",
+      "audience": "SME owners",
+      "city": "Kolkata",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Kolkata",
+        "Ahmedabad",
+        "Small Business"
+      ],
+      "market": "India",
+      "_retired_reason": "one of five 'digital marketing consultant <city>' variants; templated series against published digital-marketing-consultant-cost-india",
+      "_retired_on": "2026-09-14"
+    },
+    {
+      "id": "b-076",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "google ads small market estonia",
+      "secondary_keywords": [
+        "google ads low search volume",
+        "advertising in a small country",
+        "eu wide google ads campaign"
+      ],
+      "working_title": "There is not enough search volume in Estonia to run the campaign you planned",
+      "angle": "Practical. Smart bidding needs a conversion volume that a 1.3 million person market often cannot supply, so campaigns sit in learning forever. Cover consolidating campaigns rather than splitting them, running EU wide or Nordic wide with language targeting instead of country by country, using broader match with tight negatives because exact match starves, and when to accept manual bidding. Give the volume threshold to check before choosing a bid strategy.",
+      "audience": "Estonian marketers running paid acquisition",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Google Ads",
+        "Estonia",
+        "Performance Marketing"
+      ],
+      "_retired_reason": "duplicate of published is-google-ads-worth-it-estonia, same market and same question",
+      "_retired_on": "2026-09-14"
     }
   ]
 }

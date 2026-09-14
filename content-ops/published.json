@@ -887,6 +887,23 @@
       "word_count": 1278,
       "market": "US",
       "_note": "brief b-066 asked for the backwards LTV calculation, which is the published India budget post and the US max affordable click post; written as the floor calculation instead, and framed as the pair to the ceiling"
+    },
+    {
+      "brief_id": "b-010",
+      "slug": "b2b-lead-follow-up-speed",
+      "title": "How fast do I need to follow up on a B2B lead?",
+      "primary_keyword": "b2b lead generation strategies 2026",
+      "city": null,
+      "tags": [
+        "Lead Generation",
+        "B2B",
+        "LinkedIn"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-14",
+      "opening_pattern": "reframes the diagnosis, that this is lead decay rather than lead generation, since latency is the only variable that changed",
+      "word_count": 1253,
+      "market": "India"
     }
   ]
 }
