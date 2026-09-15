@@ -360,27 +360,6 @@
       "market": "India"
     },
     {
-      "id": "b-050",
-      "slot": "evening",
-      "primary_keyword": "should i block gptbot",
-      "secondary_keywords": [
-        "llms txt file",
-        "ai visibility tracking tools",
-        "how to check if chatgpt mentions my brand"
-      ],
-      "working_title": "Blocking AI crawlers feels principled. It also makes you invisible",
-      "angle": "Opinion on a real decision. The case for blocking, the cost of blocking, and who each side actually suits. Then the practical part, which is how to check what assistants currently say about your brand and how to change it.",
-      "audience": "In-house marketing managers and B2B companies",
-      "city": null,
-      "expertise_link": "/expertise/aiseo/",
-      "tags": [
-        "AI Search",
-        "SEO",
-        "Strategy"
-      ],
-      "market": "US"
-    },
-    {
       "id": "b-051",
       "slot": "morning",
       "primary_keyword": "local citations india",
