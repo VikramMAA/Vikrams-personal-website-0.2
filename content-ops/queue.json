@@ -549,27 +549,6 @@
       "market": "India"
     },
     {
-      "id": "b-062",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "hipaa compliant marketing",
-      "secondary_keywords": [
-        "hipaa marketing rules",
-        "can i use google analytics on a medical website",
-        "hipaa compliant crm"
-      ],
-      "working_title": "The tracking pixel on your clinic website is probably a HIPAA problem",
-      "angle": "Practical and slightly alarming. Standard Meta pixel and GA4 on pages tied to appointments or conditions can transmit PHI, and OCR has been explicit about tracking technologies. Cover what counts as PHI in a marketing context, which pages are risky, server side tagging and BAAs, what a compliant conversion setup looks like, and the ad platforms that will not sign a BAA at all. Be clear this is not legal advice and tell them to involve their compliance person.",
-      "audience": "Clinic owners, dental and medical practice managers",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Healthcare",
-        "Compliance",
-        "Analytics"
-      ]
-    },
-    {
       "id": "b-064",
       "slot": "morning",
       "market": "US",
