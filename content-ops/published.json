@@ -955,6 +955,23 @@
       "opening_pattern": "runs the page load as a second by second sequence on a mid range phone, so the reader watches the click they paid for expire",
       "word_count": 1250,
       "market": "India"
+    },
+    {
+      "brief_id": "b-082",
+      "slug": "estonia-digital-nation-branding",
+      "title": "Does being an Estonian company help you sell?",
+      "primary_keyword": "estonia digital nation branding",
+      "city": null,
+      "tags": [
+        "Positioning",
+        "Estonia",
+        "Branding"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-16",
+      "opening_pattern": "hands the reader a swap test on their own headline, since a line that survives a competitor's name distinguishes nothing",
+      "word_count": 1255,
+      "market": "Estonia"
     }
   ]
 }
