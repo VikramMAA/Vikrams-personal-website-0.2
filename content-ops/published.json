@@ -938,6 +938,23 @@
       "opening_pattern": "states the exchange rate first, pages taken per visitor returned, so the decision reads as pricing rather than principle",
       "word_count": 1238,
       "market": "US"
+    },
+    {
+      "brief_id": "b-025",
+      "slug": "landing-page-optimisation",
+      "title": "Why is my landing page not converting?",
+      "primary_keyword": "landing page optimisation",
+      "city": null,
+      "tags": [
+        "CRO",
+        "Landing Pages",
+        "Conversion"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-16",
+      "opening_pattern": "runs the page load as a second by second sequence on a mid range phone, so the reader watches the click they paid for expire",
+      "word_count": 1250,
+      "market": "India"
     }
   ]
 }
