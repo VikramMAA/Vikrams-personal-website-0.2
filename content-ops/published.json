@@ -1007,6 +1007,23 @@
       "word_count": 1326,
       "market": "US",
       "_note": "Brief framed Reddit as the most quoted site on the internet. Kept the citation share but added the volatility counter-argument (ChatGPT Reddit citations 3.83% to 0.52% in four days, March 2026 core update), since that is the honest 2026 picture."
+    },
+    {
+      "brief_id": "b-033",
+      "slug": "linkedin-content-strategy-b2b-india",
+      "title": "What should a B2B founder in India post on LinkedIn?",
+      "primary_keyword": "linkedin content strategy b2b india",
+      "city": null,
+      "tags": [
+        "LinkedIn",
+        "B2B",
+        "Social Media"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-18",
+      "opening_pattern": "sets two results from the same week side by side, the 40,000 impression post that produced nothing against the eleven like comment that produced a customer",
+      "word_count": 1313,
+      "market": "India"
     }
   ]
 }
