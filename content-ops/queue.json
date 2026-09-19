@@ -633,27 +633,6 @@
       ]
     },
     {
-      "id": "b-098",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "shopify seo checklist",
-      "secondary_keywords": [
-        "shopify seo settings",
-        "ecommerce product page seo",
-        "shopify collection pages"
-      ],
-      "working_title": "What actually needs fixing in Shopify SEO",
-      "angle": "Practical, Shopify specific. The platform's own constraints are the story: duplicate product URLs under /collections/, thin collection pages, the theme's default title templates, and faceted navigation generating crawl waste. Argue that product and collection pages are the money pages and most stores put all their effort into the blog instead. Give the settings path for each fix and say plainly which of the popular SEO apps solve a real problem and which sell a report.",
-      "audience": "Shopify store owners and ecommerce managers",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Ecommerce",
-        "SEO",
-        "Shopify"
-      ]
-    },
-    {
       "id": "b-099",
       "slot": "morning",
       "market": "US",
