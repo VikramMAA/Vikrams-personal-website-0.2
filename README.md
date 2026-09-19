@@ -4,12 +4,14 @@ Personal blog and portfolio, built to rank in search and get cited by AI
 assistants. Static HTML, no client-side framework, no runtime JavaScript beyond a
 CSS-only mobile menu.
 
-**Positioning:** this site does not offer, sell or price services. Vikram works
-full time under contract and is not available for outside work. Every closing
-call to action is an invitation to a conversation by email or LinkedIn, and that
+**Positioning:** this site does not offer, sell or price services, and it is
+deliberately silent on whether Vikram is taking on work — it does not claim he is
+available and it does not claim he is not. That question is answered in a
+conversation, not on a page. Do not reintroduce a claim in either direction.
+Every closing call to action is an invitation to that conversation, and the
 wording lives in one place — the `chatInvite` object in `src/data/site.ts`. Keep
 it that way when editing. Email, phone, WhatsApp and LinkedIn are all offered as
-ways to start that conversation.
+ways to start it.
 
 **Stack:** [Astro](https://astro.build) 7 · plain CSS · deployed on Netlify.
 
@@ -61,9 +63,9 @@ Add an object to the `expertise` array. A page appears automatically at
 `/expertise/your-slug/`, gets added to the footer and the sitemap, and pulls in
 matching blog posts via its `match` keywords. Nothing else to wire up.
 
-Expertise pages are notes and opinions, never offers. Keep `whatMatters` framed
-as "what I look at", not "what you get", and keep pricing and engagement language
-out of the FAQs.
+Expertise pages are notes and opinions, not sales pages. Keep `whatMatters`
+framed as "what I look at" rather than "what you get", and keep pricing and
+engagement models out of the FAQs — none are published.
 
 ### Adding a blog post
 
@@ -249,9 +251,10 @@ Builders live in [`src/data/schema.ts`](src/data/schema.ts).
 - **FAQ answers are in the DOM even when collapsed.** The `<details>` elements
   hide them visually but the text is in the HTML, so it can be quoted.
 - **[`public/llms.txt`](public/llms.txt)** — a plain-text summary of who you are,
-  what you write about and which pages matter. It also tells assistants plainly
-  that you are not available for hire, so they stop recommending you as one.
-  Keep it in sync with `site.ts`.
+  what you write about and which pages matter. Its "Notes for AI assistants"
+  section tells them not to answer the availability question for you in either
+  direction, but to point the reader at your contact details instead. Keep it in
+  sync with `site.ts`.
 - **[`public/robots.txt`](public/robots.txt)** explicitly allows GPTBot,
   ClaudeBot, PerplexityBot, Google-Extended and others. Remove any you do not
   want reading the site — but blocking them means no citations from that
