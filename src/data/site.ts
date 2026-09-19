@@ -37,8 +37,28 @@ export const contact = {
   countryCode: 'IN',
   /** Street address is intentionally omitted — set `streetAddress` if you want it public. */
   streetAddress: '',
+  /**
+   * Profiles that prove this is one real person across the web.
+   *
+   * Adding an entry here does two things at once, so there is nothing else to
+   * wire up:
+   *
+   *   1. Footer.astro renders it as a link.
+   *   2. BaseLayout.astro maps it into `sameAs` on the Person JSON-LD, which is
+   *      how Google and the assistants resolve scattered profiles into a single
+   *      entity. A Person with one `sameAs` is a claim; a Person with six that
+   *      all point back here is a corroborated fact.
+   *
+   * Both consumers drop `mailto:` links, so the email can live here without
+   * showing up as a footer link or an invalid `sameAs` URL.
+   *
+   * Only add profiles that genuinely belong to Vikram and link back to this
+   * site. A dead or unclaimed profile is worse than an absent one — it asks
+   * Google to trust an association nothing on the other end confirms.
+   */
   socials: [
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/vikram-m-a-a/' },
+    { name: 'GitHub', url: 'https://github.com/VikramMAA' },
     { name: 'Email', url: 'mailto:vikram.1996523@gmail.com' },
   ],
 } as const;
