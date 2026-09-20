@@ -549,27 +549,6 @@
       ]
     },
     {
-      "id": "b-078",
-      "slot": "morning",
-      "market": "Estonia",
-      "primary_keyword": "b2b lead generation nordics",
-      "secondary_keywords": [
-        "selling to finland b2b",
-        "nordic buyers sales process",
-        "linkedin outbound europe"
-      ],
-      "working_title": "Selling into Finland and Sweden from Tallinn, without the pitch that works at home",
-      "angle": "Practical market entry. Nordic B2B buying is consensus driven, slower and allergic to pressure, so an outbound sequence tuned for urgency actively backfires. Cover LinkedIn as the primary channel, the GDPR position on cold B2B email in the Nordics, localising proof rather than copy, and pricing presentation in euro versus krona. Give a sequence outline that respects a longer buying cycle.",
-      "audience": "Estonian B2B founders and sales leads",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "B2B",
-        "Estonia",
-        "Lead Generation"
-      ]
-    },
-    {
       "id": "b-083",
       "slot": "evening",
       "market": "Estonia",
@@ -981,6 +960,29 @@
       ],
       "_retired_reason": "duplicate of published is-google-ads-worth-it-estonia, same market and same question",
       "_retired_on": "2026-09-14"
+    },
+    {
+      "id": "b-078",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "b2b lead generation nordics",
+      "secondary_keywords": [
+        "selling to finland b2b",
+        "nordic buyers sales process",
+        "linkedin outbound europe"
+      ],
+      "working_title": "Selling into Finland and Sweden from Tallinn, without the pitch that works at home",
+      "angle": "Practical market entry. Nordic B2B buying is consensus driven, slower and allergic to pressure, so an outbound sequence tuned for urgency actively backfires. Cover LinkedIn as the primary channel, the GDPR position on cold B2B email in the Nordics, localising proof rather than copy, and pricing presentation in euro versus krona. Give a sequence outline that respects a longer buying cycle.",
+      "audience": "Estonian B2B founders and sales leads",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "B2B",
+        "Estonia",
+        "Lead Generation"
+      ],
+      "_retired_reason": "Duplicates published how-to-sell-to-nordic-customers-from-estonia (30 Aug) on every angle bullet. Retargeted on 20 Sep to the vendor security questionnaire, published as vendor-security-questionnaire.",
+      "_retired_on": "2026-09-20"
     }
   ]
 }

@@ -1076,6 +1076,24 @@
       "word_count": 1239,
       "market": "India",
       "_note": "Retargeted. The brief's primary keyword, marketing budget for small business india, is already published as digital-marketing-budget-small-business-india (4 Sep), and its secondary keyword is that post's slug. Wrote the uncovered allocation question from the brief's own angle instead."
+    },
+    {
+      "brief_id": "b-078",
+      "slug": "vendor-security-questionnaire",
+      "title": "How do I answer a vendor security questionnaire?",
+      "primary_keyword": "vendor security questionnaire",
+      "city": null,
+      "tags": [
+        "B2B",
+        "Estonia",
+        "Lead Generation"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-20",
+      "opening_pattern": "names the person who actually decides, someone in risk who has never seen the product and never will, before any advice about the document itself",
+      "word_count": 1275,
+      "market": "Estonia",
+      "_note": "Retargeted. b-078 duplicated how-to-sell-to-nordic-customers-from-estonia (30 Aug) on every bullet including GDPR cold email, LinkedIn, localised proof and euro versus krona pricing. Wrote the uncovered half instead: the vendor security review that now stalls these deals, under DORA and NIS2 supplier flowdown."
     }
   ]
 }
