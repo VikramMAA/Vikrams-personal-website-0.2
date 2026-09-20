@@ -1094,6 +1094,23 @@
       "word_count": 1275,
       "market": "Estonia",
       "_note": "Retargeted. b-078 duplicated how-to-sell-to-nordic-customers-from-estonia (30 Aug) on every bullet including GDPR cold email, LinkedIn, localised proof and euro versus krona pricing. Wrote the uncovered half instead: the vendor security review that now stalls these deals, under DORA and NIS2 supplier flowdown."
+    },
+    {
+      "brief_id": "b-105",
+      "slug": "hubspot-vs-salesforce-small-business",
+      "title": "HubSpot vs Salesforce: which should a small business pick?",
+      "primary_keyword": "hubspot vs salesforce for small business",
+      "city": null,
+      "tags": [
+        "CRM",
+        "Sales",
+        "Tools"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-20",
+      "opening_pattern": "asks the reader to name the specific person who will be in the settings screen on an ordinary Tuesday, and says the rest of the comparison is void until they can",
+      "word_count": 1227,
+      "market": "US"
     }
   ]
 }
