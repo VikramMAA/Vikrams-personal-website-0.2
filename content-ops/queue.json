@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-016",
-      "slot": "evening",
-      "primary_keyword": "d2c marketing india",
-      "secondary_keywords": [
-        "quick commerce vs d2c website",
-        "marketplace vs own website india",
-        "d2c brand launch checklist india"
-      ],
-      "working_title": "Quick commerce is taking your D2C customers. Here is what to do about it",
-      "angle": "Analysis. Blinkit and Zepto changed where discovery happens for several categories. Cover which categories are exposed, what the own-website play still wins [margin, data, repeat], and how to run both without cannibalising yourself.",
-      "audience": "Startup and D2C founders",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "D2C",
-        "Ecommerce",
-        "Strategy"
-      ],
-      "market": "India"
-    },
-    {
       "id": "b-020",
       "slot": "evening",
       "primary_keyword": "freelance digital marketing consultant bangalore",

@@ -1128,6 +1128,24 @@
       "opening_pattern": "puts the same action on both platforms, asking a happy customer for a review, and shows it is correct on one and punishable on the other",
       "word_count": 1186,
       "market": "US"
+    },
+    {
+      "brief_id": "b-016",
+      "slug": "quick-commerce-vs-d2c-india",
+      "title": "Is quick commerce killing D2C brands in India?",
+      "primary_keyword": "quick commerce vs d2c india",
+      "city": null,
+      "tags": [
+        "D2C",
+        "Ecommerce",
+        "Strategy"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-21",
+      "opening_pattern": "locates the change precisely, not the customer moving but the ten second window in which the decision now happens, and describes what is visible inside it",
+      "word_count": 1266,
+      "market": "India",
+      "_note": "Brief's primary keyword was the broad 'd2c marketing india'. Wrote to the secondary, quick commerce vs own website, since the marketplace-or-own-site decision is already published as how-to-sell-online-in-india."
     }
   ]
 }
