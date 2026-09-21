@@ -465,27 +465,6 @@
       "market": "India"
     },
     {
-      "id": "b-065",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "yelp vs google business profile",
-      "secondary_keywords": [
-        "is yelp worth paying for",
-        "yelp advertising cost",
-        "how to get more google reviews"
-      ],
-      "working_title": "Yelp still sends real customers, but almost nobody should pay for it first",
-      "angle": "Practical prioritisation. Google Business Profile is the higher return of the two for nearly every category, so fix it first and treat Yelp as a claimed and completed free listing. Cover Yelp's review recommendation filter and why soliciting reviews backfires there, when paid Yelp genuinely works (restaurants, home services in dense metros), and how to decide with a simple cost per call comparison. Give the numbers to pull before renewing a Yelp contract.",
-      "audience": "Local business owners",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Local SEO",
-        "Reviews",
-        "Yelp"
-      ]
-    },
-    {
       "id": "b-071",
       "slot": "evening",
       "market": "US",

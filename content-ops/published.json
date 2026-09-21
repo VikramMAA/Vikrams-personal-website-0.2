@@ -1111,6 +1111,23 @@
       "opening_pattern": "asks the reader to name the specific person who will be in the settings screen on an ordinary Tuesday, and says the rest of the comparison is void until they can",
       "word_count": 1227,
       "market": "US"
+    },
+    {
+      "brief_id": "b-065",
+      "slug": "yelp-vs-google-business-profile",
+      "title": "Yelp or Google Business Profile: which should I fix first?",
+      "primary_keyword": "yelp vs google business profile",
+      "city": null,
+      "tags": [
+        "Local SEO",
+        "Reviews",
+        "Yelp"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-21",
+      "opening_pattern": "puts the same action on both platforms, asking a happy customer for a review, and shows it is correct on one and punishable on the other",
+      "word_count": 1186,
+      "market": "US"
     }
   ]
 }
