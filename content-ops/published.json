@@ -1146,6 +1146,23 @@
       "word_count": 1266,
       "market": "India",
       "_note": "Brief's primary keyword was the broad 'd2c marketing india'. Wrote to the secondary, quick commerce vs own website, since the marketplace-or-own-site decision is already published as how-to-sell-online-in-india."
+    },
+    {
+      "brief_id": "b-099",
+      "slug": "ga4-vs-google-ads-conversions",
+      "title": "Why don't my GA4 and Google Ads numbers match?",
+      "primary_keyword": "ga4 attribution problems",
+      "city": null,
+      "tags": [
+        "Analytics",
+        "GA4",
+        "Measurement"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-22",
+      "opening_pattern": "states in one sentence each what the two reports are actually answering, so the reader sees two different questions rather than one number reported twice",
+      "word_count": 1169,
+      "market": "US"
     }
   ]
 }

@@ -549,27 +549,6 @@
       ]
     },
     {
-      "id": "b-099",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "ga4 attribution problems",
-      "secondary_keywords": [
-        "ga4 vs google ads conversions",
-        "why do my numbers not match",
-        "data driven attribution"
-      ],
-      "working_title": "Why GA4 and Google Ads report different numbers",
-      "angle": "Practical reconciliation. Explain the four real causes: different attribution models, different conversion windows, modelled and consent gap conversions, and session versus event based counting. Then the rule that matters, which is that you pick one source per decision rather than trying to make them agree. Give the three reports to compare and the decision each one is allowed to drive. Be clear that a permanent gap is normal and only a widening gap is a signal.",
-      "audience": "In-house marketing managers",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Analytics",
-        "GA4",
-        "Measurement"
-      ]
-    },
-    {
       "id": "b-100",
       "slot": "morning",
       "market": "US",
