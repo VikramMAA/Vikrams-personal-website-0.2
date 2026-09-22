@@ -1163,6 +1163,23 @@
       "opening_pattern": "states in one sentence each what the two reports are actually answering, so the reader sees two different questions rather than one number reported twice",
       "word_count": 1169,
       "market": "US"
+    },
+    {
+      "brief_id": "b-106",
+      "slug": "b2b-demand-generation-vs-capture",
+      "title": "Why isn't my B2B demand generation producing pipeline?",
+      "primary_keyword": "b2b saas demand generation",
+      "city": null,
+      "tags": [
+        "B2B",
+        "Demand Generation",
+        "SaaS"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-22",
+      "opening_pattern": "names the single test every activity is judged by, then shows one whole half of the job cannot pass it by construction rather than by failing",
+      "word_count": 1133,
+      "market": "US"
     }
   ]
 }
