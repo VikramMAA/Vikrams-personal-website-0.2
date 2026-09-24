@@ -423,27 +423,6 @@
       "market": "India"
     },
     {
-      "id": "b-071",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "book a demo vs self serve",
-      "secondary_keywords": [
-        "should i remove book a demo",
-        "product led growth funnel",
-        "demo request conversion rate"
-      ],
-      "working_title": "Your buyers will do anything to avoid talking to your sales team",
-      "angle": "Opinion on funnel design. Gating everything behind a demo call optimises for the seller's comfort, not the buyer's process, and B2B buyers now research almost entirely before contact. Argue for publishing pricing and letting people self serve into a trial, while being fair about the deal sizes where a call genuinely is the right first step. Give the test: what would happen to pipeline if the demo button disappeared for a month.",
-      "audience": "B2B SaaS founders and marketing leads",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "B2B",
-        "Conversion",
-        "Strategy"
-      ]
-    },
-    {
       "id": "b-074",
       "slot": "morning",
       "market": "Estonia",

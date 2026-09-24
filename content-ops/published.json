@@ -1231,6 +1231,23 @@
       "opening_pattern": "puts send volume against revenue share, five percent of sends earning forty percent of the money, so the reader sees their weekly effort sitting in the minority half",
       "word_count": 1221,
       "market": "US"
+    },
+    {
+      "brief_id": "b-071",
+      "slug": "book-a-demo-vs-self-serve",
+      "title": "Should I remove the book a demo button?",
+      "primary_keyword": "book a demo vs self serve",
+      "city": null,
+      "tags": [
+        "B2B",
+        "Conversion",
+        "Strategy"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-24",
+      "opening_pattern": "opens on the paradox in the data, that publishing pricing lowers the demo request rate while raising the rate at which those requests become pipeline, and treats the drop as the point",
+      "word_count": 1192,
+      "market": "US"
     }
   ]
 }
