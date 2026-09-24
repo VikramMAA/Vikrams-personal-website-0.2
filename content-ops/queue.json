@@ -631,6 +631,111 @@
         "Bay Area"
       ],
       "_local_specifics": "Product-led growth is the default assumption and many companies are structurally sceptical of agencies. The winnable work is measurement, technical SEO and attribution rather than campaign execution."
+    },
+    {
+      "id": "b-110",
+      "slot": "evening",
+      "market": "Estonia",
+      "primary_keyword": "pricing for export markets small country",
+      "secondary_keywords": [
+        "how to price saas for europe",
+        "raising prices existing customers",
+        "estonia pricing strategy"
+      ],
+      "working_title": "You priced for Estonia and now you cannot sell to Germany",
+      "angle": "Opinion. A company whose first thirty customers are domestic prices against Estonian willingness to pay, then discovers the number is 40% below what the same product fetches in Munich or Stockholm, and that the existing base makes raising it feel impossible. Argue that the home market is the worst possible price discovery sample when it is 1.3 million people, that the fix is segmented pricing by market and packaging rather than a blanket increase, and be honest about the grandfathering decision. Do not repeat the positioning argument from estonia-digital-nation-branding.",
+      "audience": "Estonian SaaS and service founders",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Pricing",
+        "Estonia",
+        "Strategy"
+      ]
+    },
+    {
+      "id": "b-111",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "first marketing hire estonia",
+      "secondary_keywords": [
+        "marketing agency vs freelancer estonia",
+        "hiring marketing help estonia",
+        "outsourcing marketing small company"
+      ],
+      "working_title": "Who to hire first when the marketing talent pool is this small",
+      "angle": "Practical, and the constraint is supply rather than budget, which is what makes it different from the US agency-versus-freelancer post already published. Roughly 45% of Estonian startup sector jobs sit inside ten employers, so experienced marketers are largely absorbed and expensive. Cover what to do instead: hire for one channel rather than a generalist head of marketing, use Nordic or wider EU contractors for specialist work, what the founder should keep doing personally and for how long. Give the actual sequence of first three hires and the signals that each is due.",
+      "audience": "Estonian founders making their first marketing hire",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Hiring",
+        "Estonia",
+        "Marketing Strategy"
+      ]
+    },
+    {
+      "id": "b-112",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "selling to latvia and lithuania from estonia",
+      "secondary_keywords": [
+        "baltic market expansion",
+        "riga vilnius b2b",
+        "baltic localisation"
+      ],
+      "working_title": "The Baltics are three markets, not one, and the differences cost money",
+      "angle": "Practical market entry. Estonian companies treat the Baltics as a single region because the map suggests it, then discover that language, payment habits, business culture and channel structure differ enough to break a copy-paste launch. Cover what genuinely carries across, what has to be rebuilt, the language question including when Russian matters, and the order to enter. Distinct from the Nordic post, which is about a different buying culture entirely.",
+      "audience": "Estonian founders and marketing leads expanding regionally",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Market Entry",
+        "Estonia",
+        "B2B"
+      ]
+    },
+    {
+      "id": "b-113",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "selling to german customers from estonia",
+      "secondary_keywords": [
+        "dach market entry b2b",
+        "german b2b buying process",
+        "selling saas to germany"
+      ],
+      "working_title": "What a German buyer expects that a Nordic one does not",
+      "angle": "Practical. DACH is the largest European market and Estonian companies aim at it after the Nordics, using the same playbook, and stall. Cover the specifics: formality of address and language expectation, the legal and imprint requirements on a German-facing site, invoicing and payment terms norms, data protection questions asked earlier and harder than elsewhere, and the role of trade bodies and industry associations in credibility. Keep it concrete and do not restate the Nordic consensus-buying argument.",
+      "audience": "Estonian B2B founders and sales leads",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Market Entry",
+        "Estonia",
+        "B2B"
+      ]
+    },
+    {
+      "id": "b-114",
+      "slot": "evening",
+      "market": "Estonia",
+      "primary_keyword": "expansion revenue small market saas",
+      "secondary_keywords": [
+        "net revenue retention benchmarks",
+        "churn small market",
+        "upsell existing customers"
+      ],
+      "working_title": "When you cannot acquire your way out, retention stops being a support function",
+      "angle": "Analysis with a position. A company with a domestic market of 1.3 million runs out of new logos fast, which makes net revenue retention the growth engine rather than a defensive metric, far earlier than it does for a US company. Argue that this changes who owns the customer relationship and what marketing is for after the sale. Cover the expansion motion, why usage-based and seat-based pricing behave differently here, and the honest limit, which is that retention cannot rescue a product nobody needed.",
+      "audience": "Estonian SaaS founders and operators",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Retention",
+        "Estonia",
+        "SaaS"
+      ]
     }
   ],
   "retired": [
