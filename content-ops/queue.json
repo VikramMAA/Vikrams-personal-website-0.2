@@ -549,69 +549,6 @@
       ]
     },
     {
-      "id": "b-107",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "remote marketing consultant vs local agency los angeles",
-      "secondary_keywords": [
-        "hiring a remote marketing consultant",
-        "local agency vs freelancer los angeles"
-      ],
-      "working_title": "Does a Los Angeles business need a Los Angeles agency?",
-      "angle": "Opinion, built entirely on what makes LA different. The metro sprawls across 88 separate cities, so being physically nearby tells you nothing about knowing your customers, and proximity is close to a worthless signal here. The two things a genuinely local partner does provide are Spanish language creative that is written rather than translated, and knowing which of those 88 cities your buyers actually live in, which is a radius targeting skill. Everything else travels fine over a video call.",
-      "audience": "Los Angeles County business owners",
-      "city": "Los Angeles County",
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Hiring",
-        "Agency",
-        "Los Angeles"
-      ],
-      "_local_specifics": "Entertainment and DTC ecommerce dominate. Enormous Spanish speaking market, so English-only campaigns leave money on the table. The metro sprawls across 88 cities, which makes proximity a weak signal and radius targeting a real skill."
-    },
-    {
-      "id": "b-108",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "remote marketing consultant vs local agency manhattan",
-      "secondary_keywords": [
-        "hiring a remote marketing consultant",
-        "local agency vs freelancer new york"
-      ],
-      "working_title": "In Manhattan the question is not local or remote, it is agency at all",
-      "angle": "Opinion specific to New York County, where roughly 130,000 people work in marketing and advertising and most serious buyers already have in-house teams. So the real decision is not which agency but whether you need one rather than one more senior hire, and Manhattan salary levels change that arithmetic in a way they do not elsewhere. Argue that the genuine opening for outside help here is filling a named specialist gap rather than full service, and that local price anchoring is the highest in the country.",
-      "audience": "New York County marketing leads",
-      "city": "New York County",
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Hiring",
-        "Agency",
-        "New York"
-      ],
-      "_local_specifics": "Roughly 130,000 marketing and advertising employees, the largest concentration in the country. Most serious buyers have in-house teams, so the opening is specialist gap-filling, not full service. Price anchoring is the highest in the US."
-    },
-    {
-      "id": "b-109",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "remote marketing consultant vs local agency san jose",
-      "secondary_keywords": [
-        "hiring a remote marketing consultant",
-        "local agency vs freelancer san jose"
-      ],
-      "working_title": "Hiring marketing help when your buyers will audit the method",
-      "angle": "Opinion for Santa Clara County, where product led growth is the default assumption and a lot of companies are structurally sceptical of agencies for reasons that are partly earned. Argue that the winnable outside work here is measurement, technical SEO and attribution rather than campaign execution, and that anybody selling into this county has to survive a technical buyer reading their methodology rather than their case studies. Location is irrelevant. Withstanding scrutiny is not.",
-      "audience": "Santa Clara County founders and marketing leads",
-      "city": "Santa Clara County",
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Hiring",
-        "Agency",
-        "Bay Area"
-      ],
-      "_local_specifics": "Product-led growth is the default assumption and many companies are structurally sceptical of agencies. The winnable work is measurement, technical SEO and attribution rather than campaign execution."
-    },
-    {
       "id": "b-110",
       "slot": "evening",
       "market": "Estonia",
@@ -756,27 +693,6 @@
         "Seasonal",
         "Ecommerce",
         "Paid Media"
-      ]
-    },
-    {
-      "id": "b-117",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "does my marketing agency need to be local",
-      "secondary_keywords": [
-        "remote marketing consultant vs local agency",
-        "hiring a local agency",
-        "in person agency meetings"
-      ],
-      "working_title": "The case for a local agency is usually a case about meetings",
-      "angle": "Opinion, and this consolidates a set of city-templated keyword clusters into the one question behind them. Argue that proximity buys almost nothing that matters for most digital work, that the real reasons owners want local are trust signals and accountability rather than geography, and then be genuinely fair about the exceptions where local knowledge or physical presence does the work, including photography, events, and businesses whose market is one metro. Give the questions that actually test an agency, none of which are about location. Must not restate agency-vs-freelancer-vs-in-house, which is about the model rather than the map.",
-      "audience": "US small business owners choosing marketing help",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Agency",
-        "Hiring",
-        "Comparison"
       ]
     },
     {
@@ -1004,6 +920,75 @@
       ],
       "_retired_reason": "Duplicates published how-to-sell-to-nordic-customers-from-estonia (30 Aug) on every angle bullet. Retargeted on 20 Sep to the vendor security questionnaire, published as vendor-security-questionnaire.",
       "_retired_on": "2026-09-20"
+    },
+    {
+      "id": "b-108",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "remote marketing consultant vs local agency manhattan",
+      "secondary_keywords": [
+        "hiring a remote marketing consultant",
+        "local agency vs freelancer new york"
+      ],
+      "working_title": "In Manhattan the question is not local or remote, it is agency at all",
+      "angle": "Opinion specific to New York County, where roughly 130,000 people work in marketing and advertising and most serious buyers already have in-house teams. So the real decision is not which agency but whether you need one rather than one more senior hire, and Manhattan salary levels change that arithmetic in a way they do not elsewhere. Argue that the genuine opening for outside help here is filling a named specialist gap rather than full service, and that local price anchoring is the highest in the country.",
+      "audience": "New York County marketing leads",
+      "city": "New York County",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Hiring",
+        "Agency",
+        "New York"
+      ],
+      "_local_specifics": "Roughly 130,000 marketing and advertising employees, the largest concentration in the country. Most serious buyers have in-house teams, so the opening is specialist gap-filling, not full service. Price anchoring is the highest in the US.",
+      "_retired_reason": "Manhattan variant of the same question published as remote-consultant-vs-local-agency-los-angeles. Three city variants of \"does a [city] business need a [city] agency\" would compete with each other in search and read as a templated series.",
+      "_retired_on": "2026-09-25"
+    },
+    {
+      "id": "b-109",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "remote marketing consultant vs local agency san jose",
+      "secondary_keywords": [
+        "hiring a remote marketing consultant",
+        "local agency vs freelancer san jose"
+      ],
+      "working_title": "Hiring marketing help when your buyers will audit the method",
+      "angle": "Opinion for Santa Clara County, where product led growth is the default assumption and a lot of companies are structurally sceptical of agencies for reasons that are partly earned. Argue that the winnable outside work here is measurement, technical SEO and attribution rather than campaign execution, and that anybody selling into this county has to survive a technical buyer reading their methodology rather than their case studies. Location is irrelevant. Withstanding scrutiny is not.",
+      "audience": "Santa Clara County founders and marketing leads",
+      "city": "Santa Clara County",
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Hiring",
+        "Agency",
+        "Bay Area"
+      ],
+      "_local_specifics": "Product-led growth is the default assumption and many companies are structurally sceptical of agencies. The winnable work is measurement, technical SEO and attribution rather than campaign execution.",
+      "_retired_reason": "San Jose variant of the same question published as remote-consultant-vs-local-agency-los-angeles. Same reason as b-108.",
+      "_retired_on": "2026-09-25"
+    },
+    {
+      "id": "b-117",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "does my marketing agency need to be local",
+      "secondary_keywords": [
+        "remote marketing consultant vs local agency",
+        "hiring a local agency",
+        "in person agency meetings"
+      ],
+      "working_title": "The case for a local agency is usually a case about meetings",
+      "angle": "Opinion, and this consolidates a set of city-templated keyword clusters into the one question behind them. Argue that proximity buys almost nothing that matters for most digital work, that the real reasons owners want local are trust signals and accountability rather than geography, and then be genuinely fair about the exceptions where local knowledge or physical presence does the work, including photography, events, and businesses whose market is one metro. Give the questions that actually test an agency, none of which are about location. Must not restate agency-vs-freelancer-vs-in-house, which is about the model rather than the map.",
+      "audience": "US small business owners choosing marketing help",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Agency",
+        "Hiring",
+        "Comparison"
+      ],
+      "_retired_reason": "Generic version of the same question, written on 24 Sep to consolidate the city variants. Superseded by b-107, which asks it with real Los Angeles specifics.",
+      "_retired_on": "2026-09-25"
     }
   ]
 }
