@@ -654,27 +654,6 @@
       ]
     },
     {
-      "id": "b-115",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "state privacy laws marketing compliance",
-      "secondary_keywords": [
-        "ccpa compliance for small business",
-        "global privacy control",
-        "universal opt out marketing"
-      ],
-      "working_title": "The privacy law that applies to you is probably not the one you read about",
-      "angle": "Practical. Marketers learned CCPA and stopped, while a patchwork of state laws with their own thresholds, opt-out rights and enforcement has kept arriving. Cover how to work out which states actually reach your business, the universal opt-out and Global Privacy Control signal your site probably ignores, what a compliant preference centre has to do, and the sale-or-share definition that catches ordinary ad pixels. Keep it concrete and say plainly that counsel decides, as the HIPAA post does. Do not restate the HIPAA pixel argument, this is the non-healthcare case.",
-      "audience": "In-house marketing managers at US small and mid-sized businesses",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Compliance",
-        "Privacy",
-        "Analytics"
-      ]
-    },
-    {
       "id": "b-116",
       "slot": "morning",
       "market": "US",

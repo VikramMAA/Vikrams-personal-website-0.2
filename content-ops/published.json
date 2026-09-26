@@ -1284,6 +1284,23 @@
       "word_count": 1234,
       "market": "US",
       "_note": "Corrected the brief on its Spanish-language premise. The brief assumed English-only campaigns leave money on the table; census estimates put roughly 85% of LA County's Spanish-at-home speakers as speaking English very well, so the real requirement is cultural register in creative rather than translation. Wrote it that way and said so in the piece. Chosen as the single post covering this question; b-108, b-109 and b-117 retired as a competing series."
+    },
+    {
+      "brief_id": "b-115",
+      "slug": "state-privacy-laws-marketing-compliance",
+      "title": "Which state privacy laws apply to my business?",
+      "primary_keyword": "state privacy laws marketing compliance",
+      "city": null,
+      "tags": [
+        "Compliance",
+        "Privacy",
+        "Analytics"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-26",
+      "opening_pattern": "opens on the exemption the reader believes they have, being under the revenue threshold, and names the two states where no such threshold exists",
+      "word_count": 1296,
+      "market": "US"
     }
   ]
 }
