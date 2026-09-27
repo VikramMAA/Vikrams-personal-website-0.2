@@ -1336,6 +1336,23 @@
       "word_count": 1227,
       "market": "Estonia",
       "_note": "Kept hreflang mechanics deliberately high level so b-077 (hreflang estonian english website) stays a distinct post. This one is market selection and validation."
+    },
+    {
+      "brief_id": "b-120",
+      "slug": "home-services-booking-rate",
+      "title": "Why aren't my home service leads turning into jobs?",
+      "primary_keyword": "home services booking rate vs lead volume",
+      "city": null,
+      "tags": [
+        "Home Services",
+        "Conversion",
+        "Lead Generation"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-27",
+      "opening_pattern": "sends the reader into ten of their own call recordings listening for one specific sentence, the one that offers a time, and says it is missing from most of them",
+      "word_count": 1129,
+      "market": "US"
     }
   ]
 }
