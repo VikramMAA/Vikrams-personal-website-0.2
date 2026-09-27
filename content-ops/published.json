@@ -1318,6 +1318,24 @@
       "opening_pattern": "describes the audition the reader cannot see, a small test pool deciding within minutes whether a post travels, so thirty posts a month reads as thirty failed auditions rather than consistency",
       "word_count": 1251,
       "market": "India"
+    },
+    {
+      "brief_id": "b-074",
+      "slug": "international-seo-for-estonian-companies",
+      "title": "How should an Estonian company do international SEO?",
+      "primary_keyword": "international seo for estonian companies",
+      "city": null,
+      "tags": [
+        "International SEO",
+        "Estonia",
+        "SEO"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-27",
+      "opening_pattern": "points out the target market list was chosen in a meeting rather than from search data, and makes checking whether the data agrees the morning's first job",
+      "word_count": 1227,
+      "market": "Estonia",
+      "_note": "Kept hreflang mechanics deliberately high level so b-077 (hreflang estonian english website) stays a distinct post. This one is market selection and validation."
     }
   ]
 }
