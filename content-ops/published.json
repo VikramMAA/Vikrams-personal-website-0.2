@@ -1353,6 +1353,24 @@
       "opening_pattern": "sends the reader into ten of their own call recordings listening for one specific sentence, the one that offers a time, and says it is missing from most of them",
       "word_count": 1129,
       "market": "US"
+    },
+    {
+      "brief_id": "b-116",
+      "slug": "q4-marketing-plan-retail",
+      "title": "What should be in my Q4 marketing plan?",
+      "primary_keyword": "q4 marketing plan retail",
+      "city": null,
+      "tags": [
+        "Seasonal",
+        "Ecommerce",
+        "Paid Media"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-28",
+      "opening_pattern": "opens on a specific date about a week away as the real deadline rather than Black Friday, so the reader sees a window closing instead of a season starting",
+      "word_count": 1143,
+      "market": "US",
+      "_note": "Timing sensitive. Published 28 Sep against an early October warm-up deadline and Black Friday on 27 November 2026. Worth refreshing or unpublishing after the quarter rather than leaving a stale urgency claim live."
     }
   ]
 }
