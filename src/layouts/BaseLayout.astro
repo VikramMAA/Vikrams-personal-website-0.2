@@ -11,6 +11,7 @@
  */
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import AnalyticsEvents from '../components/AnalyticsEvents.astro';
 import { site, contact } from '../data/site';
 import '../styles/global.css';
 
@@ -197,5 +198,6 @@ const allSchema = [identitySchema, ...schema];
       <slot />
     </main>
     <Footer />
+    <AnalyticsEvents />
   </body>
 </html>

@@ -1,0 +1,71 @@
+---
+/**
+ * GA4 custom event tracking for the contact routes that native GA4 cannot see.
+ *
+ * The contact page exposes four ways to reach Vikram: the form (tracked
+ * server-side via the /thank-you/ redirect, see ThankYou / contact.mjs), a
+ * mailto: link, a tel: link and a wa.me link. GA4 enhanced measurement tracks
+ * none of the last three, which is why "which content drives leads" was
+ * previously unanswerable.
+ *
+ * Design notes, so this is not "improved" into something worse:
+ *
+ *  - One event name, `contact_click`, with a `contact_method` parameter rather
+ *    than three separate event names. GA4 caps custom event names, and one
+ *    event with a dimension is easier to report on than three you have to union.
+ *  - The listener sits on `document` in the capture phase, so it needs no
+ *    per-link markup and survives any DOM replacement.
+ *  - `gtag` is checked at call time, not at load time, because the gtag stub
+ *    may not have resolved when this parses.
+ *  - No preventDefault and no artificial delay. GA4 dispatches via
+ *    navigator.sendBeacon, which survives the navigation.
+ *
+ * `contact_method` must be registered as a custom dimension in GA4 (Admin >
+ * Data display > Custom definitions) or the parameter is collected but not
+ * reportable. Same for `lead_source` and `form_id`. See the implementation
+ * plan, task 1.4.
+ *
+ * `is:inline` keeps this verbatim rather than letting Astro bundle and defer it.
+ */
+const isProd = import.meta.env.PROD;
+---
+
+{
+  isProd && (
+    <script is:inline>
+      (function () {
+        function send(name, params) {
+          if (typeof window.gtag !== 'function') return;
+          window.gtag('event', name, params || {});
+        }
+
+        document.addEventListener(
+          'click',
+          function (e) {
+            var a = e.target && e.target.closest && e.target.closest('a[href]');
+            if (!a) return;
+
+            var href = a.getAttribute('href') || '';
+            var ctx = {
+              page_path: window.location.pathname,
+              link_text: (a.textContent || '').trim().slice(0, 100),
+              link_url: href,
+            };
+
+            if (href.indexOf('wa.me') > -1 || href.indexOf('api.whatsapp.com') > -1) {
+              ctx.contact_method = 'whatsapp';
+              send('contact_click', ctx);
+            } else if (href.indexOf('tel:') === 0) {
+              ctx.contact_method = 'phone';
+              send('contact_click', ctx);
+            } else if (href.indexOf('mailto:') === 0) {
+              ctx.contact_method = 'email';
+              send('contact_click', ctx);
+            }
+          },
+          true,
+        );
+      })();
+    </script>
+  )
+}

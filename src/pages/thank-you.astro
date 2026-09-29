@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { contact } from '../data/site';
+
+const isProd = import.meta.env.PROD;
 ---
 
 <BaseLayout
@@ -27,6 +29,35 @@ import { contact } from '../data/site';
       </div>
     </div>
   </section>
+
+  {/*
+    GA4 conversion signal for the contact form.
+
+    This page is only reached by the /api/contact handler redirecting here, and
+    only the confirmed-success redirect appends ?src=contact — the spam honeypot
+    redirect deliberately does not. Keying the event on that parameter means
+    generate_lead counts real, server-confirmed submissions: a bot caught by the
+    honeypot, or anyone who simply navigates to /thank-you/ directly, fires
+    nothing. Do not make this fire unconditionally on page load.
+
+    `lead_source` and `form_id` need registering as custom dimensions in GA4
+    before they show up in reports (implementation plan, task 1.4).
+  */}
+  {
+    isProd && (
+      <script is:inline>
+        (function () {
+          if (typeof window.gtag !== 'function') return;
+          var src = new URLSearchParams(window.location.search).get('src');
+          if (!src) return;
+          window.gtag('event', 'generate_lead', {
+            lead_source: 'contact_form',
+            form_id: src,
+          });
+        })();
+      </script>
+    )
+  }
 </BaseLayout>
 
 <style>

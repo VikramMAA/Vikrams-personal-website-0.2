@@ -63,6 +63,9 @@ export default async (request) => {
 
   // Honeypot. Bots fill every field they can see; humans never see this one.
   // Pretend it worked so the bot has nothing to learn from.
+  // Deliberately redirected WITHOUT the ?src=contact marker the real success
+  // path carries, so the bot lands on an identical-looking page but never fires
+  // the generate_lead event. Do not "tidy" this into the same redirect below.
   if (clean(form.get('bot-field'), 100)) {
     return redirect('/thank-you/');
   }
@@ -147,7 +150,10 @@ export default async (request) => {
     return redirect('/contact/#form-error');
   }
 
-  return redirect('/thank-you/');
+  // The ?src= marker is what /thank-you/ keys the GA4 generate_lead event on.
+  // It is only ever appended here, after Resend has accepted the message, so
+  // the event counts confirmed successes rather than submission attempts.
+  return redirect('/thank-you/?src=contact');
 };
 
 export const config = {
