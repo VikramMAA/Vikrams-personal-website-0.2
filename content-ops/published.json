@@ -1407,6 +1407,24 @@
       "word_count": 1215,
       "market": "US",
       "_note": "Hub post by design. Links out to home-services-booking-rate, the two review posts, google-local-services-ads and are-angi-leads-worth-it rather than restating them, and adds the ChatGPT ads manager opening of 5 May 2026 as a new step six with the argument that AI answers in this category are drawn from steps two and three anyway."
+    },
+    {
+      "brief_id": "b-104",
+      "slug": "marketing-agency-red-flags",
+      "title": "What are the red flags when hiring a marketing agency?",
+      "primary_keyword": "marketing agency red flags",
+      "city": null,
+      "tags": [
+        "Agency",
+        "Hiring",
+        "Strategy"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-29",
+      "opening_pattern": "inverts the premise, that sloppy is easy to spot and the signals worth worrying about are the ones that read as competence, which is why they keep winning deals",
+      "word_count": 1229,
+      "market": "US",
+      "_note": "Sixth agency post, so kept deliberately to pre-signature and first-sixty-day signals. Account ownership and the good-news report are already covered in how-to-choose-a-digital-marketing-agency and agency-not-delivering-results, so both are referenced in a line rather than re-explained. Closes with the innocent explanation for each signal so it does not read as a paranoia checklist."
     }
   ]
 }
