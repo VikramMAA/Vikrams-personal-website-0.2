@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-020",
-      "slot": "evening",
-      "primary_keyword": "freelance digital marketing consultant bangalore",
-      "secondary_keywords": [
-        "digital marketing freelancer bangalore",
-        "best digital marketing freelancer in bangalore",
-        "hire a digital marketing consultant"
-      ],
-      "working_title": "What ten years of freelancing in Bengaluru taught me about who to work with",
-      "angle": "Personal, story led. Draw on the freelancing journey posts already on the site. The clients that worked out, the ones that did not, and the pattern behind both. Land on what makes an engagement succeed, which is access and decision speed more than budget.",
-      "audience": "SME owners and startup founders",
-      "city": "Bengaluru",
-      "expertise_link": "/about/",
-      "tags": [
-        "Freelancing",
-        "Bengaluru",
-        "Consulting"
-      ],
-      "market": "India"
-    },
-    {
       "id": "b-024",
       "slot": "evening",
       "primary_keyword": "seo consultant mumbai",

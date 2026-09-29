@@ -1371,6 +1371,24 @@
       "word_count": 1143,
       "market": "US",
       "_note": "Timing sensitive. Published 28 Sep against an early October warm-up deadline and Black Friday on 27 November 2026. Worth refreshing or unpublishing after the quarter rather than leaving a stale urgency claim live."
+    },
+    {
+      "brief_id": "b-020",
+      "slug": "freelance-marketing-consultant-bangalore",
+      "title": "What makes a freelance marketing engagement work?",
+      "primary_keyword": "freelance digital marketing consultant bangalore",
+      "city": "Bengaluru",
+      "tags": [
+        "Freelancing",
+        "Bengaluru",
+        "Consulting"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-28",
+      "opening_pattern": "opens on a specific remembered meeting he was losing in 2022, and the moment it turned on a shared name rather than on anything in the pitch",
+      "word_count": 1110,
+      "market": "India",
+      "_note": "Drafted on 28 Sep but the Bash tool was unavailable all evening (classifier returned no verdict), so lint, build and push happened on 29 Sep. publishedAt kept at 2026-09-28, the run it belongs to. The keyword is hire-me intent, which sits against the no-selling rule, so the piece is written for a reader choosing somebody else and states plainly that Vikram is contracted full time."
     }
   ]
 }
