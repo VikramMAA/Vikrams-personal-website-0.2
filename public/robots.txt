@@ -48,7 +48,14 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
-# Do not index the post-submission confirmation page.
-Disallow: /thank-you/
+# The two form-confirmation pages, /thank-you/ and /subscribed/, are kept out of
+# the index by a `noindex` meta tag and excluded from the sitemap by the filter
+# in astro.config.mjs. They are deliberately NOT disallowed here: a crawler has
+# to be able to fetch a page to see its noindex, so blocking the path would
+# defeat the very thing it looks like it is enforcing.
+#
+# (There was previously a `Disallow: /thank-you/` at the end of this file. It sat
+# inside the meta-externalagent group rather than under `User-agent: *`, so it
+# never applied to Google in the first place.)
 
 Sitemap: https://vikramhere.com/sitemap-index.xml

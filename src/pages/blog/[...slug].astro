@@ -5,6 +5,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTA from '../../components/CTA.astro';
 import ViewCount from '../../components/ViewCount.astro';
 import FAQ from '../../components/FAQ.astro';
+import Subscribe from '../../components/Subscribe.astro';
 import { site } from '../../data/site';
 import { articleSchema, breadcrumbSchema, faqSchema } from '../../data/schema';
 
@@ -111,6 +112,8 @@ const faq = post.data.faq ?? [];
   </article>
 
   {faq.length > 0 && <FAQ items={faq} />}
+
+  <Subscribe />
 
   <CTA />
 </BaseLayout>

@@ -71,7 +71,7 @@ And do the boring thing that makes all of this compound: capture the phone numbe
 
 Ask, in person, at the moment the meal went well. From the person who served them, not from a poster on the wall.
 
-Reply to every review, including the bad ones, because the next customer reads your reply rather than the complaint. And keep replies short and human, since a restaurant review thread is read by people deciding where to eat in the next twenty minutes.
+Reply to every review, including the bad ones, because the next customer reads your reply rather than the complaint. And keep replies short and human, since a restaurant review thread is read by people deciding where to eat in the next twenty minutes. The compliant way to ask at volume is in [how to get more Google reviews](/blog/how-to-get-more-google-reviews/), and [the schema markup a local business needs](/blog/schema-markup-for-local-business/) covers the markup side, `Restaurant` subtype included.
 
 ## Before lunch, which for you is a strange phrase
 

@@ -1,0 +1,151 @@
+---
+/**
+ * Email capture. Every visitor in the first twelve months was a first-time
+ * visitor — 203 users, 203 first_visit events, nobody ever returned. For a
+ * buying cycle measured in months, having no way to reach a reader again is a
+ * bigger loss than the ranking gap.
+ *
+ * Netlify Forms handles the submission, so there is no third-party script and
+ * no JavaScript required for the form to work. Two deliberate choices:
+ *
+ *  - One field. At this traffic volume friction costs more than the extra data
+ *    is worth, and there is nothing to segment on yet.
+ *  - `netlify-honeypot` plus a hidden `bot-field`, matching the contact form.
+ *
+ * On success Netlify redirects to /subscribed/, which fires `sign_up`. That is
+ * deliberately a different event, and a different page, from the contact form's
+ * `generate_lead` on /thank-you/. A subscriber is not a lead; merging the two
+ * would make the conversion rate look good while telling you nothing.
+ *
+ * The success path carries no query string, so there is nothing a redirect can
+ * strip and no way for a subscription to be counted as an enquiry.
+ */
+interface Props {
+  heading?: string;
+  body?: string;
+}
+
+const {
+  heading = 'Get new posts by email',
+  body = 'One email when something new goes up. No sequence, no pitch, and you can leave whenever you like.',
+} = Astro.props;
+---
+
+<section class="section subscribe" aria-labelledby="subscribe-heading">
+  <div class="container container--narrow subscribe__inner">
+    <p class="eyebrow">Subscribe</p>
+    <h2 id="subscribe-heading">{heading}</h2>
+    <p class="subscribe__body">{body}</p>
+
+    <form
+      class="subscribe__form"
+      name="newsletter"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/subscribed/"
+    >
+      <p class="hidden-field">
+        <label>
+          Do not fill this out if you are human:
+          <input name="bot-field" tabindex="-1" autocomplete="off" />
+        </label>
+      </p>
+
+      <label class="visually-hidden" for="subscribe-email">Email address</label>
+      <input
+        id="subscribe-email"
+        name="email"
+        type="email"
+        required
+        autocomplete="email"
+        placeholder="you@company.com"
+      />
+      <button type="submit" class="btn btn--primary">Subscribe</button>
+    </form>
+
+    <p class="subscribe__note">
+      Your address is used for the posts and nothing else. It is not shared, sold or
+      added to any other list.
+    </p>
+  </div>
+</section>
+
+<style>
+  .subscribe {
+    padding-block: clamp(2.5rem, 6vw, 4rem);
+    background: var(--bg-alt);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .subscribe__inner {
+    text-align: center;
+  }
+
+  .subscribe__body {
+    margin-top: 0.85rem;
+    margin-inline: auto;
+    max-width: 48ch;
+    color: var(--text-muted);
+  }
+
+  .subscribe__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 1.75rem;
+  }
+
+  .subscribe__form input[type='email'] {
+    flex: 1 1 18rem;
+    max-width: 24rem;
+    padding: 0.75rem 0.9rem;
+    font-family: inherit;
+    font-size: 0.97rem;
+    color: var(--text);
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .subscribe__form input[type='email']:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  .subscribe__form .btn {
+    flex: 0 0 auto;
+  }
+
+  .hidden-field {
+    display: none;
+  }
+
+  /*
+    The label stays in the accessibility tree — the placeholder is not a label —
+    but is visually replaced by it, since a one-field form does not need both.
+  */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .subscribe__note {
+    margin-top: 1.1rem;
+    margin-inline: auto;
+    max-width: 44ch;
+    font-size: 0.83rem;
+    color: var(--text-muted);
+  }
+</style>

@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTA from '../../components/CTA.astro';
 import ViewCount from '../../components/ViewCount.astro';
+import Subscribe from '../../components/Subscribe.astro';
 import { site } from '../../data/site';
 import { breadcrumbSchema } from '../../data/schema';
 
@@ -98,6 +99,8 @@ const fmt = (d: Date) =>
       }
     </div>
   </section>
+
+  <Subscribe />
 
   <CTA />
 </BaseLayout>

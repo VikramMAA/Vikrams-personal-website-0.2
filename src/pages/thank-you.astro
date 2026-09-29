@@ -40,6 +40,10 @@ const isProd = import.meta.env.PROD;
     honeypot, or anyone who simply navigates to /thank-you/ directly, fires
     nothing. Do not make this fire unconditionally on page load.
 
+    The newsletter form has its own success page at /subscribed/ and fires
+    sign_up rather than generate_lead. A subscriber is not a lead, and the two
+    events stay separate on purpose.
+
     `lead_source` and `form_id` need registering as custom dimensions in GA4
     before they show up in reports (implementation plan, task 1.4).
   */}
@@ -50,6 +54,7 @@ const isProd = import.meta.env.PROD;
           if (typeof window.gtag !== 'function') return;
           var src = new URLSearchParams(window.location.search).get('src');
           if (!src) return;
+
           window.gtag('event', 'generate_lead', {
             lead_source: 'contact_form',
             form_id: src,

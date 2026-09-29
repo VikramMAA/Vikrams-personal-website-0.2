@@ -1,0 +1,78 @@
+---
+/**
+ * Newsletter success page. Netlify Forms redirects here after a successful
+ * submission of the `newsletter` form (see src/components/Subscribe.astro).
+ *
+ * This is a separate page from /thank-you/ rather than a query-string variant of
+ * it for two reasons: the copy a subscriber needs is not the copy someone who
+ * sent a message needs, and a bare path cannot lose its meaning the way a
+ * ?src= marker can if a redirect strips the query string.
+ *
+ * It fires `sign_up`, never `generate_lead`. Bots caught by the form's honeypot
+ * are rejected by Netlify and never arrive here.
+ *
+ * noindex, and excluded from the sitemap by the filter in astro.config.mjs.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const isProd = import.meta.env.PROD;
+---
+
+<BaseLayout
+  title="You are subscribed"
+  description="You are on the list. New posts will arrive by email as they go up."
+  noindex={true}
+>
+  <section class="section centered">
+    <div class="container container--narrow">
+      <p class="eyebrow">Subscribed</p>
+      <h1>You are on the list.</h1>
+      <p class="lede">
+        New posts will land in your inbox as they go up. Nothing else will — no
+        sequence, no pitch, and every email has an unsubscribe link.
+      </p>
+      <p class="lede">
+        If you would rather not wait, there are around ninety posts already up.
+      </p>
+      <div class="btn-row">
+        <a href="/blog/" class="btn btn--primary">Read the blog</a>
+        <a href="/" class="btn btn--ghost">Back to home</a>
+      </div>
+    </div>
+  </section>
+
+  {
+    isProd && (
+      <script is:inline>
+        (function () {
+          if (typeof window.gtag !== 'function') return;
+          window.gtag('event', 'sign_up', {
+            method: 'newsletter',
+            page_path: window.location.pathname,
+          });
+        })();
+      </script>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .centered {
+    text-align: center;
+    padding-block: clamp(4rem, 12vw, 8rem);
+  }
+
+  .centered .lede {
+    margin-inline: auto;
+    margin-top: 1.25rem;
+  }
+
+  .centered .btn-row {
+    justify-content: center;
+  }
+
+  /* Scoped to paragraph links so it cannot repaint the buttons in .btn-row. */
+  .centered .lede a {
+    color: var(--accent);
+  }
+</style>

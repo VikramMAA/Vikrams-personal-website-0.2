@@ -55,7 +55,7 @@ The compliant version is duller and, annoyingly, more effective.
 
 **Do it every single time.** Review volume is a consistency problem, not a cleverness problem. A business asking every customer will comfortably beat one running a clever campaign twice a year.
 
-The uncomfortable part of doing this properly is that you will now collect some bad reviews. That is not a side effect to be managed, it is the point. A perfect five star profile with 200 reviews reads as fake to most people, and there is decent evidence that a rating slightly below perfect converts better than a spotless one.
+The uncomfortable part of doing this properly is that you will now collect some bad reviews. That is not a side effect to be managed, it is the point. A perfect five star profile with 200 reviews reads as fake to most people, and there is decent evidence that a rating slightly below perfect converts better than a spotless one. How much reviews matter varies by category — for [restaurants in India](/blog/local-seo-for-restaurants-india/) they are close to the whole game, because the decision is being made in the next twenty minutes.
 
 ## How to answer a one star review
 
@@ -79,6 +79,6 @@ Open your review request flow and look for a satisfaction gate. If it is there, 
 
 Then grab your direct review link from the Business Profile and put it somewhere your team can reach it in one tap, because that is the difference between asking sometimes and asking always.
 
-Reviews are the highest leverage thing most local businesses can improve, which I touched on in [getting more customers without raising ad spend](/blog/how-to-get-more-customers-online/). Doing it in a way that cannot cost you $53,088 a time seems worth the ten minutes.
+Reviews are the highest leverage thing most local businesses can improve, which I touched on in [getting more customers without raising ad spend](/blog/how-to-get-more-customers-online/). The other half of being found locally is making the business legible to machines — [the schema markup a local business actually needs](/blog/schema-markup-for-local-business/) covers that, and it takes about the same thirty minutes. Doing it in a way that cannot cost you $53,088 a time seems worth the ten minutes.
 
 If you'd like a second look at your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on SEO](/expertise/seo/) cover where reviews fit with everything else.

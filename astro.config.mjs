@@ -10,7 +10,8 @@ export default defineConfig({
   integrations: [
     sitemap({
       // Keep noindex pages out of the sitemap — listing them is a mixed signal.
-      filter: (page) => !page.includes('/thank-you'),
+      filter: (page) =>
+        !page.includes('/thank-you') && !page.includes('/subscribed'),
     }),
   ],
   build: {
