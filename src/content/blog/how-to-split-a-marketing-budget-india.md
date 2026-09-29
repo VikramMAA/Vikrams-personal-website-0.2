@@ -69,7 +69,7 @@ Notice what's missing. No Meta again. No display. No brand campaign. At this bud
 
 This is the uncomfortable half, and it's where the money comes from.
 
-The retainer that produces a report. If what arrives monthly is a PDF of impressions and reach with no decision attached, that's Rs 15,000 buying reassurance. The practice is common enough in this market to be a genre, and it survives because a report feels like progress.
+The retainer that produces a report. If what arrives monthly is a PDF of impressions and reach with no decision attached, that's Rs 15,000 buying reassurance. The practice is common enough in this market to be a genre, and it survives because a report feels like progress. Converting the retainer into hours of somebody's attention is the quickest way to see it — [agency pricing, in hours rather than rupees](/blog/how-much-does-a-digital-marketing-agency-cost/) walks through that arithmetic.
 
 The person posting festival greetings. Diwali graphics get likes from people who already buy from you. If social is not the channel your buyer decides on, it should not be a funded line.
 

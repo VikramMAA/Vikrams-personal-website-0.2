@@ -68,7 +68,7 @@ A monthly PDF is roughly what those economics support. That part isn't a scandal
 
 The rubbish part is the description. Selling three hours a month as "full service digital marketing across SEO, social, paid and content" sets up a relationship that has to be theatre, because no honest version of it fits in the budget. Plenty of the people selling it know this perfectly well.
 
-If Rs 25,000 is genuinely what you have, the better spend is one channel done properly by one person who answers your WhatsApp, or a fixed-scope audit that tells you where the money is leaking before you commit to another year. Both beat a retainer that funds a report.
+If Rs 25,000 is genuinely what you have, the better spend is one channel done properly by one person who answers your WhatsApp, or a fixed-scope audit that tells you where the money is leaking before you commit to another year. Both beat a retainer that funds a report. It is worth checking that figure against [what a digital marketing agency actually costs](/blog/how-much-does-a-digital-marketing-agency-cost/) before you renew, because the floor for one channel handled properly is higher than most Indian quotes imply.
 
 ## What I'd actually do this week
 

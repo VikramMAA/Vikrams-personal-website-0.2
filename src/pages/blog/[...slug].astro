@@ -4,8 +4,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTA from '../../components/CTA.astro';
 import ViewCount from '../../components/ViewCount.astro';
+import FAQ from '../../components/FAQ.astro';
 import { site } from '../../data/site';
-import { articleSchema, breadcrumbSchema } from '../../data/schema';
+import { articleSchema, breadcrumbSchema, faqSchema } from '../../data/schema';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => data.published);
@@ -26,6 +27,14 @@ const crumbs = [
 
 const fmt = (d: Date) =>
   d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+/**
+ * Posts that consolidate a cluster of near-duplicate queries declare them as
+ * `faq` in their front matter. The block renders below the article and the
+ * matching FAQPage JSON-LD goes out with the page schema — one mechanism, so
+ * no post has to hand-write JSON-LD.
+ */
+const faq = post.data.faq ?? [];
 ---
 
 <BaseLayout
@@ -40,6 +49,7 @@ const fmt = (d: Date) =>
       publishedAt: post.data.publishedAt,
       updatedAt: post.data.updatedAt,
     }),
+    ...(faq.length ? [faqSchema(faq)] : []),
   ]}
 >
   <Breadcrumbs items={crumbs} />
@@ -99,6 +109,8 @@ const fmt = (d: Date) =>
       </div>
     </div>
   </article>
+
+  {faq.length > 0 && <FAQ items={faq} />}
 
   <CTA />
 </BaseLayout>

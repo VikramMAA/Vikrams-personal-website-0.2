@@ -77,7 +77,7 @@ The tradeoff you're accepting with a freelancer is bus factor. One person gets i
 
 Ask what would make them tell you not to hire them.
 
-Everyone competent has a disqualifying scenario. Wrong budget for the channel, wrong stage of business, a market where the economics don't work, a problem that's actually a sales problem wearing a marketing costume. Someone who has genuinely thought about their own limits answers this in one sentence.
+Everyone competent has a disqualifying scenario. Wrong budget for the channel, wrong stage of business, a market where the economics don't work, a problem that's actually a sales problem wearing a marketing costume. Someone who has genuinely thought about their own limits answers this in one sentence. Wrong budget is the most common of those scenarios, and [what a digital marketing agency costs](/blog/how-much-does-a-digital-marketing-agency-cost/) sets out the floor below which the deliverables list stops being achievable.
 
 Someone who insists every business is a fit for them has just told you they're describing an invoice.
 

@@ -53,7 +53,7 @@ I want to be straight about this because the internet is full of independents ar
 
 An agency is the right answer when you need several channels running at once and somebody coordinating between them. When you need coverage, so one person's holiday does not stop the work. When production volume is the actual constraint, meaning you need forty pieces of creative a month and no individual can make that. And when your procurement process will not onboard a sole trader, which is a real and immovable constraint at larger companies.
 
-In those four situations an independent is the wrong tool and hiring one will frustrate everybody.
+In those four situations an independent is the wrong tool and hiring one will frustrate everybody. Where an independent *is* the right tool, [how to choose a digital marketing consultant](/blog/how-to-choose-a-digital-marketing-consultant/) is the version of this page for that decision.
 
 ## When it is the wrong call
 

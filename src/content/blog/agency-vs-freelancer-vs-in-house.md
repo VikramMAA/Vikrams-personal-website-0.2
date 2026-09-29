@@ -91,6 +91,6 @@ Three or more channels, or real production volume, or work that cannot stop: age
 
 Marketing is the core of how you compete: build it inside, and start with someone senior enough to know what not to do.
 
-Whichever you choose, write the context down somewhere that is not a person. [The questions to ask before signing](/blog/how-to-choose-a-digital-marketing-agency/) cover the ownership side of that, and my [notes on how I work](/expertise/) cover the rest.
+Whichever you choose, write the context down somewhere that is not a person. [The questions to ask before signing](/blog/how-to-choose-a-digital-marketing-agency/) cover the ownership side of that, [how to choose a digital marketing consultant](/blog/how-to-choose-a-digital-marketing-consultant/) covers what to ask if you go the independent route, and my [notes on how I work](/expertise/) cover the rest.
 
 If you'd like to think through which of the three fits your situation, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.

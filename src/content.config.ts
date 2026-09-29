@@ -17,6 +17,23 @@ const blog = defineCollection({
     heroImage: z.string().optional(),
     /** Alt text for `heroImage`. Falls back to the post title. */
     heroImageAlt: z.string().optional(),
+    /**
+     * Optional FAQ block, rendered at the foot of the post and emitted as
+     * FAQPage JSON-LD by the post template. Use it to signal that one page
+     * answers a cluster of near-duplicate queries, rather than hand-writing
+     * JSON-LD per post.
+     *
+     * Keep every answer visible in the rendered page — FAQPage markup that
+     * does not match on-page content is a manual-action risk.
+     */
+    faq: z
+      .array(
+        z.object({
+          q: z.string(),
+          a: z.string(),
+        }),
+      )
+      .optional(),
   }),
 });
 

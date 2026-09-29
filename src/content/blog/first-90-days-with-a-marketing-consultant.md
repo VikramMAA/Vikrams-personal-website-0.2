@@ -9,7 +9,7 @@ tags: ["Consulting", "Process", "Onboarding"]
 
 If a finished plan lands on your desk in week one, they wrote it before they met you.
 
-That is worth saying first because speed is the thing buyers reward, and it is the clearest early signal that you have hired a template. Nobody can understand a business in four days. What they can do is produce a document that looks like understanding, assembled from the last three clients in your industry, and most people receiving it feel reassured rather than suspicious.
+That is worth saying first because speed is the thing buyers reward, and it is the clearest early signal that you have hired a template. Nobody can understand a business in four days. What they can do is produce a document that looks like understanding, assembled from the last three clients in your industry, and most people receiving it feel reassured rather than suspicious. If you have not hired anybody yet, [the seven questions worth asking first](/blog/how-to-choose-a-digital-marketing-consultant/) is the step before this one.
 
 So here is the claim I would defend. **A good first ninety days produces almost no new marketing.** It produces a small number of reversible fixes, one properly argued decision, and a great deal of finding out. If the campaigns are live in week two, the diagnosis was skipped.
 

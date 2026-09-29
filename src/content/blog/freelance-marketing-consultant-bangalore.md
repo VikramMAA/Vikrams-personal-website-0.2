@@ -19,7 +19,7 @@ Nothing in my plan won that meeting. My plan was fine. The plan was not the vari
 
 ## The checklist everybody publishes
 
-Look up how to hire a marketing consultant and you get the same list every time. Proven results with metrics in the case studies. Certifications from Google or HubSpot or Meta. Client testimonials. Relevant industry experience. Good communication.
+Look up how to hire a marketing consultant and you get the same list every time. Proven results with metrics in the case studies. Certifications from Google or HubSpot or Meta. Client testimonials. Relevant industry experience. Good communication. I have written the more useful version of that list as [seven questions to ask when choosing a digital marketing consultant](/blog/how-to-choose-a-digital-marketing-consultant/), and none of them are on the standard checklist.
 
 None of that is wrong. All of it is reasonable. And in my experience it predicted almost nothing about whether a given engagement would actually produce anything.
 

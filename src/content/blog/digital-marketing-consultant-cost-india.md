@@ -90,6 +90,6 @@ Three questions, and the answers tell you more than the number does. How many ho
 
 Anybody quoting seriously answers all three without flinching. Anybody who cannot is quoting a package rather than a piece of work, and a package is a price with a story attached.
 
-I have written more about [the structural questions to ask before signing](/blog/how-to-choose-a-digital-marketing-agency/), which is the other half of this conversation.
+I have written more about [the structural questions to ask before signing](/blog/how-to-choose-a-digital-marketing-agency/), which is the other half of this conversation. If you are comparing against international quotes, [agency pricing in dollars and rupees](/blog/how-much-does-a-digital-marketing-agency-cost/) has the same ranges by engagement type, including project and audit fees.
 
 If you'd like to sanity check a quote you are looking at, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat about it. I'm contracted full time so this isn't a pitch and I'm not bidding for the work. My [notes on how I work](/expertise/) cover the longer version.
