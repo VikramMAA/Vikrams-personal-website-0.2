@@ -79,4 +79,4 @@ That is not a compromise between two camps. It is using each for the window wher
 
 If you are working out what any of this should cost you, I went through [the real pricing ranges in India](/blog/digital-marketing-consultant-cost-india/) separately, including why the quotes vary so wildly.
 
-If you'd like to think through whether your category justifies it, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on SEO](/expertise/seo/) cover the detail.
+If you'd like to think through whether your category justifies it, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on SEO](/expertise/seo/) cover the detail.

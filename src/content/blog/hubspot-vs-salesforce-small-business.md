@@ -77,4 +77,4 @@ Salesforce when you have the admin, the complexity, or a credible plan to be muc
 
 And neither, for another year, if the real problem is that nobody is following up on the leads you already have. No CRM has ever fixed that, and a lot of them have made it easier to not notice.
 
-My [notes on aligning marketing and sales](/expertise/marketing-sales-alignment/) cover what goes in the system once you've picked it. If you'd like to think through your own choice, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on aligning marketing and sales](/expertise/marketing-sales-alignment/) cover what goes in the system once you've picked it. If you'd like to think through your own choice, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

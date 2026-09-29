@@ -79,4 +79,4 @@ That list took ten minutes and is worth more than a month of new content, becaus
 
 If you want the fuller version of the technical side, I went through [running your own audit in two hours](/blog/how-to-do-an-seo-audit-yourself/), which covers what to check once you have that list.
 
-If you'd like to talk through what your own numbers are showing, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on lead generation](/expertise/lead-generation/) cover the wider picture.
+If you'd like to talk through what your own numbers are showing, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on lead generation](/expertise/lead-generation/) cover the wider picture.

@@ -91,4 +91,4 @@ Then open your profile, sort by lowest rating, and find every negative review wi
 
 Last, read your own worst review as a stranger would, including your reply if there is one, and ask whether you would call that business.
 
-My [notes on SEO](/expertise/seo/) cover where reviews sit alongside the rest of local search. If you'd like a second opinion on a reply you are about to post, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on SEO](/expertise/seo/) cover where reviews sit alongside the rest of local search. If you'd like a second opinion on a reply you are about to post, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

@@ -85,4 +85,4 @@ Get your last twelve months of enquiries and closed customers. Work out the gros
 
 Multiply your current cost per lead by thirty. If your monthly paid budget is below that figure, you have a structural problem rather than a performance problem, and the fix is narrowing the campaign rather than changing the copy.
 
-My [notes on performance marketing](/expertise/performance-marketing/) cover how the rest of it fits together. If you'd like to sanity check your own arithmetic, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on performance marketing](/expertise/performance-marketing/) cover how the rest of it fits together. If you'd like to sanity check your own arithmetic, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

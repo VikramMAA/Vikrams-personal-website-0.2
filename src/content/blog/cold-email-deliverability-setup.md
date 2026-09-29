@@ -93,4 +93,4 @@ Check whether you're sending cold mail from your primary domain. If you are, tha
 
 Then run your sending domain through any free DMARC checker and see whether all three records pass and align. Ten minutes, and it explains most mysterious deliverability problems.
 
-If you'd like to talk through what your setup is doing, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on lead generation](/expertise/lead-generation/) cover the wider picture.
+If you'd like to talk through what your setup is doing, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on lead generation](/expertise/lead-generation/) cover the wider picture.

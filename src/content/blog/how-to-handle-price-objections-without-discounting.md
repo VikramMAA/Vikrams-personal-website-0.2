@@ -91,4 +91,4 @@ If the honest answer to any of them is "the deal," you did not negotiate. You pa
 
 The next time somebody tells you it is too expensive, try saying "that's fair, what are you comparing it to" and then genuinely waiting. It is the cheapest experiment in this entire post and it changes more conversations than it has any right to.
 
-If you'd like to think through your own pricing conversations out loud, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on marketing and sales alignment](/expertise/marketing-sales-alignment/) cover where this sits in the wider picture.
+If you'd like to think through your own pricing conversations out loud, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on marketing and sales alignment](/expertise/marketing-sales-alignment/) cover where this sits in the wider picture.

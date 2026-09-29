@@ -93,4 +93,4 @@ Go organic first only if the click price locks you out, if you already have rank
 
 And do not split a small budget between them out of caution. That is the one choice that reliably fails.
 
-My [notes on SEO](/expertise/seo/) cover how the organic side gets built. If you'd like to think through your own position, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on SEO](/expertise/seo/) cover how the organic side gets built. If you'd like to think through your own position, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

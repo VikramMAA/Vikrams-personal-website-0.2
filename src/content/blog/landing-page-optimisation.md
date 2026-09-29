@@ -105,4 +105,4 @@ Then add a sticky WhatsApp and call bar to the bottom of the page.
 
 None of this costs media budget, and all of it multiplies whatever you already spend. Which is why it comes before [working out how much to spend](/blog/digital-marketing-budget-small-business-india/), not after.
 
-My [notes on performance marketing](/expertise/performance-marketing/) cover the traffic side once the page is worth sending people to. If you'd like a second pair of eyes on your own page, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on performance marketing](/expertise/performance-marketing/) cover the traffic side once the page is worth sending people to. If you'd like a second pair of eyes on your own page, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

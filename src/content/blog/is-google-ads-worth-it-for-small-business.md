@@ -85,4 +85,4 @@ Google Ads works. It has always worked, mechanically, and it works better in 202
 
 The question was never whether it works. It is whether it works at the price your particular business can pay for a customer, and that is arithmetic rather than opinion. Run the calculation at the top of this page. If the number clears, this is probably your fastest channel. If it does not, every dollar you spend proving otherwise is a dollar that would have been better spent on the conversion rate that determines the number in the first place.
 
-If you'd like to sanity check your own figures, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on performance marketing](/expertise/performance-marketing/) cover the rest.
+If you'd like to sanity check your own figures, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on performance marketing](/expertise/performance-marketing/) cover the rest.

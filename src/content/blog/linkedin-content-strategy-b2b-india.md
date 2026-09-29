@@ -87,4 +87,4 @@ Then write one post from the four types above. The objection one is the easiest 
 
 Then comment on three posts before you close the tab.
 
-Do that daily for six weeks and you'll know whether this works for your market, which is a faster answer than any agency will give you. My [notes on social media](/expertise/social-media-marketing/) cover the rest. If you'd like to think through your own approach, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+Do that daily for six weeks and you'll know whether this works for your market, which is a faster answer than any agency will give you. My [notes on social media](/expertise/social-media-marketing/) cover the rest. If you'd like to think through your own approach, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

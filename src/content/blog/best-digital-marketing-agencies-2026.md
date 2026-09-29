@@ -71,4 +71,4 @@ The structural questions matter more still. Who owns your ad accounts when the r
 
 If you read one thing from this page, make it this: shortlist from any directory you like, then ignore the ranking entirely and interrogate the pricing model, the named humans and the exit terms. Those three predict whether you will be happy in eighteen months. The position on a list predicts what somebody paid for it.
 
-I'm contracted full time and not available for hire, so this isn't a pitch and I'm not on anybody's list. If you want a second opinion on a shortlist you are looking at, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat about it. My [notes on how I work](/expertise/) cover the rest.
+If you want a second opinion on a shortlist you are looking at, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat about it. My [notes on how I work](/expertise/) cover the rest.

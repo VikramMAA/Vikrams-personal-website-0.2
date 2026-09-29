@@ -93,4 +93,4 @@ Then click your own do not sell or share link and follow it all the way through.
 
 Whatever you find, write it down with today's date and send it to whoever owns compliance, the same way [the SMS consent question](/blog/tcpa-compliance-sms-marketing/) belongs in writing rather than in somebody's memory. A documented decision is a defensible one, and an undocumented accident is not.
 
-My [notes on performance marketing](/expertise/performance-marketing/) cover the measurement side once the plumbing is right. If you'd like to think through your own setup before it goes to counsel, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on performance marketing](/expertise/performance-marketing/) cover the measurement side once the plumbing is right. If you'd like to think through your own setup before it goes to counsel, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

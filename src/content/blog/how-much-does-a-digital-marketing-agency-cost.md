@@ -138,4 +138,4 @@ I have written separately about [the structural questions to ask before signing]
 
 The short version of all of this: stop comparing the monthly numbers against each other and start converting them into hours of a named person's attention. Once you do that, the tenfold spread in quotes you have been staring at usually resolves into something that makes sense.
 
-If you'd like to sanity check a quote you are looking at, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat about it. I'm contracted full time so this isn't a pitch and I'm not bidding for the work. My [notes on how I work](/expertise/) cover more of the detail.
+If you'd like to sanity check a quote you are looking at, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat about it. My [notes on how I work](/expertise/) cover more of the detail.

@@ -97,4 +97,4 @@ Make two things a week that somebody would forward to one named person. Read sen
 
 And delete the repost habit this week, because it is the one part of your current calendar that is measurably costing you the audience you were trying to reach.
 
-My [notes on social media](/expertise/social-media-marketing/) cover the rest. If you'd like to think through your own approach, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on social media](/expertise/social-media-marketing/) cover the rest. If you'd like to think through your own approach, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

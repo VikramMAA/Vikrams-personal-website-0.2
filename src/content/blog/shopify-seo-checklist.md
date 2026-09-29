@@ -89,4 +89,4 @@ Look at your own filter URLs, then add matching disallow rules to `robots.txt.li
 
 Then pick your single best selling product and rewrite its description in your own words, properly, as a test of how long it takes. Multiply by twenty and you have next week's plan.
 
-My [notes on SEO](/expertise/seo/) cover the wider picture. If you'd like a second opinion on your own store, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on SEO](/expertise/seo/) cover the wider picture. If you'd like a second opinion on your own store, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

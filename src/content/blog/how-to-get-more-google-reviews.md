@@ -81,4 +81,4 @@ Then grab your direct review link from the Business Profile and put it somewhere
 
 Reviews are the highest leverage thing most local businesses can improve, which I touched on in [getting more customers without raising ad spend](/blog/how-to-get-more-customers-online/). The other half of being found locally is making the business legible to machines — [the schema markup a local business actually needs](/blog/schema-markup-for-local-business/) covers that, and it takes about the same thirty minutes. Doing it in a way that cannot cost you $53,088 a time seems worth the ten minutes.
 
-If you'd like a second look at your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on SEO](/expertise/seo/) cover where reviews fit with everything else.
+If you'd like a second look at your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on SEO](/expertise/seo/) cover where reviews fit with everything else.

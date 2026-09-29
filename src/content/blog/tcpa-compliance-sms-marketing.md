@@ -93,4 +93,4 @@ Then find out whether you can produce a dated copy of the consent wording that w
 
 SMS is a genuinely strong channel with response rates that make email look tired, which is exactly why it attracts both regulation and litigation. It rewards the businesses that treat consent as an asset rather than a formality, in much the same way [outbound now rewards restraint](/blog/ai-sdr-tools/).
 
-My [notes on lead generation](/expertise/lead-generation/) cover where SMS fits alongside everything else. If you'd like to think through your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on lead generation](/expertise/lead-generation/) cover where SMS fits alongside everything else. If you'd like to think through your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

@@ -85,4 +85,4 @@ Pull the last fifty rejected leads, tag each one with a reason, and count them. 
 
 Then write the definition, get both leads to sign it, and put a rejection reason field on every lead from Monday. That is a week of work and it converts a permanent argument into a monthly number that moves.
 
-My [notes on marketing and sales alignment](/expertise/marketing-sales-alignment/) cover how the handoff usually gets built. If you'd like to talk through where your own leads are dying, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on marketing and sales alignment](/expertise/marketing-sales-alignment/) cover how the handoff usually gets built. If you'd like to talk through where your own leads are dying, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

@@ -89,4 +89,4 @@ Check who owns your Google Ads account and your GA4 property. Do that first, bec
 
 Then write down the four exit terms and put them in front of whoever you're about to sign with.
 
-If you'd like to think through your own GTM or digital marketing problem out loud, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on how I work](/expertise/) go into more detail if you'd rather just read.
+If you'd like to think through your own GTM or digital marketing problem out loud, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on how I work](/expertise/) go into more detail if you'd rather just read.

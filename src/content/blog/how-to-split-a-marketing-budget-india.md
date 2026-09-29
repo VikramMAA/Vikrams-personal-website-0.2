@@ -91,4 +91,4 @@ Pick the one channel your customer actually decides on. Fund it above its floor 
 
 You'll have a real answer instead of six ambiguous ones, and that is worth more than the diversification you gave up.
 
-My [notes on what I work on](/expertise/) cover the rest. If you want to think through your own split, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on what I work on](/expertise/) cover the rest. If you want to think through your own split, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

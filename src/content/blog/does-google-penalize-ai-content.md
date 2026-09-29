@@ -76,4 +76,4 @@ If you can't find one, that's your answer, and it has nothing to do with how the
 
 The teams that come out of this fine won't be the ones who swore off the tools, and they won't be the ones who scaled hardest either. They'll be the ones who worked out that the scarce input was never the writing. It was having something to say, and that got scarcer the moment writing got free.
 
-If you want to think that through out loud for your own content, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on content marketing](/expertise/content-marketing/) cover how I'd audit a library for this if you'd rather just read.
+If you want to think that through out loud for your own content, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on content marketing](/expertise/content-marketing/) cover how I'd audit a library for this if you'd rather just read.

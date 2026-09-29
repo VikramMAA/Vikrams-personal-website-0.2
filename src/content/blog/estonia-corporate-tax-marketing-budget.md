@@ -83,4 +83,4 @@ The country built a corporate tax structure specifically to reward capital that 
 
 Go and find out where the money you budgeted for the 2026 tax rise ended up. Then decide, deliberately rather than by default, whether it is doing more sitting in the account than it would do in the one channel you already know converts. I wrote about [distribution being the harder half of the problem for Estonian companies](/blog/estonian-startup-marketing/) and this is the funding version of the same argument.
 
-If you'd like to think through your own version of that decision, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch, and my [notes on how I work](/expertise/) cover the rest.
+If you'd like to think through your own version of that decision, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on how I work](/expertise/) cover the rest.

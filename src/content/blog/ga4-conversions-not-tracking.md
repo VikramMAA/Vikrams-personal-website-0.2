@@ -95,4 +95,4 @@ Then count your actual WhatsApp enquiries for last month and put that number bes
 
 Once the numbers are trustworthy, [the budget arithmetic](/blog/digital-marketing-budget-small-business-india/) and [the six places Google Ads leaks money](/blog/google-ads-not-converting/) both become decisions rather than guesses, which is the entire reason to fix this.
 
-My [notes on how I work](/expertise/) cover the rest. If you'd like a second pair of eyes on your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on how I work](/expertise/) cover the rest. If you'd like a second pair of eyes on your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

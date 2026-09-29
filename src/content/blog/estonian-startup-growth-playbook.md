@@ -91,4 +91,4 @@ The honest version is usually: the founders talked to an unreasonable number of 
 
 That is available to you this week and it costs nothing except the willingness to do something that will not look impressive in an investor update. Which is the actual reason it gets skipped.
 
-My [notes on what I work on](/expertise/) cover the rest. If you'd like to think through your own stage, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on what I work on](/expertise/) cover the rest. If you'd like to think through your own stage, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

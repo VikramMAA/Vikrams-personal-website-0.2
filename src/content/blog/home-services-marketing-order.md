@@ -93,4 +93,4 @@ Then open your Google Business Profile and fix whatever is stale. Hours, service
 
 Then look at your current paid channels and calculate cost per booked job for each, separately. Not cost per lead, and not blended across sources. That number will usually tell you which channel to stop and which has room left.
 
-My [notes on lead generation](/expertise/lead-generation/) cover the detail behind each step. If you'd like to think through where your own business is in this order, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on lead generation](/expertise/lead-generation/) cover the detail behind each step. If you'd like to think through where your own business is in this order, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

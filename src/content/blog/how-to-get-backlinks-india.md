@@ -93,4 +93,4 @@ Then open a document and write down the one number inside your business that a j
 
 While you are at it, the links you already control matter too, and [how your own pages link to each other](/blog/internal-linking-strategy/) is usually a faster win than anything external.
 
-My [notes on SEO](/expertise/seo/) cover the rest. If you'd like to think through your own approach, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on SEO](/expertise/seo/) cover the rest. If you'd like to think through your own approach, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

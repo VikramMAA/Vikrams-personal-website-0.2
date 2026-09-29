@@ -91,4 +91,4 @@ Take the median. If it is longer than an hour you have found a larger and cheape
 
 Then decide who owns the next one, by name, before it arrives.
 
-My [notes on lead generation](/expertise/lead-generation/) cover the rest of the stack. If you'd like to think through your own follow up process, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on lead generation](/expertise/lead-generation/) cover the rest of the stack. If you'd like to think through your own follow up process, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

@@ -81,4 +81,4 @@ If it is comfortably above 40%, marketplaces are a reasonable place to start and
 
 If it is below that, the marketplace route will quietly consume everything, and you need either a higher price point, a different category, or a direct channel from the start.
 
-If you'd like to talk through which route fits your product, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on how I work](/expertise/) go into more detail.
+If you'd like to talk through which route fits your product, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on how I work](/expertise/) go into more detail.

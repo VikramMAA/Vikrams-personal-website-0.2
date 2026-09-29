@@ -89,4 +89,4 @@ Then pick your worst performing location, email that manager three questions: wh
 
 Do one location properly this week rather than five badly. The one you fix becomes the template for the argument, which is easier to win once you can point at a result.
 
-My [notes on SEO](/expertise/seo/) cover the wider picture. If you want to think through your own location setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on SEO](/expertise/seo/) cover the wider picture. If you want to think through your own location setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

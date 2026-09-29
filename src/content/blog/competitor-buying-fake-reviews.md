@@ -87,4 +87,4 @@ The regulator is not going to arrive and restore the ranking you feel you are ow
 
 The uncomfortable good news is that this is now a category where doing it honestly is not merely the ethical choice. It is the one with the better risk profile, and it took a federal rule to make that true.
 
-My [notes on SEO](/expertise/seo/) cover where reviews sit alongside the rest of local search. If you'd like a second opinion on your own review process before you point at anybody else's, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on SEO](/expertise/seo/) cover where reviews sit alongside the rest of local search. If you'd like a second opinion on your own review process before you point at anybody else's, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

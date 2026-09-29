@@ -83,4 +83,4 @@ Honestly: when you fail INP and don't have a developer, when Page indexing shows
 
 Everything else on this list you can do yourself this morning. The paid version finds the same things, it just arrives as a PDF.
 
-If you'd like to talk through what you found, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on SEO](/expertise/seo/) go deeper on the parts worth prioritizing.
+If you'd like to talk through what you found, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on SEO](/expertise/seo/) go deeper on the parts worth prioritizing.

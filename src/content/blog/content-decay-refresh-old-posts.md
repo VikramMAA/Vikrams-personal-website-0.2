@@ -81,4 +81,4 @@ But do it in the order that hurts. Delete and consolidate first, because that is
 
 A refresh program that produces fewer, better pages is worth running. One that produces the same pages with new dates on them is a reporting exercise, and everybody involved knows it.
 
-My [notes on content marketing](/expertise/content-marketing/) cover where this sits alongside the rest. If you'd like a second opinion on your own decay list, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on content marketing](/expertise/content-marketing/) cover where this sits alongside the rest. If you'd like a second opinion on your own decay list, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

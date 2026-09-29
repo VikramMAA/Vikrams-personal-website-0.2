@@ -81,4 +81,4 @@ Then search three of those translated queries with the country set to that marke
 
 You will either confirm the plan or discover it was built on an assumption, and both of those are a good morning's work.
 
-My [notes on SEO](/expertise/seo/) cover the technical side once the market choice is settled. If you'd like to think through your own market list, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on SEO](/expertise/seo/) cover the technical side once the market choice is settled. If you'd like to think through your own market list, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

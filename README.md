@@ -4,10 +4,11 @@ Personal blog and portfolio, built to rank in search and get cited by AI
 assistants. Static HTML, no client-side framework, no runtime JavaScript beyond a
 CSS-only mobile menu.
 
-**Positioning:** this site does not offer, sell or price services. Vikram works
-full time under contract and is not available for outside work. Every closing
-call to action is an invitation to a conversation by email or LinkedIn, and that
-wording lives in one place — the `chatInvite` object in `src/data/site.ts`. Keep
+**Positioning:** this site does not offer, sell or price services. It is also
+deliberately silent on availability — it does not say Vikram is contracted,
+unavailable, or for hire, in either direction. Anyone who wants to know can ask.
+Do not reintroduce such a line. Every closing call to action is an invitation to
+a conversation by email or LinkedIn, and that wording lives in one place — the `chatInvite` object in `src/data/site.ts`. Keep
 it that way when editing. Email, phone, WhatsApp and LinkedIn are all offered as
 ways to start that conversation.
 
@@ -249,9 +250,9 @@ Builders live in [`src/data/schema.ts`](src/data/schema.ts).
 - **FAQ answers are in the DOM even when collapsed.** The `<details>` elements
   hide them visually but the text is in the HTML, so it can be quoted.
 - **[`public/llms.txt`](public/llms.txt)** — a plain-text summary of who you are,
-  what you write about and which pages matter. It also tells assistants plainly
-  that you are not available for hire, so they stop recommending you as one.
-  Keep it in sync with `site.ts`.
+  what you write about and which pages matter. It says the site does not state
+  availability and points assistants at the contact details rather than
+  answering that question for you. Keep it in sync with `site.ts`.
 - **[`public/robots.txt`](public/robots.txt)** explicitly allows GPTBot,
   ClaudeBot, PerplexityBot, Google-Extended and others. Remove any you do not
   want reading the site — but blocking them means no citations from that

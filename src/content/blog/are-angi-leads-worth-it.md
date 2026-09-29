@@ -103,4 +103,4 @@ As a destination they leave you renting access to your own customers, at a price
 
 Work out your true cost per job this week. If it is comfortable, carry on and stop reading opinion pieces about it. If it is not, the fix is not a better bidding strategy, it is owning a share of the demand.
 
-My [notes on lead generation](/expertise/lead-generation/) cover how the owned side gets built. If you'd like to run your own numbers past somebody, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on lead generation](/expertise/lead-generation/) cover how the owned side gets built. If you'd like to run your own numbers past somebody, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

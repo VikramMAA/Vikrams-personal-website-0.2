@@ -67,4 +67,4 @@ The version of Google Ads I would defend for an Estonian company is narrow and s
 
 Check the arithmetic first. If the searches are not there, no amount of clever account structure conjures them, and the honest answer to a client asking about Google Ads is sometimes that the budget belongs elsewhere this quarter.
 
-If you'd like to work through the numbers for your own account, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on performance marketing](/expertise/performance-marketing/) cover the wider picture.
+If you'd like to work through the numbers for your own account, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on performance marketing](/expertise/performance-marketing/) cover the wider picture.

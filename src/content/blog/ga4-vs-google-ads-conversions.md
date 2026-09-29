@@ -95,4 +95,4 @@ Then pull the same fortnight from both tools, put the two numbers side by side, 
 
 Then write one line at the top of your reporting doc naming which source decides what. It sounds bureaucratic and it will save you the same argument every month.
 
-My [notes on performance marketing](/expertise/performance-marketing/) cover what to do once you trust the numbers. If you'd like to think through your own measurement setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on performance marketing](/expertise/performance-marketing/) cover what to do once you trust the numbers. If you'd like to think through your own measurement setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

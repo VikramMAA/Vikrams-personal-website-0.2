@@ -99,4 +99,4 @@ You cannot control the price of the impression. You can control how many swings 
 
 Ship more creative than feels reasonable. Calculate your new customer acquisition cost this week, because it is probably not what you think. Then spend some of the money you were going to put into ads on making people buy twice.
 
-My [notes on performance marketing](/expertise/performance-marketing/) cover the rest. If you'd like to think through your own numbers, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on performance marketing](/expertise/performance-marketing/) cover the rest. If you'd like to think through your own numbers, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

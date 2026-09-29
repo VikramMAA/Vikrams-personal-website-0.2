@@ -77,6 +77,6 @@ Which means the most useful thing you can do before hiring anybody is decide who
 
 I learned that from the client side of the table rather than from any book, and I learned it slowly, mostly by getting it wrong first.
 
-To be clear about my own position: I work full time under contract now and I do not take outside work, so none of this is a pitch. If you want to think through your own situation or you are choosing between people, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on how I work](/about/) cover the rest.
+If you want to think through your own situation or you are choosing between people, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on how I work](/about/) cover the rest.
 
 Cheers!

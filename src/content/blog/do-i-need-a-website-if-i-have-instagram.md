@@ -85,4 +85,4 @@ The mistake is not using Instagram, which is the correct place to be for a large
 
 The search argument for a website got weaker last July. The ownership argument got stronger, because reach fell again this year and will fall again next year. Build the one page and the list. Skip the rest until you have a reason.
 
-If you'd like to think through whether your business is in the wait category or the build category, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on how I work](/expertise/) cover more of the thinking.
+If you'd like to think through whether your business is in the wait category or the build category, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on how I work](/expertise/) cover more of the thinking.

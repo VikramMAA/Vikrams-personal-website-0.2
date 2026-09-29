@@ -97,4 +97,4 @@ The fix is restraint. Fewer sends, chosen by a trigger, with something in them t
 
 The industry will not do that, because the dashboard rewards volume and restraint does not demo well. Which is exactly why doing it remains worth something.
 
-My [notes on lead generation](/expertise/lead-generation/) cover where outbound sits alongside the channels that do not depend on interrupting anybody. If you'd like to think through your own outbound, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on lead generation](/expertise/lead-generation/) cover where outbound sits alongside the channels that do not depend on interrupting anybody. If you'd like to think through your own outbound, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

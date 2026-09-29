@@ -81,4 +81,4 @@ Then hold the first meeting where somebody has to explain a number that went dow
 
 I've written separately about [what your agency genuinely can't see in their own reporting](/blog/agency-not-delivering-results/), which is a different problem from this one and worth reading alongside it. This post assumes the numbers are honest. That post covers what happens when the platforms themselves stopped showing them.
 
-If you want to think through which four numbers fit your business, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on how I work](/expertise/) go into the longer version.
+If you want to think through which four numbers fit your business, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on how I work](/expertise/) go into the longer version.

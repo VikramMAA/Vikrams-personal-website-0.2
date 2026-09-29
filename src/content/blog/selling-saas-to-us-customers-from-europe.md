@@ -93,4 +93,4 @@ None of that is a growth strategy in the sense founders enjoy discussing. It is 
 
 Estonia has 1.3 million people, so this journey is not optional for anything with real ambition. I wrote separately about [why distribution is the harder half of the problem for Estonian companies](/blog/estonian-startup-marketing/), and this is that argument aimed at the largest market you will ever sell into.
 
-My [notes on how I work](/expertise/) cover the rest. If you'd like to think through your own US entry out loud, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on how I work](/expertise/) cover the rest. If you'd like to think through your own US entry out loud, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

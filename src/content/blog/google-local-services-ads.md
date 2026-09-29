@@ -87,4 +87,4 @@ Last, if you also run Search ads, pull your search terms report and look for que
 
 Whether any of this clears financially still comes down to [the cost per customer arithmetic](/blog/is-google-ads-worth-it-for-small-business/), which is the same calculation regardless of which Google product is charging you.
 
-My [notes on performance marketing](/expertise/performance-marketing/) cover where this sits in an account. If you'd like a second read on your own setup before the migration reaches you, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on performance marketing](/expertise/performance-marketing/) cover where this sits in an account. If you'd like a second read on your own setup before the migration reaches you, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

@@ -83,4 +83,4 @@ Open the top three results and write three lines: what they agree on, what they 
 
 That is about forty minutes and it is the difference between a post that exists and a post that gets cited. My [notes on content marketing](/expertise/content-marketing/) cover where this sits alongside everything else, and [the argument for fixing conversion before buying more traffic](/blog/how-to-get-more-customers-online/) is the same logic applied one step further down.
 
-If you'd like to talk through your own content process, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+If you'd like to talk through your own content process, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

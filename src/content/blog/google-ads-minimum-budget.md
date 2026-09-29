@@ -93,4 +93,4 @@ If you are already running ads, add the lost impression share to budget column a
 
 None of this is advice about how to run campaigns. It is the arithmetic that decides whether running them is a sensible use of the money at all, and it takes half an hour to settle a question that otherwise takes a quarter and a few thousand dollars.
 
-My [notes on performance marketing](/expertise/performance-marketing/) cover what happens after the numbers clear. If you'd like a second read on your own figures, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on performance marketing](/expertise/performance-marketing/) cover what happens after the numbers clear. If you'd like a second read on your own figures, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

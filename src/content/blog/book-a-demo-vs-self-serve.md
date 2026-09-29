@@ -85,4 +85,4 @@ Publish the number, keep the button, and stop paying salespeople to do the quali
 
 Then go and check whether the conversations you do get are actually the problem, because [the lead quality argument](/blog/why-leads-are-not-converting/) usually turns out to be about definitions rather than volume, and this is one of the few changes that fixes both at once.
 
-My [notes on aligning marketing and sales](/expertise/marketing-sales-alignment/) cover the handover once the funnel shape is right. If you'd like to think through your own, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on aligning marketing and sales](/expertise/marketing-sales-alignment/) cover the handover once the funnel shape is right. If you'd like to think through your own, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

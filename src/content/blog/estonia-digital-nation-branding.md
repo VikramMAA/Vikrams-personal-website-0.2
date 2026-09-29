@@ -105,4 +105,4 @@ Then find every sentence on the page that describes you rather than what changes
 
 Keep the Estonian part. Put it in the footer with your registry number, where it does honest work as reassurance rather than pretending to be a reason to buy.
 
-My [notes on content marketing](/expertise/content-marketing/) cover how the rest of the site follows from that first sentence. If you'd like a second opinion on your own positioning, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on content marketing](/expertise/content-marketing/) cover how the rest of the site follows from that first sentence. If you'd like a second opinion on your own positioning, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

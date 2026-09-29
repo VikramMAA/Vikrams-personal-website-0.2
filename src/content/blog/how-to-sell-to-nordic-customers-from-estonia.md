@@ -97,4 +97,4 @@ Then open your website and find every superlative on the homepage. Replace one o
 
 I wrote separately about [why distribution is the harder half of the problem for Estonian companies](/blog/estonian-startup-marketing/), which is the strategic version of this.
 
-If you'd like to think through your own Nordic entry out loud, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on lead generation](/expertise/lead-generation/) cover the mechanics.
+If you'd like to think through your own Nordic entry out loud, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on lead generation](/expertise/lead-generation/) cover the mechanics.

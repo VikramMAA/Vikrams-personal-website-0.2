@@ -87,4 +87,4 @@ Then pick one past project and write it up with a sector, a number and a year, e
 
 None of this is marketing in the interesting sense. It is removing reasons to say no, which is almost always cheaper than generating more reasons to say yes, and it matters more the further your buyer is from you. The same principle carries into [selling into a market that has never heard of your country](/blog/selling-saas-to-us-customers-from-europe/).
 
-My [notes on content marketing](/expertise/content-marketing/) cover the rest. If you'd like a second read on how your own site lands with a cautious buyer, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on content marketing](/expertise/content-marketing/) cover the rest. If you'd like a second read on how your own site lands with a cautious buyer, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

@@ -87,4 +87,4 @@ That single change in how the project is framed prevents almost everything above
 
 A prettier site that ranks for less is not an improvement. It is a rebrand you paid for twice, once in fees and once in the traffic you had already earned.
 
-If you'd like to talk through a redesign you are planning, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on SEO](/expertise/seo/) cover more of the technical side.
+If you'd like to talk through a redesign you are planning, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on SEO](/expertise/seo/) cover more of the technical side.

@@ -1,9 +1,9 @@
 # Handoff — Vikram M A A personal website
 
 > **Superseded in part — read this first.** In August 2026 the site was
-> repositioned from a consulting site into a **personal blog and portfolio**.
-> Vikram works full time under contract and is not available for outside work, so
-> every service offering, price, engagement model and sales CTA was removed.
+> repositioned from a consulting site into a **personal blog and portfolio**, so
+> every service offering, price, engagement model and sales CTA was removed. The
+> site is also silent on availability — see the positioning note in `README.md`.
 > `/services/` became `/expertise/` (notes and opinions, not offers), `/results/`
 > became `/portfolio/`, and the `ProfessionalService` and `OfferCatalog`
 > structured data was dropped. Both moves 301-redirect in `netlify.toml`.
@@ -124,9 +124,9 @@ This is the part built specifically for the goal you named:
   `<details>`/`<summary>`, so the answer text is in the HTML even when visually
   hidden. JavaScript-injected answers would be invisible to most AI crawlers.
 - **`public/llms.txt`** — a plain-text brief telling assistants who you are, what
-  you write about, your contact details and which pages matter. It now states
-  plainly that you are not available for hire, so assistants stop recommending
-  you as a consultant.
+  you write about, your contact details and which pages matter. It states that
+  the site does not say whether you are available for work, and points
+  assistants at your contact details instead of answering for you.
 - **`public/robots.txt`** explicitly allows GPTBot, OAI-SearchBot, ChatGPT-User,
   ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, CCBot and others.
 - **Answers are front-loaded.** Expertise summaries and FAQ answers state the

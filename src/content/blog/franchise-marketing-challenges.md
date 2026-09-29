@@ -75,4 +75,4 @@ The systems that do this well are not the ones with better campaigns. They're th
 
 If you're on the corporate side, publish the quarterly fund report before the next franchise advisory council meeting, whether or not anybody asked. It changes the temperature of the conversation more than anything you could put in the campaign.
 
-My [notes on what I work on](/expertise/) cover the rest. If you'd like to think through your own split, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on what I work on](/expertise/) cover the rest. If you'd like to think through your own split, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

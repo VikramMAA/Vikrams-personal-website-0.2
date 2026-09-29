@@ -105,4 +105,4 @@ That is nine or ten links. It is genuinely one of the highest return hours avail
 
 If you want the wider version of this check, [the SEO audit you can do yourself](/blog/how-to-do-an-seo-audit-yourself/) covers where internal linking sits among the other things worth looking at, and my [notes on SEO](/expertise/seo/) cover the rest.
 
-If you'd like a second read on your own site structure, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+If you'd like a second read on your own site structure, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

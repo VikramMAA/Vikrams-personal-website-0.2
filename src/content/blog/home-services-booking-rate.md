@@ -89,4 +89,4 @@ Go and listen to ten calls this week yourself. Not a report about the calls. The
 
 Then decide whether the next thing you fund is more leads or somebody teaching four people to say one sentence.
 
-My [notes on lead generation](/expertise/lead-generation/) cover the demand side once the phone works. If you'd like to think through your own numbers, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on lead generation](/expertise/lead-generation/) cover the demand side once the phone works. If you'd like to think through your own numbers, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

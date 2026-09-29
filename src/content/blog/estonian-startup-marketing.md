@@ -77,4 +77,4 @@ What it has is a sequencing habit, inherited honestly from a culture that is gen
 
 So the question worth asking at the next planning session is not what to build next. It is which of those three routes to market you are actually in, and whether the thing you are about to build for the next quarter belongs in that world at all.
 
-If you'd like to think that through out loud for your own company, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on how I work](/expertise/) cover the longer version if you'd rather just read.
+If you'd like to think that through out loud for your own company, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on how I work](/expertise/) cover the longer version if you'd rather just read.

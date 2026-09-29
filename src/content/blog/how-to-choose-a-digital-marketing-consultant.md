@@ -108,4 +108,4 @@ Once you have picked someone, [the first 90 days](/blog/first-90-days-with-a-mar
 
 ---
 
-*If you want that diagnosis done on your accounts, [tell me what is not working](/contact/). I will tell you honestly whether the problem is one I can fix. I am contracted full time, so this is not a pitch — you can see [what I have worked on](/portfolio/) and decide whether the conversation is worth your time.*
+*If you want that diagnosis done on your accounts, [tell me what is not working](/contact/). I will tell you honestly whether the problem is one I can fix. You can see [what I have worked on](/portfolio/) and decide whether the conversation is worth your time.*

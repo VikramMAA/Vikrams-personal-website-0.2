@@ -83,4 +83,4 @@ Estonia is 1.3 million people, so most shops here eventually need to sell outwar
 
 But fix home first. If your checkout only takes cards, nothing you do upstream, including [the paid search arithmetic](/blog/is-google-ads-worth-it-estonia/), is worth doing until it does not.
 
-My [notes on performance marketing](/expertise/performance-marketing/) cover where the rest of it fits. If you'd like a second read on your own checkout, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on performance marketing](/expertise/performance-marketing/) cover where the rest of it fits. If you'd like a second read on your own checkout, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

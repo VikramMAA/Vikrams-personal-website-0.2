@@ -95,4 +95,4 @@ Leave the agents alone and watch them, because a machine arriving to read your p
 
 And do the twenty minute check this week, because the odds are you have never actually looked at what these systems tell people about your business, and somebody is reading it today.
 
-My [notes on AI search](/expertise/aiseo/) cover what earns a citation once you have decided to be readable. If you'd like to think through your own position, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on AI search](/expertise/aiseo/) cover what earns a citation once you have decided to be readable. If you'd like to think through your own position, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

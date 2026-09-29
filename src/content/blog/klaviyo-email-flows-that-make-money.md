@@ -97,4 +97,4 @@ Then check which of the four you're missing. Most stores have welcome and checko
 
 Then open Google Postmaster Tools and look at your spam complaint rate. If it's over 0.1%, build the engaged segment today, because everything above this line depends on it.
 
-My [notes on content marketing](/expertise/content-marketing/) cover what to write once the plumbing works. If you'd like a second opinion on your own flows, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on content marketing](/expertise/content-marketing/) cover what to write once the plumbing works. If you'd like a second opinion on your own flows, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

@@ -79,4 +79,4 @@ Then look at your review process. If it involves asking patients for reviews, st
 
 The category and profile fundamentals underneath all this are the same ones I covered in [the Google Business Profile settings most businesses never touch](/blog/google-business-profile-settings-bengaluru/), and they apply to clinics too. This post is the part that is specific to medicine.
 
-If you'd like to think through your own clinic's setup out loud, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on SEO](/expertise/seo/) cover the general version.
+If you'd like to think through your own clinic's setup out loud, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on SEO](/expertise/seo/) cover the general version.

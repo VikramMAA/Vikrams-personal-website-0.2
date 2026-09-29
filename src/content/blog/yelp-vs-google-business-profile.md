@@ -97,4 +97,4 @@ Then, if you're paying Yelp anything, pull the five numbers and calculate your c
 
 You'll either renew with confidence or cancel with evidence, and both of those beat renewing because the invoice arrived.
 
-My [notes on SEO](/expertise/seo/) cover the wider local picture. If you'd like a second opinion on your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on SEO](/expertise/seo/) cover the wider local picture. If you'd like a second opinion on your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

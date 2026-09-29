@@ -79,4 +79,4 @@ Then add the second, once the first one is producing customers and you know what
 
 If you are still working out whether paid is even the right place for the money, [the ordering question in selling online](/blog/how-to-sell-online-in-india/) covers the decision that usually comes before this one, and my [notes on performance marketing](/expertise/performance-marketing/) cover how I think about the rest.
 
-If you'd like to think through which one your business should start with, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+If you'd like to think through which one your business should start with, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

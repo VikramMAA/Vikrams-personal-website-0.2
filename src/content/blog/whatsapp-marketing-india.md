@@ -91,4 +91,4 @@ Open your last month of WhatsApp sends and mark each template as marketing or ut
 
 Then work out roughly how many service window replies you send in a month and multiply by Rs 0.1150. That number is arriving on 1 October and it is better to know it now.
 
-If you'd like to talk through your setup out loud, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on lead generation](/expertise/lead-generation/) cover where this fits with everything else.
+If you'd like to talk through your setup out loud, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on lead generation](/expertise/lead-generation/) cover where this fits with everything else.

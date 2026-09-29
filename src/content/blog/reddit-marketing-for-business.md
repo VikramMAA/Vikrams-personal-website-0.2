@@ -93,4 +93,4 @@ Go read it. Read every thread where your category gets discussed, take the objec
 
 Then let one knowledgeable person post under their own name, forever, with no targets attached to it.
 
-My [notes on content marketing](/expertise/content-marketing/) cover the rest of that stack. If you want to think through whether this is worth your time, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on content marketing](/expertise/content-marketing/) cover the rest of that stack. If you want to think through whether this is worth your time, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

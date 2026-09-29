@@ -85,4 +85,4 @@ Then open the product feed and clear every disapproval, because that is the fail
 
 Then, this week rather than this morning, get the warm-up campaigns live. The window on that closes in a few days, and it does not reopen.
 
-My [notes on performance marketing](/expertise/performance-marketing/) cover the rest of the mechanics. If you'd like a second pair of eyes on your own Q4 plan, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on performance marketing](/expertise/performance-marketing/) cover the rest of the mechanics. If you'd like a second pair of eyes on your own Q4 plan, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

@@ -85,4 +85,4 @@ Then list your subprocessors. Every service that touches customer data, named, w
 
 Then email the champion in your slowest current enterprise deal and ask for their security questionnaire before they think to send it.
 
-My [notes on lead generation](/expertise/lead-generation/) cover the rest of the pipeline. If you'd like to think through your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on lead generation](/expertise/lead-generation/) cover the rest of the pipeline. If you'd like to think through your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

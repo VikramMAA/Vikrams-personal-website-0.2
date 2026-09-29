@@ -103,4 +103,4 @@ Then check your RERA registration expiry.
 
 Next week, one project page. Then another. That is a compounding asset, and unlike a subscription it does not stop working the month you stop paying.
 
-My [notes on lead generation](/expertise/lead-generation/) cover the rest of the funnel. If you'd like to think through your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on lead generation](/expertise/lead-generation/) cover the rest of the funnel. If you'd like to think through your own setup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

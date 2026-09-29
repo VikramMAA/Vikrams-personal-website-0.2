@@ -95,4 +95,4 @@ Use quick commerce for trial, presence and the impulse occasion you were never g
 
 And be clear-eyed that you are renting attention in somebody else's store at a rent that rises when they need it to. That is a perfectly reasonable thing to do. It's an unreasonable thing to build a brand on.
 
-My [notes on performance marketing](/expertise/performance-marketing/) cover the acquisition side. If you'd like to think through your own channel mix, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on performance marketing](/expertise/performance-marketing/) cover the acquisition side. If you'd like to think through your own channel mix, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

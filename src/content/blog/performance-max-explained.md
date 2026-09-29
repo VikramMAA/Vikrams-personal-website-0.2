@@ -89,4 +89,4 @@ Look at your asset groups and count how many distinct offers are crammed into ea
 
 My [notes on performance marketing](/expertise/performance-marketing/) cover where this sits in an account, and [the cost per click arithmetic](/blog/is-google-ads-worth-it-for-small-business/) decides whether any of this is worth doing before you touch a setting.
 
-If you'd like a second read on your own account structure, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+If you'd like a second read on your own account structure, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

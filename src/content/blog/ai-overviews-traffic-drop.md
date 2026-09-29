@@ -79,4 +79,4 @@ Put impressions, branded search volume and enquiries above it, in that order, wi
 
 My [notes on AI search](/expertise/aiseo/) go into what actually earns a citation, which is the other half of this.
 
-If you'd like to talk through what your own numbers are really saying, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+If you'd like to talk through what your own numbers are really saying, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

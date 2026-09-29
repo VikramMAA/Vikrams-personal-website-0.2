@@ -79,4 +79,4 @@ And if the argument in your own company is stuck, go and ask ten recent customer
 
 The real risk isn't spending on things you can't measure. It's that your entire marketing strategy has quietly become whatever the reporting could see.
 
-My [notes on lead generation](/expertise/lead-generation/) cover the capture side in more detail. If you'd like to think through your own split, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on lead generation](/expertise/lead-generation/) cover the capture side in more detail. If you'd like to think through your own split, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. 

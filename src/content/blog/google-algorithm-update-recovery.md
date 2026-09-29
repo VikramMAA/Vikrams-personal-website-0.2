@@ -75,4 +75,4 @@ Change nothing structural until you can say a sentence like "clicks fell 40% on 
 
 The uncomfortable conclusion is that the correct response to a lot of 2026 traffic drops is to accept that the traffic is not coming back, and to change what you are optimizing for. If the answer is being given above the result, the game is being the source that gets quoted rather than the page that gets clicked. That is a different project from recovery, and pretending otherwise is how teams spend a year rewriting their way back to a number that no longer exists.
 
-If you'd like to talk through a drop you are looking at, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on SEO](/expertise/seo/) cover more of the diagnostic side.
+If you'd like to talk through a drop you are looking at, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on SEO](/expertise/seo/) cover more of the diagnostic side.

@@ -125,4 +125,4 @@ Then, if you are paying for FAQ schema as a rich results play, stop.
 
 I went through [running your own technical audit](/blog/how-to-do-an-seo-audit-yourself/) separately, and validating structured data belongs in that same session. Markup tells Google what you are; reviews tell it whether you are any good, and [getting more of them without breaking the FTC rule](/blog/how-to-get-more-google-reviews/) is the higher-leverage half of the pair for most local businesses.
 
-If you'd like a second look at your markup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch. My [notes on SEO](/expertise/seo/) cover the rest.
+If you'd like a second look at your markup, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. My [notes on SEO](/expertise/seo/) cover the rest.
