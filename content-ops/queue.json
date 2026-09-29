@@ -589,6 +589,132 @@
         "Local Marketing",
         "Strategy"
       ]
+    },
+    {
+      "id": "b-121",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "google merchant center suspension",
+      "secondary_keywords": [
+        "shopping feed disapprovals",
+        "google shopping ads not running",
+        "misrepresentation policy"
+      ],
+      "working_title": "Your Shopping ads stopped and the email did not tell you why",
+      "angle": "Practical and specific, for the moment it goes wrong. A Merchant Center suspension takes a store's entire Shopping and PMax revenue offline at once, and the notification names a policy rather than the cause. Cover the difference between item level disapprovals and an account level suspension, the misrepresentation policy that catches ordinary stores over missing contact details, returns and refund policy pages and checkout transparency, what a review request should contain, and the pre-emptive checks that stop it happening in Q4. Do not restate shopify-seo-checklist, which is organic.",
+      "audience": "Ecommerce managers and store owners",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Ecommerce",
+        "Google Ads",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "id": "b-122",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "website accessibility ada compliance small business",
+      "secondary_keywords": [
+        "ada website lawsuit",
+        "wcag compliance",
+        "accessibility overlay widgets"
+      ],
+      "working_title": "The accessibility problem most small sites have and most overlays do not fix",
+      "angle": "Practical, and genuinely US specific because of the litigation pattern. Cover what WCAG actually asks for in the handful of places small sites usually fail, which are images without alt text, forms without labels, colour contrast and keyboard navigation. Be straight about accessibility overlay widgets, which are sold as a one line fix and have been named in lawsuits themselves rather than preventing them. Frame it as both a legal exposure and a conversion issue, since the same failures break screen readers and older buyers. Not legal advice, counsel decides, same framing as the HIPAA post.",
+      "audience": "US small business owners and marketing managers",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Accessibility",
+        "Compliance",
+        "Web"
+      ]
+    },
+    {
+      "id": "b-123",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "customer referral program small business",
+      "secondary_keywords": [
+        "how to ask for referrals",
+        "referral incentive ideas",
+        "word of mouth marketing"
+      ],
+      "working_title": "Most referral programs fail at the ask, not at the incentive",
+      "angle": "Practical. Businesses design the reward first and then wonder why nothing happens, when the binding constraint is that nobody ever asks, and asks at the wrong moment. Cover the moment of peak goodwill and how to find it in your own job history, the two sentence ask that works, why a reward for the referrer alone converts worse than one that gives the friend something, the tracking that has to exist or the programme dies quietly, and the FTC disclosure point where incentives and reviews meet. Distinct from the reviews posts, which are about public proof rather than introductions.",
+      "audience": "US local service and small business owners",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Referrals",
+        "Retention",
+        "Lead Generation"
+      ]
+    },
+    {
+      "id": "b-124",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "customer win back campaign",
+      "secondary_keywords": [
+        "reduce churn subscription",
+        "lapsed customer email",
+        "reactivation campaign"
+      ],
+      "working_title": "The cheapest customers you will ever get already left",
+      "angle": "Analysis with a position. Acquisition budgets grow while the list of people who already bought and stopped sits untouched, and those people are cheaper to reach, already understand the product and need no category education. Argue that win-back deserves a named owner rather than being a quarterly email, and be honest about the limit, which is that a win-back campaign aimed at customers who left for a real product reason is just a faster way to be told no. Cover segmenting by reason for leaving rather than by recency, and why the discount is usually the wrong opener.",
+      "audience": "US ecommerce and subscription marketers",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Retention",
+        "Email Marketing",
+        "Strategy"
+      ]
+    },
+    {
+      "id": "b-125",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "manufacturer co-op advertising funds",
+      "secondary_keywords": [
+        "mdf marketing development funds",
+        "dealer co-op program",
+        "how to claim co-op advertising"
+      ],
+      "working_title": "There is money sitting with your manufacturer that nobody claims",
+      "angle": "Analysis for dealers, contractors and distributors who sell somebody else's brand. Co-op and market development funds are budgeted by manufacturers and routinely go unclaimed because the pre-approval and proof-of-performance paperwork is tedious and the rules are written for print. Argue that the claim process is the actual product being sold to you and that the rules distort what gets advertised, since the easiest thing to claim for is rarely the highest return channel. Cover how to find out what you are entitled to and how to negotiate the rules rather than just the amount. Governance shape echoes the franchise ad fund post, so reference it rather than repeating it.",
+      "audience": "US dealers, contractors and distributors",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Co-op Funds",
+        "Channel Marketing",
+        "Budget"
+      ]
+    },
+    {
+      "id": "b-126",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "are trade shows worth it b2b",
+      "secondary_keywords": [
+        "trade show roi",
+        "b2b event marketing",
+        "conference sponsorship value"
+      ],
+      "working_title": "The trade show is not the problem, the three weeks after it are",
+      "angle": "Opinion for US B2B. Companies judge an event on badge scans and conclude events do not work, when the failure is almost always that nothing happened afterwards and the list went into a spreadsheet nobody owned. Argue that the correct unit of analysis is the whole motion, pre-booked meetings before, conversations during, sequenced follow up after, and that a show with thirty pre-booked meetings is a different product from the same show walked cold. Be fair about the categories where events genuinely do not pay, and connect to the demand creation argument without restating it.",
+      "audience": "US B2B marketing leads",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Events",
+        "B2B",
+        "Lead Generation"
+      ]
     }
   ],
   "retired": [
