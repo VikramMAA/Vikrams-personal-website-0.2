@@ -1389,6 +1389,24 @@
       "word_count": 1110,
       "market": "India",
       "_note": "Drafted on 28 Sep but the Bash tool was unavailable all evening (classifier returned no verdict), so lint, build and push happened on 29 Sep. publishedAt kept at 2026-09-28, the run it belongs to. The keyword is hire-me intent, which sits against the no-selling rule, so the piece is written for a reader choosing somebody else and states plainly that Vikram is contracted full time."
+    },
+    {
+      "brief_id": "b-101",
+      "slug": "home-services-marketing-order",
+      "title": "Where should a home services business start with marketing?",
+      "primary_keyword": "home services marketing",
+      "city": null,
+      "tags": [
+        "Home Services",
+        "Lead Generation",
+        "Local SEO"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-29",
+      "opening_pattern": "recasts the channel question as a sequencing question rather than a menu, then prices what skipping a step costs at the next one",
+      "word_count": 1215,
+      "market": "US",
+      "_note": "Hub post by design. Links out to home-services-booking-rate, the two review posts, google-local-services-ads and are-angi-leads-worth-it rather than restating them, and adds the ChatGPT ads manager opening of 5 May 2026 as a new step six with the argument that AI answers in this category are drawn from steps two and three anyway."
     }
   ]
 }
