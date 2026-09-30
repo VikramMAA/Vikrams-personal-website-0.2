@@ -1443,6 +1443,24 @@
       "word_count": 1208,
       "market": "India",
       "_note": "Corrects a common confusion in the piece: FAQ rich results were retired in May 2026 with docs removed in June, but People Also Ask is a separate feature, never markup driven, and still live. Also states precisely that Search Console's Generative AI report gives impressions but not queries, consistent with how-to-do-an-seo-audit-yourself."
+    },
+    {
+      "brief_id": "b-083",
+      "slug": "gdpr-as-competitive-advantage",
+      "title": "Is EU data residency actually a selling point?",
+      "primary_keyword": "gdpr as competitive advantage saas",
+      "city": null,
+      "tags": [
+        "SaaS",
+        "Estonia",
+        "Positioning"
+      ],
+      "slot": "evening",
+      "published_at": "2026-09-30",
+      "opening_pattern": "opens on the single admission that ended a decade long argument, a hyperscaler's own French subsidiary conceding it cannot guarantee sovereignty for data held in France",
+      "word_count": 1219,
+      "market": "Estonia",
+      "_note": "estonia-digital-nation-branding already asserted in one paragraph that EU data residency is the provenance claim that works, so this post links to that rather than re-deriving it and goes after the uncovered half: that most European vendors making the claim run on US hyperscaler EU regions and share the same gap, where the claim should live, and the 2026 regulatory machinery including the 12 January 2027 ban on switching fees. Argues the window is closing because standardisation turns sovereignty into a hygiene factor."
     }
   ]
 }
