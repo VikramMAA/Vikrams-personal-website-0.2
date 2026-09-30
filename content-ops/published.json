@@ -1425,6 +1425,24 @@
       "word_count": 1229,
       "market": "US",
       "_note": "Sixth agency post, so kept deliberately to pre-signature and first-sixty-day signals. Account ownership and the good-news report are already covered in how-to-choose-a-digital-marketing-agency and agency-not-delivering-results, so both are referenced in a line rather than re-explained. Closes with the innocent explanation for each signal so it does not read as a paranoia checklist."
+    },
+    {
+      "brief_id": "b-041",
+      "slug": "keyword-research-for-indian-businesses",
+      "title": "How do I do keyword research without paid tools?",
+      "primary_keyword": "keyword research for indian businesses",
+      "city": null,
+      "tags": [
+        "Keyword Research",
+        "SEO",
+        "Process"
+      ],
+      "slot": "morning",
+      "published_at": "2026-09-30",
+      "opening_pattern": "names the metric that has decoupled from the outcome, search volume no longer predicting clicks once AI Overviews sit on roughly half of queries, and reorders the job around click survival",
+      "word_count": 1208,
+      "market": "India",
+      "_note": "Corrects a common confusion in the piece: FAQ rich results were retired in May 2026 with docs removed in June, but People Also Ask is a separate feature, never markup driven, and still live. Also states precisely that Search Console's Generative AI report gives impressions but not queries, consistent with how-to-do-an-seo-audit-yourself."
     }
   ]
 }
