@@ -1461,6 +1461,24 @@
       "word_count": 1219,
       "market": "Estonia",
       "_note": "estonia-digital-nation-branding already asserted in one paragraph that EU data residency is the provenance claim that works, so this post links to that rather than re-deriving it and goes after the uncovered half: that most European vendors making the claim run on US hyperscaler EU regions and share the same gap, where the claim should live, and the 2026 regulatory machinery including the 12 January 2027 ban on switching fees. Argues the window is closing because standardisation turns sovereignty into a hygiene factor."
+    },
+    {
+      "brief_id": "b-102",
+      "slug": "dental-practice-marketing",
+      "title": "How do dental practices get new patients?",
+      "primary_keyword": "dental practice marketing",
+      "city": null,
+      "tags": [
+        "Healthcare",
+        "Local SEO",
+        "Lead Generation"
+      ],
+      "slot": "morning",
+      "published_at": "2026-10-01",
+      "opening_pattern": "points at the dormant patient list sitting unowned inside the practice's own software and prices reactivating it against acquiring somebody new",
+      "word_count": 1203,
+      "market": "US",
+      "_note": "Contains a deliberate correction to the site's own advice: how-to-respond-to-negative-google-reviews tells every business to reply warmly and specifically, which is unsafe as written for a covered entity, since OCR's position is that a practice may not confirm or deny that somebody was a patient. The piece links that post and states the inversion explicitly, with the 2019 Elite Dental and 2021 North Carolina penalties as evidence. Pixel and retargeting questions deferred to hipaa-compliant-marketing rather than repeated."
     }
   ]
 }
