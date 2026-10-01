@@ -1479,6 +1479,24 @@
       "word_count": 1203,
       "market": "US",
       "_note": "Contains a deliberate correction to the site's own advice: how-to-respond-to-negative-google-reviews tells every business to reply warmly and specifically, which is unsafe as written for a covered entity, since OCR's position is that a practice may not confirm or deny that somebody was a patient. The piece links that post and states the inversion explicitly, with the 2019 Elite Dental and 2021 North Carolina penalties as evidence. Pixel and retargeting questions deferred to hipaa-compliant-marketing rather than repeated."
+    },
+    {
+      "brief_id": "b-119",
+      "slug": "is-bbb-accreditation-worth-it",
+      "title": "Is BBB accreditation worth it for a small business?",
+      "primary_keyword": "is bbb accreditation worth it",
+      "city": null,
+      "tags": [
+        "Trust",
+        "Local Marketing",
+        "Strategy"
+      ],
+      "slot": "evening",
+      "published_at": "2026-10-01",
+      "opening_pattern": "points out the reader already has a profile they did not create and cannot delete, so the consequential half is already running free and the fee buys something else",
+      "word_count": 1149,
+      "market": "US",
+      "_note": "Names a real organisation, so it carries a stated basis per the house convention and explicitly corrects the circulating pay-to-play claim: the 2010 exposes and the Connecticut AG criticism were earned, the BBB removed accreditation from the rating calculation, and accreditation is now a gate requiring a B+ rather than an input to the grade. Criticism is aimed at badge-stacking as a substitute for reviews, not at the organisation."
     }
   ]
 }
