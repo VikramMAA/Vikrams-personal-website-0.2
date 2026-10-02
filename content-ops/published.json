@@ -1515,6 +1515,24 @@
       "word_count": 1195,
       "market": "India",
       "_note": "Retargeted. The brief's angle (test on a mid range Android on 4G, unoptimised images, scripts before content, sliders, heavy fonts) is already published almost bullet for bullet in landing-page-optimisation (16 Sep, India), and the Core Web Vitals thresholds and INP diagnosis are in how-to-do-an-seo-audit-yourself. Wrote the uncovered slice instead: page weight as a governance problem, why the fix decays, and who in the business causes it. Anchored on India's reported 27.6% CWV pass rate against roughly 48% global mobile, which no earlier post uses."
+    },
+    {
+      "brief_id": "b-125",
+      "slug": "manufacturer-co-op-advertising-funds",
+      "title": "How do I actually claim manufacturer co-op advertising funds?",
+      "primary_keyword": "manufacturer co-op advertising funds",
+      "city": null,
+      "tags": [
+        "Co-op Funds",
+        "Channel Marketing",
+        "Budget"
+      ],
+      "slot": "evening",
+      "published_at": "2026-10-02",
+      "opening_pattern": "states the scale of unclaimed funds and then follows the incentive rather than alleging intent, since nobody has to design the friction for the money to move one way",
+      "word_count": 1249,
+      "market": "US",
+      "_note": "Deliberately avoided alleging that manufacturers design claim friction to avoid paying, which is not evidenced. The piece says plainly that nobody has to intend it for the incentive to point one direction. Core argument is the distortion: a 50% subsidy on the third best channel is worse than full price on the best one. References franchise-marketing-challenges for the governance shape rather than repeating it."
     }
   ]
 }
