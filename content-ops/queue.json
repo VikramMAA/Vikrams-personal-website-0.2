@@ -107,27 +107,6 @@
       "market": "India"
     },
     {
-      "id": "b-045",
-      "slot": "morning",
-      "primary_keyword": "page speed optimisation for indian websites",
-      "secondary_keywords": [
-        "website loading slow on mobile india",
-        "core web vitals india",
-        "mobile first design india"
-      ],
-      "working_title": "Your site is fast on your laptop and unusable on your customer's phone",
-      "angle": "Practical. Test on a mid range Android on 4G, not on office wifi. The usual culprits in Indian builds, which are unoptimised hero images, five tracking scripts, sliders, and heavy fonts. Give the fixes in order of payoff.",
-      "audience": "All",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Performance",
-        "Technical SEO",
-        "Mobile"
-      ],
-      "market": "India"
-    },
-    {
       "id": "b-047",
       "slot": "morning",
       "primary_keyword": "google ads for small business india",

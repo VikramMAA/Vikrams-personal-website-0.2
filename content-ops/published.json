@@ -1497,6 +1497,24 @@
       "word_count": 1149,
       "market": "US",
       "_note": "Names a real organisation, so it carries a stated basis per the house convention and explicitly corrects the circulating pay-to-play claim: the 2010 exposes and the Connecticut AG criticism were earned, the BBB removed accreditation from the rating calculation, and accreditation is now a gate requiring a B+ rather than an input to the grade. Criticism is aimed at badge-stacking as a substitute for reviews, not at the organisation."
+    },
+    {
+      "brief_id": "b-045",
+      "slug": "page-speed-optimisation-indian-websites",
+      "title": "Why did my website get slow again?",
+      "primary_keyword": "page speed optimisation for indian websites",
+      "city": null,
+      "tags": [
+        "Performance",
+        "Technical SEO",
+        "Mobile"
+      ],
+      "slot": "morning",
+      "published_at": "2026-10-02",
+      "opening_pattern": "starts from the site having been fast in March and slow again now with nobody having done anything wrong, so the subject becomes decay and ownership rather than a fix",
+      "word_count": 1195,
+      "market": "India",
+      "_note": "Retargeted. The brief's angle (test on a mid range Android on 4G, unoptimised images, scripts before content, sliders, heavy fonts) is already published almost bullet for bullet in landing-page-optimisation (16 Sep, India), and the Core Web Vitals thresholds and INP diagnosis are in how-to-do-an-seo-audit-yourself. Wrote the uncovered slice instead: page weight as a governance problem, why the fix decays, and who in the business causes it. Anchored on India's reported 27.6% CWV pass rate against roughly 48% global mobile, which no earlier post uses."
     }
   ]
 }
