@@ -1533,6 +1533,24 @@
       "word_count": 1249,
       "market": "US",
       "_note": "Deliberately avoided alleging that manufacturers design claim friction to avoid paying, which is not evidenced. The piece says plainly that nobody has to intend it for the incentive to point one direction. Core argument is the distortion: a 50% subsidy on the third best channel is worse than full price on the best one. References franchise-marketing-challenges for the governance shape rather than repeating it."
+    },
+    {
+      "brief_id": "b-103",
+      "slug": "law-firm-marketing",
+      "title": "Why isn't my law firm's marketing producing cases?",
+      "primary_keyword": "law firm marketing",
+      "city": null,
+      "tags": [
+        "Legal",
+        "PPC",
+        "Lead Generation"
+      ],
+      "slot": "morning",
+      "published_at": "2026-10-03",
+      "opening_pattern": "opens on the sixty three hour weekend window, pointing out that legal need is generated precisely when the office is shut while the ads keep running",
+      "word_count": 1300,
+      "market": "US",
+      "_note": "The brief's own cost estimate was wrong by an order of magnitude. It said clicks are commonly quoted near ten dollars; published 2026 figures put personal injury at $80 to $300, past $400 in top metros and above $900 for mesothelioma. Used the real numbers. Also deliberately differentiated from home-services-booking-rate, which makes a similar speed argument: this post argues the assumptive close is wrong in legal, because intake staff cannot give legal advice, must not imply an attorney-client relationship, and a conflict check has to run first, so the goal of the first call is capture, screen and route."
     }
   ]
 }
