@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-024",
-      "slot": "evening",
-      "primary_keyword": "seo consultant mumbai",
-      "secondary_keywords": [
-        "digital marketing consultant mumbai",
-        "seo services mumbai",
-        "marketing agency mumbai"
-      ],
-      "working_title": "What Mumbai businesses get wrong about search, from someone who works with them remotely",
-      "angle": "City specific but honest about the remote angle. Mumbai's category competition is brutal, real estate and finance and hospitality especially. Cover what actually differentiates in a crowded local SERP. Do not pretend to have an Andheri office.",
-      "audience": "SME owners and B2B companies",
-      "city": "Mumbai",
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "SEO",
-        "Mumbai",
-        "Local SEO"
-      ],
-      "market": "India"
-    },
-    {
       "id": "b-026",
       "slot": "evening",
       "primary_keyword": "startup marketing on a small budget",

@@ -1551,6 +1551,24 @@
       "word_count": 1300,
       "market": "US",
       "_note": "The brief's own cost estimate was wrong by an order of magnitude. It said clicks are commonly quoted near ten dollars; published 2026 figures put personal injury at $80 to $300, past $400 in top metros and above $900 for mesothelioma. Used the real numbers. Also deliberately differentiated from home-services-booking-rate, which makes a similar speed argument: this post argues the assumptive close is wrong in legal, because intake staff cannot give legal advice, must not imply an attorney-client relationship, and a conflict check has to run first, so the goal of the first call is capture, screen and route."
+    },
+    {
+      "brief_id": "b-024",
+      "slug": "seo-in-mumbai",
+      "title": "Why is my Mumbai business invisible on Google?",
+      "primary_keyword": "seo in mumbai",
+      "city": "Mumbai",
+      "tags": [
+        "SEO",
+        "Mumbai",
+        "Local SEO"
+      ],
+      "slot": "evening",
+      "published_at": "2026-10-03",
+      "opening_pattern": "has the reader draw a radius on a map of their own city and points out that part of it is sea while the customers who matter fall outside it",
+      "word_count": 1129,
+      "market": "India",
+      "_note": "Retargeted off the brief's hire-me keyword (seo consultant mumbai) since the no-selling rule means titling to that intent and then not selling is a mismatch. Written to the problem query instead. Research pointed heavily at real estate, but local-seo-for-real-estate-agents-india (25 Sep) already covers locality and project pages for India, so the spine here is the geography argument instead: Mumbai is linear, so the catchment is a corridor rather than a radius, which applies across categories. Honoured the brief's instruction not to pretend to a local office by addressing the remote question directly."
     }
   ]
 }
