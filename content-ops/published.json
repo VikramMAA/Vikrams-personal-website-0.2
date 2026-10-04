@@ -1569,6 +1569,24 @@
       "word_count": 1129,
       "market": "India",
       "_note": "Retargeted off the brief's hire-me keyword (seo consultant mumbai) since the no-selling rule means titling to that intent and then not selling is a mismatch. Written to the problem query instead. Research pointed heavily at real estate, but local-seo-for-real-estate-agents-india (25 Sep) already covers locality and project pages for India, so the spine here is the geography argument instead: Mumbai is linear, so the catchment is a corridor rather than a radius, which applies across categories. Honoured the brief's instruction not to pretend to a local office by addressing the remote question directly."
+    },
+    {
+      "brief_id": "b-111",
+      "slug": "first-marketing-hire-estonia",
+      "title": "Who should be your first marketing hire in Estonia?",
+      "primary_keyword": "first marketing hire estonia",
+      "city": null,
+      "tags": [
+        "Hiring",
+        "Estonia",
+        "Marketing Strategy"
+      ],
+      "slot": "morning",
+      "published_at": "2026-10-04",
+      "opening_pattern": "sits the reader in front of forty applications already in the folder and says the problem is not volume, then names the one missing line on the CV",
+      "word_count": 1333,
+      "market": "Estonia",
+      "_note": "Deliberately avoided the sequencing opening used by home-services-marketing-order (29 Sep), even though this post also argues an order, by opening on the hiring funnel instead. Differentiated from agency-vs-freelancer-vs-in-house (US, 3 Sep) on the constraint: that post weighs budget and failure modes, this one argues supply. Figures: unemployment 6.6% Q2 2026 (Statistics Estonia), ~13,500 in the startup sector with ~45% of jobs in the ten largest employers (Startup Estonia), social tax 33% plus 0.8% employer unemployment insurance giving ~EUR 3,345 total cost on EUR 2,500 gross, marketing specialist band EUR 1,231 to 3,304 gross (Palgad.ee). Named Wise, Bolt, Playtech and Pipedrive as good employers holding the bench rather than as a complaint. Searched for an export share of startup revenue to support the outward-selling point and found no 2026 figure, so left it as reasoning from the 1.3 million population rather than inventing a number."
     }
   ]
 }
