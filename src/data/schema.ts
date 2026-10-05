@@ -4,8 +4,10 @@
  * Keep these honest: only describe things that are actually on the page.
  * Structured data that does not match visible content is a manual-action risk.
  *
- * Note: there is deliberately no Service or Offer markup anywhere on this site.
- * It is a personal blog and portfolio, and the structured data says so.
+ * Note: `makesOffer` lives on the Person node in BaseLayout, because Vikram is
+ * accepting contracts and the pages state it in visible copy. It carries no
+ * price and no availability window, since neither is published. Do not add one
+ * here either.
  */
 import { site, contact, expertise } from './site';
 

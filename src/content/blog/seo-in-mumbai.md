@@ -81,4 +81,4 @@ Then pick the two localities where you already have customers and go and own tho
 
 Leave the city term alone until you have won something smaller. It is not going anywhere and you cannot afford it yet.
 
-My [notes on SEO](/expertise/seo/) cover the technical half. If you'd like to think through your own corridor, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time and take no outside work, so this isn't a pitch.
+My [notes on SEO](/expertise/seo/) cover the technical half. If you'd like to think through your own corridor, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm taking on a small number of contracts at the moment, so I'll tell you straight whether it's something I could help with.

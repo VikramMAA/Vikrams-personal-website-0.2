@@ -1,11 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import { site, contact, expertise } from '../data/site';
+import { site, contact, expertise, availability } from '../data/site';
 import { breadcrumbSchema } from '../data/schema';
 
-const title = `Contact ${site.name} — Say Hello`;
-const description = `Get in touch with ${site.name} by email, phone, WhatsApp or LinkedIn. Always happy to talk through a GTM or digital marketing problem.`;
+const title = `Contact ${site.name} — Accepting Contracts`;
+const description = `Get in touch with ${site.name} by email, phone, WhatsApp or LinkedIn. Accepting contracts to help brands grow across SEO, paid media, social, content and lead generation.`;
 
 const crumbs = [
   { label: 'Home', href: '/' },
@@ -35,13 +35,17 @@ const contactPageSchema = {
         {/* ------------------------------------------------------ Left rail */}
         <div>
           <p class="eyebrow">Contact</p>
-          <h1>Say hello.</h1>
+          <h1>Let’s talk about the number that is not moving.</h1>
           <p class="lede">
-            If you would like to know how your GTM or digital marketing issue
-            could be solved, reach out. Email, LinkedIn, WhatsApp or a call, whichever
-            is easiest, and we can have a quick chat about how your issue might be
-            resolved. I like these conversations and I usually reply within two working
-            days.
+            {availability.open && <strong>{availability.statement} </strong>}If your
+            marketing is running and revenue is flat, that is the conversation I am best
+            at. Email, LinkedIn, WhatsApp or a call, whichever is easiest. I usually
+            reply within two working days.
+          </p>
+          <p class="lede">
+            A conversation is not a commitment in either direction. Plenty of these end
+            with me telling someone their problem is smaller than they thought, or that
+            it is not a marketing problem at all.
           </p>
 
           <div class="direct">
@@ -74,6 +78,24 @@ const contactPageSchema = {
             </ul>
           </div>
 
+          {
+            availability.open && (
+              <div class="direct">
+                <h2 class="direct__title">What to include</h2>
+                <ul class="include-list">
+                  {availability.include.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+                <p class="note note--tight">
+                  Two or three sentences is plenty. The detail only speeds up the first
+                  reply, and it means you get an actual answer rather than a request for
+                  a call to find out.
+                </p>
+              </div>
+            )
+          }
+
           <p class="note">
             If you would rather read than write, the <a href="/blog/">blog</a> and
             the <a href="/expertise/">expertise notes</a> cover most of what I would say on
@@ -85,7 +107,8 @@ const contactPageSchema = {
         <div class="form-panel">
           <h2 class="form-panel__title">Or use the form</h2>
           <p class="form-intro">
-            It lands in the same inbox as the email address. Use whichever is easier.
+            It lands in the same inbox as the email address. Use whichever is easier,
+            and there is no difference in how fast I get to it.
           </p>
 
           {/*
@@ -144,9 +167,22 @@ const contactPageSchema = {
             <div class="field">
               <label for="topic">What is this about?</label>
               <select id="topic" name="topic">
-                <option value="">Just saying hello</option>
+                <option value="">Pick the closest one</option>
+                {
+                  availability.open && (
+                    <Fragment>
+                      <option value="A contract or ongoing work">
+                        A contract or ongoing work
+                      </option>
+                      <option value="A one-off audit or diagnostic">
+                        A one-off audit or diagnostic
+                      </option>
+                    </Fragment>
+                  )
+                }
                 {expertise.map((a) => <option value={a.title}>{a.title}</option>)}
                 <option value="Something I wrote">Something I wrote</option>
+                <option value="Just saying hello">Just saying hello</option>
               </select>
             </div>
 
@@ -208,6 +244,18 @@ const contactPageSchema = {
     margin-top: clamp(2rem, 4vw, 3rem);
     padding-top: 1.75rem;
     border-top: 1px solid var(--border);
+  }
+
+  .include-list {
+    padding-left: 1.15rem;
+    display: grid;
+    gap: 0.5rem;
+    font-size: 0.96rem;
+    color: var(--text-muted);
+  }
+
+  .note--tight {
+    margin-top: 1.1rem;
   }
 
   .direct__title {

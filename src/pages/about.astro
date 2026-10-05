@@ -2,11 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CTA from '../components/CTA.astro';
-import { site, contact, expertise, industries } from '../data/site';
+import { site, contact, expertise, industries, availability } from '../data/site';
 import { breadcrumbSchema, profilePageSchema } from '../data/schema';
 
 const title = `About ${site.name} — Digital Marketing & GTM, ${contact.city}`;
-const description = `${site.name} is a digital marketing and GTM specialist in ${contact.city} with ${site.yearsExperience}+ years across SEO, paid media, social and content. This is his personal site.`;
+const description = `${site.name} is a digital marketing and GTM specialist in ${contact.city} with ${site.yearsExperience}+ years across SEO, paid media, social and content, working with brands under contract.`;
 
 const crumbs = [
   { label: 'Home', href: '/' },
@@ -16,8 +16,8 @@ const crumbs = [
 const timeline = [
   {
     period: 'Now',
-    title: 'Digital marketing and GTM',
-    body: 'Working in-house on go-to-market and digital marketing. Writing here in my own time about the parts of the job worth writing down.',
+    title: 'Digital marketing and GTM, under contract',
+    body: 'Working with brands under contract on go-to-market and digital marketing, a small number at a time. Writing here about the parts of the job worth writing down.',
   },
   {
     period: 'Earlier',
@@ -54,6 +54,14 @@ const timeline = [
         on my own. I have made most of the expensive mistakes already, and this site is
         where I write them down so somebody else does not have to repeat them.
       </p>
+      {
+        availability.open && (
+          <p class="lede avail-lede">
+            <strong>{availability.statement}</strong> The terms are set out plainly
+            further down this page.
+          </p>
+        )
+      }
     </div>
   </section>
 
@@ -63,7 +71,8 @@ const timeline = [
         <div class="prose">
           <h2>What this site is</h2>
           <p>
-            A blog and a portfolio. The <a href="/blog/">blog</a> is the main thing:
+            A blog, a portfolio, and the place to find me if you want to hire me. The <a
+              href="/blog/">blog</a> is the main thing:
             notes on SEO, paid media, organic social, content and AI search, written for
             the person who has to justify the budget rather than the person selling to
             them. The <a href="/portfolio/">portfolio</a> is a record of work from
@@ -109,18 +118,46 @@ const timeline = [
 
           <h2>Based in {contact.city}</h2>
           <p>
-            I am in {contact.city}, {contact.region}. Most of my work has been remote or
-            hybrid, across time zones, which is how the Canadian project ran end to end.
+            I am in {contact.city}, {contact.region}, and I work with companies that are
+            not. Remote and hybrid across time zones is how almost all of it has run.
           </p>
 
-          <h2>If you want to talk</h2>
+          <h2>I am accepting contracts</h2>
           <p>
-            I do enjoy the conversation. If you would
-            like to know how your GTM or digital marketing issue could be solved, email
-            me at <a href={`mailto:${contact.email}`}>{contact.email}</a>, call or
-            WhatsApp me on <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>, or
-            find me on <a href={contact.linkedin} rel="noopener">LinkedIn</a>. Happy to
-            have a quick chat and think it through with you.
+            I work with brands under contract across the disciplines on the <a
+              href="/expertise/">expertise pages</a>. A small number at a time, because
+            the point of hiring one person instead of an agency is that the person you
+            spoke to is the person doing the work. Nobody gets handed down to a junior,
+            because there isn't one.
+          </p>
+          <p>
+            What that looks like in practice: a scoped engagement on one or two problems
+            rather than everything at once, a flat fee agreed before anything starts, and
+            one number the work is held to. Never a percentage of your ad spend, because
+            that structure pays me more for spending more of your money. Never a
+            guaranteed ranking or a guaranteed lead count, because nobody can promise
+            those honestly and I am not going to start.
+          </p>
+          <p>
+            The work tends to look like one of four things. A diagnostic audit on
+            marketing that is running without producing. Fixing a channel that is leaking
+            money. Building lead generation for a narrow audience nobody has defined
+            properly yet. Or getting a site readable and quotable enough to turn up in AI
+            search. Retained monthly where there is a standing number to move, project
+            work where there is not.
+          </p>
+          <p>
+            Most of what I have done has been remote or hybrid across time zones, which
+            is how the Canadian project ran end to end, so a contract does not depend on
+            you being in {contact.city}.
+          </p>
+          <p>
+            If your marketing is running and revenue is flat, email me at <a
+              href={`mailto:${contact.email}`}>{contact.email}</a>, call or WhatsApp me
+            on <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>, or find me on <a
+              href={contact.linkedin} rel="noopener">LinkedIn</a>. Tell me what you are
+            running and what it is failing to produce. If I am not the right person for
+            it, I will say so and tell you what to look for instead.
           </p>
         </div>
 
@@ -136,9 +173,21 @@ const timeline = [
                 <dt>Based in</dt>
                 <dd>{contact.city}, {contact.region}, {contact.country}</dd>
               </div>
+              {
+                availability.open && (
+                  <div>
+                    <dt>Availability</dt>
+                    <dd>{availability.short}</dd>
+                  </div>
+                )
+              }
+              <div>
+                <dt>Working style</dt>
+                <dd>Remote and hybrid, across time zones</dd>
+              </div>
               <div>
                 <dt>This site</dt>
-                <dd>Personal blog and portfolio</dd>
+                <dd>Blog, portfolio and how to reach me</dd>
               </div>
             </dl>
           </div>
@@ -198,6 +247,10 @@ const timeline = [
         transparent 60%
       ),
       var(--bg);
+  }
+
+  .avail-lede {
+    margin-top: 1rem;
   }
 
   .about-hero h1 {

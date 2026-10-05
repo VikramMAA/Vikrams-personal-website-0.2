@@ -1,5 +1,5 @@
 ---
-import { site } from '../data/site';
+import { site, availability } from '../data/site';
 
 const path = Astro.url.pathname;
 
@@ -41,7 +41,9 @@ const isActive = (href: string) =>
           ))
         }
         <li class="site-nav__cta">
-          <a href="/contact/" class="btn btn--primary">Say hello</a>
+          <a href="/contact/" class="btn btn--primary">
+            {availability.open ? 'Work with me' : 'Say hello'}
+          </a>
         </li>
       </ul>
     </nav>

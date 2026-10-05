@@ -89,4 +89,4 @@ Find out this week what your actual position is, including whose infrastructure 
 
 Then use the January 2027 date in conversations, because a legislated reduction in your prospect's switching cost is a better closing argument than anything you were going to invent.
 
-My [notes on content marketing](/expertise/content-marketing/) cover how the rest of the site follows from a claim like that. If you'd like to think through your own position, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on content marketing](/expertise/content-marketing/) cover how the rest of the site follows from a claim like that. If you'd like to think through your own position, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm taking on a small number of contracts at the moment, so I'll tell you straight whether it's something I could help with.

@@ -5,13 +5,17 @@
  * the site is read from this file. Edit here and the whole site updates —
  * including the structured data (JSON-LD) that Google and AI crawlers read.
  *
- * POSITIONING NOTE: this is a personal blog and portfolio. Nothing here offers,
- * sells or prices a service. The invitation everywhere on the site is a
- * conversation — email, LinkedIn, WhatsApp or a call — never an engagement.
+ * POSITIONING NOTE: this is a blog, a portfolio, and the place someone decides
+ * whether to hire Vikram. He is accepting contracts, and the site says so
+ * plainly. See the `availability` object below, which is the single source of
+ * truth for that copy.
  *
- * Deliberately silent on availability. The site does not state whether Vikram is
- * open to work in either direction: anyone who wants to know can ask. Do not
- * reintroduce a line saying he is contracted, unavailable, or for hire.
+ * What stays true even now: no prices, no packages, no retainer figures, no
+ * "limited slots", no guaranteed rankings and no guaranteed lead counts appear
+ * anywhere on this site. The whole credibility position is that the people
+ * promising those are not being straight, so publishing them would cost more
+ * than any enquiry they won. Fees are scoped per engagement and come out of the
+ * first conversation.
  */
 
 export const site = {
@@ -67,12 +71,56 @@ export const contact = {
 } as const;
 
 /**
- * The one line that replaces every old sales CTA. Reused by the CTA component,
- * the contact page and the FAQ so the wording stays identical everywhere.
+ * AVAILABILITY. Single source of truth for the "accepting contracts" copy.
+ *
+ * Set `open` to false and every availability pill, section and line on the site
+ * disappears without touching a single page. Nothing else needs editing.
+ *
+ * Keep `statement` identical wherever it appears. It is deliberately repeated
+ * word for word on the home page, the about page, the FAQ and llms.txt, because
+ * assistants quote the sentence they see stated consistently.
+ *
+ * Do not add a price, a package, a retainer figure or a scarcity line to this
+ * object. See the positioning note at the top of the file.
+ */
+export const availability = {
+  open: true,
+  /** Short form. Hero pill, about sidebar, footer. */
+  short: 'Accepting contracts',
+  /** The canonical sentence. Repeat it verbatim, do not paraphrase it. */
+  statement: 'I am accepting contracts to help brands grow.',
+  body: `I work with brands under contract across SEO, AI search, paid media, social, content and lead generation. A small number at a time, because the point of hiring one person instead of an agency is that the person you spoke to is the person doing the work.`,
+  /** The three honest qualifiers. Rendered as cards on the home page. */
+  terms: [
+    {
+      title: 'How a contract is scoped',
+      body: 'One or two problems, not everything at once. A flat fee agreed before anything starts, never a percentage of your ad spend. One number the work is held to, written down at the start so it cannot quietly change later.',
+    },
+    {
+      title: 'Who it works for',
+      body: 'Companies already spending real money on marketing, with someone internal who can make a decision. Founder-led teams somewhere between first traction and a full marketing department. B2B, D2C, local services and SaaS.',
+    },
+    {
+      title: 'Who it does not',
+      body: 'Anyone who wants a guaranteed ranking, a guaranteed lead count, or page one in thirty days. And if the diagnosis says the problem is your product or your sales follow-up rather than your marketing, I will tell you that instead of selling you a retainer.',
+    },
+  ],
+  /** What makes a first message easy to answer. Rendered on /contact/. */
+  include: [
+    'What you are running now, and roughly the monthly spend behind it',
+    'The one number that is not moving',
+    'What you have already tried',
+    'Whether you want a one-off diagnostic or ongoing work',
+  ],
+} as const;
+
+/**
+ * The site-wide closing invitation. Reused by the CTA component, the contact
+ * page and the FAQ so the wording stays identical everywhere.
  */
 export const chatInvite = {
-  heading: 'Stuck on a GTM or marketing problem?',
-  body: `This site is a blog and a portfolio, not a shop. If you would like to know how your GTM or digital marketing issue could be solved, feel free to reach out — email, LinkedIn, WhatsApp or a call, whichever is easiest. Happy to have a quick chat and think it through with you.`,
+  heading: 'Have a number that is not moving?',
+  body: `I am accepting contracts to help brands grow, and I am equally happy with a conversation that never becomes one. Email, LinkedIn, WhatsApp or a call, whichever is easiest. Tell me what you are running and what it is failing to produce, and you will get a straight answer on whether I am the right person for it.`,
 } as const;
 
 /** Shown as the credibility strip under the hero. */
@@ -485,11 +533,23 @@ export const caseStudies: CaseStudy[] = [
 export const faqs = [
   {
     q: 'Who is Vikram M A A?',
-    a: `I am a digital marketing and go-to-market specialist based in ${contact.city}, India, with ${site.yearsExperience}+ years across SEO, Google and Meta ads, social media, content marketing and lead generation. This site is my personal blog and portfolio.`,
+    a: `I am a digital marketing and go-to-market specialist based in ${contact.city}, India, with ${site.yearsExperience}+ years across SEO, Google and Meta ads, social media, content marketing and lead generation. I work with brands under contract, and this site is my blog and portfolio.`,
+  },
+  {
+    q: 'Are you available for work?',
+    a: `Yes. I am accepting contracts to help brands grow, across SEO, AI search, Google and Meta ads, organic social, content marketing and lead generation. I take a small number at a time so the work stays mine rather than being handed down to a junior. Email ${contact.email}, call or WhatsApp ${contact.phone}, or message me on LinkedIn, and tell me what you are running and what it is failing to produce.`,
+  },
+  {
+    q: 'What kind of contracts do you take?',
+    a: 'Scoped engagements on one or two problems rather than everything at once: a diagnostic audit, fixing a channel that is leaking money, building lead generation for a narrow B2B audience, or getting a site into AI search results. Retained monthly work where there is a standing number to move, project work where there is not.',
+  },
+  {
+    q: 'How do you charge?',
+    a: 'A flat fee scoped to the work, agreed before anything starts. Never a percentage of ad spend, because that structure pays me more for spending more of your money. The exact number depends on scope, so it comes out of the first conversation rather than a price list.',
   },
   {
     q: 'Can I talk to you about a GTM or digital marketing problem?',
-    a: 'Yes. Email, LinkedIn, WhatsApp or a call, whichever is easiest, and we can have a quick chat about it. The quickest way to a useful answer is to say what you are running and what it is failing to produce.',
+    a: 'Yes, and it does not have to turn into a contract. Email, LinkedIn, WhatsApp or a call, whichever is easiest. The quickest way to a useful answer is to say what you are running and what it is failing to produce.',
   },
   {
     q: 'What do you write about here?',
@@ -505,11 +565,11 @@ export const faqs = [
   },
   {
     q: 'Where are you based?',
-    a: `${contact.city}, ${contact.region}, India. Most of the work I have done has been remote or hybrid, across India and internationally, including a Canadian brand.`,
+    a: `${contact.city}, ${contact.region}, India. Most of the work I have done has been remote or hybrid, across India and internationally, including a Canadian brand, so a contract does not depend on you being in the same city or the same time zone.`,
   },
 ];
 
-/** How I work through a marketing problem. A point of view, not a process to buy. */
+/** How I work through a marketing problem, in-house or under contract. */
 export const approach = [
   {
     step: '01',

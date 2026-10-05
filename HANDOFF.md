@@ -2,8 +2,14 @@
 
 > **Superseded in part — read this first.** In August 2026 the site was
 > repositioned from a consulting site into a **personal blog and portfolio**, so
-> every service offering, price, engagement model and sales CTA was removed. The
-> site is also silent on availability — see the positioning note in `README.md`.
+> every service offering, price, engagement model and sales CTA was removed.
+>
+> **Update, October 2026:** availability was reversed. Vikram is now accepting
+> contracts and the site states it plainly, driven by the `availability` object
+> in `src/data/site.ts`. The rest of the August repositioning stands: there are
+> still no prices, packages, retainer figures or guarantees anywhere, and
+> `/expertise/` is still notes rather than a service menu. See the positioning
+> note in `README.md`, which is current.
 > `/services/` became `/expertise/` (notes and opinions, not offers), `/results/`
 > became `/portfolio/`, and the `ProfessionalService` and `OfferCatalog`
 > structured data was dropped. Both moves 301-redirect in `netlify.toml`.
@@ -108,8 +114,10 @@ Structural rather than plugin-based:
 - Open Graph + Twitter cards, using a generated `/og-default.png` (1200×630).
 - `Person` + `ProfessionalService` + `WebSite` structured data in a single
   `@graph` on every page, cross-referenced by `@id`. *(Now `Person` + `Blog` +
-  `WebSite`. `ProfessionalService`, `OfferCatalog` and `telephone` were removed
-  with the repositioning — a personal blog should not emit business markup.)*
+  `WebSite`. `ProfessionalService` and `OfferCatalog` stay removed, since he works
+  as an individual. As of October 2026 the `Person` node carries `makesOffer`,
+  built from the `expertise` array, with no price and no availability window
+  because neither is published.)*
 - Per page type: `Service`, `FAQPage`, `BreadcrumbList`, `BlogPosting`,
   `ContactPage`, `ItemList`. *(`Service` is now `Article` on topic pages.)*
 - `sitemap-index.xml` generated at build, with noindex pages filtered out.
@@ -330,9 +338,9 @@ Per your instruction, your personal email is used everywhere:
 - LinkedIn: `https://www.linkedin.com/in/vikram-m-a-a/`
 - Location: Bengaluru, Karnataka, India (street address deliberately omitted)
 
-All four are offered site-wide as ways to start a conversation. What changed with
-the repositioning is what the conversation is for: a quick chat about a problem,
-not a sales call.
+All four are offered site-wide as ways to start a conversation. That conversation
+may now end in a contract, and the site says so, but it is still pitched as a
+conversation about a problem rather than a sales call.
 
 ---
 
@@ -374,10 +382,10 @@ reCAPTCHA and verify the token inside the function.
    also feeds ChatGPT search, so this matters more than it used to.
 3. [Rich Results Test](https://search.google.com/test/rich-results) — validate the
    structured data on the home page and one expertise page.
-4. ~~**Google Business Profile**~~ — dropped with the repositioning. A Business
-   Profile advertises a business that serves customers, which is the opposite of
-   what this site now says. The `ProfessionalService` schema that would have
-   reinforced it is gone too.
+4. **Google Business Profile** — worth reconsidering now that he is taking
+   contracts. It was dropped in August because the site denied serving customers.
+   That reason is gone. A service-area profile for Bengaluru would be the obvious
+   move, and it would reinforce the `makesOffer` markup now on the `Person` node.
 5. **Keep `llms.txt` current.** It's the file AI assistants read for a summary of
    who you are. Update it whenever `site.ts` changes materially.
 
@@ -387,17 +395,19 @@ reCAPTCHA and verify the token inside the function.
 
 Roughly in order of likely return:
 
-1. ~~**Location landing pages**~~ — `/digital-marketing-consultant-bengaluru/`
-   and similar were the plan. They only make sense for someone taking work, so
-   they are off the table while the positioning holds.
+1. **Location landing pages** — `/digital-marketing-consultant-bengaluru/` and
+   similar. These were off the table while the site denied taking work. They are
+   back on it, and the keyword plans in `seo/` already contain the research.
+   Highest-return item on this list now.
 2. **A real photo of you.** There is currently no portrait anywhere. On a
    personal blog that's the easiest credibility win left.
 3. **Testimonials.** The portfolio entries have an empty `quote` field ready. As
    a record of past work rather than a sales pitch, a quote from someone you
    worked with still carries.
-4. ~~**A lead magnet**~~ — a gated audit checklist was the plan. Gating anything
-   behind an email to generate leads is exactly what the repositioning removed.
-   Publishing the checklist openly as a blog post does the same job for a reader.
+4. ~~**A lead magnet**~~ — a gated audit checklist was the plan. Still a no, even
+   now. Gating a checklist behind an email to harvest leads is the kind of thing
+   the site spends its whole blog criticising. Publish the checklist openly and
+   let it earn the enquiry.
 5. **More blog posts** targeting the questions people actually ask. The seed
    posts show the intended shape: direct answers, front-loaded, no filler.
 6. **Analytics.** Nothing is installed. Consider Plausible or Fathom over GA4 —

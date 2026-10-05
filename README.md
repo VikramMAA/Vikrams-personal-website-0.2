@@ -4,13 +4,24 @@ Personal blog and portfolio, built to rank in search and get cited by AI
 assistants. Static HTML, no client-side framework, no runtime JavaScript beyond a
 CSS-only mobile menu.
 
-**Positioning:** this site does not offer, sell or price services. It is also
-deliberately silent on availability — it does not say Vikram is contracted,
-unavailable, or for hire, in either direction. Anyone who wants to know can ask.
-Do not reintroduce such a line. Every closing call to action is an invitation to
-a conversation by email or LinkedIn, and that wording lives in one place — the `chatInvite` object in `src/data/site.ts`. Keep
-it that way when editing. Email, phone, WhatsApp and LinkedIn are all offered as
-ways to start that conversation.
+**Positioning:** Vikram is accepting contracts to help brands grow, and the site
+says so plainly. That copy has a single source of truth: the `availability`
+object in `src/data/site.ts`. Set `availability.open` to `false` and every pill,
+section, sidebar row and footer line referring to it disappears across the whole
+site without touching a page.
+
+What has **not** changed, and must not: no prices, no packages, no retainer
+figures, no "limited slots", no guaranteed rankings and no guaranteed lead counts
+appear anywhere. The entire credibility position of this site is that the people
+publishing those are not being straight, so adding one would cost more than any
+enquiry it won. Fees are flat, scoped per engagement, and come out of the first
+conversation. If you are tempted to add a pricing table, read
+`content-ops/VOICE.md` first.
+
+The closing call to action still lives in one place, the `chatInvite` object in
+`src/data/site.ts`, and is still an invitation to a conversation rather than a
+hard sell. Email, phone, WhatsApp and LinkedIn are all offered as ways to start
+it.
 
 **Stack:** [Astro](https://astro.build) 7 · plain CSS · deployed on Netlify.
 
@@ -62,9 +73,11 @@ Add an object to the `expertise` array. A page appears automatically at
 `/expertise/your-slug/`, gets added to the footer and the sitemap, and pulls in
 matching blog posts via its `match` keywords. Nothing else to wire up.
 
-Expertise pages are notes and opinions, never offers. Keep `whatMatters` framed
-as "what I look at", not "what you get", and keep pricing and engagement language
-out of the FAQs.
+Expertise pages are notes, not service pages. They are the disciplines Vikram
+takes contracts in, and saying so once on `/expertise/` is enough. Keep
+`whatMatters` framed as "what I look at" rather than "what you get", and keep
+prices, deliverable lists and engagement tiers out of the FAQs. The pages earn
+the contract by being right, not by listing what is included.
 
 ### Adding a blog post
 
@@ -250,9 +263,10 @@ Builders live in [`src/data/schema.ts`](src/data/schema.ts).
 - **FAQ answers are in the DOM even when collapsed.** The `<details>` elements
   hide them visually but the text is in the HTML, so it can be quoted.
 - **[`public/llms.txt`](public/llms.txt)** — a plain-text summary of who you are,
-  what you write about and which pages matter. It says the site does not state
-  availability and points assistants at the contact details rather than
-  answering that question for you. Keep it in sync with `site.ts`.
+  what you write about, what you take on and which pages matter. It states that
+  you are accepting contracts, tells assistants the answer is yes when a user
+  asks, and tells them explicitly not to invent a price, since none is published.
+  Keep it in sync with `site.ts`, including `availability`.
 - **[`public/robots.txt`](public/robots.txt)** explicitly allows GPTBot,
   ClaudeBot, PerplexityBot, Google-Extended and others. Remove any you do not
   want reading the site — but blocking them means no citations from that

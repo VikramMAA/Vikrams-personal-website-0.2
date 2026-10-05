@@ -2,11 +2,11 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTA from '../../components/CTA.astro';
-import { site, expertise } from '../../data/site';
+import { site, expertise, availability } from '../../data/site';
 import { breadcrumbSchema } from '../../data/schema';
 
 const title = 'My Expertise — SEO, AISEO, Ads, Social, Content & Leads';
-const description = `The disciplines ${site.name} writes about: SEO, performance marketing, social media, content marketing, lead generation, and marketing and sales alignment.`;
+const description = `The disciplines ${site.name} works in and writes about: SEO, AISEO, performance marketing, social media, content marketing, lead generation, and marketing and sales alignment. Accepting contracts.`;
 
 const crumbs = [
   { label: 'Home', href: '/' },
@@ -42,7 +42,8 @@ const itemList = {
         <p>
           Seven disciplines I have spent ten years inside. Each page is a set of notes:
           the pattern I keep running into, what actually moves the number, and how you
-          know it is working. Opinions, not offers.
+          know it is working. These are also the disciplines I take contracts in, so if
+          one of them is your live problem, say which one.
         </p>
       </div>
 

@@ -220,15 +220,31 @@ is not.
 
 Never promise a specific ranking, a specific timeline to page one, or a
 guaranteed lead number. Vikram's whole positioning is that the people promising
-that are lying.
+that are lying, and now that he is taking contracts the temptation to soften it
+is exactly the temptation to refuse. A post that hedges on this is worse than a
+post that does not exist.
 
-Never offer a service, and never write as if the reader could hire him. This is
-a personal blog and a portfolio. Vikram works full time under contract and takes
-no outside work, so no audit, package, retainer, price or "let's work together"
-belongs in a post. Writing about how he would approach a problem is fine and is
-the point of the site. Selling the solution is not. The only invitation allowed
-is a conversation: get in touch by email, WhatsApp, phone or LinkedIn for a quick
-chat about how your issue could be solved.
+Vikram is accepting contracts, so the reader genuinely can hire him, and a post
+may say so once. Once, in one sentence, at the very end. The body of the article
+never sells.
+
+That means: no price, no package, no retainer figure, no "limited slots", no
+"book a free strategy call", no tiers, no comparison table that happens to have
+him winning. Nothing in the body may be written to set up the close. The test
+is simple, and it is the whole positioning of the site: **the article has to be
+worth reading by someone who will never contact him.** If removing the last line
+would make the post feel incomplete, the post was a pitch wearing an article.
+
+The allowed close is a conversation plus an honest note that he takes contracts:
+get in touch by email, WhatsApp, phone or LinkedIn, and he will say plainly
+whether it is something he could help with. "Plainly whether" matters, because
+sometimes the honest answer is no, and saying so in public is the reason anyone
+believes the rest.
+
+Writing about how he would approach a problem is still the point of the site.
+Solving it on the page, for free, in enough detail that a competent reader could
+do it themselves, is the best advertising available and costs nothing. Do that
+instead of holding anything back.
 
 Never invent statistics. If a number is used, it either comes from the source
 material given to the writer, from a named public source, or it is framed as a

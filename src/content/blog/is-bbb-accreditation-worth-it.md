@@ -89,4 +89,4 @@ Then decide on accreditation by looking at your actual customers rather than at 
 
 And if you are currently accredited and cannot remember the last time a customer mentioned it, that is a renewal worth questioning rather than a tradition worth keeping.
 
-My [notes on what I work on](/expertise/) cover the rest. If you'd like to think through your own trust signals, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on what I work on](/expertise/) cover the rest. If you'd like to think through your own trust signals, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm taking on a small number of contracts at the moment, so I'll tell you straight whether it's something I could help with.

@@ -83,4 +83,4 @@ Then take your five best candidates and actually search them. Look at what the p
 
 Then read your last fifty WhatsApp enquiries and write down the three questions that keep repeating. Those are pages, and nobody else in your category has written them properly because they never looked.
 
-None of that needed a subscription. What the paid tools buy you is speed and volume estimates, and at this stage neither is your constraint. My [notes on SEO](/expertise/seo/) cover what happens after the list exists. If you'd like to think through your own, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+None of that needed a subscription. What the paid tools buy you is speed and volume estimates, and at this stage neither is your constraint. My [notes on SEO](/expertise/seo/) cover what happens after the list exists. If you'd like to think through your own, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm taking on a small number of contracts at the moment, so I'll tell you straight whether it's something I could help with.

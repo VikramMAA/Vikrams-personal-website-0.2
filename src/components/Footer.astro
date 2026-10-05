@@ -1,5 +1,5 @@
 ---
-import { site, contact, expertise } from '../data/site';
+import { site, contact, expertise, availability } from '../data/site';
 
 const year = new Date().getFullYear();
 ---
@@ -60,7 +60,11 @@ const year = new Date().getFullYear();
           }
         </ul>
         <p class="footer-note">
-          Always happy to talk through a GTM or marketing problem.
+          {
+            availability.open
+              ? 'Accepting contracts to help brands grow. Always happy to talk through a problem either way.'
+              : 'Always happy to talk through a GTM or marketing problem.'
+          }
         </p>
       </div>
     </div>

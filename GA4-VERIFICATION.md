@@ -50,8 +50,15 @@ Do not debug tracking that is not deployed. Check a marker from this release:
 # Should print a number > 0. If it prints 0, the deploy has not gone out yet.
 curl -s https://vikramhere.com/contact/ | grep -c contact_click
 
-# Should print 0 — the availability copy was removed in the same release.
+# Should still print 0. The site has never said this and must not start:
+# availability is stated positively, never as a negative or a disclaimer.
 curl -s https://vikramhere.com/contact/ | grep -ci "not available for freelance"
+
+# Should print a number > 0 — the October 2026 availability copy is live.
+curl -s https://vikramhere.com/contact/ | grep -ci "accepting contracts"
+
+# Should print 0 — no price, package or retainer figure is ever published.
+curl -s https://vikramhere.com/ | grep -ciE "per month|starting at|packages from"
 
 # Should return HTTP 200 — this page is new in this release.
 curl -s -o /dev/null -w "%{http_code}\n" https://vikramhere.com/subscribed/

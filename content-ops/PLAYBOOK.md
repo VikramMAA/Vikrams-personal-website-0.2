@@ -211,14 +211,22 @@ least one should be the `expertise_link` from the brief. Check the link target
 exists first, either in `src/pages/` or `src/content/blog/`. A broken internal
 link on a static site is a build-time nothing and a reader-facing embarrassment.
 
-**Never sell anything in the close.** This site is a personal blog and
-portfolio. Vikram works full time under contract and does not take outside work,
-so no post may offer a service, an audit, a retainer, a package or a price, and
-none may imply he is available for hire. If the post ends on a call to action,
-it is the same one the rest of the site uses: if you'd like to know how your GTM
-or digital marketing issue could be solved, get in touch by email, WhatsApp,
-phone or LinkedIn and we can have a quick chat about it. Link to `/contact/` for
-that, and to a `/expertise/` page for the longer explanation.
+**One sentence of selling, at the very end, and not a word more.** Vikram is
+accepting contracts, so a post may say so once, in the closing paragraph. It may
+not price anything, package anything, promise anything, or manufacture urgency,
+and nothing earlier in the post may be shaped to set up the close. See the
+selling rule in `VOICE.md`, which is the authority on this and is stricter than
+it looks.
+
+The close that works: the standing invitation the rest of the site uses, plus the
+honest note. If you'd like to know how your GTM or digital marketing issue could
+be solved, get in touch by email, WhatsApp, phone or LinkedIn. He is taking a
+small number of contracts, so he will tell you straight whether it is something
+he could help with. Link to `/contact/` for that, and to a `/expertise/` page for
+the longer explanation.
+
+Do not add a second call to action anywhere in the body. One, at the end, is the
+whole budget.
 
 ## 6. Save it
 

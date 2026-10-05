@@ -97,4 +97,4 @@ Then diary a monthly ten minute check in somebody's calendar, by name. Not a rem
 
 That is the whole difference between fixing your site and keeping it fixed, and in a market where most of your competitors are failing on mobile, keeping it fixed is worth more than the original fix was.
 
-My [notes on SEO](/expertise/seo/) cover the rest of the technical picture. If you'd like a second opinion on your own site, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on SEO](/expertise/seo/) cover the rest of the technical picture. If you'd like a second opinion on your own site, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm taking on a small number of contracts at the moment, so I'll tell you straight whether it's something I could help with.

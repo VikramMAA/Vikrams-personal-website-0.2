@@ -93,4 +93,4 @@ The most useful thing you can do in a pitch is stop evaluating how impressive pe
 
 Polish is the cheapest thing to buy in this industry. Diagnosis is the expensive thing, and it is the only part you are actually paying for.
 
-If you are still deciding what kind of help you need at all, [the model question](/blog/agency-vs-freelancer-vs-in-house/) comes before any of this. My [notes on what I work on](/expertise/) cover the rest. If you'd like a second opinion on a proposal in front of you, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+If you are still deciding what kind of help you need at all, [the model question](/blog/agency-vs-freelancer-vs-in-house/) comes before any of this. My [notes on what I work on](/expertise/) cover the rest. If you'd like a second opinion on a proposal in front of you, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm taking on a small number of contracts at the moment, so I'll tell you straight whether it's something I could help with.

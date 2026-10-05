@@ -8,6 +8,7 @@ import {
   contact,
   expertise,
   stats,
+  availability,
   caseStudies,
   faqs,
   approach,
@@ -15,8 +16,8 @@ import {
 } from '../data/site';
 import { faqSchema } from '../data/schema';
 
-const title = `${site.name} — Digital Marketing & GTM Blog and Portfolio`;
-const description = `Personal blog and portfolio of ${site.name}, a digital marketing and GTM specialist in ${contact.city} with ${site.yearsExperience}+ years across SEO, paid media, social, content and lead generation.`;
+const title = `${site.name} — Digital Marketing & GTM Consultant, ${contact.city}`;
+const description = `${site.name} is a digital marketing and GTM specialist in ${contact.city} with ${site.yearsExperience}+ years across SEO, paid media, social, content and lead generation. Accepting contracts to help brands grow.`;
 
 const latestPosts = (await getCollection('blog', ({ data }) => data.published))
   .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf())
@@ -30,7 +31,17 @@ const fmt = (d: Date) =>
   {/* ---------------------------------------------------------------- Hero */}
   <section class="hero">
     <div class="container hero__inner">
-      <p class="eyebrow">Personal blog &amp; portfolio &middot; {contact.city}, India</p>
+      {
+        availability.open ? (
+          <p class="avail-pill">
+            <span class="avail-pill__dot" aria-hidden="true" />
+            {availability.short}
+            <span class="avail-pill__loc">&middot; {contact.city}, India</span>
+          </p>
+        ) : (
+          <p class="eyebrow">Blog &amp; portfolio &middot; {contact.city}, India</p>
+        )
+      }
       <h1>
         Ten years of digital marketing, <span class="hl">written down</span>.
       </h1>
@@ -39,8 +50,28 @@ const fmt = (d: Date) =>
         media, social and content for companies across India and North America. This is
         where I write about what worked, what did not, and the work I am proud of.
       </p>
+      {
+        availability.open && (
+          <p class="lede">
+            <strong>{availability.statement}</strong> If your marketing is running and
+            the revenue number is not moving, that is the conversation I am best at.
+          </p>
+        )
+      }
       <div class="btn-row">
-        <a href="/blog/" class="btn btn--primary">Read the blog</a>
+        {
+          availability.open && (
+            <a href="/contact/" class="btn btn--primary">
+              Work with me
+            </a>
+          )
+        }
+        <a
+          href="/blog/"
+          class:list={['btn', availability.open ? 'btn--ghost' : 'btn--primary']}
+        >
+          Read the blog
+        </a>
         <a href="/portfolio/" class="btn btn--ghost">See the work</a>
       </div>
     </div>
@@ -109,7 +140,8 @@ const fmt = (d: Date) =>
           go out, ads run, somebody writes blogs. The problem is that nothing is
           connected, so nobody can say which activity produced which rupee, and the
           budget gets defended rather than directed. Most of what I write here comes out
-          of that gap.
+          of that gap, and most of the contracts I take are someone deciding to close
+          it.
         </p>
       </div>
 
@@ -144,10 +176,11 @@ const fmt = (d: Date) =>
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">My expertise</p>
-        <h2 id="expertise-heading">What I write about</h2>
+        <h2 id="expertise-heading">What I work on, and write about</h2>
         <p>
-          Six disciplines I have spent a decade inside. Each page collects the pattern I
-          keep running into and what actually moves the number.
+          Seven disciplines I have spent a decade inside, and the ones I take contracts
+          in. Each page collects the pattern I keep running into and what actually moves
+          the number.
         </p>
       </div>
 
@@ -191,8 +224,36 @@ const fmt = (d: Date) =>
     </div>
   </section>
 
+  {/* ------------------------------------------------------- Availability */}
+  {
+    availability.open && (
+      <section class="section avail" aria-labelledby="avail-heading">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Availability</p>
+            <h2 id="avail-heading">{availability.statement}</h2>
+            <p>{availability.body}</p>
+          </div>
+
+          <div class="grid grid--3">
+            {availability.terms.map((term) => (
+              <div class="card">
+                <h3>{term.title}</h3>
+                <p>{term.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <p class="avail__action">
+            <a href="/contact/" class="btn btn--primary">Start a conversation</a>
+          </p>
+        </div>
+      </section>
+    )
+  }
+
   {/* ---------------------------------------------------------- Portfolio */}
-  <section class="section" aria-labelledby="work-heading">
+  <section class="section section--alt" aria-labelledby="work-heading">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Portfolio</p>
@@ -221,7 +282,7 @@ const fmt = (d: Date) =>
   </section>
 
   {/* --------------------------------------------------------- Industries */}
-  <section class="section section--alt" aria-labelledby="industries-heading">
+  <section class="section" aria-labelledby="industries-heading">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Industries</p>
@@ -263,8 +324,55 @@ const fmt = (d: Date) =>
     margin-bottom: 1.5rem;
   }
 
+  /* Two stacked ledes in the hero — .lede carries no margin of its own. */
+  .hero .lede + .lede {
+    margin-top: 1rem;
+  }
+
   .hl {
     color: var(--accent);
+  }
+
+  /* ------------------------------------------------------- Availability pill */
+  .avail-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-bottom: 1.5rem;
+    padding: 0.45rem 0.95rem 0.45rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--white);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-900);
+  }
+
+  /* The city earns its place on desktop. On a phone it wraps the pill onto two
+     lines, which looks broken, so it drops out below 30rem. */
+  @media (max-width: 30rem) {
+    .avail-pill__loc {
+      display: none;
+    }
+  }
+
+  .avail-pill__dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: #16a34a;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.18);
+    flex: none;
+  }
+
+  .avail .section-head h2 {
+    max-width: 30ch;
+  }
+
+  .avail__action {
+    margin-top: clamp(1.75rem, 4vw, 2.5rem);
   }
 
   /* ----------------------------------------------------------------- Stats */

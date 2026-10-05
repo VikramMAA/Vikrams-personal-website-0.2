@@ -93,4 +93,4 @@ Then diary both deadlines, the spend one and the claim one, in somebody's calend
 
 And the next time you are in a conversation with the manufacturer, spend it on the eligible activity list rather than on the number. The number is a negotiation you will mostly lose. The list is one you can often win, and it is worth more.
 
-My [notes on what I work on](/expertise/) cover the rest. If you'd like to think through your own program, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on what I work on](/expertise/) cover the rest. If you'd like to think through your own program, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm taking on a small number of contracts at the moment, so I'll tell you straight whether it's something I could help with.

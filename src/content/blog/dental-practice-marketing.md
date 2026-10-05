@@ -83,4 +83,4 @@ Then write down in one sentence whether you are competing on being in network or
 
 Then open your review reply template, or write one, and make sure it does not confirm anybody is a patient. If you have replied to reviews in the past, go back and read what you wrote.
 
-My [notes on lead generation](/expertise/lead-generation/) cover the acquisition side once the foundation is right. If you'd like to think through your own setup before it goes to counsel, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on lead generation](/expertise/lead-generation/) cover the acquisition side once the foundation is right. If you'd like to think through your own setup before it goes to counsel, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm taking on a small number of contracts at the moment, so I'll tell you straight whether it's something I could help with.

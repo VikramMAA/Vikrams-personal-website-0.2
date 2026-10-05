@@ -109,4 +109,4 @@ Then check your highest spending campaign and confirm it points at a dedicated p
 
 Then take the ethics questions to whoever handles compliance at your firm, with the specific claims you want to make written down.
 
-My [notes on lead generation](/expertise/lead-generation/) cover the acquisition side once intake works. If you'd like to think through your own setup before it goes to counsel, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm contracted full time so this isn't a pitch.
+My [notes on lead generation](/expertise/lead-generation/) cover the acquisition side once intake works. If you'd like to think through your own setup before it goes to counsel, [drop me a line](/contact/) on email, WhatsApp or LinkedIn and we can have a quick chat. I'm taking on a small number of contracts at the moment, so I'll tell you straight whether it's something I could help with.
