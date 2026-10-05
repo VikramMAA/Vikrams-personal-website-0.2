@@ -1623,6 +1623,24 @@
       "word_count": 1166,
       "market": "US",
       "_note": "Policy checked this run as the brief required. The 2026 self-promotion change is the spine: promoting from a personal neighbor account is now a violation across posts, main-feed comments and unsolicited DMs, with automatic suppression and possible account restriction. Titled away from the 'Is X worth it for a small business?' shape because is-bbb-accreditation-worth-it used it on 1 Oct, four days earlier. Did not restate yelp-vs-google-business-profile, whose hook is already the solicitation-rules contrast; that appears here as one line and a link, and the original argument is density instead, that recommendations are indexed to an address-verified neighbourhood, which is the same geographic unit as a trades route, so concentration beats volume. Nextdoor's own engagement multipliers (19x, 7x, 2.6x, 30%) are attributed to the platform and explicitly discounted as its own marketing. Ad costs given as reported ranges with the $25,000 a month national sponsored-post minimum as the contrast that shows who the paid product was built for, plus the discovery-versus-demand-capture distinction explaining why cheap clicks here get misjudged against search benchmarks. Timing catch: 2026 Fave Awards voting ran 4 to 30 September and has closed, so the post says the window has gone for the year rather than telling readers to chase votes. Avoided the is-bbb-accreditation opening about a profile you did not create, even though Nextdoor pages are also auto-created, and moved that fact into the closing checklist as a claim-not-duplicate step. Left the mechanics of what a Business Page may do inside neighbour recommendation threads as an instruction to check current policy, since that detail could not be verified: help.nextdoor.com and blog.nextdoor.com are both blocked by the network egress proxy, so everything here comes from secondary reporting of the policy."
+    },
+    {
+      "brief_id": "b-030",
+      "slug": "seo-for-exporters-india",
+      "title": "Why don't overseas buyers find my Indian export business?",
+      "primary_keyword": "seo for exporters india",
+      "city": null,
+      "tags": [
+        "Export",
+        "B2B",
+        "International"
+      ],
+      "slot": "evening",
+      "published_at": "2026-10-05",
+      "opening_pattern": "gives an overseas procurement manager ninety seconds with the reader's website and says the decision being made is not quality but which of two piles the reader lands in",
+      "word_count": 1216,
+      "market": "India",
+      "_note": "First post written under the revised selling rule from commit 096a0c9, so the close carries the single permitted availability sentence, matching the pattern the user applied to law-firm-marketing. Three of the brief's four requested angles (timezone, pricing in the buyer's currency, proof at distance) are already the section headings of selling-saas-to-us-customers-from-europe (9 Sep, Estonia), so the spine was rebuilt around what is India-specific: Estonia's problem is obscurity, India's is a preconception, so the argument is that the buyer sorts rather than evaluates and every default on an Indian export site reads as intermediary. Strongest claim is that the highest-return change is deleting products, because a real factory makes a narrow range. IndiaMART handled as the brief asked, by its own reported June 2026 figures (8.8m storefronts, 132m products, 234m registered buyers, about 218,000 paying suppliers, roughly Rs 69,000 annualised per paying supplier) with the mechanism criticised rather than the business: free enquiries degrade quality with volume, the buyer base is domestic, and a directory listing is a commodity position by construction. Credited it for what it is built for. Buyer-side risk list (authenticity, price to spec, quality drift, documentation) attributed to sourcing advisers. Verification advice is concrete because GSTIN and IEC are both publicly checkable on the GST and DGFT portals. Deliberately refines the site's own May 2026 AI agents post rather than repeating it: automate the acknowledgement, not the answer, since export procurement rewards competence over speed. Caught a broken internal link before publishing, as the May post's slug lowercases its filename."
     }
   ]
 }
