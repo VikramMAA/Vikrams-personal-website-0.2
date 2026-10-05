@@ -1,0 +1,443 @@
+---
+/**
+ * The one local landing page on this site.
+ *
+ * It exists because Bengaluru is the only city where there is a real proximity
+ * signal and genuinely city-specific things to say. `seo/output/strategy-brief.md`
+ * scored it as the single quick win on the site.
+ *
+ * DO NOT clone this file per city or per service. The scaffolded plan in
+ * `seo/output/page-plan.csv` lists 23 location pages built from template-expanded
+ * keywords ("emergency digital marketing consultant bengaluru", "24 hour seo
+ * consultant bangalore"). Every row is flagged `needs_review` and the brief that
+ * generated them says building the matrix "would produce a doorway-page site that
+ * ranks for none of them and risks the whole domain". It also notes that the
+ * `bengaluru` and `bangalore` variants are one page, not two, which is why both
+ * spellings appear naturally in the copy below rather than on separate URLs.
+ *
+ * The test for adding a second city page: is there something true about that city
+ * that is not true everywhere else? If the answer is "we could rank for it", that
+ * is not the answer.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQ from '../components/FAQ.astro';
+import CTA from '../components/CTA.astro';
+import { site, contact, expertise, availability, caseStudies } from '../data/site';
+import { breadcrumbSchema, faqSchema, localServiceSchema } from '../data/schema';
+
+const title = 'Digital Marketing Consultant in Bengaluru';
+const description = `${site.name} is a digital marketing and GTM consultant in ${contact.city} with ${site.yearsExperience}+ years across SEO, Google and Meta ads, social, content and lead generation. Accepting contracts.`;
+
+const url = `${site.url}/digital-marketing-consultant-bengaluru/`;
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Digital marketing consultant in Bengaluru', href: '/digital-marketing-consultant-bengaluru/' },
+];
+
+/**
+ * Written for the questions a Bengaluru buyer actually types, not the ones the
+ * keyword scaffold generated. Answers are direct because this is the block that
+ * gets quoted by assistants.
+ */
+const faqs = [
+  {
+    q: 'Are you available for work in Bengaluru?',
+    a: `Yes. ${availability.statement} I live and work in ${contact.city}, so this is my home market, and I take a small number of contracts at a time. Email ${contact.email}, call or WhatsApp ${contact.phone}, or message me on LinkedIn.`,
+  },
+  {
+    q: 'Do you work with companies outside Bengaluru?',
+    a: 'Yes, and most of the work I have done has been remote or hybrid across time zones, including an art brand in Canada that ran end to end without a single meeting in person. Being in Bengaluru is a convenience for clients here, not a restriction on everyone else.',
+  },
+  {
+    q: 'What does a digital marketing consultant cost in Bengaluru?',
+    a: 'Bengaluru rates run roughly 20% to 30% above the national average. Published figures put freelance retainers somewhere around Rs 20,000 to Rs 80,000 a month and hourly rates between Rs 500 and Rs 3,000, with senior specialists above that. My own fee is a flat amount scoped to the work and agreed before anything starts, never a percentage of your ad spend, so it comes out of the first conversation rather than a price list.',
+  },
+  {
+    q: 'Are you an agency?',
+    a: 'No. One person, working directly. That is the actual difference: there is no account manager between you and the work, and nobody gets handed down to a junior, because there is not one. The trade-off is honest too, which is that one person has no bench, so if you need five channels running at once an agency is the better structure.',
+  },
+  {
+    q: 'Can we meet in person?',
+    a: `Yes, anywhere in the city. It is genuinely useful for a first conversation and for the afternoon where marketing and sales finally agree what a qualified lead is. Most of the work after that happens remotely regardless, because that is where the work actually is.`,
+  },
+  {
+    q: 'How quickly can you start?',
+    a: 'It depends on what is already running. I take a small number of contracts at a time, so the honest answer is that sometimes there is room immediately and sometimes there is not. I will tell you which in the first reply rather than holding a slot and hoping.',
+  },
+];
+
+/* Pulled from seo/corpus/locations.txt. Framed as where clients are rather than
+   as a keyword list, because a bare list of localities is the doorway-page move
+   this page is specifically built to avoid. */
+const areas = [
+  'Koramangala',
+  'Indiranagar',
+  'HSR Layout',
+  'Whitefield',
+  'Jayanagar',
+  'Hebbal',
+  'Electronic City',
+  'Kasturi Nagar',
+];
+
+const indiaWork = caseStudies.filter((cs) => cs.location === 'India');
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  schema={[
+    breadcrumbSchema(crumbs),
+    localServiceSchema({
+      name: `Digital marketing and GTM consulting in ${contact.city}`,
+      description,
+      url,
+      city: contact.city,
+      region: contact.region,
+      countryCode: contact.countryCode,
+    }),
+    faqSchema(faqs),
+  ]}
+>
+  <Breadcrumbs items={crumbs} />
+
+  {/* ---------------------------------------------------------------- Hero */}
+  <section class="section local-hero">
+    <div class="container">
+      {
+        availability.open && (
+          <p class="avail-pill">
+            <span class="avail-pill__dot" aria-hidden="true" />
+            {availability.short}
+          </p>
+        )
+      }
+      <h1>Digital marketing consultant in Bengaluru</h1>
+      <p class="lede">
+        I am {site.name}. I live and work in {contact.city}, I have spent {site.yearsExperience}+
+        years running SEO, Google and Meta ads, organic social, content and lead
+        generation, and <strong>I am accepting contracts to help brands grow</strong>.
+        If your marketing is running and the revenue number is flat, that is the
+        problem I am best at.
+      </p>
+      <p>
+        This page is about working together. If you would rather see how I think
+        before you talk to anyone, the <a href="/blog/">blog</a> and the <a
+          href="/expertise/">expertise notes</a> are a better use of your time, and
+        they are free.
+      </p>
+      <div class="btn-row">
+        <a href="/contact/" class="btn btn--primary">Start a conversation</a>
+        <a href="/portfolio/" class="btn btn--ghost">See past work</a>
+      </div>
+    </div>
+  </section>
+
+  {/* ------------------------------------------------- What is different here */}
+  <section class="section section--alt" aria-labelledby="local-heading">
+    <div class="container container--narrow">
+      <div class="section-head">
+        <p class="eyebrow">The local picture</p>
+        <h2 id="local-heading">What is actually different about marketing in Bengaluru</h2>
+      </div>
+
+      <div class="prose">
+        <p>
+          Most "digital marketing in Bangalore" pages could be about any city in
+          India with the name swapped. Here is what genuinely differs, from working
+          in this market rather than from a template.
+        </p>
+
+        <h3>The Rs 25,000 retainer that produces a report</h3>
+        <p>
+          It is the most common thing I see here. An agency is engaged, a monthly fee
+          goes out, and what arrives is a PDF of impressions and reach with no line
+          connecting any of it to revenue. The work is not necessarily bad. Nobody
+          ever agreed what it was supposed to produce, so there is no way to tell. I
+          have written up <a href="/blog/marketing-agency-red-flags/">the red flags
+          worth checking in a proposal</a> and <a
+            href="/blog/agency-not-delivering-results/">what to do when an engagement
+          is going nowhere</a>.
+        </p>
+
+        <h3>Half the companies here are not selling to anyone in Bengaluru</h3>
+        <p>
+          A SaaS or services company in Koramangala selling into the US or Europe has
+          no use for local SEO at all. Its buyers are nowhere near the map pack. That
+          business needs content, search visibility and now AI search citations,
+          which is a completely different programme from the one a restaurant in
+          Indiranagar needs. Getting this wrong is the most expensive mistake in the
+          city, because both companies get sold the same package.
+        </p>
+
+        <h3>WhatsApp is where the lead actually goes</h3>
+        <p>
+          The ad gets the click, the enquiry arrives on WhatsApp, and nothing in
+          Google Ads or GA4 ever knows it happened. So the account looks like it is
+          failing while the phone is busy. Most of the "our ads do not work" accounts
+          I have opened in India turn out to have this underneath them. More on
+          <a href="/blog/whatsapp-marketing-india/">treating WhatsApp as the sales
+          channel it already is</a>.
+        </p>
+
+        <h3>Quick commerce is eating D2C website traffic</h3>
+        <p>
+          If you sell a physical product, the customer who used to land on your site
+          now opens Blinkit or Zepto instead. Your organic traffic chart looks like a
+          failure of SEO. It is not. It is a change in where the category is bought,
+          and the response is a different one. I went through that properly in
+          <a href="/blog/quick-commerce-vs-d2c-india/">quick commerce versus D2C</a>.
+        </p>
+
+        <h3>GST sits on top of your ad spend</h3>
+        <p>
+          Which means the cost per acquisition your dashboard reports is not the one
+          your accountant sees. It is a small thing that quietly changes whether a
+          channel is actually profitable, and it is routinely left out of the maths.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* ------------------------------------------------------- Local or remote */}
+  <section class="section" aria-labelledby="proximity-heading">
+    <div class="container container--narrow">
+      <div class="section-head">
+        <p class="eyebrow">Being honest about proximity</p>
+        <h2 id="proximity-heading">When hiring someone local actually matters</h2>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <h3>When it helps</h3>
+          <ul class="checklist">
+            <li>The first conversation, which settles more in an hour across a table than in three calls</li>
+            <li>The afternoon where marketing and sales finally agree what a qualified lead is</li>
+            <li>Retail, clinics and restaurants, where I should see the place before writing about it</li>
+            <li>Anything that needs me in a room with people who disagree with each other</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>When it does not</h3>
+          <ul class="checklist">
+            <li>SaaS and B2B selling outside the city, which is most of the work</li>
+            <li>SEO, paid media and content, all of which happen in the accounts</li>
+            <li>Reporting and review, which are better written down than presented</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="proximity-note">
+        Most of what I have done has been remote or hybrid, including an art brand in
+        Canada that ran end to end without meeting once. So being in {contact.city} is
+        a convenience if you are here, not the reason to hire me. Be suspicious of
+        anyone who tells you proximity is the main thing, including me.
+      </p>
+    </div>
+  </section>
+
+  {/* ------------------------------------------------------------- Contracts */}
+  {
+    availability.open && (
+      <section class="section section--alt" aria-labelledby="contract-heading">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Working together</p>
+            <h2 id="contract-heading">What a contract looks like</h2>
+            <p>{availability.body}</p>
+          </div>
+
+          <div class="grid grid--3">
+            {availability.terms.map((term) => (
+              <div class="card">
+                <h3>{term.title}</h3>
+                <p>{term.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {/* ------------------------------------------------------------- Expertise */}
+  <section class="section" aria-labelledby="disciplines-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">What I take on</p>
+        <h2 id="disciplines-heading">The disciplines, and how I think about each</h2>
+        <p>
+          Each of these has a page of notes behind it rather than a list of
+          deliverables. If one of them is your live problem, read the notes first and
+          then say which one.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        {
+          expertise.map((area) => (
+            <a href={`/expertise/${area.slug}/`} class="card">
+              <h3>{area.title}</h3>
+              <p>{area.summary}</p>
+              <span class="card__link">Notes on {area.title} &rarr;</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  {/* ------------------------------------------------------------ Local work */}
+  {
+    indiaWork.length > 0 && (
+      <section class="section section--alt" aria-labelledby="work-heading">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Work in this market</p>
+            <h2 id="work-heading">Projects run in India</h2>
+            <p>
+              Two of the three projects in the portfolio were run here. The full
+              breakdown of each, including what the numbers do and do not prove, is on
+              the <a href="/portfolio/">portfolio page</a>.
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            {indiaWork.map((cs) => (
+              <a href={`/portfolio/#${cs.slug}`} class="card">
+                <p class="card__meta">{cs.industry}</p>
+                <h3>{cs.client}</h3>
+                <p>{cs.headline}</p>
+                <span class="card__link">Read the breakdown &rarr;</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {/* ----------------------------------------------------------------- Areas */}
+  <section class="section" aria-labelledby="areas-heading">
+    <div class="container container--narrow">
+      <div class="section-head">
+        <p class="eyebrow">Around the city</p>
+        <h2 id="areas-heading">Where clients have been</h2>
+        <p>
+          Bengaluru and Bangalore are the same city and the same search, so both
+          spellings turn up on this page. These are areas clients have actually been
+          in, not a list written to catch searches. If you are somewhere else in the
+          city, or outside it entirely, that changes nothing about whether I can help.
+        </p>
+      </div>
+      <ul class="tag-list">
+        {areas.map((area) => <li>{area}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <FAQ
+    items={faqs}
+    heading="Questions I get asked in Bengaluru"
+    intro="Direct answers. If yours is not here, ask it by email or WhatsApp and you will get the same kind of answer."
+  />
+
+  <CTA heading="Marketing running, revenue flat?" />
+</BaseLayout>
+
+<style>
+  .local-hero {
+    padding-block: clamp(2.5rem, 6vw, 4.5rem);
+    background:
+      radial-gradient(
+        ellipse 70% 60% at 15% 0%,
+        var(--accent-soft) 0%,
+        transparent 60%
+      ),
+      var(--bg);
+  }
+
+  .local-hero h1 {
+    font-size: var(--step-3);
+    max-width: 18ch;
+    margin-bottom: 1.25rem;
+  }
+
+  .local-hero .lede {
+    max-width: 58ch;
+  }
+
+  .local-hero > .container > p:not(.lede):not(.avail-pill) {
+    margin-top: 1rem;
+    max-width: 58ch;
+    color: var(--text-muted);
+  }
+
+  .local-hero .btn-row {
+    margin-top: clamp(1.75rem, 4vw, 2.5rem);
+  }
+
+  /* Matches the home page pill so the availability signal reads as one thing. */
+  .avail-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-bottom: 1.5rem;
+    padding: 0.45rem 0.95rem 0.45rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--white);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-900);
+  }
+
+  .avail-pill__dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: #16a34a;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.18);
+    flex: none;
+  }
+
+  .prose h3 {
+    margin-top: 2.25rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .proximity-note {
+    margin-top: clamp(1.5rem, 3vw, 2rem);
+    color: var(--text-muted);
+  }
+
+  .card__meta {
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .tag-list li {
+    padding: 0.55rem 1.15rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    background: var(--white);
+  }
+</style>

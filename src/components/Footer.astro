@@ -36,6 +36,15 @@ const year = new Date().getFullYear();
           <li><a href="/portfolio/">Portfolio</a></li>
           <li><a href="/about/">About</a></li>
           <li><a href="/contact/">Contact</a></li>
+          {
+            availability.open && (
+              <li>
+                <a href="/digital-marketing-consultant-bengaluru/">
+                  Consultant in {contact.city}
+                </a>
+              </li>
+            )
+          }
         </ul>
       </nav>
 

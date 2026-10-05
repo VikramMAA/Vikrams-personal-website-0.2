@@ -73,6 +73,59 @@ export function profilePageSchema(opts: { description: string }) {
   };
 }
 
+/**
+ * Schema for a city page.
+ *
+ * Deliberately `Service`, NOT `LocalBusiness` or `ProfessionalService`.
+ *
+ * Those types assert a verifiable physical presence, and `contact.streetAddress`
+ * is intentionally empty, so there is nothing for Google to corroborate. A
+ * `LocalBusiness` node claiming a locality with no address and no verified
+ * Business Profile behind it is a weak signal at best and an inconsistency at
+ * worst.
+ *
+ * `Service` with `areaServed` says the true thing: a named person provides this
+ * service in this city. If a verified Google Business Profile is ever set up
+ * with a matching NAP, this is the place to upgrade the type, and not before.
+ */
+export function localServiceSchema(opts: {
+  name: string;
+  description: string;
+  url: string;
+  city: string;
+  region: string;
+  countryCode: string;
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: opts.name,
+    description: opts.description,
+    url: opts.url,
+    serviceType: 'Digital marketing and go-to-market consulting',
+    provider: { '@id': `${site.url}/#person` },
+    areaServed: [
+      {
+        '@type': 'City',
+        name: opts.city,
+        containedInPlace: {
+          '@type': 'AdministrativeArea',
+          name: opts.region,
+          address: {
+            '@type': 'PostalAddress',
+            addressCountry: opts.countryCode,
+          },
+        },
+      },
+    ],
+    availableChannel: {
+      '@type': 'ServiceChannel',
+      serviceUrl: `${site.url}/contact/`,
+      servicePhone: contact.phoneRaw,
+    },
+  };
+}
+
 export function breadcrumbSchema(items: { label: string; href: string }[]) {
   return {
     '@context': 'https://schema.org',
