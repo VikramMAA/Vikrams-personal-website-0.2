@@ -1605,6 +1605,24 @@
       "word_count": 1181,
       "market": "US",
       "_note": "Overlap risk handled on two fronts. dental-practice-marketing (1 Oct) already opens on the dormant list priced against acquisition, so this one opens on the reporting slide instead and never uses the untapped-list frame. klaviyo-email-flows-that-make-money (24 Sep) told readers to run a two email reactivation flow and then let people go, which is list hygiene rather than a revenue programme, so this post distinguishes the two and links that post for replenishment timing rather than contradicting it. Spine goes beyond the brief: the brief asked for win-back to get a named owner, and the argument here is that the owner's first deliverable should be a permanent 10% holdout, not a sequence, because the published 2026 benchmarks disagree with each other by a factor of ten on conversion (42.5% open and 10.3% conversion in one set, 25 to 32% open and 1 to 3% conversion in another) and a benchmark that wide is not a benchmark. Figures attributed in prose: the two benchmark sets, involuntary churn at a fifth to two fifths of subscription cancellations per billing vendors with some putting failed payments near half, and a published holdout analysis of a print catalog program measuring 14% incremental lift against a 40% attributed contribution. Critiqued last-touch attribution as a practice across all retention dashboards without naming a platform as the culprit. Caught and removed a process leak in the draft that referred to the brief itself."
+    },
+    {
+      "brief_id": "b-118",
+      "slug": "nextdoor-for-business",
+      "title": "Nextdoor for business: does the free page beat the ads?",
+      "primary_keyword": "nextdoor for business worth it",
+      "city": null,
+      "tags": [
+        "Local SEO",
+        "Nextdoor",
+        "Reviews"
+      ],
+      "slot": "morning",
+      "published_at": "2026-10-05",
+      "opening_pattern": "opens on a direct instruction to stop doing something today, because the thing that worked for years became a policy violation this year",
+      "word_count": 1166,
+      "market": "US",
+      "_note": "Policy checked this run as the brief required. The 2026 self-promotion change is the spine: promoting from a personal neighbor account is now a violation across posts, main-feed comments and unsolicited DMs, with automatic suppression and possible account restriction. Titled away from the 'Is X worth it for a small business?' shape because is-bbb-accreditation-worth-it used it on 1 Oct, four days earlier. Did not restate yelp-vs-google-business-profile, whose hook is already the solicitation-rules contrast; that appears here as one line and a link, and the original argument is density instead, that recommendations are indexed to an address-verified neighbourhood, which is the same geographic unit as a trades route, so concentration beats volume. Nextdoor's own engagement multipliers (19x, 7x, 2.6x, 30%) are attributed to the platform and explicitly discounted as its own marketing. Ad costs given as reported ranges with the $25,000 a month national sponsored-post minimum as the contrast that shows who the paid product was built for, plus the discovery-versus-demand-capture distinction explaining why cheap clicks here get misjudged against search benchmarks. Timing catch: 2026 Fave Awards voting ran 4 to 30 September and has closed, so the post says the window has gone for the year rather than telling readers to chase votes. Avoided the is-bbb-accreditation opening about a profile you did not create, even though Nextdoor pages are also auto-created, and moved that fact into the closing checklist as a claim-not-duplicate step. Left the mechanics of what a Business Page may do inside neighbour recommendation threads as an instruction to check current policy, since that detail could not be verified: help.nextdoor.com and blog.nextdoor.com are both blocked by the network egress proxy, so everything here comes from secondary reporting of the policy."
     }
   ]
 }
