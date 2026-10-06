@@ -1641,6 +1641,24 @@
       "word_count": 1216,
       "market": "India",
       "_note": "First post written under the revised selling rule from commit 096a0c9, so the close carries the single permitted availability sentence, matching the pattern the user applied to law-firm-marketing. Three of the brief's four requested angles (timezone, pricing in the buyer's currency, proof at distance) are already the section headings of selling-saas-to-us-customers-from-europe (9 Sep, Estonia), so the spine was rebuilt around what is India-specific: Estonia's problem is obscurity, India's is a preconception, so the argument is that the buyer sorts rather than evaluates and every default on an Indian export site reads as intermediary. Strongest claim is that the highest-return change is deleting products, because a real factory makes a narrow range. IndiaMART handled as the brief asked, by its own reported June 2026 figures (8.8m storefronts, 132m products, 234m registered buyers, about 218,000 paying suppliers, roughly Rs 69,000 annualised per paying supplier) with the mechanism criticised rather than the business: free enquiries degrade quality with volume, the buyer base is domestic, and a directory listing is a commodity position by construction. Credited it for what it is built for. Buyer-side risk list (authenticity, price to spec, quality drift, documentation) attributed to sourcing advisers. Verification advice is concrete because GSTIN and IEC are both publicly checkable on the GST and DGFT portals. Deliberately refines the site's own May 2026 AI agents post rather than repeating it: automate the acknowledgement, not the answer, since export procurement rewards competence over speed. Caught a broken internal link before publishing, as the May post's slug lowercases its filename."
+    },
+    {
+      "brief_id": "b-121",
+      "slug": "google-merchant-center-suspension",
+      "title": "Google Merchant Center suspension: what to do first",
+      "primary_keyword": "google merchant center suspension",
+      "city": null,
+      "tags": [
+        "Ecommerce",
+        "Google Ads",
+        "Troubleshooting"
+      ],
+      "slot": "morning",
+      "published_at": "2026-10-06",
+      "opening_pattern": "treats the moment as triage, two different events producing an identical revenue chart, and tells the reader to identify which before touching anything",
+      "word_count": 1196,
+      "market": "US",
+      "_note": "The find worth having is that the October 2025 misrepresentation clarification, enforced from the end of that month, moved the test from whether the pages exist to whether the processes work, which most published checklists still have not caught up with. So the concrete middle is seven tests the reader runs against their own store as a stranger would, including submitting their own returns form and comparing feed price to the real checkout total including handling and mandatory add-ons. Second useful distinction: most Merchant Center violations carry at least a seven day warning but misrepresentation is suspended on detection with no notice per Google's own policy pages, which is why it reads as arbitrary to stores that changed nothing. Third: a denied request starts a seven day cool down with the button disabled, so the piece argues hard against requesting a review before the fixes are live. Review durations given as reported ranges and reinstatement explicitly not promised, using Google's own 'compelling circumstances' wording, since VOICE forbids promising a timeline. Screens named for Merchant Center Next (Home and Diagnostics for account level, Products then Needs attention for item level) rather than the old UI. Did not restate shopify-seo-checklist as the brief required; it appears once as the organic counterpart. Titled in colon form rather than another 'Why is my...' question, since four of the last ten titles already open with Why. Q4 section added beyond the brief: the same three week reinstatement is an irritation in February and fatal in November, so it also says which inputs not to change during the quarter."
     }
   ]
 }
