@@ -38,6 +38,26 @@ AVAILABILITY_PATTERNS = [
     (r"\b(currently|actively) (looking|exploring|seeking|open)\b", "job-seeking signal"),
     (r"\bnew opportunities\b", "job-seeking signal"),
     (r"\b(taking on|onboarding|accepting) (new )?(clients|projects|work)\b", "touting for work"),
+    # The site's own close since 2026-09-29 reads "I'm taking on a small number of
+    # contracts at the moment". It is fine on his site and fatal in his feed, and the
+    # alternation above missed it on both counts: "contracts" was not a listed noun and
+    # the quantifier sat between the verb and the noun. Anything that announces capacity
+    # belongs here, however modestly it is phrased.
+    # First person plus any verb of capacity, with a loose window to the noun, because
+    # the quantifier is where this phrasing hides: "a small number of", "one or two
+    # more", "a couple of". A false positive costs one rewritten sentence. A false
+    # negative costs him the thing he asked this tool to protect, so it errs to catch.
+    (r"\b(i'?m|i am|i'?ve|i have|i)\s+(\w+\s+){0,2}?"
+     r"(taking on|taking|accepting|have room for|have capacity for|can take|could take)"
+     r"\s+(?:on\s+)?(\w+\s+){0,5}?"
+     r"(contracts?|engagements?|retainers?|commissions?|briefs?|clients?)\b",
+     "announces capacity, which is an availability signal"),
+    (r"\b(accepting|taking on)\s+(\w+\s+){0,5}?"
+     r"(contracts?|engagements?|retainers?|commissions?)\b",
+     "announces capacity, which is an availability signal"),
+    (r"\btell you (straight|plainly) whether", "the site's hiring close"),
+    (r"\bsomething i could help (you )?with\b", "soft pitch"),
+    (r"\bscope (a|an|the) (contract|engagement|project)\b", "offer of services"),
     (r"\b(dm|pm) me\b", "lead capture"),
     (r"\bmy (dms|inbox) (are|is) open\b", "lead capture"),
     (r"\b(drop|send) me a (dm|message|line)\b", "lead capture"),

@@ -368,6 +368,15 @@ const AVAILABILITY = [
   [/\b(currently|actively) (looking|exploring|seeking|open)\b/g, "job-seeking signal"],
   [/\bnew opportunities\b/g, "job-seeking signal"],
   [/\b(taking on|onboarding|accepting) (new )?(clients|projects|work)\b/g, "touting for work"],
+  // Mirrors the capacity rules in lint_snippet.py. The site's own close since
+  // 2026-09-29 reads "I'm taking on a small number of contracts at the moment",
+  // and the quantifier is where that phrasing hides, so the window to the noun
+  // is deliberately loose.
+  [/\b(i'm|i am|i've|i have|i)\s+(\w+\s+){0,2}?(taking on|taking|accepting|have room for|have capacity for|can take|could take)\s+(?:on\s+)?(\w+\s+){0,5}?(contracts?|engagements?|retainers?|commissions?|briefs?|clients?)\b/g, "announces capacity, which is an availability signal"],
+  [/\b(accepting|taking on)\s+(\w+\s+){0,5}?(contracts?|engagements?|retainers?|commissions?)\b/g, "announces capacity, which is an availability signal"],
+  [/\btell you (straight|plainly) whether/g, "the site's hiring close"],
+  [/\bsomething i could help (you )?with\b/g, "soft pitch"],
+  [/\bscope (a|an|the) (contract|engagement|project)\b/g, "offer of services"],
   [/\b(dm|pm) me\b/g, "lead capture"],
   [/\bmy (dms|inbox) (are|is) open\b/g, "lead capture"],
   [/\b(drop|send) me a (dm|message|line)\b/g, "lead capture"],
