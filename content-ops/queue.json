@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-026",
-      "slot": "evening",
-      "primary_keyword": "startup marketing on a small budget",
-      "secondary_keywords": [
-        "first marketing hire startup",
-        "founder led marketing",
-        "marketing for bootstrapped startups india"
-      ],
-      "working_title": "Your first marketing hire is probably a mistake. Do this instead",
-      "angle": "Opinion for early founders. Most seed stage companies hire a generalist marketer before they know what works, and the marketer inherits an unsolved positioning problem. Argue for founder led distribution first, then a specialist for the one channel that proved out.",
-      "audience": "Startup founders",
-      "city": "Bengaluru",
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "Startups",
-        "Hiring",
-        "Strategy"
-      ],
-      "market": "India"
-    },
-    {
       "id": "b-035",
       "slot": "morning",
       "primary_keyword": "seo for coaching business india",
