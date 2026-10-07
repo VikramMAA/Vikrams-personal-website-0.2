@@ -1677,6 +1677,24 @@
       "word_count": 1262,
       "market": "US",
       "_note": "Went past the brief's framing because the budget split is a stronger argument than an assertion: 2026 benchmarks put show space at 25 to 35 percent of budget, structure 12 to 20, services 18 to 28 and staff 20 to 30, against marketing and pre-show at 5 to 12 percent, median $2,600. So roughly ten dollars on presence for every one on arranging who to speak to, which means the budget already disagrees with the stated reason for going. Thesis is that the booth is a credibility purchase measured as a lead generation purchase, and the recommendation is the one event organizers least want circulating: for a lot of mid-market B2B, buying a pass and pre-booking thirty meetings beats exhibiting at about a third of the cost. Treated the widely circulated $20.98 per dollar return sceptically rather than quoting it as fact, on the grounds that a reliable twenty one to one would make every B2B budget a conference schedule, and noted that the people circulating it sell booths. Kept the CPL figures ($112 to $186, CEIR near $142, others $150 to $350) which are credible. Four honest exceptions given where exhibiting does pay, none of them lead volume: physical demonstration, shows where the floor is the sales counter, channel recruitment, and categories where absence reads as decline. Deliberately avoided re-running the named-owner argument from customer-win-back-campaign two days earlier, so the follow-up section is framed as a calendar problem solved before departure rather than an ownership problem. Demand creation linked once without restating, as the brief asked. Avg exhibitor spend $24,000 with sector figures attributed to published benchmarks."
+    },
+    {
+      "brief_id": "b-051",
+      "slug": "local-citations-india",
+      "title": "Do local citations still matter for SEO in India?",
+      "primary_keyword": "local citations india",
+      "city": null,
+      "tags": [
+        "Local SEO",
+        "Citations",
+        "India"
+      ],
+      "slot": "morning",
+      "published_at": "2026-10-07",
+      "opening_pattern": "opens on the upsell call that arrives within forty eight hours of a free listing and uses it to separate which half of this work is SEO and which half is somebody else's sales funnel",
+      "word_count": 1256,
+      "market": "India",
+      "_note": "The find that makes this post non-obvious: Justdial routes calls through its own virtual numbers so it can attribute and bill the lead, which means the displayed phone is never the business's own. Perfect NAP phone consistency is therefore not available on the largest Indian directory, and the standard advice was written for markets where directories do not intermediate the call. So the post redirects consistency effort to name and address, which the owner actually controls, and reframes Justdial and IndiaMART as lead channels that happen to carry a citation. Weighting attributed: citation signals around 7% of local pack weight against Google Business Profile at about 32% in BrightLocal's 2026 work, low-authority citations discounted further since roughly 2022, and BrightLocal's 2025 finding that 68% of businesses carry an inconsistent listing with inconsistent ones averaging 2.3 positions lower. Flagged that 2.3 figure as correlation rather than proof, since messy listings track with messy everything. Six priority listings named with domain ratings. Avoided restating seo-for-exporters-india from two days earlier by separating IndiaMART's citation value from its channel value explicitly and linking rather than repeating; none of that post's figures are reused. Avoided the is-bbb-accreditation opening about a profile you did not create, which would have fitted the auto-created-listing fact. India-specific audit detail included: the old address persisting after a move within a city, Pvt Ltd name-string variants, the landmark line in Indian addresses, and missing PIN codes. Upsell packages judged as lead products on cost per enquiry rather than dismissed, with the hundred-citations-for-a-few-thousand-rupees offer declined as buying volume at the discounted end."
     }
   ]
 }
