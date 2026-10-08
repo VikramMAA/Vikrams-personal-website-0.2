@@ -46,35 +46,33 @@ Load them with ToolSearch if they are deferred.
 
 1. Read the ICP doc in full. If anything in it contradicts this skill on
    qualification, the doc wins.
-2. Read `Leads!A1:Z` and `'Intent Signals'!A1:I`. Build:
-   - the **existing companies** list (column A, normalised: lowercase, strip
-     "Pvt Ltd", "Private Limited", "Technologies", punctuation),
-   - the **suppressed** list (rows where Suppression Flag, column S, is `Yes`),
-   - the **negative examples**: rows with HITL Status `Rejected` and their
-     Notes. Read the rejection reasons and apply them as extra filters this run.
-   - the **next free row** in each tab: the last row with a non-empty column A,
-     plus one. Do not use `append_values`; the template has formulas far down
-     the sheet, so append lands in the wrong place.
+2. Read `Leads!A1:AA` and `'Intent Signals'!A1:J`. Build:
+   - the **existing companies** list (Leads column B, normalised: lowercase,
+     strip "Pvt Ltd", "Private Limited", "Technologies", punctuation),
+   - the **suppressed** list (rows where Suppression Flag, column T, is `Yes`),
+   - the **negative examples**: rows with HITL Status (column R) `Rejected`
+     and their Notes. Read the rejection reasons and apply them as extra
+     filters this run.
+   - the **next free row** in each tab: the first row after the last non-empty
+     column B. Don't use `append_values`. Every row down to 1000 has
+     pre-filled formulas, so append lands at the bottom of the sheet.
 3. Rows whose Notes or Signal Detail start with `EXAMPLE ROW` are template
    samples. Ignore them for dedup, don't overwrite them, and don't delete them.
    Remind Vikram they're still there in the report.
 
-### 2. Check the sheet template (once per run)
+### 2. Layout check (every run, and again right before writing)
 
-Rows 3 and below in both tabs were shipped with dropdowns and formulas shifted
-one column to the right of the headers. Check with `get_spreadsheet`
-(`includeGridData: true`, ranges `Leads!L3:M3`,
-fields `sheets.data.rowData.values.dataValidation`):
+Run the layout check in
+[references/sheet-map.md](references/sheet-map.md#layout-check-every-run-before-any-write):
+compare both tabs' header rows exactly with the map. If anything differs,
+**stop, write nothing, and report the difference.** Vikram restructures this
+sheet, so writing by column position into a changed layout puts data in the
+wrong place.
 
-- **Healthy:** L3 carries the `Tier 1 - Core…` dropdown and M3 carries none.
-  Move on.
-- **Shifted:** anything else. Apply the repair batch in
-  [references/sheet-map.md](references/sheet-map.md#template-repair) with
-  `update_spreadsheet`, then re-run the check. The repair clears column X in
-  rows 3+, so re-write the X formula for any existing row (3 or below) that
-  has a Company Name. Tell Vikram in the report that you repaired it. The
-  repair only touches rows 3 to 1000 and doesn't change any filled cell in
-  A to W.
+Never repair, reformat or restructure the sheet yourself. Your only write
+access is values into the "Agent 1 writes" cells. Run the header check again
+immediately before step 6, because research takes a while and the sheet can
+change in the meantime.
 
 ### 3. Source from the signal, not the company
 
@@ -161,14 +159,15 @@ Lead Name dropdowns validate against the Leads tab, so the order matters.
 Exact cell-by-cell formats, tool calls and label mappings are in
 [references/sheet-map.md](references/sheet-map.md). Key points:
 
-- **Leads tab:** fill every Agent 1 column you can establish, and leave a
-  cell empty when you can't. Leave HITL Status, Date Approved, Suppression
-  Flag, Outreach Activity and Replies empty. Column X (Intent Signals) is the
-  template's summary formula, so write the formula, not text.
+- **Leads tab:** fill every Agent 1 column you can establish (B to X), and
+  leave a cell empty when you can't. Leave HITL Status, Date Approved and
+  Suppression Flag empty. Never write Lead ID (A) or the formula columns
+  (Y, Z, AA). After writing, read back column A to get each new row's Lead ID.
 - **Intent Signals tab:** write one row per signal, max two per lead. Each
-  row needs the tier-prefixed dated fact, the mapped tier and category, the
-  signal date, the source with URL, and the score weight. Lead Name and
-  Company Name must match the Leads row exactly. Leave HITL Status empty.
+  row needs the Lead ID, the tier-prefixed dated fact, the mapped tier and
+  category, the signal date, the source with URL, and the score weight.
+  Leave HITL Status empty. Lead Name and Company Name fill themselves from
+  the Lead ID.
 - **Notes (Leads T):** for every signal, the fact plus its URL. Add every
   Unverified gate and the score arithmetic. Facts only.
 
@@ -179,10 +178,13 @@ short run with honest notes is the correct output. Don't pad.
 
 Read back every row you wrote, in both tabs, and check:
 
-- Leads column X reads `Signals: 1` or `Signals: 2` for every new row. If it
+- Leads column Y reads `Signals: 1` or `Signals: 2` for every new row. If it
   reads `Signals: 0` or is empty, the lead has no linked signal. Fix the
-  Intent Signals row (usually a Company Name mismatch). If you can't, clear
-  that Leads row. **A Leads row without a signal must not survive the run.**
+  Intent Signals row (usually a wrong Lead ID). If you can't, clear that
+  Leads row's values in B to X. **A Leads row without a signal must not
+  survive the run.**
+- Intent Signals I and J show the right contact and company, not
+  `not in Leads`.
 - Dates display as `dd-mm-yyyy` (they are real dates, not text).
 - Dropdown cells hold exactly one of the allowed labels.
 - Phone numbers didn't turn into formulas or `#ERROR!`.
@@ -197,6 +199,7 @@ End with a short report in chat:
 - The candidates you dropped and why, in one line each (no signal, signal out
   of window, exclusion hit, gate failed, duplicate). This is how Vikram
   tightens the next batch.
-- Any template repair you made, and any example rows still in the sheet.
+- Any layout mismatch that stopped the run, and any example rows still in
+  the sheet.
 
 Never claim a row was written unless the read-back in step 7 confirmed it.
