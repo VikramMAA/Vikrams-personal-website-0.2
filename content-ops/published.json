@@ -1731,6 +1731,24 @@
       "word_count": 1323,
       "market": "US",
       "_note": "Two things most published guidance has not caught up with, both verified this run. First, the DOJ issued an interim final rule on 20 April 2026 moving its Title II deadlines to 26 April 2027 for large entities and 26 April 2028 for smaller ones and special districts, so the April 2026 date still being repeated is wrong. Second, Title II never covered private businesses anyway; Title III has no web rule, the 2010 advance notice was never finalised, and rulemaking is paused, so there is no deadline and enforcement runs through private suits. That inversion became the opening. Overlay section built on documented facts rather than opinion: UsableNet's tracker recorded 360 filings in September 2026, of which 91 defendants were running a third-party widget and 78 had been sued before, and the FTC's order against accessiBe, final April 2025, required a $1m payment and bars unsupported claims that an automated product can make a site WCAG compliant. Criticism aimed at the practice of selling a script as a compliance position, with the company's useful user-facing features acknowledged and the mechanism explained rather than the business attacked. Nice corroborating detail: the DOJ's own stated reasons for delaying included the limits of current remediation technology, generative AI included. DELIBERATE OMISSION: did not quote any annual 2025 lawsuit baseline, because published figures conflict badly (3,117 vs 4,605 for 2025, with inconsistent 2024 comparators) and the discrepancy looks like federal-only versus federal-plus-state scope. Used the September monthly tracker and labelled the ~6,176 full-year figure as a projection. Legal exposure explicitly handed to counsel, same framing as the dental and law firm posts, with the state-court venue shift given as the reason jurisdiction matters. Also noted automated checkers catch only a fraction of real issues so the reader does not treat a clean scan as done."
+    },
+    {
+      "brief_id": "b-114",
+      "slug": "expansion-revenue-small-market-saas",
+      "title": "How do you grow SaaS in a small market?",
+      "primary_keyword": "expansion revenue small market saas",
+      "city": null,
+      "tags": [
+        "Retention",
+        "Estonia",
+        "SaaS"
+      ],
+      "slot": "evening",
+      "published_at": "2026-10-08",
+      "opening_pattern": "takes the sentence every founder in the market repeats and says almost nobody follows it to its conclusion, then states the uncomfortable conclusion, which is to turn customers away",
+      "word_count": 1216,
+      "market": "Estonia",
+      "_note": "The load-bearing find is Aleph's split of net revenue retention by pricing model, usage-based at 108% against seat-based at 98%, on full year 2025 data. Below 100 means the base shrinks, and seat expansion requires the customer to hire, so a seat-priced Estonian product has its growth rate set by Estonian recruitment. That connects to first-marketing-hire-estonia from 4 Oct on labour supply, which is linked rather than restated, and it is an argument the brief did not ask for. Second original addition: in a forty-customer base, high NRR and dangerous concentration are indistinguishable on the chart, so the post gives the five minute test of recomputing NRR with the largest one and then two customers excluded. Third: the benchmark trap, that the reported tier spread (SMB nearer 97%, mid-market around 108%) means the peer group is contract size rather than country. Honest limit the brief asked for is stated via the GRR versus NRR distinction rather than as an assertion. Medians attributed to Aleph at about 102% and Benchmarkit at 101% down from roughly 105% in 2021. DELIBERATE OMISSION: dropped a planned logo-counting statistic about how many Estonian companies have ten or more employees. The only size breakdown available came from a commercial registry aggregator whose own bands did not reconcile with its stated total, and a second source gave a wildly different figure, so the argument is made structurally instead and the reader counts their own list. Also avoided the reported ACV tier thresholds because they are denominated in dollars and would have broken the one-currency rule in an Estonia post; the tiers are described qualitatively. Opening deliberately avoided the do-this-exercise shape used by seo-in-mumbai on 3 Oct, and the post does not reuse the named-owner or measurement-scepticism moves from customer-win-back-campaign on 4 Oct."
     }
   ]
 }
