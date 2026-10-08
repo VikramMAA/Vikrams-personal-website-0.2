@@ -1713,6 +1713,24 @@
       "word_count": 1224,
       "market": "India",
       "_note": "RETARGET. The brief's angle and working title ('Your first marketing hire is probably a mistake. Do this instead', argue founder led distribution then a specialist for the proven channel) is the same argument as first-marketing-hire-estonia, published three days earlier on 4 Oct, with the market swapped. Publishing it would have been the templated city-variant problem that got b-108, b-109 and b-117 retired. So the post was written to the brief's own primary keyword instead, which is the broader budget question, and the hiring argument appears as one short section that states the conclusion and links the Estonia post rather than rebuilding it. New spine: at seed stage the budget is denominated in founder hours rather than rupees, so the free-channel genre is the most expensive advice available because it bills to an account nobody reads. Two sorted lists given, cheap-in-hours-costs-money against expensive-in-hours-costs-nothing, with the claim that founders have them backwards. Funding data from Tracxn for the first nine months of 2026 expressed as proportions only (seed down 37%, rounds down 38%, first-time funded down 30%) to avoid putting dollar absolutes in an India post, the same approach used for the funding drop in estonian-startup-growth-playbook. Honest limit stated: founder led distribution is right when the founder's credibility is already the asset and is a two year project otherwise, with a thirty second test for telling which. Distinct from how-to-split-a-marketing-budget-india (19 Sep) and digital-marketing-budget-small-business-india (4 Sep), both of which allocate rupees; neither prices founder time."
+    },
+    {
+      "brief_id": "b-122",
+      "slug": "ada-website-compliance-small-business",
+      "title": "Does my small business website need to be ADA compliant?",
+      "primary_keyword": "website accessibility ada compliance small business",
+      "city": null,
+      "tags": [
+        "Accessibility",
+        "Compliance",
+        "Web"
+      ],
+      "slot": "morning",
+      "published_at": "2026-10-08",
+      "opening_pattern": "says the deadline the reader heard about never applied to them and has moved anyway, then points out that what does apply has no deadline at all, which is the worse position",
+      "word_count": 1323,
+      "market": "US",
+      "_note": "Two things most published guidance has not caught up with, both verified this run. First, the DOJ issued an interim final rule on 20 April 2026 moving its Title II deadlines to 26 April 2027 for large entities and 26 April 2028 for smaller ones and special districts, so the April 2026 date still being repeated is wrong. Second, Title II never covered private businesses anyway; Title III has no web rule, the 2010 advance notice was never finalised, and rulemaking is paused, so there is no deadline and enforcement runs through private suits. That inversion became the opening. Overlay section built on documented facts rather than opinion: UsableNet's tracker recorded 360 filings in September 2026, of which 91 defendants were running a third-party widget and 78 had been sued before, and the FTC's order against accessiBe, final April 2025, required a $1m payment and bars unsupported claims that an automated product can make a site WCAG compliant. Criticism aimed at the practice of selling a script as a compliance position, with the company's useful user-facing features acknowledged and the mechanism explained rather than the business attacked. Nice corroborating detail: the DOJ's own stated reasons for delaying included the limits of current remediation technology, generative AI included. DELIBERATE OMISSION: did not quote any annual 2025 lawsuit baseline, because published figures conflict badly (3,117 vs 4,605 for 2025, with inconsistent 2024 comparators) and the discrepancy looks like federal-only versus federal-plus-state scope. Used the September monthly tracker and labelled the ~6,176 full-year figure as a projection. Legal exposure explicitly handed to counsel, same framing as the dental and law firm posts, with the state-court venue shift given as the reason jurisdiction matters. Also noted automated checkers catch only a fraction of real issues so the reader does not treat a clean scan as done."
     }
   ]
 }

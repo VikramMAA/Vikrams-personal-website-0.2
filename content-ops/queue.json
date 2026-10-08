@@ -339,27 +339,6 @@
       ]
     },
     {
-      "id": "b-122",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "website accessibility ada compliance small business",
-      "secondary_keywords": [
-        "ada website lawsuit",
-        "wcag compliance",
-        "accessibility overlay widgets"
-      ],
-      "working_title": "The accessibility problem most small sites have and most overlays do not fix",
-      "angle": "Practical, and genuinely US specific because of the litigation pattern. Cover what WCAG actually asks for in the handful of places small sites usually fail, which are images without alt text, forms without labels, colour contrast and keyboard navigation. Be straight about accessibility overlay widgets, which are sold as a one line fix and have been named in lawsuits themselves rather than preventing them. Frame it as both a legal exposure and a conversion issue, since the same failures break screen readers and older buyers. Not legal advice, counsel decides, same framing as the HIPAA post.",
-      "audience": "US small business owners and marketing managers",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Accessibility",
-        "Compliance",
-        "Web"
-      ]
-    },
-    {
       "id": "b-123",
       "slot": "morning",
       "market": "US",
