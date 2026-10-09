@@ -316,27 +316,6 @@
         "Estonia",
         "B2B"
       ]
-    },
-    {
-      "id": "b-123",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "customer referral program small business",
-      "secondary_keywords": [
-        "how to ask for referrals",
-        "referral incentive ideas",
-        "word of mouth marketing"
-      ],
-      "working_title": "Most referral programs fail at the ask, not at the incentive",
-      "angle": "Practical. Businesses design the reward first and then wonder why nothing happens, when the binding constraint is that nobody ever asks, and asks at the wrong moment. Cover the moment of peak goodwill and how to find it in your own job history, the two sentence ask that works, why a reward for the referrer alone converts worse than one that gives the friend something, the tracking that has to exist or the programme dies quietly, and the FTC disclosure point where incentives and reviews meet. Distinct from the reviews posts, which are about public proof rather than introductions.",
-      "audience": "US local service and small business owners",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Referrals",
-        "Retention",
-        "Lead Generation"
-      ]
     }
   ],
   "retired": [

@@ -1749,6 +1749,24 @@
       "word_count": 1216,
       "market": "Estonia",
       "_note": "The load-bearing find is Aleph's split of net revenue retention by pricing model, usage-based at 108% against seat-based at 98%, on full year 2025 data. Below 100 means the base shrinks, and seat expansion requires the customer to hire, so a seat-priced Estonian product has its growth rate set by Estonian recruitment. That connects to first-marketing-hire-estonia from 4 Oct on labour supply, which is linked rather than restated, and it is an argument the brief did not ask for. Second original addition: in a forty-customer base, high NRR and dangerous concentration are indistinguishable on the chart, so the post gives the five minute test of recomputing NRR with the largest one and then two customers excluded. Third: the benchmark trap, that the reported tier spread (SMB nearer 97%, mid-market around 108%) means the peer group is contract size rather than country. Honest limit the brief asked for is stated via the GRR versus NRR distinction rather than as an assertion. Medians attributed to Aleph at about 102% and Benchmarkit at 101% down from roughly 105% in 2021. DELIBERATE OMISSION: dropped a planned logo-counting statistic about how many Estonian companies have ten or more employees. The only size breakdown available came from a commercial registry aggregator whose own bands did not reconcile with its stated total, and a second source gave a wildly different figure, so the argument is made structurally instead and the reader counts their own list. Also avoided the reported ACV tier thresholds because they are denominated in dollars and would have broken the one-currency rule in an Estonia post; the tiers are described qualitatively. Opening deliberately avoided the do-this-exercise shape used by seo-in-mumbai on 3 Oct, and the post does not reuse the named-owner or measurement-scepticism moves from customer-win-back-campaign on 4 Oct."
+    },
+    {
+      "brief_id": "b-123",
+      "slug": "customer-referral-program-small-business",
+      "title": "Customer referral programs: why nobody is referring you",
+      "primary_keyword": "customer referral program small business",
+      "city": null,
+      "tags": [
+        "Referrals",
+        "Retention",
+        "Lead Generation"
+      ],
+      "slot": "morning",
+      "published_at": "2026-10-09",
+      "opening_pattern": "prices a review at two minutes against a referral at the customer's reputation, and uses that asymmetry to explain the generous reward nobody has claimed",
+      "word_count": 1293,
+      "market": "US",
+      "_note": "Had to differentiate hard from how-to-get-more-google-reviews (31 Aug), which already argues ask at the moment of delivered value and have a person ask rather than a system. The brief's moment-of-peak-goodwill angle was effectively that same advice. Resolved by inverting it openly: a review reports on something that happened, a referral predicts you will do it again for somebody the referrer cares about, and nobody makes that prediction on one data point. So the referral moment is later, after a second job or after a problem handled well, and the post states plainly that it contradicts the earlier piece on purpose and links it. That also produced the concrete middle, which is building the referral list from repeat and well-recovered customers rather than from the whole customer list. Mechanism given for double-sided rewards rather than relying on the numbers: a referrer-only reward makes the customer a salesperson who got paid, which is the thing they fear looking like, while a reward for the friend lets them arrive bearing a gift. HONESTY NOTE: the double-sided effect sizes were all vendor-sourced and mutually contradictory (2.3x shares, 300 to 500% lift, 52% against 29% completion), with no peer-reviewed comparison found, so the post quotes them explicitly as irreconcilable and tells the reader to treat the direction as the finding and their own results as the evidence. Same standard applied to the trade show $20.98 figure and the citations 2.3 positions figure. FTC section kept strictly inside what is sourced: the rule restricts conditioning an incentive on sentiment rather than banning review incentives, incentivised reviews become testimonials and therefore advertising, and material connections must be disclosed. No source addressed referral programs directly, so the post gives the practical boundary (do not bundle a referral ask with a review ask, do not pay more for a better review) and sends the specific program design to counsel instead of asserting a legal conclusion. Also did not use a widely repeated per-violation penalty figure that could not be confirmed against an FTC source."
     }
   ]
 }
