@@ -1803,6 +1803,24 @@
       "word_count": 1247,
       "market": "India",
       "_note": "RETARGET. The brief's headline angle, that category pages rather than product pages hold the traffic, is already published as a section heading in shopify-seo-checklist (19 Sep, US), which also covers the parameter and duplicate URL handling the brief wanted under faceted navigation, and product schema completeness. Writing the brief as given would have been an India-localised rewrite of a three week old post, the same problem that forced the b-026 retarget. Also checked quick-commerce-vs-d2c-india (21 Sep), which already covers which categories are exposed, closing off that alternative. Retargeted to the marketplace cannibalisation problem, which is the actual Indian ecommerce SEO question and is untouched on the site: a D2C brand lists the same SKU on Amazon.in, Flipkart, Myntra or Nykaa and a reseller, and loses its own product name query to its own listings on higher authority domains. Argument is to stop paying to fight that query, make sure the listing that wins it is the official one with current images, and win the three things that are actually winnable. Strongest original point: the most defensible search asset is a SKU the marketplaces do not have, which makes it a merchandising decision rather than an SEO task. Out of stock handling kept from the brief since it is uncovered elsewhere, with the India wrinkle that variant level stockouts are commoner than whole product ones and most themes hide the variant. One qualitative fact used: Amazon is largely search led and Flipkart more browse led, so the same listing playbook should not run on both. DELIBERATE OMISSIONS: no brand-search share figures, since nothing but vendor and consultancy blogs had any and none showed methodology; the 30/35/55 percent own-site share figures and the 4 to 8 week and 3 to 6 month ranking timelines were all left out for the same reason. The opening substitutes a first-hand check the reader can run in two minutes for a statistic I could not source."
+    },
+    {
+      "brief_id": "b-110",
+      "slug": "pricing-for-export-markets",
+      "title": "How should an Estonian company price for export markets?",
+      "primary_keyword": "pricing for export markets small country",
+      "city": null,
+      "tags": [
+        "Pricing",
+        "Estonia",
+        "Strategy"
+      ],
+      "slot": "evening",
+      "published_at": "2026-10-10",
+      "opening_pattern": "puts the reader on a call where a German buyer accepts the price without pausing, and calls that silence the most expensive information they have ever been given",
+      "word_count": 1220,
+      "market": "Estonia",
+      "_note": "Went past the brief's thesis. The brief argued the home market is a bad price discovery sample, which is true but thin. The original claim here is that the low price did not only suppress revenue, it specified the product: how much onboarding was affordable, whether SSO and audit logs and a DPA got built, whether the company can survive a procurement cycle. So raising the number fails because the product does not yet justify it, and the founder misreads that as the export market refusing to pay. Hence the line that a low price is a specification rather than a discount, and hence the segmentation argument, which is that a different number needs a different product or it is arbitrage that customers in a 1.3 million market will discover by meeting each other. On grandfathering the brief asked for honesty, so the position taken is grandfather the product and not the price, with the real cost stated: some early customers will still leave once they learn a German company pays more for a better version, and deciding that under pressure produces a secret discount schedule. DID NOT USE the brief's 40% figure, which could not be sourced. Substituted Eurostat and Destatis price levels for 2025, the latest full year, with Germany about 8.3% and Sweden about 21% above the EU average and Estonia below it, then explicitly warned against using consumer price levels as a B2B multiplier and argued from mechanism that the real B2B gap is wider, since a software price is anchored to displaced labour cost and budget size. Noted internally that the 2026 Eurostat release is not due until 2027. Avoided the currency-of-quote argument already made in selling-saas-to-us-customers-from-europe (9 Sep) and the pricing-model argument from expansion-revenue-small-market-saas (8 Oct), which is only two days earlier: that post is about seat versus usage, this one is about price level by market. Also honoured the brief's instruction not to repeat the positioning argument from estonia-digital-nation-branding."
     }
   ]
 }
