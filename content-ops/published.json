@@ -1785,6 +1785,24 @@
       "word_count": 1183,
       "market": "India",
       "_note": "The timely find, eight days old at publication: WhatsApp service messages, meaning replies inside the 24 hour window, were free until 30 September 2026 and are charged from 1 October, reportedly around Rs 0.115 with a free allowance of 1,000 per number per month. That reframes the whole AI chatbot question for an Indian SME, because a bot that sends four messages where a human sent one now shows up on the invoice. Explicitly flagged in the post that these figures come from BSP and aggregator pages rather than Meta's own rate card, and told the reader to check their own provider's pricing including markup. The brief asked for a shortlist, but the evening slot forbids a second how-to, so the post leads with a durable sorting question (does a human read the output before a customer does) and uses the two lists as evidence of the principle rather than as the deliverable. Second original section: the highest value use for an Indian SME is multilingual WhatsApp enquiry triage, which is hard human work, good machine work and invisible to the customer, and which no vendor leads with because it is boring. That generalises the refinement made in seo-for-exporters-india on 5 Oct, automate the receipt not the reply, which is linked. Third: the NMC compliance trap, where a review auto-reply thanking a patient for describing a surgical outcome is amplification of a testimonial, performed in public with a timestamp, which links local-seo-for-clinics-india and generalises to automation scaling compliance exposure rather than only output. Money-saving practical point: Meta launched Business AI for Indian small businesses in May 2026 inside the WhatsApp Business app with human handoff and no price on it at time of writing, and many owners pay a third-party layer on top of per-message rates without having opened it. Eligibility noted as limited. DELIBERATE OMISSIONS: no third-party tool prices quoted, since the only range available came from a weak aggregator blog; and the Meta and Bain SMB adoption figures were skipped because they date from 2024 and would have read as current."
+    },
+    {
+      "brief_id": "b-055",
+      "slug": "ecommerce-seo-india",
+      "title": "Why doesn't my own site rank for my own products?",
+      "primary_keyword": "ecommerce seo india",
+      "city": null,
+      "tags": [
+        "Ecommerce",
+        "SEO",
+        "D2C"
+      ],
+      "slot": "morning",
+      "published_at": "2026-10-10",
+      "opening_pattern": "has the reader run one incognito search for their own best seller and count how many of the top five results are their own product on somebody else's website",
+      "word_count": 1247,
+      "market": "India",
+      "_note": "RETARGET. The brief's headline angle, that category pages rather than product pages hold the traffic, is already published as a section heading in shopify-seo-checklist (19 Sep, US), which also covers the parameter and duplicate URL handling the brief wanted under faceted navigation, and product schema completeness. Writing the brief as given would have been an India-localised rewrite of a three week old post, the same problem that forced the b-026 retarget. Also checked quick-commerce-vs-d2c-india (21 Sep), which already covers which categories are exposed, closing off that alternative. Retargeted to the marketplace cannibalisation problem, which is the actual Indian ecommerce SEO question and is untouched on the site: a D2C brand lists the same SKU on Amazon.in, Flipkart, Myntra or Nykaa and a reseller, and loses its own product name query to its own listings on higher authority domains. Argument is to stop paying to fight that query, make sure the listing that wins it is the official one with current images, and win the three things that are actually winnable. Strongest original point: the most defensible search asset is a SKU the marketplaces do not have, which makes it a merchandising decision rather than an SEO task. Out of stock handling kept from the brief since it is uncovered elsewhere, with the India wrinkle that variant level stockouts are commoner than whole product ones and most themes hide the variant. One qualitative fact used: Amazon is largely search led and Flipkart more browse led, so the same listing playbook should not run on both. DELIBERATE OMISSIONS: no brand-search share figures, since nothing but vendor and consultancy blogs had any and none showed methodology; the 30/35/55 percent own-site share figures and the 4 to 8 week and 3 to 6 month ranking timelines were all left out for the same reason. The opening substitutes a first-hand check the reader can run in two minutes for a statistic I could not source."
     }
   ]
 }
