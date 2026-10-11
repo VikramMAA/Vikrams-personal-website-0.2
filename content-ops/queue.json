@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-035",
-      "slot": "morning",
-      "primary_keyword": "seo for coaching business india",
-      "secondary_keywords": [
-        "local seo for coaching centres",
-        "seo for edtech india",
-        "lead generation for coaching classes"
-      ],
-      "working_title": "How coaching centres get admissions from search instead of from hoardings",
-      "angle": "Practical and local. Course pages that match how parents search, results and testimonials handled credibly, locality pages, the review engine, and the enquiry follow up window during admission season.",
-      "audience": "SME and local business owners",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Education",
-        "Local SEO",
-        "Lead Generation"
-      ],
-      "market": "India"
-    },
-    {
       "id": "b-047",
       "slot": "morning",
       "primary_keyword": "google ads for small business india",

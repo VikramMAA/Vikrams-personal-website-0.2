@@ -1821,6 +1821,24 @@
       "word_count": 1220,
       "market": "Estonia",
       "_note": "Went past the brief's thesis. The brief argued the home market is a bad price discovery sample, which is true but thin. The original claim here is that the low price did not only suppress revenue, it specified the product: how much onboarding was affordable, whether SSO and audit logs and a DPA got built, whether the company can survive a procurement cycle. So raising the number fails because the product does not yet justify it, and the founder misreads that as the export market refusing to pay. Hence the line that a low price is a specification rather than a discount, and hence the segmentation argument, which is that a different number needs a different product or it is arbitrage that customers in a 1.3 million market will discover by meeting each other. On grandfathering the brief asked for honesty, so the position taken is grandfather the product and not the price, with the real cost stated: some early customers will still leave once they learn a German company pays more for a better version, and deciding that under pressure produces a secret discount schedule. DID NOT USE the brief's 40% figure, which could not be sourced. Substituted Eurostat and Destatis price levels for 2025, the latest full year, with Germany about 8.3% and Sweden about 21% above the EU average and Estonia below it, then explicitly warned against using consumer price levels as a B2B multiplier and argued from mechanism that the real B2B gap is wider, since a software price is anchored to displaced labour cost and budget size. Noted internally that the 2026 Eurostat release is not due until 2027. Avoided the currency-of-quote argument already made in selling-saas-to-us-customers-from-europe (9 Sep) and the pricing-model argument from expansion-revenue-small-market-saas (8 Oct), which is only two days earlier: that post is about seat versus usage, this one is about price level by market. Also honoured the brief's instruction not to repeat the positioning argument from estonia-digital-nation-branding."
+    },
+    {
+      "brief_id": "b-035",
+      "slug": "seo-for-coaching-centres-india",
+      "title": "How do coaching centres in India get admissions online?",
+      "primary_keyword": "seo for coaching business india",
+      "city": null,
+      "tags": [
+        "Education",
+        "Local SEO",
+        "Lead Generation"
+      ],
+      "slot": "morning",
+      "published_at": "2026-10-11",
+      "opening_pattern": "points at the 500+ selections hero every coaching site runs and says the fix is a redesign rather than a rewording, because the disclaimer must match the claim's font size",
+      "word_count": 1302,
+      "market": "India",
+      "_note": "Two of the brief's five elements were at risk of duplication, so both were reshaped. Locality pages would have overlapped local-seo-for-real-estate-agents-india (25 Sep) and seo-in-mumbai (3 Oct), so locality queries get two sentences acknowledging the map pack decides them and the post moves on. The enquiry follow up window would have restated b2b-lead-follow-up-speed (14 Sep, India), so it was reframed from a speed point into a calendar point: content published during the admission window cannot rank during it, so decision pages must be live months earlier. That reframe is the most portable idea in the piece. The spine is the CCPA Guidelines for Prevention of Misleading Advertisement in the Coaching Sector, issued 13 November 2024, applying to centres supporting more than fifty students. Specific requirements used: no false claims on numbers selected, ranks or success rates, no 100% selection or guaranteed result, mandatory disclosure of rank and enrolment duration where a candidate's photograph appears, prior written consent for name photo testimonial or video, testimonials representative rather than selective, disclaimers prominent and in the same font as the claim, and endorser liability under the Consumer Protection Act 2019. Enforcement figure of about Rs 77.6 lakh across 24 centres attributed to Taxmann's analysis; a second unconfirmed penalty figure was left out. Stated plainly in the post that I have read commentary rather than the notified text and sent it to counsel, same framing as local-seo-for-clinics-india, dental-practice-marketing and law-firm-marketing. Best original turn: the enrolment duration disclosure inverts whose achievement a rank represents, so long-tenure students become the strongest permitted proof and the rule improves the marketing. Second: the compliance constraint and the search opportunity point the same way, toward decision queries that carry no results claim, and the fee transparency page is recommended first because a fee is a fact and survives the compliance question entirely."
     }
   ]
 }
