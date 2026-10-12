@@ -1875,6 +1875,24 @@
       "word_count": 1297,
       "market": "Estonia",
       "_note": "Verified against Google's own localised versions documentation by fetching it, not from SEO blogs, because a technical post has to be exact. Primary-source facts used: reciprocity required with Google's wording that tags will be ignored if two pages do not both point to each other; self-reference required and the set identical on every version; x-default recommended rather than required and carrying no language code; language is ISO 639-1 with optional ISO 3166-1 Alpha 2 region, case insensitive; a region code cannot stand alone since be is Belarusian not Belgium; EU, UN and UK are reserved and have no effect so en-UK does nothing; three declaration methods are equivalent with no benefit to combining them. The market-specific catch that opens the piece: ee is Ewe, spoken in Ghana and Togo, while Estonian is et and EE is only the country code, which is a plausible and invisible error for exactly this audience. HONESTY POINT worth keeping: the brief asserted that an auto-redirect stops crawlers seeing either version and that a switcher must be a real link. Google's documentation says neither. It only advises considering a fallback for auto-redirecting home pages and does not address switchers at all. So both sections state plainly that this is reasoning from how crawling works rather than cited policy, and then give the mechanism: Googlebot crawls predominantly from US addresses without a language preference, and a select element with a JS handler offers no href to follow. Same standard as the E-E-A-T correction in yesterday evening's post. This piece is the explicit follow-up that international-seo-for-estonian-companies (27 Sep) deferred, where I wrote that the language and region tagging was a separate job; that post is linked and the overlapping translate-everything advice is kept to two sentences rather than repeated. Verified after building that the fenced code block rendered as a highlighted pre element rather than breaking."
+    },
+    {
+      "brief_id": "b-058",
+      "slug": "positioning-statement-examples",
+      "title": "Positioning statement examples: what a real one costs you",
+      "primary_keyword": "positioning statement examples",
+      "city": null,
+      "tags": [
+        "Positioning",
+        "Strategy",
+        "Branding"
+      ],
+      "slot": "evening",
+      "published_at": "2026-10-12",
+      "opening_pattern": "asks what the reader's positioning statement cost them in the last ninety days and says that if the answer is nothing it is a tagline rather than a position",
+      "word_count": 1346,
+      "market": "India",
+      "_note": "The brief's headline angle, that you have no positioning if you cannot say who you are not for, was already published four days earlier in expansion-revenue-small-market-saas (8 Oct), which told readers to write a refusal list and said the policy only gets tested in a quarter when you need the revenue. So this post escalates rather than repeats: it links that piece, says it was too easy on itself, and replaces the declarative test with an evidential one, four receipts from the last ninety days. Then the genuinely new India argument, which is that the pressure against positioning here is a cash problem rather than a confidence problem. Recordent's Indian SME Receivables Report 2026, on roughly 1.1 lakh MSMEs, puts the average payment cycle at 73 days against a 45 day benchmark with 82.6% of invoices written at zero to 30 days, so the gap is collection rather than terms, and about Rs 3.83 crore per SME sits beyond 360 days. Flagged in the post as a commercial platform's own dataset rather than audited. Section 43B(h) and the MSMED interest provision noted, with the honest point that small firms will not invoke them against a client they want to keep. That sets up the resolution, which is the useful idea here: split what you will do from what you will advertise. Take the adjacent work and bank the cash, but keep it off the services page, the deck and the blog, because what destroys a position is being found for the wrong reason and being found happens through what you publish. Three before and after homepage lines given as composites of the observed pattern rather than invented client case studies, per the VOICE rule, each with the cost of the after stated. Closing argument is current rather than evergreen: a vague claim is not machine readable, so vagueness used to cost conversion and now costs consideration, linking how-to-rank-in-chatgpt. Observed in drafting that every improved line is longer than the one it replaces, which contradicts the usual tighten-your-message advice and is worth keeping."
     }
   ]
 }
