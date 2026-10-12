@@ -150,27 +150,6 @@
       "market": "India"
     },
     {
-      "id": "b-077",
-      "slot": "morning",
-      "market": "Estonia",
-      "primary_keyword": "hreflang estonian english website",
-      "secondary_keywords": [
-        "bilingual website seo",
-        "estonian or english website",
-        "language targeting seo"
-      ],
-      "working_title": "Running your site in Estonian and English without splitting your own rankings",
-      "angle": "Practical technical SEO. Bilingual sites usually go wrong in three ways: no hreflang, hreflang without return tags, and an automatic language redirect that stops crawlers seeing either version. Cover the correct annotation including x-default, why a language switcher must be a real link, and how to decide which content genuinely needs both languages rather than translating everything by reflex. Give the exact tag block to copy.",
-      "audience": "Estonian marketers and developers",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Technical SEO",
-        "Estonia",
-        "SEO"
-      ]
-    },
-    {
       "id": "b-112",
       "slot": "morning",
       "market": "Estonia",
