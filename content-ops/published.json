@@ -1911,6 +1911,24 @@
       "word_count": 1260,
       "market": "India",
       "_note": "The brief carried its own overlap warning and it was justified. Five adjacent posts already exist and between them cover the decision to spend (is-google-ads-worth-it-for-small-business, US), the budget floor (google-ads-minimum-budget US and digital-marketing-budget-small-business-india), the rupee CPC survey and the platform choice (google-ads-vs-meta-ads), and the diagnostic settings pass including the search terms report, city targeting and PMax brand cannibalisation (google-ads-not-converting). What none of them covers is the build itself, so this post assumes the decision and the budget are already made and constructs the account. The governing argument makes the build decisions non-arbitrary rather than a list of preferences: at Rs 30,000 of media and the published Rs 24 average Search click, that is about 1,250 clicks or 42 a day, and at 3% roughly 37 conversions a month, which barely clears the 30-in-30 figure for a single campaign and becomes noise if split across six. So the scarce resource is conversion signal rather than money, and one campaign with two ad groups, exact and phrase match only, and manual bidding all follow from it. Honest on the threshold: Google's own Smart Bidding material sets no hard minimum for Target CPA, and 30-in-30 is the practitioner benchmark and Google's guidance for when to judge the strategy rather than a gate. Also noted Enhanced CPC was retired in March 2025 so a reader does not reach for an option that no longer exists. Genuinely new and India-specific: the pre-filled wa.me text parameter, so the enquiry arrives with its own source written into the first message, which closes the attribution gap that opens the moment a conversation moves into WhatsApp. Negative keyword list given as a pre-launch build step rather than a weekly repair, with the Indian generics (free, sasta, course, institute, jobs, salary) and category examples. GST at 18% with input credit reduced to one line and a link, since digital-marketing-budget-small-business-india already explains it; the rupee CPC figures are used as arithmetic input rather than re-surveyed, since google-ads-vs-meta-ads already publishes them."
+    },
+    {
+      "brief_id": "b-060",
+      "slug": "founder-morning-routine",
+      "title": "Does a founder's morning routine actually matter?",
+      "primary_keyword": "how exercise helps a founder",
+      "city": "Bengaluru",
+      "tags": [
+        "Freelancer",
+        "Routine",
+        "Personal"
+      ],
+      "slot": "evening",
+      "published_at": "2026-10-13",
+      "opening_pattern": "admits to lying in bed listening to a 4:50 alarm go off for three weeks while holding three paying clients, then inverts the usual causation",
+      "word_count": 1246,
+      "market": "India",
+      "_note": "First genuinely personal post in this run, and every biographical detail is taken from the site's own 2022 journey posts rather than invented, per the VOICE rule against fabricated specifics. Sources read before writing: First-Day-As-A-Freelancer, SecondWeekAsAFreelancer, First-month-as-a-freelancer, Second-month-as-a-freelancer. Facts used verbatim from those: the 4:50 routine in full (cardio, planning, reflection, meditation, chores, 7:30 cycling five kilometres minimum, work to 3pm), the four year job before freelancing, the end of March deadline, the first client being a couple in traditional food and nutrition met at an event, the two referrals that followed, three clients in week two at about 90% of the month's target, the collapse into Netflix YouTube and COD Mobile, missing the Rs 15,000 target by about Rs 2,000 while holding three clients, Karthik's three targets, restarting the routine by keeping it simple and easy, learning to cook, and the February meeting won by stopping the presentation and letting the client talk when two shared mentors came up. The spine is the inversion that the published record actually supports: the routine did not cause the success, the success caused the routine to collapse, and it was relief rather than burnout. Second claim, which is the useful one: the routine was producing follow-ups rather than energy, which is why the cost appeared in an empty pipeline rather than in mood. Third, the fix was a smaller routine rather than a stricter one. Honoured the brief's instruction not to force a marketing lesson at the end; the close is a human question about whether anybody heard from you this week. Also addressed the 2023 exercise post the brief asked me to tie back to by saying plainly that it contained no actual experience and was the generic benefits list, which is true of that post and is the reason this one exists. Used Cheers! for the first time in this run, per the VOICE guidance to reserve it for the more personal pieces."
     }
   ]
 }
