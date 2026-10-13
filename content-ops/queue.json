@@ -2,28 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-047",
-      "slot": "morning",
-      "primary_keyword": "google ads for small business india",
-      "secondary_keywords": [
-        "google ads cost per click india",
-        "google ads budget india",
-        "how to structure a google ads account"
-      ],
-      "working_title": "A Google Ads setup for Rs 30,000 a month that does not waste half of it",
-      "angle": "Practical build. One campaign not six, exact and phrase match to start, a tight negative list from day one, conversion tracking before launch, call and WhatsApp tracking, and the weekly fifteen minute routine. Include the GST on ad spend note.",
-      "audience": "SME owners",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Google Ads",
-        "Small Business",
-        "PPC"
-      ],
-      "market": "India",
-      "_overlap_warning": "close to published is-google-ads-worth-it-for-small-business, which is US market. An India version is viable only if it leads on rupee CPCs and Indian categories and does not restate google-ads-vs-meta-ads or digital-marketing-budget-small-business-india."
-    },
-    {
       "id": "b-049",
       "slot": "morning",
       "primary_keyword": "local seo for gyms",
