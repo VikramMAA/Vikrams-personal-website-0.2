@@ -101,6 +101,17 @@ the start of the clean baseline and write it down.
 2. Reports → Library → the "Search Console" collection. Publish it if it is
    unpublished.
 
+## Microsoft Clarity
+
+Heatmaps and session recordings, project ID `yxjwkw7jkv`. The tag lives in
+`src/layouts/BaseLayout.astro`, right after the GA4 tag, so it loads on every
+page. Like the GA4 events it is production-only (`import.meta.env.PROD`), so
+`astro dev` sessions are never recorded.
+
+Optional, in the Clarity UI: Settings → Setup → Google Analytics integration
+links Clarity recordings to the GA4 property, so you can jump from a GA4
+segment to the matching recordings.
+
 ## Verification checklist
 
 Nothing here can be checked from the repo — all of it needs the deployed site.
