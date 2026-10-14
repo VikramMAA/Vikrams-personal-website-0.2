@@ -105,6 +105,179 @@
         "Estonia",
         "B2B"
       ]
+    },
+    {
+      "id": "b-127",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "should i put pricing on my website",
+      "secondary_keywords": [
+        "publishing prices b2b website",
+        "pricing page transparency",
+        "why agencies hide prices"
+      ],
+      "working_title": "The real reason you have not put prices on the site",
+      "angle": "Opinion with a position. The stated reason is always that the work varies, or that competitors would see it. Argue that the actual reason is it would force a decision the business has avoided, namely what it refuses to do and at what floor, and that a price page is a positioning artefact rather than a marketing asset. Cover the three workable formats (a floor, a range tied to a named scope, and a worked example), be fair about the genuine cases for not publishing, and name the cost of silence, which is that you spend sales calls disqualifying people a page could have disqualified for free.",
+      "audience": "US agency owners, consultants and B2B services founders",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Pricing",
+        "B2B",
+        "Positioning"
+      ],
+      "_overlap_warning": "how-much-does-a-digital-marketing-agency-cost is written for the buyer. This is the seller's decision and must not restate it. Do not reuse the refusal-list argument from positioning-statement-examples or expansion-revenue-small-market-saas; reference and move past it."
+    },
+    {
+      "id": "b-128",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "should i respond to rfps",
+      "secondary_keywords": [
+        "rfp win rate b2b",
+        "how to qualify an rfp",
+        "rfp already wired"
+      ],
+      "working_title": "Most RFPs you receive have already been won",
+      "angle": "Opinion. A large share of RFPs exist to produce three quotes for a decision already made, and the tell is in the document rather than in the relationship. Give the signals that an RFP was written with an incumbent in the room: specifications that match one vendor's feature names, a timeline too short to research properly, no named stakeholder you can speak to, and evaluation criteria with weightings that are absent or suspiciously precise. Then the position, which is that a disciplined no is cheaper than a hopeful yes, and the one circumstance worth bidding anyway, which is to be the known second name for the renewal in three years. Be fair about public sector, where the process is the rule rather than a signal.",
+      "audience": "US B2B and professional services firms",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "B2B",
+        "Sales",
+        "Strategy"
+      ]
+    },
+    {
+      "id": "b-129",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "do we need a rebrand",
+      "secondary_keywords": [
+        "rebrand vs reposition",
+        "cost of rebranding a small business",
+        "when to change your business name"
+      ],
+      "working_title": "A rebrand is what companies do instead of deciding",
+      "angle": "Opinion, and argue against the client's instinct. The rebrand request almost always arrives when sales are soft and nobody wants to say that the offer, the price or the target is wrong, because a logo is a safe thing to change and a market is not. Separate the four things people call a rebrand: a visual refresh, a name change, a repositioning, and a renaming forced by a legal or merger event. Only two of those are ever worth doing early. Be concrete about the SEO and operational cost of an actual name change, which is the part nobody prices, and link the redesign checklist rather than restating it. End on the test: if you cannot say what would be true in a year that is not true now, you are redecorating.",
+      "audience": "US founders and marketing leads",
+      "city": null,
+      "expertise_link": "/expertise/content-marketing/",
+      "tags": [
+        "Branding",
+        "Strategy",
+        "Positioning"
+      ]
+    },
+    {
+      "id": "b-130",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "google business profile suspended",
+      "secondary_keywords": [
+        "gbp reinstatement",
+        "google business profile verification failed",
+        "service area business suspension"
+      ],
+      "working_title": "Your Google Business Profile is suspended. What to do in the first hour",
+      "angle": "Practical and written for the emergency. Check the current policy and reinstatement flow before writing. Cover the difference between a soft suspension, where the listing stays live but unverified, and a hard suspension, where it disappears from Maps entirely, because the response differs. The usual triggers for a US small business: an edit to the business name adding keywords, a service area business showing a street address, a virtual office or coworking address, a category change, or too many edits at once. Then the reinstatement request and what evidence actually helps, which is proof of premises and licensing rather than an explanation. Emphasise not editing anything else while a request is open.",
+      "audience": "US local business owners and marketing managers",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Local SEO",
+        "Google Business Profile",
+        "Troubleshooting"
+      ],
+      "_overlap_warning": "Distinct from google-merchant-center-suspension, which is Shopping feeds. Do not restate that post's structure or its misrepresentation material."
+    },
+    {
+      "id": "b-131",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "how to get a client to agree to a case study",
+      "secondary_keywords": [
+        "case study approval process",
+        "client wont approve case study",
+        "anonymous case study"
+      ],
+      "working_title": "Nobody says no to a case study. They just never approve the draft",
+      "angle": "Practical, and the real problem is the approval path rather than the request. Cover asking at the moment the result lands rather than at renewal, writing it first so the client edits rather than drafts, the three approval routes (the client contact, their marketing team, their legal team) and which one kills it, what to do when numbers cannot be published, and the anonymised version that still works because the mechanism is the interesting part. Include the one line in the engagement agreement that makes all of this easier, agreed before anybody has anything to lose.",
+      "audience": "US agencies, consultants and B2B marketers",
+      "city": null,
+      "expertise_link": "/expertise/content-marketing/",
+      "tags": [
+        "Content Marketing",
+        "B2B",
+        "Social Proof"
+      ]
+    },
+    {
+      "id": "b-132",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "customer onboarding marketing",
+      "secondary_keywords": [
+        "first 30 days customer experience",
+        "onboarding churn",
+        "who owns onboarding"
+      ],
+      "working_title": "Onboarding is the last marketing moment, and marketing has left the room",
+      "angle": "Analysis with a position. The handover from sales to delivery is where the promise made in the funnel either gets honoured or quietly abandoned, and in most companies nobody owns the gap because marketing's remit ends at the signature. Argue that the first thirty days determine the review, the referral and the renewal, which are three things marketing is held accountable for, so the boundary is drawn in the wrong place. Cover the specific failure, which is that the thing the customer bought is not the thing the delivery team was told to build. Be honest that this is a political argument inside a company rather than a tactical one, and that the fix is a written handover rather than a culture conversation.",
+      "audience": "US marketing leads and agency owners",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Retention",
+        "Operations",
+        "Strategy"
+      ],
+      "_overlap_warning": "first-90-days-with-a-marketing-consultant is about the consultant engagement, not the client's own customers. Do not reuse the named-owner argument from customer-win-back-campaign."
+    },
+    {
+      "id": "b-133",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "annual marketing plan small business",
+      "secondary_keywords": [
+        "marketing plan template 2027",
+        "how to plan marketing for the year",
+        "january marketing planning"
+      ],
+      "working_title": "The annual marketing plan that survives contact with February",
+      "angle": "Practical and seasonal, best published December or January. Most annual plans are a channel wish list with a budget divided twelve ways, and they are abandoned by week six. Build the version that holds: three outcomes rather than twelve activities, a quarterly review date written down before the year starts, a named owner per outcome, and an explicit list of what the plan refuses to fund. Include the part everybody skips, which is writing down what you believed when you made the plan, so that when it stops working you can tell whether the belief was wrong or the execution was.",
+      "audience": "US small business owners and in-house marketers",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Planning",
+        "Strategy",
+        "Small Business"
+      ],
+      "_overlap_warning": "Do not restate q4-marketing-plan-retail, which is a single quarter in one sector, and do not rebuild the budget floor calculation from google-ads-minimum-budget."
+    },
+    {
+      "id": "b-134",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "what to put in a business newsletter",
+      "secondary_keywords": [
+        "email newsletter ideas for service business",
+        "how often to send a newsletter",
+        "newsletter vs promotional email"
+      ],
+      "working_title": "The newsletter nobody unsubscribes from, for a business with no products to promote",
+      "angle": "Practical, aimed at service businesses rather than retailers, which is the gap in most advice. If you have nothing to put on sale, the newsletter has to earn its place a different way: what changed in the reader's world this month, one thing you learned doing the work, and a single specific thing they could do. Cover cadence honestly, which is that monthly and kept is better than weekly and abandoned, the subject line test, and the segment question. Be clear about the one thing that gets a service business newsletter deleted, which is writing about the business rather than about the reader's problem.",
+      "audience": "US service businesses and professional practices",
+      "city": null,
+      "expertise_link": "/expertise/content-marketing/",
+      "tags": [
+        "Email Marketing",
+        "Content Marketing",
+        "Small Business"
+      ],
+      "_overlap_warning": "klaviyo-email-flows-that-make-money is ecommerce automation. This is a human-written broadcast for a business with no catalogue. Do not reuse its deliverability section beyond a link."
     }
   ],
   "retired": [
