@@ -1965,6 +1965,24 @@
       "word_count": 1334,
       "market": "US",
       "_note": "Written from a brief I hand-wrote earlier in this same run, after the evening queue emptied and refill_queue.py could only offer county templates. Separates the four things called a rebrand (visual refresh, repositioning, name change, forced renaming) and argues only the repositioning reliably moves revenue while being the one nobody briefs. Best original contribution is the cost nobody puts in the deck: a referral only works when the referrer can say your name and stop talking, so a name change lengthens that sentence into a doubt and takes word of mouth offline for the transition. That reframes the referral post of 9 Oct from the other end and is linked rather than repeated. STATISTICS JUDGEMENT: the circulating rebrand failure rates (40%, 38%, four in ten) could not be traced to any primary study, appearing only on agency pages and aggregators with no methodology, so the post declines to use them and says why, noting that the figures about whether rebrands work are circulated mainly by the people who sell rebrands. That observation does more work in this piece than the numbers would have. Qualitative findings used as practitioner consensus rather than data: that the failure is strategy rather than design, that skipping customer testing and prioritising internal goals over customer perception is the common cause, and the recognition-loss mechanism where the referrer pauses and the recommendation dies in the pause. Deferred the redirect mechanics to website-redesign-seo-checklist and added only the three costs specific to a name change that it does not cover: losing the branded queries you never had to work for, the GBP name field being a review trigger, and the three weeks of directory, invoice and signature work. Four situations given where a rebrand is genuinely right, all sharing the test that the name itself is the obstacle. Closes on the twelve month question rather than a checklist, per the evening slot."
+    },
+    {
+      "brief_id": "b-130",
+      "slug": "google-business-profile-suspended",
+      "title": "My Google Business Profile is suspended. What do I do?",
+      "primary_keyword": "google business profile suspended",
+      "city": null,
+      "tags": [
+        "Local SEO",
+        "Google Business Profile",
+        "Troubleshooting"
+      ],
+      "slot": "morning",
+      "published_at": "2026-10-15",
+      "opening_pattern": "opens by telling the reader not to file the appeal yet, because Google's own documentation says each appeal can only be submitted once",
+      "word_count": 1318,
+      "market": "US",
+      "_note": "My own brief from yesterday's refill, and it told me to check current policy first, which mattered. The agency sources contradicted each other on nearly every specific (two-strike versus four-step appeals, 5 days versus 7 to 21 days, a 60 to 75% first-appeal success rate), so I fetched Google's own removed-profiles documentation instead. That resolved it and reshaped the post. The governing fact is that each appeal can only be submitted once, which inverts the panic instinct and makes the first hour about documents rather than speed. Three other authoritative points the agency write-ups bury or miss: Google explicitly says not to create a new profile for the same business, which is the most common destructive panic move; an account-level restriction must be lifted on the accounts page before appealing the profile, so appealing in the wrong order wastes the single submission; and the requested evidence is registration, licence, tax certificates or utility bills with name and address matching the profile and the registration, which makes the appeal a set of documents that agree rather than a letter. HONESTY POINTS: Google's page uses suspended and disabled without distinguishing them, and does not define the soft versus hard split, so the post presents that vocabulary as practitioners' rather than Google's and tells the reader to check on a logged-out phone instead of trusting the dashboard. Google publishes no timeframe, so the circulating 5-day and 7-to-21-day figures and the success rate are named and then set aside as somebody's sample rather than Google's guidance. Also noted the 10-or-more-locations bulk process. Honoured the brief's own overlap warning by keeping clear of google-merchant-center-suspension: different platform, different structure, and no reuse of its misrepresentation material, with the only shared idea being that a premature request costs you something, which is a different mechanism in each case."
     }
   ]
 }

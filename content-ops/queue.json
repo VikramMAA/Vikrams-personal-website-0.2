@@ -150,28 +150,6 @@
       ]
     },
     {
-      "id": "b-130",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "google business profile suspended",
-      "secondary_keywords": [
-        "gbp reinstatement",
-        "google business profile verification failed",
-        "service area business suspension"
-      ],
-      "working_title": "Your Google Business Profile is suspended. What to do in the first hour",
-      "angle": "Practical and written for the emergency. Check the current policy and reinstatement flow before writing. Cover the difference between a soft suspension, where the listing stays live but unverified, and a hard suspension, where it disappears from Maps entirely, because the response differs. The usual triggers for a US small business: an edit to the business name adding keywords, a service area business showing a street address, a virtual office or coworking address, a category change, or too many edits at once. Then the reinstatement request and what evidence actually helps, which is proof of premises and licensing rather than an explanation. Emphasise not editing anything else while a request is open.",
-      "audience": "US local business owners and marketing managers",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Local SEO",
-        "Google Business Profile",
-        "Troubleshooting"
-      ],
-      "_overlap_warning": "Distinct from google-merchant-center-suspension, which is Shopping feeds. Do not restate that post's structure or its misrepresentation material."
-    },
-    {
       "id": "b-131",
       "slot": "morning",
       "market": "US",
