@@ -128,28 +128,6 @@
       ]
     },
     {
-      "id": "b-132",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "customer onboarding marketing",
-      "secondary_keywords": [
-        "first 30 days customer experience",
-        "onboarding churn",
-        "who owns onboarding"
-      ],
-      "working_title": "Onboarding is the last marketing moment, and marketing has left the room",
-      "angle": "Analysis with a position. The handover from sales to delivery is where the promise made in the funnel either gets honoured or quietly abandoned, and in most companies nobody owns the gap because marketing's remit ends at the signature. Argue that the first thirty days determine the review, the referral and the renewal, which are three things marketing is held accountable for, so the boundary is drawn in the wrong place. Cover the specific failure, which is that the thing the customer bought is not the thing the delivery team was told to build. Be honest that this is a political argument inside a company rather than a tactical one, and that the fix is a written handover rather than a culture conversation.",
-      "audience": "US marketing leads and agency owners",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "Retention",
-        "Operations",
-        "Strategy"
-      ],
-      "_overlap_warning": "first-90-days-with-a-marketing-consultant is about the consultant engagement, not the client's own customers. Do not reuse the named-owner argument from customer-win-back-campaign."
-    },
-    {
       "id": "b-133",
       "slot": "morning",
       "market": "US",
