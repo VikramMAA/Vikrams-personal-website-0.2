@@ -259,4 +259,14 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # `lint_snippet.py drafts/*.txt | head` closed the pipe mid-print and raised
+    # BrokenPipeError over the results, which reads like the linter failed when it
+    # had already passed. Die quietly instead, the way a shell tool should.
+    try:
+        main()
+    except BrokenPipeError:
+        try:
+            sys.stdout.close()
+        except BrokenPipeError:
+            pass
+        os._exit(0)
