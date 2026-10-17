@@ -2055,6 +2055,24 @@
       "word_count": 1259,
       "market": "India",
       "_note": "The brief's phrase 'search still indexes it' was the load-bearing claim, so I fetched Google's own video guidance rather than trusting vendor blogs. That changed how the claim could be phrased and improved the post. What is documented: a video is eligible for video features only if its watch page is indexed, with a unique title and description, a valid thumbnail at a stable URL, and a page whose main purpose is watching the video. A Short meets all four structurally and a Reel has no such watch page. What is NOT documented, and the post says so plainly: Google's video page does not single out short vertical video or say it is treated differently, and it states explicitly that an indexed watch page does not mean the video will be indexed. So the argument is framed as a precondition you can satisfy rather than a promise, which is both honest and still decisive against Reels for discoverability. Best India-specific contribution, and it settles the format question on its own: recommendations travel by WhatsApp forward, a YouTube link plays for anyone who taps it with no app or sign-in, and a Reel link asks a stranger to install something, so the forward dies. Two verified traps included: a horizontal video publishes as a regular video rather than a Short whatever its length, and there is no fifteen second minimum, that belief coming from the app's default recording timer. Three minute cap noted with the October 2024 change. DID NOT USE a single third-party blog's claim about a 24 September 2026 Content ID change for one-to-three minute Shorts, since it was unverified against YouTube. Honest filter on which businesses should bother, including that a category with no how-does-this-work question stays quiet on video and shooting forty Shorts will not create demand. Clinic readers sent to local-seo-for-clinics-india before shooting, since the standard advice here breaks NMC rules. Repurposing section defers the feed-travel argument to instagram-growth-without-ads (26 Sep) rather than restating it, and the distinction drawn is that what works in a feed is not what works in search."
+    },
+    {
+      "brief_id": "b-128",
+      "slug": "should-i-respond-to-rfps",
+      "title": "Should I respond to RFPs, or is it already decided?",
+      "primary_keyword": "should i respond to rfps",
+      "city": null,
+      "tags": [
+        "B2B",
+        "Sales",
+        "Strategy"
+      ],
+      "slot": "evening",
+      "published_at": "2026-10-17",
+      "opening_pattern": "runs the arithmetic on 166 RFPs a year at 33 hours each, then lands the finding that win rates fell six points in the same year most proposal teams adopted generative AI",
+      "word_count": 1260,
+      "market": "US",
+      "_note": "The research beat my own brief. Loopio's 2026 report, 1,533 respondents, puts the 2025 average win rate at 39% against 45% the year before, with the average firm submitting 166 RFPs a year at 33 hours each, while 79% of proposal teams adopted generative AI in the same period. That is roughly 5,500 hours a year, three people full time, for a ratio that got worse. So the spine became an explanation rather than an exhortation: the tooling worked, the per-document cost fell, everyone bid more, and the productivity gain was competed away inside twelve months. That matters because it lets the selectivity conclusion follow from evidence instead of from attitude, which was necessary here: trade shows on 6 Oct, pricing on 15 Oct and positioning on 12 Oct all argue some version of disqualify earlier, and a fourth refusal sermon in two weeks would have been a tic. The reframe that replaces go/no-go: there are three things you can be bidding for, winning this deal, being the known second name at the next cycle, or buying intelligence on how the buyer decides, and the failure mode is spending purpose-one effort on a purpose-two opportunity. Purpose two explicitly gets a different and much shorter document. Forensics kept as the brief asked, four tells in the paperwork. Figures handled carefully: the 45% number is the older widely-quoted one and 39% is the more recent named survey, both attributed; the incumbent 60 to 80 percent against cold 10 to 20 percent split is one vendor's own estimate with no independent source, flagged as such, with only its attribution (that the gap is about shaping requirements) treated as trustworthy. The AI vendors' self-reported win-rate gains are noted as sitting awkwardly beside a six point industry decline, with the honest reading that the tooling produces more responses rather than better ones. Public sector handled fairly per the brief: there the short timeline, letterbox contact and rigid specification are compliance with procurement law rather than evidence of a wired process, so the real questions are the mandatory criteria and the pre-bid clarification window."
     }
   ]
 }
