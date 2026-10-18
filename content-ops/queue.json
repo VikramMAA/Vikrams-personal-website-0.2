@@ -44,27 +44,6 @@
       "market": "India"
     },
     {
-      "id": "b-113",
-      "slot": "morning",
-      "market": "Estonia",
-      "primary_keyword": "selling to german customers from estonia",
-      "secondary_keywords": [
-        "dach market entry b2b",
-        "german b2b buying process",
-        "selling saas to germany"
-      ],
-      "working_title": "What a German buyer expects that a Nordic one does not",
-      "angle": "Practical. DACH is the largest European market and Estonian companies aim at it after the Nordics, using the same playbook, and stall. Cover the specifics: formality of address and language expectation, the legal and imprint requirements on a German-facing site, invoicing and payment terms norms, data protection questions asked earlier and harder than elsewhere, and the role of trade bodies and industry associations in credibility. Keep it concrete and do not restate the Nordic consensus-buying argument.",
-      "audience": "Estonian B2B founders and sales leads",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Market Entry",
-        "Estonia",
-        "B2B"
-      ]
-    },
-    {
       "id": "b-131",
       "slot": "morning",
       "market": "US",
@@ -360,6 +339,28 @@
       ],
       "_retired_reason": "Generic version of the same question, written on 24 Sep to consolidate the city variants. Superseded by b-107, which asks it with real Los Angeles specifics.",
       "_retired_on": "2026-09-25"
+    },
+    {
+      "id": "b-113",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "selling to german customers from estonia",
+      "secondary_keywords": [
+        "dach market entry b2b",
+        "german b2b buying process",
+        "selling saas to germany"
+      ],
+      "working_title": "What a German buyer expects that a Nordic one does not",
+      "angle": "Practical. DACH is the largest European market and Estonian companies aim at it after the Nordics, using the same playbook, and stall. Cover the specifics: formality of address and language expectation, the legal and imprint requirements on a German-facing site, invoicing and payment terms norms, data protection questions asked earlier and harder than elsewhere, and the role of trade bodies and industry associations in credibility. Keep it concrete and do not restate the Nordic consensus-buying argument.",
+      "audience": "Estonian B2B founders and sales leads",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Market Entry",
+        "Estonia",
+        "B2B"
+      ],
+      "_retired": "Published 2026-10-18 as selling-to-german-customers-from-estonia."
     }
   ]
 }
