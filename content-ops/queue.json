@@ -107,6 +107,90 @@
         "Small Business"
       ],
       "_overlap_warning": "klaviyo-email-flows-that-make-money is ecommerce automation. This is a human-written broadcast for a business with no catalogue. Do not reuse its deliverability section beyond a link."
+    },
+    {
+      "id": "b-136",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "what percentage of revenue should go to marketing",
+      "secondary_keywords": [
+        "marketing budget percentage of revenue",
+        "how much should a small business spend on marketing",
+        "marketing budget benchmarks"
+      ],
+      "working_title": "The percentage-of-revenue budget is a rule for companies that already won",
+      "angle": "Opinion. The 5-to-10%-of-revenue heuristic is survivor arithmetic: it describes what firms with established demand spend to maintain it, and applied to a company that has no demand yet it funds maintenance of nothing. Argue the budget should be set from the cost of the next customer and the gap you are trying to close, not from a share of a number that is currently small. Cover why the heuristic is popular (it is defensible in a board meeting and requires no diagnosis) and the one case where it is genuinely right. Do not restate the India budget post's argument, which is about agencies billing retainers against a percentage, nor the Estonia tax post. US market, dollars.",
+      "audience": "US owners setting a first real marketing budget",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Budgeting",
+        "Small Business",
+        "Performance Marketing"
+      ]
+    },
+    {
+      "id": "b-137",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "should i replace my marketing hire with ai",
+      "secondary_keywords": [
+        "ai replacing marketing jobs",
+        "do i still need a marketer",
+        "ai marketing tools instead of agency"
+      ],
+      "working_title": "What AI actually replaced, and it was not the marketer",
+      "angle": "Opinion with a point of view the reader can argue with. Draw on the RFP post's finding (tooling cut per-document cost, everybody produced more, the gain competed away) but do not restate it: apply it to marketing headcount instead. The argument: generative tools replaced the production step, which was never the scarce one. What stayed scarce is the judgement about what to produce and the accountability for whether it worked, and a tool cannot hold either. Be concrete about which tasks genuinely moved (first drafts, variants, research summaries, reformatting) and which did not (deciding the offer, pricing, knowing the buyer, owning the number). Name the real risk honestly: not that AI does the job, but that it makes a thin marketing function look productive for about two quarters.",
+      "audience": "US owners weighing a marketing hire against tooling",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "AI",
+        "Hiring",
+        "Consulting"
+      ]
+    },
+    {
+      "id": "b-138",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "why do marketing agencies lose clients",
+      "secondary_keywords": [
+        "average agency client retention",
+        "why clients fire agencies",
+        "agency churn reasons"
+      ],
+      "working_title": "Clients do not leave over results. They leave over the month nobody called",
+      "angle": "Analysis from the other side of the desk, which is unusual for this site and therefore worth reading. The stated reason for firing an agency is performance; the actual trigger is usually a stretch of silence during a period when the client was anxious. Argue that reporting cadence is a retention mechanism rather than an admin task, and that the agencies who survive bad quarters are the ones who narrate them. Useful to a buyer too: it tells them what to demand. Rubbish the practice of the silent monthly PDF, never a named firm. Keep clear of marketing-agency-red-flags (29 Sep), which is about choosing, and first-90-days-with-a-marketing-consultant (6 Sep), which is about onboarding.",
+      "audience": "US agency owners and the clients who hire them",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Agency",
+        "Retention",
+        "Consulting"
+      ]
+    },
+    {
+      "id": "b-139",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "is my website worth rebuilding",
+      "secondary_keywords": [
+        "redesign vs rebuild website",
+        "when to rebuild a website",
+        "website redesign roi"
+      ],
+      "working_title": "Most websites that get rebuilt did not need rebuilding",
+      "angle": "Opinion. A rebuild is the most expensive way to avoid deciding what you sell, and it is chosen because it is a project with an end date while positioning is not. Distinguish the three real triggers (the platform is blocking something specific and nameable, the site cannot be edited without a developer, accessibility or legal exposure) from the usual stated one, which is that it looks dated. Pair with the honest counter-case: when it genuinely is time, and what the redesign SEO post (27 Aug) already covers so this does not repeat it. Note the pattern that the rebrand post (14 Oct) named and do not re-run its avoidance argument.",
+      "audience": "US owners being quoted for a redesign",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Technical SEO",
+        "Conversion",
+        "Budgeting"
+      ]
     }
   ],
   "retired": [
@@ -361,6 +445,28 @@
         "B2B"
       ],
       "_retired": "Published 2026-10-18 as selling-to-german-customers-from-estonia."
+    },
+    {
+      "id": "b-135",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "how long does seo take",
+      "secondary_keywords": [
+        "how long until seo works",
+        "time to rank in google",
+        "when will i see seo results"
+      ],
+      "working_title": "How long does SEO take, and when should you stop waiting?",
+      "angle": "Opinion, against the consensus. The whole first page of results for this query says three to six months and almost none of it cites anything. Ahrefs' own data (updated May 2025, Patrick Stox) says the opposite shape: only 1.74% of newly published pages reach the top 10 within a year, 6.11% on their fairer filter, and 40.82% of the pages that did rank got there inside the first month. So the outcome is closer to bimodal than gradual, which makes three to six months the period in which, on that data, the least new information arrives. Resolve the apparent contradiction with the age data (72.9% of top 10 pages are over three years old, average number one is five years old): incumbency is accumulated history on an updated URL, not a new page slowly ripening. Give decision checkpoints rather than outcome promises, and never a timeline to page one. State the caveats plainly: vendor crawler data, the 40.82% is conditional on pages that ranked, and top-10 placement no longer means traffic.",
+      "audience": "US business owners and in-house marketers who have been quoted a timeline",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "SEO",
+        "Analytics",
+        "Consulting"
+      ],
+      "_retired": "Published 2026-10-18 as how-long-does-seo-take."
     }
   ]
 }
