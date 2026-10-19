@@ -87,48 +87,6 @@
       "_overlap_warning": "klaviyo-email-flows-that-make-money is ecommerce automation. This is a human-written broadcast for a business with no catalogue. Do not reuse its deliverability section beyond a link."
     },
     {
-      "id": "b-136",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "what percentage of revenue should go to marketing",
-      "secondary_keywords": [
-        "marketing budget percentage of revenue",
-        "how much should a small business spend on marketing",
-        "marketing budget benchmarks"
-      ],
-      "working_title": "The percentage-of-revenue budget is a rule for companies that already won",
-      "angle": "Opinion. The 5-to-10%-of-revenue heuristic is survivor arithmetic: it describes what firms with established demand spend to maintain it, and applied to a company that has no demand yet it funds maintenance of nothing. Argue the budget should be set from the cost of the next customer and the gap you are trying to close, not from a share of a number that is currently small. Cover why the heuristic is popular (it is defensible in a board meeting and requires no diagnosis) and the one case where it is genuinely right. Do not restate the India budget post's argument, which is about agencies billing retainers against a percentage, nor the Estonia tax post. US market, dollars.",
-      "audience": "US owners setting a first real marketing budget",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Budgeting",
-        "Small Business",
-        "Performance Marketing"
-      ]
-    },
-    {
-      "id": "b-137",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "should i replace my marketing hire with ai",
-      "secondary_keywords": [
-        "ai replacing marketing jobs",
-        "do i still need a marketer",
-        "ai marketing tools instead of agency"
-      ],
-      "working_title": "What AI actually replaced, and it was not the marketer",
-      "angle": "Opinion with a point of view the reader can argue with. Draw on the RFP post's finding (tooling cut per-document cost, everybody produced more, the gain competed away) but do not restate it: apply it to marketing headcount instead. The argument: generative tools replaced the production step, which was never the scarce one. What stayed scarce is the judgement about what to produce and the accountability for whether it worked, and a tool cannot hold either. Be concrete about which tasks genuinely moved (first drafts, variants, research summaries, reformatting) and which did not (deciding the offer, pricing, knowing the buyer, owning the number). Name the real risk honestly: not that AI does the job, but that it makes a thin marketing function look productive for about two quarters.",
-      "audience": "US owners weighing a marketing hire against tooling",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "AI",
-        "Hiring",
-        "Consulting"
-      ]
-    },
-    {
       "id": "b-138",
       "slot": "evening",
       "market": "US",
@@ -146,7 +104,7 @@
       "tags": [
         "Agency",
         "Retention",
-        "Consulting"
+        "Process"
       ]
     },
     {
@@ -169,6 +127,28 @@
         "Conversion",
         "Budgeting"
       ]
+    },
+    {
+      "id": "b-136",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "what percentage of revenue should go to marketing",
+      "secondary_keywords": [
+        "marketing budget percentage of revenue",
+        "how much should a small business spend on marketing",
+        "marketing budget benchmarks"
+      ],
+      "working_title": "The percentage-of-revenue budget is a rule for companies that already won",
+      "angle": "Opinion, but the debunk is already done and must NOT be repeated: annual-marketing-plan-small-business (19 Oct) covers why percentage-of-revenue is survivor arithmetic, with the Gartner and Duke numbers. Link to it in one line and move on. Spend this whole article on the arithmetic that replaces it, which that post did not have room for. Build the budget from the bottom: what it currently costs to acquire one customer through the one channel that demonstrably works, how many customers the business needs to add, and what capacity exists to serve them. Cover the two failure modes of that method, which are that most owners do not know their real acquisition cost and that the number it produces is often larger than the business can fund, and say what to do in each case rather than retreating to a percentage. Then the one case where percentage-of-revenue is genuinely correct: a mature business with stable demand budgeting to hold position, where it is a maintenance control rather than a growth decision. US market, dollars.",
+      "audience": "US owners setting a first real marketing budget",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Budgeting",
+        "Small Business",
+        "Performance Marketing"
+      ],
+      "_defer_reason": "Deferred from the 2026-10-19 evening run. The morning post published the same day, annual-marketing-plan-small-business, already runs this brief's whole thesis in its section 'The number people will quote at you for the next six weeks': the Gartner 2026 CMO Spend Survey 7.8% figure, the >$1B sample, the Duke CMO Survey 9.0% comparison, and the maintenance-arithmetic argument verbatim in substance. Publishing this as briefed hours later would have been a same-day duplicate and would cannibalise the morning post. The keyword still deserves its own page, so the angle below is rewritten to complement that post rather than repeat it. Do not publish before November."
     }
   ],
   "retired": [
@@ -468,6 +448,28 @@
       ],
       "_overlap_warning": "Do not restate q4-marketing-plan-retail, which is a single quarter in one sector, and do not rebuild the budget floor calculation from google-ads-minimum-budget.",
       "_retired": "Published 2026-10-19 as annual-marketing-plan-small-business."
+    },
+    {
+      "id": "b-137",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "should i replace my marketing hire with ai",
+      "secondary_keywords": [
+        "ai replacing marketing jobs",
+        "do i still need a marketer",
+        "ai marketing tools instead of agency"
+      ],
+      "working_title": "What AI actually replaced, and it was not the marketer",
+      "angle": "Opinion with a point of view the reader can argue with. Draw on the RFP post's finding (tooling cut per-document cost, everybody produced more, the gain competed away) but do not restate it: apply it to marketing headcount instead. The argument: generative tools replaced the production step, which was never the scarce one. What stayed scarce is the judgement about what to produce and the accountability for whether it worked, and a tool cannot hold either. Be concrete about which tasks genuinely moved (first drafts, variants, research summaries, reformatting) and which did not (deciding the offer, pricing, knowing the buyer, owning the number). Name the real risk honestly: not that AI does the job, but that it makes a thin marketing function look productive for about two quarters.",
+      "audience": "US owners weighing a marketing hire against tooling",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "AI",
+        "Hiring",
+        "Process"
+      ],
+      "_retired": "Published 2026-10-19 as should-i-replace-my-marketing-hire-with-ai."
     }
   ]
 }
