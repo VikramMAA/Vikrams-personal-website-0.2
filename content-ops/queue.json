@@ -65,28 +65,6 @@
       ]
     },
     {
-      "id": "b-133",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "annual marketing plan small business",
-      "secondary_keywords": [
-        "marketing plan template 2027",
-        "how to plan marketing for the year",
-        "january marketing planning"
-      ],
-      "working_title": "The annual marketing plan that survives contact with February",
-      "angle": "Practical and seasonal, best published December or January. Most annual plans are a channel wish list with a budget divided twelve ways, and they are abandoned by week six. Build the version that holds: three outcomes rather than twelve activities, a quarterly review date written down before the year starts, a named owner per outcome, and an explicit list of what the plan refuses to fund. Include the part everybody skips, which is writing down what you believed when you made the plan, so that when it stops working you can tell whether the belief was wrong or the execution was.",
-      "audience": "US small business owners and in-house marketers",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Planning",
-        "Strategy",
-        "Small Business"
-      ],
-      "_overlap_warning": "Do not restate q4-marketing-plan-retail, which is a single quarter in one sector, and do not rebuild the budget floor calculation from google-ads-minimum-budget."
-    },
-    {
       "id": "b-134",
       "slot": "morning",
       "market": "US",
@@ -467,6 +445,29 @@
         "Consulting"
       ],
       "_retired": "Published 2026-10-18 as how-long-does-seo-take."
+    },
+    {
+      "id": "b-133",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "annual marketing plan small business",
+      "secondary_keywords": [
+        "marketing plan template 2027",
+        "how to plan marketing for the year",
+        "january marketing planning"
+      ],
+      "working_title": "The annual marketing plan that survives contact with February",
+      "angle": "Practical and seasonal, best published December or January. Most annual plans are a channel wish list with a budget divided twelve ways, and they are abandoned by week six. Build the version that holds: three outcomes rather than twelve activities, a quarterly review date written down before the year starts, a named owner per outcome, and an explicit list of what the plan refuses to fund. Include the part everybody skips, which is writing down what you believed when you made the plan, so that when it stops working you can tell whether the belief was wrong or the execution was.",
+      "audience": "US small business owners and in-house marketers",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Planning",
+        "Strategy",
+        "Small Business"
+      ],
+      "_overlap_warning": "Do not restate q4-marketing-plan-retail, which is a single quarter in one sector, and do not rebuild the budget floor calculation from google-ads-minimum-budget.",
+      "_retired": "Published 2026-10-19 as annual-marketing-plan-small-business."
     }
   ]
 }
