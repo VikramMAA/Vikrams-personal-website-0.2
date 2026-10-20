@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-049",
-      "slot": "morning",
-      "primary_keyword": "local seo for gyms",
-      "secondary_keywords": [
-        "local seo for salons",
-        "lead generation for fitness studios india",
-        "google business profile for gyms"
-      ],
-      "working_title": "How gyms and studios fill classes from a three kilometre radius",
-      "angle": "Practical hyperlocal. Radius reality for fitness, GBP with class timings and offers, locality landing pages, trial offer as the conversion event, WhatsApp for enquiries, and the January and post festive demand spikes.",
-      "audience": "SME and local business owners",
-      "city": "Bengaluru",
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Fitness",
-        "Local SEO",
-        "Lead Generation"
-      ],
-      "market": "India"
-    },
-    {
       "id": "b-053",
       "slot": "morning",
       "primary_keyword": "lead magnet ideas b2b",
@@ -470,6 +449,28 @@
         "Process"
       ],
       "_retired": "Published 2026-10-19 as should-i-replace-my-marketing-hire-with-ai."
+    },
+    {
+      "id": "b-049",
+      "slot": "morning",
+      "primary_keyword": "local seo for gyms",
+      "secondary_keywords": [
+        "local seo for salons",
+        "lead generation for fitness studios india",
+        "google business profile for gyms"
+      ],
+      "working_title": "How gyms and studios fill classes from a three kilometre radius",
+      "angle": "Practical hyperlocal. Radius reality for fitness, GBP with class timings and offers, locality landing pages, trial offer as the conversion event, WhatsApp for enquiries, and the January and post festive demand spikes.",
+      "audience": "SME and local business owners",
+      "city": "Bengaluru",
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Fitness",
+        "Local SEO",
+        "Lead Generation"
+      ],
+      "market": "India",
+      "_retired": "Published 2026-10-20 as local-seo-for-gyms-india."
     }
   ]
 }
