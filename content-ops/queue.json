@@ -87,27 +87,6 @@
       ]
     },
     {
-      "id": "b-139",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "is my website worth rebuilding",
-      "secondary_keywords": [
-        "redesign vs rebuild website",
-        "when to rebuild a website",
-        "website redesign roi"
-      ],
-      "working_title": "Most websites that get rebuilt did not need rebuilding",
-      "angle": "Opinion. A rebuild is the most expensive way to avoid deciding what you sell, and it is chosen because it is a project with an end date while positioning is not. Distinguish the three real triggers (the platform is blocking something specific and nameable, the site cannot be edited without a developer, accessibility or legal exposure) from the usual stated one, which is that it looks dated. Pair with the honest counter-case: when it genuinely is time, and what the redesign SEO post (27 Aug) already covers so this does not repeat it. Note the pattern that the rebrand post (14 Oct) named and do not re-run its avoidance argument.",
-      "audience": "US owners being quoted for a redesign",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Technical SEO",
-        "Conversion",
-        "Budgeting"
-      ]
-    },
-    {
       "id": "b-136",
       "slot": "evening",
       "market": "US",
@@ -471,6 +450,28 @@
       ],
       "market": "India",
       "_retired": "Published 2026-10-20 as local-seo-for-gyms-india."
+    },
+    {
+      "id": "b-139",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "is my website worth rebuilding",
+      "secondary_keywords": [
+        "redesign vs rebuild website",
+        "when to rebuild a website",
+        "website redesign roi"
+      ],
+      "working_title": "Most websites that get rebuilt did not need rebuilding",
+      "angle": "Opinion. A rebuild is the most expensive way to avoid deciding what you sell, and it is chosen because it is a project with an end date while positioning is not. Distinguish the three real triggers (the platform is blocking something specific and nameable, the site cannot be edited without a developer, accessibility or legal exposure) from the usual stated one, which is that it looks dated. Pair with the honest counter-case: when it genuinely is time, and what the redesign SEO post (27 Aug) already covers so this does not repeat it. Note the pattern that the rebrand post (14 Oct) named and do not re-run its avoidance argument.",
+      "audience": "US owners being quoted for a redesign",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Technical SEO",
+        "Conversion",
+        "Budgeting"
+      ],
+      "_retired": "Published 2026-10-20 as is-my-website-worth-rebuilding."
     }
   ]
 }
