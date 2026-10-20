@@ -44,6 +44,93 @@ BANNED_PATTERNS = [
 WARN_PHRASES = ["utilise", "utilize", "in order to", "a wide range of",
                 "various", "numerous", "ensure that", "additionally,"]
 
+# Market-wrong spelling. VOICE.md sets a spelling variant per market and this is
+# the one rule nothing was checking, so it was being caught by hand every run and
+# twice it was caught late. Only unambiguous forms are listed. "analysis" is
+# correct in US English, so British forms are matched as analyse/analysed/
+# analysing rather than on the stem.
+BRITISH_FORMS = [
+    r"organis(e|ed|es|ing|ation|ations)", r"optimis(e|ed|es|ing|ation)",
+    r"recognis(e|ed|es|ing|able)", r"analys(e|ed|ing)",
+    r"colour", r"centre", r"per cent", r"programme", r"utilis(e|ed|es|ing)",
+    r"judgement", r"favour", r"behaviour", r"labour", r"licence", r"defence",
+    r"travelling", r"modelling", r"catalogue", r"grey",
+]
+# British idiom rather than spelling. VOICE.md mandates the spelling variant, not
+# the vocabulary, so these warn rather than block. In a US post "fortnight" still
+# reads as somebody else's register.
+BRITISH_IDIOM = [r"whilst", r"amongst", r"fortnight", r"learnt"]
+AMERICAN_FORMS = [
+    r"organiz(e|ed|es|ing|ation|ations)", r"optimiz(e|ed|es|ing|ation)",
+    r"recogniz(e|ed|es|ing|able)", r"analyz(e|ed|es|ing)",
+    r"color", r"catalog", r"judgment", r"gray",
+]
+
+# Wrong spelling variant for each market, per VOICE.md.
+MARKET_WRONG_SPELLING = {
+    "US": BRITISH_FORMS,
+    "India": AMERICAN_FORMS,
+    "Estonia": AMERICAN_FORMS,
+}
+
+# Currency markers. Warn rather than fail, because VOICE.md allows an India post
+# to quote dollars when the post is specifically about earning in USD.
+CURRENCY_MARKERS = {
+    "rupee": [r"\bRs ?[0-9]", r"\blakh\b", r"\bcrore\b", r"\u20b9"],
+    "dollar": [r"\$ ?[0-9]", r"\bUSD\b"],
+    "euro": [r"\bEUR ?[0-9]", r"[0-9] ?EUR\b", r"\u20ac"],
+}
+MARKET_CURRENCY = {"US": "dollar", "India": "rupee", "Estonia": "euro"}
+
+
+def infer_market(path, slug_lookup="content-ops/published.json"):
+    """Look the slug up in published.json. Returns None for an unpublished draft."""
+    import json
+    import os
+    slug = os.path.basename(path)[:-3] if path.endswith(".md") else os.path.basename(path)
+    if not os.path.exists(slug_lookup):
+        return None
+    try:
+        with open(slug_lookup, encoding="utf-8") as f:
+            posts = json.load(f).get("posts", [])
+    except (ValueError, OSError):
+        return None
+    for post in posts:
+        if post.get("slug") == slug:
+            return post.get("market")
+    return None
+
+
+def check_market(body, market):
+    """Spelling and currency against the market's rules. Returns (errors, warnings)."""
+    errors, warnings = [], []
+    lower = body.lower()
+
+    for pattern in MARKET_WRONG_SPELLING.get(market, []):
+        found = sorted({m.group(0) for m in re.finditer(r"\b" + pattern + r"\b", lower)})
+        if found:
+            errors.append(f"{market} post contains wrong-variant spelling: "
+                          f"{', '.join(found)}")
+
+    if market == "US":
+        for pattern in BRITISH_IDIOM:
+            found = sorted({m.group(0) for m in re.finditer(r"\b" + pattern + r"\b", lower)})
+            if found:
+                warnings.append(f"British idiom in a US post: {', '.join(found)}")
+
+    own = MARKET_CURRENCY.get(market)
+    present = {name for name, pats in CURRENCY_MARKERS.items()
+               if any(re.search(pat, body) for pat in pats)}
+    foreign = present - {own}
+    if foreign:
+        warnings.append(f"{market} post mentions {', '.join(sorted(foreign))} amounts. "
+                        f"One market per post, so check this is deliberate.")
+    if len(present) > 1:
+        warnings.append(f"two currencies in one post ({', '.join(sorted(present))}). "
+                        f"Never blend markets, unless this is deliberately a "
+                        f"cross-market reference page.")
+    return errors, warnings
+
 
 def read_body(text):
     """Strip YAML frontmatter so title fields are linted separately."""
@@ -59,6 +146,8 @@ def main():
     ap.add_argument("path")
     ap.add_argument("--max-words", type=int, default=1500)
     ap.add_argument("--min-words", type=int, default=800)
+    ap.add_argument("--market", choices=sorted(MARKET_WRONG_SPELLING),
+                    help="Market from the brief. Inferred from published.json if omitted.")
     args = ap.parse_args()
 
     with open(args.path, encoding="utf-8") as f:
@@ -85,6 +174,15 @@ def main():
     for phrase in WARN_PHRASES:
         if phrase in lower:
             warnings.append(f'weak word, consider rewriting: "{phrase}"')
+
+    market = args.market or infer_market(args.path)
+    if market:
+        market_errors, market_warnings = check_market(body, market)
+        errors.extend(market_errors)
+        warnings.extend(market_warnings)
+    else:
+        warnings.append("market unknown, so spelling and currency were not checked. "
+                        "Pass --market US|India|Estonia.")
 
     words = len(body.split())
     if words < args.min_words:
