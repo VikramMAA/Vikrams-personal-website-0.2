@@ -1,7 +1,7 @@
 ---
 title: "How much does a digital marketing agency cost?"
 seoTitle: "How Much Does a Digital Marketing Agency Cost in 2026?"
-description: "$1,500 to $10,000 a month in the US, Rs 20,000 to Rs 4 lakh in India. Retainer, project, audit and fractional rates, what moves the number, and the floor below which the scope is fiction."
+description: "$1,500 to $10,000 a month in the US, Rs 20,000 to Rs 4 lakh in India. What moves the number, and the floor below which the scope is fiction."
 publishedAt: 2026-08-27
 updatedAt: 2026-09-29
 published: true
@@ -33,9 +33,9 @@ Broken down by where you sit:
 
 | Your situation | US monthly fee | India monthly fee |
 |---|---|---|
-| Single channel, small business | $1,000 – $3,000 | Rs 20,000 – Rs 50,000 |
-| Multi-channel, small business | $3,500 – $5,000 | Rs 50,000 – Rs 1.5 lakh |
-| Mid-market, 51 to 250 employees | $4,000 – $12,000 | Rs 1.5 lakh – Rs 4 lakh |
+| Single channel, small business | $1,000 to $3,000 | Rs 20,000 to Rs 50,000 |
+| Multi-channel, small business | $3,500 to $5,000 | Rs 50,000 to Rs 1.5 lakh |
+| Mid-market, 51 to 250 employees | $4,000 to $12,000 | Rs 1.5 lakh to Rs 4 lakh |
 | Enterprise | $25,000+ | Rs 6 lakh+ |
 
 Now the more useful part, because the number on its own tells you very little.
@@ -60,10 +60,10 @@ Ask directly. Anyone quoting seriously will tell you.
 
 | Engagement | What it is | US | India |
 |---|---|---|---|
-| **Monthly retainer** | Ongoing execution across one or more channels | $1,500 – $12,000 / mo | Rs 20,000 – Rs 4 lakh / mo |
-| **Project** | Fixed scope with an end date: site build, migration, campaign launch | $3,000 – $30,000 | Rs 75,000 – Rs 8 lakh |
-| **Audit** | Diagnosis and a written roadmap, no execution | $1,500 – $7,500 | Rs 25,000 – Rs 1.5 lakh |
-| **Fractional senior** | A senior operator for a defined slice of their week | $3,000 – $10,000 / mo | Rs 1 lakh – Rs 3 lakh / mo, or Rs 15,000 – Rs 40,000 a day |
+| **Monthly retainer** | Ongoing execution across one or more channels | $1,500 to $12,000 / mo | Rs 20,000 to Rs 4 lakh / mo |
+| **Project** | Fixed scope with an end date: site build, migration, campaign launch | $3,000 to $30,000 | Rs 75,000 to Rs 8 lakh |
+| **Audit** | Diagnosis and a written roadmap, no execution | $1,500 to $7,500 | Rs 25,000 to Rs 1.5 lakh |
+| **Fractional senior** | A senior operator for a defined slice of their week | $3,000 to $10,000 / mo | Rs 1 lakh to Rs 3 lakh / mo, or Rs 15,000 to Rs 40,000 a day |
 
 If you have never worked with the agency before, the audit line is almost always the right first purchase. It costs a fraction of a year's retainer and it tells you two things at once: what is actually wrong, and whether these people are any good. A retainer signed before a diagnosis is a bet placed before the cards are dealt.
 

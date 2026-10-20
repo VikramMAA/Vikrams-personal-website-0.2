@@ -35,7 +35,7 @@ Nearly nobody does this, which is why so much refresh work produces nothing.
 
 ## The refreshes that make it worse
 
-**Rewriting a page that is ranking fine because it appeared on a list.** If it holds position four and converts, leave it alone. A page in good standing is an asset and a substantial rewrite is a bet against your own past judgement.
+**Rewriting a page that is ranking fine because it appeared on a list.** If it holds position four and converts, leave it alone. A page in good standing is an asset and a substantial rewrite is a bet against your own past judgment.
 
 **Adding length.** A concise page that won because it answered fast does not improve by growing to two thousand words. Half the refreshes I see bury the answer that was the reason the page worked.
 

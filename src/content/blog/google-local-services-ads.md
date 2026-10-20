@@ -23,7 +23,7 @@ What has changed is nearly everything about how you run it. Three things moved i
 
 That matters in two directions. If your website or your truck still advertises the Google Guarantee and the money-back protection, that is now inaccurate and worth fixing today. And if you were considering LSA specifically because of that guarantee, the reason you had has been withdrawn.
 
-**Manual lead disputes ended.** You used to be able to open a charged lead and argue it. Google replaced that with automated review, issuing credits on its own judgement, typically within about seventy two hours.
+**Manual lead disputes ended.** You used to be able to open a charged lead and argue it. Google replaced that with automated review, issuing credits on its own judgment, typically within about seventy two hours.
 
 What you have left is the short survey after each lead. That is now your only input into lead quality, and it is the single habit worth building, because it is the only signal you can still send.
 

@@ -51,7 +51,7 @@ The practical consequence is that a share of what Google Ads reports is modelled
 
 GA4 models too, but differently and to a different extent. So part of your gap is one tool estimating something the other simply does not count.
 
-This is also why a gap can appear overnight without anybody touching a tag. Change the consent banner, change the share of users who accept, change the modelling.
+This is also why a gap can appear overnight without anybody touching a tag. Change the consent banner, change the share of users who accept, change the modeling.
 
 ## Cause four: what counts as one conversion
 

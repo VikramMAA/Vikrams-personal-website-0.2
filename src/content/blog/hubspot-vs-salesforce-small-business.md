@@ -21,7 +21,7 @@ My stated basis, since a comparison without one is just a preference: this is dr
 
 Both of these are good products. That's worth saying plainly, because most comparisons need one of them to be bad and neither is.
 
-**Salesforce** will do whatever you need it to do. That is not marketing copy, it's an accurate description of a platform that has been extended for two decades. If your sales process has genuine complexity, multiple business units, an approval chain, territory rules, unusual objects, it will model that, and it will keep modelling it at a thousand people. Nobody gets fired for it and every senior hire you make will already know it.
+**Salesforce** will do whatever you need it to do. That is not marketing copy, it's an accurate description of a platform that has been extended for two decades. If your sales process has genuine complexity, multiple business units, an approval chain, territory rules, unusual objects, it will model that, and it will keep modeling it at a thousand people. Nobody gets fired for it and every senior hire you make will already know it.
 
 **HubSpot** will be in use by Thursday. The interface is genuinely good, the marketing and sales sides actually share data instead of being bolted together, and a competent marketing person can build a workflow without a developer. For a company where sales and marketing are three people who also do other jobs, that matters more than extensibility does.
 

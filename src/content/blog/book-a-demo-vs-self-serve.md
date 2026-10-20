@@ -53,7 +53,7 @@ Some purchases should start with a human, and the tell is not the price alone. I
 
 **Anything where the wrong configuration loses their data or their compliance position.** Let them talk to somebody.
 
-The rough line I would use, and it is a judgement rather than a rule: below roughly $10,000 a year, gating on a call is almost always the wrong trade. Above $50,000, the call is usually load-bearing. In between, it depends on how much of the evaluation the buyer can do alone.
+The rough line I would use, and it is a judgment rather than a rule: below roughly $10,000 a year, gating on a call is almost always the wrong trade. Above $50,000, the call is usually load-bearing. In between, it depends on how much of the evaluation the buyer can do alone.
 
 ## The version almost nobody builds
 

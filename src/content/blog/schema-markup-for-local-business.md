@@ -69,7 +69,7 @@ For a local or service business, this is the whole list.
 }
 ```
 
-Two things in there earn their place. `sameAs` connects your site to the profiles that corroborate you elsewhere, which is precisely the verification signal these systems are looking for — and the profile doing most of that corroborating is your Google Business Profile, which is why [review volume and markup](/blog/how-to-get-more-google-reviews/) work better together than either does alone. And `@id` gives the business a stable identifier you can reference from other pages.
+Two things in there earn their place. `sameAs` connects your site to the profiles that corroborate you elsewhere, which is precisely the verification signal these systems are looking for. The profile doing most of that corroborating is your Google Business Profile, which is why [review volume and markup](/blog/how-to-get-more-google-reviews/) work better together than either does alone. And `@id` gives the business a stable identifier you can reference from other pages.
 
 **Service**, one per thing you sell, on the page that sells it.
 

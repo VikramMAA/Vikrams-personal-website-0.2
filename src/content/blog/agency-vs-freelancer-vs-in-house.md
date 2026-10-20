@@ -59,7 +59,7 @@ The thing to be careful about is not the model, it is the fee structure. An agen
 
 ## When one person is the right call
 
-One or two channels. Judgement work rather than production work. A stage where the main risk is doing the wrong thing well.
+One or two channels. Judgment work rather than production work. A stage where the main risk is doing the wrong thing well.
 
 Here I should disclose the obvious. I work as a consultant, so read my assessment of this column with appropriate suspicion. What I will say is that the honest version of the argument is narrower than people in my position usually make it: one person is right when the problem is deciding, and wrong when the problem is producing.
 
@@ -77,7 +77,7 @@ This is the part the older comparisons miss.
 
 Production got cheap. Drafting, resizing, first-pass copy, reporting summaries. The work that used to justify a team of three now takes one person and a subscription, which strips out a real part of the traditional agency and junior-hire value proposition.
 
-Judgement did not get cheap. What to do, what not to do, which channel to abandon, whether the number in the report means anything.
+Judgment did not get cheap. What to do, what not to do, which channel to abandon, whether the number in the report means anything.
 
 So the calculation has shifted toward fewer and more senior people, and away from headcount as a proxy for output. If you are being sold volume of deliverables in 2026, you are being sold the thing that got cheapest.
 
@@ -85,7 +85,7 @@ So the calculation has shifted toward fewer and more senior people, and away fro
 
 Write down the one outcome that has to improve in the next six months. Then count the channels it depends on.
 
-One or two channels and it is a judgement problem: hire one senior person, inside or outside.
+One or two channels and it is a judgment problem: hire one senior person, inside or outside.
 
 Three or more channels, or real production volume, or work that cannot stop: agency, on a flat retainer.
 
