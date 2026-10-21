@@ -45,27 +45,6 @@
       "_overlap_warning": "klaviyo-email-flows-that-make-money is ecommerce automation. This is a human-written broadcast for a business with no catalogue. Do not reuse its deliverability section beyond a link."
     },
     {
-      "id": "b-138",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "why do marketing agencies lose clients",
-      "secondary_keywords": [
-        "average agency client retention",
-        "why clients fire agencies",
-        "agency churn reasons"
-      ],
-      "working_title": "Clients do not leave over results. They leave over the month nobody called",
-      "angle": "Analysis from the other side of the desk, which is unusual for this site and therefore worth reading. The stated reason for firing an agency is performance; the actual trigger is usually a stretch of silence during a period when the client was anxious. Argue that reporting cadence is a retention mechanism rather than an admin task, and that the agencies who survive bad quarters are the ones who narrate them. Useful to a buyer too: it tells them what to demand. Rubbish the practice of the silent monthly PDF, never a named firm. Keep clear of marketing-agency-red-flags (29 Sep), which is about choosing, and first-90-days-with-a-marketing-consultant (6 Sep), which is about onboarding.",
-      "audience": "US agency owners and the clients who hire them",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "Agency",
-        "Retention",
-        "Process"
-      ]
-    },
-    {
       "id": "b-136",
       "slot": "evening",
       "market": "US",
@@ -473,6 +452,28 @@
       ],
       "market": "India",
       "_retired": "Published 2026-10-21 as lead-magnet-ideas-b2b-india."
+    },
+    {
+      "id": "b-138",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "why do marketing agencies lose clients",
+      "secondary_keywords": [
+        "average agency client retention",
+        "why clients fire agencies",
+        "agency churn reasons"
+      ],
+      "working_title": "Clients do not leave over results. They leave over the month nobody called",
+      "angle": "Analysis from the other side of the desk, which is unusual for this site and therefore worth reading. The stated reason for firing an agency is performance; the actual trigger is usually a stretch of silence during a period when the client was anxious. Argue that reporting cadence is a retention mechanism rather than an admin task, and that the agencies who survive bad quarters are the ones who narrate them. Useful to a buyer too: it tells them what to demand. Rubbish the practice of the silent monthly PDF, never a named firm. Keep clear of marketing-agency-red-flags (29 Sep), which is about choosing, and first-90-days-with-a-marketing-consultant (6 Sep), which is about onboarding.",
+      "audience": "US agency owners and the clients who hire them",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Agency",
+        "Retention",
+        "Process"
+      ],
+      "_retired": "Published 2026-10-21 as why-marketing-agencies-lose-clients."
     }
   ]
 }
