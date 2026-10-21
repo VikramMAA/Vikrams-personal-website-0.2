@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-053",
-      "slot": "morning",
-      "primary_keyword": "lead magnet ideas b2b",
-      "secondary_keywords": [
-        "how to generate leads without paid ads",
-        "lead generation for small business india",
-        "gated content still works"
-      ],
-      "working_title": "Nobody wants your ebook. Here is what people will actually give an email for",
-      "angle": "Practical. Calculators, benchmarks, templates, teardowns and audits work. Generic ebooks do not. Give five specific examples per business type and the follow up sequence that has to exist behind them.",
-      "audience": "B2B and SaaS companies",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Lead Generation",
-        "Content Marketing",
-        "B2B"
-      ],
-      "market": "India"
-    },
-    {
       "id": "b-131",
       "slot": "morning",
       "market": "US",
@@ -472,6 +451,28 @@
         "Budgeting"
       ],
       "_retired": "Published 2026-10-20 as is-my-website-worth-rebuilding."
+    },
+    {
+      "id": "b-053",
+      "slot": "morning",
+      "primary_keyword": "lead magnet ideas b2b",
+      "secondary_keywords": [
+        "how to generate leads without paid ads",
+        "lead generation for small business india",
+        "gated content still works"
+      ],
+      "working_title": "Nobody wants your ebook. Here is what people will actually give an email for",
+      "angle": "Practical. Calculators, benchmarks, templates, teardowns and audits work. Generic ebooks do not. Give five specific examples per business type and the follow up sequence that has to exist behind them.",
+      "audience": "B2B and SaaS companies",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Lead Generation",
+        "Content Marketing",
+        "B2B"
+      ],
+      "market": "India",
+      "_retired": "Published 2026-10-21 as lead-magnet-ideas-b2b-india."
     }
   ]
 }
