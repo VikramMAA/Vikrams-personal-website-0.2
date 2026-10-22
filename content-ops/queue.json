@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-131",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "how to get a client to agree to a case study",
-      "secondary_keywords": [
-        "case study approval process",
-        "client wont approve case study",
-        "anonymous case study"
-      ],
-      "working_title": "Nobody says no to a case study. They just never approve the draft",
-      "angle": "Practical, and the real problem is the approval path rather than the request. Cover asking at the moment the result lands rather than at renewal, writing it first so the client edits rather than drafts, the three approval routes (the client contact, their marketing team, their legal team) and which one kills it, what to do when numbers cannot be published, and the anonymised version that still works because the mechanism is the interesting part. Include the one line in the engagement agreement that makes all of this easier, agreed before anybody has anything to lose.",
-      "audience": "US agencies, consultants and B2B marketers",
-      "city": null,
-      "expertise_link": "/expertise/content-marketing/",
-      "tags": [
-        "Content Marketing",
-        "B2B",
-        "Social Proof"
-      ]
-    },
-    {
       "id": "b-134",
       "slot": "morning",
       "market": "US",
@@ -474,6 +453,28 @@
         "Process"
       ],
       "_retired": "Published 2026-10-21 as why-marketing-agencies-lose-clients."
+    },
+    {
+      "id": "b-131",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "how to get a client to agree to a case study",
+      "secondary_keywords": [
+        "case study approval process",
+        "client wont approve case study",
+        "anonymous case study"
+      ],
+      "working_title": "Nobody says no to a case study. They just never approve the draft",
+      "angle": "Practical, and the real problem is the approval path rather than the request. Cover asking at the moment the result lands rather than at renewal, writing it first so the client edits rather than drafts, the three approval routes (the client contact, their marketing team, their legal team) and which one kills it, what to do when numbers cannot be published, and the anonymised version that still works because the mechanism is the interesting part. Include the one line in the engagement agreement that makes all of this easier, agreed before anybody has anything to lose.",
+      "audience": "US agencies, consultants and B2B marketers",
+      "city": null,
+      "expertise_link": "/expertise/content-marketing/",
+      "tags": [
+        "Content Marketing",
+        "B2B",
+        "Social Proof"
+      ],
+      "_retired": "Published 2026-10-22 as how-to-get-a-client-to-agree-to-a-case-study."
     }
   ]
 }
