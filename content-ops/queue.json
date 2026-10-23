@@ -24,27 +24,6 @@
       "_overlap_warning": "klaviyo-email-flows-that-make-money is ecommerce automation. This is a human-written broadcast for a business with no catalogue. Do not reuse its deliverability section beyond a link."
     },
     {
-      "id": "b-140",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "win loss analysis for small business",
-      "secondary_keywords": [
-        "why did we lose that deal",
-        "win loss interviews",
-        "how to run a win loss review"
-      ],
-      "working_title": "The person who lost the deal is the worst person to ask why",
-      "angle": "Opinion with a structural argument. Everybody agrees win/loss analysis is valuable and almost nobody runs it, and the reason is not discipline, it is that the only person with access to the buyer is the one whose judgement is on trial. A salesperson cannot neutrally interview somebody about their own failure, and the buyer will not tell them the truth anyway, because the easiest exit from that call is 'it came down to price'. So the finding is predetermined: companies that do ask hear 'price' and respond by discounting, which is how a research failure becomes a margin problem. Argue for separating the asker from the owner of the deal, and for asking the won deals too, which nobody does and which is where the usable information actually is. Keep clear of should-i-respond-to-rfps (17 Oct), which is about whether to bid, and why-leads-are-not-converting (4 Sep).",
-      "audience": "US founders and sales leads at small B2B firms",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "Sales",
-        "Analytics",
-        "Strategy"
-      ]
-    },
-    {
       "id": "b-141",
       "slot": "morning",
       "market": "US",
@@ -729,6 +708,28 @@
         "Compliance"
       ],
       "_retired": "Published 2026-10-23 as selling-to-eu-public-sector-tenders."
+    },
+    {
+      "id": "b-140",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "win loss analysis for small business",
+      "secondary_keywords": [
+        "why did we lose that deal",
+        "win loss interviews",
+        "how to run a win loss review"
+      ],
+      "working_title": "The person who lost the deal is the worst person to ask why",
+      "angle": "Opinion with a structural argument. Everybody agrees win/loss analysis is valuable and almost nobody runs it, and the reason is not discipline, it is that the only person with access to the buyer is the one whose judgement is on trial. A salesperson cannot neutrally interview somebody about their own failure, and the buyer will not tell them the truth anyway, because the easiest exit from that call is 'it came down to price'. So the finding is predetermined: companies that do ask hear 'price' and respond by discounting, which is how a research failure becomes a margin problem. Argue for separating the asker from the owner of the deal, and for asking the won deals too, which nobody does and which is where the usable information actually is. Keep clear of should-i-respond-to-rfps (17 Oct), which is about whether to bid, and why-leads-are-not-converting (4 Sep).",
+      "audience": "US founders and sales leads at small B2B firms",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Sales",
+        "Analytics",
+        "Strategy"
+      ],
+      "_retired": "Published 2026-10-23 as win-loss-analysis-for-small-business."
     }
   ]
 }
