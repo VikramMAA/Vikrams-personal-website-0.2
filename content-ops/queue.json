@@ -192,27 +192,6 @@
       ]
     },
     {
-      "id": "b-149",
-      "slot": "morning",
-      "market": "Estonia",
-      "primary_keyword": "selling to eu public sector tenders",
-      "secondary_keywords": [
-        "eu public procurement for small companies",
-        "how to bid for government contracts eu",
-        "ted tenders electronic daily"
-      ],
-      "working_title": "The EU tender process is not a sales process, and treating it as one loses",
-      "angle": "Practical. Estonian companies are unusually well placed here, being digital-government natives with e-signature and e-invoicing already normal, and most never look at EU public procurement because it reads as impenetrable. Cover the mechanics concretely: where notices are actually published, the framework agreement structure that matters more than individual tenders, the pre-qualification documents worth assembling once and reusing, the mandatory criteria that disqualify you on a technicality regardless of merit, and the clarification window that most bidders ignore. Verify current procurement thresholds and notice platforms at source before writing, since the figures are revised. Note explicitly that the should-i-respond-to-rfps logic (17 Oct, US) is the opposite here: a rigid process is compliance with the law rather than a sign the deal is wired.",
-      "audience": "Estonian B2B companies with EU ambitions",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Market Entry",
-        "Estonia",
-        "Compliance"
-      ]
-    },
-    {
       "id": "b-150",
       "slot": "morning",
       "market": "Estonia",
@@ -728,6 +707,28 @@
         "Consulting"
       ],
       "_retired": "Published 2026-10-22 as first-marketing-hire-india."
+    },
+    {
+      "id": "b-149",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "selling to eu public sector tenders",
+      "secondary_keywords": [
+        "eu public procurement for small companies",
+        "how to bid for government contracts eu",
+        "ted tenders electronic daily"
+      ],
+      "working_title": "The EU tender process is not a sales process, and treating it as one loses",
+      "angle": "Practical. Estonian companies are unusually well placed here, being digital-government natives with e-signature and e-invoicing already normal, and most never look at EU public procurement because it reads as impenetrable. Cover the mechanics concretely: where notices are actually published, the framework agreement structure that matters more than individual tenders, the pre-qualification documents worth assembling once and reusing, the mandatory criteria that disqualify you on a technicality regardless of merit, and the clarification window that most bidders ignore. Verify current procurement thresholds and notice platforms at source before writing, since the figures are revised. Note explicitly that the should-i-respond-to-rfps logic (17 Oct, US) is the opposite here: a rigid process is compliance with the law rather than a sign the deal is wired.",
+      "audience": "Estonian B2B companies with EU ambitions",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Market Entry",
+        "Estonia",
+        "Compliance"
+      ],
+      "_retired": "Published 2026-10-23 as selling-to-eu-public-sector-tenders."
     }
   ]
 }
