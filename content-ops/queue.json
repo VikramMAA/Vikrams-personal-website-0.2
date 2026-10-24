@@ -128,27 +128,6 @@
       ]
     },
     {
-      "id": "b-148",
-      "slot": "evening",
-      "market": "India",
-      "primary_keyword": "how to price services in india",
-      "secondary_keywords": [
-        "pricing for indian service business",
-        "how much to charge clients india",
-        "raising prices india"
-      ],
-      "working_title": "Competing on price in India is a choice, and usually a bad one",
-      "angle": "Opinion. In a market with genuine low-cost competition the reflex is to meet it, and the argument is that price competition in a crowded Indian service market is a bid to win the customers who will leave you for the next cheaper option. Cover the mechanism rather than the platitude: how a low price specifies a thin product, why the client who negotiated hardest consumes the most support, and the segmentation move of selling a smaller scope at a real price rather than the same scope cheaper. Include the practical script for raising prices on existing clients and the honest note that some will go. Do not duplicate pricing-for-export-markets (10 Oct, Estonia) or should-i-put-pricing-on-my-website (15 Oct, US), which is about publishing rather than setting.",
-      "audience": "Indian agencies, consultants and service businesses",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Pricing",
-        "Positioning",
-        "Small Business"
-      ]
-    },
-    {
       "id": "b-150",
       "slot": "morning",
       "market": "Estonia",
@@ -731,6 +710,28 @@
       ],
       "_overlap_warning": "klaviyo-email-flows-that-make-money is ecommerce automation. This is a human-written broadcast for a business with no catalogue. Do not reuse its deliverability section beyond a link.",
       "_retired": "Published 2026-10-24 as what-to-put-in-a-business-newsletter."
+    },
+    {
+      "id": "b-148",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "how to price services in india",
+      "secondary_keywords": [
+        "pricing for indian service business",
+        "how much to charge clients india",
+        "raising prices india"
+      ],
+      "working_title": "Competing on price in India is a choice, and usually a bad one",
+      "angle": "Opinion. In a market with genuine low-cost competition the reflex is to meet it, and the argument is that price competition in a crowded Indian service market is a bid to win the customers who will leave you for the next cheaper option. Cover the mechanism rather than the platitude: how a low price specifies a thin product, why the client who negotiated hardest consumes the most support, and the segmentation move of selling a smaller scope at a real price rather than the same scope cheaper. Include the practical script for raising prices on existing clients and the honest note that some will go. Do not duplicate pricing-for-export-markets (10 Oct, Estonia) or should-i-put-pricing-on-my-website (15 Oct, US), which is about publishing rather than setting.",
+      "audience": "Indian agencies, consultants and service businesses",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Pricing",
+        "Positioning",
+        "Small Business"
+      ],
+      "_retired": "Published 2026-10-24 as how-to-price-services-in-india, retargeted. Two of this brief's three points were already published by pricing-for-export-markets (10 Oct) and the third would have contradicted the Gong finding in how-to-handle-price-objections-without-discounting (1 Sep). Replaced with the collected-price spine and the GST segmentation insight."
     }
   ]
 }
