@@ -399,7 +399,14 @@ const BAD_TAGS = ["opentowork","openforwork","hireme","availableforwork","forhir
 
 const TELLS = ["here's the thing:","let that sink in","read that again","i'll wait",
   "unpopular opinion:","hot take:","the result?","agree?","thoughts?","am i wrong?",
-  "who else","comment yes","repost if","save this post","follow me for","link below"];
+  "comment yes","repost if","save this post","follow me for","link below"];
+
+// "who else" as a literal blocked ordinary description ("who else was in the
+// running"). The tell is the bait form, which lives inside a question. Mirrors
+// TELL_CONSTRUCTIONS in lint_snippet.py.
+const TELL_CONSTRUCTIONS = [
+  [/\bwho else\b(?=[^.!?]*\?)/g, 'the "who else" bait question']
+];
 
 const BANNED = ["in today's digital age","ever-evolving","ever evolving","delve into","delving",
   "navigate the complexities","unlock the power","game changer","game-changer","robust solution",
@@ -467,6 +474,11 @@ function lint(raw, kind){
   });
   phraseHit(BANNED, "On the banned list in VOICE.md.");
   phraseHit(TELLS, "A LinkedIn tell. Readers discount the whole post.");
+
+  TELL_CONSTRUCTIONS.forEach(([re, why]) => scan(re, m => {
+    ranges.push([m.index, m.index + m[0].length, "bad"]);
+    push(stop, `“${raw.slice(m.index, m.index + m[0].length)}”`, why + ". Readers discount the whole post.", "stop");
+  }));
 
   CONSTRUCTIONS.forEach(([re, why]) => scan(re, m => {
     ranges.push([m.index, m.index + m[0].length, "bad"]);

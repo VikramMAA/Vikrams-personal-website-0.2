@@ -85,8 +85,19 @@ BANNED_HASHTAGS = [
 LINKEDIN_TELLS = [
     "here's the thing:", "heres the thing:", "let that sink in", "read that again",
     "i'll wait", "ill wait", "unpopular opinion:", "hot take:", "the result?",
-    "agree?", "thoughts?", "am i wrong?", "who else", "comment yes",
+    "agree?", "thoughts?", "am i wrong?", "comment yes",
     "repost if", "save this post", "follow me for", "link below",
+]
+
+# "who else" was on the list above as a literal, which blocked "ask what nearly
+# stopped them, and who else was in the running" — ordinary descriptive English.
+# The tell is the bait form addressed to the reader ("Who else is tired of..?"),
+# which lives inside a question. Requiring the question mark keeps the bait and
+# frees the description. Unlike the availability rules, a style check should err
+# toward precision: a false positive here costs a good sentence, a false negative
+# costs a slightly worse post.
+TELL_CONSTRUCTIONS = [
+    (r"\bwho else\b(?=[^.!?]*\?)", 'the "who else" bait question'),
 ]
 
 FALLBACK_BANNED = [
@@ -165,6 +176,10 @@ def check(text, name, banned, kind="post"):
     for tell in LINKEDIN_TELLS:
         if tell in lower:
             errors.append(f'LinkedIn tell: "{tell}"')
+
+    for pattern, label in TELL_CONSTRUCTIONS:
+        if re.search(pattern, lower):
+            errors.append(f"LinkedIn tell: {label}")
 
     if re.search(r"\bit'?s not just [^.!?]{1,60}[,.] it'?s\b", lower):
         errors.append('"it\'s not just X, it\'s Y" construction')
