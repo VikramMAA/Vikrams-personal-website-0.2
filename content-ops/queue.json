@@ -2,28 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-134",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "what to put in a business newsletter",
-      "secondary_keywords": [
-        "email newsletter ideas for service business",
-        "how often to send a newsletter",
-        "newsletter vs promotional email"
-      ],
-      "working_title": "The newsletter nobody unsubscribes from, for a business with no products to promote",
-      "angle": "Practical, aimed at service businesses rather than retailers, which is the gap in most advice. If you have nothing to put on sale, the newsletter has to earn its place a different way: what changed in the reader's world this month, one thing you learned doing the work, and a single specific thing they could do. Cover cadence honestly, which is that monthly and kept is better than weekly and abandoned, the subject line test, and the segment question. Be clear about the one thing that gets a service business newsletter deleted, which is writing about the business rather than about the reader's problem.",
-      "audience": "US service businesses and professional practices",
-      "city": null,
-      "expertise_link": "/expertise/content-marketing/",
-      "tags": [
-        "Email Marketing",
-        "Content Marketing",
-        "Small Business"
-      ],
-      "_overlap_warning": "klaviyo-email-flows-that-make-money is ecommerce automation. This is a human-written broadcast for a business with no catalogue. Do not reuse its deliverability section beyond a link."
-    },
-    {
       "id": "b-141",
       "slot": "morning",
       "market": "US",
@@ -730,6 +708,29 @@
         "Strategy"
       ],
       "_retired": "Published 2026-10-23 as win-loss-analysis-for-small-business."
+    },
+    {
+      "id": "b-134",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "what to put in a business newsletter",
+      "secondary_keywords": [
+        "email newsletter ideas for service business",
+        "how often to send a newsletter",
+        "newsletter vs promotional email"
+      ],
+      "working_title": "The newsletter nobody unsubscribes from, for a business with no products to promote",
+      "angle": "Practical, aimed at service businesses rather than retailers, which is the gap in most advice. If you have nothing to put on sale, the newsletter has to earn its place a different way: what changed in the reader's world this month, one thing you learned doing the work, and a single specific thing they could do. Cover cadence honestly, which is that monthly and kept is better than weekly and abandoned, the subject line test, and the segment question. Be clear about the one thing that gets a service business newsletter deleted, which is writing about the business rather than about the reader's problem.",
+      "audience": "US service businesses and professional practices",
+      "city": null,
+      "expertise_link": "/expertise/content-marketing/",
+      "tags": [
+        "Email Marketing",
+        "Content Marketing",
+        "Small Business"
+      ],
+      "_overlap_warning": "klaviyo-email-flows-that-make-money is ecommerce automation. This is a human-written broadcast for a business with no catalogue. Do not reuse its deliverability section beyond a link.",
+      "_retired": "Published 2026-10-24 as what-to-put-in-a-business-newsletter."
     }
   ]
 }
