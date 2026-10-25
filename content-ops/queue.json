@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-142",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "should my business start a podcast",
-      "secondary_keywords": [
-        "b2b podcast worth it",
-        "podcast for lead generation",
-        "business podcast roi"
-      ],
-      "working_title": "A podcast is a networking tool that produces a file",
-      "angle": "Opinion, and the honest answer is mostly no, but for an interesting reason. Podcasts almost never work as audience-building for small B2B firms, because the audience does not exist and distribution is the hardest part of the medium. What they do reliably produce is a legitimate reason to get an hour with somebody senior who would not take a sales call, which is a business development mechanism dressed as media. So judge it on whether the guest list is your pipeline, not on downloads. Be specific about the cases where it genuinely fails: a category with no interesting practitioners, a host who does not enjoy it, and the content treadmill that kills most shows by episode eleven. Do not repeat youtube-shorts-for-business-india (17 Oct), which is a different market and about search discoverability.",
-      "audience": "US B2B founders and marketers weighing a content bet",
-      "city": null,
-      "expertise_link": "/expertise/content-marketing/",
-      "tags": [
-        "Content Marketing",
-        "Branding",
-        "Consulting"
-      ]
-    },
-    {
       "id": "b-143",
       "slot": "morning",
       "market": "US",
@@ -733,6 +712,28 @@
         "Process"
       ],
       "_retired": "Published 2026-10-25 as how-to-run-a-discovery-call."
+    },
+    {
+      "id": "b-142",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "should my business start a podcast",
+      "secondary_keywords": [
+        "b2b podcast worth it",
+        "podcast for lead generation",
+        "business podcast roi"
+      ],
+      "working_title": "A podcast is a networking tool that produces a file",
+      "angle": "Opinion, and the honest answer is mostly no, but for an interesting reason. Podcasts almost never work as audience-building for small B2B firms, because the audience does not exist and distribution is the hardest part of the medium. What they do reliably produce is a legitimate reason to get an hour with somebody senior who would not take a sales call, which is a business development mechanism dressed as media. So judge it on whether the guest list is your pipeline, not on downloads. Be specific about the cases where it genuinely fails: a category with no interesting practitioners, a host who does not enjoy it, and the content treadmill that kills most shows by episode eleven. Do not repeat youtube-shorts-for-business-india (17 Oct), which is a different market and about search discoverability.",
+      "audience": "US B2B founders and marketers weighing a content bet",
+      "city": null,
+      "expertise_link": "/expertise/content-marketing/",
+      "tags": [
+        "Content Marketing",
+        "Branding",
+        "Consulting"
+      ],
+      "_retired": "Published 2026-10-25 as should-my-business-start-a-podcast."
     }
   ]
 }
