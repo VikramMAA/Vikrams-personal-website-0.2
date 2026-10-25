@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-141",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "how to run a discovery call",
-      "secondary_keywords": [
-        "discovery call questions",
-        "sales discovery framework",
-        "first sales call structure"
-      ],
-      "working_title": "The discovery call question that saves you four weeks",
-      "angle": "Practical. Most discovery calls are a feature demonstration wearing a questionnaire, and they end with a proposal nobody asked for. Give the actual structure: establish what changed recently that made them look now, establish who else has to agree and what that person cares about, establish the consequence of doing nothing, and only then talk about what you do. The highest-value question is about the last time they bought something similar and how that went, because it predicts the procurement path better than anything they say about budget. Cover what to do when they want a price on the call. Do not restate how-to-handle-price-objections-without-discounting (1 Sep), which is about the objection itself, nor first-90-days (6 Sep).",
-      "audience": "US consultants, agencies and B2B sales teams",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Sales",
-        "Conversion",
-        "Process"
-      ]
-    },
-    {
       "id": "b-142",
       "slot": "evening",
       "market": "US",
@@ -732,6 +711,28 @@
         "Small Business"
       ],
       "_retired": "Published 2026-10-24 as how-to-price-services-in-india, retargeted. Two of this brief's three points were already published by pricing-for-export-markets (10 Oct) and the third would have contradicted the Gong finding in how-to-handle-price-objections-without-discounting (1 Sep). Replaced with the collected-price spine and the GST segmentation insight."
+    },
+    {
+      "id": "b-141",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "how to run a discovery call",
+      "secondary_keywords": [
+        "discovery call questions",
+        "sales discovery framework",
+        "first sales call structure"
+      ],
+      "working_title": "The discovery call question that saves you four weeks",
+      "angle": "Practical. Most discovery calls are a feature demonstration wearing a questionnaire, and they end with a proposal nobody asked for. Give the actual structure: establish what changed recently that made them look now, establish who else has to agree and what that person cares about, establish the consequence of doing nothing, and only then talk about what you do. The highest-value question is about the last time they bought something similar and how that went, because it predicts the procurement path better than anything they say about budget. Cover what to do when they want a price on the call. Do not restate how-to-handle-price-objections-without-discounting (1 Sep), which is about the objection itself, nor first-90-days (6 Sep).",
+      "audience": "US consultants, agencies and B2B sales teams",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Sales",
+        "Conversion",
+        "Process"
+      ],
+      "_retired": "Published 2026-10-25 as how-to-run-a-discovery-call."
     }
   ]
 }
