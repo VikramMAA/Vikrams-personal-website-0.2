@@ -65,27 +65,6 @@
       ]
     },
     {
-      "id": "b-147",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "how to get more reviews for indian business",
-      "secondary_keywords": [
-        "google reviews india",
-        "justdial reviews",
-        "asking customers for reviews whatsapp"
-      ],
-      "working_title": "The review request that works on WhatsApp and the one that does not",
-      "angle": "Practical. The US reviews post (31 Aug) does not transfer, because the mechanics here are different: the ask happens on WhatsApp rather than by email, the customer is often on a phone with the business already open in the chat list, and the competing platform is Justdial rather than Yelp. Cover the timing of the ask relative to the service, the exact message that works versus the one that reads as a favour, why a link beats an instruction, what to do about the Justdial review ecosystem honestly, and the compliance point that incentivising reviews breaches Google's policies regardless of local norms. Reference local-seo-for-clinics-india (24 Aug) for the medical conduct restriction rather than repeating it.",
-      "audience": "Indian local business owners",
-      "city": "Bengaluru",
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Reviews",
-        "Local SEO",
-        "WhatsApp"
-      ]
-    },
-    {
       "id": "b-150",
       "slot": "morning",
       "market": "Estonia",
@@ -734,6 +713,28 @@
         "Consulting"
       ],
       "_retired": "Published 2026-10-25 as should-my-business-start-a-podcast."
+    },
+    {
+      "id": "b-147",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "how to get more reviews for indian business",
+      "secondary_keywords": [
+        "google reviews india",
+        "justdial reviews",
+        "asking customers for reviews whatsapp"
+      ],
+      "working_title": "The review request that works on WhatsApp and the one that does not",
+      "angle": "Practical. The US reviews post (31 Aug) does not transfer, because the mechanics here are different: the ask happens on WhatsApp rather than by email, the customer is often on a phone with the business already open in the chat list, and the competing platform is Justdial rather than Yelp. Cover the timing of the ask relative to the service, the exact message that works versus the one that reads as a favour, why a link beats an instruction, what to do about the Justdial review ecosystem honestly, and the compliance point that incentivising reviews breaches Google's policies regardless of local norms. Reference local-seo-for-clinics-india (24 Aug) for the medical conduct restriction rather than repeating it.",
+      "audience": "Indian local business owners",
+      "city": "Bengaluru",
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Reviews",
+        "Local SEO",
+        "WhatsApp"
+      ],
+      "_retired": "Published 2026-10-26 as how-to-get-more-reviews-indian-business."
     }
   ]
 }
