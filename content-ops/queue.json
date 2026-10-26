@@ -86,27 +86,6 @@
       ]
     },
     {
-      "id": "b-151",
-      "slot": "evening",
-      "market": "Estonia",
-      "primary_keyword": "reseller and partner channel for small market company",
-      "secondary_keywords": [
-        "channel sales strategy saas",
-        "finding resellers in new markets",
-        "partner led growth small company"
-      ],
-      "working_title": "A partner is not a shortcut to a market you have not entered",
-      "angle": "Opinion. For a company in a 1.3 million person market, the channel looks like the obvious answer to international expansion, and it usually fails for a reason worth stating: a reseller sells what is already easy to sell. Handing an unproven product to a partner outsources the hardest unsolved problem, which is working out why anybody buys, to the party least motivated to solve it. Argue the sequence: you have to win the first several customers in a market directly, painfully, in order to know what to hand over. Then cover what a partner actually needs to succeed, what exclusivity costs you, and the single question that predicts whether a channel deal works, which is whether the partner has ever sold something in this category before or merely has the relationships. Keep clear of expansion-revenue-small-market-saas (8 Oct) and the Nordic and Baltic entry posts.",
-      "audience": "Estonian B2B and SaaS founders considering channel expansion",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "SaaS",
-        "Market Entry",
-        "Sales"
-      ]
-    },
-    {
       "id": "b-136",
       "slot": "evening",
       "market": "US",
@@ -735,6 +714,28 @@
         "WhatsApp"
       ],
       "_retired": "Published 2026-10-26 as how-to-get-more-reviews-indian-business."
+    },
+    {
+      "id": "b-151",
+      "slot": "evening",
+      "market": "Estonia",
+      "primary_keyword": "reseller and partner channel for small market company",
+      "secondary_keywords": [
+        "channel sales strategy saas",
+        "finding resellers in new markets",
+        "partner led growth small company"
+      ],
+      "working_title": "A partner is not a shortcut to a market you have not entered",
+      "angle": "Opinion. For a company in a 1.3 million person market, the channel looks like the obvious answer to international expansion, and it usually fails for a reason worth stating: a reseller sells what is already easy to sell. Handing an unproven product to a partner outsources the hardest unsolved problem, which is working out why anybody buys, to the party least motivated to solve it. Argue the sequence: you have to win the first several customers in a market directly, painfully, in order to know what to hand over. Then cover what a partner actually needs to succeed, what exclusivity costs you, and the single question that predicts whether a channel deal works, which is whether the partner has ever sold something in this category before or merely has the relationships. Keep clear of expansion-revenue-small-market-saas (8 Oct) and the Nordic and Baltic entry posts.",
+      "audience": "Estonian B2B and SaaS founders considering channel expansion",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "SaaS",
+        "Market Entry",
+        "Sales"
+      ],
+      "_retired": "Published 2026-10-26 as reseller-partner-channel-small-market."
     }
   ]
 }
