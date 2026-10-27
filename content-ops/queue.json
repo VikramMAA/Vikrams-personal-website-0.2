@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-144",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "what to do when your best marketing channel stops working",
-      "secondary_keywords": [
-        "channel decline marketing",
-        "our leads dried up",
-        "marketing channel saturation"
-      ],
-      "working_title": "Your best channel did not break. It matured",
-      "angle": "Analysis. When a channel that carried a business for years softens, the instinct is to fix it, and the fix usually works for one quarter and then stops. Argue that there are three different diagnoses with the same symptom: the platform changed the rules, the channel got competitive enough that your cost caught up with everybody else's, or your own offer stopped being differentiated and the channel is simply reporting that honestly. Only the first is a marketing problem. Give the test that separates them, which is whether your competitors' cost rose too. The uncomfortable conclusion is that a saturated channel is a pricing and positioning signal arriving through a dashboard. Do not re-run do-we-need-a-rebrand (14 Oct) or the avoidance frame.",
-      "audience": "US owners watching a reliable channel soften",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Performance Marketing",
-        "Positioning",
-        "Analytics"
-      ]
-    },
-    {
       "id": "b-145",
       "slot": "morning",
       "market": "India",
@@ -737,6 +716,28 @@
         "Home Services"
       ],
       "_retired": "Published 2026-10-27 as referral-partnerships-for-small-business."
+    },
+    {
+      "id": "b-144",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "what to do when your best marketing channel stops working",
+      "secondary_keywords": [
+        "channel decline marketing",
+        "our leads dried up",
+        "marketing channel saturation"
+      ],
+      "working_title": "Your best channel did not break. It matured",
+      "angle": "Analysis. When a channel that carried a business for years softens, the instinct is to fix it, and the fix usually works for one quarter and then stops. Argue that there are three different diagnoses with the same symptom: the platform changed the rules, the channel got competitive enough that your cost caught up with everybody else's, or your own offer stopped being differentiated and the channel is simply reporting that honestly. Only the first is a marketing problem. Give the test that separates them, which is whether your competitors' cost rose too. The uncomfortable conclusion is that a saturated channel is a pricing and positioning signal arriving through a dashboard. Do not re-run do-we-need-a-rebrand (14 Oct) or the avoidance frame.",
+      "audience": "US owners watching a reliable channel soften",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Performance Marketing",
+        "Positioning",
+        "Analytics"
+      ],
+      "_retired": "Published 2026-10-27 as best-marketing-channel-stopped-working."
     }
   ]
 }
