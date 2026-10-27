@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-143",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "referral partnerships for small business",
-      "secondary_keywords": [
-        "b2b referral partners",
-        "strategic partnerships small business",
-        "how to get referrals from other businesses"
-      ],
-      "working_title": "The five businesses that already talk to your customers",
-      "angle": "Practical, and distinct from customer referrals. This is about the adjacent businesses serving the same buyer at a different moment: the accountant before the bookkeeper, the architect before the builder, the recruiter before the HR consultant. Give the method: list who touches the customer in the ninety days before they need you, work out what that person's own risk is in making a referral, and solve that rather than offering a commission. Most partnership programmes fail because they offer money to somebody whose actual currency is not looking foolish in front of their own client. Cover the one-way-first rule, the specific ask that works, and why formal reciprocal agreements usually die. Keep clear of customer-referral-program-small-business (9 Oct), which is about asking your own customers.",
-      "audience": "US service business owners",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Lead Generation",
-        "Small Business",
-        "Home Services"
-      ]
-    },
-    {
       "id": "b-144",
       "slot": "evening",
       "market": "US",
@@ -736,6 +715,28 @@
         "Sales"
       ],
       "_retired": "Published 2026-10-26 as reseller-partner-channel-small-market."
+    },
+    {
+      "id": "b-143",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "referral partnerships for small business",
+      "secondary_keywords": [
+        "b2b referral partners",
+        "strategic partnerships small business",
+        "how to get referrals from other businesses"
+      ],
+      "working_title": "The five businesses that already talk to your customers",
+      "angle": "Practical, and distinct from customer referrals. This is about the adjacent businesses serving the same buyer at a different moment: the accountant before the bookkeeper, the architect before the builder, the recruiter before the HR consultant. Give the method: list who touches the customer in the ninety days before they need you, work out what that person's own risk is in making a referral, and solve that rather than offering a commission. Most partnership programmes fail because they offer money to somebody whose actual currency is not looking foolish in front of their own client. Cover the one-way-first rule, the specific ask that works, and why formal reciprocal agreements usually die. Keep clear of customer-referral-program-small-business (9 Oct), which is about asking your own customers.",
+      "audience": "US service business owners",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Lead Generation",
+        "Small Business",
+        "Home Services"
+      ],
+      "_retired": "Published 2026-10-27 as referral-partnerships-for-small-business."
     }
   ]
 }
