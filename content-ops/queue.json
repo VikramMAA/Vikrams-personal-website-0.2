@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-145",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "regional language content marketing india",
-      "secondary_keywords": [
-        "hindi seo for business",
-        "vernacular content strategy india",
-        "should i translate my website into hindi"
-      ],
-      "working_title": "Your buyers search in Hindi and read your site in English",
-      "angle": "Practical, and a genuine gap: nothing on the site covers vernacular search at all. The point is not translation, it is that query language and reading language are different behaviours in the same person, and transliterated Hinglish queries are a third thing again. Be concrete: which business types actually see vernacular query volume and which do not, why machine translating the whole site is the wrong first move, what to do instead (the two or three pages where the decision gets made, plus the terms people actually type rather than the formal register a translator will produce), and the practical point that a Devanagari page competing against nothing can rank faster than an English page competing against everybody. Name the trap of translating the brand and jargon rather than the question.",
-      "audience": "Indian business owners outside the metro English-first bubble",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "SEO",
-        "Content Marketing",
-        "India"
-      ]
-    },
-    {
       "id": "b-150",
       "slot": "morning",
       "market": "Estonia",
@@ -738,6 +717,28 @@
         "Analytics"
       ],
       "_retired": "Published 2026-10-27 as best-marketing-channel-stopped-working."
+    },
+    {
+      "id": "b-145",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "regional language content marketing india",
+      "secondary_keywords": [
+        "hindi seo for business",
+        "vernacular content strategy india",
+        "should i translate my website into hindi"
+      ],
+      "working_title": "Your buyers search in Hindi and read your site in English",
+      "angle": "Practical, and a genuine gap: nothing on the site covers vernacular search at all. The point is not translation, it is that query language and reading language are different behaviours in the same person, and transliterated Hinglish queries are a third thing again. Be concrete: which business types actually see vernacular query volume and which do not, why machine translating the whole site is the wrong first move, what to do instead (the two or three pages where the decision gets made, plus the terms people actually type rather than the formal register a translator will produce), and the practical point that a Devanagari page competing against nothing can rank faster than an English page competing against everybody. Name the trap of translating the brand and jargon rather than the question.",
+      "audience": "Indian business owners outside the metro English-first bubble",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "SEO",
+        "Content Marketing",
+        "India"
+      ],
+      "_retired": "Published 2026-10-28 as regional-language-content-marketing-india."
     }
   ]
 }
