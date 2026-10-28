@@ -23,6 +23,237 @@
       ]
     },
     {
+      "id": "b-152",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "how to do competitor analysis for a small business",
+      "secondary_keywords": [
+        "competitor research small business",
+        "how to analyze competitors marketing",
+        "competitive analysis template"
+      ],
+      "working_title": "Most competitor analysis is a document nobody reads twice",
+      "angle": "Opinion. The standard exercise produces a grid of features and a screenshot of somebody's homepage, gets presented once and never changes a decision. Argue that useful competitor work answers exactly one question: why does a buyer choose them over us, in their words rather than ours. Which means the sources are not their website but their reviews, their lost-deal behaviour and their job ads, since a job ad is the only place a company publishes what it is about to build. Cover what to stop collecting (feature grids, social follower counts, their blog cadence) and the three things worth tracking continuously. Keep clear of win-loss-analysis-for-small-business (23 Oct), which is about interviewing buyers, and of positioning-statement-examples (12 Oct).",
+      "audience": "US founders and marketers doing this for the first time",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Strategy",
+        "Analytics",
+        "Positioning"
+      ]
+    },
+    {
+      "id": "b-154",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "how to write a proposal that wins",
+      "secondary_keywords": [
+        "consulting proposal template",
+        "what to include in a proposal",
+        "proposal structure b2b"
+      ],
+      "working_title": "The proposal is not a document, it is a transcript",
+      "angle": "Practical. Most proposals describe the seller: credentials, process, team, methodology. The ones that win read like a record of what the buyer said, in the buyer's words, with a price attached. Give the structure: their situation in their language first, the specific outcome, what is in and explicitly what is out, the price with one option rather than three tiers, and the next step with a date. Cover length honestly (shorter wins and here is why), what to do about the credentials section everybody insists on, and the single highest-value element, which is the sentence naming what you will not do. Reference how-to-run-a-discovery-call (25 Oct) as the input rather than repeating its questions, and do not rebuild should-i-put-pricing-on-my-website (15 Oct).",
+      "audience": "US consultants, agencies and B2B sellers",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Sales",
+        "Conversion",
+        "Process"
+      ]
+    },
+    {
+      "id": "b-155",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "local sponsorship marketing for small business",
+      "secondary_keywords": [
+        "youth sports sponsorship worth it",
+        "chamber of commerce membership value",
+        "community marketing local business"
+      ],
+      "working_title": "The youth baseball banner, and what it is actually buying",
+      "angle": "Practical and unsentimental. Local sponsorships get bought on obligation and sold on goodwill, and almost nobody states what they are for. Argue that there is exactly one mechanism that works, which is repeated exposure to a defined group of households who can already afford you, and that this makes the selection criteria measurable: how many of the right people see it, how often, for how long. Give the test for each common option (team kit, field banner, event booth, chamber membership, school programme) and the two that almost never pay. Cover the thing sponsors never negotiate for and should, which is the contact list or the speaking slot rather than the logo. Be fair about the genuine non-marketing reasons to do it.",
+      "audience": "US local service business owners",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Local SEO",
+        "Small Business",
+        "Branding"
+      ]
+    },
+    {
+      "id": "b-156",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "retainer vs project pricing for services",
+      "secondary_keywords": [
+        "should i charge a retainer",
+        "project vs monthly pricing",
+        "value based pricing services"
+      ],
+      "working_title": "A retainer is a promise about your calendar, not your output",
+      "angle": "Opinion from the seller's side, which is the gap: the published material is nearly all written for buyers. Argue that the retainer versus project choice is really a choice about who absorbs uncertainty, and that most firms pick the model that suits their cash flow and then discover it does not suit the work. Cover the failure mode of each honestly: retainers drift into unbounded support and die of resentment, projects end precisely when you have finally learned the client's business. Then the hybrid that actually holds, which is a defined project followed by a named smaller retainer with a stated scope of hours. Do not duplicate how-much-does-a-digital-marketing-agency-cost (27 Aug), which is the buyer's view, or how-to-price-services-in-india (24 Oct).",
+      "audience": "US agencies, consultants and freelancers setting terms",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Pricing",
+        "Agency",
+        "Process"
+      ]
+    },
+    {
+      "id": "b-157",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "festive season marketing for indian business",
+      "secondary_keywords": [
+        "diwali campaign planning",
+        "festive sale preparation d2c",
+        "post festive season slump"
+      ],
+      "working_title": "The festive fortnight is won in the week before it starts",
+      "angle": "Practical and timely, since Diwali falls on 8 November this year. The useful content is not campaign ideas, it is the operational readiness that decides whether demand converts: stock and courier cutoffs, the customer service load, the pricing decision made in advance rather than in panic, and the post-festive slump nobody plans for. Cover what to stop doing in the week before (launching anything new), the specific things to pre-write, and the honest point that festive advertising costs rise enough that for some categories the right move is to sit out the peak and take the fortnight after. Verify the Diwali date before writing. Reference the demand window noted in local-seo-for-gyms-india (20 Oct) rather than repeating it.",
+      "audience": "Indian D2C, retail and consumer service businesses",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Ecommerce",
+        "Planning",
+        "WhatsApp"
+      ]
+    },
+    {
+      "id": "b-158",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "indiamart for manufacturers lead generation",
+      "secondary_keywords": [
+        "is indiamart worth it",
+        "b2b marketplace india leads",
+        "how to get enquiries indiamart"
+      ],
+      "working_title": "What an IndiaMART lead actually is, before you buy a package",
+      "angle": "Practical, and a real gap: nothing covers B2B marketplaces for Indian manufacturers. Be concrete about the mechanism, which is that a buy-side enquiry is distributed to several sellers at once, so the channel rewards response speed over everything else and the economics only work if somebody answers within minutes. Cover what to fix on the listing, the specification detail that filters time-wasters, and the honest arithmetic of a paid package against the enquiry volume it produces. Then the strategic point: a marketplace enquiry is a price comparison by default, so the work is moving the conversation off the platform to something that is not a bidding war. Keep clear of seo-for-exporters-india (5 Oct) and do not restate the Justdial argument from how-to-get-more-reviews-indian-business (26 Oct).",
+      "audience": "Indian manufacturers, traders and industrial suppliers",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "B2B",
+        "Lead Generation",
+        "Conversion"
+      ]
+    },
+    {
+      "id": "b-159",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "cash on delivery returns d2c india",
+      "secondary_keywords": [
+        "rto rate india ecommerce",
+        "cod vs prepaid orders",
+        "reducing return to origin"
+      ],
+      "working_title": "COD is not a payment method, it is a free option you wrote for the customer",
+      "angle": "Opinion with real economics. Cash on delivery is treated as a conversion aid and it is actually an option contract the seller hands over for nothing: the customer decides at the door whether to complete the purchase, and the seller pays shipping both ways when they decline. Argue that the honest way to see return-to-origin is as the price of that option, and that most Indian D2C brands report revenue before knowing it. Cover the levers that genuinely work (partial advance, prepaid incentive, address and pin-code confirmation, holding first-time buyers to prepaid in high-RTO pin codes) and the one that does not, which is simply removing COD in a market where it still drives a large share of orders. Be careful with RTO figures and attribute or decline them.",
+      "audience": "Indian D2C founders and ecommerce operators",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Ecommerce",
+        "D2C",
+        "Conversion"
+      ]
+    },
+    {
+      "id": "b-160",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "expanding to tier 2 cities india marketing",
+      "secondary_keywords": [
+        "tier 2 tier 3 city expansion",
+        "beyond metro customers india",
+        "small city market entry india"
+      ],
+      "working_title": "Tier 2 is not a cheaper version of Bengaluru",
+      "angle": "Analysis. Brands treat tier 2 and 3 expansion as the same playbook at lower CPMs, and the lower CPM is the only thing that transfers. Argue the three genuine differences: the purchase is more often discussed with family so the decision window is longer, the trust substitute is a person rather than a brand so distribution and local presence do more work than advertising, and service expectations are set by whoever serves the town already rather than by national players. Cover what to test first and the sequencing error of advertising before you can deliver. Do not restate regional-language-content-marketing-india (28 Oct) beyond a link, and keep clear of quick-commerce-vs-d2c-india (21 Sep).",
+      "audience": "Indian brands and D2C companies planning expansion",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Market Entry",
+        "D2C",
+        "Startups"
+      ]
+    },
+    {
+      "id": "b-161",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "selling to uk customers from estonia",
+      "secondary_keywords": [
+        "selling to the uk after brexit",
+        "uk vat for eu sellers",
+        "entering the uk market from the eu"
+      ],
+      "working_title": "The UK is the nearest market that is no longer a single market",
+      "angle": "Practical, and the next entry in the market series after the Nordics, the Baltics and Germany. The UK is attractive from Estonia because of language and because it is large, and it is the one European market where the EU single market assumptions no longer hold. Cover the specifics: UK VAT registration and when it is triggered, customs and the paperwork a buyer will expect, UK GDPR and the data transfer position, and the credibility question of whether a UK buyer wants a UK entity or is content with an EU supplier. Verify current VAT thresholds and the data adequacy position at source before writing, since both have moved. Note that the EU procurement logic in selling-to-eu-public-sector-tenders (23 Oct) does not apply there.",
+      "audience": "Estonian B2B and SaaS companies looking at the UK",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Market Entry",
+        "Estonia",
+        "Compliance"
+      ]
+    },
+    {
+      "id": "b-162",
+      "slot": "evening",
+      "market": "Estonia",
+      "primary_keyword": "employer brand for small estonian company",
+      "secondary_keywords": [
+        "hiring against wise bolt pipedrive",
+        "recruitment marketing small company",
+        "attracting talent small market"
+      ],
+      "working_title": "You are hiring against four companies that pay more than you",
+      "angle": "Opinion. In a market of 1.3 million people with a handful of famous employers, a twelve-person company competing on salary loses, and most of them try anyway. Argue that the only defensible pitch is the thing the big employer structurally cannot offer: proximity to consequence, meaning the new hire's work is visible in the numbers within a quarter rather than absorbed into a platform. Be specific about how to make that credible rather than claim it, since every small company says it. Cover what to publish and where, why the careers page matters more than the job ad, and the honest limits, including that some candidates should take the bigger salary and telling them so builds more goodwill than pretending otherwise. Keep clear of first-marketing-hire-estonia (4 Oct), which is about which role to hire.",
+      "audience": "Estonian founders hiring in a tight market",
+      "city": null,
+      "expertise_link": "/expertise/content-marketing/",
+      "tags": [
+        "Hiring",
+        "Branding",
+        "Startups"
+      ]
+    },
+    {
+      "id": "b-163",
+      "slot": "evening",
+      "market": "Estonia",
+      "primary_keyword": "which conferences are worth attending estonia startup",
+      "secondary_keywords": [
+        "latitude59 worth it",
+        "slush for b2b founders",
+        "choosing which events to attend"
+      ],
+      "working_title": "Nobody has ever closed a deal at a conference",
+      "angle": "Opinion. Events get judged on atmosphere and attendance, and the question that matters is whether the people you need are there in a state where they will talk to you. Argue that a conference is a scheduling device rather than a lead source: its value is the meetings you booked in advance with people who were going to be in the city anyway, which means the work happens three weeks before the event and almost none of it happens on the floor. Cover how to decide between a local event and a large international one, what to do with the twenty minutes you get, and the honest case for sponsoring nothing and attending anyway. The US trade show post (6 Oct) argues the cost accounting side for exhibitors; this is the attendee's decision in a small market, so do not reuse its arithmetic.",
+      "audience": "Estonian founders deciding where to spend an event budget",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Sales",
+        "Startups",
+        "Consulting"
+      ]
+    },
+    {
       "id": "b-136",
       "slot": "evening",
       "market": "US",
@@ -739,6 +970,28 @@
         "India"
       ],
       "_retired": "Published 2026-10-28 as regional-language-content-marketing-india."
+    },
+    {
+      "id": "b-153",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "client concentration risk small business",
+      "secondary_keywords": [
+        "one client too much revenue",
+        "what happens when your biggest client leaves",
+        "customer concentration"
+      ],
+      "working_title": "The client paying for half your year is not a client, it is an employer",
+      "angle": "Opinion, and genuinely uncomfortable. When one account is a large share of revenue, the relationship inverts: you stop being a supplier with a position and start being a department that can be closed. Argue the effects that show up long before the client leaves, which is the part nobody discusses: you stop raising prices, you accept scope you would refuse, you deprioritise business development precisely because you are busy, and the busyness is what prevents the diversification. Give the number worth watching and the honest sequence for reducing it, including that the only reliable way out is to use the concentrated client's cash to fund the search for the next three. Do not restate why-marketing-agencies-lose-clients (21 Oct), which is about why accounts leave.",
+      "audience": "US agency, consultancy and service business owners",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Retention",
+        "Consulting",
+        "Budgeting"
+      ],
+      "_retired": "Published 2026-10-28 as client-concentration-risk-small-business."
     }
   ]
 }
