@@ -44,27 +44,6 @@
       ]
     },
     {
-      "id": "b-154",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "how to write a proposal that wins",
-      "secondary_keywords": [
-        "consulting proposal template",
-        "what to include in a proposal",
-        "proposal structure b2b"
-      ],
-      "working_title": "The proposal is not a document, it is a transcript",
-      "angle": "Practical. Most proposals describe the seller: credentials, process, team, methodology. The ones that win read like a record of what the buyer said, in the buyer's words, with a price attached. Give the structure: their situation in their language first, the specific outcome, what is in and explicitly what is out, the price with one option rather than three tiers, and the next step with a date. Cover length honestly (shorter wins and here is why), what to do about the credentials section everybody insists on, and the single highest-value element, which is the sentence naming what you will not do. Reference how-to-run-a-discovery-call (25 Oct) as the input rather than repeating its questions, and do not rebuild should-i-put-pricing-on-my-website (15 Oct).",
-      "audience": "US consultants, agencies and B2B sellers",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "Sales",
-        "Conversion",
-        "Process"
-      ]
-    },
-    {
       "id": "b-155",
       "slot": "morning",
       "market": "US",
@@ -992,6 +971,28 @@
         "Budgeting"
       ],
       "_retired": "Published 2026-10-28 as client-concentration-risk-small-business."
+    },
+    {
+      "id": "b-154",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "how to write a proposal that wins",
+      "secondary_keywords": [
+        "consulting proposal template",
+        "what to include in a proposal",
+        "proposal structure b2b"
+      ],
+      "working_title": "The proposal is not a document, it is a transcript",
+      "angle": "Practical. Most proposals describe the seller: credentials, process, team, methodology. The ones that win read like a record of what the buyer said, in the buyer's words, with a price attached. Give the structure: their situation in their language first, the specific outcome, what is in and explicitly what is out, the price with one option rather than three tiers, and the next step with a date. Cover length honestly (shorter wins and here is why), what to do about the credentials section everybody insists on, and the single highest-value element, which is the sentence naming what you will not do. Reference how-to-run-a-discovery-call (25 Oct) as the input rather than repeating its questions, and do not rebuild should-i-put-pricing-on-my-website (15 Oct).",
+      "audience": "US consultants, agencies and B2B sellers",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Sales",
+        "Conversion",
+        "Process"
+      ],
+      "_retired": "Published 2026-10-29 as how-to-write-a-proposal-that-wins."
     }
   ]
 }
