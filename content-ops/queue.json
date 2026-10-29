@@ -149,27 +149,6 @@
       ]
     },
     {
-      "id": "b-160",
-      "slot": "evening",
-      "market": "India",
-      "primary_keyword": "expanding to tier 2 cities india marketing",
-      "secondary_keywords": [
-        "tier 2 tier 3 city expansion",
-        "beyond metro customers india",
-        "small city market entry india"
-      ],
-      "working_title": "Tier 2 is not a cheaper version of Bengaluru",
-      "angle": "Analysis. Brands treat tier 2 and 3 expansion as the same playbook at lower CPMs, and the lower CPM is the only thing that transfers. Argue the three genuine differences: the purchase is more often discussed with family so the decision window is longer, the trust substitute is a person rather than a brand so distribution and local presence do more work than advertising, and service expectations are set by whoever serves the town already rather than by national players. Cover what to test first and the sequencing error of advertising before you can deliver. Do not restate regional-language-content-marketing-india (28 Oct) beyond a link, and keep clear of quick-commerce-vs-d2c-india (21 Sep).",
-      "audience": "Indian brands and D2C companies planning expansion",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Market Entry",
-        "D2C",
-        "Startups"
-      ]
-    },
-    {
       "id": "b-161",
       "slot": "morning",
       "market": "Estonia",
@@ -993,6 +972,28 @@
         "Process"
       ],
       "_retired": "Published 2026-10-29 as how-to-write-a-proposal-that-wins."
+    },
+    {
+      "id": "b-160",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "expanding to tier 2 cities india marketing",
+      "secondary_keywords": [
+        "tier 2 tier 3 city expansion",
+        "beyond metro customers india",
+        "small city market entry india"
+      ],
+      "working_title": "Tier 2 is not a cheaper version of Bengaluru",
+      "angle": "Analysis. Brands treat tier 2 and 3 expansion as the same playbook at lower CPMs, and the lower CPM is the only thing that transfers. Argue the three genuine differences: the purchase is more often discussed with family so the decision window is longer, the trust substitute is a person rather than a brand so distribution and local presence do more work than advertising, and service expectations are set by whoever serves the town already rather than by national players. Cover what to test first and the sequencing error of advertising before you can deliver. Do not restate regional-language-content-marketing-india (28 Oct) beyond a link, and keep clear of quick-commerce-vs-d2c-india (21 Sep).",
+      "audience": "Indian brands and D2C companies planning expansion",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Market Entry",
+        "D2C",
+        "Startups"
+      ],
+      "_retired": "Published 2026-10-29 as expanding-to-tier-2-cities-india."
     }
   ]
 }
