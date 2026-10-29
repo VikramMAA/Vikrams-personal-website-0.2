@@ -255,9 +255,15 @@ not exist in `public/images/`.
 ## 7. Check it
 
 ```bash
-python3 content-ops/scripts/lint_article.py src/content/blog/<slug>.md
+python3 content-ops/scripts/lint_article.py src/content/blog/<slug>.md --market <market>
 npm run build
 ```
+
+**Pass `--market`, with the market from the brief.** Without it the linter
+cannot check the spelling variant or the currency, and it will say so in a
+warning that is easy to read past. This is the rule that gets broken most
+often in practice: British spellings in US posts have blocked four drafts in a
+week, and every one of them would have shipped on a run that forgot the flag.
 
 The linter exiting non-zero means do not publish. Fix and run it again. The
 build must pass with no errors. A broken build means Netlify serves the last
