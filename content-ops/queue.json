@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-150",
-      "slot": "morning",
-      "market": "Estonia",
-      "primary_keyword": "writing english website copy as a non native speaker",
-      "secondary_keywords": [
-        "english copy for estonian company",
-        "should we hire a native english copywriter",
-        "b2b english writing mistakes"
-      ],
-      "working_title": "Your English is fine. Your register is the problem",
-      "angle": "Practical and unusually specific. Estonian companies write in English and the failures are not grammatical, which is why proofreading does not fix them. The real tells: formality calibrated too high because business English was learned from documents rather than conversation, abstract nouns where a verb belongs, feature lists in place of a claim, and translated idiom that lands oddly. Give the concrete repairs, including the read-aloud test, the one-sentence claim test, and the specific instruction to write the way you would explain it to a colleague rather than the way you would write a tender. Cover when to hire a native speaker and what to hire them for, which is editing and headline work rather than volume. Be careful to be useful rather than condescending; the premise is that the writing is competent and underperforming.",
-      "audience": "Estonian founders and marketers writing their own English copy",
-      "city": null,
-      "expertise_link": "/expertise/content-marketing/",
-      "tags": [
-        "Content Marketing",
-        "Estonia",
-        "Conversion"
-      ]
-    },
-    {
       "id": "b-152",
       "slot": "evening",
       "market": "US",
@@ -994,6 +973,28 @@
         "Startups"
       ],
       "_retired": "Published 2026-10-29 as expanding-to-tier-2-cities-india."
+    },
+    {
+      "id": "b-150",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "writing english website copy as a non native speaker",
+      "secondary_keywords": [
+        "english copy for estonian company",
+        "should we hire a native english copywriter",
+        "b2b english writing mistakes"
+      ],
+      "working_title": "Your English is fine. Your register is the problem",
+      "angle": "Practical and unusually specific. Estonian companies write in English and the failures are not grammatical, which is why proofreading does not fix them. The real tells: formality calibrated too high because business English was learned from documents rather than conversation, abstract nouns where a verb belongs, feature lists in place of a claim, and translated idiom that lands oddly. Give the concrete repairs, including the read-aloud test, the one-sentence claim test, and the specific instruction to write the way you would explain it to a colleague rather than the way you would write a tender. Cover when to hire a native speaker and what to hire them for, which is editing and headline work rather than volume. Be careful to be useful rather than condescending; the premise is that the writing is competent and underperforming.",
+      "audience": "Estonian founders and marketers writing their own English copy",
+      "city": null,
+      "expertise_link": "/expertise/content-marketing/",
+      "tags": [
+        "Content Marketing",
+        "Estonia",
+        "Conversion"
+      ],
+      "_retired": "Published 2026-10-30 as english-website-copy-non-native-speaker."
     }
   ]
 }
