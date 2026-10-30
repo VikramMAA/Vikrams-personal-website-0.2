@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-152",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "how to do competitor analysis for a small business",
-      "secondary_keywords": [
-        "competitor research small business",
-        "how to analyze competitors marketing",
-        "competitive analysis template"
-      ],
-      "working_title": "Most competitor analysis is a document nobody reads twice",
-      "angle": "Opinion. The standard exercise produces a grid of features and a screenshot of somebody's homepage, gets presented once and never changes a decision. Argue that useful competitor work answers exactly one question: why does a buyer choose them over us, in their words rather than ours. Which means the sources are not their website but their reviews, their lost-deal behaviour and their job ads, since a job ad is the only place a company publishes what it is about to build. Cover what to stop collecting (feature grids, social follower counts, their blog cadence) and the three things worth tracking continuously. Keep clear of win-loss-analysis-for-small-business (23 Oct), which is about interviewing buyers, and of positioning-statement-examples (12 Oct).",
-      "audience": "US founders and marketers doing this for the first time",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Strategy",
-        "Analytics",
-        "Positioning"
-      ]
-    },
-    {
       "id": "b-155",
       "slot": "morning",
       "market": "US",
@@ -995,6 +974,28 @@
         "Conversion"
       ],
       "_retired": "Published 2026-10-30 as english-website-copy-non-native-speaker."
+    },
+    {
+      "id": "b-152",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "how to do competitor analysis for a small business",
+      "secondary_keywords": [
+        "competitor research small business",
+        "how to analyze competitors marketing",
+        "competitive analysis template"
+      ],
+      "working_title": "Most competitor analysis is a document nobody reads twice",
+      "angle": "Opinion. The standard exercise produces a grid of features and a screenshot of somebody's homepage, gets presented once and never changes a decision. Argue that useful competitor work answers exactly one question: why does a buyer choose them over us, in their words rather than ours. Which means the sources are not their website but their reviews, their lost-deal behaviour and their job ads, since a job ad is the only place a company publishes what it is about to build. Cover what to stop collecting (feature grids, social follower counts, their blog cadence) and the three things worth tracking continuously. Keep clear of win-loss-analysis-for-small-business (23 Oct), which is about interviewing buyers, and of positioning-statement-examples (12 Oct).",
+      "audience": "US founders and marketers doing this for the first time",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Strategy",
+        "Analytics",
+        "Positioning"
+      ],
+      "_retired": "Published 2026-10-30 as competitor-analysis-for-small-business."
     }
   ]
 }
