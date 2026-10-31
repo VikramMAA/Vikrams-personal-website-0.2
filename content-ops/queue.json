@@ -128,6 +128,195 @@
       ]
     },
     {
+      "id": "b-164",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "how to write a service page",
+      "secondary_keywords": [
+        "service page examples",
+        "service page seo",
+        "landing page vs service page"
+      ],
+      "working_title": "A service page has one job and most of them do a different one",
+      "angle": "Practical. Most small business service pages are a paragraph of history, a stock photo and a list of adjectives, and they rank for nothing because they never name the thing a buyer types. Give the structure that works: the service named the way buyers name it in the H1, who it is for and who it is not, what happens in what order, what it costs or the honest reason there is no number, the objection handled in a sentence, proof, and one next step. Be specific about the two failure modes, a page that is really an About page and a page that tries to serve three services at once. Include the test of reading only the first screen. Do not repeat the conversion-rate material in the landing page post, which is India and about traffic that already arrived; this is about the page a searcher lands on from a service query.",
+      "audience": "US small business owners and in-house marketers",
+      "city": "Charlotte",
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "SEO",
+        "Conversion",
+        "Copywriting"
+      ]
+    },
+    {
+      "id": "b-165",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "google ads account audit checklist",
+      "secondary_keywords": [
+        "inherited google ads account",
+        "google ads cleanup",
+        "wasted google ads spend"
+      ],
+      "working_title": "The first hour in a Google Ads account you did not build",
+      "angle": "Practical and ordered. You have taken over an account from an agency or a predecessor and have no documentation. Give the sequence that finds the money fastest: search terms report before anything else, then conversion actions and what is actually counted as one (double counting, form views, phone calls under 10 seconds), then match types and the broad campaign nobody noticed, then automated recommendations that got auto-applied, then audiences and locations including the presence setting that serves people merely interested in the area, then budgets against actual spend. Say what you do not touch in the first week and why. One concrete number from experience framed as a range, no invented percentages. Link the SEO audit post as the sibling, do not repeat it.",
+      "audience": "US business owners and marketers who inherited an ad account",
+      "city": "Denver",
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Google Ads",
+        "Paid Media",
+        "Auditing"
+      ]
+    },
+    {
+      "id": "b-166",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "monthly marketing report for clients",
+      "secondary_keywords": [
+        "marketing reporting template",
+        "what to include in a marketing report",
+        "marketing dashboard"
+      ],
+      "working_title": "The monthly report is a document about the agency, not the business",
+      "angle": "Opinion with a point of view, and a criticism of the practice rather than of any firm. Most monthly marketing reports exist to prove effort, which is why they are long, metric-dense and never produce a decision. Argue the test: a report should be unreadable without a decision attached, and if nothing in it could change what happens next month it is a timesheet with charts. Make the positive case for three numbers and one paragraph: what we expected, what happened, what we are changing. Cover why impressions and rankings survive in reports (they move, they look like progress, and they are not the business), and why the honest version occasionally has to say the month was bad. Be fair to the agency side: clients ask for the long version, and a report that admits a bad month is only safe where the relationship allows it, which is the real problem.",
+      "audience": "US business owners who receive marketing reports, and marketers who write them",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Analytics",
+        "Agency",
+        "Measurement"
+      ]
+    },
+    {
+      "id": "b-167",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "brand awareness vs lead generation",
+      "secondary_keywords": [
+        "is brand awareness worth it small business",
+        "brand awareness goals",
+        "measuring brand awareness"
+      ],
+      "working_title": "Brand awareness is a real thing and a terrible goal",
+      "angle": "Opinion. Awareness is not fake, it is just not actionable at small-business scale, because the mechanism that makes it pay needs a reach and a repetition budget most firms do not have, and the measurement needs a baseline survey nobody runs. Argue the distinction that matters: awareness among a defined group you can name is a sellable objective, awareness in general is a budget with no owner. Give the one honest version of the small-business awareness play, which is depth in a narrow audience rather than breadth, and the three metrics that are proxies worth having (branded search volume, direct traffic, how often the buyer names you unprompted on a call). Be careful with statistics, the 95-5 rule and share-of-voice literature are frequently misquoted, so attribute precisely or decline. Do not turn it into an attack on brand work, the point is that a goal needs a decision rule attached.",
+      "audience": "US small business owners being pitched awareness campaigns",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Strategy",
+        "Branding",
+        "Measurement"
+      ]
+    },
+    {
+      "id": "b-168",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "track whatsapp leads from website",
+      "secondary_keywords": [
+        "whatsapp click to chat tracking",
+        "whatsapp business api lead source",
+        "measuring whatsapp enquiries"
+      ],
+      "working_title": "Your best channel is the one you cannot see in any dashboard",
+      "angle": "Practical, and genuinely useful because this is the gap in most Indian setups. Most enquiries finish on WhatsApp and nothing attributes them, so paid campaigns get judged on form fills while the real pipeline is invisible. Walk through what actually works: a click-to-chat link per page or per campaign with a prefilled message that carries the source, GA4 event on the click, UTM carried into the prefill, and for higher volume the WhatsApp Business API with a referral payload from click-to-WhatsApp ads. Be honest about the limits, that the prefilled message is editable and the match is probabilistic rather than exact, and that a lightweight naming convention in the chat itself beats a half-configured tool. Link the GA4 conversions post for the tracking fundamentals and the WhatsApp post for the selling behaviour, repeat neither.",
+      "audience": "Indian small business owners and marketers whose sales happen on WhatsApp",
+      "city": "Bengaluru",
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "WhatsApp",
+        "Analytics",
+        "Lead Generation"
+      ]
+    },
+    {
+      "id": "b-169",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "hiring a content writer india",
+      "secondary_keywords": [
+        "content writer rates india",
+        "freelance content writer cost",
+        "how to test a content writer"
+      ],
+      "working_title": "Hire for the one thing you cannot teach in a week",
+      "angle": "Practical. Founders hire content writers on portfolio and price and then discover the writing is fluent and empty. Argue that fluency is abundant and now close to free, so the thing to test for is whether the writer can get a fact out of a person, which is the skill that survives. Give the hiring test: a paid 500-word trial on your own subject with one 20-minute call to a person in your business, judged on what they asked rather than how it reads. Be specific about rate bands as ranges from the market rather than invented precision, and about the brief being the employer's job, with what a usable brief contains. Cover the structural choice between one writer who learns the category and a cheaper rotating bench. Do not repeat the first-marketing-hire post, which is about the role and sequencing; this is about one hire and how to test them.",
+      "audience": "Indian founders and marketing leads hiring their first writer",
+      "city": "Pune",
+      "expertise_link": "/expertise/content-marketing/",
+      "tags": [
+        "Content Marketing",
+        "Hiring",
+        "Process"
+      ]
+    },
+    {
+      "id": "b-170",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "micro influencer marketing india small brand",
+      "secondary_keywords": [
+        "nano influencer cost india",
+        "influencer marketing worth it",
+        "barter collaboration india"
+      ],
+      "working_title": "You are not buying reach, you are renting somebody's judgment",
+      "angle": "Opinion with economics. Small Indian brands buy influencer posts as cheap reach and get nothing, because reach is the one thing an influencer sells that is worth least and is easiest to fake. Argue that what you are actually paying for is a borrowed act of judgment in front of an audience that trusts it, which means the only question that matters is whether this person's audience believes they turn work down. Follow the consequences: category fit beats follower count, a creator who posts a weekly recommendation has already spent the trust, barter works where the product is the story and insults the creator where it is not, and a single post is almost always a waste because one exposure does nothing. Be careful with statistics, influencer marketing figures in India are mostly agency marketing, so attribute or decline. Mention the ASCI disclosure requirement factually without turning the post into a compliance piece.",
+      "audience": "Indian D2C and small brand founders considering creator spend",
+      "city": "Mumbai",
+      "expertise_link": "/expertise/social-media-marketing/",
+      "tags": [
+        "Social Media",
+        "D2C",
+        "Influencer Marketing"
+      ]
+    },
+    {
+      "id": "b-171",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "which eu market to expand to next",
+      "secondary_keywords": [
+        "eu market entry prioritisation",
+        "choosing an export market",
+        "market selection criteria b2b"
+      ],
+      "working_title": "Pick the next market on evidence you already have, not on market size",
+      "angle": "Practical, and it sits above the country posts rather than repeating them. Estonian founders choose the next market by population or by who speaks at a conference, and then spend a year finding out the buying process is different. Give the selection method: start from the customers you already have outside Estonia, because unplanned demand is the strongest signal available, then score candidates on five things that actually predict cost to enter (language of the buying process, whether your category buys on tender or on relationship, payment and invoicing expectations, whether your existing references transfer, and whether one person can cover it by plane in a day). Make the point that a smaller market where your references carry beats a larger one where they do not. Link the Germany, Baltics and Nordics posts as the worked examples and do not restate them.",
+      "audience": "Estonian founders planning their next export market",
+      "city": "Tallinn",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Market Entry",
+        "Estonia",
+        "Strategy"
+      ]
+    },
+    {
+      "id": "b-172",
+      "slot": "evening",
+      "market": "Estonia",
+      "primary_keyword": "b2b cold email gdpr eu legal",
+      "secondary_keywords": [
+        "is cold email legal in the eu",
+        "gdpr legitimate interest outbound",
+        "cold outreach europe rules"
+      ],
+      "working_title": "Cold email in the EU is legal and most of what people send is not",
+      "angle": "Opinion grounded in primary sources. The received wisdom is that GDPR killed outbound in Europe, and it did not: B2B contact under legitimate interest is lawful and the real constraints are narrower and more specific than the folklore. Verify at source before writing: GDPR Article 6(1)(f) and Article 14 on information to be provided when data was not obtained from the subject, Article 21 on objection, the ePrivacy Directive's treatment of unsolicited electronic mail and the fact that member states differ on whether B2B is in scope, and the Estonian Electronic Communications Act position. Then argue the practical consequence: the compliance work is mostly disclosure and suppression rather than consent, and the thing that actually gets companies in trouble is scraped volume, not outreach. Say plainly where the uncertainty sits and that this is not legal advice. Link the deliverability post for the technical setup and do not repeat it.",
+      "audience": "Estonian B2B founders and sales leads doing outbound into the EU",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Outbound",
+        "Compliance",
+        "Estonia"
+      ]
+    },
+    {
       "id": "b-136",
       "slot": "evening",
       "market": "US",
