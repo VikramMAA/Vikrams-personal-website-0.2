@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-155",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "local sponsorship marketing for small business",
-      "secondary_keywords": [
-        "youth sports sponsorship worth it",
-        "chamber of commerce membership value",
-        "community marketing local business"
-      ],
-      "working_title": "The youth baseball banner, and what it is actually buying",
-      "angle": "Practical and unsentimental. Local sponsorships get bought on obligation and sold on goodwill, and almost nobody states what they are for. Argue that there is exactly one mechanism that works, which is repeated exposure to a defined group of households who can already afford you, and that this makes the selection criteria measurable: how many of the right people see it, how often, for how long. Give the test for each common option (team kit, field banner, event booth, chamber membership, school programme) and the two that almost never pay. Cover the thing sponsors never negotiate for and should, which is the contact list or the speaking slot rather than the logo. Be fair about the genuine non-marketing reasons to do it.",
-      "audience": "US local service business owners",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Local SEO",
-        "Small Business",
-        "Branding"
-      ]
-    },
-    {
       "id": "b-156",
       "slot": "evening",
       "market": "US",
@@ -996,6 +975,28 @@
         "Positioning"
       ],
       "_retired": "Published 2026-10-30 as competitor-analysis-for-small-business."
+    },
+    {
+      "id": "b-155",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "local sponsorship marketing for small business",
+      "secondary_keywords": [
+        "youth sports sponsorship worth it",
+        "chamber of commerce membership value",
+        "community marketing local business"
+      ],
+      "working_title": "The youth baseball banner, and what it is actually buying",
+      "angle": "Practical and unsentimental. Local sponsorships get bought on obligation and sold on goodwill, and almost nobody states what they are for. Argue that there is exactly one mechanism that works, which is repeated exposure to a defined group of households who can already afford you, and that this makes the selection criteria measurable: how many of the right people see it, how often, for how long. Give the test for each common option (team kit, field banner, event booth, chamber membership, school programme) and the two that almost never pay. Cover the thing sponsors never negotiate for and should, which is the contact list or the speaking slot rather than the logo. Be fair about the genuine non-marketing reasons to do it.",
+      "audience": "US local service business owners",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Local SEO",
+        "Small Business",
+        "Branding"
+      ],
+      "_retired": "Published 2026-10-31 as local-sponsorship-marketing-small-business."
     }
   ]
 }
