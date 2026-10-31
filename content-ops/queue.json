@@ -65,27 +65,6 @@
       ]
     },
     {
-      "id": "b-159",
-      "slot": "evening",
-      "market": "India",
-      "primary_keyword": "cash on delivery returns d2c india",
-      "secondary_keywords": [
-        "rto rate india ecommerce",
-        "cod vs prepaid orders",
-        "reducing return to origin"
-      ],
-      "working_title": "COD is not a payment method, it is a free option you wrote for the customer",
-      "angle": "Opinion with real economics. Cash on delivery is treated as a conversion aid and it is actually an option contract the seller hands over for nothing: the customer decides at the door whether to complete the purchase, and the seller pays shipping both ways when they decline. Argue that the honest way to see return-to-origin is as the price of that option, and that most Indian D2C brands report revenue before knowing it. Cover the levers that genuinely work (partial advance, prepaid incentive, address and pin-code confirmation, holding first-time buyers to prepaid in high-RTO pin codes) and the one that does not, which is simply removing COD in a market where it still drives a large share of orders. Be careful with RTO figures and attribute or decline them.",
-      "audience": "Indian D2C founders and ecommerce operators",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Ecommerce",
-        "D2C",
-        "Conversion"
-      ]
-    },
-    {
       "id": "b-161",
       "slot": "morning",
       "market": "Estonia",
@@ -997,6 +976,11 @@
         "Branding"
       ],
       "_retired": "Published 2026-10-31 as local-sponsorship-marketing-small-business."
+    },
+    {
+      "id": "b-159",
+      "retired_at": "2026-10-31",
+      "published_slug": "cash-on-delivery-returns-d2c-india"
     }
   ]
 }
