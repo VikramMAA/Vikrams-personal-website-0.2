@@ -149,27 +149,6 @@
       ]
     },
     {
-      "id": "b-165",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "google ads account audit checklist",
-      "secondary_keywords": [
-        "inherited google ads account",
-        "google ads cleanup",
-        "wasted google ads spend"
-      ],
-      "working_title": "The first hour in a Google Ads account you did not build",
-      "angle": "Practical and ordered. You have taken over an account from an agency or a predecessor and have no documentation. Give the sequence that finds the money fastest: search terms report before anything else, then conversion actions and what is actually counted as one (double counting, form views, phone calls under 10 seconds), then match types and the broad campaign nobody noticed, then automated recommendations that got auto-applied, then audiences and locations including the presence setting that serves people merely interested in the area, then budgets against actual spend. Say what you do not touch in the first week and why. One concrete number from experience framed as a range, no invented percentages. Link the SEO audit post as the sibling, do not repeat it.",
-      "audience": "US business owners and marketers who inherited an ad account",
-      "city": "Denver",
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Google Ads",
-        "Paid Media",
-        "Auditing"
-      ]
-    },
-    {
       "id": "b-166",
       "slot": "evening",
       "market": "US",
@@ -1170,6 +1149,11 @@
       "id": "b-159",
       "retired_at": "2026-10-31",
       "published_slug": "cash-on-delivery-returns-d2c-india"
+    },
+    {
+      "id": "b-165",
+      "retired_at": "2026-11-01",
+      "published_slug": "inherited-google-ads-account-audit"
     }
   ]
 }
