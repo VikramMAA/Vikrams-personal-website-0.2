@@ -397,15 +397,19 @@ const AVAILABILITY = [
 const BAD_TAGS = ["opentowork","openforwork","hireme","availableforwork","forhire",
   "jobsearch","freelancer","freelance","consultantforhire","letsconnect","dmforenquiries","dmme"];
 
-const TELLS = ["here's the thing:","let that sink in","read that again","i'll wait",
+const TELLS = ["here's the thing:","let that sink in","read that again",
   "unpopular opinion:","hot take:","the result?","agree?","thoughts?","am i wrong?",
   "comment yes","repost if","save this post","follow me for","link below"];
 
 // "who else" as a literal blocked ordinary description ("who else was in the
-// running"). The tell is the bait form, which lives inside a question. Mirrors
-// TELL_CONSTRUCTIONS in lint_snippet.py.
+// running"). The tell is the bait form, which lives inside a question. The wait
+// line has the same problem from the other direction: its apostrophe-free
+// spelling sits inside "will wait" and "still waiting", so the pronoun needs a
+// word boundary in front of it. Mirrors TELL_CONSTRUCTIONS in lint_snippet.py.
 const TELL_CONSTRUCTIONS = [
-  [/\bwho else\b(?=[^.!?]*\?)/g, 'the "who else" bait question']
+  [/\bwho else\b(?=[^.!?]*\?)/g, 'the "who else" bait question'],
+  [/\bi'?ll wait\b/g, 'the "I\'ll wait" bait line'],
+  [/\bi will wait\s*[.!]/g, 'the "I\'ll wait" bait line, spelled out']
 ];
 
 const BANNED = ["in today's digital age","ever-evolving","ever evolving","delve into","delving",

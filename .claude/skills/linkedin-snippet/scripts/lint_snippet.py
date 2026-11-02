@@ -84,7 +84,7 @@ BANNED_HASHTAGS = [
 # LinkedIn's own tells, on top of the site-wide list.
 LINKEDIN_TELLS = [
     "here's the thing:", "heres the thing:", "let that sink in", "read that again",
-    "i'll wait", "ill wait", "unpopular opinion:", "hot take:", "the result?",
+    "unpopular opinion:", "hot take:", "the result?",
     "agree?", "thoughts?", "am i wrong?", "comment yes",
     "repost if", "save this post", "follow me for", "link below",
 ]
@@ -96,8 +96,18 @@ LINKEDIN_TELLS = [
 # frees the description. Unlike the availability rules, a style check should err
 # toward precision: a false positive here costs a good sentence, a false negative
 # costs a slightly worse post.
+#
+# "ill wait" was on that list too, as the apostrophe-free spelling of the bait
+# line. As a bare substring it also sits inside "will wait" and "still waiting",
+# so it blocked "they will wait again in January". The pronoun has to stand on
+# its own, and \b does that: in "will wait" the i is preceded by a word
+# character, so the boundary fails. '?  covers both spellings. The expanded
+# "I will wait" is the same bait, but only where it ends the sentence: "I will
+# wait for the courier to confirm" is ordinary first-person future.
 TELL_CONSTRUCTIONS = [
     (r"\bwho else\b(?=[^.!?]*\?)", 'the "who else" bait question'),
+    (r"\bi'?ll wait\b", 'the "I\'ll wait" bait line'),
+    (r"\bi will wait\s*[.!]", 'the "I\'ll wait" bait line, spelled out'),
 ]
 
 FALLBACK_BANNED = [
