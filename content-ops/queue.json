@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-157",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "festive season marketing for indian business",
-      "secondary_keywords": [
-        "diwali campaign planning",
-        "festive sale preparation d2c",
-        "post festive season slump"
-      ],
-      "working_title": "The festive fortnight is won in the week before it starts",
-      "angle": "Practical and timely, since Diwali falls on 8 November this year. The useful content is not campaign ideas, it is the operational readiness that decides whether demand converts: stock and courier cutoffs, the customer service load, the pricing decision made in advance rather than in panic, and the post-festive slump nobody plans for. Cover what to stop doing in the week before (launching anything new), the specific things to pre-write, and the honest point that festive advertising costs rise enough that for some categories the right move is to sit out the peak and take the fortnight after. Verify the Diwali date before writing. Reference the demand window noted in local-seo-for-gyms-india (20 Oct) rather than repeating it.",
-      "audience": "Indian D2C, retail and consumer service businesses",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Ecommerce",
-        "Planning",
-        "WhatsApp"
-      ]
-    },
-    {
       "id": "b-158",
       "slot": "morning",
       "market": "India",
@@ -1138,6 +1117,11 @@
       "id": "b-156",
       "retired_at": "2026-11-01",
       "published_slug": "retainer-vs-project-pricing"
+    },
+    {
+      "id": "b-157",
+      "retired_at": "2026-11-02",
+      "published_slug": "festive-season-marketing-india"
     }
   ]
 }
