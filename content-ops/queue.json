@@ -44,27 +44,6 @@
       ]
     },
     {
-      "id": "b-162",
-      "slot": "evening",
-      "market": "Estonia",
-      "primary_keyword": "employer brand for small estonian company",
-      "secondary_keywords": [
-        "hiring against wise bolt pipedrive",
-        "recruitment marketing small company",
-        "attracting talent small market"
-      ],
-      "working_title": "You are hiring against four companies that pay more than you",
-      "angle": "Opinion. In a market of 1.3 million people with a handful of famous employers, a twelve-person company competing on salary loses, and most of them try anyway. Argue that the only defensible pitch is the thing the big employer structurally cannot offer: proximity to consequence, meaning the new hire's work is visible in the numbers within a quarter rather than absorbed into a platform. Be specific about how to make that credible rather than claim it, since every small company says it. Cover what to publish and where, why the careers page matters more than the job ad, and the honest limits, including that some candidates should take the bigger salary and telling them so builds more goodwill than pretending otherwise. Keep clear of first-marketing-hire-estonia (4 Oct), which is about which role to hire.",
-      "audience": "Estonian founders hiring in a tight market",
-      "city": null,
-      "expertise_link": "/expertise/content-marketing/",
-      "tags": [
-        "Hiring",
-        "Branding",
-        "Startups"
-      ]
-    },
-    {
       "id": "b-163",
       "slot": "evening",
       "market": "Estonia",
@@ -1122,6 +1101,11 @@
       "id": "b-157",
       "retired_at": "2026-11-02",
       "published_slug": "festive-season-marketing-india"
+    },
+    {
+      "id": "b-162",
+      "retired_at": "2026-11-02",
+      "published_slug": "employer-brand-small-estonian-company"
     }
   ]
 }
