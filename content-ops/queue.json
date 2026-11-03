@@ -65,27 +65,6 @@
       ]
     },
     {
-      "id": "b-166",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "monthly marketing report for clients",
-      "secondary_keywords": [
-        "marketing reporting template",
-        "what to include in a marketing report",
-        "marketing dashboard"
-      ],
-      "working_title": "The monthly report is a document about the agency, not the business",
-      "angle": "Opinion with a point of view, and a criticism of the practice rather than of any firm. Most monthly marketing reports exist to prove effort, which is why they are long, metric-dense and never produce a decision. Argue the test: a report should be unreadable without a decision attached, and if nothing in it could change what happens next month it is a timesheet with charts. Make the positive case for three numbers and one paragraph: what we expected, what happened, what we are changing. Cover why impressions and rankings survive in reports (they move, they look like progress, and they are not the business), and why the honest version occasionally has to say the month was bad. Be fair to the agency side: clients ask for the long version, and a report that admits a bad month is only safe where the relationship allows it, which is the real problem.",
-      "audience": "US business owners who receive marketing reports, and marketers who write them",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Analytics",
-        "Agency",
-        "Measurement"
-      ]
-    },
-    {
       "id": "b-167",
       "slot": "evening",
       "market": "US",
@@ -1090,6 +1069,11 @@
       "id": "b-164",
       "retired_at": "2026-11-03",
       "published_slug": "how-to-write-a-service-page"
+    },
+    {
+      "id": "b-166",
+      "retired_at": "2026-11-03",
+      "published_slug": "monthly-marketing-report"
     }
   ]
 }
