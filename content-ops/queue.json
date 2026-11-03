@@ -65,27 +65,6 @@
       ]
     },
     {
-      "id": "b-164",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "how to write a service page",
-      "secondary_keywords": [
-        "service page examples",
-        "service page seo",
-        "landing page vs service page"
-      ],
-      "working_title": "A service page has one job and most of them do a different one",
-      "angle": "Practical. Most small business service pages are a paragraph of history, a stock photo and a list of adjectives, and they rank for nothing because they never name the thing a buyer types. Give the structure that works: the service named the way buyers name it in the H1, who it is for and who it is not, what happens in what order, what it costs or the honest reason there is no number, the objection handled in a sentence, proof, and one next step. Be specific about the two failure modes, a page that is really an About page and a page that tries to serve three services at once. Include the test of reading only the first screen. Do not repeat the conversion-rate material in the landing page post, which is India and about traffic that already arrived; this is about the page a searcher lands on from a service query.",
-      "audience": "US small business owners and in-house marketers",
-      "city": "Charlotte",
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "SEO",
-        "Conversion",
-        "Copywriting"
-      ]
-    },
-    {
       "id": "b-166",
       "slot": "evening",
       "market": "US",
@@ -1106,6 +1085,11 @@
       "id": "b-162",
       "retired_at": "2026-11-02",
       "published_slug": "employer-brand-small-estonian-company"
+    },
+    {
+      "id": "b-164",
+      "retired_at": "2026-11-03",
+      "published_slug": "how-to-write-a-service-page"
     }
   ]
 }
