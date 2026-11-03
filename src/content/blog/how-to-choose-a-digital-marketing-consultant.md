@@ -1,7 +1,7 @@
 ---
 title: 'How to choose a digital marketing consultant (without getting sold to)'
 seoTitle: 'How to Choose a Digital Marketing Consultant: 7 Questions'
-description: 'Seven questions that separate operators from people selling retainers, what a good answer to each sounds like, the red flags, and why the first engagement should be an audit.'
+description: 'Seven questions that separate operators from people selling retainers, what a good answer to each sounds like, and why the first engagement is an audit.'
 publishedAt: 2026-08-12
 updatedAt: 2026-09-29
 tags: ['Hiring', 'Consulting', 'Strategy']
@@ -24,7 +24,7 @@ faq:
 
 ## What should you look for in a digital marketing consultant?
 
-Diagnosis before prescription, one agreed metric that connects to revenue, and a clear answer on what they would refuse to sell you. Anyone who recommends a channel on the first call has not seen your analytics, your ad accounts or your close rate, so they are guessing. The cheapest way to test all three is to buy a **small fixed-scope audit — $1,500 to $7,500, or Rs 25,000 to Rs 1.5 lakh — before you sign any retainer.**
+Diagnosis before prescription, one agreed metric that connects to revenue, and a clear answer on what they would refuse to sell you. Anyone who recommends a channel on the first call has not seen your analytics, your ad accounts or your close rate, so they are guessing. The cheapest way to test all three is to buy a **small fixed-scope audit, $1,500 to $7,500, or Rs 25,000 to Rs 1.5 lakh, before you sign any retainer.**
 
 Most people hire a digital marketing consultant the same way: three referrals, three calls, three proposals, pick the one that felt most confident. Confidence is the worst possible signal. The people who are most certain about your business after a 30-minute call are the ones who have not looked at your data.
 
@@ -52,7 +52,7 @@ The answer you want is boring: *I would want to see your Google Analytics, your 
 
 ## Ask which number they will be judged on
 
-Vague success criteria are how bad engagements survive. Before signing anything, agree on one primary metric — cost per qualified lead, qualified organic sessions, pipeline generated — and agree on who defines "qualified."
+Vague success criteria are how bad engagements survive. Before signing anything, agree on one primary metric [cost per qualified lead, qualified organic sessions, pipeline generated] and agree on who defines "qualified."
 
 Watch what happens when you push on this. Someone planning to report impressions and reach will resist committing to a number that connects to revenue. That distinction is worth understanding before the call: [vanity metrics vs revenue metrics](/blog/vanity-metrics-vs-revenue-metrics/) covers which four actually matter.
 
@@ -64,7 +64,7 @@ If the answer is that everything is worth doing, the person is describing an inv
 
 ## Ask who does the actual work
 
-Agencies routinely sell you the senior person on the pitch call and staff the account with a junior. That is not inherently wrong — juniors do fine execution work with good direction — but you should know it going in, and you should not pay senior rates for it.
+Agencies routinely sell you the senior person on the pitch call and staff the account with a junior. That is not inherently wrong, because juniors do fine execution work with good direction, but you should know it going in, and you should not pay senior rates for it.
 
 With an independent consultant the question is different: how many clients do they have at once, and where does yours sit in that list?
 
@@ -86,11 +86,11 @@ Worth settling before you start interviewing, because it changes who you should 
 | **Main risk** | Capacity; no bench | Junior execution in month four | Single point of failure, slow to hire |
 | **Best when** | The problem is diagnosis or strategy | You need several channels executed | Marketing is core and ongoing |
 
-[Agency vs freelancer vs in house](/blog/agency-vs-freelancer-vs-in-house/) works through the numbers properly, and [how to choose a digital marketing agency](/blog/how-to-choose-a-digital-marketing-agency/) covers the exit questions — who owns your ad accounts when it ends — that matter most if you go the agency route.
+[Agency vs freelancer vs in house](/blog/agency-vs-freelancer-vs-in-house/) works through the numbers properly, and [how to choose a digital marketing agency](/blog/how-to-choose-a-digital-marketing-agency/) covers the exit questions that matter most if you go the agency route, starting with who owns your ad accounts when it ends.
 
 ## Red flags worth walking away from
 
-**Guaranteed rankings or guaranteed lead volume.** Both are met by lowering the bar — targeting keywords nobody searches, or counting every form fill as a lead.
+**Guaranteed rankings or guaranteed lead volume.** Both are met by lowering the bar: targeting keywords nobody searches, or counting every form fill as a lead.
 
 **Screenshots without context.** A graph going up means nothing without the baseline, the time window and the spend. Ask for those three things, and watch the reaction.
 
@@ -102,7 +102,7 @@ Worth settling before you start interviewing, because it changes who you should 
 
 Small, fixed-scope, and diagnostic. An audit with a written roadmap costs a fraction of a year's retainer and tells you two things at once: what is actually wrong, and whether this person is any good.
 
-If the audit is sharp — if it finds things you did not know and explains them in language your finance team understands — you have found your consultant. If it is a generic checklist with your logo on it, you have spent a little money to avoid spending a lot.
+If the audit is sharp, if it finds things you did not know and explains them in language your finance team understands, you have found your consultant. If it is a generic checklist with your logo on it, you have spent a little money to avoid spending a lot.
 
 Once you have picked someone, [the first 90 days](/blog/first-90-days-with-a-marketing-consultant/) is what a working engagement should actually look like from your side.
 
