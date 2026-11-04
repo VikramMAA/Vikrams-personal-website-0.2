@@ -168,28 +168,6 @@
         "Compliance",
         "Estonia"
       ]
-    },
-    {
-      "id": "b-136",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "what percentage of revenue should go to marketing",
-      "secondary_keywords": [
-        "marketing budget percentage of revenue",
-        "how much should a small business spend on marketing",
-        "marketing budget benchmarks"
-      ],
-      "working_title": "The percentage-of-revenue budget is a rule for companies that already won",
-      "angle": "Opinion, but the debunk is already done and must NOT be repeated: annual-marketing-plan-small-business (19 Oct) covers why percentage-of-revenue is survivor arithmetic, with the Gartner and Duke numbers. Link to it in one line and move on. Spend this whole article on the arithmetic that replaces it, which that post did not have room for. Build the budget from the bottom: what it currently costs to acquire one customer through the one channel that demonstrably works, how many customers the business needs to add, and what capacity exists to serve them. Cover the two failure modes of that method, which are that most owners do not know their real acquisition cost and that the number it produces is often larger than the business can fund, and say what to do in each case rather than retreating to a percentage. Then the one case where percentage-of-revenue is genuinely correct: a mature business with stable demand budgeting to hold position, where it is a maintenance control rather than a growth decision. US market, dollars.",
-      "audience": "US owners setting a first real marketing budget",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Budgeting",
-        "Small Business",
-        "Performance Marketing"
-      ],
-      "_defer_reason": "Deferred from the 2026-10-19 evening run. The morning post published the same day, annual-marketing-plan-small-business, already runs this brief's whole thesis in its section 'The number people will quote at you for the next six weeks': the Gartner 2026 CMO Spend Survey 7.8% figure, the >$1B sample, the Duke CMO Survey 9.0% comparison, and the maintenance-arithmetic argument verbatim in substance. Publishing this as briefed hours later would have been a same-day duplicate and would cannibalise the morning post. The keyword still deserves its own page, so the angle below is rewritten to complement that post rather than repeat it. Do not publish before November."
     }
   ],
   "retired": [
@@ -1058,6 +1036,12 @@
       "id": "b-169",
       "retired_at": "2026-11-04",
       "published_slug": "hiring-a-content-writer-india"
+    },
+    {
+      "id": "b-136",
+      "retired_at": "2026-11-04",
+      "published_slug": "marketing-budget-percentage-of-revenue",
+      "_note": "deferred 19 Oct, held until November, published on the rewritten angle"
     }
   ]
 }
