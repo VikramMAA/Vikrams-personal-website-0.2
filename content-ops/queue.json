@@ -107,27 +107,6 @@
       ]
     },
     {
-      "id": "b-169",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "hiring a content writer india",
-      "secondary_keywords": [
-        "content writer rates india",
-        "freelance content writer cost",
-        "how to test a content writer"
-      ],
-      "working_title": "Hire for the one thing you cannot teach in a week",
-      "angle": "Practical. Founders hire content writers on portfolio and price and then discover the writing is fluent and empty. Argue that fluency is abundant and now close to free, so the thing to test for is whether the writer can get a fact out of a person, which is the skill that survives. Give the hiring test: a paid 500-word trial on your own subject with one 20-minute call to a person in your business, judged on what they asked rather than how it reads. Be specific about rate bands as ranges from the market rather than invented precision, and about the brief being the employer's job, with what a usable brief contains. Cover the structural choice between one writer who learns the category and a cheaper rotating bench. Do not repeat the first-marketing-hire post, which is about the role and sequencing; this is about one hire and how to test them.",
-      "audience": "Indian founders and marketing leads hiring their first writer",
-      "city": "Pune",
-      "expertise_link": "/expertise/content-marketing/",
-      "tags": [
-        "Content Marketing",
-        "Hiring",
-        "Process"
-      ]
-    },
-    {
       "id": "b-170",
       "slot": "evening",
       "market": "India",
@@ -1074,6 +1053,11 @@
       "id": "b-166",
       "retired_at": "2026-11-03",
       "published_slug": "monthly-marketing-report"
+    },
+    {
+      "id": "b-169",
+      "retired_at": "2026-11-04",
+      "published_slug": "hiring-a-content-writer-india"
     }
   ]
 }
