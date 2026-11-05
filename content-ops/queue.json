@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-158",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "indiamart for manufacturers lead generation",
-      "secondary_keywords": [
-        "is indiamart worth it",
-        "b2b marketplace india leads",
-        "how to get enquiries indiamart"
-      ],
-      "working_title": "What an IndiaMART lead actually is, before you buy a package",
-      "angle": "Practical, and a real gap: nothing covers B2B marketplaces for Indian manufacturers. Be concrete about the mechanism, which is that a buy-side enquiry is distributed to several sellers at once, so the channel rewards response speed over everything else and the economics only work if somebody answers within minutes. Cover what to fix on the listing, the specification detail that filters time-wasters, and the honest arithmetic of a paid package against the enquiry volume it produces. Then the strategic point: a marketplace enquiry is a price comparison by default, so the work is moving the conversation off the platform to something that is not a bidding war. Keep clear of seo-for-exporters-india (5 Oct) and do not restate the Justdial argument from how-to-get-more-reviews-indian-business (26 Oct).",
-      "audience": "Indian manufacturers, traders and industrial suppliers",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "B2B",
-        "Lead Generation",
-        "Conversion"
-      ]
-    },
-    {
       "id": "b-161",
       "slot": "morning",
       "market": "Estonia",
@@ -1042,6 +1021,11 @@
       "retired_at": "2026-11-04",
       "published_slug": "marketing-budget-percentage-of-revenue",
       "_note": "deferred 19 Oct, held until November, published on the rewritten angle"
+    },
+    {
+      "id": "b-158",
+      "retired_at": "2026-11-05",
+      "published_slug": "indiamart-leads-for-manufacturers"
     }
   ]
 }
