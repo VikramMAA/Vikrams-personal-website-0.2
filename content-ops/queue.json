@@ -147,6 +147,195 @@
         "Compliance",
         "Estonia"
       ]
+    },
+    {
+      "id": "b-173",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "how to respond to a negative google review",
+      "secondary_keywords": [
+        "bad review response examples",
+        "should i reply to every review",
+        "fake review removal"
+      ],
+      "working_title": "The reply is not for the person who left it",
+      "angle": "Practical. The whole reply is written for the next prospect reading it, not for the reviewer, and once you accept that the wording question gets much easier. Give the structure that works: acknowledge the specific thing, no defensiveness, no discount offered in public, one sentence of what changed, and move the detail offline with a named person. Be specific about the three replies that make it worse, which are the legal-sounding one, the one that disputes facts in public, and the one that reads as copy-paste across ten reviews. Cover what you can and cannot get removed, verifying Google's own policy on prohibited and restricted content rather than repeating the folklore that you can flag anything you disagree with. Then the counterintuitive point: a profile with no negative reviews reads as curated, and the honest reply to a fair complaint is the most persuasive thing on the page. Do not restate the collection mechanics in how-to-get-more-google-reviews.",
+      "audience": "US small business owners handling a bad review",
+      "city": "Tampa",
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Reputation",
+        "Local SEO",
+        "Customer Service"
+      ]
+    },
+    {
+      "id": "b-174",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "location pages for service area business",
+      "secondary_keywords": [
+        "city pages seo",
+        "doorway pages google",
+        "service area pages"
+      ],
+      "working_title": "Forty city pages with the city name swapped is not a strategy",
+      "angle": "Opinion grounded in primary sources. Every local SEO package sells city pages and most of what gets built is a template with one variable, which Google documents as a doorway page. VERIFY AT SOURCE before writing: Google Search Central's documentation on doorway pages and on spam policies, quoting what it actually says rather than the consultant version. Then the argument: the test is not whether the page mentions the city, it is whether anything on it would be false if you swapped the city name. If nothing would change, the page is a redirect wearing a URL. Give the honest version, which is that a location page earns its place when it carries something only true there (a crew based there, jobs completed there, a local regulation, travel time, a named reference), which means most businesses can support three real location pages rather than forty. Cover when the right answer is one strong service page plus a properly set up Business Profile instead. Do not restate local-citations-india, which is India and about directories.",
+      "audience": "US service businesses being sold city pages",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Local SEO",
+        "SEO",
+        "Strategy"
+      ]
+    },
+    {
+      "id": "b-175",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "why customers stop buying small business",
+      "secondary_keywords": [
+        "customer churn small business",
+        "how to reduce churn service business",
+        "exit interview customers"
+      ],
+      "working_title": "Nobody cancels on the day they decide to leave",
+      "angle": "Practical. The decision to leave happens weeks before the cancellation, which means by the time you hear about it you are doing recovery rather than retention, and recovery barely works. So the useful work is finding the leading indicators you already have: a drop in response speed from their side, a skipped review call, the champion going quiet, usage or order frequency slipping, a new name appearing on their emails. Give the one process worth running, which is a short conversation with the last five customers who left, with the two questions that get a real answer rather than a polite one. Be specific that the common answer is not price, it is that the customer stopped being able to explain internally what they were getting. Cover the small number of saves worth attempting and the ones to let go. Keep clear of customer-win-back-campaign (18 Sep), which is about reactivating lapsed buyers, and of client-concentration-risk-small-business.",
+      "audience": "US service businesses and subscription operators losing customers quietly",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Retention",
+        "Process",
+        "Customer Service"
+      ]
+    },
+    {
+      "id": "b-176",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "are linkedin ads worth it for small business",
+      "secondary_keywords": [
+        "linkedin ads cost per click",
+        "linkedin lead gen forms",
+        "b2b paid social budget"
+      ],
+      "working_title": "LinkedIn is the most expensive place to be vague",
+      "angle": "Opinion with arithmetic. LinkedIn's click costs are several times search for the same buyer, which is defensible only when the targeting is doing something search cannot, and most small B2B accounts use it to do the thing search does better. Argue the dividing line: LinkedIn earns its price when you are buying an audience that cannot be reached by intent, meaning a named account list or a job title with no search behaviour yet, and loses badly when you use it to catch people already looking for your category. Be careful with cost figures: published CPC ranges vary widely by vendor, so give ranges, name the source type, or decline. Cover the format that actually works for a small budget and the one that burns it, the document and lead-gen-form mechanics, and the honest minimum below which there is no signal. Then the uncomfortable conclusion: for most companies under a certain size the right LinkedIn spend is zero and the right LinkedIn effort is the founder posting, which is a real answer rather than a dodge. Link linkedin-content-strategy-b2b-india for the organic side rather than repeating it.",
+      "audience": "US B2B founders considering paid LinkedIn",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "LinkedIn",
+        "Paid Media",
+        "B2B"
+      ]
+    },
+    {
+      "id": "b-177",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "website launch checklist",
+      "secondary_keywords": [
+        "what to check before launching a website",
+        "website redesign traffic drop",
+        "301 redirect map"
+      ],
+      "working_title": "The redesign that lost half its traffic passed every design review",
+      "angle": "Practical and ordered, because this is the one checklist where the order matters. The redirect map is the whole ballgame and it has to be built from the old site's actual ranking URLs rather than from the sitemap, so start there. Then the staging noindex and the robots.txt that got copied across, which is the single most common catastrophic launch error and the easiest to miss because the site looks perfect. Then analytics and conversion tracking proven with a live test submission rather than assumed, Search Console property and sitemap submission, canonical tags, the forms actually delivering to an inbox somebody reads. Give the two checks to run at 24 hours and at 7 days, and what a normal post-launch dip looks like against a broken one. Reference is-my-website-worth-rebuilding for the decision and how-to-do-an-seo-audit-yourself for the diagnosis, and do not repeat either.",
+      "audience": "US business owners about to launch a new or redesigned site",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Technical SEO",
+        "Process",
+        "Web Development"
+      ]
+    },
+    {
+      "id": "b-178",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "when to hire your first salesperson",
+      "secondary_keywords": [
+        "founder led sales",
+        "first sales hire small business",
+        "sales commission structure small business"
+      ],
+      "working_title": "You cannot hire somebody to discover a sale you have not made",
+      "angle": "Opinion. Founders hire a salesperson to escape selling and the hire fails, not because the person is bad but because they were asked to execute a process that does not exist yet. Argue the readiness test in terms the founder can check: can you predict the objection before the prospect finishes the sentence, do you know which lead source closes, and is there a repeatable sequence somebody else could follow. If not, the hire is an outsourced discovery project at a salary. Cover what the first hire should actually be, which is frequently not a closer, and the commission structure question honestly, including why a pure-commission first hire selects for the wrong person in a market where nobody knows your product. Then the handoff that gets skipped, which is the founder staying on calls long after it feels necessary. Keep clear of first-marketing-hire-india and first-marketing-hire-estonia, which are about marketing roles and about thin talent markets, and of how-to-run-a-discovery-call.",
+      "audience": "US founders deciding whether to hire a salesperson",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Sales",
+        "Hiring",
+        "Strategy"
+      ]
+    },
+    {
+      "id": "b-179",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "trade fair marketing india exhibition stall",
+      "secondary_keywords": [
+        "how to get leads from an exhibition",
+        "trade fair booth india cost",
+        "exhibition follow up"
+      ],
+      "working_title": "The stall is not the product, the forty-eight hours after it are",
+      "angle": "Practical, and it pairs with the IndiaMART post for the same reader. Indian manufacturers and traders spend heavily on exhibition stalls and then lose the return in the follow-up, so the useful content is operational: what to decide before you book, the one thing the stall has to communicate from three metres away, why a product on the table beats a banner, how to qualify at the stall in two questions rather than collecting cards, and the follow-up window that decides everything. Be specific about the card problem, which is that a stack of cards with no context is worthless by Monday, and give the alternative, which is a one-line note written on the spot. Cover the honest arithmetic of a stall against the enquiries it produces, framed as a calculation on the reader's own quoted stall price rather than invented figures. Do not restate are-trade-shows-worth-it-b2b (6 Oct), which is US and is the whether question including the opportunity-cost arithmetic; this is the how, for a market where exhibitions still carry real weight.",
+      "audience": "Indian manufacturers and traders exhibiting at trade fairs",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "B2B",
+        "Events",
+        "Lead Generation"
+      ]
+    },
+    {
+      "id": "b-180",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "d2c vs distribution india",
+      "secondary_keywords": [
+        "should i sell direct or through dealers india",
+        "distributor margin india",
+        "general trade vs online"
+      ],
+      "working_title": "Direct is not a channel decision, it is a decision about who holds the shelf",
+      "angle": "Opinion with structure. The direct-versus-distribution argument gets run as a margin comparison and that is the least interesting part of it. Argue that the real question is who owns the relationship with the point of purchase, and that general trade in India is not a legacy channel but a credit business: the distributor is financing the retailer, which is a service a brand selling direct is not providing and usually cannot. Follow the consequences honestly, including that direct looks more profitable until you price in acquisition cost, returns and the working capital tied up, and that the hybrid most brands end up with creates channel conflict that has to be managed with pricing policy rather than hope. Keep clear of quick-commerce-vs-d2c-india (21 Sep), which owns the platform economics and the rented-shelf argument, and of expanding-to-tier-2-cities-india (29 Oct), which owns the local-reference point. Say where each model genuinely wins by category.",
+      "audience": "Indian consumer brand founders choosing a route to market",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "D2C",
+        "Distribution",
+        "Strategy"
+      ]
+    },
+    {
+      "id": "b-181",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "competitor copied my website content",
+      "secondary_keywords": [
+        "someone copied my website india",
+        "dmca takedown india",
+        "duplicate content competitor"
+      ],
+      "working_title": "Somebody copied your site, and the search problem is smaller than you think",
+      "angle": "Practical and calming, because the panic is usually disproportionate to the damage. Separate the three distinct problems: the search effect, which is normally minimal because the original is identifiable by date and links, the commercial effect of a buyer seeing identical copy on two sites, and the actual legal position. VERIFY AT SOURCE before writing: Google's own documented position on duplicate content and scraped content, and the mechanism for a copyright removal request, rather than the folklore that duplicate content carries a penalty. Then the practical sequence: evidence first with dated archives, the host and the registrar before the lawyer, the removal request route, and when to let it go because the copy is doing them more harm than you. Close on the structural fix, which is that the pages a competitor can usefully copy were never your differentiator, and the ones carrying your numbers, your photographs and your named references cannot be copied at all.",
+      "audience": "Indian business owners who found their copy on a competitor's site",
+      "city": null,
+      "expertise_link": "/expertise/content-marketing/",
+      "tags": [
+        "Content Marketing",
+        "SEO",
+        "Legal"
+      ]
     }
   ],
   "retired": [
