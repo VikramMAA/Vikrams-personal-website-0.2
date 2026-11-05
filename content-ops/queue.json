@@ -44,27 +44,6 @@
       ]
     },
     {
-      "id": "b-167",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "brand awareness vs lead generation",
-      "secondary_keywords": [
-        "is brand awareness worth it small business",
-        "brand awareness goals",
-        "measuring brand awareness"
-      ],
-      "working_title": "Brand awareness is a real thing and a terrible goal",
-      "angle": "Opinion. Awareness is not fake, it is just not actionable at small-business scale, because the mechanism that makes it pay needs a reach and a repetition budget most firms do not have, and the measurement needs a baseline survey nobody runs. Argue the distinction that matters: awareness among a defined group you can name is a sellable objective, awareness in general is a budget with no owner. Give the one honest version of the small-business awareness play, which is depth in a narrow audience rather than breadth, and the three metrics that are proxies worth having (branded search volume, direct traffic, how often the buyer names you unprompted on a call). Be careful with statistics, the 95-5 rule and share-of-voice literature are frequently misquoted, so attribute precisely or decline. Do not turn it into an attack on brand work, the point is that a goal needs a decision rule attached.",
-      "audience": "US small business owners being pitched awareness campaigns",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Strategy",
-        "Branding",
-        "Measurement"
-      ]
-    },
-    {
       "id": "b-168",
       "slot": "morning",
       "market": "India",
@@ -1215,6 +1194,11 @@
       "id": "b-158",
       "retired_at": "2026-11-05",
       "published_slug": "indiamart-leads-for-manufacturers"
+    },
+    {
+      "id": "b-167",
+      "retired_at": "2026-11-05",
+      "published_slug": "brand-awareness-vs-lead-generation"
     }
   ]
 }
