@@ -170,27 +170,6 @@
       ]
     },
     {
-      "id": "b-176",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "are linkedin ads worth it for small business",
-      "secondary_keywords": [
-        "linkedin ads cost per click",
-        "linkedin lead gen forms",
-        "b2b paid social budget"
-      ],
-      "working_title": "LinkedIn is the most expensive place to be vague",
-      "angle": "Opinion with arithmetic. LinkedIn's click costs are several times search for the same buyer, which is defensible only when the targeting is doing something search cannot, and most small B2B accounts use it to do the thing search does better. Argue the dividing line: LinkedIn earns its price when you are buying an audience that cannot be reached by intent, meaning a named account list or a job title with no search behaviour yet, and loses badly when you use it to catch people already looking for your category. Be careful with cost figures: published CPC ranges vary widely by vendor, so give ranges, name the source type, or decline. Cover the format that actually works for a small budget and the one that burns it, the document and lead-gen-form mechanics, and the honest minimum below which there is no signal. Then the uncomfortable conclusion: for most companies under a certain size the right LinkedIn spend is zero and the right LinkedIn effort is the founder posting, which is a real answer rather than a dodge. Link linkedin-content-strategy-b2b-india for the organic side rather than repeating it.",
-      "audience": "US B2B founders considering paid LinkedIn",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "LinkedIn",
-        "Paid Media",
-        "B2B"
-      ]
-    },
-    {
       "id": "b-177",
       "slot": "morning",
       "market": "US",
@@ -1183,6 +1162,11 @@
       "id": "b-161",
       "retired_at": "2026-11-06",
       "published_slug": "selling-to-uk-customers-from-estonia"
+    },
+    {
+      "id": "b-176",
+      "retired_at": "2026-11-06",
+      "published_slug": "are-linkedin-ads-worth-it"
     }
   ]
 }
