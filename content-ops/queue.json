@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-161",
-      "slot": "morning",
-      "market": "Estonia",
-      "primary_keyword": "selling to uk customers from estonia",
-      "secondary_keywords": [
-        "selling to the uk after brexit",
-        "uk vat for eu sellers",
-        "entering the uk market from the eu"
-      ],
-      "working_title": "The UK is the nearest market that is no longer a single market",
-      "angle": "Practical, and the next entry in the market series after the Nordics, the Baltics and Germany. The UK is attractive from Estonia because of language and because it is large, and it is the one European market where the EU single market assumptions no longer hold. Cover the specifics: UK VAT registration and when it is triggered, customs and the paperwork a buyer will expect, UK GDPR and the data transfer position, and the credibility question of whether a UK buyer wants a UK entity or is content with an EU supplier. Verify current VAT thresholds and the data adequacy position at source before writing, since both have moved. Note that the EU procurement logic in selling-to-eu-public-sector-tenders (23 Oct) does not apply there.",
-      "audience": "Estonian B2B and SaaS companies looking at the UK",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Market Entry",
-        "Estonia",
-        "Compliance"
-      ]
-    },
-    {
       "id": "b-163",
       "slot": "evening",
       "market": "Estonia",
@@ -1199,6 +1178,11 @@
       "id": "b-167",
       "retired_at": "2026-11-05",
       "published_slug": "brand-awareness-vs-lead-generation"
+    },
+    {
+      "id": "b-161",
+      "retired_at": "2026-11-06",
+      "published_slug": "selling-to-uk-customers-from-estonia"
     }
   ]
 }
