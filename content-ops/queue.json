@@ -44,27 +44,6 @@
       ]
     },
     {
-      "id": "b-170",
-      "slot": "evening",
-      "market": "India",
-      "primary_keyword": "micro influencer marketing india small brand",
-      "secondary_keywords": [
-        "nano influencer cost india",
-        "influencer marketing worth it",
-        "barter collaboration india"
-      ],
-      "working_title": "You are not buying reach, you are renting somebody's judgment",
-      "angle": "Opinion with economics. Small Indian brands buy influencer posts as cheap reach and get nothing, because reach is the one thing an influencer sells that is worth least and is easiest to fake. Argue that what you are actually paying for is a borrowed act of judgment in front of an audience that trusts it, which means the only question that matters is whether this person's audience believes they turn work down. Follow the consequences: category fit beats follower count, a creator who posts a weekly recommendation has already spent the trust, barter works where the product is the story and insults the creator where it is not, and a single post is almost always a waste because one exposure does nothing. Be careful with statistics, influencer marketing figures in India are mostly agency marketing, so attribute or decline. Mention the ASCI disclosure requirement factually without turning the post into a compliance piece.",
-      "audience": "Indian D2C and small brand founders considering creator spend",
-      "city": "Mumbai",
-      "expertise_link": "/expertise/social-media-marketing/",
-      "tags": [
-        "Social Media",
-        "D2C",
-        "Influencer Marketing"
-      ]
-    },
-    {
       "id": "b-171",
       "slot": "morning",
       "market": "Estonia",
@@ -1151,6 +1130,11 @@
       "id": "b-173",
       "retired_at": "2026-11-07",
       "published_slug": "respond-to-negative-google-review"
+    },
+    {
+      "id": "b-170",
+      "retired_at": "2026-11-07",
+      "published_slug": "micro-influencer-marketing-india"
     }
   ]
 }
