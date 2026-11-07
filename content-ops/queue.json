@@ -107,27 +107,6 @@
       ]
     },
     {
-      "id": "b-173",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "how to respond to a negative google review",
-      "secondary_keywords": [
-        "bad review response examples",
-        "should i reply to every review",
-        "fake review removal"
-      ],
-      "working_title": "The reply is not for the person who left it",
-      "angle": "Practical. The whole reply is written for the next prospect reading it, not for the reviewer, and once you accept that the wording question gets much easier. Give the structure that works: acknowledge the specific thing, no defensiveness, no discount offered in public, one sentence of what changed, and move the detail offline with a named person. Be specific about the three replies that make it worse, which are the legal-sounding one, the one that disputes facts in public, and the one that reads as copy-paste across ten reviews. Cover what you can and cannot get removed, verifying Google's own policy on prohibited and restricted content rather than repeating the folklore that you can flag anything you disagree with. Then the counterintuitive point: a profile with no negative reviews reads as curated, and the honest reply to a fair complaint is the most persuasive thing on the page. Do not restate the collection mechanics in how-to-get-more-google-reviews.",
-      "audience": "US small business owners handling a bad review",
-      "city": "Tampa",
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Reputation",
-        "Local SEO",
-        "Customer Service"
-      ]
-    },
-    {
       "id": "b-174",
       "slot": "evening",
       "market": "US",
@@ -1167,6 +1146,11 @@
       "id": "b-176",
       "retired_at": "2026-11-06",
       "published_slug": "are-linkedin-ads-worth-it"
+    },
+    {
+      "id": "b-173",
+      "retired_at": "2026-11-07",
+      "published_slug": "respond-to-negative-google-review"
     }
   ]
 }
