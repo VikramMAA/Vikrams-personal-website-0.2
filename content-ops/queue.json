@@ -128,27 +128,6 @@
       ]
     },
     {
-      "id": "b-177",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "website launch checklist",
-      "secondary_keywords": [
-        "what to check before launching a website",
-        "website redesign traffic drop",
-        "301 redirect map"
-      ],
-      "working_title": "The redesign that lost half its traffic passed every design review",
-      "angle": "Practical and ordered, because this is the one checklist where the order matters. The redirect map is the whole ballgame and it has to be built from the old site's actual ranking URLs rather than from the sitemap, so start there. Then the staging noindex and the robots.txt that got copied across, which is the single most common catastrophic launch error and the easiest to miss because the site looks perfect. Then analytics and conversion tracking proven with a live test submission rather than assumed, Search Console property and sitemap submission, canonical tags, the forms actually delivering to an inbox somebody reads. Give the two checks to run at 24 hours and at 7 days, and what a normal post-launch dip looks like against a broken one. Reference is-my-website-worth-rebuilding for the decision and how-to-do-an-seo-audit-yourself for the diagnosis, and do not repeat either.",
-      "audience": "US business owners about to launch a new or redesigned site",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Technical SEO",
-        "Process",
-        "Web Development"
-      ]
-    },
-    {
       "id": "b-178",
       "slot": "evening",
       "market": "US",
@@ -1135,6 +1114,11 @@
       "id": "b-170",
       "retired_at": "2026-11-07",
       "published_slug": "micro-influencer-marketing-india"
+    },
+    {
+      "id": "b-177",
+      "retired_at": "2026-11-08",
+      "published_slug": "website-launch-checklist"
     }
   ]
 }
