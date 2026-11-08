@@ -170,27 +170,6 @@
       ]
     },
     {
-      "id": "b-180",
-      "slot": "evening",
-      "market": "India",
-      "primary_keyword": "d2c vs distribution india",
-      "secondary_keywords": [
-        "should i sell direct or through dealers india",
-        "distributor margin india",
-        "general trade vs online"
-      ],
-      "working_title": "Direct is not a channel decision, it is a decision about who holds the shelf",
-      "angle": "Opinion with structure. The direct-versus-distribution argument gets run as a margin comparison and that is the least interesting part of it. Argue that the real question is who owns the relationship with the point of purchase, and that general trade in India is not a legacy channel but a credit business: the distributor is financing the retailer, which is a service a brand selling direct is not providing and usually cannot. Follow the consequences honestly, including that direct looks more profitable until you price in acquisition cost, returns and the working capital tied up, and that the hybrid most brands end up with creates channel conflict that has to be managed with pricing policy rather than hope. Keep clear of quick-commerce-vs-d2c-india (21 Sep), which owns the platform economics and the rented-shelf argument, and of expanding-to-tier-2-cities-india (29 Oct), which owns the local-reference point. Say where each model genuinely wins by category.",
-      "audience": "Indian consumer brand founders choosing a route to market",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "D2C",
-        "Distribution",
-        "Strategy"
-      ]
-    },
-    {
       "id": "b-181",
       "slot": "morning",
       "market": "India",
@@ -1119,6 +1098,11 @@
       "id": "b-177",
       "retired_at": "2026-11-08",
       "published_slug": "website-launch-checklist"
+    },
+    {
+      "id": "b-180",
+      "retired_at": "2026-11-08",
+      "published_slug": "d2c-vs-distribution-india"
     }
   ]
 }
