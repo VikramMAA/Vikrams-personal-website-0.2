@@ -107,27 +107,6 @@
       ]
     },
     {
-      "id": "b-175",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "why customers stop buying small business",
-      "secondary_keywords": [
-        "customer churn small business",
-        "how to reduce churn service business",
-        "exit interview customers"
-      ],
-      "working_title": "Nobody cancels on the day they decide to leave",
-      "angle": "Practical. The decision to leave happens weeks before the cancellation, which means by the time you hear about it you are doing recovery rather than retention, and recovery barely works. So the useful work is finding the leading indicators you already have: a drop in response speed from their side, a skipped review call, the champion going quiet, usage or order frequency slipping, a new name appearing on their emails. Give the one process worth running, which is a short conversation with the last five customers who left, with the two questions that get a real answer rather than a polite one. Be specific that the common answer is not price, it is that the customer stopped being able to explain internally what they were getting. Cover the small number of saves worth attempting and the ones to let go. Keep clear of customer-win-back-campaign (18 Sep), which is about reactivating lapsed buyers, and of client-concentration-risk-small-business.",
-      "audience": "US service businesses and subscription operators losing customers quietly",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Retention",
-        "Process",
-        "Customer Service"
-      ]
-    },
-    {
       "id": "b-178",
       "slot": "evening",
       "market": "US",
@@ -1103,6 +1082,11 @@
       "id": "b-180",
       "retired_at": "2026-11-08",
       "published_slug": "d2c-vs-distribution-india"
+    },
+    {
+      "id": "b-175",
+      "retired_at": "2026-11-09",
+      "published_slug": "why-customers-stop-buying"
     }
   ]
 }
