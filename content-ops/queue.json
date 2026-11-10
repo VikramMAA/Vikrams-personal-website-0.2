@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-168",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "track whatsapp leads from website",
-      "secondary_keywords": [
-        "whatsapp click to chat tracking",
-        "whatsapp business api lead source",
-        "measuring whatsapp enquiries"
-      ],
-      "working_title": "Your best channel is the one you cannot see in any dashboard",
-      "angle": "Practical, and genuinely useful because this is the gap in most Indian setups. Most enquiries finish on WhatsApp and nothing attributes them, so paid campaigns get judged on form fills while the real pipeline is invisible. Walk through what actually works: a click-to-chat link per page or per campaign with a prefilled message that carries the source, GA4 event on the click, UTM carried into the prefill, and for higher volume the WhatsApp Business API with a referral payload from click-to-WhatsApp ads. Be honest about the limits, that the prefilled message is editable and the match is probabilistic rather than exact, and that a lightweight naming convention in the chat itself beats a half-configured tool. Link the GA4 conversions post for the tracking fundamentals and the WhatsApp post for the selling behaviour, repeat neither.",
-      "audience": "Indian small business owners and marketers whose sales happen on WhatsApp",
-      "city": "Bengaluru",
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "WhatsApp",
-        "Analytics",
-        "Lead Generation"
-      ]
-    },
-    {
       "id": "b-171",
       "slot": "morning",
       "market": "Estonia",
@@ -1072,6 +1051,11 @@
       "retired_at": "2026-11-10",
       "published_slug": "which-conferences-are-worth-attending",
       "_note": "catch-up for the missed 9 Nov evening slot"
+    },
+    {
+      "id": "b-168",
+      "retired_at": "2026-11-10",
+      "published_slug": "track-whatsapp-leads-from-website"
     }
   ]
 }
