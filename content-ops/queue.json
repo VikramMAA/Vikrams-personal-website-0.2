@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-163",
-      "slot": "evening",
-      "market": "Estonia",
-      "primary_keyword": "which conferences are worth attending estonia startup",
-      "secondary_keywords": [
-        "latitude59 worth it",
-        "slush for b2b founders",
-        "choosing which events to attend"
-      ],
-      "working_title": "Nobody has ever closed a deal at a conference",
-      "angle": "Opinion. Events get judged on atmosphere and attendance, and the question that matters is whether the people you need are there in a state where they will talk to you. Argue that a conference is a scheduling device rather than a lead source: its value is the meetings you booked in advance with people who were going to be in the city anyway, which means the work happens three weeks before the event and almost none of it happens on the floor. Cover how to decide between a local event and a large international one, what to do with the twenty minutes you get, and the honest case for sponsoring nothing and attending anyway. The US trade show post (6 Oct) argues the cost accounting side for exhibitors; this is the attendee's decision in a small market, so do not reuse its arithmetic.",
-      "audience": "Estonian founders deciding where to spend an event budget",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Sales",
-        "Startups",
-        "Consulting"
-      ]
-    },
-    {
       "id": "b-168",
       "slot": "morning",
       "market": "India",
@@ -1087,6 +1066,12 @@
       "id": "b-175",
       "retired_at": "2026-11-09",
       "published_slug": "why-customers-stop-buying"
+    },
+    {
+      "id": "b-163",
+      "retired_at": "2026-11-10",
+      "published_slug": "which-conferences-are-worth-attending",
+      "_note": "catch-up for the missed 9 Nov evening slot"
     }
   ]
 }
