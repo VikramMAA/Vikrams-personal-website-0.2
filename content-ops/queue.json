@@ -44,27 +44,6 @@
       ]
     },
     {
-      "id": "b-174",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "location pages for service area business",
-      "secondary_keywords": [
-        "city pages seo",
-        "doorway pages google",
-        "service area pages"
-      ],
-      "working_title": "Forty city pages with the city name swapped is not a strategy",
-      "angle": "Opinion grounded in primary sources. Every local SEO package sells city pages and most of what gets built is a template with one variable, which Google documents as a doorway page. VERIFY AT SOURCE before writing: Google Search Central's documentation on doorway pages and on spam policies, quoting what it actually says rather than the consultant version. Then the argument: the test is not whether the page mentions the city, it is whether anything on it would be false if you swapped the city name. If nothing would change, the page is a redirect wearing a URL. Give the honest version, which is that a location page earns its place when it carries something only true there (a crew based there, jobs completed there, a local regulation, travel time, a named reference), which means most businesses can support three real location pages rather than forty. Cover when the right answer is one strong service page plus a properly set up Business Profile instead. Do not restate local-citations-india, which is India and about directories.",
-      "audience": "US service businesses being sold city pages",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Local SEO",
-        "SEO",
-        "Strategy"
-      ]
-    },
-    {
       "id": "b-178",
       "slot": "evening",
       "market": "US",
@@ -1056,6 +1035,11 @@
       "id": "b-168",
       "retired_at": "2026-11-10",
       "published_slug": "track-whatsapp-leads-from-website"
+    },
+    {
+      "id": "b-174",
+      "retired_at": "2026-11-10",
+      "published_slug": "location-pages-service-area-business"
     }
   ]
 }
