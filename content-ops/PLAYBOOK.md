@@ -259,6 +259,39 @@ python3 content-ops/scripts/lint_article.py src/content/blog/<slug>.md --market 
 npm run build
 ```
 
+## Before writing a brief: check coverage, not slugs
+
+`content-ops/section_index.txt` lists every published post with its `##`
+headings. Regenerate it when it looks stale:
+
+```bash
+python3 - <<'EOF' > content-ops/section_index.txt
+import json,os,re
+d=json.load(open('content-ops/published.json'))
+for p in d['posts']:
+    f='src/content/blog/%s.md'%p['slug']
+    if not os.path.exists(f): continue
+    print("%s | %s | %s" % (p.get('market'), p['slug'], p['title']))
+    for h in re.findall(r'^## (.+)$', open(f).read(), re.M):
+        print("    - "+h.strip())
+EOF
+```
+
+Grep that file for the candidate topic before writing the angle, and grep the
+post bodies too. Six briefs written between 1 and 11 November duplicated
+content already published under a slug that did not match the keyword:
+b-165 (the Google Ads checklist already in google-ads-not-converting), b-173
+(the review reply already in how-to-get-more-google-reviews), b-177 (the
+launch checklist already in website-redesign-seo-checklist), b-168 (the
+WhatsApp tracking already in ga4-conversions-not-tracking), b-174 (the
+location page test already in multi-location-local-seo) and b-179 (the
+follow-up discipline already in are-trade-shows-worth-it-b2b). Every one was
+salvageable by retargeting, and every one cost a research cycle. A slug search
+does not surface a topic filed under a different name. Put the line
+"COVERAGE CHECKED against the section index" in the angle, naming the adjacent
+posts and what they own, so the drafting run knows what to link instead of
+restate.
+
 **Pass `--market`, with the market from the brief.** Without it the linter
 cannot check the spelling variant or the currency, and it will say so in a
 warning that is easy to read past. This is the rule that gets broken most

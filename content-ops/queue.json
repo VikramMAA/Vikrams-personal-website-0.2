@@ -63,6 +63,174 @@
         "SEO",
         "Legal"
       ]
+    },
+    {
+      "id": "b-182",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "should i offer a money back guarantee",
+      "secondary_keywords": [
+        "money back guarantee small business",
+        "satisfaction guarantee service business",
+        "risk reversal offer"
+      ],
+      "working_title": "A guarantee is a statement about your worst month, not your best work",
+      "angle": "Opinion. Risk reversal gets sold as a conversion tactic and it is really a disclosure: a guarantee tells a buyer what you are willing to be held to when the work goes badly, which is why a vague one reads worse than none. Argue that the useful question is not whether to offer one but what specifically you would refund and in what circumstance, because 'satisfaction guaranteed' is unfalsifiable and buyers have learned to read it as decoration. Cover the three shapes that actually work (a refund with a named condition, a redo rather than a refund, and a cap on the first engagement), who actually claims (the honest answer is few, and the ones who do are frequently the accounts you mispriced), and the operational cost nobody budgets, which is the argument you will have about whether the condition was met. Then the sharper point: a guarantee you would honour quietly is worth more than one you would litigate, so write the version you could live with on the worst Friday of the year. COVERAGE CHECKED against the section index: no post covers guarantees as a marketing decision. google-local-services-ads mentions only Google's retired Guaranteed badge, and should-i-put-pricing-on-my-website owns the publish-pricing question, so reference that once for the pricing half and do not restate it.",
+      "audience": "US service businesses considering risk reversal",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Conversion",
+        "Pricing",
+        "Strategy"
+      ]
+    },
+    {
+      "id": "b-183",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "is a customer loyalty program worth it small business",
+      "secondary_keywords": [
+        "loyalty program ideas small business",
+        "punch card vs points",
+        "repeat purchase rate"
+      ],
+      "working_title": "Most loyalty programmes pay people who were coming back anyway",
+      "angle": "Practical. The default loyalty scheme discounts the behaviour it was meant to create, because your regulars enrol first and they were already regulars. So the test before you design anything is the gap between your repeat rate and your best guess at what it would be with no programme, and if you cannot estimate that, start by measuring repeat purchase rate by cohort for three months. Cover the two mechanisms that actually change behaviour rather than rewarding it (shortening the gap between visits, and increasing basket size at the moment of purchase), why a punch card beats points for a small business (the maths is legible and the card is physical), and the break-even calculation on the reader's own margin. Be specific about the administrative cost and the one thing that kills these schemes, which is staff not mentioning it. COVERAGE CHECKED against the section index: loyalty appears only as an aside in local-seo-for-restaurants-india. customer-referral-program-small-business owns referral incentives and the FTC material on incentivised reviews, so keep clear of both, and customer-win-back-campaign owns lapsed-buyer reactivation.",
+      "audience": "US retail, hospitality and local service owners",
+      "city": "Scottsdale",
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Retention",
+        "Local Marketing",
+        "Process"
+      ]
+    },
+    {
+      "id": "b-184",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "vat when selling to other eu countries",
+      "secondary_keywords": [
+        "one stop shop oss estonia",
+        "vat number in every country",
+        "b2b reverse charge eu"
+      ],
+      "working_title": "You probably do not need a VAT number in every country you sell to",
+      "angle": "Practical and compliance-led, because the folklore here costs Estonian companies real money in accountancy fees for registrations they do not need. VERIFY AT SOURCE before writing: the EU One Stop Shop rules on the Commission's own taxation pages, the distance selling threshold for goods and digital services to consumers, and the B2B reverse charge position, quoting what the rules actually say. The spine: B2B sales inside the EU usually put the VAT obligation on the customer under the reverse charge, so the registration question is really about B2C, where the OSS exists specifically so you do not register in each country. Cover what the threshold is and what happens on the day you cross it, which returns you file and where, the records you must keep, and the one case where local registration is genuinely required. Be explicit that this is not tax advice. COVERAGE CHECKED against the section index: nothing on the site mentions OSS or EU VAT registration. selling-to-uk-customers-from-estonia owns UK VAT including the non-established-person point and HMRC's reverse charge reform, so link it as the non-EU contrast rather than repeating it.",
+      "audience": "Estonian companies selling into other EU member states",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Compliance",
+        "Estonia",
+        "Market Entry"
+      ]
+    },
+    {
+      "id": "b-185",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "how to price a pilot project",
+      "secondary_keywords": [
+        "paid pilot vs free trial b2b",
+        "proof of concept pricing",
+        "pilot project scope"
+      ],
+      "working_title": "A free pilot is a budget conversation you have postponed",
+      "angle": "Opinion. Free pilots feel like removing friction and they move the hardest conversation to the worst moment, which is after you have done the work and the buyer has no budget line for the next phase. Argue that a pilot's job is not to prove the product, it is to produce a named internal sponsor with a number attached, so the pilot has to be paid, small, and scoped to end on a decision rather than on a date. Cover what belongs in the scope (one measurable outcome, a named owner on their side, a stated end date and what happens on it), the trap of the pilot that quietly becomes the engagement at pilot pricing, and why 'we will credit the pilot fee against the first invoice' is the structure that gets signed. Then the honest exception, which is where the buyer genuinely cannot procure anything without evidence. COVERAGE CHECKED against the section index: nothing covers pilots. retainer-vs-project-pricing owns the retainer and project shapes and the sequencing argument, and how-to-write-a-proposal-that-wins owns the exclusion line and one-price argument, so reference each once and do not restate them.",
+      "audience": "US B2B founders and consultants being asked for a pilot",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Sales",
+        "Pricing",
+        "B2B"
+      ]
+    },
+    {
+      "id": "b-186",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "how to get listed on quick commerce platforms india",
+      "secondary_keywords": [
+        "blinkit onboarding brand",
+        "zepto listing process",
+        "quick commerce assortment"
+      ],
+      "working_title": "Getting listed is the easy part and nobody tells you the rest",
+      "angle": "Practical, and it is the operational sequel to the strategy post. The listing itself is a form and a margin conversation; what decides whether it works is assortment, pack size and fill rate, and most brands learn that after committing stock. Cover what to prepare before the first conversation (which SKUs, which pack sizes built for a ten-minute basket rather than a monthly shop, what you can supply weekly without stocking out), the fill-rate expectation and what happens to visibility when you miss it, who actually owns the relationship after onboarding, and the dark-store geography question, since being listed is not the same as being stocked in the stores near your customers. Be careful with fee and margin figures, which move and are mostly reported second hand, so give ranges or decline. COVERAGE CHECKED against the section index: quick-commerce-vs-d2c-india owns the economics, the fee structure, the listing-fee arithmetic, the exposed-categories split and the you-do-not-get-the-customer argument, so this must be the how rather than the whether, and should link it once.",
+      "audience": "Indian consumer brand founders approaching quick commerce",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "D2C",
+        "Ecommerce",
+        "Distribution"
+      ]
+    },
+    {
+      "id": "b-187",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "should i hire an agency or build an in house marketing team india",
+      "secondary_keywords": [
+        "in house vs agency india cost",
+        "marketing team structure small company",
+        "fractional marketing india"
+      ],
+      "working_title": "The question is not cost, it is which knowledge you want to keep",
+      "angle": "Opinion for the Indian market specifically, where the price gap between an agency retainer and a salaried hire is wider than in the US and pulls the decision the wrong way. Argue that the real variable is which knowledge compounds inside your company and which you are content to rent, so the split follows what you cannot afford to forget: your buyer's objections, your pricing logic and your channel history stay in house, while anything needing five years of specialism and ten hours a month is rented. Cover why the Rs 25,000 retainer and the Rs 25,000 salary buy incomparable things, the fractional senior option that Indian founders underuse, and the failure mode of hiring one junior generalist to own everything. COVERAGE CHECKED against the section index: agency-vs-freelancer-vs-in-house is US and owns the loaded-cost arithmetic, first-marketing-hire-india owns the role and sequencing question with the Indian salary bands, and digital-marketing-consultant-cost-india owns the two price levels and the GST point. So this is the keep-versus-rent decision and must link all three rather than re-deriving any of them.",
+      "audience": "Indian founders deciding between an agency and a hire",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Hiring",
+        "Agency",
+        "Strategy"
+      ]
+    },
+    {
+      "id": "b-188",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "how to write a follow up email after no response",
+      "secondary_keywords": [
+        "follow up email sequence b2b",
+        "how many times to follow up",
+        "breakup email"
+      ],
+      "working_title": "Six follow-ups that say nothing is worse than one that says something",
+      "angle": "Practical. Most follow-up advice is about cadence and the cadence is not the problem, the emptiness is: a message whose only content is that you are still there teaches the recipient that your emails can be ignored safely. Give the rule that each follow-up must carry something the previous one did not, and then the four things that qualify when you have no news (a specific answer to a question they raised, something that changed in their world rather than yours, a narrowed ask, and an explicit close). Cover the close properly, since the so-called breakup email usually reads as manipulation, and the honest version is a single sentence giving them an easy no. Include the one-line reply test. COVERAGE CHECKED against the section index: crm-for-small-business-india owns the three things that qualify as a reason to make contact and is India, cold-email-deliverability-setup owns the DNS layer, and how-to-run-a-discovery-call owns the call itself. So link the CRM post for the reason-to-contact material rather than restating it, and keep this on the writing.",
+      "audience": "US founders and salespeople chasing unanswered emails",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Sales",
+        "Email",
+        "Process"
+      ]
+    },
+    {
+      "id": "b-189",
+      "slot": "evening",
+      "market": "Estonia",
+      "primary_keyword": "how do small companies win against bigger competitors",
+      "secondary_keywords": [
+        "competing with larger vendors",
+        "small vendor procurement risk",
+        "why buyers choose the bigger supplier"
+      ],
+      "working_title": "They are not choosing the bigger company, they are choosing the defensible decision",
+      "angle": "Opinion, and it is the argument underneath most Estonian export losses. When a buyer picks the larger vendor it is rarely a judgement that the product is better; it is that nobody gets blamed for choosing the obvious supplier and somebody does get blamed for choosing you and being wrong. Argue that the competition is therefore not on features but on who absorbs the career risk of the decision, which tells you what to build: references the buyer can call, a first phase small enough that being wrong is survivable, contractual exits that make the downside legible, and continuity answers for the what-if-you-disappear question. Be fair about where the big vendor genuinely is the right choice. COVERAGE CHECKED against the section index: vendor-security-questionnaire owns the questionnaire mechanics, selling-to-eu-public-sector-tenders owns procurement thresholds, expansion-revenue-small-market-saas owns the cost of a bad-fit customer, and estonian-startup-marketing owns the better-product-loses-to-better-distribution argument. This one is about the buyer's personal risk and must link rather than repeat.",
+      "audience": "Estonian B2B founders losing deals to larger vendors",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "B2B",
+        "Positioning",
+        "Estonia"
+      ]
     }
   ],
   "retired": [

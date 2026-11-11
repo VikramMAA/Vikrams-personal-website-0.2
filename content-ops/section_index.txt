@@ -1,0 +1,1228 @@
+India | google-business-profile-settings-bengaluru | The Google Business Profile settings most Bengaluru businesses never touch
+    - Primary category is a ranking decision, not a description
+    - The service list is free real estate and it's empty
+    - Your description is probably too short
+    - Photos, and the bit about cadence
+    - Reviews: velocity beats volume
+    - The fields that do nothing for rank but decide whether they call
+    - What to do this week
+India | how-to-rank-in-chatgpt | How to get quoted by ChatGPT, starting with the robots.txt line you missed
+    - OpenAI runs three crawlers and they do different jobs
+    - Ten minutes to find out if you're invisible
+    - The thing that decides this isn't on your website
+    - Write so a machine can lift the sentence
+    - Before lunch
+India | agency-not-delivering-results | Stop asking your agency why the numbers went up. Ask what they can't see
+    - The report got prettier exactly as it got less knowable
+    - The agency that explains everything is the one to worry about
+    - Four questions for your next review
+    - About that Rs 25,000 retainer
+    - What I'd actually do this week
+India | google-ads-not-converting | Your Google Ads aren't converting, and five of the six reasons are settings
+    - 1. The search terms report, which nobody opens
+    - 2. You are almost certainly paying for the wrong city
+    - 3. Performance Max is eating your brand searches and billing you for them
+    - 4. Your conversion action is counting something that isn't a sale
+    - 5. The two levers that only appeared this year
+    - 6. The landing page is asking for too much
+    - Before lunch
+US | does-google-penalize-ai-content | Google doesn't penalize AI content. It penalizes everyone writing the same article
+    - The policy is about intent and outcome, not authorship
+    - Why everyone using the same tool produces the same article
+    - Median works for search and fails completely in AI answers
+    - The one input a model cannot generate for you
+    - What I'd change on Monday
+US | how-to-choose-a-digital-marketing-agency | How to choose a digital marketing agency by planning for the day it ends
+    - Ask who owns the ad account, then go and verify it
+    - Ask who does the work, in month four
+    - Ask what the exit actually looks like
+    - Agency or freelancer, honestly
+    - The question that reveals the most
+    - Before your next call
+Estonia | estonian-startup-marketing | Estonia builds the better product and keeps losing to the better distributed one
+    - The exits everyone cites were distribution stories
+    - The money that paid for deferring this has gone
+    - Distribution is a product decision, not a phase
+    - And you cannot validate any of this at home
+    - The version of this I would defend
+US | how-to-do-an-seo-audit-yourself | Run your own SEO audit in two hours before you pay four figures for one
+    - 1. Page indexing, which is where most real problems show up
+    - 2. The Generative AI report, which is genuinely new
+    - 3. Core Web Vitals, and INP in particular
+    - 4. Titles and H1s on your top twenty pages
+    - 5. Internal links to the pages that matter
+    - 6. Read your own first sentences
+    - When to stop and get help
+US | vanity-metrics-vs-revenue-metrics | Impressions only ever go up. That's exactly why they're still in your report
+    - Cost per qualified lead, with the argument about "qualified" settled first
+    - Lead to customer rate
+    - Payback period, which is the one that should lead the report
+    - Share of revenue by channel
+    - All four are getting harder, and it isn't your fault
+    - What I'd actually change
+India | local-seo-for-clinics-india | Every local SEO guide tells clinics to ask for reviews. Indian doctors cannot
+    - You are not allowed to ask patients for reviews
+    - So what actually moves reviews for a clinic
+    - Practo and Google are doing different jobs
+    - Give each doctor a real page
+    - Cut the friction between finding you and booking
+    - Before lunch
+India | digital-marketing-consultant-cost-india | What digital marketing actually costs in India, and why the quotes vary tenfold
+    - The actual ranges in 2026
+    - What actually moves the number
+    - Why the Rs 8,000 offer cannot work
+    - The GST line nobody puts in the quote
+    - The uncomfortable bit about domestic rates
+    - How to read the next quote you get
+US | cold-email-deliverability-setup | Cold email deliverability is a DNS problem before it's a copywriting problem
+    - 1. Stop sending cold email from your main domain
+    - 2. Set the three records, and understand alignment
+    - 3. Warm up, and be patient about it
+    - 4. The per-inbox limits, where almost everyone gets the number wrong
+    - 5. Now you can think about the copy
+    - Before lunch
+US | google-algorithm-update-recovery | Most traffic drops are not algorithm updates. Rewriting in week one makes it worse
+    - The decoupling, and why it looks exactly like a penalty
+    - The four causes, in the order they cost you to check
+    - Why rewriting in week one is the worst available response
+    - What the first week should actually look like
+India | whatsapp-marketing-india | WhatsApp stops being free in October. Three things to fix before then
+    - 1. If you are on broadcast lists, you are reaching almost nobody
+    - 2. Learn the three categories, because they are the whole cost story
+    - 3. The cap that breaks most WhatsApp plans
+    - What actually gets you restricted
+    - Connect it to the site so the lead lands somewhere countable
+    - Before lunch
+Estonia | is-google-ads-worth-it-estonia | Is Google Ads worth it in a market as small as Estonia?
+    - Do the arithmetic for your own product
+    - The part that makes it worse: you go blind as well
+    - What actually works instead
+    - The argument I would actually make
+US | how-much-does-a-digital-marketing-agency-cost | How much does a digital marketing agency cost?
+    - How much does a digital marketing agency cost per month?
+    - Translate the price into hours, because that is what you are buying
+    - Agency fees by engagement type
+    - The three fee models, and which one to push for
+    - Compared to what? The in-house numbers
+    - What actually moves the number
+    - The floor, and why it is arithmetic rather than opinion
+    - Before you sign anything
+US | website-redesign-seo-checklist | How do I redesign my website without losing my Google traffic?
+    - The four ways this actually goes wrong
+    - The two redirect mistakes that do the real damage
+    - The order that prevents all of it
+    - The invisible one: "let's tighten the copy"
+    - Launch week and the fortnight after
+    - What I would actually change
+India | how-to-sell-online-in-india | How do I start selling online in India?
+    - Where 25% to 35% actually comes from
+    - What the marketplace gives you that your own store cannot
+    - Two changes worth knowing about this year
+    - GST, which is the part people get wrong
+    - Payments and delivery, briefly
+    - The layer that actually closes the sale
+    - Before lunch
+US | best-digital-marketing-agencies-2026 | Best digital marketing agencies in 2026, and how to pick one that fits
+    - The names that keep coming up
+    - What matters more than which name you choose
+    - When an agency is genuinely the right call
+    - When it is the wrong call
+    - How to actually decide
+US | how-to-get-more-customers-online | How do I get more customers online without spending more on ads?
+    - 1. The pages already sitting on page two
+    - 2. Your Google Business Profile, if you serve a local market
+    - 3. Conversion on the pages that already get traffic
+    - 4. The email list you already have and never use
+    - Why almost everybody does this backwards
+    - Before lunch
+India | is-seo-worth-it-for-small-business | Is SEO worth it for a small business in 2026?
+    - The part of SEO that actually died
+    - The part that is barely touched
+    - So what should you actually write
+    - The honest numbers for India
+    - Who should not do SEO
+    - The framing that gets people into trouble
+Estonia | how-to-sell-to-nordic-customers-from-estonia | How do Estonian companies sell into Finland and Sweden?
+    - The legal part, which is friendlier than expected
+    - Now the number that changes your planning
+    - The reference problem, which is the actual blocker
+    - LinkedIn is the channel, and not for pitching
+    - Write like nobody there wants to be sold to
+    - Equip your champion instead of chasing them
+    - One small thing that gets noticed
+    - Before lunch
+US | is-google-ads-worth-it-for-small-business | Is Google Ads worth it for a small business?
+    - What the going rates actually are
+    - The part that runs against the narrative
+    - Why the clicks got expensive, which is the interesting bit
+    - When it is genuinely worth it
+    - When it is not
+    - The honest summary
+US | how-to-get-more-google-reviews | How do I get more Google reviews for my business?
+    - What the rule actually covers
+    - Why gating feels reasonable and is not
+    - What actually works instead
+    - How to answer a one star review
+    - Before lunch
+India | do-i-need-a-website-if-i-have-instagram | Do I need a website if my business is already on Instagram?
+    - The argument that expired last year
+    - What you actually lose
+    - When Instagram alone genuinely is enough
+    - The minimum that actually protects you
+    - The way I would put it
+US | schema-markup-for-local-business | What schema markup does a local business actually need?
+    - What schema is actually for now
+    - The four types worth implementing
+    - The rule that decides whether any of this works
+    - Validating it, which takes five minutes
+    - Before lunch
+US | how-to-handle-price-objections-without-discounting | How do I handle price objections without discounting?
+    - The buyers who push hardest are the ones most likely to buy
+    - What the objection actually means
+    - The script, and the silence
+    - If you do move, trade
+    - Why founders discount more than salespeople do
+    - What I would do this week
+India | google-ads-vs-meta-ads | Google Ads vs Meta Ads: which is better for my business?
+    - The twenty minute version of the test
+    - What the two actually cost in India right now
+    - The 2026 change that most comparisons miss
+    - When each one is clearly right
+    - Start with one, and give it a quarter
+Estonia | estonia-corporate-tax-marketing-budget | Does Estonia's 0% corporate tax change how I should budget marketing?
+    - The arithmetic nobody says out loud
+    - What the state actually did in 2025
+    - Where the reinvestment case is actually strong
+    - The test I would apply
+    - The part I would actually change
+US | content-brief-template | What should a content brief include? A template you can copy
+    - The template
+    - The two fields that do the work
+    - What changed in 2026, and it affects field 6
+    - So how many posts a month?
+    - Before lunch
+US | agency-vs-freelancer-vs-in-house | Should I hire a marketing agency, a freelancer, or someone in house?
+    - The numbers, so they are out of the way
+    - The five things that actually decide it
+    - When an agency is the right call, plainly
+    - When one person is the right call
+    - When in house wins, which is more often than founders think
+    - What AI actually changed here
+    - The rule I would actually use
+India | digital-marketing-budget-small-business-india | How much should a small business spend on digital marketing in India?
+    - What the benchmarks say, and what they are for
+    - The way to actually get a number
+    - What the ranges actually look like in India
+    - If you are under the floor
+    - Two things about the money itself
+    - Before lunch
+US | why-leads-are-not-converting | Why aren't my leads converting into sales?
+    - You engineered the argument
+    - It got harder in 2026, and not because of your team
+    - The version that works when you cannot change the comp plan
+    - The uncomfortable half of this
+    - The report that ends the argument
+    - What I would do first
+US | performance-max-explained | What is Performance Max actually doing with my budget?
+    - What changed, including something I told you last year
+    - The brand problem, briefly
+    - Asset groups are the part people get wrong
+    - The black box eats whatever you feed it
+    - When a plain Search campaign beats it outright
+    - Before lunch
+India | ai-overviews-traffic-drop | Why is my traffic down when my rankings haven't changed?
+    - The numbers, so it stops sounding like an excuse
+    - The part I would argue about
+    - What to report instead
+    - The trap, and it is a very Indian one
+    - The uncomfortable version
+    - What I would change on Monday
+Estonia | estonian-ecommerce-payment-methods | What payment methods do Estonian shoppers actually use?
+    - Why the obvious setup does not cover it
+    - The half everybody forgets, which is delivery
+    - Order of operations for an existing shop
+    - The checkout audit, on a phone, twenty minutes
+    - Worth saying plainly
+US | first-90-days-with-a-marketing-consultant | What should I expect in the first 90 days with a marketing consultant?
+    - Days 1 to 14: access and evidence
+    - Days 15 to 30: a finding, not a plan
+    - Days 30 to 60: small reversible fixes, and one bet
+    - Days 60 to 90: the first measurable change
+    - What will not have moved, and you should not accept a story about it
+    - Three failure modes worth naming
+    - What you owe them
+    - The short version
+US | how-to-respond-to-negative-google-reviews | How do I respond to a negative Google review?
+    - Write it for the person reading in March
+    - Reply one: you got it wrong
+    - Reply two: they are partly wrong on the facts
+    - Reply three: you cannot discuss it at all
+    - What Google will actually remove
+    - The April 2026 change that catches good businesses
+    - Before lunch
+India | meta-cpm-india-rising-cac | Why is my customer acquisition cost rising on Meta ads?
+    - What is actually moving
+    - The lever, and the data is unusually blunt about it
+    - What high volume actually looks like in India
+    - Where I disagree with the standard advice on measurement
+    - The part that actually decides survival
+    - Build the second channel before you need it
+    - The short version
+US | internal-linking-strategy | How do I build an internal linking strategy?
+    - What an internal link is actually doing
+    - Forty minutes to find the problems
+    - Where the links should come from
+    - Anchor text, which is where the free win is
+    - Hub and spoke, concretely
+    - The click depth rule for AI search
+    - What not to do
+    - Before lunch
+US | are-angi-leads-worth-it | Are Angi leads worth it for a home services business?
+    - First, a correction to most of what you have read
+    - The arithmetic that still holds
+    - What the model rewards, which is the real problem
+    - When they genuinely make sense
+    - When it turns into a trap
+    - The exit, and the part almost nobody does
+    - The way I would put it
+India | local-seo-for-restaurants-india | How do I get my restaurant found on Google, not just Zomato?
+    - Why this is worth an hour of your week
+    - The five restaurant specific things on your profile
+    - The direction request is your real conversion
+    - Getting to direct orders without pretending you can leave
+    - Reviews, briefly
+    - Before lunch, which for you is a strange phrase
+Estonia | selling-saas-to-us-customers-from-europe | How do I sell SaaS to US customers from Europe?
+    - The clock is doing more damage than the copy
+    - Price in the currency they budget in
+    - Your logos do not travel
+    - The US entity, which founders resist and which works anyway
+    - The one that arrives as a surprise
+    - What not to do
+    - The order I would actually work in
+US | google-local-services-ads | How do Google Local Services Ads work, and are they worth it?
+    - What actually changed
+    - What it costs
+    - What you still control
+    - When it is the right first spend
+    - When it is not
+    - Before lunch
+US | content-decay-refresh-old-posts | Should I refresh old blog posts or write new ones?
+    - Three problems that look identical in the report
+    - The refreshes that make it worse
+    - The part nobody wants to do
+    - What a refresh worth doing consists of
+    - Where I would actually spend the quarter
+India | ga4-conversions-not-tracking | Why are my GA4 conversions not tracking?
+    - 1. The event is not marked as a key event
+    - 2. The tag is pointing at the wrong property
+    - 3. Your consent banner is blocking the tag
+    - 4. The event fires on page load instead of on the action
+    - 5. GA4 is installed twice
+    - 6. The parameters are empty
+    - The WhatsApp hole, which is bigger than all six
+    - Two more that quietly corrupt everything
+    - Before lunch
+US | ai-sdr-tools | Do AI SDR tools actually work?
+    - The evidence that the writing was never the problem
+    - Why it punishes the careful sender hardest
+    - What the tools are genuinely good at
+    - What still gets replies, with numbers
+    - If you genuinely need volume
+    - Where I come out
+US | tcpa-compliance-sms-marketing | Is SMS marketing legal, and what consent do I actually need?
+    - The rule everyone still cites, and the one that actually landed
+    - What prior express written consent looks like on a form
+    - Why your texts are not being delivered
+    - The operational rules people break by accident
+    - The part that is actually your defense
+    - Before lunch
+India | seo-vs-google-ads | Should I do SEO or Google Ads first?
+    - They are not substitutes
+    - The timing, stated honestly
+    - What I would tell most Indian SMEs, which will annoy some people
+    - When it reverses, and it genuinely does
+    - Do not half fund both
+    - The half of SEO that stopped existing
+    - The thing that beats both
+    - The short version
+Estonia | e-residency-company-marketing | How do I make my e-Residency company look legitimate?
+    - The scale, because it helps to know
+    - What a cautious buyer actually checks
+    - The page by page fix
+    - Payments, which is where the doubt often lands
+    - What actively makes it worse
+    - Before lunch
+US | competitor-buying-fake-reviews | My competitor is buying fake reviews. What can I do?
+    - Enforcement started, and it is slower than you want
+    - What you can actually do, in order of usefulness
+    - Now the part I actually want to argue
+    - The uncomfortable question
+    - Where I would leave it
+US | google-ads-minimum-budget | How much should I spend on Google Ads to make it work?
+    - Why there is a floor at all
+    - The calculation, for somebody who has never run ads
+    - The daily budget is not a cap, and people set it wrong
+    - When the floor is above what you have
+    - The check that tells you whether budget is even your problem
+    - Before lunch
+India | b2b-lead-follow-up-speed | How fast do I need to follow up on a B2B lead?
+    - The numbers, including the one everybody misquotes
+    - Why first response wins so decisively
+    - What I see happening in Indian B2B, specifically
+    - What a good first response actually contains
+    - Speed is an operations problem and gets treated as a motivation problem
+    - The honest counter-argument
+    - Where I would start
+US | hipaa-compliant-marketing | Can I use Google Analytics and the Meta pixel on a medical website?
+    - The federal rule you were warned about was struck down
+    - Which changed less than you would hope
+    - The claims that survive the vacatur completely
+    - What remains squarely a HIPAA problem
+    - What to actually do
+    - The honest summary
+    - Before lunch
+US | should-i-block-gptbot | Should I block AI crawlers like GPTBot?
+    - An AI crawler is three different jobs
+    - The market has already converged
+    - A reality check on how many people are doing this
+    - Who should actually block everything
+    - While we are here, llms.txt does nothing
+    - How to find out what the assistants currently say about you
+    - Where I come out
+India | landing-page-optimisation | Why is my landing page not converting?
+    - What is on the table
+    - Speed, because in India it is the binding constraint
+    - Match what the ad promised
+    - Cut the form until it hurts
+    - The CTA is probably not a form at all
+    - Proof, above the fold, of the kind people here believe
+    - Things not worth your morning
+    - Before lunch
+Estonia | estonia-digital-nation-branding | Does being an Estonian company help you sell?
+    - The reputation is real, and that is not the argument
+    - The buyer is not asking where you are from
+    - Why it fails as positioning, specifically
+    - The one version that genuinely works
+    - What replaces it
+    - The new reason this matters more than it used to
+    - The uncomfortable bit
+    - Do this today
+US | multi-location-local-seo | How do I do SEO for multiple locations?
+    - The template that suppresses all five
+    - What actually belongs on a location page
+    - One profile per location, always
+    - Link them so they can be found
+    - Fill the schema in completely
+    - Why the sloppy version costs more than it used to
+    - Before lunch
+US | reddit-marketing-for-business | Does Reddit marketing work for a business?
+    - Why everybody showed up at once
+    - The same data is an argument for not building on it
+    - What a business actually owns on Reddit
+    - The practice worth naming, without naming anybody
+    - What Reddit's own rules say, which people skip
+    - The version that works, which is slower than you want
+    - The one thing a company account should do
+    - Where I come out
+India | linkedin-content-strategy-b2b-india | What should a B2B founder in India post on LinkedIn?
+    - The company page is mostly a formality now
+    - The four posts that work
+    - The thirty minutes that beat posting more
+    - The link question, answered honestly
+    - Moving it to a conversation without killing it
+    - Before lunch
+US | franchise-marketing-challenges | Who should control franchise marketing, corporate or the franchisee?
+    - The dollar is being asked to do two incompatible jobs
+    - Why the fund becomes "a tax" in the operator's head
+    - The line I would draw
+    - The part corporate will hate
+    - The part franchisees will hate
+    - Where I come out
+US | shopify-seo-checklist | What should be on your Shopify SEO checklist?
+    - Stop your own theme from linking to the duplicates
+    - Take control of the parameter URLs
+    - Your collection pages are the money pages and they're empty
+    - Product pages, and why this changed in March
+    - Which SEO apps are worth installing
+    - Before lunch
+India | how-to-split-a-marketing-budget-india | How should I split a Rs 50,000 marketing budget in India?
+    - The recommended pie chart is the problem
+    - The split follows the buying journey, not a template
+    - Split one: the local service business
+    - Split two: the B2B company
+    - What both splits refuse to fund
+    - When the split changes
+    - Where I come out
+Estonia | vendor-security-questionnaire | How do I answer a vendor security questionnaire?
+    - Why this got heavier, specifically since 2025
+    - What to assemble
+    - The certification question, answered honestly
+    - When you have nothing yet
+    - Change the sales process, not just the paperwork
+    - Before lunch
+US | hubspot-vs-salesforce-small-business | HubSpot vs Salesforce: which should a small business pick?
+    - What each one is genuinely good at
+    - The price you were quoted is not the price
+    - The question that actually decides it
+    - When the answer is neither
+    - The cost nobody prices
+    - Where I come out
+US | yelp-vs-google-business-profile | Yelp or Google Business Profile: which should I fix first?
+    - Why Google is first and it isn't close
+    - The Yelp review system, which works nothing like Google's
+    - The free Yelp listing, which almost everybody should do
+    - When paid Yelp genuinely works
+    - The numbers to pull before you renew
+    - Before lunch
+India | quick-commerce-vs-d2c-india | Is quick commerce killing D2C brands in India?
+    - Do not dismiss it, the numbers are real
+    - Which categories are exposed, and which are not
+    - The economics, stated plainly
+    - The cost that doesn't appear on the invoice
+    - The part I'd actually worry about
+    - How I'd run both
+    - Where I come out
+US | ga4-vs-google-ads-conversions | Why don't my GA4 and Google Ads numbers match?
+    - Check this first: the April 2026 window change
+    - Cause one: the models disagree on purpose
+    - Cause two: the clock starts and stops differently
+    - Cause three: modelled conversions, which only one side has
+    - Cause four: what counts as one conversion
+    - The rule that actually solves this
+    - When the gap is genuinely a signal
+    - Before lunch
+US | b2b-demand-generation-vs-capture | Why isn't my B2B demand generation producing pipeline?
+    - The numbers that make this urgent rather than academic
+    - Why the smart thing keeps happening
+    - Being fair to the other side, because capture deserves it
+    - What to measure instead of pretending
+    - Where I come out
+India | how-to-get-backlinks-india | How do I get backlinks for an Indian business?
+    - The half life got very short
+    - 1. The memberships you are already paying for
+    - 2. Ask the people you already do business with
+    - 3. Trade publications before national dailies
+    - 4. Be the person who answers
+    - 5. Build one thing worth citing
+    - The blunt part about paid guest posts
+    - Before lunch
+Estonia | estonian-startup-growth-playbook | What should a small Estonian startup copy from the unicorns?
+    - The tactic was an output, not an input
+    - The examples you learn from are the exceptions, structurally
+    - What genuinely does not transfer
+    - What does transfer, and why
+    - The second cargo cult, which I should be fair about
+    - The thing that makes this urgent now
+    - Where I come out
+US | klaviyo-email-flows-that-make-money | Which Klaviyo flows actually make money?
+    - Welcome, which is your highest intent audience all year
+    - Checkout abandonment, the one that earns most per person
+    - Browse abandonment, the one most stores skip
+    - Post purchase, which is where margin actually lives
+    - None of it matters if you're in spam
+    - Before lunch
+US | book-a-demo-vs-self-serve | Should I remove the book a demo button?
+    - The pricing page is doing qualification you were doing badly
+    - What the gate is really optimizing for
+    - Where a call genuinely is the right first step
+    - The version almost nobody builds
+    - The experiment worth running
+    - Where I come out
+India | local-seo-for-real-estate-agents-india | How do real estate agents in Bengaluru get their own leads?
+    - Most local SEO advice does not apply to you
+    - The locality page, properly built
+    - Project pages are the gap nobody fills
+    - The compliance part, briefly
+    - Reviews, which work differently in property
+    - If you do keep buying portal leads
+    - Before lunch
+US | remote-consultant-vs-local-agency-los-angeles | Does a Los Angeles business need a Los Angeles agency?
+    - What people actually mean when they say they want local
+    - The first real exception, and the version of it people get wrong
+    - The second real exception, which is a data skill
+    - What travels perfectly well over a video call
+    - The questions that actually test an agency
+    - Where I come out
+US | state-privacy-laws-marketing-compliance | Which state privacy laws apply to my business?
+    - The map, roughly
+    - Three ways a law decides it covers you
+    - The signal your website is probably ignoring
+    - What enforcement now looks like
+    - The definition that catches ordinary advertising
+    - What a working setup actually has
+    - Before lunch
+India | instagram-growth-without-ads | How often should I post on Instagram for my business?
+    - The metric is sends, and it is not close
+    - Why this matters more here than almost anywhere
+    - The daily habit is actively working against you
+    - What forwardable actually looks like
+    - What to read on Monday morning
+    - The money is in the DM, not the grid
+    - The fair counter-argument
+    - Where I come out
+Estonia | international-seo-for-estonian-companies | How should an Estonian company do international SEO?
+    - Validate before you build anything
+    - Translate or write natively, honestly
+    - The one page test, before the fifty page build
+    - Structure, briefly, because people overthink it
+    - What not to do
+    - Before lunch
+US | home-services-booking-rate | Why aren't my home service leads turning into jobs?
+    - The arithmetic nobody runs
+    - Be honest about the measurement
+    - Where the holes actually are
+    - The four things that move the number
+    - Why this stays broken
+    - On AI answering, fairly
+    - Where I come out
+US | q4-marketing-plan-retail | What should be in my Q4 marketing plan?
+    - Why early October and not early November
+    - The pre-flight list, this week
+    - The freeze, and what breaks it
+    - Pace against the days that convert
+    - Decide January in October
+    - Before lunch
+India | freelance-marketing-consultant-bangalore | What makes a freelance marketing engagement work?
+    - The checklist everybody publishes
+    - The two things that actually predicted it
+    - The ones that did not work, honestly
+    - The money question, which matters less than you think
+    - What I would actually ask
+    - The uncomfortable part, which is on your side
+US | home-services-marketing-order | Where should a home services business start with marketing?
+    - Step one, and it is not marketing
+    - Step two: the free thing that outperforms your website
+    - Step three: Local Services Ads
+    - Step four: search ads
+    - Step five: marketplaces, as a bridge only
+    - Step six: the new one, and where it actually belongs
+    - The order, in one place
+    - Before lunch
+US | marketing-agency-red-flags | What are the red flags when hiring a marketing agency?
+    - The strategy deck that existed before they saw your data
+    - The proposal that came back in forty eight hours
+    - Nothing they asked could have cost them the deal
+    - Percentages without baselines
+    - The senior person who is not in the contract
+    - The contract terms that quietly decide everything
+    - Inside the first sixty days
+    - Being fair about all of this
+    - Where I come out
+India | keyword-research-for-indian-businesses | How do I do keyword research without paid tools?
+    - The free sources, in the order I would use them
+    - Read the results page, not the words
+    - What the AI report will and will not tell you
+    - Three things specific to searching in India
+    - What to do with the list
+    - Before lunch
+Estonia | gdpr-as-competitive-advantage | Is EU data residency actually a selling point?
+    - Location is not jurisdiction
+    - The lazy version, and the version that works
+    - Put it on the pricing page
+    - What is actually happening in 2026
+    - The window is closing, which is the actual argument
+    - One caution about the other direction
+    - Where I come out
+US | dental-practice-marketing | How do dental practices get new patients?
+    - First decide which practice you are
+    - What you are actually allowed to spend
+    - The high value procedures deserve their own everything
+    - The review rule that inverts the normal playbook
+    - The unglamorous foundation
+    - Before lunch
+US | is-bbb-accreditation-worth-it | Is BBB accreditation worth it for a small business?
+    - What it costs and what it is
+    - The pay-to-play accusation, handled fairly
+    - The variable that actually decides it
+    - The free half, which matters more
+    - What the same money buys elsewhere
+    - The practice worth criticising
+    - Where I come out
+India | page-speed-optimisation-indian-websites | Why did my website get slow again?
+    - The number that should bother an Indian business
+    - Why it decays, mechanically
+    - It is marketing doing this
+    - Find them, which takes twenty minutes
+    - Set a budget, as an actual number
+    - The question to ask of any new tag
+    - The monthly check, ten minutes
+    - Before lunch
+US | manufacturer-co-op-advertising-funds | How do I actually claim manufacturer co-op advertising funds?
+    - First find out which kind you have
+    - Why it goes unclaimed, specifically
+    - The distortion, which is the actual argument
+    - The two deadlines, and the one that catches people
+    - Negotiate the rules rather than the amount
+    - The honest caveat
+    - Where I come out
+US | law-firm-marketing | Why isn't my law firm's marketing producing cases?
+    - The numbers that make this different from every other industry
+    - Why the standard advice is wrong here
+    - What intake should actually capture
+    - The weekend, specifically
+    - The bar rules, which constrain the marketing rather than the intake
+    - One cheap thing on the traffic side
+    - Before lunch
+India | seo-in-mumbai | Why is my Mumbai business invisible on Google?
+    - The consequence, stated plainly
+    - The head term is a decision to lose slowly
+    - What actually differentiates in a crowded local result
+    - Being honest about the remote part
+    - The uncomfortable part
+    - Where I come out
+Estonia | first-marketing-hire-estonia | Who should be your first marketing hire in Estonia?
+    - The shortage isn't people, it's one line on a CV
+    - What the generalist first hire really costs
+    - The sequence I would actually use
+    - Why renting specialists is easier from here than almost anywhere
+    - The two mistakes that cost the most
+    - What to do this week
+US | customer-win-back-campaign | Do customer win-back campaigns actually work?
+    - The benchmark spread that should end the argument
+    - Why the number on the slide is inflated
+    - The argument: this needs an owner, and their first job isn't a campaign
+    - Segment by why they left, not when
+    - The discount is the wrong opener
+    - What I'd say in that quarterly review
+US | nextdoor-for-business | Nextdoor for business: does the free page beat the ads?
+    - Why the free page outranks the ad budget here
+    - You're allowed to ask, which is not true everywhere
+    - Judging the ads honestly
+    - The etiquette that actually gets you removed
+    - One timing note worth having
+    - Before lunch
+India | seo-for-exporters-india | Why don't overseas buyers find my Indian export business?
+    - The query you optimise for is not the query they type
+    - Directories are a category, not a channel
+    - The four things the buyer is actually checking
+    - What "price on request" tells them
+    - Proof that travels eight thousand kilometres
+    - Where I'd refine the usual timezone advice
+    - What I'd do first
+US | google-merchant-center-suspension | Google Merchant Center suspension: what to do first
+    - Where to actually look
+    - Misrepresentation is the one with no warning
+    - What Google is actually testing now
+    - What a review request should contain
+    - The Q4 version of this problem
+    - Before lunch
+US | are-trade-shows-worth-it-b2b | Are trade shows worth it for B2B companies?
+    - Look at where the money goes
+    - The number that should make you suspicious
+    - What I'd actually do with $24,000
+    - Being fair, because exhibiting genuinely does pay sometimes
+    - Where events don't pay, honestly
+    - The three weeks afterwards, which decide everything
+    - Where I come out
+India | local-citations-india | Do local citations still matter for SEO in India?
+    - What the weighting actually says
+    - The six that matter in India
+    - The phone number problem nobody warns you about
+    - The audit that actually finds the mess
+    - About those upsell calls
+    - Before lunch
+India | startup-marketing-small-budget | Startup marketing on a small budget: the free channels cost most
+    - Why this matters more in 2026 than it did in 2021
+    - Pricing your own hour, roughly
+    - The two lists, which founders have backwards
+    - Where founder led distribution is genuinely right
+    - The playbook you're reading was written in a different market
+    - On hiring, briefly, because it's the other half of this
+    - Where I come out
+US | ada-website-compliance-small-business | Does my small business website need to be ADA compliant?
+    - What the litigation actually looks like
+    - The four places small sites actually fail
+    - About the overlay widgets
+    - The half that shows up in revenue
+    - Where this needs a lawyer, not me
+    - Before lunch
+Estonia | expansion-revenue-small-market-saas | How do you grow SaaS in a small market?
+    - The number that should reorganise your pricing page
+    - Why a bad-fit customer costs more here than it would in Germany
+    - What marketing is for after the sale
+    - Where high retention and real danger look identical
+    - The limit, stated plainly
+    - Where I come out
+US | customer-referral-program-small-business | Customer referral programs: why nobody is referring you
+    - The referral moment is not the review moment
+    - Why "do you know anyone?" gets you nothing
+    - The reward, and who should get it
+    - The tracking, or this dies without anybody noticing
+    - Don't bundle this with your reviews
+    - Before lunch
+India | ai-tools-for-indian-small-business | Which AI tools should an Indian small business pay for?
+    - The change that landed on 1 October
+    - The two lists, and why the principle matters more
+    - What it is genuinely best at, which nobody is selling
+    - The one that could genuinely get you in trouble
+    - Check what you already pay for
+    - Where I come out
+India | ecommerce-seo-india | Why doesn't my own site rank for my own products?
+    - Why you lose that query, and why it matters less than it feels
+    - The queries you can actually win
+    - The product that only exists on your site
+    - Out of stock, which is the quiet leak
+    - What not to copy from your marketplace listings
+    - Before lunch
+Estonia | pricing-for-export-markets | How should an Estonian company price for export markets?
+    - Why 1.3 million people is the worst possible sample
+    - The part nobody tells you: the price specified the product
+    - Segmented pricing means a different product, not a different number
+    - The grandfathering decision, said plainly
+    - Where I come out
+India | seo-for-coaching-centres-india | How do coaching centres in India get admissions online?
+    - What the guidelines actually require
+    - The part that will annoy you, and why it helps
+    - What parents actually search, which is not your results
+    - The one page I would build first
+    - The admission window, which is a calendar problem
+    - Before lunch
+India | seo-for-fintech-india | SEO for fintech in India: why compliance helps you rank
+    - What the quality guidelines actually are
+    - The rules that will actually catch you
+    - The real blocker is the approval queue
+    - So what do you actually write
+Estonia | hreflang-estonian-english-website | How do I set up hreflang for an Estonian and English site?
+    - The codes, which is where it goes wrong
+    - The block to copy
+    - Why it stops working without anybody noticing
+    - The automatic redirect, which costs the most
+    - Make the switcher a real link
+    - Which pages actually need both languages
+    - Before lunch
+India | positioning-statement-examples | Positioning statement examples: what a real one costs you
+    - A list is cheap, receipts are the test
+    - Why Indian services firms genuinely cannot just say no
+    - So split the two lists
+    - Three before and afters
+    - The reason this matters more than it did in 2022
+    - Where I come out
+India | google-ads-for-small-business-india | How should a small business in India set up Google Ads?
+    - One campaign, two or three ad groups
+    - Exact and phrase match only, for the first six weeks
+    - The negative list, written before you launch
+    - Conversion tracking before launch, not after
+    - The India part: calls and WhatsApp
+    - The weekly fifteen minutes
+    - Before lunch
+India | founder-morning-routine | Does a founder's morning routine actually matter?
+    - What the thing actually was
+    - Week two is what did the damage
+    - The cost turned up somewhere I wasn't watching
+    - What restarted it was not discipline
+    - The month that worked, and what actually won it
+    - Three years on
+Estonia | selling-to-latvia-and-lithuania | How do Estonian companies sell into Latvia and Lithuania?
+    - What actually carries across
+    - What has to be rebuilt
+    - The Russian language question, which has a different answer in each country
+    - The order to enter, which is not by distance
+    - Before lunch
+US | do-we-need-a-rebrand | Do we need a rebrand, or do we need to decide something?
+    - The four things people call a rebrand
+    - The cost nobody puts in the deck
+    - The mechanical costs, briefly
+    - About the statistics you are going to be shown
+    - When it is actually right
+    - Where I come out
+US | google-business-profile-suspended | My Google Business Profile is suspended. What do I do?
+    - First, work out which situation you are in
+    - Then find the cause, because the appeal depends on it
+    - Fix it before you appeal, not after
+    - The documents, which are the actual appeal
+    - Be ready for a video
+    - About the timelines you will be quoted
+    - In the first hour
+US | should-i-put-pricing-on-my-website | Should I put pricing on my website?
+    - What the silence actually selects for
+    - The competitor objection, which you already lost
+    - The three formats that work
+    - When not publishing is genuinely right
+    - Nobody actually knows the answer, which changes what you should do
+    - The number to watch, and it goes the wrong way
+    - Where I come out
+India | crm-for-small-business-india | Do I need a CRM for my small business in India?
+    - Why WhatsApp loses leads
+    - The personal number problem, which is a business risk
+    - The four columns
+    - The cadence for leads that went quiet
+    - When software actually earns the money
+    - Before lunch
+US | customer-onboarding-marketing | Customer onboarding is a marketing problem
+    - Two correct descriptions of the same deal
+    - Why this lands on marketing specifically
+    - What delivery teams are right about
+    - The document
+    - About the numbers
+    - The test that costs nothing
+    - Where I come out
+India | youtube-shorts-for-business-india | Are YouTube Shorts worth it for an Indian business?
+    - Why the address is the whole argument
+    - The WhatsApp test
+    - Which businesses should actually bother
+    - The format, and two traps
+    - Titles and descriptions, where this is won
+    - One shoot, three places
+    - Before lunch
+US | should-i-respond-to-rfps | Should I respond to RFPs, or is it already decided?
+    - The three things you can be bidding for
+    - The document tells you which situation you are in
+    - Public sector is a different question
+    - About the AI claims
+    - The number to put on the wall
+    - Where I come out
+Estonia | selling-to-german-customers-from-estonia | How do Estonian companies sell into Germany?
+    - The page German law expects and your site does not have
+    - Who enforces this, and why most English advice is wrong about it
+    - The data protection questions come before the demo
+    - Invoicing, where the obligation is not yours but the problem is
+    - The rest of it, which I can only give you as opinion
+    - Before lunch
+US | how-long-does-seo-take | How long does SEO take, and when should you stop waiting?
+    - The numbers that break the three-to-six-month answer
+    - Fast or never, and the five-year-old number one
+    - So what is three to six months actually describing
+    - The checkpoints I would put in a contract
+    - What this data cannot tell you
+    - Where I come out
+US | annual-marketing-plan-small-business | How do I build an annual marketing plan that survives February?
+    - The number people will quote at you for the next six weeks
+    - Three outcomes, not twelve activities
+    - The refusal list
+    - Write down what you believed
+    - The review date, set now
+    - Before lunch
+US | should-i-replace-my-marketing-hire-with-ai | Should I replace my marketing hire with AI?
+    - What was actually scarce
+    - The two quarters where this looks like it worked
+    - The cost did not disappear, it moved
+    - What the people spending the money have found
+    - The honest split
+    - So what would I actually do
+India | local-seo-for-gyms-india | How do gyms and studios in India get found locally?
+    - Work out your catchment before you spend anything
+    - The competitor set is four places and an app
+    - Your profile has to answer the timing question
+    - Locality pages, and how few you need
+    - The trial is the event, not the enquiry
+    - Two spikes, and the first one is three weeks out
+    - Before lunch
+US | is-my-website-worth-rebuilding | Is my website worth rebuilding, or just fixing?
+    - Which page is failing
+    - Changing everything at once buys no knowledge
+    - "The site is slow" is usually not the reason
+    - The three times the answer is yes
+    - Dated and untrustworthy are different things
+    - Where I come out
+India | lead-magnet-ideas-b2b-india | What will people actually give you their number for?
+    - The thirty second test
+    - The three things that still have scarcity
+    - What this looks like, concretely
+    - The exchange is a WhatsApp number
+    - Do not gate what should rank
+    - About consent, because the ground is shifting
+    - Before lunch
+US | why-marketing-agencies-lose-clients | Why do marketing agencies lose clients?
+    - The number that should change your account reviews
+    - The four dates
+    - Why agencies are structurally blind to this
+    - What clients should be demanding
+    - The version of this that applies to me
+    - Where I come out
+US | how-to-get-a-client-to-agree-to-a-case-study | How do I get a client to agree to a case study?
+    - Ask on the day
+    - Write it first
+    - The three approval routes
+    - When you cannot use the name or the numbers
+    - The part the FTC has an opinion about
+    - The line that makes all of this easy
+    - Before lunch
+India | first-marketing-hire-india | Who should be your first marketing hire in India?
+    - What you are actually buying at each price
+    - The continuity argument runs backwards
+    - The hire that feels safe and does nothing
+    - What the role should own instead
+    - The honest case for not hiring yet
+    - Where I come out
+Estonia | selling-to-eu-public-sector-tenders | How does an Estonian company win EU public sector tenders?
+    - The numbers that decide where a contract appears
+    - Frameworks are the actual gate
+    - Assemble the paperwork once
+    - The criteria that disqualify you regardless of merit
+    - One mindset correction
+    - Before lunch
+US | win-loss-analysis-for-small-business | Why did we lose that deal, and who should be asking?
+    - The one number worth knowing
+    - How much of this is even happening
+    - Who should ask
+    - Ask the won deals
+    - The sample problem nobody mentions
+    - Where I come out
+US | what-to-put-in-a-business-newsletter | What should I put in a business newsletter?
+    - The three parts
+    - What gets it deleted
+    - Cadence, honestly
+    - The inbox changed, and two things follow
+    - Stop managing it on open rate
+    - Before lunch
+India | how-to-price-services-in-india | How should I price my services in India?
+    - The four things between the quote and the bank
+    - GST makes the same number two different prices
+    - Negotiation is a line item, not an event
+    - The question the pushback does not answer
+    - Raising it on clients you already have
+    - Where I come out
+US | how-to-run-a-discovery-call | How do I run a discovery call that actually tells me something?
+    - There is no decision maker
+    - The order, and why it is that order
+    - The question almost nobody asks
+    - When they ask for a price on the call
+    - Say that you are recording
+    - Before lunch
+US | should-my-business-start-a-podcast | Should my business start a podcast?
+    - About those numbers
+    - What it is actually good at
+    - Which changes what you measure
+    - When it genuinely fails
+    - The cheaper version of the same idea
+    - Where I come out
+India | how-to-get-more-reviews-indian-business | How do I get more Google reviews for my business in India?
+    - Why that sentence fails twice
+    - The moment is physical, not digital
+    - The message, and the link problem
+    - Let them write in their own language
+    - Google first, Justdial second
+    - One exception, and it is absolute
+    - Before lunch
+Estonia | reseller-partner-channel-small-market | Should we use resellers to enter a new market?
+    - What you are actually asking them to do
+    - The question that predicts the whole thing
+    - The measurement that flatters every channel programme
+    - What exclusivity costs, and one legal detail
+    - When the channel genuinely is the answer
+    - Where I come out
+US | referral-partnerships-for-small-business | How do I get referrals from other businesses?
+    - Who touches the customer before you do
+    - Their currency is not money
+    - For some of them, a fee is illegal
+    - Go one way first, and for longer than feels fair
+    - The ask, and why the written agreement dies
+    - Before lunch
+US | best-marketing-channel-stopped-working | What do I do when my best marketing channel stops working?
+    - The three things "it stopped working" can mean
+    - The test that separates them
+    - Nobody can tell you what it should cost
+    - What the window was for
+    - The treadmill, and when it is right
+    - The channel that still works
+    - Where I come out
+India | regional-language-content-marketing-india | Should I publish my website in Hindi or regional languages?
+    - The two behaviours, separated
+    - The gap worth knowing about
+    - Which businesses actually have this demand
+    - Why translating the whole site is the wrong first move
+    - What to write instead
+    - Before lunch
+US | client-concentration-risk-small-business | How much revenue from one client is too much?
+    - What the rule does and does not say
+    - The damage starts while everything is fine
+    - The inversion
+    - Why the obvious fix does not work
+    - When it is genuinely fine
+    - Where I come out
+US | how-to-write-a-proposal-that-wins | How do I write a proposal that actually wins the work?
+    - What the data says, and what it does not
+    - Their words, first and verbatim
+    - The line that does the most work
+    - One price, not three
+    - The credentials section everybody insists on
+    - A next step with a date
+    - Before lunch
+India | expanding-to-tier-2-cities-india | How do I expand into tier 2 and tier 3 cities in India?
+    - The demand is real
+    - Why a mistake costs more there
+    - In a metro the brand vouches for you, in a town a person does
+    - Your competitor is not who you think
+    - What to test, and in what order
+    - Where I come out
+Estonia | english-website-copy-non-native-speaker | How do I write better English copy for my company website?
+    - The research that should settle the instinct
+    - The four tells
+    - A published list of the words to drop
+    - Two tests that take ten minutes
+    - When to hire a native speaker
+    - Before lunch
+US | competitor-analysis-for-small-business | How do I do competitor analysis that is actually useful?
+    - Their reviews are the only place their customers speak
+    - Their job ads, read as a pattern
+    - What their site used to say
+    - What to stop collecting
+    - Where the other two routes live
+    - Where I come out
+US | local-sponsorship-marketing-small-business | Are local sponsorships worth it for a small business?
+    - The thing you are already treating it as
+    - The only mechanism that works
+    - Running the test on the usual options
+    - Negotiate for the thing nobody asks for
+    - The policy, written now
+    - The honest exception
+    - Before lunch
+India | cash-on-delivery-returns-d2c-india | Why do so many of my cash on delivery orders come back?
+    - "COD fraud" is mostly the wrong word
+    - What the data can and cannot carry
+    - Price the option from your own courier invoice
+    - Everything that works does the same single thing
+    - Where this ends up
+US | inherited-google-ads-account-audit | What do I check first in a Google Ads account I just inherited?
+    - Access first, because this is the only part with a deadline
+    - What was this account told to do
+    - Two years of somebody else's decisions
+    - Find out who turned on auto-apply
+    - What not to touch yet
+    - Before lunch
+US | retainer-vs-project-pricing | Should I charge a retainer or price by the project?
+    - The two things being sold, and why it matters
+    - The clever answer had a bad year
+    - The renewal nobody tells you about
+    - The ratchet, which is how a retainer actually dies
+    - What the project model costs you
+    - The shape that holds, and what I do
+India | festive-season-marketing-india | What should I be doing in the week before Diwali?
+    - Get your real cutoff date in writing, today
+    - Freeze everything
+    - Pre-write six messages before Thursday
+    - Decide your discount floor while you are calm
+    - Sitting out the peak is a real option
+    - The week after is the part nobody plans
+    - Before lunch
+Estonia | employer-brand-small-estonian-company | How does a small Estonian company compete for talent?
+    - What the law actually changed, which most founders have not read
+    - Why the big employer is not the villain here
+    - Replace the claim with something checkable
+    - Name the gap yourself
+    - The uncomfortable version
+US | how-to-write-a-service-page | How do I write a service page that actually brings in work?
+    - The naming problem comes before the writing problem
+    - One page per thing somebody would hire you for separately
+    - The six things a buyer decides on
+    - The first screen test
+    - Why this matters more now than it did two years ago
+    - Before lunch
+US | monthly-marketing-report | Why does my monthly marketing report never tell me anything?
+    - Two clocks, and one document trying to serve both
+    - What a month is actually good for
+    - Your report is long, and it is not laziness
+    - So the fix is not a shorter report
+    - The bad month is the real problem
+    - What I'd ask for next month
+India | hiring-a-content-writer-india | How do I hire a content writer who actually knows my business?
+    - You are buying the part that happens before the writing
+    - The trial, specified
+    - Score the call, not the copy
+    - Let the person who was interviewed mark the draft
+    - Per word is the wrong unit
+    - One writer, or a cheaper bench
+    - Before lunch
+US | marketing-budget-percentage-of-revenue | What percentage of revenue should go to marketing?
+    - Capacity first, because it is the only real number
+    - Then what a customer actually costs you, which you can find out by asking
+    - The sum, and the thing it will get wrong
+    - When the number is bigger than you can fund
+    - Where a percentage is actually right
+India | indiamart-leads-for-manufacturers | Is IndiaMART worth it for a manufacturer, and how do you make it work?
+    - What is actually attested, and what is not
+    - The allocations, which are published
+    - A bigger plan buys more races, not more orders
+    - The listing fields that do the filtering
+    - The reply that stops it being a price comparison
+    - Before lunch
+US | brand-awareness-vs-lead-generation | Should a small business spend money on brand awareness?
+    - The statistic in the deck, read properly
+    - It does not scale down the way a lead campaign does
+    - The version that works at your size is depth
+    - Three proxies, and what is wrong with each
+    - The version I would sign off on
+Estonia | selling-to-uk-customers-from-estonia | How do Estonian companies sell into the UK?
+    - The threshold you have read about is not yours
+    - The data question got easier, which nobody told you
+    - You probably do not need a UK entity
+    - What a UK buyer checks that a German one does not
+    - Before lunch
+US | are-linkedin-ads-worth-it | Are LinkedIn ads worth it for a small B2B company?
+    - The one thing it sells that nothing else does, and the test that follows
+    - LinkedIn's own numbers contradict the reason you want to use it
+    - About the cost figures
+    - A lead and a conversation are further apart here
+    - Where I come out
+US | respond-to-negative-google-review | How do I respond to a negative Google review?
+    - Google will not remove a review for being wrong
+    - Not every review gets the same reply
+    - The sentence that makes a reply credible
+    - When three people say the same thing
+    - A profile with no bad reviews reads as managed
+    - Before lunch
+India | micro-influencer-marketing-india | Is influencer marketing worth it for a small Indian brand?
+    - The engagement rate you were shown is partly measuring intimacy
+    - Why a single post is nearly always wasted
+    - Category fit is the whole asset
+    - Barter works, and sometimes it is an insult
+    - The rule that makes the thing you bought visible
+    - Where I come out
+US | website-launch-checklist | What should I check before and after launching a new website?
+    - Submit your own forms, from your own phone
+    - Email breaks at the DNS layer and the browser never tells you
+    - Your tags are new even when your site is not
+    - The drop in week one is often a measurement drop
+    - The links pointing at your old URLs that you do not control
+    - Before lunch
+India | d2c-vs-distribution-india | Should I sell direct or through distributors in India?
+    - What the distributor's margin is actually buying
+    - The people doing that job say it no longer pays
+    - Going direct does not remove the cost, it relocates it
+    - Who holds the shelf
+    - The hybrid, and the policy it needs
+    - Where I come out
+US | why-customers-stop-buying | Why do customers stop buying, and how would I know earlier?
+    - The signals are in your inbox, not your dashboard
+    - About the published warning windows
+    - A five-minute review, done by a person
+    - Ask the five who already left, and ask it differently
+    - Which saves are worth attempting
+    - Before lunch
+Estonia | which-conferences-are-worth-attending | Which conferences are actually worth attending?
+    - So the first question is about the list, not the lineup
+    - In a market this size, the local event is for meeting foreigners
+    - The three weeks before, which is the whole job
+    - The twenty minutes, and what it is for
+    - Speak rather than sponsor
+    - The one thing conferences do better than anything else
+    - Where I come out
+India | track-whatsapp-leads-from-website | How do I track WhatsApp leads from my website and ads?
+    - The prefilled link is a hint, not a record
+    - The one place you get an exact answer
+    - Send the outcome back, which is the actual point
+    - If you are not on the API yet
+    - What to report, and the one ratio worth watching
+    - Before lunch
+US | location-pages-service-area-business | Should I build a location page for every city I serve?
+    - What Google actually says, which is sharper than the consultant version
+    - The branch playbook does not transfer
+    - What can honestly go on a service-area page
+    - Which is why the page follows the work
+    - For the towns you want and have not worked in yet
+    - Where I come out
+India | trade-fair-marketing-india | How do I actually get orders from a trade fair stall?
+    - Two events, one hall
+    - Why the American arithmetic does not transfer
+    - Let them handle the thing
+    - Two questions instead of a stack of cards
+    - Decide what the stall can commit to before you go
+    - Before lunch
+US | when-to-hire-first-salesperson | When should I hire my first salesperson?
+    - Four things you should be able to answer
+    - The ramp number you will be quoted does not apply to you
+    - The first hire is probably not a closer
+    - You cannot incentivise your way out of not knowing what works
+    - The handoff that nobody actually does
+    - Where I come out
