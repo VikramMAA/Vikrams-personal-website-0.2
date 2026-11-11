@@ -44,27 +44,6 @@
       ]
     },
     {
-      "id": "b-178",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "when to hire your first salesperson",
-      "secondary_keywords": [
-        "founder led sales",
-        "first sales hire small business",
-        "sales commission structure small business"
-      ],
-      "working_title": "You cannot hire somebody to discover a sale you have not made",
-      "angle": "Opinion. Founders hire a salesperson to escape selling and the hire fails, not because the person is bad but because they were asked to execute a process that does not exist yet. Argue the readiness test in terms the founder can check: can you predict the objection before the prospect finishes the sentence, do you know which lead source closes, and is there a repeatable sequence somebody else could follow. If not, the hire is an outsourced discovery project at a salary. Cover what the first hire should actually be, which is frequently not a closer, and the commission structure question honestly, including why a pure-commission first hire selects for the wrong person in a market where nobody knows your product. Then the handoff that gets skipped, which is the founder staying on calls long after it feels necessary. Keep clear of first-marketing-hire-india and first-marketing-hire-estonia, which are about marketing roles and about thin talent markets, and of how-to-run-a-discovery-call.",
-      "audience": "US founders deciding whether to hire a salesperson",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "Sales",
-        "Hiring",
-        "Strategy"
-      ]
-    },
-    {
       "id": "b-181",
       "slot": "morning",
       "market": "India",
@@ -1024,6 +1003,11 @@
       "id": "b-179",
       "retired_at": "2026-11-11",
       "published_slug": "trade-fair-marketing-india"
+    },
+    {
+      "id": "b-178",
+      "retired_at": "2026-11-11",
+      "published_slug": "when-to-hire-first-salesperson"
     }
   ]
 }
