@@ -65,27 +65,6 @@
       ]
     },
     {
-      "id": "b-179",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "trade fair marketing india exhibition stall",
-      "secondary_keywords": [
-        "how to get leads from an exhibition",
-        "trade fair booth india cost",
-        "exhibition follow up"
-      ],
-      "working_title": "The stall is not the product, the forty-eight hours after it are",
-      "angle": "Practical, and it pairs with the IndiaMART post for the same reader. Indian manufacturers and traders spend heavily on exhibition stalls and then lose the return in the follow-up, so the useful content is operational: what to decide before you book, the one thing the stall has to communicate from three metres away, why a product on the table beats a banner, how to qualify at the stall in two questions rather than collecting cards, and the follow-up window that decides everything. Be specific about the card problem, which is that a stack of cards with no context is worthless by Monday, and give the alternative, which is a one-line note written on the spot. Cover the honest arithmetic of a stall against the enquiries it produces, framed as a calculation on the reader's own quoted stall price rather than invented figures. Do not restate are-trade-shows-worth-it-b2b (6 Oct), which is US and is the whether question including the opportunity-cost arithmetic; this is the how, for a market where exhibitions still carry real weight.",
-      "audience": "Indian manufacturers and traders exhibiting at trade fairs",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "B2B",
-        "Events",
-        "Lead Generation"
-      ]
-    },
-    {
       "id": "b-181",
       "slot": "morning",
       "market": "India",
@@ -1040,6 +1019,11 @@
       "id": "b-174",
       "retired_at": "2026-11-10",
       "published_slug": "location-pages-service-area-business"
+    },
+    {
+      "id": "b-179",
+      "retired_at": "2026-11-11",
+      "published_slug": "trade-fair-marketing-india"
     }
   ]
 }
