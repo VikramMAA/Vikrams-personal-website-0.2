@@ -149,27 +149,6 @@
       ]
     },
     {
-      "id": "b-187",
-      "slot": "evening",
-      "market": "India",
-      "primary_keyword": "should i hire an agency or build an in house marketing team india",
-      "secondary_keywords": [
-        "in house vs agency india cost",
-        "marketing team structure small company",
-        "fractional marketing india"
-      ],
-      "working_title": "The question is not cost, it is which knowledge you want to keep",
-      "angle": "Opinion for the Indian market specifically, where the price gap between an agency retainer and a salaried hire is wider than in the US and pulls the decision the wrong way. Argue that the real variable is which knowledge compounds inside your company and which you are content to rent, so the split follows what you cannot afford to forget: your buyer's objections, your pricing logic and your channel history stay in house, while anything needing five years of specialism and ten hours a month is rented. Cover why the Rs 25,000 retainer and the Rs 25,000 salary buy incomparable things, the fractional senior option that Indian founders underuse, and the failure mode of hiring one junior generalist to own everything. COVERAGE CHECKED against the section index: agency-vs-freelancer-vs-in-house is US and owns the loaded-cost arithmetic, first-marketing-hire-india owns the role and sequencing question with the Indian salary bands, and digital-marketing-consultant-cost-india owns the two price levels and the GST point. So this is the keep-versus-rent decision and must link all three rather than re-deriving any of them.",
-      "audience": "Indian founders deciding between an agency and a hire",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Hiring",
-        "Agency",
-        "Strategy"
-      ]
-    },
-    {
       "id": "b-188",
       "slot": "morning",
       "market": "US",
@@ -1160,6 +1139,11 @@
       "id": "b-183",
       "retired_at": "2026-11-12",
       "published_slug": "customer-loyalty-program-small-business"
+    },
+    {
+      "id": "b-187",
+      "retired_at": "2026-11-12",
+      "published_slug": "agency-or-in-house-marketing-india"
     }
   ]
 }
