@@ -86,27 +86,6 @@
       ]
     },
     {
-      "id": "b-183",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "is a customer loyalty program worth it small business",
-      "secondary_keywords": [
-        "loyalty program ideas small business",
-        "punch card vs points",
-        "repeat purchase rate"
-      ],
-      "working_title": "Most loyalty programmes pay people who were coming back anyway",
-      "angle": "Practical. The default loyalty scheme discounts the behaviour it was meant to create, because your regulars enrol first and they were already regulars. So the test before you design anything is the gap between your repeat rate and your best guess at what it would be with no programme, and if you cannot estimate that, start by measuring repeat purchase rate by cohort for three months. Cover the two mechanisms that actually change behaviour rather than rewarding it (shortening the gap between visits, and increasing basket size at the moment of purchase), why a punch card beats points for a small business (the maths is legible and the card is physical), and the break-even calculation on the reader's own margin. Be specific about the administrative cost and the one thing that kills these schemes, which is staff not mentioning it. COVERAGE CHECKED against the section index: loyalty appears only as an aside in local-seo-for-restaurants-india. customer-referral-program-small-business owns referral incentives and the FTC material on incentivised reviews, so keep clear of both, and customer-win-back-campaign owns lapsed-buyer reactivation.",
-      "audience": "US retail, hospitality and local service owners",
-      "city": "Scottsdale",
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Retention",
-        "Local Marketing",
-        "Process"
-      ]
-    },
-    {
       "id": "b-184",
       "slot": "morning",
       "market": "Estonia",
@@ -1176,6 +1155,11 @@
       "id": "b-178",
       "retired_at": "2026-11-11",
       "published_slug": "when-to-hire-first-salesperson"
+    },
+    {
+      "id": "b-183",
+      "retired_at": "2026-11-12",
+      "published_slug": "customer-loyalty-program-small-business"
     }
   ]
 }

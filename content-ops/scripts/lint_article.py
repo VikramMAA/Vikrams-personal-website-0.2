@@ -55,6 +55,9 @@ BRITISH_FORMS = [
     r"colour", r"centre", r"per cent", r"programme", r"utilis(e|ed|es|ing)",
     r"judgement", r"favour", r"behaviour", r"labour", r"licence", r"defence",
     r"travelling", r"modelling", r"catalogue", r"grey",
+    r"enrol", r"enrols", r"enrolment(s)?", r"practise(s|d)?",
+    r"cheque(s)?", r"tyre(s)?", r"metre(s)?", r"litre(s)?",
+    r"kilometre(s)?", r"speciality", r"storey(s)?",
 ]
 # British idiom rather than spelling. VOICE.md mandates the spelling variant, not
 # the vocabulary, so these warn rather than block. In a US post "fortnight" still
@@ -64,6 +67,9 @@ AMERICAN_FORMS = [
     r"organiz(e|ed|es|ing|ation|ations)", r"optimiz(e|ed|es|ing|ation)",
     r"recogniz(e|ed|es|ing|able)", r"analyz(e|ed|es|ing)",
     r"color", r"catalog", r"judgment", r"gray",
+    r"center(s)?", r"defense", r"favor(s|ed|ing|able|ite)?",
+    r"behavior(s|al)?", r"traveling", r"modeling",
+    r"enroll", r"enrolls", r"enrollment(s)?",
 ]
 
 # Wrong spelling variant for each market, per VOICE.md.
