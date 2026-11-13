@@ -86,27 +86,6 @@
       ]
     },
     {
-      "id": "b-184",
-      "slot": "morning",
-      "market": "Estonia",
-      "primary_keyword": "vat when selling to other eu countries",
-      "secondary_keywords": [
-        "one stop shop oss estonia",
-        "vat number in every country",
-        "b2b reverse charge eu"
-      ],
-      "working_title": "You probably do not need a VAT number in every country you sell to",
-      "angle": "Practical and compliance-led, because the folklore here costs Estonian companies real money in accountancy fees for registrations they do not need. VERIFY AT SOURCE before writing: the EU One Stop Shop rules on the Commission's own taxation pages, the distance selling threshold for goods and digital services to consumers, and the B2B reverse charge position, quoting what the rules actually say. The spine: B2B sales inside the EU usually put the VAT obligation on the customer under the reverse charge, so the registration question is really about B2C, where the OSS exists specifically so you do not register in each country. Cover what the threshold is and what happens on the day you cross it, which returns you file and where, the records you must keep, and the one case where local registration is genuinely required. Be explicit that this is not tax advice. COVERAGE CHECKED against the section index: nothing on the site mentions OSS or EU VAT registration. selling-to-uk-customers-from-estonia owns UK VAT including the non-established-person point and HMRC's reverse charge reform, so link it as the non-EU contrast rather than repeating it.",
-      "audience": "Estonian companies selling into other EU member states",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Compliance",
-        "Estonia",
-        "Market Entry"
-      ]
-    },
-    {
       "id": "b-185",
       "slot": "evening",
       "market": "US",
@@ -1144,6 +1123,11 @@
       "id": "b-187",
       "retired_at": "2026-11-12",
       "published_slug": "agency-or-in-house-marketing-india"
+    },
+    {
+      "id": "b-184",
+      "retired_at": "2026-11-13",
+      "published_slug": "vat-selling-to-other-eu-countries"
     }
   ]
 }
