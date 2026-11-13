@@ -86,27 +86,6 @@
       ]
     },
     {
-      "id": "b-185",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "how to price a pilot project",
-      "secondary_keywords": [
-        "paid pilot vs free trial b2b",
-        "proof of concept pricing",
-        "pilot project scope"
-      ],
-      "working_title": "A free pilot is a budget conversation you have postponed",
-      "angle": "Opinion. Free pilots feel like removing friction and they move the hardest conversation to the worst moment, which is after you have done the work and the buyer has no budget line for the next phase. Argue that a pilot's job is not to prove the product, it is to produce a named internal sponsor with a number attached, so the pilot has to be paid, small, and scoped to end on a decision rather than on a date. Cover what belongs in the scope (one measurable outcome, a named owner on their side, a stated end date and what happens on it), the trap of the pilot that quietly becomes the engagement at pilot pricing, and why 'we will credit the pilot fee against the first invoice' is the structure that gets signed. Then the honest exception, which is where the buyer genuinely cannot procure anything without evidence. COVERAGE CHECKED against the section index: nothing covers pilots. retainer-vs-project-pricing owns the retainer and project shapes and the sequencing argument, and how-to-write-a-proposal-that-wins owns the exclusion line and one-price argument, so reference each once and do not restate them.",
-      "audience": "US B2B founders and consultants being asked for a pilot",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "Sales",
-        "Pricing",
-        "B2B"
-      ]
-    },
-    {
       "id": "b-186",
       "slot": "morning",
       "market": "India",
@@ -1128,6 +1107,11 @@
       "id": "b-184",
       "retired_at": "2026-11-13",
       "published_slug": "vat-selling-to-other-eu-countries"
+    },
+    {
+      "id": "b-185",
+      "retired_at": "2026-11-13",
+      "published_slug": "how-to-price-a-pilot-project"
     }
   ]
 }
