@@ -107,27 +107,6 @@
       ]
     },
     {
-      "id": "b-188",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "how to write a follow up email after no response",
-      "secondary_keywords": [
-        "follow up email sequence b2b",
-        "how many times to follow up",
-        "breakup email"
-      ],
-      "working_title": "Six follow-ups that say nothing is worse than one that says something",
-      "angle": "Practical. Most follow-up advice is about cadence and the cadence is not the problem, the emptiness is: a message whose only content is that you are still there teaches the recipient that your emails can be ignored safely. Give the rule that each follow-up must carry something the previous one did not, and then the four things that qualify when you have no news (a specific answer to a question they raised, something that changed in their world rather than yours, a narrowed ask, and an explicit close). Cover the close properly, since the so-called breakup email usually reads as manipulation, and the honest version is a single sentence giving them an easy no. Include the one-line reply test. COVERAGE CHECKED against the section index: crm-for-small-business-india owns the three things that qualify as a reason to make contact and is India, cold-email-deliverability-setup owns the DNS layer, and how-to-run-a-discovery-call owns the call itself. So link the CRM post for the reason-to-contact material rather than restating it, and keep this on the writing.",
-      "audience": "US founders and salespeople chasing unanswered emails",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "Sales",
-        "Email",
-        "Process"
-      ]
-    },
-    {
       "id": "b-189",
       "slot": "evening",
       "market": "Estonia",
@@ -1112,6 +1091,11 @@
       "id": "b-185",
       "retired_at": "2026-11-13",
       "published_slug": "how-to-price-a-pilot-project"
+    },
+    {
+      "id": "b-188",
+      "retired_at": "2026-11-14",
+      "published_slug": "follow-up-email-after-no-response"
     }
   ]
 }
