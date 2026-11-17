@@ -44,27 +44,6 @@
       ]
     },
     {
-      "id": "b-181",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "competitor copied my website content",
-      "secondary_keywords": [
-        "someone copied my website india",
-        "dmca takedown india",
-        "duplicate content competitor"
-      ],
-      "working_title": "Somebody copied your site, and the search problem is smaller than you think",
-      "angle": "Practical and calming, because the panic is usually disproportionate to the damage. Separate the three distinct problems: the search effect, which is normally minimal because the original is identifiable by date and links, the commercial effect of a buyer seeing identical copy on two sites, and the actual legal position. VERIFY AT SOURCE before writing: Google's own documented position on duplicate content and scraped content, and the mechanism for a copyright removal request, rather than the folklore that duplicate content carries a penalty. Then the practical sequence: evidence first with dated archives, the host and the registrar before the lawyer, the removal request route, and when to let it go because the copy is doing them more harm than you. Close on the structural fix, which is that the pages a competitor can usefully copy were never your differentiator, and the ones carrying your numbers, your photographs and your named references cannot be copied at all.",
-      "audience": "Indian business owners who found their copy on a competitor's site",
-      "city": null,
-      "expertise_link": "/expertise/content-marketing/",
-      "tags": [
-        "Content Marketing",
-        "SEO",
-        "Legal"
-      ]
-    },
-    {
       "id": "b-182",
       "slot": "evening",
       "market": "US",
@@ -1096,6 +1075,11 @@
       "id": "b-188",
       "retired_at": "2026-11-14",
       "published_slug": "follow-up-email-after-no-response"
+    },
+    {
+      "id": "b-181",
+      "retired_at": "2026-11-17",
+      "published_slug": "competitor-copied-my-website-content"
     }
   ]
 }
