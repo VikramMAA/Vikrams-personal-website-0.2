@@ -55,6 +55,8 @@ That is the whole reply. It is short on purpose. Every additional sentence in th
 
 ## What Google will actually remove
 
+The short version is below. I have since written the longer one, with the five policy grounds quoted and what to cite on each, as [can I get a bad Google review removed](/blog/respond-to-negative-google-review/).
+
 Set expectations first, because the removal route is slower and narrower than most people expect.
 
 Google removes content that is not based on a real experience or does not accurately represent the place. So: invented visits, reviews written by somebody with a stake in the business, coached or incentivized reviews, and anything hitting the prohibited content rules like harassment, personal information or off topic ranting.

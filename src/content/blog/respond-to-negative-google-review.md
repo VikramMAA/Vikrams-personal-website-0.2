@@ -1,23 +1,21 @@
 ---
-title: "How do I respond to a negative Google review?"
-seoTitle: "How to Respond to a Negative Google Review"
-description: "The reply is the easy part and the only part anybody writes about. Google will not remove a review for being wrong, but five other grounds exist."
+title: "Can I get a bad Google review removed?"
+seoTitle: "Getting a Bad Google Review Removed"
+description: "There is no policy ground for a review being inaccurate or unfair. Five other grounds exist, and they are commonly present and almost never cited."
 publishedAt: 2026-11-07
 published: true
 tags: ["Reputation", "Local SEO", "Customer Service"]
 ---
 
-The reply is the easy part. It is also the only part anybody writes about.
+The first thing most owners do with a bad review is try to get it taken down, and most of that effort is wasted on the wrong argument.
 
-I gave the four-line version of it [when writing about getting reviews in the first place](/blog/how-to-get-more-google-reviews/), and the single thing worth repeating here is that the reply is written for the next prospect rather than for the reviewer. Once you accept that, the wording mostly answers itself.
+So start here, because the answer changes what you do next. There is no policy ground for a review being inaccurate, unfair, or written by somebody who misremembered. None. Appeals built on that premise are being read against a policy that does not ask the question.
 
-What nobody tells you is the rest of it. Which reviews are worth answering at all, which ones Google will actually take down and on what grounds, and what to do when the third person in a row says the same thing.
+There are five grounds that do work, they are commonly present, and they are almost never cited properly.
 
-Start with removal, because that is where the wasted effort goes.
+If you want the wording for the reply itself, including three example replies you can adapt, I wrote that up as [how to respond to a negative Google review](/blog/how-to-respond-to-negative-google-reviews/). This post is about whether the review has to stay up at all, and what to do once you know it does.
 
-## Google will not remove a review for being wrong
-
-This is the misunderstanding that costs owners the most time. There is no policy ground for a review being inaccurate, unfair, or written by somebody who misremembered.
+## What the policy does and does not cover
 
 I went through [Google's prohibited and restricted content policy](https://support.google.com/contributionpolicy/answer/7400114) category by category to check, and nothing in it covers accuracy. What it does say, explicitly, is that the policy permits "content that describes negative experiences in a respectful manner". A truthful bad review is working as designed, and so is a false one that is politely worded.
 
@@ -39,9 +37,9 @@ When you flag, cite the ground in its own language and point at the specific sen
 
 And if a review clears all five and is simply bad, it is staying up. The remaining work is the reply, and the reply is enough.
 
-## Not every review gets the same reply
+## Once it is staying up, triage before you write
 
-Triage first, because the right response differs by what a reader will conclude.
+The reply wording is covered in the post linked above. What is not covered there is which reviews are worth answering at all, and the right response differs by what a reader will conclude.
 
 **The fair complaint.** Highest value in the whole exercise. Reply fully, acknowledge the specific thing, and say what changed. A prospect reading this learns more about you than from any five-star review.
 
