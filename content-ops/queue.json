@@ -44,27 +44,6 @@
       ]
     },
     {
-      "id": "b-182",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "should i offer a money back guarantee",
-      "secondary_keywords": [
-        "money back guarantee small business",
-        "satisfaction guarantee service business",
-        "risk reversal offer"
-      ],
-      "working_title": "A guarantee is a statement about your worst month, not your best work",
-      "angle": "Opinion. Risk reversal gets sold as a conversion tactic and it is really a disclosure: a guarantee tells a buyer what you are willing to be held to when the work goes badly, which is why a vague one reads worse than none. Argue that the useful question is not whether to offer one but what specifically you would refund and in what circumstance, because 'satisfaction guaranteed' is unfalsifiable and buyers have learned to read it as decoration. Cover the three shapes that actually work (a refund with a named condition, a redo rather than a refund, and a cap on the first engagement), who actually claims (the honest answer is few, and the ones who do are frequently the accounts you mispriced), and the operational cost nobody budgets, which is the argument you will have about whether the condition was met. Then the sharper point: a guarantee you would honour quietly is worth more than one you would litigate, so write the version you could live with on the worst Friday of the year. COVERAGE CHECKED against the section index: no post covers guarantees as a marketing decision. google-local-services-ads mentions only Google's retired Guaranteed badge, and should-i-put-pricing-on-my-website owns the publish-pricing question, so reference that once for the pricing half and do not restate it.",
-      "audience": "US service businesses considering risk reversal",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Conversion",
-        "Pricing",
-        "Strategy"
-      ]
-    },
-    {
       "id": "b-186",
       "slot": "morning",
       "market": "India",
@@ -1080,6 +1059,11 @@
       "id": "b-181",
       "retired_at": "2026-11-17",
       "published_slug": "competitor-copied-my-website-content"
+    },
+    {
+      "id": "b-182",
+      "retired_at": "2026-11-17",
+      "published_slug": "should-i-offer-a-money-back-guarantee"
     }
   ]
 }
