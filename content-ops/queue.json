@@ -23,27 +23,6 @@
       ]
     },
     {
-      "id": "b-172",
-      "slot": "evening",
-      "market": "Estonia",
-      "primary_keyword": "b2b cold email gdpr eu legal",
-      "secondary_keywords": [
-        "is cold email legal in the eu",
-        "gdpr legitimate interest outbound",
-        "cold outreach europe rules"
-      ],
-      "working_title": "Cold email in the EU is legal and most of what people send is not",
-      "angle": "Opinion grounded in primary sources. The received wisdom is that GDPR killed outbound in Europe, and it did not: B2B contact under legitimate interest is lawful and the real constraints are narrower and more specific than the folklore. Verify at source before writing: GDPR Article 6(1)(f) and Article 14 on information to be provided when data was not obtained from the subject, Article 21 on objection, the ePrivacy Directive's treatment of unsolicited electronic mail and the fact that member states differ on whether B2B is in scope, and the Estonian Electronic Communications Act position. Then argue the practical consequence: the compliance work is mostly disclosure and suppression rather than consent, and the thing that actually gets companies in trouble is scraped volume, not outreach. Say plainly where the uncertainty sits and that this is not legal advice. Link the deliverability post for the technical setup and do not repeat it.",
-      "audience": "Estonian B2B founders and sales leads doing outbound into the EU",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Outbound",
-        "Compliance",
-        "Estonia"
-      ]
-    },
-    {
       "id": "b-189",
       "slot": "evening",
       "market": "Estonia",
@@ -1048,6 +1027,11 @@
       "id": "b-186",
       "retired_at": "2026-11-18",
       "published_slug": "get-listed-on-quick-commerce-india"
+    },
+    {
+      "id": "b-172",
+      "retired_at": "2026-11-18",
+      "published_slug": "b2b-cold-email-gdpr-eu"
     }
   ]
 }
