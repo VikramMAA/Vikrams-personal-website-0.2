@@ -44,27 +44,6 @@
       ]
     },
     {
-      "id": "b-186",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "how to get listed on quick commerce platforms india",
-      "secondary_keywords": [
-        "blinkit onboarding brand",
-        "zepto listing process",
-        "quick commerce assortment"
-      ],
-      "working_title": "Getting listed is the easy part and nobody tells you the rest",
-      "angle": "Practical, and it is the operational sequel to the strategy post. The listing itself is a form and a margin conversation; what decides whether it works is assortment, pack size and fill rate, and most brands learn that after committing stock. Cover what to prepare before the first conversation (which SKUs, which pack sizes built for a ten-minute basket rather than a monthly shop, what you can supply weekly without stocking out), the fill-rate expectation and what happens to visibility when you miss it, who actually owns the relationship after onboarding, and the dark-store geography question, since being listed is not the same as being stocked in the stores near your customers. Be careful with fee and margin figures, which move and are mostly reported second hand, so give ranges or decline. COVERAGE CHECKED against the section index: quick-commerce-vs-d2c-india owns the economics, the fee structure, the listing-fee arithmetic, the exposed-categories split and the you-do-not-get-the-customer argument, so this must be the how rather than the whether, and should link it once.",
-      "audience": "Indian consumer brand founders approaching quick commerce",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "D2C",
-        "Ecommerce",
-        "Distribution"
-      ]
-    },
-    {
       "id": "b-189",
       "slot": "evening",
       "market": "Estonia",
@@ -1064,6 +1043,11 @@
       "id": "b-182",
       "retired_at": "2026-11-17",
       "published_slug": "should-i-offer-a-money-back-guarantee"
+    },
+    {
+      "id": "b-186",
+      "retired_at": "2026-11-18",
+      "published_slug": "get-listed-on-quick-commerce-india"
     }
   ]
 }
