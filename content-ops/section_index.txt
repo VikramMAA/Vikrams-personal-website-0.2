@@ -1155,9 +1155,9 @@ US | are-linkedin-ads-worth-it | Are LinkedIn ads worth it for a small B2B compa
     - About the cost figures
     - A lead and a conversation are further apart here
     - Where I come out
-US | respond-to-negative-google-review | How do I respond to a negative Google review?
-    - Google will not remove a review for being wrong
-    - Not every review gets the same reply
+US | respond-to-negative-google-review | Can I get a bad Google review removed?
+    - What the policy does and does not cover
+    - Once it is staying up, triage before you write
     - The sentence that makes a reply credible
     - When three people say the same thing
     - A profile with no bad reviews reads as managed
@@ -1226,3 +1226,71 @@ US | when-to-hire-first-salesperson | When should I hire my first salesperson?
     - You cannot incentivise your way out of not knowing what works
     - The handoff that nobody actually does
     - Where I come out
+US | customer-loyalty-program-small-business | Is a customer loyalty program worth it for a small business?
+    - The number you need first
+    - Two mechanisms, and only one of them looks like a discount
+    - Why the punch card beats points for a business your size
+    - The break-even, on your own margin
+    - The thing that actually kills these
+    - Before lunch
+India | agency-or-in-house-marketing-india | Should I hire an agency or build a marketing team in India?
+    - The question underneath, which is about forgetting
+    - Knowledge that compounds where
+    - If you rent, buy the reasoning and not just the output
+    - The option founders here skip, and the honest version of it
+    - Where I come out
+Estonia | vat-selling-to-other-eu-countries | Do I need a VAT number in every EU country I sell to?
+    - B2B first, because it is usually not your problem
+    - B2C: the threshold, exactly
+    - Two traps that break the threshold entirely
+    - What the One Stop Shop actually costs you in admin
+    - What changes on 1 January 2027
+    - Before lunch
+US | how-to-price-a-pilot-project | Should a pilot project be free, and how do I price one?
+    - The paid pilot is about paperwork, not commitment
+    - Scope it to end on a decision, not a date
+    - The fee that actually gets signed
+    - Two things to refuse
+    - The conversion numbers, and why I am not quoting them
+    - When a free pilot is genuinely right
+US | follow-up-email-after-no-response | How do I write a follow-up email after no response?
+    - The obvious fix is contradicted by the only number there is
+    - Remove the need to explain the silence
+    - Ask for less each time
+    - Four mechanical things
+    - The close, and why the usual version fails
+    - Before lunch
+India | competitor-copied-my-website-content | A competitor copied my website content. What should I do?
+    - The search problem is smaller than you think
+    - What a Google removal actually does, and what it does not
+    - The faster route is usually the host
+    - The commercial problem, which is the one that actually costs you
+    - When to let it go
+    - Before lunch
+US | should-i-offer-a-money-back-guarantee | Should I offer a money back guarantee?
+    - What the rules actually require
+    - So write the specific version, which is also better marketing
+    - Three shapes that work
+    - Who actually claims, and what it tells you
+    - The cost that nobody budgets
+    - The worst Friday test
+India | get-listed-on-quick-commerce-india | How do I get my brand listed on Blinkit, Zepto and Instamart?
+    - Being listed is not being stocked
+    - So the assortment negotiation is the real one
+    - Fill rate is a promise you make before you know the demand
+    - The portals, the process, and the numbers I will not give you
+    - Before lunch
+Estonia | b2b-cold-email-gdpr-eu | Is B2B cold email legal in the EU?
+    - The rule you want is national, not European
+    - What Estonia's own law actually says
+    - Which makes the address the decision, not the copy
+    - The work is disclosure and suppression, not consent
+    - What actually gets companies in trouble is the list
+    - Where I come out
+Estonia | which-eu-market-to-expand-to-next | Which EU market should we expand to next?
+    - Start with the orders you did not chase
+    - The five things that predict what entry actually costs
+    - Score the three you are actually considering
+    - The day-trip test, which sounds trivial and is not
+    - Why the smaller market keeps winning
+    - Before lunch

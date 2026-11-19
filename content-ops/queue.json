@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-171",
-      "slot": "morning",
-      "market": "Estonia",
-      "primary_keyword": "which eu market to expand to next",
-      "secondary_keywords": [
-        "eu market entry prioritisation",
-        "choosing an export market",
-        "market selection criteria b2b"
-      ],
-      "working_title": "Pick the next market on evidence you already have, not on market size",
-      "angle": "Practical, and it sits above the country posts rather than repeating them. Estonian founders choose the next market by population or by who speaks at a conference, and then spend a year finding out the buying process is different. Give the selection method: start from the customers you already have outside Estonia, because unplanned demand is the strongest signal available, then score candidates on five things that actually predict cost to enter (language of the buying process, whether your category buys on tender or on relationship, payment and invoicing expectations, whether your existing references transfer, and whether one person can cover it by plane in a day). Make the point that a smaller market where your references carry beats a larger one where they do not. Link the Germany, Baltics and Nordics posts as the worked examples and do not restate them.",
-      "audience": "Estonian founders planning their next export market",
-      "city": "Tallinn",
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Market Entry",
-        "Estonia",
-        "Strategy"
-      ]
-    },
-    {
       "id": "b-189",
       "slot": "evening",
       "market": "Estonia",
@@ -39,6 +18,237 @@
       "expertise_link": "/expertise/marketing-sales-alignment/",
       "tags": [
         "B2B",
+        "Positioning",
+        "Estonia"
+      ]
+    },
+    {
+      "id": "b-190",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "competitor bidding on my brand name",
+      "secondary_keywords": [
+        "competitor using my trademark in google ads",
+        "brand name bidding google ads",
+        "stop competitor ads on my brand"
+      ],
+      "working_title": "A competitor is bidding on my brand name. What can I do?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. google-ads-not-converting owns PMax eating your own brand searches and billing you for them, which is a different problem and should be linked rather than restated. performance-max-explained owns PMax mechanics. b2b-demand-generation-vs-capture mentions brand search only as an example of capture. Nothing owns the competitor-bidding question or Google's trademark policy, so this is clear ground. The crux, and almost every blog gets it backwards: verify Google's own trademark policy at source first, because the distinction that decides your whole response is between a competitor using your trademark as a keyword, which Google does not police, and your trademark appearing in their ad text, which it will act on. So the legal route only reaches half the problem and the other half is an economic decision, not a complaint form. Then the practical sequence: file the trademark complaint for ad text only, then measure what the keyword bidding is actually costing you using auction insights plus Search Console's click share on your brand term, because most owners discover they were already getting those clicks free from the organic result and the defensive campaign buys back clicks they never lost. Close on the counterintuitive bit: bidding back on their brand usually costs you more than it costs them, because your quality score on their name is poor and theirs on yours is not, so retaliation is the expensive option.",
+      "audience": "A US small business owner who found a competitor's ad above their own brand search",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Google Ads",
+        "PPC",
+        "Legal"
+      ]
+    },
+    {
+      "id": "b-191",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "is my website traffic real or bots",
+      "secondary_keywords": [
+        "bot traffic in ga4",
+        "how to filter bot traffic google analytics",
+        "fake website traffic"
+      ],
+      "working_title": "Is the traffic in my analytics real?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. No post owns bot or non-human traffic. why-dont-my-ga4-and-google-ads-numbers-match owns the GA4-versus-Ads discrepancy, which is a different cause and worth one link. why-is-my-traffic-down-when-rankings-havent-changed and google-algorithm-update-recovery own traffic drops. seo-for-ai-search and should-i-block-ai-crawlers own the AI crawler question from the SEO side, not the measurement side, so this post must not re-argue whether to block them. Practical and specific. GA4 filters known bots by the IAB list automatically and that is the reassurance everybody quotes, but the list only covers declared crawlers, so the traffic that distorts a small site's numbers is the undeclared kind: headless browsers, scrapers, uptime monitors you set up yourself, and the growing share of AI assistant fetches that arrive with a real-looking user agent. Verify at source what Google documents GA4 as excluding before asserting anything. Give the diagnosis a reader can run this morning: sort landing pages by sessions and look for pages no human has a reason to enter on, check for sessions with zero engagement time at scale, compare server log hits against GA4 sessions if they have access, and look at the country and ISP breakdown rather than the channel report. Then the fix that matters: define one conversion you can verify outside analytics, usually a form submission that lands in an inbox or a phone call, and manage on that, because the point is not clean traffic numbers, it is not making a budget decision on a count of robots.",
+      "audience": "A US business owner whose analytics shows traffic that does not produce enquiries",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Analytics",
+        "GA4",
+        "Measurement"
+      ]
+    },
+    {
+      "id": "b-192",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "review site outranking my website",
+      "secondary_keywords": [
+        "yelp ranks above my website",
+        "directory outranks my site for my own name",
+        "how to outrank a review site"
+      ],
+      "working_title": "Why is a review site outranking my own website?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. b2b-demand-generation-vs-capture mentions review sites once as a capture channel. best-digital-marketing-agencies-2026 and marketing-agency-red-flags mention Clutch-style listings in passing. yelp-or-google-business-profile-which-first owns the Yelp-versus-GBP triage. my-competitor-is-buying-fake-reviews and the two negative-review posts own review handling. Nothing owns a directory or review site outranking you for your own name, which is the query here. The answer early and flatly: for your own brand name you can almost always fix this, and for category queries you often cannot and should stop trying. Separate the two cases, because the advice is opposite. For your own name, the usual causes are mechanical and fixable in an afternoon: no clear homepage title containing the business name, missing or wrong Organization schema with sameAs, a thin or missing about page, and the directory holding more inbound links than you do. For category queries like best plumber in a metro, the review site wins because it satisfies a comparison intent your single-vendor page structurally cannot, so the move is to be the best-looking entry inside that listing rather than to outrank it, and to measure the listing as a channel instead of as a competitor. The concrete middle: a short audit of what the directory has on its page about you that your own site does not. Close on the opinion worth arguing with, that for most local businesses the directory ranking above you is a distribution channel you are refusing to optimise because it offends you.",
+      "audience": "A US business owner who sees a directory above their own site in search results",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "SEO",
+        "Local SEO",
+        "Reviews"
+      ]
+    },
+    {
+      "id": "b-193",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "should i fire a client",
+      "secondary_keywords": [
+        "how to let a client go",
+        "firing a difficult client",
+        "when to end a client relationship"
+      ],
+      "working_title": "Should I fire a client?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. client-concentration-risk-small-business owns how much revenue from one client is too much, which is the arithmetic of dependence and should be linked rather than restated. why-marketing-agencies-lose-clients owns churn from the agency's side. how-to-handle-price-objections-without-discounting owns the discount conversation. Nothing owns the decision to end a relationship, and nobody writes it honestly because everybody writing it is selling services. Opinion shape with a point of view. The argument: the client people want to fire is usually the rude one, and the client they should fire is usually the profitable-looking one that has quietly become a different business than the one they sell. Give the three tests that actually distinguish them, written as questions a reader can answer in ten minutes: what is this account's real hourly rate after the unbilled calls, would you take this work again today at this price, and does the work they ask for still match what you want to be hired for in two years. Then the harder half, which is that the right answer is often to reprice or renegotiate the scope rather than to leave, and that most people skip straight to leaving because it is the conversation they can have without being refused. Then how to actually do it, including notice, handover, and not badmouthing them afterwards because the market is small. Do not rubbish any named company. Close on where I come out, which should include the honest point that firing a client you cannot replace is a luxury decision and saying otherwise is advice from people with a full pipeline.",
+      "audience": "A US consultant, agency owner or service business owner with one account they dread",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Consulting",
+        "Agency",
+        "Pricing"
+      ]
+    },
+    {
+      "id": "b-194",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "competitor undercutting my prices",
+      "secondary_keywords": [
+        "how to compete with a cheaper competitor",
+        "competitor keeps lowering prices",
+        "price war small business"
+      ],
+      "working_title": "A competitor keeps undercutting my price. What now?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. how-to-handle-price-objections-without-discounting owns the live objection in a sales conversation, including the script and why founders discount more than salespeople, so this post must not restate the script and should link it instead. should-i-put-pricing-on-my-website owns publishing prices. how-to-price-a-pilot-project and retainer-vs-project-pricing own pricing structure. Nothing owns a competitor deliberately pricing below you as a market condition rather than an objection. Opinion shape. The argument to make, and it is the opposite of the usual add-more-value advice: before deciding anything, work out whether the competitor is cheaper or whether they are selling something smaller that looks the same from outside, because in most cases I have looked at it is the second, and the fix is describing the difference rather than defending the number. Then the three responses that exist, named honestly: match and change your cost base, hold and narrow who you sell to, or unbundle so there is a comparable cheap version of you on the shelf. Each has a real cost and the article should say what each one costs. Then the thing nobody says out loud: a competitor pricing below sustainable cost is a temporary condition and waiting it out is a legitimate strategy if your balance sheet can, and a losing one if it cannot, so the decision is about your cash rather than your positioning. Never rubbish a named company. Close with a straight opinion on which of the three is right for a business that cannot cut its costs.",
+      "audience": "A US business owner losing deals to a cheaper competitor",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Pricing",
+        "Positioning",
+        "Sales"
+      ]
+    },
+    {
+      "id": "b-195",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "marketing working but cannot handle the work",
+      "secondary_keywords": [
+        "too many leads not enough capacity",
+        "should i pause marketing when busy",
+        "growth constrained by delivery"
+      ],
+      "working_title": "Your marketing is fine. Your business cannot take the work",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. No post owns capacity as the binding constraint; the word appears only in passing in marketing-budget-percentage-of-revenue, are-angi-leads-worth-it and two India posts. why-arent-my-leads-converting-into-sales and why-arent-my-home-service-leads-turning-into-jobs own lead handling and follow-up speed, which is adjacent and must be linked rather than restated, because that is about leads that are badly handled and this is about leads that are correctly handled by a business with no room for them. when-to-hire-first-salesperson owns sales hiring. Opinion shape, and the point of view is unfashionable: for a meaningful share of the small businesses that ask me to generate more leads, more leads would make the business worse, and the honest first engagement is to say so. Build the argument on observable symptoms rather than invented statistics: quote turnaround slipping, the owner doing delivery at night, the best people being the ones who leave, and the fact that the enquiries that get dropped are always the biggest ones because they need the most thought. Then the part that makes it a marketing article rather than an operations one: when capacity is the constraint, marketing's job changes from volume to selection, which means raising prices, narrowing the offer, publishing the qualifying criteria, and spending the budget on fewer, better-fit enquiries. That is a real marketing programme and it is almost never what gets briefed. Close on the straight opinion, that a business running at capacity should spend on price and positioning before it spends on reach.",
+      "audience": "A US owner of a service business that is busy, stressed and still being told to generate leads",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Strategy",
+        "Process",
+        "Small Business"
+      ]
+    },
+    {
+      "id": "b-196",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "how much does a website cost in india",
+      "secondary_keywords": [
+        "website development cost india",
+        "website price for small business india",
+        "what should i pay for a website"
+      ],
+      "working_title": "How much does a website cost in India?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. Nothing matched website cost at all. digital-marketing-consultant-cost-india and what-digital-marketing-actually-costs-in-india own marketing service pricing and the tenfold quote spread argument, so this post must not re-run that argument in the same shape and should link one of them. is-my-website-worth-rebuilding-or-just-fixing is US and owns the rebuild-versus-fix decision; website-launch-checklist is US and owns launch checks. why-did-my-website-get-slow-again owns performance. Clear ground. Practical and specific, in rupees throughout. Do not invent a price table: gather real current ranges from named Indian sources or frame as a range from experience, and say which it is. The useful structure is not a price list but a list of what actually moves the number, because the reader's real question is whether the quote in front of them is reasonable: how many templates versus how many unique page designs, who writes the copy, whether the content is migrated or retyped, forms and where the enquiry lands, payments, and who owns the hosting and the domain afterwards. Then the three cost traps I would check in any Indian quote: the website built on a page builder the agency controls, the copy left to the client and therefore never written, and the annual maintenance charge that exists to re-sell the same work. Concrete middle: a short list of questions to ask before signing, each with what a good answer sounds like. Close with the honest point that the cheapest usable site for a small business in India is usually cheaper than people expect and the expensive mistake is almost never the build price.",
+      "audience": "An Indian small business owner holding two or three website quotes",
+      "city": "Bengaluru",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Budgeting",
+        "Small Business",
+        "Conversion"
+      ]
+    },
+    {
+      "id": "b-197",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "whatsapp business green tick verification",
+      "secondary_keywords": [
+        "how to get verified on whatsapp business",
+        "whatsapp business api official account",
+        "whatsapp official business account india"
+      ],
+      "working_title": "How do I get the green tick on WhatsApp Business?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. track-whatsapp-leads-from-website owns measurement of WhatsApp enquiries including the Meta referral object and ctwa_clid, and must be linked rather than restated. whatsapp-marketing-india owns broadcast and template messaging, and the October pricing change post owns the pricing shift. Nothing owns verification, the business-account tiers or the Meta Business Verification process. Practical, step shaped, and this one needs primary sources because the folklore is wrong in both directions: verify at Meta's own documentation what the green tick now means, how it relates to Official Business Account status, Meta Verified, and plain business verification, because the names changed and most Indian blog posts describe a flow that no longer exists. Then the honest answer to the question the reader is really asking, which is whether the tick is worth the work: it is not granted on request and not bought by volume, so the realistic path for a small business is display-name approval plus business verification, which is the part that actually unlocks what they want. The steps, in order, with the documents an Indian company actually needs, naming the ones that cause rejections: the name on the GST certificate not matching the display name, a website that does not mention the business name, and a phone number already attached to a personal WhatsApp account. Concrete middle: the pre-submission checklist. Close with what to do while the application sits, which is make the catalogue and the away message good, because those change replies today.",
+      "audience": "An Indian business owner whose sales run on WhatsApp and who wants the verified badge",
+      "city": "Mumbai",
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "WhatsApp",
+        "Process",
+        "Small Business"
+      ]
+    },
+    {
+      "id": "b-198",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "gst input tax credit on google ads",
+      "secondary_keywords": [
+        "gst on facebook ads india",
+        "can i claim gst on digital advertising",
+        "itc on meta ads india"
+      ],
+      "working_title": "Can I claim GST input credit on Google and Meta ads?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. GST on ad spend appears only in passing in linkedin-content-strategy-b2b-india and digital-marketing-consultant-cost-india. No post owns it. how-much-should-a-small-business-spend-on-digital-marketing-in-india and how-should-i-split-a-rs-50000-marketing-budget own budget allocation, so this must stay on the tax mechanics and link one of them for the budgeting half. Practical, and this is a brief where the research has to be done properly at source or the post should not run: use CBIC and the GST law itself rather than agency blogs, establish whether the invoice comes from the Indian entity or the overseas one and what that changes, what the reverse charge position is where it applies, and what the registration status of the advertiser changes. State plainly what is settled and what is not, and recommend the reader confirm their own case with their CA rather than implying this is advice. The reason the post is worth writing is the budgeting consequence nobody spells out: a registered business that can claim the credit is spending materially less in real terms than an unregistered one at the same headline spend, which means the same agency recommendation is a different decision for the two of them, and quotes and benchmarks passed around in rupees are not comparable across that line. Concrete middle: what to check on the next ad invoice, field by field, including the GSTIN on it and whether the place of supply is right, because a wrong GSTIN on the ad account is the commonest reason the credit is lost and it is fixable in the billing settings.",
+      "audience": "An Indian business owner spending on Google and Meta ads who has never checked the tax treatment",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Budgeting",
+        "Compliance",
+        "Google Ads"
+      ]
+    },
+    {
+      "id": "b-199",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "why do customers always ask for a discount",
+      "secondary_keywords": [
+        "indian customers asking for discount",
+        "how to stop clients asking for discount",
+        "negotiation small business india"
+      ],
+      "working_title": "Why does every customer ask for a discount before they ask about the work?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. how-to-handle-price-objections-without-discounting is the US post and owns the objection script, the trade-if-you-move rule and why founders discount more than salespeople; this post must not restate any of that and should link it. how-should-i-price-my-services-in-india owns pricing method. what-digital-marketing-actually-costs-in-india owns the quote spread. festive-season-marketing-india owns festive discounting. The uncovered question is the behaviour itself, and the answer is not cultural, which is the lazy explanation and the one every LinkedIn post reaches for. Opinion shape with a real point of view. The argument: the discount request arrives first because nothing in the conversation so far has given the buyer anything else to compare, and in a market where the same service is quoted at a tenfold spread, price is the only comparable field on the form. So the request is a symptom of an undifferentiated proposal, not of a stingy buyer. Then the consequences for how you sell: what has to be in the first conversation so that price is the third question rather than the first, why an itemised quote invites itemised negotiation, and why the scope you refuse tells the buyer more about your level than the scope you include. Be careful not to generalise about Indian buyers as a group; keep it about the information available to them. Close on the straight opinion, that a business that gets asked for a discount every single time has a positioning problem it is treating as a negotiation problem.",
+      "audience": "An Indian founder or service business owner tired of starting every deal at a discount",
+      "city": "Bengaluru",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Pricing",
+        "Positioning",
+        "Sales"
+      ]
+    },
+    {
+      "id": "b-200",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "how to do customer interviews remotely",
+      "secondary_keywords": [
+        "customer research for export markets",
+        "how to talk to customers in another country",
+        "b2b customer interview questions"
+      ],
+      "working_title": "How do I run customer interviews when my customers are all abroad?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. Nothing matched customer interviews, user interviews or talking to your customers. positioning-statement-examples is India and owns positioning output. international-seo-for-estonian-companies owns search-demand validation per market, which is the desk-research half and should be linked as the complement. pricing-for-export-markets owns the lesson that a buyer saying yes without pausing is information, which is adjacent and worth one link rather than a restatement. expansion-revenue-small-market-saas owns retention economics. Clear ground, and it is a real gap for a country whose companies mostly sell outward. Practical, morning shape. The spine: an Estonian company's biggest research disadvantage is not budget, it is that the founders cannot overhear anything, so every signal has to be asked for deliberately. Give the method. Who to ask, and the counterintuitive ordering that the most useful interviews are with people who evaluated you and chose something else, followed by customers who bought recently enough to remember the alternatives. How to get the meeting without it reading as a sales call, including who should send the request and why a founder gets accepted more often than a researcher. The questions, with the rule that you ask about the last time rather than about preferences, because what somebody did is evidence and what they would do is not. Then the part specific to selling across borders and across languages: run it in the buyer's working language where you can, accept that a translated interview loses the hesitations that carry the signal, and never run it over email. Concrete middle: a copyable set of six questions. Close with the one on Friday instruction, because ten interviews nobody schedules is the normal outcome.",
+      "audience": "An Estonian founder whose customers and prospects are all in other countries",
+      "city": "Tallinn",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Research",
         "Positioning",
         "Estonia"
       ]
@@ -1032,6 +1242,27 @@
       "id": "b-172",
       "retired_at": "2026-11-18",
       "published_slug": "b2b-cold-email-gdpr-eu"
+    },
+    {
+      "id": "b-171",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "which eu market to expand to next",
+      "secondary_keywords": [
+        "eu market entry prioritisation",
+        "choosing an export market",
+        "market selection criteria b2b"
+      ],
+      "working_title": "Pick the next market on evidence you already have, not on market size",
+      "angle": "Practical, and it sits above the country posts rather than repeating them. Estonian founders choose the next market by population or by who speaks at a conference, and then spend a year finding out the buying process is different. Give the selection method: start from the customers you already have outside Estonia, because unplanned demand is the strongest signal available, then score candidates on five things that actually predict cost to enter (language of the buying process, whether your category buys on tender or on relationship, payment and invoicing expectations, whether your existing references transfer, and whether one person can cover it by plane in a day). Make the point that a smaller market where your references carry beats a larger one where they do not. Link the Germany, Baltics and Nordics posts as the worked examples and do not restate them.",
+      "audience": "Estonian founders planning their next export market",
+      "city": "Tallinn",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Market Entry",
+        "Estonia",
+        "Strategy"
+      ]
     }
   ]
 }
