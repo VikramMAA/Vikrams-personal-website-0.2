@@ -86,27 +86,6 @@
       ]
     },
     {
-      "id": "b-193",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "should i fire a client",
-      "secondary_keywords": [
-        "how to let a client go",
-        "firing a difficult client",
-        "when to end a client relationship"
-      ],
-      "working_title": "Should I fire a client?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. client-concentration-risk-small-business owns how much revenue from one client is too much, which is the arithmetic of dependence and should be linked rather than restated. why-marketing-agencies-lose-clients owns churn from the agency's side. how-to-handle-price-objections-without-discounting owns the discount conversation. Nothing owns the decision to end a relationship, and nobody writes it honestly because everybody writing it is selling services. Opinion shape with a point of view. The argument: the client people want to fire is usually the rude one, and the client they should fire is usually the profitable-looking one that has quietly become a different business than the one they sell. Give the three tests that actually distinguish them, written as questions a reader can answer in ten minutes: what is this account's real hourly rate after the unbilled calls, would you take this work again today at this price, and does the work they ask for still match what you want to be hired for in two years. Then the harder half, which is that the right answer is often to reprice or renegotiate the scope rather than to leave, and that most people skip straight to leaving because it is the conversation they can have without being refused. Then how to actually do it, including notice, handover, and not badmouthing them afterwards because the market is small. Do not rubbish any named company. Close on where I come out, which should include the honest point that firing a client you cannot replace is a luxury decision and saying otherwise is advice from people with a full pipeline.",
-      "audience": "A US consultant, agency owner or service business owner with one account they dread",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Consulting",
-        "Agency",
-        "Pricing"
-      ]
-    },
-    {
       "id": "b-194",
       "slot": "evening",
       "market": "US",
@@ -1262,6 +1241,27 @@
         "Market Entry",
         "Estonia",
         "Strategy"
+      ]
+    },
+    {
+      "id": "b-193",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "should i fire a client",
+      "secondary_keywords": [
+        "how to let a client go",
+        "firing a difficult client",
+        "when to end a client relationship"
+      ],
+      "working_title": "Should I fire a client?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. client-concentration-risk-small-business owns how much revenue from one client is too much, which is the arithmetic of dependence and should be linked rather than restated. why-marketing-agencies-lose-clients owns churn from the agency's side. how-to-handle-price-objections-without-discounting owns the discount conversation. Nothing owns the decision to end a relationship, and nobody writes it honestly because everybody writing it is selling services. Opinion shape with a point of view. The argument: the client people want to fire is usually the rude one, and the client they should fire is usually the profitable-looking one that has quietly become a different business than the one they sell. Give the three tests that actually distinguish them, written as questions a reader can answer in ten minutes: what is this account's real hourly rate after the unbilled calls, would you take this work again today at this price, and does the work they ask for still match what you want to be hired for in two years. Then the harder half, which is that the right answer is often to reprice or renegotiate the scope rather than to leave, and that most people skip straight to leaving because it is the conversation they can have without being refused. Then how to actually do it, including notice, handover, and not badmouthing them afterwards because the market is small. Do not rubbish any named company. Close on where I come out, which should include the honest point that firing a client you cannot replace is a luxury decision and saying otherwise is advice from people with a full pipeline.",
+      "audience": "A US consultant, agency owner or service business owner with one account they dread",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Consulting",
+        "Agency",
+        "Pricing"
       ]
     }
   ]

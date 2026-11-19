@@ -1294,3 +1294,9 @@ Estonia | which-eu-market-to-expand-to-next | Which EU market should we expand t
     - The day-trip test, which sounds trivial and is not
     - Why the smaller market keeps winning
     - Before lunch
+US | should-i-fire-a-client | Should I fire a client, or fix the deal?
+    - Three questions that sort it in ten minutes
+    - Everybody says fix it first. Nobody says why you won't
+    - The one profession that had to write this down
+    - The exit is where it actually costs you
+    - Where I come out
