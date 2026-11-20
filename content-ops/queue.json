@@ -23,27 +23,6 @@
       ]
     },
     {
-      "id": "b-190",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "competitor bidding on my brand name",
-      "secondary_keywords": [
-        "competitor using my trademark in google ads",
-        "brand name bidding google ads",
-        "stop competitor ads on my brand"
-      ],
-      "working_title": "A competitor is bidding on my brand name. What can I do?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. google-ads-not-converting owns PMax eating your own brand searches and billing you for them, which is a different problem and should be linked rather than restated. performance-max-explained owns PMax mechanics. b2b-demand-generation-vs-capture mentions brand search only as an example of capture. Nothing owns the competitor-bidding question or Google's trademark policy, so this is clear ground. The crux, and almost every blog gets it backwards: verify Google's own trademark policy at source first, because the distinction that decides your whole response is between a competitor using your trademark as a keyword, which Google does not police, and your trademark appearing in their ad text, which it will act on. So the legal route only reaches half the problem and the other half is an economic decision, not a complaint form. Then the practical sequence: file the trademark complaint for ad text only, then measure what the keyword bidding is actually costing you using auction insights plus Search Console's click share on your brand term, because most owners discover they were already getting those clicks free from the organic result and the defensive campaign buys back clicks they never lost. Close on the counterintuitive bit: bidding back on their brand usually costs you more than it costs them, because your quality score on their name is poor and theirs on yours is not, so retaliation is the expensive option.",
-      "audience": "A US small business owner who found a competitor's ad above their own brand search",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Google Ads",
-        "PPC",
-        "Legal"
-      ]
-    },
-    {
       "id": "b-191",
       "slot": "morning",
       "market": "US",
@@ -1262,6 +1241,27 @@
         "Consulting",
         "Agency",
         "Pricing"
+      ]
+    },
+    {
+      "id": "b-190",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "competitor bidding on my brand name",
+      "secondary_keywords": [
+        "competitor using my trademark in google ads",
+        "brand name bidding google ads",
+        "stop competitor ads on my brand"
+      ],
+      "working_title": "A competitor is bidding on my brand name. What can I do?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. google-ads-not-converting owns PMax eating your own brand searches and billing you for them, which is a different problem and should be linked rather than restated. performance-max-explained owns PMax mechanics. b2b-demand-generation-vs-capture mentions brand search only as an example of capture. Nothing owns the competitor-bidding question or Google's trademark policy, so this is clear ground. The crux, and almost every blog gets it backwards: verify Google's own trademark policy at source first, because the distinction that decides your whole response is between a competitor using your trademark as a keyword, which Google does not police, and your trademark appearing in their ad text, which it will act on. So the legal route only reaches half the problem and the other half is an economic decision, not a complaint form. Then the practical sequence: file the trademark complaint for ad text only, then measure what the keyword bidding is actually costing you using auction insights plus Search Console's click share on your brand term, because most owners discover they were already getting those clicks free from the organic result and the defensive campaign buys back clicks they never lost. Close on the counterintuitive bit: bidding back on their brand usually costs you more than it costs them, because your quality score on their name is poor and theirs on yours is not, so retaliation is the expensive option.",
+      "audience": "A US small business owner who found a competitor's ad above their own brand search",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Google Ads",
+        "PPC",
+        "Legal"
       ]
     }
   ]

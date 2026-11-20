@@ -1300,3 +1300,9 @@ US | should-i-fire-a-client | Should I fire a client, or fix the deal?
     - The one profession that had to write this down
     - The exit is where it actually costs you
     - Where I come out
+US | competitor-bidding-on-my-brand-name | A competitor is bidding on my brand name. What can I do?
+    - What Google will and won't do about it
+    - Work out what it's actually costing you
+    - If you do run a defensive campaign, run it properly
+    - The one thing not to do is call them and agree to stop
+    - Before lunch
