@@ -170,27 +170,6 @@
       ]
     },
     {
-      "id": "b-199",
-      "slot": "evening",
-      "market": "India",
-      "primary_keyword": "why do customers always ask for a discount",
-      "secondary_keywords": [
-        "indian customers asking for discount",
-        "how to stop clients asking for discount",
-        "negotiation small business india"
-      ],
-      "working_title": "Why does every customer ask for a discount before they ask about the work?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. how-to-handle-price-objections-without-discounting is the US post and owns the objection script, the trade-if-you-move rule and why founders discount more than salespeople; this post must not restate any of that and should link it. how-should-i-price-my-services-in-india owns pricing method. what-digital-marketing-actually-costs-in-india owns the quote spread. festive-season-marketing-india owns festive discounting. The uncovered question is the behaviour itself, and the answer is not cultural, which is the lazy explanation and the one every LinkedIn post reaches for. Opinion shape with a real point of view. The argument: the discount request arrives first because nothing in the conversation so far has given the buyer anything else to compare, and in a market where the same service is quoted at a tenfold spread, price is the only comparable field on the form. So the request is a symptom of an undifferentiated proposal, not of a stingy buyer. Then the consequences for how you sell: what has to be in the first conversation so that price is the third question rather than the first, why an itemised quote invites itemised negotiation, and why the scope you refuse tells the buyer more about your level than the scope you include. Be careful not to generalise about Indian buyers as a group; keep it about the information available to them. Close on the straight opinion, that a business that gets asked for a discount every single time has a positioning problem it is treating as a negotiation problem.",
-      "audience": "An Indian founder or service business owner tired of starting every deal at a discount",
-      "city": "Bengaluru",
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Pricing",
-        "Positioning",
-        "Sales"
-      ]
-    },
-    {
       "id": "b-200",
       "slot": "morning",
       "market": "Estonia",
@@ -1262,6 +1241,27 @@
         "Google Ads",
         "PPC",
         "Legal"
+      ]
+    },
+    {
+      "id": "b-199",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "why do customers always ask for a discount",
+      "secondary_keywords": [
+        "indian customers asking for discount",
+        "how to stop clients asking for discount",
+        "negotiation small business india"
+      ],
+      "working_title": "Why does every customer ask for a discount before they ask about the work?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. how-to-handle-price-objections-without-discounting is the US post and owns the objection script, the trade-if-you-move rule and why founders discount more than salespeople; this post must not restate any of that and should link it. how-should-i-price-my-services-in-india owns pricing method. what-digital-marketing-actually-costs-in-india owns the quote spread. festive-season-marketing-india owns festive discounting. The uncovered question is the behaviour itself, and the answer is not cultural, which is the lazy explanation and the one every LinkedIn post reaches for. Opinion shape with a real point of view. The argument: the discount request arrives first because nothing in the conversation so far has given the buyer anything else to compare, and in a market where the same service is quoted at a tenfold spread, price is the only comparable field on the form. So the request is a symptom of an undifferentiated proposal, not of a stingy buyer. Then the consequences for how you sell: what has to be in the first conversation so that price is the third question rather than the first, why an itemised quote invites itemised negotiation, and why the scope you refuse tells the buyer more about your level than the scope you include. Be careful not to generalise about Indian buyers as a group; keep it about the information available to them. Close on the straight opinion, that a business that gets asked for a discount every single time has a positioning problem it is treating as a negotiation problem.",
+      "audience": "An Indian founder or service business owner tired of starting every deal at a discount",
+      "city": "Bengaluru",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Pricing",
+        "Positioning",
+        "Sales"
       ]
     }
   ]
