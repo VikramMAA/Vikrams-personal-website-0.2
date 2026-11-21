@@ -65,27 +65,6 @@
       ]
     },
     {
-      "id": "b-195",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "marketing working but cannot handle the work",
-      "secondary_keywords": [
-        "too many leads not enough capacity",
-        "should i pause marketing when busy",
-        "growth constrained by delivery"
-      ],
-      "working_title": "Your marketing is fine. Your business cannot take the work",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. No post owns capacity as the binding constraint; the word appears only in passing in marketing-budget-percentage-of-revenue, are-angi-leads-worth-it and two India posts. why-arent-my-leads-converting-into-sales and why-arent-my-home-service-leads-turning-into-jobs own lead handling and follow-up speed, which is adjacent and must be linked rather than restated, because that is about leads that are badly handled and this is about leads that are correctly handled by a business with no room for them. when-to-hire-first-salesperson owns sales hiring. Opinion shape, and the point of view is unfashionable: for a meaningful share of the small businesses that ask me to generate more leads, more leads would make the business worse, and the honest first engagement is to say so. Build the argument on observable symptoms rather than invented statistics: quote turnaround slipping, the owner doing delivery at night, the best people being the ones who leave, and the fact that the enquiries that get dropped are always the biggest ones because they need the most thought. Then the part that makes it a marketing article rather than an operations one: when capacity is the constraint, marketing's job changes from volume to selection, which means raising prices, narrowing the offer, publishing the qualifying criteria, and spending the budget on fewer, better-fit enquiries. That is a real marketing programme and it is almost never what gets briefed. Close on the straight opinion, that a business running at capacity should spend on price and positioning before it spends on reach.",
-      "audience": "A US owner of a service business that is busy, stressed and still being told to generate leads",
-      "city": null,
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "Strategy",
-        "Process",
-        "Small Business"
-      ]
-    },
-    {
       "id": "b-196",
       "slot": "morning",
       "market": "India",
@@ -1262,6 +1241,27 @@
         "Analytics",
         "GA4",
         "Measurement"
+      ]
+    },
+    {
+      "id": "b-195",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "marketing working but cannot handle the work",
+      "secondary_keywords": [
+        "too many leads not enough capacity",
+        "should i pause marketing when busy",
+        "growth constrained by delivery"
+      ],
+      "working_title": "Your marketing is fine. Your business cannot take the work",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. No post owns capacity as the binding constraint; the word appears only in passing in marketing-budget-percentage-of-revenue, are-angi-leads-worth-it and two India posts. why-arent-my-leads-converting-into-sales and why-arent-my-home-service-leads-turning-into-jobs own lead handling and follow-up speed, which is adjacent and must be linked rather than restated, because that is about leads that are badly handled and this is about leads that are correctly handled by a business with no room for them. when-to-hire-first-salesperson owns sales hiring. Opinion shape, and the point of view is unfashionable: for a meaningful share of the small businesses that ask me to generate more leads, more leads would make the business worse, and the honest first engagement is to say so. Build the argument on observable symptoms rather than invented statistics: quote turnaround slipping, the owner doing delivery at night, the best people being the ones who leave, and the fact that the enquiries that get dropped are always the biggest ones because they need the most thought. Then the part that makes it a marketing article rather than an operations one: when capacity is the constraint, marketing's job changes from volume to selection, which means raising prices, narrowing the offer, publishing the qualifying criteria, and spending the budget on fewer, better-fit enquiries. That is a real marketing programme and it is almost never what gets briefed. Close on the straight opinion, that a business running at capacity should spend on price and positioning before it spends on reach.",
+      "audience": "A US owner of a service business that is busy, stressed and still being told to generate leads",
+      "city": null,
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "Strategy",
+        "Process",
+        "Small Business"
       ]
     }
   ]
