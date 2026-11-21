@@ -1313,3 +1313,10 @@ India | why-customers-always-ask-for-a-discount | Why does every customer ask fo
     - The itemised quote is an invitation
     - What you refuse tells them more than what you include
     - Where I come out
+US | is-my-website-traffic-real-or-bots | Is my website traffic real, or is it bots?
+    - Google filters bots and won't tell you what it filtered
+    - GA4 only sees visitors that ran JavaScript
+    - So what does land in your GA4
+    - The twenty-minute check
+    - Then stop managing traffic and manage one verified number
+    - Before lunch

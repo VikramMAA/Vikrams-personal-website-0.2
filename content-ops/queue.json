@@ -23,27 +23,6 @@
       ]
     },
     {
-      "id": "b-191",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "is my website traffic real or bots",
-      "secondary_keywords": [
-        "bot traffic in ga4",
-        "how to filter bot traffic google analytics",
-        "fake website traffic"
-      ],
-      "working_title": "Is the traffic in my analytics real?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. No post owns bot or non-human traffic. why-dont-my-ga4-and-google-ads-numbers-match owns the GA4-versus-Ads discrepancy, which is a different cause and worth one link. why-is-my-traffic-down-when-rankings-havent-changed and google-algorithm-update-recovery own traffic drops. seo-for-ai-search and should-i-block-ai-crawlers own the AI crawler question from the SEO side, not the measurement side, so this post must not re-argue whether to block them. Practical and specific. GA4 filters known bots by the IAB list automatically and that is the reassurance everybody quotes, but the list only covers declared crawlers, so the traffic that distorts a small site's numbers is the undeclared kind: headless browsers, scrapers, uptime monitors you set up yourself, and the growing share of AI assistant fetches that arrive with a real-looking user agent. Verify at source what Google documents GA4 as excluding before asserting anything. Give the diagnosis a reader can run this morning: sort landing pages by sessions and look for pages no human has a reason to enter on, check for sessions with zero engagement time at scale, compare server log hits against GA4 sessions if they have access, and look at the country and ISP breakdown rather than the channel report. Then the fix that matters: define one conversion you can verify outside analytics, usually a form submission that lands in an inbox or a phone call, and manage on that, because the point is not clean traffic numbers, it is not making a budget decision on a count of robots.",
-      "audience": "A US business owner whose analytics shows traffic that does not produce enquiries",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Analytics",
-        "GA4",
-        "Measurement"
-      ]
-    },
-    {
       "id": "b-192",
       "slot": "morning",
       "market": "US",
@@ -1262,6 +1241,27 @@
         "Pricing",
         "Positioning",
         "Sales"
+      ]
+    },
+    {
+      "id": "b-191",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "is my website traffic real or bots",
+      "secondary_keywords": [
+        "bot traffic in ga4",
+        "how to filter bot traffic google analytics",
+        "fake website traffic"
+      ],
+      "working_title": "Is the traffic in my analytics real?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. No post owns bot or non-human traffic. why-dont-my-ga4-and-google-ads-numbers-match owns the GA4-versus-Ads discrepancy, which is a different cause and worth one link. why-is-my-traffic-down-when-rankings-havent-changed and google-algorithm-update-recovery own traffic drops. seo-for-ai-search and should-i-block-ai-crawlers own the AI crawler question from the SEO side, not the measurement side, so this post must not re-argue whether to block them. Practical and specific. GA4 filters known bots by the IAB list automatically and that is the reassurance everybody quotes, but the list only covers declared crawlers, so the traffic that distorts a small site's numbers is the undeclared kind: headless browsers, scrapers, uptime monitors you set up yourself, and the growing share of AI assistant fetches that arrive with a real-looking user agent. Verify at source what Google documents GA4 as excluding before asserting anything. Give the diagnosis a reader can run this morning: sort landing pages by sessions and look for pages no human has a reason to enter on, check for sessions with zero engagement time at scale, compare server log hits against GA4 sessions if they have access, and look at the country and ISP breakdown rather than the channel report. Then the fix that matters: define one conversion you can verify outside analytics, usually a form submission that lands in an inbox or a phone call, and manage on that, because the point is not clean traffic numbers, it is not making a budget decision on a count of robots.",
+      "audience": "A US business owner whose analytics shows traffic that does not produce enquiries",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Analytics",
+        "GA4",
+        "Measurement"
       ]
     }
   ]
