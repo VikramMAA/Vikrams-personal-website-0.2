@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-189",
-      "slot": "evening",
-      "market": "Estonia",
-      "primary_keyword": "how do small companies win against bigger competitors",
-      "secondary_keywords": [
-        "competing with larger vendors",
-        "small vendor procurement risk",
-        "why buyers choose the bigger supplier"
-      ],
-      "working_title": "They are not choosing the bigger company, they are choosing the defensible decision",
-      "angle": "Opinion, and it is the argument underneath most Estonian export losses. When a buyer picks the larger vendor it is rarely a judgement that the product is better; it is that nobody gets blamed for choosing the obvious supplier and somebody does get blamed for choosing you and being wrong. Argue that the competition is therefore not on features but on who absorbs the career risk of the decision, which tells you what to build: references the buyer can call, a first phase small enough that being wrong is survivable, contractual exits that make the downside legible, and continuity answers for the what-if-you-disappear question. Be fair about where the big vendor genuinely is the right choice. COVERAGE CHECKED against the section index: vendor-security-questionnaire owns the questionnaire mechanics, selling-to-eu-public-sector-tenders owns procurement thresholds, expansion-revenue-small-market-saas owns the cost of a bad-fit customer, and estonian-startup-marketing owns the better-product-loses-to-better-distribution argument. This one is about the buyer's personal risk and must link rather than repeat.",
-      "audience": "Estonian B2B founders losing deals to larger vendors",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "B2B",
-        "Positioning",
-        "Estonia"
-      ]
-    },
-    {
       "id": "b-192",
       "slot": "morning",
       "market": "US",
@@ -124,6 +103,195 @@
       "tags": [
         "Research",
         "Positioning",
+        "Estonia"
+      ]
+    },
+    {
+      "id": "b-201",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "which customers are actually profitable",
+      "secondary_keywords": [
+        "customer profitability analysis small business",
+        "unprofitable customers",
+        "revenue vs profit per client"
+      ],
+      "working_title": "Which of your customers actually make you money?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for customer profitability, most profitable customer and which customers make you money returned ZERO hits, so this is clean ground. client-concentration-risk-small-business owns revenue dependence on one client and is the natural link. should-i-fire-a-client owns the decision to end a relationship and the real-hourly-rate test, so this post must not restate that test and should link it. marketing-budget-percentage-of-revenue owns headroom. Opinion shape. The argument: the client list ranked by revenue is the most misleading document in a service business, and almost every owner has one and nothing else. Make the case that profit per client and revenue per client are not correlated and are often inverted, because the accounts that pay most tend to demand the most governance, and the small ones that nobody manages are frequently the best margin. Then the part worth arguing with: this is a MARKETING problem rather than an accounting one, because once you know which shape of customer is profitable, the whole acquisition brief changes, and most firms are spending their budget attracting more of their worst cohort because that cohort is what the revenue list flatters. Give a method honestly, without inventing benchmarks: allocate the unbilled time, allocate the cost of the people who only exist because of that account, and be explicit that the number will be rough and rough is enough to change a decision. Close on the opinion that a firm which cannot name its most profitable customer type has no acquisition strategy, only an acquisition budget.",
+      "audience": "A US agency, consultancy or service business owner who has never run the numbers per client",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Consulting",
+        "Pricing",
+        "Measurement"
+      ]
+    },
+    {
+      "id": "b-202",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "who decides what to promise customers",
+      "secondary_keywords": [
+        "marketing promises operations cannot keep",
+        "overpromising in sales",
+        "sales and delivery misalignment"
+      ],
+      "working_title": "Who in your company is allowed to say no to a customer?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for say no to a customer, allowed to say no and refuse a customer returned ZERO hits. customer-onboarding-marketing owns onboarding as a marketing problem and is the closest neighbour, worth one link. why-customers-stop-buying owns churn causes. marketing-is-fine-capacity-is-the-problem owns capacity as the binding constraint and the selection-over-volume brief, so this must not re-argue capacity. Opinion shape with a point of view. The argument: in most small companies marketing and sales write promises that delivery has to keep, and nobody has been given authority to refuse, so the refusal happens anyway but late, badly, and by the most junior person in the chain. Build it on observable mechanics rather than statistics: the proposal that included a deliverable nobody costed, the scope that grew by email, the delivery lead who found out about a commitment from the client. Then the claim that makes it a marketing article: the ability to say no is a positioning asset, because a company that visibly declines work is making a claim about its standards that no amount of copy can substitute for, and the companies with the best reputations in any category are the ones with known limits. Give the practical shape without turning it into a process guide: who signs off a promise, what the standing list of things we do not do contains, and who tells the client. Close on the opinion that an organisation where only the owner can say no has not delegated sales, it has delegated optimism.",
+      "audience": "A US owner whose sales promises keep landing on a delivery team that was not asked",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Process",
+        "Positioning",
+        "B2B"
+      ]
+    },
+    {
+      "id": "b-203",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "what happens to marketing when the owner is away",
+      "secondary_keywords": [
+        "owner dependent business marketing",
+        "marketing without the founder",
+        "business runs without me"
+      ],
+      "working_title": "What happens to your marketing when you take two weeks off?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. No post owns owner dependency; the phrases two weeks off, owner dependency and without the owner return only incidental hits in unrelated posts. should-i-replace-my-marketing-hire-with-ai and the two first-marketing-hire posts own hiring. why-does-my-monthly-marketing-report-never-tell-me-anything owns reporting. Opinion shape. The argument: the honest audit of a small company's marketing is not a channel review, it is a two-week absence, because everything that stops when the owner stops was never a system, it was the owner. Name what reliably stops: outbound, follow-up on anything ambiguous, the content, the decision to approve anything, and the relationship that exists only in the owner's phone. Then the harder claim: the parts that keep running during those two weeks are the only parts a buyer of the business would pay for, and the parts that stop are the ones the owner usually describes as their strength. Make the point that this is not a delegation problem to be solved by hiring, because handing an undocumented judgement to a new person produces a worse version of the same dependency, and the thing to extract first is the decision rule rather than the task. Close on the opinion that the test is worth running deliberately rather than discovering it during an illness, and that most owners already know which three things would stop, which means the audit has already happened and only the acting on it is missing.",
+      "audience": "A US owner-operator whose marketing is actually a set of habits only they perform",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Process",
+        "Strategy",
+        "Small Business"
+      ]
+    },
+    {
+      "id": "b-204",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "founder personal brand vs company brand india",
+      "secondary_keywords": [
+        "should founders build a personal brand",
+        "personal brand india business",
+        "founder led marketing india"
+      ],
+      "working_title": "Is a founder's personal brand worth more than the company's in India?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. The phrase personal brand returns only two incidental hits, in 5-easy-tips and do-i-need-a-website-if-i-have-instagram, neither of which owns the question. linkedin-content-strategy-b2b-india owns what a B2B founder should POST on LinkedIn and must be linked rather than restated, because that is a content question and this is an ownership question. what-makes-a-freelance-marketing-engagement-work and digital-marketing-consultant-cost-india own engagement shape. Opinion shape with a real position. The argument should resist both of the available cliches, that founders must build in public and that personal brands are vanity. Say instead that in India the founder's name is doing work the company name cannot yet do, because a buyer can verify a person and cannot verify a two-year-old private limited company, which makes founder-led visibility rational rather than egotistical at the start. Then the inversion that makes it worth forwarding: everything you build on your own name is an asset you cannot sell, cannot delegate and cannot take a quarter off from, so the question is not whether to build it but when to start transferring it, and almost nobody plans the transfer. Give the concrete signals that it is time, such as inbound arriving addressed to the founder for work the founder does not do. Be careful to keep it about Indian market conditions, the verification problem and WhatsApp-first relationships, rather than generalising about Indian founders as people. Close on where I come out, which should be honest that I am writing under this constraint myself.",
+      "audience": "An Indian founder whose inbound all arrives through their own name",
+      "city": "Bengaluru",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Branding",
+        "Positioning",
+        "LinkedIn"
+      ]
+    },
+    {
+      "id": "b-205",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "whatsapp list is not an asset you own",
+      "secondary_keywords": [
+        "platform dependency small business",
+        "owning your customer list india",
+        "what if whatsapp changes the rules"
+      ],
+      "working_title": "Your WhatsApp list is an asset you do not own",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for platform dependency, own your audience, rented land and list you do not own returned ZERO hits. whatsapp-marketing-india owns broadcast and template mechanics, track-whatsapp-leads-from-website owns measurement including the Meta referral object, the October pricing post owns the pricing change, and the green-tick brief b-197 is queued and owns verification. So the mechanics are thoroughly claimed and this post must be the ownership argument only, linking them. Opinion shape. The argument: for a large number of Indian small businesses the entire customer relationship now lives inside an account they do not control, on terms that have already changed twice, and the usual response to this observation is a shrug because there is no alternative that works as well. Take that seriously rather than moralising. Then make the case that the asset is not the channel, it is the list plus the consent plus the context, and all three can be held outside the platform at almost no cost while continuing to use the platform for everything. Give the practical shape: export and own the numbers with the source and date, keep the record of how consent was obtained, hold enough transaction context that a second channel could be stood up in a week, and test one alternative route to your top customers before you need it. Close on the opinion that the right question is not whether to leave, because you should not, but how expensive the next rule change is allowed to be, and that most owners have never priced it.",
+      "audience": "An Indian business owner whose sales and support both run through WhatsApp",
+      "city": "Mumbai",
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "WhatsApp",
+        "Strategy",
+        "Retention"
+      ]
+    },
+    {
+      "id": "b-206",
+      "slot": "evening",
+      "market": "Estonia",
+      "primary_keyword": "largest customer controlling product roadmap",
+      "secondary_keywords": [
+        "biggest customer dictates features",
+        "custom work for one client saas",
+        "roadmap capture"
+      ],
+      "working_title": "Your product roadmap is being written by your largest customer",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. The word roadmap appears twice on the site and both are incidental, once inside a Deloitte URL in client-concentration-risk-small-business and once as a metaphor in estonian-startup-marketing. So roadmap capture is unclaimed. client-concentration-risk-small-business is the US post and owns revenue dependence, the ASC 280 ten percent disclosure argument and the arithmetic of concentration, so this post must not re-run any of that and should link it as the financial half. expansion-revenue-small-market-saas owns retention economics and the cost of a bad-fit customer in a small market. which-eu-market-to-expand-to-next owns market selection. Opinion shape, and the Estonian specificity is real: when the domestic market is 1.3 million people the first large customer is often a disproportionate share of revenue AND the only detailed source of product feedback, which is the trap. Argue that the danger is not the revenue concentration everyone already worries about, it is the EVIDENCE concentration, because you are now building for a sample of one and cannot tell the difference between a market requirement and one company's internal process. Give the diagnostic: count the features shipped in the last year and ask how many were requested by more than one customer. Then what to do that is not simply refuse the work, including charging for custom work as custom work, keeping it out of the core product, and buying genuine second opinions by doing customer interviews elsewhere, which the b-200 brief covers practically. Close on the opinion that a roadmap written by one customer is a consulting business with a product's cost structure.",
+      "audience": "An Estonian B2B or SaaS founder whose biggest customer is also their only real feedback source",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "SaaS",
+        "Strategy",
+        "Estonia"
+      ]
+    },
+    {
+      "id": "b-208",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "call tracking without hurting local seo",
+      "secondary_keywords": [
+        "call tracking number google business profile",
+        "dynamic number insertion seo",
+        "does call tracking affect nap consistency"
+      ],
+      "working_title": "Does call tracking hurt my local SEO?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for call tracking and tracked number returns only one incidental mention, in the post published on 21 November about bot traffic. Nothing owns it. ga4-vs-google-ads-conversions and ga4-conversions-not-tracking own conversion tracking in analytics, what-schema-markup-does-a-local-business-need owns schema, and the GBP suspension post owns profile problems, all worth linking rather than restating. Practical and specific, and this one needs sources: verify at Google's own documentation what it says about the primary phone number on a Google Business Profile and about using tracking numbers, because the correct answer is nuanced and the folklore is absolute in both directions. Establish what dynamic number insertion does and does not do to a crawler, which is the real question underneath, and what the NAP consistency concern actually amounts to versus what SEO folklore claims. Then the implementation that is safe: where the tracked number goes, where the real number stays, and what to do about the profile specifically. Concrete middle: a short before-you-install checklist. The reason the post is worth writing is that most small businesses either refuse call tracking entirely on the strength of a warning nobody has checked, and therefore cannot tell which marketing produces calls, or install it wrongly across the profile. Both are expensive and the second is worse.",
+      "audience": "A US service business that wants to know which marketing produces phone calls",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Local SEO",
+        "Measurement",
+        "Analytics"
+      ]
+    },
+    {
+      "id": "b-209",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "getting job enquiries instead of customer enquiries",
+      "secondary_keywords": [
+        "job seekers filling my contact form",
+        "exclude job seekers from ads",
+        "wrong enquiries from google"
+      ],
+      "working_title": "Why do I keep getting job enquiries instead of customers?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for job seeker, looking for a job and recruitment enquiry returns one incidental hit in trade-fair-marketing-india. Nothing owns it. why-is-my-landing-page-not-converting owns conversion, what-will-people-actually-give-you-their-number-for owns lead magnets, and the keyword research post owns query selection, all linkable. Practical, and genuinely common in India where company-name and category searches carry heavy jobs intent. Diagnose it properly rather than treating it as spam: open Search Console and the search terms report and look for the queries that actually brought these people, which will usually be your own company name plus words like careers, vacancy, salary, recruitment or internship, plus category terms that have a jobs interpretation. Then the fixes in order of cost. A careers page that ranks for those queries deliberately, because the demand is real and sending it somewhere is cheaper than fighting it, and a page that says we are not hiring right now is still the right page. Negative keywords on any paid campaign. A form that asks the first question in a way that filters. And the contact page routing enquiries by reason. Concrete middle: the list of query modifiers to check. Close on the point that this is not a traffic quality problem but an intent routing problem, and that the business owners who find it most irritating are the ones who have never given the jobs intent anywhere to land.",
+      "audience": "An Indian business owner whose contact form fills up with people wanting work",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "SEO",
+        "Conversion",
+        "Small Business"
+      ]
+    },
+    {
+      "id": "b-210",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "how to get customer references for sales",
+      "secondary_keywords": [
+        "building a reference programme b2b",
+        "asking customers to be a reference",
+        "reference call b2b sales"
+      ],
+      "working_title": "How do I build a bench of customers who will take a reference call?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. how-to-get-a-client-to-agree-to-a-case-study is the US post and owns consent for a written case study, which is a different artefact with a different ask, so link it and do not restate. how-to-sell-to-nordic-customers-from-estonia owns the reference problem as a BLOCKER, meaning the observation that Estonian references do not carry in Finland and Sweden. why-buyers-choose-the-bigger-supplier, published 22 November, names references the buyer can ring as the first lever that moves risk off a champion but deliberately does not explain how to build the bench, so this post is the practical complement to it and must say so and link it rather than re-arguing the risk thesis. Clear ground. Practical, morning shape. The spine: a reference is a standing asset with a maintenance cost, not a favour you call in during a deal, and the reason most companies have none is that they ask at the worst possible moment, which is when they need one. Give the method. When to ask, which is immediately after a delivered result and never during a renewal negotiation. What you are actually asking for, scoped narrowly to one fifteen-minute call a quarter rather than an open-ended commitment. How to protect the reference from being burned, including never sending two prospects to the same person in a month and always briefing them on who is calling and why. What to offer in return that is not payment, since paid references are worthless and in some sectors disclosable. And the record to keep, which is who, which market, which use case, last used when. Concrete middle: the exact words of the ask. Close on the instruction to ask one customer this week.",
+      "audience": "An Estonian B2B founder who needs references in markets where nobody knows the company",
+      "city": "Tallinn",
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "B2B",
+        "Sales",
         "Estonia"
       ]
     }
@@ -1262,6 +1430,27 @@
         "Budgeting",
         "Compliance",
         "Google Ads"
+      ]
+    },
+    {
+      "id": "b-189",
+      "slot": "evening",
+      "market": "Estonia",
+      "primary_keyword": "how do small companies win against bigger competitors",
+      "secondary_keywords": [
+        "competing with larger vendors",
+        "small vendor procurement risk",
+        "why buyers choose the bigger supplier"
+      ],
+      "working_title": "They are not choosing the bigger company, they are choosing the defensible decision",
+      "angle": "Opinion, and it is the argument underneath most Estonian export losses. When a buyer picks the larger vendor it is rarely a judgement that the product is better; it is that nobody gets blamed for choosing the obvious supplier and somebody does get blamed for choosing you and being wrong. Argue that the competition is therefore not on features but on who absorbs the career risk of the decision, which tells you what to build: references the buyer can call, a first phase small enough that being wrong is survivable, contractual exits that make the downside legible, and continuity answers for the what-if-you-disappear question. Be fair about where the big vendor genuinely is the right choice. COVERAGE CHECKED against the section index: vendor-security-questionnaire owns the questionnaire mechanics, selling-to-eu-public-sector-tenders owns procurement thresholds, expansion-revenue-small-market-saas owns the cost of a bad-fit customer, and estonian-startup-marketing owns the better-product-loses-to-better-distribution argument. This one is about the buyer's personal risk and must link rather than repeat.",
+      "audience": "Estonian B2B founders losing deals to larger vendors",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "B2B",
+        "Positioning",
+        "Estonia"
       ]
     }
   ]
