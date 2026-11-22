@@ -1326,3 +1326,10 @@ US | marketing-is-fine-capacity-is-the-problem | Your marketing is fine. Your bu
     - The enquiries you drop are the big ones
     - What marketing does instead
     - Where I come out
+India | gst-input-credit-on-google-and-meta-ads | Can I claim GST input credit on Google and Meta ads?
+    - What Google actually charges you, in Google's words
+    - The agency trap, which is the whole reason I wrote this
+    - What this does to every budget number you've been given
+    - Meta, honestly
+    - What I am not telling you
+    - Before lunch

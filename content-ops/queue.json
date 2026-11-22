@@ -107,27 +107,6 @@
       ]
     },
     {
-      "id": "b-198",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "gst input tax credit on google ads",
-      "secondary_keywords": [
-        "gst on facebook ads india",
-        "can i claim gst on digital advertising",
-        "itc on meta ads india"
-      ],
-      "working_title": "Can I claim GST input credit on Google and Meta ads?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. GST on ad spend appears only in passing in linkedin-content-strategy-b2b-india and digital-marketing-consultant-cost-india. No post owns it. how-much-should-a-small-business-spend-on-digital-marketing-in-india and how-should-i-split-a-rs-50000-marketing-budget own budget allocation, so this must stay on the tax mechanics and link one of them for the budgeting half. Practical, and this is a brief where the research has to be done properly at source or the post should not run: use CBIC and the GST law itself rather than agency blogs, establish whether the invoice comes from the Indian entity or the overseas one and what that changes, what the reverse charge position is where it applies, and what the registration status of the advertiser changes. State plainly what is settled and what is not, and recommend the reader confirm their own case with their CA rather than implying this is advice. The reason the post is worth writing is the budgeting consequence nobody spells out: a registered business that can claim the credit is spending materially less in real terms than an unregistered one at the same headline spend, which means the same agency recommendation is a different decision for the two of them, and quotes and benchmarks passed around in rupees are not comparable across that line. Concrete middle: what to check on the next ad invoice, field by field, including the GSTIN on it and whether the place of supply is right, because a wrong GSTIN on the ad account is the commonest reason the credit is lost and it is fixable in the billing settings.",
-      "audience": "An Indian business owner spending on Google and Meta ads who has never checked the tax treatment",
-      "city": null,
-      "expertise_link": "/expertise/performance-marketing/",
-      "tags": [
-        "Budgeting",
-        "Compliance",
-        "Google Ads"
-      ]
-    },
-    {
       "id": "b-200",
       "slot": "morning",
       "market": "Estonia",
@@ -1262,6 +1241,27 @@
         "Strategy",
         "Process",
         "Small Business"
+      ]
+    },
+    {
+      "id": "b-198",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "gst input tax credit on google ads",
+      "secondary_keywords": [
+        "gst on facebook ads india",
+        "can i claim gst on digital advertising",
+        "itc on meta ads india"
+      ],
+      "working_title": "Can I claim GST input credit on Google and Meta ads?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. GST on ad spend appears only in passing in linkedin-content-strategy-b2b-india and digital-marketing-consultant-cost-india. No post owns it. how-much-should-a-small-business-spend-on-digital-marketing-in-india and how-should-i-split-a-rs-50000-marketing-budget own budget allocation, so this must stay on the tax mechanics and link one of them for the budgeting half. Practical, and this is a brief where the research has to be done properly at source or the post should not run: use CBIC and the GST law itself rather than agency blogs, establish whether the invoice comes from the Indian entity or the overseas one and what that changes, what the reverse charge position is where it applies, and what the registration status of the advertiser changes. State plainly what is settled and what is not, and recommend the reader confirm their own case with their CA rather than implying this is advice. The reason the post is worth writing is the budgeting consequence nobody spells out: a registered business that can claim the credit is spending materially less in real terms than an unregistered one at the same headline spend, which means the same agency recommendation is a different decision for the two of them, and quotes and benchmarks passed around in rupees are not comparable across that line. Concrete middle: what to check on the next ad invoice, field by field, including the GSTIN on it and whether the place of supply is right, because a wrong GSTIN on the ad account is the commonest reason the credit is lost and it is fixable in the billing settings.",
+      "audience": "An Indian business owner spending on Google and Meta ads who has never checked the tax treatment",
+      "city": null,
+      "expertise_link": "/expertise/performance-marketing/",
+      "tags": [
+        "Budgeting",
+        "Compliance",
+        "Google Ads"
       ]
     }
   ]
