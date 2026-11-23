@@ -1345,3 +1345,10 @@ US | review-site-outranking-my-website | Why is a review site outranking my own 
     - The twenty-minute audit that changes what you do
     - Treat it as a channel, not a rival
     - Before lunch
+US | which-customers-are-actually-profitable | Which of your customers actually make you money?
+    - Why the revenue list feels trustworthy
+    - What the real distribution looks like
+    - The things that cost you money are all reasonable
+    - The method is two numbers
+    - Notice what isn't on Kaplan's list of remedies
+    - The part that makes this marketing rather than accounting

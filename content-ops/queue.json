@@ -86,27 +86,6 @@
       ]
     },
     {
-      "id": "b-201",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "which customers are actually profitable",
-      "secondary_keywords": [
-        "customer profitability analysis small business",
-        "unprofitable customers",
-        "revenue vs profit per client"
-      ],
-      "working_title": "Which of your customers actually make you money?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for customer profitability, most profitable customer and which customers make you money returned ZERO hits, so this is clean ground. client-concentration-risk-small-business owns revenue dependence on one client and is the natural link. should-i-fire-a-client owns the decision to end a relationship and the real-hourly-rate test, so this post must not restate that test and should link it. marketing-budget-percentage-of-revenue owns headroom. Opinion shape. The argument: the client list ranked by revenue is the most misleading document in a service business, and almost every owner has one and nothing else. Make the case that profit per client and revenue per client are not correlated and are often inverted, because the accounts that pay most tend to demand the most governance, and the small ones that nobody manages are frequently the best margin. Then the part worth arguing with: this is a MARKETING problem rather than an accounting one, because once you know which shape of customer is profitable, the whole acquisition brief changes, and most firms are spending their budget attracting more of their worst cohort because that cohort is what the revenue list flatters. Give a method honestly, without inventing benchmarks: allocate the unbilled time, allocate the cost of the people who only exist because of that account, and be explicit that the number will be rough and rough is enough to change a decision. Close on the opinion that a firm which cannot name its most profitable customer type has no acquisition strategy, only an acquisition budget.",
-      "audience": "A US agency, consultancy or service business owner who has never run the numbers per client",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Consulting",
-        "Pricing",
-        "Measurement"
-      ]
-    },
-    {
       "id": "b-202",
       "slot": "evening",
       "market": "US",
@@ -1451,6 +1430,27 @@
         "SEO",
         "Local SEO",
         "Reviews"
+      ]
+    },
+    {
+      "id": "b-201",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "which customers are actually profitable",
+      "secondary_keywords": [
+        "customer profitability analysis small business",
+        "unprofitable customers",
+        "revenue vs profit per client"
+      ],
+      "working_title": "Which of your customers actually make you money?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for customer profitability, most profitable customer and which customers make you money returned ZERO hits, so this is clean ground. client-concentration-risk-small-business owns revenue dependence on one client and is the natural link. should-i-fire-a-client owns the decision to end a relationship and the real-hourly-rate test, so this post must not restate that test and should link it. marketing-budget-percentage-of-revenue owns headroom. Opinion shape. The argument: the client list ranked by revenue is the most misleading document in a service business, and almost every owner has one and nothing else. Make the case that profit per client and revenue per client are not correlated and are often inverted, because the accounts that pay most tend to demand the most governance, and the small ones that nobody manages are frequently the best margin. Then the part worth arguing with: this is a MARKETING problem rather than an accounting one, because once you know which shape of customer is profitable, the whole acquisition brief changes, and most firms are spending their budget attracting more of their worst cohort because that cohort is what the revenue list flatters. Give a method honestly, without inventing benchmarks: allocate the unbilled time, allocate the cost of the people who only exist because of that account, and be explicit that the number will be rough and rough is enough to change a decision. Close on the opinion that a firm which cannot name its most profitable customer type has no acquisition strategy, only an acquisition budget.",
+      "audience": "A US agency, consultancy or service business owner who has never run the numbers per client",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Consulting",
+        "Pricing",
+        "Measurement"
       ]
     }
   ]
