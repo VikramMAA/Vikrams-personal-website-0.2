@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-192",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "review site outranking my website",
-      "secondary_keywords": [
-        "yelp ranks above my website",
-        "directory outranks my site for my own name",
-        "how to outrank a review site"
-      ],
-      "working_title": "Why is a review site outranking my own website?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. b2b-demand-generation-vs-capture mentions review sites once as a capture channel. best-digital-marketing-agencies-2026 and marketing-agency-red-flags mention Clutch-style listings in passing. yelp-or-google-business-profile-which-first owns the Yelp-versus-GBP triage. my-competitor-is-buying-fake-reviews and the two negative-review posts own review handling. Nothing owns a directory or review site outranking you for your own name, which is the query here. The answer early and flatly: for your own brand name you can almost always fix this, and for category queries you often cannot and should stop trying. Separate the two cases, because the advice is opposite. For your own name, the usual causes are mechanical and fixable in an afternoon: no clear homepage title containing the business name, missing or wrong Organization schema with sameAs, a thin or missing about page, and the directory holding more inbound links than you do. For category queries like best plumber in a metro, the review site wins because it satisfies a comparison intent your single-vendor page structurally cannot, so the move is to be the best-looking entry inside that listing rather than to outrank it, and to measure the listing as a channel instead of as a competitor. The concrete middle: a short audit of what the directory has on its page about you that your own site does not. Close on the opinion worth arguing with, that for most local businesses the directory ranking above you is a distribution channel you are refusing to optimise because it offends you.",
-      "audience": "A US business owner who sees a directory above their own site in search results",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "SEO",
-        "Local SEO",
-        "Reviews"
-      ]
-    },
-    {
       "id": "b-194",
       "slot": "evening",
       "market": "US",
@@ -1451,6 +1430,27 @@
         "B2B",
         "Positioning",
         "Estonia"
+      ]
+    },
+    {
+      "id": "b-192",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "review site outranking my website",
+      "secondary_keywords": [
+        "yelp ranks above my website",
+        "directory outranks my site for my own name",
+        "how to outrank a review site"
+      ],
+      "working_title": "Why is a review site outranking my own website?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. b2b-demand-generation-vs-capture mentions review sites once as a capture channel. best-digital-marketing-agencies-2026 and marketing-agency-red-flags mention Clutch-style listings in passing. yelp-or-google-business-profile-which-first owns the Yelp-versus-GBP triage. my-competitor-is-buying-fake-reviews and the two negative-review posts own review handling. Nothing owns a directory or review site outranking you for your own name, which is the query here. The answer early and flatly: for your own brand name you can almost always fix this, and for category queries you often cannot and should stop trying. Separate the two cases, because the advice is opposite. For your own name, the usual causes are mechanical and fixable in an afternoon: no clear homepage title containing the business name, missing or wrong Organization schema with sameAs, a thin or missing about page, and the directory holding more inbound links than you do. For category queries like best plumber in a metro, the review site wins because it satisfies a comparison intent your single-vendor page structurally cannot, so the move is to be the best-looking entry inside that listing rather than to outrank it, and to measure the listing as a channel instead of as a competitor. The concrete middle: a short audit of what the directory has on its page about you that your own site does not. Close on the opinion worth arguing with, that for most local businesses the directory ranking above you is a distribution channel you are refusing to optimise because it offends you.",
+      "audience": "A US business owner who sees a directory above their own site in search results",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "SEO",
+        "Local SEO",
+        "Reviews"
       ]
     }
   ]
