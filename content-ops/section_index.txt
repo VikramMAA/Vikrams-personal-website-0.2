@@ -1359,3 +1359,9 @@ India | how-much-does-a-website-cost-in-india | How much does a website cost in 
     - The questions to ask before you sign
     - Who owns what afterwards
     - Before lunch
+US | who-is-allowed-to-say-no-to-a-customer | Who in your company is allowed to say no to a customer?
+    - The law already worked this out, for sweaters
+    - The same sentence, two opposite meanings
+    - A limit is the only claim you can't fake
+    - What assigning it actually looks like
+    - Where I come out

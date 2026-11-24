@@ -65,27 +65,6 @@
       ]
     },
     {
-      "id": "b-202",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "who decides what to promise customers",
-      "secondary_keywords": [
-        "marketing promises operations cannot keep",
-        "overpromising in sales",
-        "sales and delivery misalignment"
-      ],
-      "working_title": "Who in your company is allowed to say no to a customer?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for say no to a customer, allowed to say no and refuse a customer returned ZERO hits. customer-onboarding-marketing owns onboarding as a marketing problem and is the closest neighbour, worth one link. why-customers-stop-buying owns churn causes. marketing-is-fine-capacity-is-the-problem owns capacity as the binding constraint and the selection-over-volume brief, so this must not re-argue capacity. Opinion shape with a point of view. The argument: in most small companies marketing and sales write promises that delivery has to keep, and nobody has been given authority to refuse, so the refusal happens anyway but late, badly, and by the most junior person in the chain. Build it on observable mechanics rather than statistics: the proposal that included a deliverable nobody costed, the scope that grew by email, the delivery lead who found out about a commitment from the client. Then the claim that makes it a marketing article: the ability to say no is a positioning asset, because a company that visibly declines work is making a claim about its standards that no amount of copy can substitute for, and the companies with the best reputations in any category are the ones with known limits. Give the practical shape without turning it into a process guide: who signs off a promise, what the standing list of things we do not do contains, and who tells the client. Close on the opinion that an organisation where only the owner can say no has not delegated sales, it has delegated optimism.",
-      "audience": "A US owner whose sales promises keep landing on a delivery team that was not asked",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "Process",
-        "Positioning",
-        "B2B"
-      ]
-    },
-    {
       "id": "b-203",
       "slot": "evening",
       "market": "US",
@@ -1451,6 +1430,27 @@
         "Budgeting",
         "Small Business",
         "Conversion"
+      ]
+    },
+    {
+      "id": "b-202",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "who decides what to promise customers",
+      "secondary_keywords": [
+        "marketing promises operations cannot keep",
+        "overpromising in sales",
+        "sales and delivery misalignment"
+      ],
+      "working_title": "Who in your company is allowed to say no to a customer?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for say no to a customer, allowed to say no and refuse a customer returned ZERO hits. customer-onboarding-marketing owns onboarding as a marketing problem and is the closest neighbour, worth one link. why-customers-stop-buying owns churn causes. marketing-is-fine-capacity-is-the-problem owns capacity as the binding constraint and the selection-over-volume brief, so this must not re-argue capacity. Opinion shape with a point of view. The argument: in most small companies marketing and sales write promises that delivery has to keep, and nobody has been given authority to refuse, so the refusal happens anyway but late, badly, and by the most junior person in the chain. Build it on observable mechanics rather than statistics: the proposal that included a deliverable nobody costed, the scope that grew by email, the delivery lead who found out about a commitment from the client. Then the claim that makes it a marketing article: the ability to say no is a positioning asset, because a company that visibly declines work is making a claim about its standards that no amount of copy can substitute for, and the companies with the best reputations in any category are the ones with known limits. Give the practical shape without turning it into a process guide: who signs off a promise, what the standing list of things we do not do contains, and who tells the client. Close on the opinion that an organisation where only the owner can say no has not delegated sales, it has delegated optimism.",
+      "audience": "A US owner whose sales promises keep landing on a delivery team that was not asked",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Process",
+        "Positioning",
+        "B2B"
       ]
     }
   ]
