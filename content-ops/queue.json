@@ -23,27 +23,6 @@
       ]
     },
     {
-      "id": "b-196",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "how much does a website cost in india",
-      "secondary_keywords": [
-        "website development cost india",
-        "website price for small business india",
-        "what should i pay for a website"
-      ],
-      "working_title": "How much does a website cost in India?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. Nothing matched website cost at all. digital-marketing-consultant-cost-india and what-digital-marketing-actually-costs-in-india own marketing service pricing and the tenfold quote spread argument, so this post must not re-run that argument in the same shape and should link one of them. is-my-website-worth-rebuilding-or-just-fixing is US and owns the rebuild-versus-fix decision; website-launch-checklist is US and owns launch checks. why-did-my-website-get-slow-again owns performance. Clear ground. Practical and specific, in rupees throughout. Do not invent a price table: gather real current ranges from named Indian sources or frame as a range from experience, and say which it is. The useful structure is not a price list but a list of what actually moves the number, because the reader's real question is whether the quote in front of them is reasonable: how many templates versus how many unique page designs, who writes the copy, whether the content is migrated or retyped, forms and where the enquiry lands, payments, and who owns the hosting and the domain afterwards. Then the three cost traps I would check in any Indian quote: the website built on a page builder the agency controls, the copy left to the client and therefore never written, and the annual maintenance charge that exists to re-sell the same work. Concrete middle: a short list of questions to ask before signing, each with what a good answer sounds like. Close with the honest point that the cheapest usable site for a small business in India is usually cheaper than people expect and the expensive mistake is almost never the build price.",
-      "audience": "An Indian small business owner holding two or three website quotes",
-      "city": "Bengaluru",
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Budgeting",
-        "Small Business",
-        "Conversion"
-      ]
-    },
-    {
       "id": "b-197",
       "slot": "morning",
       "market": "India",
@@ -1451,6 +1430,27 @@
         "Consulting",
         "Pricing",
         "Measurement"
+      ]
+    },
+    {
+      "id": "b-196",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "how much does a website cost in india",
+      "secondary_keywords": [
+        "website development cost india",
+        "website price for small business india",
+        "what should i pay for a website"
+      ],
+      "working_title": "How much does a website cost in India?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. Nothing matched website cost at all. digital-marketing-consultant-cost-india and what-digital-marketing-actually-costs-in-india own marketing service pricing and the tenfold quote spread argument, so this post must not re-run that argument in the same shape and should link one of them. is-my-website-worth-rebuilding-or-just-fixing is US and owns the rebuild-versus-fix decision; website-launch-checklist is US and owns launch checks. why-did-my-website-get-slow-again owns performance. Clear ground. Practical and specific, in rupees throughout. Do not invent a price table: gather real current ranges from named Indian sources or frame as a range from experience, and say which it is. The useful structure is not a price list but a list of what actually moves the number, because the reader's real question is whether the quote in front of them is reasonable: how many templates versus how many unique page designs, who writes the copy, whether the content is migrated or retyped, forms and where the enquiry lands, payments, and who owns the hosting and the domain afterwards. Then the three cost traps I would check in any Indian quote: the website built on a page builder the agency controls, the copy left to the client and therefore never written, and the annual maintenance charge that exists to re-sell the same work. Concrete middle: a short list of questions to ask before signing, each with what a good answer sounds like. Close with the honest point that the cheapest usable site for a small business in India is usually cheaper than people expect and the expensive mistake is almost never the build price.",
+      "audience": "An Indian small business owner holding two or three website quotes",
+      "city": "Bengaluru",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Budgeting",
+        "Small Business",
+        "Conversion"
       ]
     }
   ]

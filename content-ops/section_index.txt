@@ -1352,3 +1352,10 @@ US | which-customers-are-actually-profitable | Which of your customers actually 
     - The method is two numbers
     - Notice what isn't on Kaplan's list of remedies
     - The part that makes this marketing rather than accounting
+India | how-much-does-a-website-cost-in-india | How much does a website cost in India?
+    - The part you can check yourself
+    - What actually moves the labour number
+    - Three traps worth checking in any quote
+    - The questions to ask before you sign
+    - Who owns what afterwards
+    - Before lunch
