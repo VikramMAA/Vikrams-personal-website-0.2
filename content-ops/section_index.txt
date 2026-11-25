@@ -1365,3 +1365,10 @@ US | who-is-allowed-to-say-no-to-a-customer | Who in your company is allowed to 
     - A limit is the only claim you can't fake
     - What assigning it actually looks like
     - Where I come out
+US | does-call-tracking-hurt-local-seo | Does call tracking hurt my local SEO?
+    - What Google's guidelines actually say about the number
+    - Google ships this feature, which settles the SEO question
+    - The reassurance that is false
+    - Before you install anything
+    - What you'll actually learn, which is not what you expect
+    - Before lunch

@@ -149,27 +149,6 @@
       ]
     },
     {
-      "id": "b-208",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "call tracking without hurting local seo",
-      "secondary_keywords": [
-        "call tracking number google business profile",
-        "dynamic number insertion seo",
-        "does call tracking affect nap consistency"
-      ],
-      "working_title": "Does call tracking hurt my local SEO?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for call tracking and tracked number returns only one incidental mention, in the post published on 21 November about bot traffic. Nothing owns it. ga4-vs-google-ads-conversions and ga4-conversions-not-tracking own conversion tracking in analytics, what-schema-markup-does-a-local-business-need owns schema, and the GBP suspension post owns profile problems, all worth linking rather than restating. Practical and specific, and this one needs sources: verify at Google's own documentation what it says about the primary phone number on a Google Business Profile and about using tracking numbers, because the correct answer is nuanced and the folklore is absolute in both directions. Establish what dynamic number insertion does and does not do to a crawler, which is the real question underneath, and what the NAP consistency concern actually amounts to versus what SEO folklore claims. Then the implementation that is safe: where the tracked number goes, where the real number stays, and what to do about the profile specifically. Concrete middle: a short before-you-install checklist. The reason the post is worth writing is that most small businesses either refuse call tracking entirely on the strength of a warning nobody has checked, and therefore cannot tell which marketing produces calls, or install it wrongly across the profile. Both are expensive and the second is worse.",
-      "audience": "A US service business that wants to know which marketing produces phone calls",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Local SEO",
-        "Measurement",
-        "Analytics"
-      ]
-    },
-    {
       "id": "b-209",
       "slot": "morning",
       "market": "India",
@@ -1451,6 +1430,27 @@
         "Process",
         "Positioning",
         "B2B"
+      ]
+    },
+    {
+      "id": "b-208",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "call tracking without hurting local seo",
+      "secondary_keywords": [
+        "call tracking number google business profile",
+        "dynamic number insertion seo",
+        "does call tracking affect nap consistency"
+      ],
+      "working_title": "Does call tracking hurt my local SEO?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for call tracking and tracked number returns only one incidental mention, in the post published on 21 November about bot traffic. Nothing owns it. ga4-vs-google-ads-conversions and ga4-conversions-not-tracking own conversion tracking in analytics, what-schema-markup-does-a-local-business-need owns schema, and the GBP suspension post owns profile problems, all worth linking rather than restating. Practical and specific, and this one needs sources: verify at Google's own documentation what it says about the primary phone number on a Google Business Profile and about using tracking numbers, because the correct answer is nuanced and the folklore is absolute in both directions. Establish what dynamic number insertion does and does not do to a crawler, which is the real question underneath, and what the NAP consistency concern actually amounts to versus what SEO folklore claims. Then the implementation that is safe: where the tracked number goes, where the real number stays, and what to do about the profile specifically. Concrete middle: a short before-you-install checklist. The reason the post is worth writing is that most small businesses either refuse call tracking entirely on the strength of a warning nobody has checked, and therefore cannot tell which marketing produces calls, or install it wrongly across the profile. Both are expensive and the second is worse.",
+      "audience": "A US service business that wants to know which marketing produces phone calls",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Local SEO",
+        "Measurement",
+        "Analytics"
       ]
     }
   ]
