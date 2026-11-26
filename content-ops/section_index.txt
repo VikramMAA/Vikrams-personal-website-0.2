@@ -1379,3 +1379,9 @@ India | whatsapp-list-you-do-not-own | Your WhatsApp list is an asset you do not
     - Price the exposure instead of agonising over it
     - Four things to hold outside the platform
     - Where I come out
+India | job-enquiries-instead-of-customers | Why do I keep getting job enquiries instead of customers?
+    - First, find out which queries are actually doing this
+    - Build the page the other intent is looking for
+    - Route the form by reason, not by length
+    - The ads part, briefly, because I have written it twice
+    - Before lunch
