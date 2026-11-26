@@ -115,12 +115,55 @@ export const availability = {
 } as const;
 
 /**
+ * REMOTE WORK. How the site presents working with teams outside India.
+ *
+ * Positioning, not concealment: the site leads with how Vikram works (remote,
+ * across time zones) instead of where he sits. Bengaluru is still stated on
+ * /about/, in the "Where are you based?" FAQ, in the Person JSON-LD and on the
+ * Bengaluru page. Do not remove it from those places and do not add a US
+ * address, a US city or anything that implies a US office. A prospect finds
+ * out on the first call, and a site that misled them loses the deal.
+ *
+ * `booking` and `hours` are blank until Vikram supplies them. Each one renders
+ * only when it is set, so leaving them empty is safe.
+ */
+export const remote = {
+  /** Short form. Hero pill, footer. */
+  label: 'Remote · working with US, UK and EU teams',
+  /** Cal.com / Calendly URL. When set, a "Book a call" button appears in the CTA, contact page and remote section. */
+  booking: '',
+  /** Call hours in the buyer's time zone, e.g. 'Calls 8am to 12pm US Eastern'. Shown only when set. */
+  hours: '',
+  heading: 'Working with teams in the US, UK and EU',
+  intro:
+    'Most of my work has been remote, including a Canadian brand run end to end without anyone being in the same room. Here is how it works when you are not in India.',
+  points: [
+    {
+      title: 'Time zones',
+      body: 'Calls go in your calendar at a time that suits you. I work on IST, which overlaps US Eastern mornings and the whole UK and EU working day. Everything between calls runs in shared docs, so nothing waits on a time zone.',
+    },
+    {
+      title: 'Contracts and payment',
+      body: 'A written scope and a flat fee, signed before anything starts. Invoiced in USD, GBP or EUR, paid by card or bank transfer, so there is no international wire to set up on your side.',
+    },
+    {
+      title: 'NDAs and access',
+      body: 'Happy to sign your NDA before the first detailed call. You grant access to your ad accounts, analytics and CMS, and you can revoke it whenever you like. Nothing runs from an account I own.',
+    },
+    {
+      title: 'Why one remote person',
+      body: 'You get the senior person on every call and every piece of work, not an account manager handing it down to a junior. You pay for the work rather than for a local office.',
+    },
+  ],
+} as const;
+
+/**
  * The site-wide closing invitation. Reused by the CTA component, the contact
  * page and the FAQ so the wording stays identical everywhere.
  */
 export const chatInvite = {
   heading: 'Have a number that is not moving?',
-  body: `I am accepting contracts to help brands grow, and I am equally happy with a conversation that never becomes one. Email, LinkedIn, WhatsApp or a call, whichever is easiest. Tell me what you are running and what it is failing to produce, and you will get a straight answer on whether I am the right person for it.`,
+  body: `I am accepting contracts to help brands grow, and I am equally happy with a conversation that never becomes one. Email, the contact form or LinkedIn, whichever is easiest. Tell me what you are running and what it is failing to produce, and you will get a straight answer on whether I am the right person for it.`,
 } as const;
 
 /** Shown as the credibility strip under the hero. */
@@ -533,11 +576,11 @@ export const caseStudies: CaseStudy[] = [
 export const faqs = [
   {
     q: 'Who is Vikram M A A?',
-    a: `I am a digital marketing and go-to-market specialist based in ${contact.city}, India, with ${site.yearsExperience}+ years across SEO, Google and Meta ads, social media, content marketing and lead generation. I work with brands under contract, and this site is my blog and portfolio.`,
+    a: `I am a digital marketing and go-to-market specialist working remotely with teams in the US, UK, EU and India, with ${site.yearsExperience}+ years across SEO, Google and Meta ads, social media, content marketing and lead generation. I work with brands under contract, and this site is my blog and portfolio.`,
   },
   {
     q: 'Are you available for work?',
-    a: `Yes. I am accepting contracts to help brands grow, across SEO, AI search, Google and Meta ads, organic social, content marketing and lead generation. I take a small number at a time so the work stays mine rather than being handed down to a junior. Email ${contact.email}, call or WhatsApp ${contact.phone}, or message me on LinkedIn, and tell me what you are running and what it is failing to produce.`,
+    a: `Yes. I am accepting contracts to help brands grow, across SEO, AI search, Google and Meta ads, organic social, content marketing and lead generation. I take a small number at a time so the work stays mine rather than being handed down to a junior. Email ${contact.email}, use the contact form, or message me on LinkedIn, and tell me what you are running and what it is failing to produce.`,
   },
   {
     q: 'What kind of contracts do you take?',
@@ -549,7 +592,7 @@ export const faqs = [
   },
   {
     q: 'Can I talk to you about a GTM or digital marketing problem?',
-    a: 'Yes, and it does not have to turn into a contract. Email, LinkedIn, WhatsApp or a call, whichever is easiest. The quickest way to a useful answer is to say what you are running and what it is failing to produce.',
+    a: 'Yes, and it does not have to turn into a contract. Email, the contact form or LinkedIn, whichever is easiest. In India, WhatsApp or a call works too. The quickest way to a useful answer is to say what you are running and what it is failing to produce.',
   },
   {
     q: 'What do you write about here?',
@@ -565,7 +608,7 @@ export const faqs = [
   },
   {
     q: 'Where are you based?',
-    a: `${contact.city}, ${contact.region}, India. Most of the work I have done has been remote or hybrid, across India and internationally, including a Canadian brand, so a contract does not depend on you being in the same city or the same time zone.`,
+    a: `I am based in ${contact.city}, India, and I work remotely with teams in the US, UK, EU and India. Most of the work I have done has been remote, including a Canadian brand run end to end, so a contract does not depend on you being in the same city or the same time zone. Calls are scheduled in your time zone, and contracts are invoiced in USD, GBP or EUR.`,
   },
 ];
 

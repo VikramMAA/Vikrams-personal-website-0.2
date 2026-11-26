@@ -1,0 +1,81 @@
+---
+/**
+ * "Working with teams in the US, UK and EU" — answers the objection a buyer
+ * outside India has before they write: time zones, contracts, payment, access.
+ * Copy lives in `remote` in src/data/site.ts. See the note there on why this
+ * section positions remote work rather than hiding where Vikram is based.
+ */
+import { contact, remote } from '../data/site';
+
+interface Props {
+  /** Render on the alternate background. */
+  alt?: boolean;
+  /** Hide the closing buttons (e.g. on /contact/, which already has them). */
+  actions?: boolean;
+}
+
+const { alt = false, actions = true } = Astro.props;
+---
+
+<section
+  class:list={['section', 'remote', { 'section--alt': alt }]}
+  id="working-remotely"
+  aria-labelledby="remote-heading"
+>
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Working remotely</p>
+      <h2 id="remote-heading">{remote.heading}</h2>
+      <p>{remote.intro}</p>
+      {remote.hours && <p class="remote__hours">{remote.hours}</p>}
+    </div>
+
+    <div class="grid grid--2">
+      {
+        remote.points.map((p) => (
+          <div class="card">
+            <h3>{p.title}</h3>
+            <p>{p.body}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    {
+      actions && (
+        <div class="btn-row remote__actions">
+          {remote.booking ? (
+            <a href={remote.booking} class="btn btn--primary" rel="noopener">
+              Book a call
+            </a>
+          ) : (
+            <a href="/contact/#form" class="btn btn--primary">
+              Send a message
+            </a>
+          )}
+          <a href={`mailto:${contact.email}`} class="btn btn--ghost">
+            Email me
+          </a>
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .remote__hours {
+    margin-top: 0.75rem;
+    font-weight: 600;
+  }
+
+  .remote__actions {
+    margin-top: 2rem;
+  }
+
+  /* Four cards: two by two on wide screens rather than three plus an orphan. */
+  @media (min-width: 720px) {
+    .remote .grid--2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

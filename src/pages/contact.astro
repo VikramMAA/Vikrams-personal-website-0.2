@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import { site, contact, expertise, availability } from '../data/site';
+import { site, contact, expertise, availability, remote } from '../data/site';
+import RemoteWork from '../components/RemoteWork.astro';
 import { breadcrumbSchema } from '../data/schema';
 
 const title = `Contact ${site.name} — Accepting Contracts`;
-const description = `Get in touch with ${site.name} by email, phone, WhatsApp or LinkedIn. Accepting contracts to help brands grow across SEO, paid media, social, content and lead generation.`;
+const description = `Get in touch with ${site.name} by email, the contact form or LinkedIn. Working remotely with US, UK and EU teams. Accepting contracts to help brands grow across SEO, paid media, social, content and lead generation.`;
 
 const crumbs = [
   { label: 'Home', href: '/' },
@@ -39,8 +40,8 @@ const contactPageSchema = {
           <p class="lede">
             {availability.open && <strong>{availability.statement} </strong>}If your
             marketing is running and revenue is flat, that is the conversation I am best
-            at. Email, LinkedIn, WhatsApp or a call, whichever is easiest. I usually
-            reply within two working days.
+            at. Email or the form is quickest wherever you are, and I usually reply within
+            two working days. In India, WhatsApp or a call works too.
           </p>
           <p class="lede">
             A conversation is not a commitment in either direction. Plenty of these end
@@ -55,16 +56,14 @@ const contactPageSchema = {
                 <span class="direct__label">Email</span>
                 <a href={`mailto:${contact.email}`}>{contact.email}</a>
               </li>
-              <li>
-                <span class="direct__label">Phone</span>
-                <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>
-              </li>
-              <li>
-                <span class="direct__label">WhatsApp</span>
-                <a href={`https://wa.me/${contact.whatsapp}`} rel="noopener">
-                  Message on WhatsApp
-                </a>
-              </li>
+              {
+                remote.booking && (
+                  <li>
+                    <span class="direct__label">Book a call</span>
+                    <a href={remote.booking} rel="noopener">Pick a time in your time zone</a>
+                  </li>
+                )
+              }
               <li>
                 <span class="direct__label">LinkedIn</span>
                 <a href={contact.linkedin} rel="noopener">
@@ -72,8 +71,24 @@ const contactPageSchema = {
                 </a>
               </li>
               <li>
-                <span class="direct__label">Based in</span>
-                <span>{contact.city}, {contact.region}, {contact.country}</span>
+                <span class="direct__label">Works with</span>
+                <span>
+                  Remote teams in the US, UK and EU (<a href="#working-remotely">how
+                  that works</a>), and India
+                </span>
+              </li>
+              {remote.hours && (
+                <li>
+                  <span class="direct__label">Call hours</span>
+                  <span>{remote.hours}</span>
+                </li>
+              )}
+              <li>
+                <span class="direct__label">In India</span>
+                <span>
+                  <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a> &middot; <a
+                    href={`https://wa.me/${contact.whatsapp}`} rel="noopener">WhatsApp</a>
+                </span>
               </li>
             </ul>
           </div>
@@ -106,7 +121,7 @@ const contactPageSchema = {
         </div>
 
         {/* ----------------------------------------------------------- Form */}
-        <div class="form-panel">
+        <div class="form-panel" id="form">
           <h2 class="form-panel__title">Or use the form</h2>
           <p class="form-intro">
             It lands in the same inbox as the email address. Use whichever is easier,
@@ -211,6 +226,8 @@ const contactPageSchema = {
       </div>
     </div>
   </section>
+
+  <RemoteWork alt actions={false} />
 </BaseLayout>
 
 <style>
@@ -246,6 +263,11 @@ const contactPageSchema = {
     margin-top: clamp(2rem, 4vw, 3rem);
     padding-top: 1.75rem;
     border-top: 1px solid var(--border);
+  }
+
+  /* Opt out of the two-column `.direct li` grid, which squeezed each item into the label column. */
+  .direct .include-list li {
+    display: list-item;
   }
 
   .include-list {

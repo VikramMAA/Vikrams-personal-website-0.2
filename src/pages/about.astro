@@ -5,8 +5,8 @@ import CTA from '../components/CTA.astro';
 import { site, contact, expertise, industries, availability } from '../data/site';
 import { breadcrumbSchema, profilePageSchema } from '../data/schema';
 
-const title = `About ${site.name} — Digital Marketing & GTM, ${contact.city}`;
-const description = `${site.name} is a digital marketing and GTM specialist in ${contact.city} with ${site.yearsExperience}+ years across SEO, paid media, social and content, working with brands under contract.`;
+const title = `About ${site.name} — Remote Digital Marketing & GTM`;
+const description = `${site.name} is a remote digital marketing and GTM specialist with ${site.yearsExperience}+ years across SEO, paid media, social and content, working with brands in the US, UK, EU and India.`;
 
 const crumbs = [
   { label: 'Home', href: '/' },
@@ -116,11 +116,13 @@ const timeline = [
               href="/expertise/marketing-sales-alignment/">alignment notes</a>.
           </p>
 
-          <h2>Based in {contact.city}</h2>
+          <h2>Where I work</h2>
           <p>
-            I am in {contact.city}, {contact.region}, and I work with companies that are
-            not. Remote and hybrid across time zones is how almost all of it has run.
-            If you are in the city, <a href="/digital-marketing-consultant-bengaluru/"
+            Remotely, with teams in the US, UK, EU and India. I am based in {contact.city},
+            and almost all of my work has run remote across time zones: calls in your
+            calendar, a written scope, invoicing in your currency. The <a
+              href="/contact/#working-remotely">contact page</a> covers how that works in
+            practice. If you are in {contact.city}, <a href="/digital-marketing-consultant-bengaluru/"
               >the Bengaluru page</a> covers what is different about this market and
             when being local actually matters.
           </p>
@@ -156,9 +158,10 @@ const timeline = [
           </p>
           <p>
             If your marketing is running and revenue is flat, email me at <a
-              href={`mailto:${contact.email}`}>{contact.email}</a>, call or WhatsApp me
-            on <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>, or find me on <a
-              href={contact.linkedin} rel="noopener">LinkedIn</a>. Tell me what you are
+              href={`mailto:${contact.email}`}>{contact.email}</a>, use the <a
+              href="/contact/#form">contact form</a>, or find me on <a
+              href={contact.linkedin} rel="noopener">LinkedIn</a>. In India, you can also
+            call or WhatsApp me on <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>. Tell me what you are
             running and what it is failing to produce. If I am not the right person for
             it, I will say so and tell you what to look for instead.
           </p>
@@ -186,7 +189,7 @@ const timeline = [
               }
               <div>
                 <dt>Working style</dt>
-                <dd>Remote and hybrid, across time zones</dd>
+                <dd>Remote, with US, UK, EU and Indian teams</dd>
               </div>
               <div>
                 <dt>This site</dt>

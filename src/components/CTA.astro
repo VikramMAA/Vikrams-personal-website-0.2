@@ -4,7 +4,7 @@
  * to a conversation. The default copy lives in `chatInvite` in src/data/site.ts
  * so the wording stays identical on every page that uses it.
  */
-import { contact, chatInvite } from '../data/site';
+import { contact, chatInvite, remote } from '../data/site';
 
 interface Props {
   heading?: string;
@@ -21,15 +21,25 @@ const { heading = chatInvite.heading, body = chatInvite.body } = Astro.props;
     <p class="lede">{body}</p>
     <div class="btn-row">
       <a href={`mailto:${contact.email}`} class="btn btn--primary">Email me</a>
-      <a href={`https://wa.me/${contact.whatsapp}`} class="btn btn--ghost" rel="noopener">
-        WhatsApp
-      </a>
+      {
+        remote.booking ? (
+          <a href={remote.booking} class="btn btn--ghost" rel="noopener">
+            Book a call
+          </a>
+        ) : (
+          <a href="/contact/#form" class="btn btn--ghost">
+            Send a message
+          </a>
+        )
+      }
       <a href={contact.linkedin} class="btn btn--ghost" rel="noopener">
         LinkedIn
       </a>
     </div>
+    {remote.hours && <p class="cta__phone">{remote.hours}.</p>}
     <p class="cta__phone">
-      Or call <a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a>.
+      In India? <a href={`https://wa.me/${contact.whatsapp}`} rel="noopener">WhatsApp</a>
+      or <a href={`tel:${contact.phoneRaw}`}>call me</a>.
     </p>
   </div>
 </section>
