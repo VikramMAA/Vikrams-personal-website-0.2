@@ -1359,3 +1359,29 @@ India | how-much-does-a-website-cost-in-india | How much does a website cost in 
     - The questions to ask before you sign
     - Who owns what afterwards
     - Before lunch
+US | who-is-allowed-to-say-no-to-a-customer | Who in your company is allowed to say no to a customer?
+    - The law already worked this out, for sweaters
+    - The same sentence, two opposite meanings
+    - A limit is the only claim you can't fake
+    - What assigning it actually looks like
+    - Where I come out
+US | does-call-tracking-hurt-local-seo | Does call tracking hurt my local SEO?
+    - What Google's guidelines actually say about the number
+    - Google ships this feature, which settles the SEO question
+    - The reassurance that is false
+    - Before you install anything
+    - What you'll actually learn, which is not what you expect
+    - Before lunch
+India | whatsapp-list-you-do-not-own | Your WhatsApp list is an asset you do not own
+    - What the documentation actually says
+    - Which means the usual worry is the wrong worry
+    - The asset is three things and only one of them lives in WhatsApp
+    - Price the exposure instead of agonising over it
+    - Four things to hold outside the platform
+    - Where I come out
+India | job-enquiries-instead-of-customers | Why do I keep getting job enquiries instead of customers?
+    - First, find out which queries are actually doing this
+    - Build the page the other intent is looking for
+    - Route the form by reason, not by length
+    - The ads part, briefly, because I have written it twice
+    - Before lunch

@@ -54,6 +54,14 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
 
+# Private concept previews. The page also carries a noindex meta tag; the header
+# is a second line of defence that crawlers still see. Do not Disallow /preview/
+# in robots.txt: a blocked crawler never fetches the page, so never sees either.
+[[headers]]
+  for = "/preview/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
 # Hashed build assets are immutable — cache them hard.
 [[headers]]
   for = "/_astro/*"

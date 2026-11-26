@@ -10,8 +10,12 @@ export default defineConfig({
   integrations: [
     sitemap({
       // Keep noindex pages out of the sitemap — listing them is a mixed signal.
+      // /preview/ holds private concept pages; excluding them here also keeps
+      // them out of the IndexNow ping, which submits sitemap URLs only.
       filter: (page) =>
-        !page.includes('/thank-you') && !page.includes('/subscribed'),
+        !page.includes('/thank-you') &&
+        !page.includes('/subscribed') &&
+        !page.includes('/preview/'),
     }),
   ],
   build: {

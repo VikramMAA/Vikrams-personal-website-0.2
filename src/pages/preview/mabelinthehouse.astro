@@ -1,0 +1,443 @@
+---
+/**
+ * Private concept preview for one creator (@mabelinthehouse). Not a live product.
+ *
+ * Kept out of search and out of the site's lists on purpose:
+ *  - `noindex` here emits <meta name="robots" content="noindex, nofollow">.
+ *  - netlify.toml sends `X-Robots-Tag: noindex, nofollow` for /preview/*.
+ *  - astro.config.mjs filters /preview/ out of the sitemap, which also keeps it
+ *    out of the IndexNow ping (that script submits sitemap URLs only).
+ *  - Nothing in the nav, footer, blog or llms.txt links here.
+ *
+ * It is deliberately NOT disallowed in robots.txt: a crawler that cannot fetch
+ * the page never sees the noindex, and robots.txt is public, so a Disallow line
+ * would also advertise the path.
+ *
+ * There must be no working payment link on this page. The "Buy now" control is
+ * an inert, disabled button and must stay that way.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const chapters = [
+  {
+    title: 'Before you lift a tool',
+    body: 'Setting a budget that survives contact with the building. The right order of works and why getting it wrong costs the most money. The five jobs to never DIY. Where to spend and where it genuinely does not matter.',
+  },
+  {
+    title: 'The kitchen',
+    body: 'Full cost breakdown. Carcasses versus doors, and when a refresh beats a rip-out. Worktop options by price. The sequence that keeps you cooking through the work.',
+  },
+  {
+    title: 'The main bathroom',
+    body: 'What has to be done by a trade and what does not. Tiling without regret. Costs for the version I built and the cheaper version I considered.',
+  },
+  {
+    title: 'Bedrooms, wardrobes and the Pax hacks',
+    body: 'Turning flat-pack into built-in. Teen bedroom on a tight budget. The dressing room, panel by panel, with the materials list.',
+  },
+  {
+    title: 'Doors, fireplaces and joinery',
+    body: 'The jobs that make a house look expensive for very little money. DIY doors start to finish. The fireplace, before and after, with costs.',
+  },
+  {
+    title: 'Exterior',
+    body: 'Kerb appeal in priority order. What weather does to a cheap decision. Render, paint and the choices I would make again.',
+  },
+  {
+    title: 'Garden',
+    body: 'The pergola build with a cut list. Garden makeover costs, staged over two seasons so it is affordable.',
+  },
+  {
+    title: 'The planner',
+    body: 'A room-by-room cost sheet, a materials checklist, and a realistic timeline you can fill in. Print it or use it on your phone.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'Is this specific to UK houses and suppliers?',
+    a: 'Yes. Prices, trades and materials are UK.',
+  },
+  {
+    q: 'Will the costs still be accurate next year?',
+    a: 'The relative costs will be, which is the part that matters for planning. Absolute figures get updated.',
+  },
+  {
+    q: 'What format?',
+    a: 'A PDF you download once and keep, plus the printable planner.',
+  },
+];
+
+const proposal = [
+  {
+    title: 'What I do',
+    body: 'Research and write the guide from your existing content and a couple of conversations with you. Design it. Build the real sales page. Set up checkout, payments, VAT and delivery to every buyer. Handle refunds and customer emails. Keep it running after launch.',
+  },
+  {
+    title: 'What you do',
+    body: 'Approve the outline. Correct anything I have got wrong about your own house. Tell your audience it exists, in your own words, whenever suits you.',
+  },
+  {
+    title: 'What it costs you',
+    body: 'Nothing, at any point. No fee, no setup cost, no minimum. I carry the production cost and the risk.',
+  },
+  {
+    title: 'The split',
+    body: '50-50 on every sale. Your half is paid to you directly by the payment platform, so it never passes through my account first. You get a partner login and can see sales and earnings whenever you like.',
+  },
+  {
+    title: 'Your control',
+    body: 'Nothing is published without your written approval. Your name goes on it, so you get final say on every page, the price, and how it is sold. If you want out later, the guide is yours and I stop.',
+  },
+  {
+    title: 'What I am not doing',
+    body: 'No exclusivity. No contract tying up your other work. Nothing that interferes with your ShopMy links or brand partnerships. This sits alongside them.',
+  },
+];
+---
+
+<BaseLayout
+  title="Concept preview: The Room-by-Room Renovation Guide"
+  description="A product concept prepared for @mabelinthehouse. Not a live product."
+  noindex={true}
+>
+  {/* Disclaimer */}
+  <section class="section preview-intro">
+    <div class="container container--narrow">
+      <aside class="notice" aria-label="About this page">
+        <p class="notice__title">This is a concept, not a product.</p>
+        <p>
+          Nothing on this page is live, purchased, or for sale. Sarah has not seen,
+          approved or agreed to any of it. I built it so there would be something real
+          to look at instead of a description in an email. If she would rather it came
+          down, it comes down the same day.
+        </p>
+        <p class="notice__sig">Vikram M A A, <a href="/">vikramhere.com</a></p>
+      </aside>
+
+      <p class="eyebrow">For Sarah</p>
+      <h1>Sarah, in one paragraph</h1>
+      <div class="prose">
+        <p>
+          You have spent years documenting a full house renovation on a budget, and it
+          is already organised the way a product would be: kitchen, main bathroom, teen
+          bedroom, dressing room, exterior, the pergola, the Pax hacks. Your followers get
+          the finished room in forty seconds. What they do not get is the order of works,
+          what it actually cost, or the list of what to buy.
+        </p>
+        <p>
+          That gap is a product. Below is what it could look like, and what I would do to
+          build and run it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* The mock-up sales page */}
+  <section class="section section--alt" aria-labelledby="mock-title">
+    <div class="container">
+      <div class="mock">
+        <p class="mock__tag">Mock-up</p>
+
+        <header class="mock__hero">
+          <h2 id="mock-title" class="mock__title">The Room-by-Room Renovation Guide</h2>
+          <p class="mock__sub">Renovate on a real budget, one room at a time</p>
+          <p class="mock__by">by Sarah, @mabelinthehouse</p>
+          <p class="mock__price">Indicative price: <strong>£24</strong></p>
+          <button type="button" class="btn btn--primary mock__buy" disabled aria-disabled="true">
+            Buy now
+          </button>
+          <p class="mock__note">Mock-up only, not a working button.</p>
+        </header>
+
+        <div class="mock__block prose">
+          <h3>Most renovation advice assumes a budget you do not have</h3>
+          <p>
+            You have watched the reels. You know the room is possible. What you do not
+            know is what to do first, what it costs before you commit, and which bits are
+            worth paying someone else to do.
+          </p>
+          <p>
+            This guide is the version of my renovation I wish someone had handed me at the
+            start. Real costs from real rooms in a real house, in the order I actually did
+            them, including the parts that went wrong.
+          </p>
+        </div>
+
+        <div class="mock__block">
+          <h3 class="mock__h">What is inside</h3>
+          <ol class="chapters">
+            {
+              chapters.map((c, i) => (
+                <li class="chapter">
+                  <span class="chapter__num">{i + 1}</span>
+                  <div>
+                    <h4>{c.title}</h4>
+                    <p>{c.body}</p>
+                  </div>
+                </li>
+              ))
+            }
+          </ol>
+        </div>
+
+        <div class="mock__block grid grid--2">
+          <div class="fit">
+            <h3 class="mock__h">Who this is for</h3>
+            <p>
+              People renovating their first house on a budget that is tight and honest,
+              who would rather do most of it themselves and want to know what that really
+              takes before they start.
+            </p>
+          </div>
+          <div class="fit">
+            <h3 class="mock__h">Who this is not for</h3>
+            <p>
+              Anyone looking for a design portfolio or a showroom budget. There is nothing
+              aspirational in here. It is costs, order of works and materials.
+            </p>
+          </div>
+        </div>
+
+        <div class="mock__block">
+          <h3 class="mock__h">Questions</h3>
+          <dl class="faq">
+            {
+              faqs.map((f) => (
+                <div class="faq__item">
+                  <dt>{f.q}</dt>
+                  <dd>{f.a}</dd>
+                </div>
+              ))
+            }
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* The proposal */}
+  <section class="section" aria-labelledby="proposal-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The proposal</p>
+        <h2 id="proposal-title">Sarah, here is the actual proposal</h2>
+        <p>
+          Everything above is a mock-up. If you want it to exist, this is how it would
+          work.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        {
+          proposal.map((p) => (
+            <div class="card">
+              <h3>{p.title}</h3>
+              <p>{p.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container container--narrow">
+      <p class="eyebrow">The next step</p>
+      <h2>If the idea is worth exploring</h2>
+      <p class="lede">
+        Reply to my email and I will send a proper outline for this guide, built around
+        your rooms, for you to pull apart. Still no cost and no commitment at that stage.
+      </p>
+      <p class="lede">If it is not for you, tell me and I will not follow up again.</p>
+      <p class="signoff">
+        Vikram M A A<br />
+        <a href="/">vikramhere.com</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .preview-intro h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  .notice {
+    border: 1.5px solid var(--accent);
+    background: var(--accent-soft);
+    border-radius: var(--radius);
+    padding: clamp(1.15rem, 2.5vw, 1.6rem);
+    margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+  }
+
+  .notice p + p {
+    margin-top: 0.75rem;
+  }
+
+  .notice__title {
+    font-weight: 700;
+    font-size: var(--step-1);
+  }
+
+  .notice__sig {
+    font-size: var(--step--1);
+    color: var(--text-muted);
+  }
+
+  .notice a,
+  .signoff a {
+    color: var(--accent);
+  }
+
+  /* The mock-up is framed so it never reads as a real sales page. */
+  .mock {
+    position: relative;
+    max-width: 880px;
+    margin-inline: auto;
+    background: var(--white);
+    border: 2px dashed var(--ink-400);
+    border-radius: var(--radius);
+    padding: clamp(1.5rem, 5vw, 3.5rem);
+  }
+
+  .mock__tag {
+    position: absolute;
+    top: -0.85rem;
+    left: clamp(1rem, 4vw, 2rem);
+    background: var(--ink-900);
+    color: var(--white);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+  }
+
+  .mock__hero {
+    text-align: center;
+    padding-bottom: clamp(2rem, 4vw, 3rem);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mock__title {
+    font-size: var(--step-4);
+    line-height: 1.1;
+  }
+
+  .mock__sub {
+    margin-top: 0.85rem;
+    font-size: var(--step-1);
+    color: var(--text-muted);
+  }
+
+  .mock__by {
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
+
+  .mock__price {
+    margin-top: 1.5rem;
+    font-size: var(--step-1);
+  }
+
+  .mock__buy {
+    margin-top: 1rem;
+  }
+
+  .mock__buy:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+    transform: none;
+  }
+
+  .mock__buy:disabled:hover {
+    background: var(--accent);
+  }
+
+  .mock__note {
+    margin-top: 0.6rem;
+    font-size: var(--step--1);
+    font-style: italic;
+    color: var(--text-muted);
+  }
+
+  .mock__block {
+    margin-top: clamp(2rem, 4vw, 3rem);
+  }
+
+  .mock__h {
+    font-size: var(--step-2);
+    margin-bottom: 1rem;
+  }
+
+  .chapters {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .chapter {
+    display: grid;
+    grid-template-columns: 2.25rem 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .chapter__num {
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+    font-weight: 700;
+  }
+
+  .chapter h4 {
+    font-size: var(--step-0);
+    font-weight: 700;
+  }
+
+  .chapter p,
+  .fit p {
+    margin-top: 0.3rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .fit .mock__h {
+    font-size: var(--step-1);
+    margin-bottom: 0.5rem;
+  }
+
+  .faq {
+    display: grid;
+    gap: 1.1rem;
+  }
+
+  .faq dt {
+    font-weight: 600;
+  }
+
+  .faq dd {
+    margin: 0.3rem 0 0;
+    color: var(--text-muted);
+  }
+
+  .section--dark h2 {
+    margin-bottom: 1rem;
+  }
+
+  .section--dark .lede + .lede {
+    margin-top: 1rem;
+  }
+
+  .signoff {
+    margin-top: 2rem;
+    font-weight: 600;
+  }
+</style>

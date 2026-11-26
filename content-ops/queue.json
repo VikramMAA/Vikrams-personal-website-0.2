@@ -65,27 +65,6 @@
       ]
     },
     {
-      "id": "b-202",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "who decides what to promise customers",
-      "secondary_keywords": [
-        "marketing promises operations cannot keep",
-        "overpromising in sales",
-        "sales and delivery misalignment"
-      ],
-      "working_title": "Who in your company is allowed to say no to a customer?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for say no to a customer, allowed to say no and refuse a customer returned ZERO hits. customer-onboarding-marketing owns onboarding as a marketing problem and is the closest neighbour, worth one link. why-customers-stop-buying owns churn causes. marketing-is-fine-capacity-is-the-problem owns capacity as the binding constraint and the selection-over-volume brief, so this must not re-argue capacity. Opinion shape with a point of view. The argument: in most small companies marketing and sales write promises that delivery has to keep, and nobody has been given authority to refuse, so the refusal happens anyway but late, badly, and by the most junior person in the chain. Build it on observable mechanics rather than statistics: the proposal that included a deliverable nobody costed, the scope that grew by email, the delivery lead who found out about a commitment from the client. Then the claim that makes it a marketing article: the ability to say no is a positioning asset, because a company that visibly declines work is making a claim about its standards that no amount of copy can substitute for, and the companies with the best reputations in any category are the ones with known limits. Give the practical shape without turning it into a process guide: who signs off a promise, what the standing list of things we do not do contains, and who tells the client. Close on the opinion that an organisation where only the owner can say no has not delegated sales, it has delegated optimism.",
-      "audience": "A US owner whose sales promises keep landing on a delivery team that was not asked",
-      "city": null,
-      "expertise_link": "/expertise/marketing-sales-alignment/",
-      "tags": [
-        "Process",
-        "Positioning",
-        "B2B"
-      ]
-    },
-    {
       "id": "b-203",
       "slot": "evening",
       "market": "US",
@@ -128,27 +107,6 @@
       ]
     },
     {
-      "id": "b-205",
-      "slot": "evening",
-      "market": "India",
-      "primary_keyword": "whatsapp list is not an asset you own",
-      "secondary_keywords": [
-        "platform dependency small business",
-        "owning your customer list india",
-        "what if whatsapp changes the rules"
-      ],
-      "working_title": "Your WhatsApp list is an asset you do not own",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for platform dependency, own your audience, rented land and list you do not own returned ZERO hits. whatsapp-marketing-india owns broadcast and template mechanics, track-whatsapp-leads-from-website owns measurement including the Meta referral object, the October pricing post owns the pricing change, and the green-tick brief b-197 is queued and owns verification. So the mechanics are thoroughly claimed and this post must be the ownership argument only, linking them. Opinion shape. The argument: for a large number of Indian small businesses the entire customer relationship now lives inside an account they do not control, on terms that have already changed twice, and the usual response to this observation is a shrug because there is no alternative that works as well. Take that seriously rather than moralising. Then make the case that the asset is not the channel, it is the list plus the consent plus the context, and all three can be held outside the platform at almost no cost while continuing to use the platform for everything. Give the practical shape: export and own the numbers with the source and date, keep the record of how consent was obtained, hold enough transaction context that a second channel could be stood up in a week, and test one alternative route to your top customers before you need it. Close on the opinion that the right question is not whether to leave, because you should not, but how expensive the next rule change is allowed to be, and that most owners have never priced it.",
-      "audience": "An Indian business owner whose sales and support both run through WhatsApp",
-      "city": "Mumbai",
-      "expertise_link": "/expertise/lead-generation/",
-      "tags": [
-        "WhatsApp",
-        "Strategy",
-        "Retention"
-      ]
-    },
-    {
       "id": "b-206",
       "slot": "evening",
       "market": "Estonia",
@@ -170,48 +128,6 @@
       ]
     },
     {
-      "id": "b-208",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "call tracking without hurting local seo",
-      "secondary_keywords": [
-        "call tracking number google business profile",
-        "dynamic number insertion seo",
-        "does call tracking affect nap consistency"
-      ],
-      "working_title": "Does call tracking hurt my local SEO?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for call tracking and tracked number returns only one incidental mention, in the post published on 21 November about bot traffic. Nothing owns it. ga4-vs-google-ads-conversions and ga4-conversions-not-tracking own conversion tracking in analytics, what-schema-markup-does-a-local-business-need owns schema, and the GBP suspension post owns profile problems, all worth linking rather than restating. Practical and specific, and this one needs sources: verify at Google's own documentation what it says about the primary phone number on a Google Business Profile and about using tracking numbers, because the correct answer is nuanced and the folklore is absolute in both directions. Establish what dynamic number insertion does and does not do to a crawler, which is the real question underneath, and what the NAP consistency concern actually amounts to versus what SEO folklore claims. Then the implementation that is safe: where the tracked number goes, where the real number stays, and what to do about the profile specifically. Concrete middle: a short before-you-install checklist. The reason the post is worth writing is that most small businesses either refuse call tracking entirely on the strength of a warning nobody has checked, and therefore cannot tell which marketing produces calls, or install it wrongly across the profile. Both are expensive and the second is worse.",
-      "audience": "A US service business that wants to know which marketing produces phone calls",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "Local SEO",
-        "Measurement",
-        "Analytics"
-      ]
-    },
-    {
-      "id": "b-209",
-      "slot": "morning",
-      "market": "India",
-      "primary_keyword": "getting job enquiries instead of customer enquiries",
-      "secondary_keywords": [
-        "job seekers filling my contact form",
-        "exclude job seekers from ads",
-        "wrong enquiries from google"
-      ],
-      "working_title": "Why do I keep getting job enquiries instead of customers?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for job seeker, looking for a job and recruitment enquiry returns one incidental hit in trade-fair-marketing-india. Nothing owns it. why-is-my-landing-page-not-converting owns conversion, what-will-people-actually-give-you-their-number-for owns lead magnets, and the keyword research post owns query selection, all linkable. Practical, and genuinely common in India where company-name and category searches carry heavy jobs intent. Diagnose it properly rather than treating it as spam: open Search Console and the search terms report and look for the queries that actually brought these people, which will usually be your own company name plus words like careers, vacancy, salary, recruitment or internship, plus category terms that have a jobs interpretation. Then the fixes in order of cost. A careers page that ranks for those queries deliberately, because the demand is real and sending it somewhere is cheaper than fighting it, and a page that says we are not hiring right now is still the right page. Negative keywords on any paid campaign. A form that asks the first question in a way that filters. And the contact page routing enquiries by reason. Concrete middle: the list of query modifiers to check. Close on the point that this is not a traffic quality problem but an intent routing problem, and that the business owners who find it most irritating are the ones who have never given the jobs intent anywhere to land.",
-      "audience": "An Indian business owner whose contact form fills up with people wanting work",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "SEO",
-        "Conversion",
-        "Small Business"
-      ]
-    },
-    {
       "id": "b-210",
       "slot": "morning",
       "market": "Estonia",
@@ -230,6 +146,153 @@
         "B2B",
         "Sales",
         "Estonia"
+      ]
+    },
+    {
+      "id": "b-211",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "two pages competing for the same keyword",
+      "secondary_keywords": [
+        "keyword cannibalization fix",
+        "wrong page ranking for my keyword",
+        "which page should rank"
+      ],
+      "working_title": "Two of my pages are competing for the same keyword. What do I do?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for cannibali, wrong page rank and two pages compete returned one incidental hit, in quick-commerce-vs-d2c-india, which is unrelated. Nothing owns it. internal-linking-strategy owns internal links and is the main link here. content-decay-refresh-old-posts owns refreshing old posts. website-redesign-seo-checklist owns redirects at redesign. should-i-refresh-old-blog-posts-or-write-new-ones owns the refresh-versus-new decision. Read all four in full before drafting, because the remedies overlap. Practical, diagnostic shape. The honest framing first: cannibalisation is overdiagnosed, and two pages ranking for the same query is only a problem if the WRONG one ranks or if the ranking position is oscillating between them. Give the diagnosis from the reader's own data rather than a tool: in Search Console, filter to the query, add the pages dimension, and look at whether one page owns it or whether impressions are split and position is unstable across weeks. Then the decision tree, and the point is that merging is the last resort rather than the first: differentiate the intent if both pages deserve to exist, consolidate with a redirect if one is genuinely redundant, or leave it alone if one page already wins. Then the mechanical fixes in cost order, which are internal links pointing consistently at the page you want to win, title and H1 that do not both target the identical phrase, and canonical tags only where the pages are genuinely duplicates rather than as a way to express a preference. Close on the opinion that most cannibalisation projects are a tidying instinct dressed as SEO, and that the test is whether the wrong page is currently taking the clicks.",
+      "audience": "A US business owner or marketer who has been told their pages are competing with each other",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "SEO",
+        "Technical SEO",
+        "Content Marketing"
+      ]
+    },
+    {
+      "id": "b-212",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "how long to run an a/b test small business",
+      "secondary_keywords": [
+        "statistical significance small traffic",
+        "when to stop a landing page test",
+        "ab testing low traffic site"
+      ],
+      "working_title": "How long should I run a test before I believe the result?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for statistical significance, how long to run a test and test duration returned ZERO hits. Nothing on the site addresses it. landing-page-optimisation owns what to change on a page, vanity-metrics-vs-revenue-metrics owns which metrics to manage on, and why-does-my-monthly-marketing-report-never-tell-me-anything owns reporting, all worth linking. Practical and this one needs the arithmetic done honestly at source rather than asserted: work out, from a published sample-size calculation or a named statistics reference, roughly how many conversions per variant are needed to detect a realistic lift, and then state plainly what that means for a site with a few hundred visits a month. The honest finding, which is the reason to write it, is that most small business sites can never reach significance on a page test within a useful timeframe, so the correct advice is not to run the test better but to stop running tests and change things for reasons other than measurement. Then what to do instead: make changes that are obviously right rather than marginal, judge them on a longer window against the same month last year, and reserve real testing for the one or two pages with genuine volume. Give the one number the reader can compute from their own data, which is conversions per month per variant, and the rule that if it is in single figures the test is theatre. Close on the opinion that running an underpowered test is worse than running none, because it produces a confident answer that is noise and then gets built on.",
+      "audience": "A US small business owner being sold A/B testing on a low-traffic website",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Conversion",
+        "Measurement",
+        "Analytics"
+      ]
+    },
+    {
+      "id": "b-213",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "page ranks on desktop but not mobile",
+      "secondary_keywords": [
+        "mobile first indexing check",
+        "different rankings desktop and mobile",
+        "mobile parity seo"
+      ],
+      "working_title": "Why does my page rank on desktop but not on mobile?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for mobile-first, ranks on desktop and mobile indexing returned ZERO hits across the whole site. page-speed-optimisation-indian-websites is the India post and owns speed, so this must stay off speed as the explanation and link it only in passing. how-to-do-an-seo-audit-yourself owns the general audit and is the main link. Practical, and it needs Google's own documentation on mobile-first indexing verified at source, because the correct answer is that Google indexes what the mobile page contains, which means content missing from the mobile version is content Google does not have. Establish that from the documentation rather than from folklore. Then the diagnosis in order: compare what is actually in the mobile HTML against the desktop version, looking for content hidden behind tabs or accordions that is not in the markup at all, images and structured data absent on mobile, and blocked resources. Then the local dimension, which is that results differ by device partly because mobile results are more location-weighted, so a difference between your phone and your laptop may be geography rather than indexing, and the way to separate the two is Search Console's device breakdown rather than searching on your own devices. Concrete middle: how to compare the two versions properly, including fetching the page as Googlebot smartphone. Close on the practical point that the commonest real cause is content parity rather than anything exotic, and that the fix is usually putting back something a designer removed to make the mobile layout tidier.",
+      "audience": "A US site owner seeing different rankings on their phone and their laptop",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Technical SEO",
+        "SEO",
+        "Measurement"
+      ]
+    },
+    {
+      "id": "b-214",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "find pages on my site nobody visits",
+      "secondary_keywords": [
+        "zero traffic pages audit",
+        "content pruning small site",
+        "which pages to delete"
+      ],
+      "working_title": "How do I find the pages nobody has ever visited?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for zero traffic, pages nobody visits and never been visited returned ZERO hits. content-decay-refresh-old-posts owns refreshing pages that USED to perform, which is the opposite case and must be distinguished rather than restated, and should-i-refresh-old-blog-posts-or-write-new-ones owns that decision. internal-linking-strategy owns internal links. Read all three in full first. Practical. The method: pull the last twelve months from Search Console by page, pull the same from analytics, and the pages that appear in neither with any clicks or sessions are your dead set. Then the honest triage, which is the point of the post, because the standard advice to prune aggressively is wrong for a small site: a page with no traffic is not automatically waste, since it may be a page a salesperson sends to one prospect a quarter, a page that exists for a legal or trust reason, or a page that nobody has ever linked to and would work if anybody did. So the decision is between delete with a redirect, improve and link, or keep and accept it earns nothing. Give the test for each. The one genuinely valuable finding to look for: pages that get impressions and no clicks, which are a different and better problem, because demand exists and the listing is failing. Close on the opinion that content pruning became a fashion because it is satisfying rather than because it is usually the highest-value hour available, and that the impressions-without-clicks list is where the money actually is.",
+      "audience": "A US business owner with a site that accumulated pages over several years",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "SEO",
+        "Content Marketing",
+        "Measurement"
+      ]
+    },
+    {
+      "id": "b-215",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "customer complained publicly what to do",
+      "secondary_keywords": [
+        "public complaint social media business",
+        "customer posted about us online",
+        "responding to a public complaint"
+      ],
+      "working_title": "A customer complained about us in public. The first hour decides it",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for social media complaint, complains on Twitter and posts a complaint returned ZERO hits. The three review posts own Google reviews specifically, how-to-respond-to-negative-google-reviews owns the reply craft and can-i-get-a-bad-google-review-removed owns removal policy, and my-competitor-is-buying-fake-reviews owns fake reviews. Read all three first and keep strictly off review-platform territory, because this is about a complaint on a social platform or a forum where there is no policy lever and no removal route. Opinion shape with a point of view. The argument: the instinct is to answer the complaint and the first hour should be spent establishing whether it is true, because a defensive reply to a true complaint is the only move that converts an incident into a story. Then the point that makes it worth forwarding: the audience is not the complainant, it is the twenty people reading who have not decided anything, and they are judging your conduct rather than the facts, which they cannot verify. So the reply is written for them. Give the shape of a reply that works, which is acknowledge, state what you are doing, move it off the platform, and never argue the facts in public even when you are right. And the thing nobody says: if the complaint is true and significant, the fastest route through is to say so publicly before anybody forces you to. Be clear this is not about reputation management as an industry. Close on where I come out, that the companies that handle these well are the ones that decided the policy before it happened, because nobody makes a good decision about this inside an hour without one.",
+      "audience": "A US business owner who has just found a public complaint about their company",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Reputation",
+        "Social Media",
+        "Process"
+      ]
+    },
+    {
+      "id": "b-216",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "ask customers why they left",
+      "secondary_keywords": [
+        "customer exit interview",
+        "why did the client cancel",
+        "churn exit conversation"
+      ],
+      "working_title": "The most useful conversation in your business is with the customer who just left",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for exit interview, cancellation call and why they cancelled returned ZERO hits. why-customers-stop-buying owns the CAUSES of churn and the warning signs, customer-win-back-campaign owns the attempt to get them back, and why-did-we-lose-that-deal owns the loss review for deals you never won. All three are adjacent, all three must be read in full before drafting, and the distinction this post must hold is that it is about the conversation with somebody who already bought and already left, which is neither a prospect loss nor a win-back attempt. Opinion shape. The argument: the single highest information-density conversation available to a small business is a fifteen minute call with a customer who has just cancelled, and almost nobody has it, for a reason worth naming honestly, which is that it is humiliating and there is no upside for the person who would have to make the call. Then the part that makes it useful rather than therapeutic: the answer you get to 'why did you leave' is almost always wrong, because people give the reason that is socially easiest, usually price, and the real reason is earlier and more specific. So the questions have to be about sequence rather than motive: when did you first think about leaving, what happened that week, who else was involved in the decision. Make the point that the exit conversation is the only place you learn what you promised versus what they experienced, and that it must be had by somebody who is not the account owner. Close on the opinion that a business that cannot name the real reason its last three customers left is guessing about its product, and that the win-back attempt everybody runs instead is the same call with the incentives inverted.",
+      "audience": "A US owner who loses customers and files the reason as price",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Retention",
+        "Process",
+        "Strategy"
+      ]
+    },
+    {
+      "id": "b-217",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "what customers search on my website",
+      "secondary_keywords": [
+        "site search report",
+        "internal search queries",
+        "website search box analytics"
+      ],
+      "working_title": "What are people typing into your website's search box?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for site search and internal search returned ZERO hits across the whole site. how-do-i-do-keyword-research-without-paid-tools owns external keyword research and is the obvious link and contrast, why-doesnt-my-own-site-rank-for-my-own-products owns that problem, and why-is-my-landing-page-not-converting owns conversion. Read all three first. Practical, morning shape, and the reason it is worth writing is that this is the only keyword research that comes from people who are already on your site and already want something, and almost nobody looks at it. Establish how to see it, which for GA4 means confirming the site search configuration rather than assuming it works, and verify at Google's documentation what GA4 captures by default and what requires setup, because the folklore here is wrong. Then what the report tells you that nothing else does: the words customers use for your products rather than the words you use, products they expect you to stock and you do not, and searches that return nothing, which is a list of failures with revenue attached. Then the actions in order of value, which are fixing the no-results searches first, renaming categories to match what people type, and adding the top searched terms as actual navigation. The India angle is real and should be concrete: catalogue and listing sites are common, the search box is often the primary navigation on a phone, and the terms people type will mix English and transliterated words, which is itself the finding. Close on the point that this is free, first-party, and more honest than any keyword tool, because nobody was guessing.",
+      "audience": "An Indian business with a catalogue or listing site and a search box nobody audits",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Analytics",
+        "SEO",
+        "Conversion"
       ]
     }
   ],
@@ -1451,6 +1514,90 @@
         "Budgeting",
         "Small Business",
         "Conversion"
+      ]
+    },
+    {
+      "id": "b-202",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "who decides what to promise customers",
+      "secondary_keywords": [
+        "marketing promises operations cannot keep",
+        "overpromising in sales",
+        "sales and delivery misalignment"
+      ],
+      "working_title": "Who in your company is allowed to say no to a customer?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for say no to a customer, allowed to say no and refuse a customer returned ZERO hits. customer-onboarding-marketing owns onboarding as a marketing problem and is the closest neighbour, worth one link. why-customers-stop-buying owns churn causes. marketing-is-fine-capacity-is-the-problem owns capacity as the binding constraint and the selection-over-volume brief, so this must not re-argue capacity. Opinion shape with a point of view. The argument: in most small companies marketing and sales write promises that delivery has to keep, and nobody has been given authority to refuse, so the refusal happens anyway but late, badly, and by the most junior person in the chain. Build it on observable mechanics rather than statistics: the proposal that included a deliverable nobody costed, the scope that grew by email, the delivery lead who found out about a commitment from the client. Then the claim that makes it a marketing article: the ability to say no is a positioning asset, because a company that visibly declines work is making a claim about its standards that no amount of copy can substitute for, and the companies with the best reputations in any category are the ones with known limits. Give the practical shape without turning it into a process guide: who signs off a promise, what the standing list of things we do not do contains, and who tells the client. Close on the opinion that an organisation where only the owner can say no has not delegated sales, it has delegated optimism.",
+      "audience": "A US owner whose sales promises keep landing on a delivery team that was not asked",
+      "city": null,
+      "expertise_link": "/expertise/marketing-sales-alignment/",
+      "tags": [
+        "Process",
+        "Positioning",
+        "B2B"
+      ]
+    },
+    {
+      "id": "b-208",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "call tracking without hurting local seo",
+      "secondary_keywords": [
+        "call tracking number google business profile",
+        "dynamic number insertion seo",
+        "does call tracking affect nap consistency"
+      ],
+      "working_title": "Does call tracking hurt my local SEO?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for call tracking and tracked number returns only one incidental mention, in the post published on 21 November about bot traffic. Nothing owns it. ga4-vs-google-ads-conversions and ga4-conversions-not-tracking own conversion tracking in analytics, what-schema-markup-does-a-local-business-need owns schema, and the GBP suspension post owns profile problems, all worth linking rather than restating. Practical and specific, and this one needs sources: verify at Google's own documentation what it says about the primary phone number on a Google Business Profile and about using tracking numbers, because the correct answer is nuanced and the folklore is absolute in both directions. Establish what dynamic number insertion does and does not do to a crawler, which is the real question underneath, and what the NAP consistency concern actually amounts to versus what SEO folklore claims. Then the implementation that is safe: where the tracked number goes, where the real number stays, and what to do about the profile specifically. Concrete middle: a short before-you-install checklist. The reason the post is worth writing is that most small businesses either refuse call tracking entirely on the strength of a warning nobody has checked, and therefore cannot tell which marketing produces calls, or install it wrongly across the profile. Both are expensive and the second is worse.",
+      "audience": "A US service business that wants to know which marketing produces phone calls",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "Local SEO",
+        "Measurement",
+        "Analytics"
+      ]
+    },
+    {
+      "id": "b-205",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "whatsapp list is not an asset you own",
+      "secondary_keywords": [
+        "platform dependency small business",
+        "owning your customer list india",
+        "what if whatsapp changes the rules"
+      ],
+      "working_title": "Your WhatsApp list is an asset you do not own",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for platform dependency, own your audience, rented land and list you do not own returned ZERO hits. whatsapp-marketing-india owns broadcast and template mechanics, track-whatsapp-leads-from-website owns measurement including the Meta referral object, the October pricing post owns the pricing change, and the green-tick brief b-197 is queued and owns verification. So the mechanics are thoroughly claimed and this post must be the ownership argument only, linking them. Opinion shape. The argument: for a large number of Indian small businesses the entire customer relationship now lives inside an account they do not control, on terms that have already changed twice, and the usual response to this observation is a shrug because there is no alternative that works as well. Take that seriously rather than moralising. Then make the case that the asset is not the channel, it is the list plus the consent plus the context, and all three can be held outside the platform at almost no cost while continuing to use the platform for everything. Give the practical shape: export and own the numbers with the source and date, keep the record of how consent was obtained, hold enough transaction context that a second channel could be stood up in a week, and test one alternative route to your top customers before you need it. Close on the opinion that the right question is not whether to leave, because you should not, but how expensive the next rule change is allowed to be, and that most owners have never priced it.",
+      "audience": "An Indian business owner whose sales and support both run through WhatsApp",
+      "city": "Mumbai",
+      "expertise_link": "/expertise/lead-generation/",
+      "tags": [
+        "WhatsApp",
+        "Strategy",
+        "Retention"
+      ]
+    },
+    {
+      "id": "b-209",
+      "slot": "morning",
+      "market": "India",
+      "primary_keyword": "getting job enquiries instead of customer enquiries",
+      "secondary_keywords": [
+        "job seekers filling my contact form",
+        "exclude job seekers from ads",
+        "wrong enquiries from google"
+      ],
+      "working_title": "Why do I keep getting job enquiries instead of customers?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for job seeker, looking for a job and recruitment enquiry returns one incidental hit in trade-fair-marketing-india. Nothing owns it. why-is-my-landing-page-not-converting owns conversion, what-will-people-actually-give-you-their-number-for owns lead magnets, and the keyword research post owns query selection, all linkable. Practical, and genuinely common in India where company-name and category searches carry heavy jobs intent. Diagnose it properly rather than treating it as spam: open Search Console and the search terms report and look for the queries that actually brought these people, which will usually be your own company name plus words like careers, vacancy, salary, recruitment or internship, plus category terms that have a jobs interpretation. Then the fixes in order of cost. A careers page that ranks for those queries deliberately, because the demand is real and sending it somewhere is cheaper than fighting it, and a page that says we are not hiring right now is still the right page. Negative keywords on any paid campaign. A form that asks the first question in a way that filters. And the contact page routing enquiries by reason. Concrete middle: the list of query modifiers to check. Close on the point that this is not a traffic quality problem but an intent routing problem, and that the business owners who find it most irritating are the ones who have never given the jobs intent anywhere to land.",
+      "audience": "An Indian business owner whose contact form fills up with people wanting work",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "SEO",
+        "Conversion",
+        "Small Business"
       ]
     }
   ]
