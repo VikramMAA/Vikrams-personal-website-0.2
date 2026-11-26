@@ -2,27 +2,6 @@
   "_comment": "Ordered editorial queue. The publishing agent pops the first brief whose slot matches the current run and whose id is not already in published.json. Morning briefs are practical and tactical, evening briefs are opinion, story or analysis. Refill with content-ops/scripts/refill_queue.py when this drops below ten unused entries.",
   "briefs": [
     {
-      "id": "b-194",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "competitor undercutting my prices",
-      "secondary_keywords": [
-        "how to compete with a cheaper competitor",
-        "competitor keeps lowering prices",
-        "price war small business"
-      ],
-      "working_title": "A competitor keeps undercutting my price. What now?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. how-to-handle-price-objections-without-discounting owns the live objection in a sales conversation, including the script and why founders discount more than salespeople, so this post must not restate the script and should link it instead. should-i-put-pricing-on-my-website owns publishing prices. how-to-price-a-pilot-project and retainer-vs-project-pricing own pricing structure. Nothing owns a competitor deliberately pricing below you as a market condition rather than an objection. Opinion shape. The argument to make, and it is the opposite of the usual add-more-value advice: before deciding anything, work out whether the competitor is cheaper or whether they are selling something smaller that looks the same from outside, because in most cases I have looked at it is the second, and the fix is describing the difference rather than defending the number. Then the three responses that exist, named honestly: match and change your cost base, hold and narrow who you sell to, or unbundle so there is a comparable cheap version of you on the shelf. Each has a real cost and the article should say what each one costs. Then the thing nobody says out loud: a competitor pricing below sustainable cost is a temporary condition and waiting it out is a legitimate strategy if your balance sheet can, and a losing one if it cannot, so the decision is about your cash rather than your positioning. Never rubbish a named company. Close with a straight opinion on which of the three is right for a business that cannot cut its costs.",
-      "audience": "A US business owner losing deals to a cheaper competitor",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Pricing",
-        "Positioning",
-        "Sales"
-      ]
-    },
-    {
       "id": "b-197",
       "slot": "morning",
       "market": "India",
@@ -1598,6 +1577,27 @@
         "SEO",
         "Conversion",
         "Small Business"
+      ]
+    },
+    {
+      "id": "b-194",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "competitor undercutting my prices",
+      "secondary_keywords": [
+        "how to compete with a cheaper competitor",
+        "competitor keeps lowering prices",
+        "price war small business"
+      ],
+      "working_title": "A competitor keeps undercutting my price. What now?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. how-to-handle-price-objections-without-discounting owns the live objection in a sales conversation, including the script and why founders discount more than salespeople, so this post must not restate the script and should link it instead. should-i-put-pricing-on-my-website owns publishing prices. how-to-price-a-pilot-project and retainer-vs-project-pricing own pricing structure. Nothing owns a competitor deliberately pricing below you as a market condition rather than an objection. Opinion shape. The argument to make, and it is the opposite of the usual add-more-value advice: before deciding anything, work out whether the competitor is cheaper or whether they are selling something smaller that looks the same from outside, because in most cases I have looked at it is the second, and the fix is describing the difference rather than defending the number. Then the three responses that exist, named honestly: match and change your cost base, hold and narrow who you sell to, or unbundle so there is a comparable cheap version of you on the shelf. Each has a real cost and the article should say what each one costs. Then the thing nobody says out loud: a competitor pricing below sustainable cost is a temporary condition and waiting it out is a legitimate strategy if your balance sheet can, and a losing one if it cannot, so the decision is about your cash rather than your positioning. Never rubbish a named company. Close with a straight opinion on which of the three is right for a business that cannot cut its costs.",
+      "audience": "A US business owner losing deals to a cheaper competitor",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Pricing",
+        "Positioning",
+        "Sales"
       ]
     }
   ]

@@ -51,7 +51,7 @@ The compliant version is duller and, annoyingly, more effective.
 
 **Ask at the moment of delivered value.** Immediately after the thing went well, not in a batch on the first of the month. A customer three weeks removed from a good experience has stopped feeling it.
 
-**Have a person ask, not a system.** The request from the technician who did the work, sent from their phone before they leave, converts several times better than an automated email from a no-reply address. People do favours for people.
+**Have a person ask, not a system.** The request from the technician who did the work, sent from their phone before they leave, converts several times better than an automated email from a no-reply address. People do favors for people.
 
 **Do it every single time.** Review volume is a consistency problem, not a cleverness problem. A business asking every customer will comfortably beat one running a clever campaign twice a year.
 

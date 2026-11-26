@@ -1385,3 +1385,9 @@ India | job-enquiries-instead-of-customers | Why do I keep getting job enquiries
     - Route the form by reason, not by length
     - The ads part, briefly, because I have written it twice
     - Before lunch
+US | competitor-undercutting-my-prices | A competitor keeps undercutting my price. What now?
+    - Cheaper, or smaller?
+    - What the law says about this, which is less than you hope
+    - The Court's second test is the best business question you can ask
+    - The three responses, and what each one costs
+    - Where I come out
