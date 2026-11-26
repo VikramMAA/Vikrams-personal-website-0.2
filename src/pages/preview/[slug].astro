@@ -1,0 +1,295 @@
+---
+/**
+ * Private concept preview pages, one per creator. Content lives in
+ * src/data/previews.ts. Not live products.
+ *
+ * Kept out of search and out of the site's lists, the same way as
+ * /preview/mabelinthehouse/:
+ *  - `noindex` emits <meta name="robots" content="noindex, nofollow">.
+ *  - netlify.toml sends `X-Robots-Tag: noindex, nofollow` for /preview/*.
+ *  - astro.config.mjs filters /preview/ out of the sitemap, which also keeps
+ *    these out of the IndexNow ping.
+ *  - Nothing on the site links here. Not disallowed in robots.txt on purpose:
+ *    a crawler that cannot fetch the page never sees the noindex.
+ *
+ * There must be no working payment link, form or email capture on these pages.
+ * The "Buy now" control is an inert, disabled button and must stay that way.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { previews, type PreviewPage } from '../../data/previews';
+
+export function getStaticPaths() {
+  return previews.map((page) => ({ params: { slug: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props as { page: PreviewPage };
+
+/** First sentence becomes the bold lead of each proposal item. */
+const split = (text: string) => {
+  const m = text.match(/^(.+?\.)\s+([\s\S]*)$/);
+  return m ? { lead: m[1], rest: m[2] } : { lead: text, rest: '' };
+};
+---
+
+<BaseLayout
+  title={`Concept preview: ${page.titleSuffix}`}
+  description={`A product concept prepared for ${page.handle}. Not a live product.`}
+  noindex={true}
+>
+  <section class="section preview-intro">
+    <div class="container container--narrow">
+      <aside class="notice" aria-label="About this page">
+        <p class="notice__title">This is a concept, not a product</p>
+        <p>{page.notice}</p>
+      </aside>
+
+      <p class="eyebrow">Concept preview</p>
+      <h1>{page.introHeading}</h1>
+      <div class="prose">
+        <p>{page.intro}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" aria-labelledby="mock-title">
+    <div class="container">
+      <p class="eyebrow mock-eyebrow">{page.mockHeading}</p>
+      <div class="mock">
+        <p class="mock__tag">Mock-up</p>
+
+        <header class="mock__hero">
+          <h2 id="mock-title" class="mock__title">{page.product.name}</h2>
+          <p class="mock__sub">{page.product.subtitle}</p>
+          <p class="mock__desc">{page.product.description}</p>
+          {page.product.yoursLine && <p class="mock__yours">{page.product.yoursLine}</p>}
+          <button
+            type="button"
+            class="btn btn--primary mock__buy"
+            disabled
+            aria-disabled="true"
+          >
+            Buy now - {page.product.price}
+          </button>
+          <p class="mock__note">Mock-up only, not a working button.</p>
+        </header>
+
+        <div class="mock__block">
+          <h3 class="mock__h">{page.chaptersHeading}</h3>
+          <ol class="chapters">
+            {
+              page.chapters.map((c, i) => (
+                <li class="chapter">
+                  <span class="chapter__num">{i + 1}</span>
+                  <span class="chapter__title">{c}</span>
+                </li>
+              ))
+            }
+          </ol>
+        </div>
+
+        <div class="mock__block mock__notes">
+          {page.notes.map((n) => <p>{n}</p>)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="proposal-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The proposal</p>
+        <h2 id="proposal-title">{page.proposalHeading}</h2>
+      </div>
+
+      <div class="grid grid--3">
+        {
+          page.proposal.map((item) => {
+            const { lead, rest } = split(item);
+            return (
+              <div class="card">
+                <h3>{lead}</h3>
+                {rest && <p>{rest}</p>}
+              </div>
+            );
+          })
+        }
+      </div>
+
+      <p class="signoff">
+        Vikram M A A, <a href="/">vikramhere.com</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .preview-intro h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  .notice {
+    border: 1.5px solid var(--accent);
+    background: var(--accent-soft);
+    border-radius: var(--radius);
+    padding: clamp(1.15rem, 2.5vw, 1.6rem);
+    margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+  }
+
+  .notice p + p {
+    margin-top: 0.75rem;
+  }
+
+  .notice__title {
+    font-weight: 700;
+    font-size: var(--step-1);
+  }
+
+  .signoff a {
+    color: var(--accent);
+  }
+
+  .mock-eyebrow {
+    display: block;
+    max-width: 880px;
+    margin-inline: auto;
+    margin-bottom: 1.75rem;
+  }
+
+  /* The mock-up is framed so it never reads as a real sales page. */
+  .mock {
+    position: relative;
+    max-width: 880px;
+    margin-inline: auto;
+    background: var(--white);
+    border: 2px dashed var(--ink-400);
+    border-radius: var(--radius);
+    padding: clamp(1.5rem, 5vw, 3.5rem);
+  }
+
+  .mock__tag {
+    position: absolute;
+    top: -0.85rem;
+    left: clamp(1rem, 4vw, 2rem);
+    background: var(--ink-900);
+    color: var(--white);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+  }
+
+  .mock__hero {
+    text-align: center;
+    padding-bottom: clamp(2rem, 4vw, 3rem);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mock__title {
+    font-size: var(--step-4);
+    line-height: 1.1;
+  }
+
+  .mock__sub {
+    margin-top: 0.85rem;
+    font-size: var(--step-1);
+    color: var(--text-muted);
+  }
+
+  .mock__desc {
+    margin: 1.5rem auto 0;
+    max-width: 60ch;
+    text-align: left;
+    line-height: 1.65;
+  }
+
+  .mock__yours {
+    margin-top: 1.25rem;
+    font-weight: 600;
+  }
+
+  .mock__buy {
+    margin-top: 1.25rem;
+  }
+
+  .mock__buy:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+    transform: none;
+  }
+
+  .mock__buy:disabled:hover {
+    background: var(--accent);
+  }
+
+  .mock__note {
+    margin-top: 0.6rem;
+    font-size: var(--step--1);
+    font-style: italic;
+    color: var(--text-muted);
+  }
+
+  .mock__block {
+    margin-top: clamp(2rem, 4vw, 3rem);
+  }
+
+  .mock__h {
+    font-size: var(--step-2);
+    margin-bottom: 1rem;
+  }
+
+  .chapters {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .chapter {
+    display: grid;
+    grid-template-columns: 2.25rem 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .chapter__num {
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+    font-weight: 700;
+  }
+
+  .chapter__title {
+    font-weight: 600;
+    line-height: 1.45;
+  }
+
+  .mock__notes {
+    padding-top: clamp(1.5rem, 3vw, 2rem);
+    border-top: 1px solid var(--border);
+  }
+
+  .mock__notes p {
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+
+  .mock__notes p + p {
+    margin-top: 1rem;
+  }
+
+  .card h3 {
+    font-size: var(--step-1);
+    line-height: 1.35;
+  }
+
+  .signoff {
+    margin-top: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+  }
+</style>
