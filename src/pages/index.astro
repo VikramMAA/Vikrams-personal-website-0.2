@@ -3,12 +3,14 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FAQ from '../components/FAQ.astro';
 import CTA from '../components/CTA.astro';
+import RemoteWork from '../components/RemoteWork.astro';
 import {
   site,
   contact,
   expertise,
   stats,
   availability,
+  remote,
   caseStudies,
   faqs,
   approach,
@@ -16,8 +18,8 @@ import {
 } from '../data/site';
 import { faqSchema } from '../data/schema';
 
-const title = `${site.name} — Digital Marketing & GTM Consultant, ${contact.city}`;
-const description = `${site.name} is a digital marketing and GTM specialist in ${contact.city} with ${site.yearsExperience}+ years across SEO, paid media, social, content and lead generation. Accepting contracts to help brands grow.`;
+const title = `${site.name} — Remote Digital Marketing & GTM Consultant`;
+const description = `${site.name} is a remote digital marketing and GTM specialist with ${site.yearsExperience}+ years across SEO, paid media, social, content and lead generation, working with US, UK and EU teams.`;
 
 const latestPosts = (await getCollection('blog', ({ data }) => data.published))
   .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf())
@@ -36,10 +38,10 @@ const fmt = (d: Date) =>
           <p class="avail-pill">
             <span class="avail-pill__dot" aria-hidden="true" />
             {availability.short}
-            <span class="avail-pill__loc">&middot; {contact.city}, India</span>
+            <span class="avail-pill__loc">&middot; {remote.label.replace('Remote · ', 'Remote, ')}</span>
           </p>
         ) : (
-          <p class="eyebrow">Blog &amp; portfolio &middot; {contact.city}, India</p>
+          <p class="eyebrow">Blog &amp; portfolio &middot; {remote.label}</p>
         )
       }
       <h1>
@@ -47,7 +49,7 @@ const fmt = (d: Date) =>
       </h1>
       <p class="lede">
         I am {site.name}. I have spent {site.yearsExperience}+ years running SEO, paid
-        media, social and content for companies across India and North America. This is
+        media, social and content for companies across North America and India. This is
         where I write about what worked, what did not, and the work I am proud of.
       </p>
       {
@@ -251,6 +253,9 @@ const fmt = (d: Date) =>
       </section>
     )
   }
+
+  {/* ------------------------------------------------------ Remote work */}
+  {availability.open && <RemoteWork />}
 
   {/* ---------------------------------------------------------- Portfolio */}
   <section class="section section--alt" aria-labelledby="work-heading">

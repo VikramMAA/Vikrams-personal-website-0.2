@@ -1,5 +1,5 @@
 ---
-import { site, contact, expertise, availability } from '../data/site';
+import { site, contact, expertise, availability, remote } from '../data/site';
 
 const year = new Date().getFullYear();
 ---
@@ -11,7 +11,7 @@ const year = new Date().getFullYear();
         <p class="footer-name">{site.name}</p>
         <p class="footer-role">{site.jobTitle}</p>
         <p class="footer-blurb">{site.tagline}</p>
-        <p class="footer-loc">{contact.city}, {contact.region}, India.</p>
+        <p class="footer-loc">{remote.label}.</p>
       </div>
 
       <nav aria-label="My expertise">
@@ -36,15 +36,6 @@ const year = new Date().getFullYear();
           <li><a href="/portfolio/">Portfolio</a></li>
           <li><a href="/about/">About</a></li>
           <li><a href="/contact/">Contact</a></li>
-          {
-            availability.open && (
-              <li>
-                <a href="/digital-marketing-consultant-bengaluru/">
-                  Consultant in {contact.city}
-                </a>
-              </li>
-            )
-          }
         </ul>
       </nav>
 
@@ -52,10 +43,7 @@ const year = new Date().getFullYear();
         <h2 class="footer-heading">Say hello</h2>
         <ul>
           <li><a href={`mailto:${contact.email}`}>{contact.email}</a></li>
-          <li><a href={`tel:${contact.phoneRaw}`}>{contact.phone}</a></li>
-          <li>
-            <a href={`https://wa.me/${contact.whatsapp}`} rel="noopener">WhatsApp</a>
-          </li>
+          <li><a href="/contact/#form">Contact form</a></li>
           {
             contact.socials
               .filter((s) => !s.url.startsWith('mailto:'))

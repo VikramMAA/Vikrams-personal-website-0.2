@@ -9,7 +9,7 @@ Measurement ID `G-3JV22J241M`, GA4 property `549664959`.
 
 | Event | Fires when | Parameters | Source |
 |---|---|---|---|
-| `contact_click` | A visitor clicks a WhatsApp, phone or email link, anywhere on the site | `contact_method` (`whatsapp` / `phone` / `email`), `page_path`, `link_text`, `link_url` | `src/components/AnalyticsEvents.astro` |
+| `contact_click` | A visitor clicks a WhatsApp, phone, email or booking (Cal.com / Calendly) link, anywhere on the site | `contact_method` (`whatsapp` / `phone` / `email` / `booking`), `page_path`, `link_text`, `link_url` | `src/components/AnalyticsEvents.astro` |
 | `generate_lead` | The contact form submission has been **accepted by Resend**, server-side | `lead_source` (`contact_form`), `form_id` | `src/pages/thank-you.astro` |
 | `sign_up` | A newsletter subscription succeeds | `method` (`newsletter`), `page_path` | `src/pages/subscribed.astro` |
 
