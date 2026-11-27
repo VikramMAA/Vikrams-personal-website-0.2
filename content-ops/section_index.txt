@@ -1398,3 +1398,10 @@ Estonia | customer-interviews-when-customers-are-abroad | How do I research a ma
     - On recording it, briefly, because Europe is different
     - Six questions you can copy
     - Before lunch
+US | what-happens-when-you-take-two-weeks-off | What happens to your marketing when you take two weeks off?
+    - The pattern in the list is more useful than the list
+    - Why hiring does not fix it
+    - Most of what you call judgment is a rule you never wrote down
+    - What survives your absence is the business. What stops is your job
+    - Run the test on purpose
+    - Where I come out

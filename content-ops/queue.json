@@ -23,27 +23,6 @@
       ]
     },
     {
-      "id": "b-203",
-      "slot": "evening",
-      "market": "US",
-      "primary_keyword": "what happens to marketing when the owner is away",
-      "secondary_keywords": [
-        "owner dependent business marketing",
-        "marketing without the founder",
-        "business runs without me"
-      ],
-      "working_title": "What happens to your marketing when you take two weeks off?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. No post owns owner dependency; the phrases two weeks off, owner dependency and without the owner return only incidental hits in unrelated posts. should-i-replace-my-marketing-hire-with-ai and the two first-marketing-hire posts own hiring. why-does-my-monthly-marketing-report-never-tell-me-anything owns reporting. Opinion shape. The argument: the honest audit of a small company's marketing is not a channel review, it is a two-week absence, because everything that stops when the owner stops was never a system, it was the owner. Name what reliably stops: outbound, follow-up on anything ambiguous, the content, the decision to approve anything, and the relationship that exists only in the owner's phone. Then the harder claim: the parts that keep running during those two weeks are the only parts a buyer of the business would pay for, and the parts that stop are the ones the owner usually describes as their strength. Make the point that this is not a delegation problem to be solved by hiring, because handing an undocumented judgement to a new person produces a worse version of the same dependency, and the thing to extract first is the decision rule rather than the task. Close on the opinion that the test is worth running deliberately rather than discovering it during an illness, and that most owners already know which three things would stop, which means the audit has already happened and only the acting on it is missing.",
-      "audience": "A US owner-operator whose marketing is actually a set of habits only they perform",
-      "city": null,
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Process",
-        "Strategy",
-        "Small Business"
-      ]
-    },
-    {
       "id": "b-204",
       "slot": "evening",
       "market": "India",
@@ -1598,6 +1577,27 @@
         "Research",
         "Positioning",
         "Estonia"
+      ]
+    },
+    {
+      "id": "b-203",
+      "slot": "evening",
+      "market": "US",
+      "primary_keyword": "what happens to marketing when the owner is away",
+      "secondary_keywords": [
+        "owner dependent business marketing",
+        "marketing without the founder",
+        "business runs without me"
+      ],
+      "working_title": "What happens to your marketing when you take two weeks off?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. No post owns owner dependency; the phrases two weeks off, owner dependency and without the owner return only incidental hits in unrelated posts. should-i-replace-my-marketing-hire-with-ai and the two first-marketing-hire posts own hiring. why-does-my-monthly-marketing-report-never-tell-me-anything owns reporting. Opinion shape. The argument: the honest audit of a small company's marketing is not a channel review, it is a two-week absence, because everything that stops when the owner stops was never a system, it was the owner. Name what reliably stops: outbound, follow-up on anything ambiguous, the content, the decision to approve anything, and the relationship that exists only in the owner's phone. Then the harder claim: the parts that keep running during those two weeks are the only parts a buyer of the business would pay for, and the parts that stop are the ones the owner usually describes as their strength. Make the point that this is not a delegation problem to be solved by hiring, because handing an undocumented judgement to a new person produces a worse version of the same dependency, and the thing to extract first is the decision rule rather than the task. Close on the opinion that the test is worth running deliberately rather than discovering it during an illness, and that most owners already know which three things would stop, which means the audit has already happened and only the acting on it is missing.",
+      "audience": "A US owner-operator whose marketing is actually a set of habits only they perform",
+      "city": null,
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Process",
+        "Strategy",
+        "Small Business"
       ]
     }
   ]
