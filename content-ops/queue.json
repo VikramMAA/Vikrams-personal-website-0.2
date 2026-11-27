@@ -23,27 +23,6 @@
       ]
     },
     {
-      "id": "b-200",
-      "slot": "morning",
-      "market": "Estonia",
-      "primary_keyword": "how to do customer interviews remotely",
-      "secondary_keywords": [
-        "customer research for export markets",
-        "how to talk to customers in another country",
-        "b2b customer interview questions"
-      ],
-      "working_title": "How do I run customer interviews when my customers are all abroad?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. Nothing matched customer interviews, user interviews or talking to your customers. positioning-statement-examples is India and owns positioning output. international-seo-for-estonian-companies owns search-demand validation per market, which is the desk-research half and should be linked as the complement. pricing-for-export-markets owns the lesson that a buyer saying yes without pausing is information, which is adjacent and worth one link rather than a restatement. expansion-revenue-small-market-saas owns retention economics. Clear ground, and it is a real gap for a country whose companies mostly sell outward. Practical, morning shape. The spine: an Estonian company's biggest research disadvantage is not budget, it is that the founders cannot overhear anything, so every signal has to be asked for deliberately. Give the method. Who to ask, and the counterintuitive ordering that the most useful interviews are with people who evaluated you and chose something else, followed by customers who bought recently enough to remember the alternatives. How to get the meeting without it reading as a sales call, including who should send the request and why a founder gets accepted more often than a researcher. The questions, with the rule that you ask about the last time rather than about preferences, because what somebody did is evidence and what they would do is not. Then the part specific to selling across borders and across languages: run it in the buyer's working language where you can, accept that a translated interview loses the hesitations that carry the signal, and never run it over email. Concrete middle: a copyable set of six questions. Close with the one on Friday instruction, because ten interviews nobody schedules is the normal outcome.",
-      "audience": "An Estonian founder whose customers and prospects are all in other countries",
-      "city": "Tallinn",
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Research",
-        "Positioning",
-        "Estonia"
-      ]
-    },
-    {
       "id": "b-203",
       "slot": "evening",
       "market": "US",
@@ -1598,6 +1577,27 @@
         "Pricing",
         "Positioning",
         "Sales"
+      ]
+    },
+    {
+      "id": "b-200",
+      "slot": "morning",
+      "market": "Estonia",
+      "primary_keyword": "how to do customer interviews remotely",
+      "secondary_keywords": [
+        "customer research for export markets",
+        "how to talk to customers in another country",
+        "b2b customer interview questions"
+      ],
+      "working_title": "How do I run customer interviews when my customers are all abroad?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. Nothing matched customer interviews, user interviews or talking to your customers. positioning-statement-examples is India and owns positioning output. international-seo-for-estonian-companies owns search-demand validation per market, which is the desk-research half and should be linked as the complement. pricing-for-export-markets owns the lesson that a buyer saying yes without pausing is information, which is adjacent and worth one link rather than a restatement. expansion-revenue-small-market-saas owns retention economics. Clear ground, and it is a real gap for a country whose companies mostly sell outward. Practical, morning shape. The spine: an Estonian company's biggest research disadvantage is not budget, it is that the founders cannot overhear anything, so every signal has to be asked for deliberately. Give the method. Who to ask, and the counterintuitive ordering that the most useful interviews are with people who evaluated you and chose something else, followed by customers who bought recently enough to remember the alternatives. How to get the meeting without it reading as a sales call, including who should send the request and why a founder gets accepted more often than a researcher. The questions, with the rule that you ask about the last time rather than about preferences, because what somebody did is evidence and what they would do is not. Then the part specific to selling across borders and across languages: run it in the buyer's working language where you can, accept that a translated interview loses the hesitations that carry the signal, and never run it over email. Concrete middle: a copyable set of six questions. Close with the one on Friday instruction, because ten interviews nobody schedules is the normal outcome.",
+      "audience": "An Estonian founder whose customers and prospects are all in other countries",
+      "city": "Tallinn",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Research",
+        "Positioning",
+        "Estonia"
       ]
     }
   ]

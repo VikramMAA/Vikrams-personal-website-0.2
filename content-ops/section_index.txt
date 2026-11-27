@@ -1391,3 +1391,10 @@ US | competitor-undercutting-my-prices | A competitor keeps undercutting my pric
     - The Court's second test is the best business question you can ask
     - The three responses, and what each one costs
     - Where I come out
+Estonia | customer-interviews-when-customers-are-abroad | How do I research a market I do not live in?
+    - The three things you are replacing
+    - Who to talk to when you have eleven customers
+    - The language problem, which nobody warns you about
+    - On recording it, briefly, because Europe is different
+    - Six questions you can copy
+    - Before lunch
