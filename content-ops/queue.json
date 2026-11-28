@@ -23,27 +23,6 @@
       ]
     },
     {
-      "id": "b-204",
-      "slot": "evening",
-      "market": "India",
-      "primary_keyword": "founder personal brand vs company brand india",
-      "secondary_keywords": [
-        "should founders build a personal brand",
-        "personal brand india business",
-        "founder led marketing india"
-      ],
-      "working_title": "Is a founder's personal brand worth more than the company's in India?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. The phrase personal brand returns only two incidental hits, in 5-easy-tips and do-i-need-a-website-if-i-have-instagram, neither of which owns the question. linkedin-content-strategy-b2b-india owns what a B2B founder should POST on LinkedIn and must be linked rather than restated, because that is a content question and this is an ownership question. what-makes-a-freelance-marketing-engagement-work and digital-marketing-consultant-cost-india own engagement shape. Opinion shape with a real position. The argument should resist both of the available cliches, that founders must build in public and that personal brands are vanity. Say instead that in India the founder's name is doing work the company name cannot yet do, because a buyer can verify a person and cannot verify a two-year-old private limited company, which makes founder-led visibility rational rather than egotistical at the start. Then the inversion that makes it worth forwarding: everything you build on your own name is an asset you cannot sell, cannot delegate and cannot take a quarter off from, so the question is not whether to build it but when to start transferring it, and almost nobody plans the transfer. Give the concrete signals that it is time, such as inbound arriving addressed to the founder for work the founder does not do. Be careful to keep it about Indian market conditions, the verification problem and WhatsApp-first relationships, rather than generalising about Indian founders as people. Close on where I come out, which should be honest that I am writing under this constraint myself.",
-      "audience": "An Indian founder whose inbound all arrives through their own name",
-      "city": "Bengaluru",
-      "expertise_link": "/expertise/",
-      "tags": [
-        "Branding",
-        "Positioning",
-        "LinkedIn"
-      ]
-    },
-    {
       "id": "b-206",
       "slot": "evening",
       "market": "Estonia",
@@ -1598,6 +1577,27 @@
         "SEO",
         "Technical SEO",
         "Content Marketing"
+      ]
+    },
+    {
+      "id": "b-204",
+      "slot": "evening",
+      "market": "India",
+      "primary_keyword": "founder personal brand vs company brand india",
+      "secondary_keywords": [
+        "should founders build a personal brand",
+        "personal brand india business",
+        "founder led marketing india"
+      ],
+      "working_title": "Is a founder's personal brand worth more than the company's in India?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. The phrase personal brand returns only two incidental hits, in 5-easy-tips and do-i-need-a-website-if-i-have-instagram, neither of which owns the question. linkedin-content-strategy-b2b-india owns what a B2B founder should POST on LinkedIn and must be linked rather than restated, because that is a content question and this is an ownership question. what-makes-a-freelance-marketing-engagement-work and digital-marketing-consultant-cost-india own engagement shape. Opinion shape with a real position. The argument should resist both of the available cliches, that founders must build in public and that personal brands are vanity. Say instead that in India the founder's name is doing work the company name cannot yet do, because a buyer can verify a person and cannot verify a two-year-old private limited company, which makes founder-led visibility rational rather than egotistical at the start. Then the inversion that makes it worth forwarding: everything you build on your own name is an asset you cannot sell, cannot delegate and cannot take a quarter off from, so the question is not whether to build it but when to start transferring it, and almost nobody plans the transfer. Give the concrete signals that it is time, such as inbound arriving addressed to the founder for work the founder does not do. Be careful to keep it about Indian market conditions, the verification problem and WhatsApp-first relationships, rather than generalising about Indian founders as people. Close on where I come out, which should be honest that I am writing under this constraint myself.",
+      "audience": "An Indian founder whose inbound all arrives through their own name",
+      "city": "Bengaluru",
+      "expertise_link": "/expertise/",
+      "tags": [
+        "Branding",
+        "Positioning",
+        "LinkedIn"
       ]
     }
   ]

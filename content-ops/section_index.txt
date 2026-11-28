@@ -1411,3 +1411,9 @@ US | two-pages-competing-for-same-keyword | Two of my pages are competing for th
     - What Google actually says about canonicals
     - The fixes, in cost order
     - Before lunch
+India | founder-personal-brand-vs-company-brand | Is a founder's personal brand worth more than the company's in India?
+    - Which makes the usual advice wrong in both directions
+    - What you are actually building, and why it will not sell
+    - The signals that it is time to start transferring
+    - How the transfer actually works, briefly
+    - Where I come out
