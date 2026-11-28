@@ -1,0 +1,23 @@
+The platform dependency conversation is almost always about eviction. Rules change, pricing changes, the account gets restricted and nobody answers. Two of those have already happened.
+
+But eviction is survivable if you have the records.
+
+What isn't survivable is finding out during the eviction that you have no records, because you assumed the channel was the record.
+
+And on the WhatsApp Business API you probably don't have them. Meta's own documentation gives message data a maximum retention period of thirty days, and says plainly that it acts as a processor on behalf of the business. It isn't keeping your history. It's passing it to you and deleting it on a timer.
+
+Which reframes the asset. Three things, and only one of them lives in WhatsApp.
+
+The phone numbers. Yours, they export, and the part everybody assumes this argument is about.
+
+The consent. Also yours, and there's now a legal reason to keep it properly rather than a tidiness one.
+
+And the context. What this customer asked for. What you quoted. What they chose instead and why. Who in their office actually places the order. In their words, not your categories.
+
+That third thing is where almost all the value sits, and it's the one the platform has told you in writing it doesn't keep.
+
+You can port a phone number in an afternoon. You can't port a relationship you never wrote down.
+
+Where does your context live?
+
+#WhatsApp #Retention #Strategy #India
