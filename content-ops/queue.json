@@ -86,27 +86,6 @@
       ]
     },
     {
-      "id": "b-211",
-      "slot": "morning",
-      "market": "US",
-      "primary_keyword": "two pages competing for the same keyword",
-      "secondary_keywords": [
-        "keyword cannibalization fix",
-        "wrong page ranking for my keyword",
-        "which page should rank"
-      ],
-      "working_title": "Two of my pages are competing for the same keyword. What do I do?",
-      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for cannibali, wrong page rank and two pages compete returned one incidental hit, in quick-commerce-vs-d2c-india, which is unrelated. Nothing owns it. internal-linking-strategy owns internal links and is the main link here. content-decay-refresh-old-posts owns refreshing old posts. website-redesign-seo-checklist owns redirects at redesign. should-i-refresh-old-blog-posts-or-write-new-ones owns the refresh-versus-new decision. Read all four in full before drafting, because the remedies overlap. Practical, diagnostic shape. The honest framing first: cannibalisation is overdiagnosed, and two pages ranking for the same query is only a problem if the WRONG one ranks or if the ranking position is oscillating between them. Give the diagnosis from the reader's own data rather than a tool: in Search Console, filter to the query, add the pages dimension, and look at whether one page owns it or whether impressions are split and position is unstable across weeks. Then the decision tree, and the point is that merging is the last resort rather than the first: differentiate the intent if both pages deserve to exist, consolidate with a redirect if one is genuinely redundant, or leave it alone if one page already wins. Then the mechanical fixes in cost order, which are internal links pointing consistently at the page you want to win, title and H1 that do not both target the identical phrase, and canonical tags only where the pages are genuinely duplicates rather than as a way to express a preference. Close on the opinion that most cannibalisation projects are a tidying instinct dressed as SEO, and that the test is whether the wrong page is currently taking the clicks.",
-      "audience": "A US business owner or marketer who has been told their pages are competing with each other",
-      "city": null,
-      "expertise_link": "/expertise/seo/",
-      "tags": [
-        "SEO",
-        "Technical SEO",
-        "Content Marketing"
-      ]
-    },
-    {
       "id": "b-212",
       "slot": "morning",
       "market": "US",
@@ -1598,6 +1577,27 @@
         "Process",
         "Strategy",
         "Small Business"
+      ]
+    },
+    {
+      "id": "b-211",
+      "slot": "morning",
+      "market": "US",
+      "primary_keyword": "two pages competing for the same keyword",
+      "secondary_keywords": [
+        "keyword cannibalization fix",
+        "wrong page ranking for my keyword",
+        "which page should rank"
+      ],
+      "working_title": "Two of my pages are competing for the same keyword. What do I do?",
+      "angle": "COVERAGE CHECKED against the section index and post bodies. A grep for cannibali, wrong page rank and two pages compete returned one incidental hit, in quick-commerce-vs-d2c-india, which is unrelated. Nothing owns it. internal-linking-strategy owns internal links and is the main link here. content-decay-refresh-old-posts owns refreshing old posts. website-redesign-seo-checklist owns redirects at redesign. should-i-refresh-old-blog-posts-or-write-new-ones owns the refresh-versus-new decision. Read all four in full before drafting, because the remedies overlap. Practical, diagnostic shape. The honest framing first: cannibalisation is overdiagnosed, and two pages ranking for the same query is only a problem if the WRONG one ranks or if the ranking position is oscillating between them. Give the diagnosis from the reader's own data rather than a tool: in Search Console, filter to the query, add the pages dimension, and look at whether one page owns it or whether impressions are split and position is unstable across weeks. Then the decision tree, and the point is that merging is the last resort rather than the first: differentiate the intent if both pages deserve to exist, consolidate with a redirect if one is genuinely redundant, or leave it alone if one page already wins. Then the mechanical fixes in cost order, which are internal links pointing consistently at the page you want to win, title and H1 that do not both target the identical phrase, and canonical tags only where the pages are genuinely duplicates rather than as a way to express a preference. Close on the opinion that most cannibalisation projects are a tidying instinct dressed as SEO, and that the test is whether the wrong page is currently taking the clicks.",
+      "audience": "A US business owner or marketer who has been told their pages are competing with each other",
+      "city": null,
+      "expertise_link": "/expertise/seo/",
+      "tags": [
+        "SEO",
+        "Technical SEO",
+        "Content Marketing"
       ]
     }
   ]

@@ -1405,3 +1405,9 @@ US | what-happens-when-you-take-two-weeks-off | What happens to your marketing w
     - What survives your absence is the business. What stops is your job
     - Run the test on purpose
     - Where I come out
+US | two-pages-competing-for-same-keyword | Two of my pages are competing for the same keyword. What do I do?
+    - Six minutes in Search Console
+    - The decision tree, with merging at the bottom
+    - What Google actually says about canonicals
+    - The fixes, in cost order
+    - Before lunch
