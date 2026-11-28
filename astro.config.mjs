@@ -15,7 +15,9 @@ export default defineConfig({
       filter: (page) =>
         !page.includes('/thank-you') &&
         !page.includes('/subscribed') &&
-        !page.includes('/preview/'),
+        !page.includes('/preview/') &&
+        // Draft page (noindex). Remove this line when it goes public.
+        !page.includes('/accomplishments/'),
     }),
   ],
   build: {

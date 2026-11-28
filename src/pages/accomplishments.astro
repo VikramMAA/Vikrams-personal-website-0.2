@@ -1,0 +1,653 @@
+---
+/**
+ * Accomplishments: a single, fast-reading proof page. Numbers and charts first,
+ * paragraphs second.
+ *
+ * DRAFT. While `draft` is true the page is:
+ *  - noindex (BaseLayout emits <meta name="robots" content="noindex, nofollow">)
+ *  - filtered out of the sitemap in astro.config.mjs (and so out of IndexNow)
+ *  - not linked from the header, footer or any other page
+ * It is still reachable by direct link, so it can be shared privately.
+ * To go public: set `draft` to false here AND remove the '/accomplishments/'
+ * line from the sitemap filter in astro.config.mjs.
+ *
+ * Charts are hand-rolled inline SVG rendered at build time from the exact values
+ * below. No runtime data calls, no chart library. Two-point series stay two
+ * bars: nothing is interpolated. Every value is also printed as text.
+ *
+ * Copy rule for this page: no em dashes.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const draft = true;
+
+const email = 'vikram_here@outlook.com';
+
+const kpis = [
+  { value: '10+ yrs', label: 'In digital marketing' },
+  { value: '2x', label: 'Revenue growth for Kia Kaha MMA in 3 months' },
+  { value: '0.7 to 2.7', label: 'Blended ROAS lift for an EdTech brand (3 months)' },
+  { value: '₹70L to ₹1Cr', label: 'Monthly ad spend managed' },
+  { value: '₹25L+', label: 'Monthly marketing budget run end to end' },
+  { value: 'US and UAE', label: 'Live lead-gen markets built from scratch' },
+];
+
+type Chart = {
+  id: string;
+  heading: string;
+  body: string;
+  title: string;
+  unit: string;
+  labels: string[];
+  values: number[];
+  format: (v: number) => string;
+  caption: string;
+};
+
+const charts: Chart[] = [
+  {
+    id: 'kia-kaha-revenue',
+    heading: 'Kia Kaha MMA Academy: monthly revenue doubled in 3 months',
+    body: 'As Head of Marketing and Business Growth, took the academy from ₹10 lakh to ₹20 lakh in monthly revenue in three months, on modest ad spend, by cutting customer acquisition cost through funnel redesign, sales training for the team, and accountability systems for centre managers.',
+    title: 'Kia Kaha MMA: monthly revenue (₹ lakh)',
+    unit: 'INR lakh per month',
+    labels: ['Before', 'After 3 months'],
+    values: [10, 20],
+    format: (v) => `₹${v}L`,
+    caption: '2x revenue in 3 months on modest ad spend, driven by lower CAC.',
+  },
+  {
+    id: 'edtech-roas',
+    heading: 'EdTech paid media: blended ROAS lifted from 0.7 to 2.7',
+    body: 'Rebuilt paid media performance for an EdTech brand (under NDA), improving blended ROAS from 0.7 to 2.7 in three months while managing ₹70 lakh to ₹1 crore in monthly ad spend.',
+    title: 'EdTech: blended ROAS (x)',
+    unit: 'ROAS (times)',
+    labels: ['Start', 'Month 3'],
+    values: [0.7, 2.7],
+    format: (v) => `${v}x`,
+    caption: 'Roughly 3.9x improvement in blended ROAS over 3 months. Client under NDA.',
+  },
+];
+
+/** Chart geometry (viewBox units). Bars are horizontal so long labels fit on mobile. */
+const W = 440;
+const labelW = 128;
+const valueW = 78;
+const barH = 36;
+const gap = 16;
+const padY = 14;
+const plotW = W - labelW - valueW;
+const chartH = (n: number) => padY * 2 + n * barH + (n - 1) * gap;
+
+/** Rounded data-end only (square at the baseline), 4px radius. */
+const barPath = (x: number, y: number, w: number, h: number, r = 4) => {
+  const rr = Math.min(r, w);
+  return `M${x},${y} H${x + w - rr} Q${x + w},${y} ${x + w},${y + rr} V${y + h - rr} Q${x + w},${y + h} ${x + w - rr},${y + h} H${x} Z`;
+};
+
+// Order is deliberate: sports/fitness, D2C and consumer goods, and lead generation lead.
+const work = [
+  {
+    client: 'Kia Kaha MMA Academy, Bengaluru',
+    role: 'Head of Marketing and Business Growth',
+    tag: 'Sports and fitness',
+    text: 'Doubled monthly revenue to ₹20 lakh in three months. Built the lead-gen and customer-lifecycle systems, trained the sales team, and installed manager accountability to lower CAC.',
+  },
+  {
+    client: 'Nandi Organic Farmhouse Pvt Ltd',
+    role: 'Organic moringa',
+    tag: 'D2C, organic',
+    text: 'Social media marketing for an organic D2C producer.',
+  },
+  {
+    client: 'Primas Bioscience',
+    role: '12-month growth engagement',
+    tag: 'Consumer health, B2B and B2C',
+    text: 'Leading digital marketing across the parent (B2B algal DHA ingredients) and the consumer brand (B2C). Built a B2C ICP framework of six buyer profiles across a seven-product range, and a B2B pipeline aimed at nutraceutical, FMCG, and healthcare partners.',
+  },
+  {
+    client: 'ProductNova (Aug 2024 to Oct 2026)',
+    role: 'Marketing, part-time retainer',
+    tag: 'Lead generation, USA and UAE',
+    text: 'Built and ran Google Search lead generation for the USA and UAE markets, designing the landing pages, media plan, and campaigns. Used a deliberately narrow keyword set to cut junk leads. Defined the ICP (SaaS founders, $2M to $10M ARR).',
+  },
+  {
+    client: 'EdTech brand (under NDA)',
+    role: 'Performance marketing',
+    tag: 'Paid media',
+    text: 'Blended ROAS from 0.7 to 2.7 in three months on ₹70 lakh to ₹1 crore monthly ad spend.',
+  },
+  {
+    client: 'Ayanam Aerospace',
+    role: 'Drone manufacturing (deep-tech)',
+    tag: 'Lead generation',
+    text: 'Lead generation and content strategy for a hardware manufacturer, plus social media marketing.',
+  },
+  {
+    client: 'Farm ERP Software',
+    role: 'B2B SaaS',
+    tag: 'Pipeline',
+    text: 'B2B marketing with a strong MQL and SQL pipeline.',
+  },
+  {
+    client: 'MUKA, Canada',
+    role: 'Art and design brand',
+    tag: 'International',
+    text: 'Content marketing consulting for an international brand, run end to end remotely.',
+  },
+  {
+    client: 'Dr Naveen, Kochi',
+    role: 'Personal brand (active)',
+    tag: 'Healthcare',
+    text: "Building a doctor's personal brand: delivered a search-demand and benchmarking study and a one-page brand plan, running a long-form-to-short-form content system.",
+  },
+];
+
+const services = [
+  'Revenue growth strategy and go-to-market',
+  'Performance marketing (Google and Meta): lead generation, ROAS optimisation, budget efficiency',
+  'Account-based marketing and ICP definition',
+  'SEO: on-page, technical, off-page, and AI search',
+  'Content marketing and social media strategy',
+  'Funnel design, customer-lifecycle management, and sales enablement',
+  'Marketing analytics (GA4, Search Console) and reporting',
+];
+
+const experience = [
+  'Freelance Growth and Marketing Consultant, Bengaluru (current)',
+  'Marketing, ProductNova (Aug 2024 to Oct 2026)',
+  'Head of Marketing and Business Growth, Kia Kaha MMA Academy',
+  'Earlier: client and in-house marketing across EdTech, AgTech, consumer, and deep-tech brands',
+];
+---
+
+<BaseLayout
+  title="Accomplishments"
+  description="Selected results and work by Vikram M A A, digital marketer and revenue growth strategist."
+  noindex={draft}
+>
+  <div class="acc">
+    <section class="acc-hero">
+      <div class="container">
+        <p class="eyebrow">Accomplishments</p>
+        <h1>Vikram M A A</h1>
+        <p class="acc-lede">
+          Digital Marketer and Revenue Growth Strategist, Bengaluru. 10+ years building and
+          scaling marketing for national and international clients across SaaS, EdTech,
+          AgTech, fitness, healthcare, deep-tech manufacturing, and consumer brands.
+        </p>
+        <p class="acc-sub">
+          Work spans two continents (India, USA, UAE, Canada) across strategy, performance
+          marketing, account-based marketing, SEO, and content.
+        </p>
+      </div>
+    </section>
+
+    <section class="acc-section" aria-labelledby="impact-heading">
+      <div class="container">
+        <h2 id="impact-heading" class="acc-h2">Impact at a glance</h2>
+        <ul class="kpis">
+          {
+            kpis.map((k) => (
+              <li class="kpi">
+                <span class="kpi__value">{k.value}</span>
+                <span class="kpi__label">{k.label}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+
+    <section class="acc-section" aria-labelledby="growth-heading">
+      <div class="container">
+        <h2 id="growth-heading" class="acc-h2">Growth you can see</h2>
+        <div class="charts">
+          {
+            charts.map((c) => {
+              const max = Math.max(...c.values);
+              const h = chartH(c.values.length);
+              return (
+                <article class="chart-card" aria-labelledby={`${c.id}-h`}>
+                  <h3 id={`${c.id}-h`}>{c.heading}</h3>
+                  <p class="chart-card__body">{c.body}</p>
+                  <figure class="chart">
+                    <figcaption class="chart__title">{c.title}</figcaption>
+                    <svg
+                      viewBox={`0 0 ${W} ${h}`}
+                      role="img"
+                      aria-label={`${c.title}. ${c.labels.map((l, i) => `${l}: ${c.format(c.values[i])}`).join('. ')}.`}
+                      preserveAspectRatio="xMinYMin meet"
+                    >
+                      {c.values.map((v, i) => {
+                        const y = padY + i * (barH + gap);
+                        const w = Math.max(2, (v / max) * plotW);
+                        const last = i === c.values.length - 1;
+                        return (
+                          <g class:list={['bar', last ? 'bar--after' : 'bar--before']}>
+                            <title>{`${c.labels[i]}: ${c.format(v)} (${c.unit})`}</title>
+                            <text
+                              class="bar__label"
+                              x={labelW - 14}
+                              y={y + barH / 2}
+                              text-anchor="end"
+                              dominant-baseline="central"
+                            >
+                              {c.labels[i]}
+                            </text>
+                            <path class="bar__mark" d={barPath(labelW, y, w, barH)} />
+                            <text
+                              class="bar__value"
+                              x={labelW + w + 12}
+                              y={y + barH / 2}
+                              dominant-baseline="central"
+                            >
+                              {c.format(v)}
+                            </text>
+                          </g>
+                        );
+                      })}
+                      <line
+                        class="baseline"
+                        x1={labelW}
+                        x2={labelW}
+                        y1={padY - 6}
+                        y2={h - padY + 6}
+                      />
+                    </svg>
+                    <p class="chart__caption">{c.caption}</p>
+                  </figure>
+                </article>
+              );
+            })
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="acc-section" aria-labelledby="work-heading">
+      <div class="container">
+        <h2 id="work-heading" class="acc-h2">Selected work</h2>
+        <ul class="work">
+          {
+            work.map((w) => (
+              <li class="work__item">
+                <p class="work__tag">{w.tag}</p>
+                <h3 class="work__client">{w.client}</h3>
+                <p class="work__role">{w.role}</p>
+                <p class="work__text">{w.text}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+
+    <section class="acc-section" aria-labelledby="do-heading">
+      <div class="container acc-split">
+        <div>
+          <h2 id="do-heading" class="acc-h2">What I do</h2>
+          <ul class="ticks">
+            {services.map((s) => <li>{s}</li>)}
+          </ul>
+          <p class="acc-note">
+            I run a small delivery team covering creative, video editing, and content
+            planning and research, so strategy ships as finished work.
+          </p>
+        </div>
+        <div>
+          <h2 class="acc-h2">Experience</h2>
+          <ol class="timeline">
+            {experience.map((e) => <li>{e}</li>)}
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="acc-section acc-contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="acc-h2">Get in touch</h2>
+        <dl class="contact">
+          <div>
+            <dt>Email</dt>
+            <dd><a href={`mailto:${email}`}>{email}</a></dd>
+          </div>
+          <div>
+            <dt>Site</dt>
+            <dd><a href="https://vikramhere.com">vikramhere.com</a></dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Bengaluru, Karnataka</dd>
+          </div>
+        </dl>
+        <div class="btn-row">
+          <a class="btn btn--primary" href={`mailto:${email}`}>Email me</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .acc {
+    --acc-bg: var(--ink-900);
+    --acc-panel: var(--ink-800);
+    --acc-line: var(--ink-700);
+    --acc-ink: #f0f3f6;
+    --acc-muted: #a9b2bd;
+    --acc-before: var(--ink-400);
+    background: var(--acc-bg);
+    color: var(--acc-ink);
+  }
+
+  .acc h1,
+  .acc h2,
+  .acc h3 {
+    color: var(--acc-ink);
+  }
+
+  .acc a {
+    color: var(--accent);
+    text-underline-offset: 3px;
+  }
+
+  .acc .btn--primary {
+    color: var(--white);
+  }
+
+  .acc-hero {
+    padding-block: clamp(3.5rem, 9vw, 6.5rem) clamp(2rem, 4vw, 3rem);
+    background: radial-gradient(
+        ellipse 55% 70% at 95% 0%,
+        rgba(255, 90, 31, 0.16) 0%,
+        transparent 60%
+      ),
+      var(--acc-bg);
+  }
+
+  .acc-hero h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  .acc-lede {
+    font-size: var(--step-1);
+    line-height: 1.5;
+    max-width: 62ch;
+    color: var(--acc-ink);
+  }
+
+  .acc-sub {
+    margin-top: 1rem;
+    max-width: 62ch;
+    color: var(--acc-muted);
+  }
+
+  .acc-section {
+    padding-block: clamp(2.5rem, 6vw, 4.5rem);
+    border-top: 1px solid var(--acc-line);
+  }
+
+  .acc-h2 {
+    font-size: var(--step-2);
+    margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+  }
+
+  /* KPIs */
+  .kpis {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--acc-line);
+    border: 1px solid var(--acc-line);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  @media (max-width: 860px) {
+    .kpis {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 480px) {
+    .kpis {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .kpi {
+    background: var(--acc-panel);
+    padding: clamp(1.25rem, 3vw, 1.75rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .kpi__value {
+    font-size: var(--step-3);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    color: var(--acc-ink);
+  }
+
+  .kpi__value::after {
+    content: '';
+    display: block;
+    width: 1.75rem;
+    height: 3px;
+    margin-top: 0.7rem;
+    background: var(--accent);
+    border-radius: 2px;
+  }
+
+  .kpi__label {
+    color: var(--acc-muted);
+    font-size: var(--step--1);
+    line-height: 1.45;
+  }
+
+  /* Charts */
+  .charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    gap: clamp(1rem, 2.5vw, 1.75rem);
+  }
+
+  .chart-card {
+    background: var(--acc-panel);
+    border: 1px solid var(--acc-line);
+    border-radius: var(--radius);
+    padding: clamp(1.25rem, 3vw, 2rem);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chart-card h3 {
+    font-size: var(--step-1);
+    margin-bottom: 0.75rem;
+  }
+
+  .chart-card__body {
+    color: var(--acc-muted);
+    font-size: var(--step--1);
+    line-height: 1.6;
+  }
+
+  .chart {
+    margin-top: auto;
+    padding-top: 1.5rem;
+  }
+
+  .chart__title {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--acc-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .chart svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .bar__label {
+    fill: var(--acc-muted);
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .bar__value {
+    fill: var(--acc-ink);
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  .bar--before .bar__mark {
+    fill: var(--acc-before);
+  }
+
+  .bar--after .bar__mark {
+    fill: var(--accent);
+  }
+
+  .bar:hover .bar__mark {
+    opacity: 0.85;
+  }
+
+  .baseline {
+    stroke: var(--acc-line);
+    stroke-width: 2;
+  }
+
+  .chart__caption {
+    margin-top: 0.75rem;
+    font-size: var(--step--1);
+    color: var(--acc-ink);
+  }
+
+  /* Selected work */
+  .work {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+
+  .work__item {
+    background: var(--acc-panel);
+    border: 1px solid var(--acc-line);
+    border-radius: var(--radius);
+    padding: clamp(1.25rem, 2.5vw, 1.6rem);
+  }
+
+  .work__tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+  }
+
+  .work__client {
+    font-size: var(--step-0);
+    font-weight: 700;
+  }
+
+  .work__role {
+    color: var(--acc-muted);
+    font-size: var(--step--1);
+    margin-top: 0.2rem;
+  }
+
+  .work__text {
+    margin-top: 0.85rem;
+    font-size: var(--step--1);
+    line-height: 1.6;
+    color: var(--acc-ink);
+  }
+
+  /* What I do / Experience */
+  .acc-split {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+    gap: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .ticks,
+  .timeline {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.8rem;
+  }
+
+  .ticks li,
+  .timeline li {
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .ticks li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 2px;
+    background: var(--accent);
+  }
+
+  .timeline li::before {
+    content: '';
+    position: absolute;
+    left: 0.2rem;
+    top: 0.5em;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+  }
+
+  .timeline li:first-child::before {
+    background: var(--accent);
+  }
+
+  .acc-note {
+    margin-top: 1.5rem;
+    color: var(--acc-muted);
+    max-width: 55ch;
+  }
+
+  /* Contact */
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 1.25rem;
+  }
+
+  .contact dt {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--acc-muted);
+    margin-bottom: 0.3rem;
+  }
+
+  .contact dd {
+    margin: 0;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+  }
+</style>
